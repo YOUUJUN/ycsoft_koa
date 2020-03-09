@@ -22,7 +22,10 @@
 
 <script>
     export default {
-        name: "Banner"
+        name: "Banner",
+        props : ["title"],
+        methods : {
+        }
     }
 </script>
 

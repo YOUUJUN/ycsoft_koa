@@ -1,7 +1,7 @@
 <template>
     <div class="markdown-editor-box">
         <link rel="stylesheet" href="/static/editor.md/css/editormd.min.css">
-        <div id="editorId" ref="editorId"></div>
+        <div id="editorId" ref="editorId" class="hide"></div>
     </div>
 </template>
 <script>
@@ -95,6 +95,7 @@
 
                         console.log("this.editor",editormd);
                         vm.editor = editormd.markdownToHTML("editorId", config);
+                        this.$refs["editorId"].classList.remove("hide");
 
                         // vm.editor.on('load', () => {
                         //     vm.editor.setMarkdown("hello");
