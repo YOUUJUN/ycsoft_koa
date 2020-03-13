@@ -19,6 +19,8 @@ module.exports = (app) => {
     router.post('/community/getTopicList',homeController.getTopicList);
 
 
+    router.post('/login',homeController.login);
+
 
     app.use(router.routes())
         .use(router.allowedMethods());

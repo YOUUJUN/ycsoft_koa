@@ -7,7 +7,6 @@ const community = {
         let topicCountParam = [4,0];
 
         const results = await query(topicCountSql,topicCountParam);
-        console.log("热门话题 -------------",results);
         var msg = [];
         var arr = "/community/topics/";
 
@@ -18,7 +17,6 @@ const community = {
             }
             msg.push(obj);
         }
-        console.log("msg",msg);
         return msg;
 
     },

@@ -9,22 +9,34 @@ const cors = require('koa-cors');
 const router = require('./middlewares/router');
 const history = require('koa2-history-api-fallback');
 const session = require('koa-session');
+const jwt = require("jsonwebtoken");
+const TOKENSECRET = require("./utils/config/tokensecret");
 
 
-// app.use(session({
-//   key: 'koa:sess', /** (string) cookie key (default is koa:sess) */
-//   /** (number || 'session') maxAge in ms (default is 1 days) */
-//   /** 'session' will result in a cookie that expires when session/browser is closed */
-//   /** Warning: If a session cookie is stolen, this cookie will never expire */
-//   maxAge: 86400000,
-//   autoCommit: true, /** (boolean) automatically commit headers (default true) */
-//   overwrite: true, /** (boolean) can overwrite or not (default true) */
-//   httpOnly: true, /** (boolean) httpOnly or not (default true) */
-//   signed: true, /** (boolean) signed or not (default true) */
-//   rolling: false, /** (boolean) Force a session identifier cookie to be set on every response. The expiration is reset to the original maxAge, resetting the expiration countdown. (default is false) */
-//   renew: false, /** (boolean) renew session when session is nearly expired, so we can always keep user logged in. (default is false)*/
-//   sameSite: null, /** (string) session cookie sameSite options (default null, don't set it) */
-// },app));
+/*---登录状态检测中间件---*/
+app.use( async (ctx, next) =>{
+  if(ctx.url.match(/^\/community/)){
+    console.log("url----",ctx.url);
+    let token = ctx.request.header.accesstoken || "";
+    jwt.verify(token,TOKENSECRET,function (err, decoded) {
+      if(err){
+        console.log("别问，问就验证没通过");
+        ctx.loged = false;
+      }else{
+        if(decoded && decoded.username && decoded.password){
+          const page_user = require("./utils/pages/user");
+          let result = page_user.verifyUserPassword(decoded.username,decoded.password);
+          if(result){
+            ctx.state.loged = true;
+          }else{
+            ctx.state.loged = false;
+          }
+        }
+      }
+    })
+  }
+  await next();
+});
 
 // error handler
 // onerror(app);
@@ -38,7 +50,7 @@ app.use(logger());
 
 app.use( async (ctx, next) =>{
   ctx.set("Access-Control-Allow-Origin","http://localhost:8080");
-  ctx.set("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  ctx.set("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, accesstoken");
   ctx.set("Access-Control-Allow-Credentials", true);
   await next();
 });

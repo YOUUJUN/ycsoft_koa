@@ -17639,3 +17639,3430 @@ get hot list failed ReferenceError: getArticleNumSql is not defined
     at filter (F:\ycsoft_koa_new\node_modules\koa-json\index.js:25:12)
     at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
     at bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:11)
+get artical list failed Error: ER_SP_UNDECLARED_VAR: Undeclared variable: NaN
+    at Query.Sequence._packetToError (F:\ycsoft_koa_new\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\ycsoft_koa_new\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\ycsoft_koa_new\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\ycsoft_koa_new\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\ycsoft_koa_new\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\ycsoft_koa_new\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\ycsoft_koa_new\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\ycsoft_koa_new\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23)
+    --------------------
+    at Protocol._enqueue (F:\ycsoft_koa_new\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (F:\ycsoft_koa_new\node_modules\mysql\lib\Connection.js:198:25)
+    at F:\ycsoft_koa_new\utils\db\mysql\query.js:14:28
+    at Handshake.onConnect (F:\ycsoft_koa_new\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (F:\ycsoft_koa_new\node_modules\mysql\lib\Connection.js:526:10)
+    at Handshake._callback (F:\ycsoft_koa_new\node_modules\mysql\lib\Connection.js:488:16)
+    at Handshake.Sequence.end (F:\ycsoft_koa_new\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (F:\ycsoft_koa_new\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (F:\ycsoft_koa_new\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\ycsoft_koa_new\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\ycsoft_koa_new\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\ycsoft_koa_new\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\ycsoft_koa_new\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\ycsoft_koa_new\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12) {
+  code: 'ER_SP_UNDECLARED_VAR',
+  errno: 1327,
+  sqlMessage: 'Undeclared variable: NaN',
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT article.*,topic.topic_name,users.nickname,users.user_id,COUNT(user_like.id) AS nums FROM article LEFT JOIN topic ON article.topic_id = topic.topic_id LEFT JOIN users ON article.post_author = users.user_name LEFT JOIN user_like ON article.post_id = user_like.post_id GROUP BY article.post_date ORDER BY article.post_date DESC LIMIT 7 OFFSET NaN'
+}
+server error TypeError: page_user.login is not a function
+    at login (F:\ycsoft_koa_new\controler\home.js:80:39)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\app.js:44:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:13)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at filter (F:\ycsoft_koa_new\node_modules\koa-json\index.js:25:12)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+  request: {
+    method: 'POST',
+    url: '/login',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: 'application/json, text/plain, */*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json;charset=utf-8',
+      'content-length': '31',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      referer: 'http://localhost:8080/community/topics/WEB%E5%89%8D%E7%AB%AF',
+      cookie: 'fuck=u; username=youjun; connect.sid=s%3AFgsuZDxO2tYfD4v6dTQaV0D5XyMP-I_j.MkBW0wjXLAZWb9xFuPGYdhJv9DgjHd7%2FR8nZqiclkBU',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/login',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error TypeError: page_user.login is not a function
+    at login (F:\ycsoft_koa_new\controler\home.js:80:39)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\app.js:44:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:13)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at filter (F:\ycsoft_koa_new\node_modules\koa-json\index.js:25:12)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+  request: {
+    method: 'POST',
+    url: '/login',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: 'application/json, text/plain, */*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json;charset=utf-8',
+      'content-length': '31',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      referer: 'http://localhost:8080/community.html',
+      cookie: 'fuck=u; username=youjun; connect.sid=s%3AFgsuZDxO2tYfD4v6dTQaV0D5XyMP-I_j.MkBW0wjXLAZWb9xFuPGYdhJv9DgjHd7%2FR8nZqiclkBU',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/login',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error TypeError: page_user.login is not a function
+    at login (F:\ycsoft_koa_new\controler\home.js:81:39)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\app.js:44:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:13)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at filter (F:\ycsoft_koa_new\node_modules\koa-json\index.js:25:12)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+  request: {
+    method: 'POST',
+    url: '/login',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: 'application/json, text/plain, */*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json;charset=utf-8',
+      'content-length': '31',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      referer: 'http://localhost:8080/community.html',
+      cookie: 'fuck=u; username=youjun; connect.sid=s%3AFgsuZDxO2tYfD4v6dTQaV0D5XyMP-I_j.MkBW0wjXLAZWb9xFuPGYdhJv9DgjHd7%2FR8nZqiclkBU',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/login',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error ReferenceError: msg is not defined
+    at User.login (F:\ycsoft_koa_new\utils\pages\user.js:56:21)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async login (F:\ycsoft_koa_new\controler\home.js:81:23)
+    at async F:\ycsoft_koa_new\app.js:44:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5) {
+  request: {
+    method: 'POST',
+    url: '/login',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: 'application/json, text/plain, */*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json;charset=utf-8',
+      'content-length': '31',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      referer: 'http://localhost:8080/community.html',
+      cookie: 'fuck=u; username=youjun; connect.sid=s%3AFgsuZDxO2tYfD4v6dTQaV0D5XyMP-I_j.MkBW0wjXLAZWb9xFuPGYdhJv9DgjHd7%2FR8nZqiclkBU',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/login',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error TypeError: Assignment to constant variable.
+    at User.login (F:\ycsoft_koa_new\utils\pages\user.js:58:21)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async login (F:\ycsoft_koa_new\controler\home.js:81:23)
+    at async F:\ycsoft_koa_new\app.js:44:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5) {
+  request: {
+    method: 'POST',
+    url: '/login',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: 'application/json, text/plain, */*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json;charset=utf-8',
+      'content-length': '31',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      referer: 'http://localhost:8080/community.html',
+      cookie: 'fuck=u; username=youjun; connect.sid=s%3AFgsuZDxO2tYfD4v6dTQaV0D5XyMP-I_j.MkBW0wjXLAZWb9xFuPGYdhJv9DgjHd7%2FR8nZqiclkBU',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/login',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+F:\ycsoft_koa_new\controler\home.js:85
+                info:"未知错误，请联系管理员!";
+                                   ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+server error ReferenceError: results is not defined
+    at login (F:\ycsoft_koa_new\controler\home.js:89:20)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async F:\ycsoft_koa_new\app.js:44:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5) {
+  request: {
+    method: 'POST',
+    url: '/login',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: 'application/json, text/plain, */*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json;charset=utf-8',
+      'content-length': '31',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      referer: 'http://localhost:8080/community/topics/WEB%E5%89%8D%E7%AB%AF',
+      cookie: 'fuck=u; username=youjun; connect.sid=s%3AFgsuZDxO2tYfD4v6dTQaV0D5XyMP-I_j.MkBW0wjXLAZWb9xFuPGYdhJv9DgjHd7%2FR8nZqiclkBU',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/login',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+Error: Cannot find module '../config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '../config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '../config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '../config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '../config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '../config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '../config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '../config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '../config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module '/utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module 'utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module 'utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module 'utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module 'utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module 'utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module 'utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module 'utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module 'utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module 'utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module 'utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+Error: Cannot find module 'utils/config/tokensecret'
+Require stack:
+- F:\ycsoft_koa_new\app.js
+- F:\ycsoft_koa_new\bin\www
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:51:29)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'F:\\ycsoft_koa_new\\app.js', 'F:\\ycsoft_koa_new\\bin\\www' ]
+}
+server error ReferenceError: token is not defined
+    at F:\ycsoft_koa_new\app.js:17:33
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getHotList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getHotList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error ReferenceError: token is not defined
+    at F:\ycsoft_koa_new\app.js:17:33
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getArticleList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken,content-type',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getArticleList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error ReferenceError: token is not defined
+    at F:\ycsoft_koa_new\app.js:17:33
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getTopicList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getTopicList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error ReferenceError: consle is not defined
+    at F:\ycsoft_koa_new\app.js:17:3
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getHotList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getHotList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error ReferenceError: consle is not defined
+    at F:\ycsoft_koa_new\app.js:17:3
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getArticleList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken,content-type',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getArticleList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error ReferenceError: consle is not defined
+    at F:\ycsoft_koa_new\app.js:17:3
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getTopicList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getTopicList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:26
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+} {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getHotList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getHotList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:26
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+} {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getTopicList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getTopicList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:26
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+} {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getArticleList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken,content-type',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getArticleList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:26
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+} {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getHotList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getHotList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:26
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+} {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getArticleList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken,content-type',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getArticleList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:26
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+} {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getTopicList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getTopicList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:26
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+} {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getHotList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getHotList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:26
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+} {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getArticleList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken,content-type',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getArticleList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:26
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+} {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getTopicList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getTopicList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:39
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+} {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getArticleList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken,content-type',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getArticleList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:39
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+} {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getHotList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getHotList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:39
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+} {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getTopicList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getTopicList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+server error TypeError: Cannot read property 'username' of undefined
+    at F:\ycsoft_koa_new\app.js:26:16
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:12)
+    at F:\ycsoft_koa_new\app.js:20:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getHotList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getHotList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+server error TypeError: Cannot read property 'username' of undefined
+    at F:\ycsoft_koa_new\app.js:26:16
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:12)
+    at F:\ycsoft_koa_new\app.js:20:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getArticleList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken,content-type',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getArticleList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+server error TypeError: Cannot read property 'username' of undefined
+    at F:\ycsoft_koa_new\app.js:26:16
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:12)
+    at F:\ycsoft_koa_new\app.js:20:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getTopicList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getTopicList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+server error TypeError: Cannot read property 'username' of undefined
+    at F:\ycsoft_koa_new\app.js:26:16
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:12)
+    at F:\ycsoft_koa_new\app.js:20:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getHotList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getHotList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+server error TypeError: Cannot read property 'username' of undefined
+    at F:\ycsoft_koa_new\app.js:26:16
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:12)
+    at F:\ycsoft_koa_new\app.js:20:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getArticleList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken,content-type',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getArticleList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+server error TypeError: Cannot read property 'username' of undefined
+    at F:\ycsoft_koa_new\app.js:26:16
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:12)
+    at F:\ycsoft_koa_new\app.js:20:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  request: {
+    method: 'OPTIONS',
+    url: '/community/getTopicList',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0',
+      accept: '*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'access-control-request-method': 'POST',
+      'access-control-request-headers': 'accesstoken',
+      referer: 'http://localhost:8080/community',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getTopicList',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+ReferenceError: info is not defined
+    at User.verifyUserPassword (F:\ycsoft_koa_new\utils\pages\user.js:127:27)
+    at F:\ycsoft_koa_new\app.js:28:17
+    at F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:94:10)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17)
+ReferenceError: info is not defined
+    at User.verifyUserPassword (F:\ycsoft_koa_new\utils\pages\user.js:127:27)
+    at F:\ycsoft_koa_new\app.js:28:17
+    at F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:94:10)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17)
+ReferenceError: info is not defined
+    at User.verifyUserPassword (F:\ycsoft_koa_new\utils\pages\user.js:127:27)
+    at F:\ycsoft_koa_new\app.js:28:17
+    at F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:94:10)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17)
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:18:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:18:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:18:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:19:7
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:20:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:21:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:21:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:21:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:21:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:21:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:21:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:21:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:21:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:21:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:21:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:21:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:21:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:21:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:21:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:21:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:22:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:22:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:53:17)
+    at F:\ycsoft_koa_new\app.js:22:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt must be provided'
+}
+JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:63:17)
+    at F:\ycsoft_koa_new\app.js:22:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt malformed'
+}
+JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:63:17)
+    at F:\ycsoft_koa_new\app.js:22:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt malformed'
+}
+JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:63:17)
+    at F:\ycsoft_koa_new\app.js:22:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt malformed'
+}
+JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:63:17)
+    at F:\ycsoft_koa_new\app.js:22:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt malformed'
+}
+JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:63:17)
+    at F:\ycsoft_koa_new\app.js:22:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt malformed'
+}
+JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (F:\ycsoft_koa_new\node_modules\jsonwebtoken\verify.js:63:17)
+    at F:\ycsoft_koa_new\app.js:22:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\node_modules\koa-compose\index.js:34:12
+    at Application.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:166:12)
+    at Server.handleRequest (F:\ycsoft_koa_new\node_modules\koa\lib\application.js:148:19)
+    at Server.emit (events.js:210:5)
+    at Server.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:745:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:115:17) {
+  name: 'JsonWebTokenError',
+  message: 'jwt malformed'
+}

@@ -94,7 +94,6 @@
                     }
                 }).then(msg => {
                     this.articleList = msg.data.data;
-                    console.log("articleList",msg);
                 }).catch(err => {
                     console.log(err);
                 })
@@ -106,7 +105,6 @@
                 var str = '';
 
                 var dif = newDate.getTime() - date.getTime();
-                console.log('dif',dif);
                 //计算出相差天数
                 var days=Math.floor(dif/(24*3600*1000));
 

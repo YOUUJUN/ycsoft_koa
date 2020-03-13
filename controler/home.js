@@ -7,6 +7,7 @@ const util = require("util");
 
 const page_guide = require("../utils/pages/guide");
 const page_community = require("../utils/pages/community");
+const page_user = require("../utils/pages/user");
 
 module.exports = {
     index : async (ctx,next) =>{
@@ -70,6 +71,27 @@ module.exports = {
 
     },
 
+
+    /*--user--*/
+
+    async login (ctx, next){
+
+        let body = ctx.request.body;
+
+        try {
+            let results = await page_user.login(body);
+
+            ctx.body = results;
+        }catch (err) {
+            ctx.body = {
+                info:"未知错误，请联系管理员!"
+            }
+        }
+
+    },
+
+
+
     /*--community--*/
     getHotList : async (ctx, next) =>{
 
@@ -91,6 +113,8 @@ module.exports = {
     },
 
     getArticleList : async (ctx, next) =>{
+
+        console.log("ctx========-----",ctx.state.loged);
 
         const msg = {
             status : 0,

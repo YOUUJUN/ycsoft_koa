@@ -47,7 +47,6 @@
 
         methods : {
             getHotTopic (){
-                console.log("--post");
                 this.$axios({
                     url : "/community/getHotList",
                     method : "POST"
@@ -60,7 +59,6 @@
         },
         created() {
             this.getHotTopic();
-            console.log("$cookie",this.$parent.getUserConfig());
         }
     }
 </script>

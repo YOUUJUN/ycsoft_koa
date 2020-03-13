@@ -24,6 +24,43 @@
                     <span class="line"></span>
                 </div>
 
+
+                <div class="user-logger">
+                    <ul class="user-box">
+                        <!--<li>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">发起
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="/editor">分享经验</a></li>
+                                    <li><a href="#">发起问题</a></li>
+                                    <li><a href="#">Bug反馈</a></li>
+                                    <li><a href="/editor/document">编写文档</a></li>
+                                </ul>
+                            </div>
+
+                        </li>-->
+
+                        <li>
+                            <dl v-if="ifLogin" class="select-board board-closed">
+                                <dd><a href="/personal/<%- msg.userData.userid %>">个人中心</a></dd>
+                                <dd><a onclick="users.logout();">退出登录</a></dd>
+                            </dl>
+                            <a v-else id="selectMenu" href="javascript:void(0);" v-on:click="login">
+                                <i class="fa fa-user-circle resize"></i>
+                                <span class="log-btn">登录/注册</span>
+
+                                <!--<img class="header-portrait" src="<%- msg.userData.portrait %>">
+                                <span class="log-btn"></span>-->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <logPanel ref="logPanel"></logPanel>
+
+
             </div>
         </div>
     </div>
@@ -31,8 +68,10 @@
 </template>
 
 <script>
+    const logPanel = () => import("./LogPanel.vue");
     export default {
         name: "navigation",
+        components : {logPanel},
         props : ["list"],
         data (){
             return {
@@ -67,6 +106,10 @@
                     hamburger.classList.remove("is-active");
                     navigation.classList.remove("show");
                 }
+            },
+
+            login : function () {
+                this.$refs.logPanel.openLogPanel();
             }
         },
         created : () =>{
@@ -254,6 +297,71 @@
         -o-transform: translateY(-13px) rotate(90deg);
         transform: translateY(-13px) rotate(90deg);
     }
+
+
+
+    /*-----------导航栏用户按钮---------*/
+
+    .user-logger{
+        position:absolute;
+        right: 0;
+        top: 16px;
+    }
+
+    .user-logger .user-box{
+        list-style: none;
+        margin:0;
+        padding:0;
+        vertical-align: middle;
+    }
+
+    .user-box a{
+        display: block;
+        text-decoration: none !important;
+        white-space: nowrap;
+    }
+
+    .user-logger .user-box > li{
+        display:inline-block;
+        list-style: none;
+        vertical-align: middle;
+        margin-right:8px;
+    }
+
+    .user-logger .resize{
+        font-size: 35px;
+        color: #fff;
+        margin-right: 8px;
+    }
+
+    .user-logger .log-btn{
+        font-size: 17px;
+        color:#fff;
+        vertical-align: super;
+    }
+
+    .user-logger .log-btn:hover{
+        text-decoration: none !important;
+    }
+
+    .title-username{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 70px;
+    }
+
+    .header-portrait{
+        display:inline-block;
+        width:35px;
+        height:35px;
+        border-radius: 50%;
+    }
+
+    .header-portrait + .log-btn{
+        vertical-align: baseline;
+    }
+
 
 
 </style>

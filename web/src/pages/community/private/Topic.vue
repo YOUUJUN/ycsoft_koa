@@ -51,7 +51,6 @@
                     method : "POST",
                     url : "/community/getTopicList"
                 }).then(value => {
-                    console.log("value",value);
                     this.topicList = value.data.data;
                 }).catch(err =>{
                     console.log(err);
