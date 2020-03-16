@@ -5,7 +5,7 @@
             <div class="area cols-12">
 
                 <div class="logo">
-                    <img id="logo" src="images/logo.png" style=""  />
+                    <img id="logo" src="/images/logo.png" style=""  />
 
                 </div>
 
@@ -27,32 +27,51 @@
 
                 <div class="user-logger">
                     <ul class="user-box">
-                        <!--<li>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">发起
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="/editor">分享经验</a></li>
-                                    <li><a href="#">发起问题</a></li>
-                                    <li><a href="#">Bug反馈</a></li>
-                                    <li><a href="/editor/document">编写文档</a></li>
-                                </ul>
-                            </div>
+                        <li v-if="logged">
+<!--                            <div class="btn-group">-->
+<!--                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">发起-->
+<!--                                    <span class="caret"></span>-->
+<!--                                </button>-->
+<!--                                <ul class="dropdown-menu" role="menu">-->
+<!--                                    <li><a href="/editor">分享经验</a></li>-->
+<!--                                    <li><a href="#">发起问题</a></li>-->
+<!--                                    <li><a href="#">Bug反馈</a></li>-->
+<!--                                    <li><a href="/editor/document">编写文档</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
 
-                        </li>-->
+<!--                            <img class="header-portrait" src="<%- msg.userData.portrait %>">-->
 
-                        <li>
-                            <dl v-if="ifLogin" class="select-board board-closed">
-                                <dd><a href="/personal/<%- msg.userData.userid %>">个人中心</a></dd>
-                                <dd><a onclick="users.logout();">退出登录</a></dd>
-                            </dl>
-                            <a v-else id="selectMenu" href="javascript:void(0);" v-on:click="login">
+<!--                            <dl class="select-board board-closed hide">-->
+<!--                                <dd><a href="/personal/<%- msg.userData.userid %>">个人中心</a></dd>-->
+<!--                                <dd><a onclick="users.logout();">退出登录</a></dd>-->
+<!--                            </dl>-->
+
+                            <el-dropdown trigger="click">
+                                <el-button type="primary" size="mini">
+                                    发起<i class="el-icon-arrow-down el-icon--right"></i>
+                                </el-button>
+                                <el-dropdown-menu slot="dropdown">
+                                    <el-dropdown-item>文章</el-dropdown-item>
+                                    <el-dropdown-item>文档</el-dropdown-item>
+                                </el-dropdown-menu>
+                            </el-dropdown>
+
+
+                            <el-dropdown trigger="click" v-on:click="logout">
+                                <img class="header-portrait" v-bind:src="userData.portrait">
+                                <el-dropdown-menu slot="dropdown">
+                                    <el-dropdown-item>个人资料</el-dropdown-item>
+                                    <el-dropdown-item v-on:click.native="logout">退出登录</el-dropdown-item>
+                                </el-dropdown-menu>
+                            </el-dropdown>
+
+                        </li>
+
+                        <li v-else >
+                            <a id="selectMenu" href="javascript:void(0);" v-on:click="login">
                                 <i class="fa fa-user-circle resize"></i>
                                 <span class="log-btn">登录/注册</span>
-
-                                <!--<img class="header-portrait" src="<%- msg.userData.portrait %>">
-                                <span class="log-btn"></span>-->
                             </a>
                         </li>
                     </ul>
@@ -75,7 +94,7 @@
         props : ["list"],
         data (){
             return {
-
+                userData : {}
             }
         },
         methods : {
@@ -110,10 +129,26 @@
 
             login : function () {
                 this.$refs.logPanel.openLogPanel();
+            },
+
+            logout : function () {
+                let vm = this;
+                console.log("hello?");
+                vm.$store.commit("changeLogStatus",false);
+                localStorage.setItem("marscript","");
+                location.reload();
+            }
+
+        },
+
+        computed:{
+            logged (){
+                return this.$store.state.logged;
             }
         },
-        created : () =>{
-            console.log("hello");
+
+        updated (){
+            // this.userData = this.$store.commit("getUserInfo");
         }
     }
 </script>
@@ -321,10 +356,11 @@
         white-space: nowrap;
     }
 
-    .user-logger .user-box > li{
-        display:inline-block;
+    .user-box > li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         list-style: none;
-        vertical-align: middle;
         margin-right:8px;
     }
 
@@ -356,6 +392,7 @@
         width:35px;
         height:35px;
         border-radius: 50%;
+        margin-left:8px;
     }
 
     .header-portrait + .log-btn{

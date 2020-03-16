@@ -52,7 +52,6 @@ class User{
             let userId = results[0].user_id;
             let realPass = results[0].password;
 
-            console.log(realPass);
             if(info.password == realPass){
 
                 msg = {
@@ -70,6 +69,10 @@ class User{
                 let token = this.createUserToken(obj);
                 msg.token = token;
 
+                let info = await this.getUserInfo(obj);
+
+                msg.userData  = info;
+
             }else{
                 msg = {
                     info : "用户名或密码错误！",
@@ -82,9 +85,42 @@ class User{
 
     }
 
-    getUserPass (){
+    async getUserInfo (info){
+
+        let userInfoSql = "SELECT * FROM user_info WHERE user_id = ?";
+        let userInfoParam = [info.userId];
+        let result1 = await query(userInfoSql,userInfoParam);
+        console.log("result1",result1);
+
+        /*--读取用户文章数--*/
+        let getArticleCountSql = "SELECT COUNT(*) AS nums FROM article WHERE post_author =?";
+        let getArticleCountParam = [info.username];
+        let result2 = await query(getArticleCountSql,getArticleCountParam);
+
+        /*--读取用户所关注人数--*/
+        let getConcernNumSql = "SELECT COUNT(*) AS nums FROM user_follow WHERE user_name = ?";
+        let getConcernNumParam = [info.username];
+        let result3 = await query(getConcernNumSql,getConcernNumParam);
+
+        /*--读取用户被关注人数--*/
+        let getBeWatchedNumSql = "SELECT COUNT(*) AS nums,users.user_name FROM user_follow LEFT JOIN users ON user_follow.author_id = users.user_id WHERE users.user_name = ?";
+        let getBeWatchedNumParam = [info.username];
+        let result4 = await query(getBeWatchedNumSql,getBeWatchedNumParam);
 
 
+        let fixHead = "/personal/";
+
+        let userData = {
+            nickname : info.nickname,
+            url : fixHead.concat(info.userId),
+            portrait : result1[0].portrait,
+            introduction : result1[0].introduction,
+            articleCount : result2[0].nums,
+            concernNum : result3[0].nums,
+            beWatchedNum : result4[0].nums
+        };
+
+        return userData;
 
     }
 
@@ -92,12 +128,9 @@ class User{
 
         let fixedPassword = this.encryptPassword(info.password);
 
-        let userInfo = {
-            username : info.username,
-            nickname : info.nickname,
-            password : fixedPassword,
-            userid : info.userId
-        }
+        info.password = fixedPassword;
+
+        let userInfo = info;
 
         let token = jwt.sign(userInfo, TOKENSECRET, {
             expiresIn : "48h",
@@ -107,8 +140,28 @@ class User{
         return token;
     }
 
-    verifyUserToken(token){
-        jwt.verify(token,TOKENSECRET);
+    async verifyUserToken(token){
+        let _this = this;
+        let decodedValue = "";
+        jwt.verify(token,TOKENSECRET,function (err, decoded) {
+            if(err){
+                console.log("别问，问就验证没通过");
+                return false;
+            }else{
+                decodedValue = decoded;
+            }
+        })
+
+        if(decodedValue && decodedValue.username && decodedValue.password){
+            let result = await _this.verifyUserPassword(decodedValue.username,decodedValue.password);
+
+            if(result){
+                console.log("decodedValue----====>",decodedValue);
+                return decodedValue;
+            }
+        }
+
+        return false;
     }
 
     encryptPassword (password){
@@ -119,7 +172,6 @@ class User{
 
         md5.update(password+salt);
         return md5.digest('hex');
-        console.log(md5.digest('hex'));
     }
 
     async verifyUserPassword (username, pass){

@@ -4,6 +4,7 @@ const fsPromises = require('fs').promises;
 
 const util = require("util");
 // const execFile = util.promisify(require("child_process").execFile);
+const Path = require("path");
 
 const page_guide = require("../utils/pages/guide");
 const page_community = require("../utils/pages/community");
@@ -39,6 +40,22 @@ module.exports = {
     community : async (ctx,next) =>{
         ctx.url = '/community.html';
         await next();
+    },
+
+    poster : async(ctx,next) =>{
+        let postId = Path.basename(ctx.url);
+
+        let results = await page_community.getArticleInfo(postId);
+        console.log("results",results);
+        if(JSON.stringify(results) == "{}"){
+
+            ctx.url = '/error.html'
+
+            await next();
+        }else {
+            ctx.url = '/article.html';
+            await next();
+        }
     },
 
 
@@ -83,6 +100,7 @@ module.exports = {
 
             ctx.body = results;
         }catch (err) {
+            console.error(err);
             ctx.body = {
                 info:"未知错误，请联系管理员!"
             }
@@ -90,6 +108,27 @@ module.exports = {
 
     },
 
+    async verifyToken (ctx, next) {
+        const msg = {
+            status: 0,
+            logged: false
+        }
+
+        let token = ctx.request.header.accesstoken || "";
+        try {
+            let result = await page_user.verifyUserToken(token);
+            console.log("result--------------",result);
+            msg.status = 1;
+            msg.logged = result;
+        }catch (e) {
+            console.error(e);
+            msg.status = 0;
+            msg.logged = false;
+        }
+
+        ctx.body = msg;
+    }
+    ,
 
 
     /*--community--*/
@@ -114,8 +153,6 @@ module.exports = {
 
     getArticleList : async (ctx, next) =>{
 
-        console.log("ctx========-----",ctx.state.loged);
-
         const msg = {
             status : 0,
             data : "",
@@ -132,6 +169,7 @@ module.exports = {
 
         userConfig.searchIndex = searchIndex;
         userConfig.searchTopic = searchTopic;
+        userConfig.logged = ctx.state.logged;
 
         try {
             let results = await page_community.getArticleList(userConfig);
@@ -141,12 +179,12 @@ module.exports = {
                 msg.status = 2;
             }else{
 
-                var arr = '/community/post/';
-                var arr2 = '/personal/';
+                let arr = '/community/post/';
+                let arr2 = '/personal/';
 
-                var newResults = [];
+                let newResults = [];
 
-                for (var i = 0; i < results.length; i++) {
+                for (let i = 0; i < results.length; i++) {
                     newResults[i] = {
                         id : results[i].post_id,
                         userUrl : arr2.concat(results[i].user_id),
@@ -156,7 +194,8 @@ module.exports = {
                         title: results[i].post_title,
                         topic: results[i].topic_name,
                         likeNum : results[i].nums,
-                        replyNum: results[i].replyNum
+                        replyNum: results[i].replyNum,
+                        ifSubscribed : results[i].ifSubscribed
                     }
                 }
 
@@ -186,6 +225,57 @@ module.exports = {
         }
 
         ctx.body = msg;
+    },
+
+
+
+    /*---community-article---*/
+
+    getArticleInfo : async (ctx,next) =>{
+
+        const msg = {
+            status : 0,
+            data : ""
+        }
+
+        let body = ctx.request.body;
+        let postId = body.postId;
+
+        try {
+            let results = await page_community.getArticleInfo(postId);
+
+            msg.status = 1;
+            msg.data = results;
+
+        }catch (e) {
+            console.error("get article info failed",e)
+        }
+
+        ctx.body = msg;
+    },
+
+    getAuthorInfo : async (ctx,next) =>{
+
+        const msg = {
+            status : 0,
+            data : ""
+        }
+
+        let body = ctx.request.body;
+        let postId = body.postId;
+
+        try {
+            let results = await page_community.getAuthorInfo(postId);
+
+            msg.status = 1;
+            msg.data = results;
+
+        }catch (e) {
+            console.error("get Author info failed",e)
+        }
+
+        ctx.body = msg;
+
     }
 
 };

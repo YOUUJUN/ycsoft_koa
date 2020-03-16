@@ -21,8 +21,8 @@ let myDIYAxios = function(options){
         if (marscript) {
             config.headers.accessToken = marscript;
             // config.headers['accessToken'] = Token;
-            return config;
         }
+        return config;
     }, function (error) {
         return Promise.reject(error);
     });

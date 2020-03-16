@@ -1,13 +1,10 @@
 import Vue from 'vue'
-import Home from './Community.vue'
+import Home from './Article.vue'
 import store from '../../store/index'
 import lib from '../../utils/lib'
-import VueCookies from 'vue-cookies'
 import ElementUI from 'element-ui'
 // import {Dropdown,DropdownMenu,DropdownItem,Button} from "element-ui"
 import "element-ui/lib/theme-chalk/index.css"
-
-Vue.use(VueCookies);
 
 /*---element-ui---*/
 Vue.use(ElementUI);
@@ -17,6 +14,8 @@ Vue.use(ElementUI);
 // Vue.use(DropdownItem);
 // Vue.use(Button);
 
+let bus = new Vue;
+Vue.prototype.$bus = bus;
 
 Vue.config.productionTip = false;
 

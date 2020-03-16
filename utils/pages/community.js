@@ -7,8 +7,8 @@ const community = {
         let topicCountParam = [4,0];
 
         const results = await query(topicCountSql,topicCountParam);
-        var msg = [];
-        var arr = "/community/topics/";
+        let msg = [];
+        let arr = "/community/topics/";
 
         for(let item of results){
             let obj = {
@@ -49,6 +49,19 @@ const community = {
             listResults[i].replyNum = parseInt(firstLevelNum[i]) + parseInt(secondLevelNum[i]);
         }
 
+        if(userConfig.logged){
+            let subscribeResults = await community.getUserIfSubscribed(userConfig);
+
+            console.log("listResults ===>",listResults);
+            listResults.forEach(function (item,index) {
+                if(subscribeResults.includes(item.post_id)){
+                    listResults[index].ifSubscribed = true;
+                }else{
+                    listResults[index].ifSubscribed = false;
+                }
+            })
+        }
+
         return listResults;
 
     },
@@ -59,8 +72,8 @@ const community = {
         let start = (userConfig.searchIndex - 1) * 7;
         let getListParam = [7, start];
         let results = await query(getListSql, getListParam);
-        var replyNums = [];
-        for (var i = 0; i < results.length; i++) {
+        let replyNums = [];
+        for (let i = 0; i < results.length; i++) {
             replyNums.push(results[i].nums);
         }
 
@@ -72,8 +85,8 @@ const community = {
         let start = (userConfig.searchIndex - 1) * 7;
         let getListParam = [7, start];
         let results = await query(getListSql, getListParam);
-        var replyNums = [];
-        for (var i = 0; i < results.length; i++) {
+        let replyNums = [];
+        for (let i = 0; i < results.length; i++) {
             replyNums.push(results[i].nums);
         }
 
@@ -82,6 +95,19 @@ const community = {
 
 
     getUserIfSubscribed : async (userConfig) =>{
+        let sql = "SELECT post_id FROM article AS b WHERE b.post_id IN (SELECT a.post_id FROM user_like AS a WHERE user_name = ?)";
+        let param = [userConfig.logged.username];
+        let results = await query(sql,param);
+
+        let arr = [];
+
+        for(let i=0;i<results.length;i++){
+            arr[i] = results[i].post_id;
+        }
+
+        console.log("arr === >",arr);
+
+        return arr;
 
     },
 
@@ -104,10 +130,10 @@ const community = {
 
         let results = await query(getArticleNumSql, getArticleNumParam);
 
-        var arr = '/community/topics/';
-        var msg = [];
+        let arr = '/community/topics/';
+        let msg = [];
 
-        for(var i = 0;i<results.length;i++){
+        for(let i = 0;i<results.length;i++){
             msg[i] = {
                 url : arr.concat(results[i].topic_name),
                 topicName : results[i].topic_name,
@@ -118,7 +144,77 @@ const community = {
 
         return msg;
 
-    }
+    },
+
+
+
+    /*---community-article---*/
+
+
+    async getArticleInfo (postId){
+
+        let getArticleSql = "SELECT article.*,users.nickname,users.user_id,user_info.portrait,user_info.introduction FROM article RIGHT JOIN users ON article.post_author = users.user_name LEFT JOIN user_info ON users.user_id = user_info.user_id WHERE article.post_id = ?";
+        let getArticleParam = [postId];
+
+        let msg = {}
+        let fixHead = "/personal/";
+        let results = await query(getArticleSql,getArticleParam);
+
+        let articleView = await community.getArticleViews(postId);
+
+        if(results.length == 0){
+            return msg;
+        }
+
+        msg = {
+            url : fixHead.concat(results[0].user_id),
+            authorName : results[0].post_author,
+            author : results[0].nickname,
+            authorPortrait : results[0].portrait,
+            authorIntroduction : results[0].introduction,
+            date : results[0].post_date,
+            title : results[0].post_title,
+            content : results[0].post_content,
+            articleView : articleView
+        };
+
+        /*---读取该文章作者浏览量总数---*/
+        let getUserViewsSql = "SELECT SUM(article_views) AS nums FROM article_watchs WHERE post_author = ?";
+        let getUserViewsParam = [msg.authorName];
+
+        results = await query(getUserViewsSql,getUserViewsParam);
+        msg.userView = results[0].nums;
+
+        /*---读取该文章作者被点赞总数---*/
+        let getUserLikeSql = "SELECT COUNT(*) AS nums,article.post_author FROM user_like LEFT JOIN article ON user_like.post_id = article.post_id WHERE article.post_author = ?";
+        let getUserLikeParam = [msg.authorName];
+
+        results = await query(getUserLikeSql,getUserLikeParam);
+        msg.userLike = results[0].nums;
+
+        msg.articleView = await community.getArticleViews(postId);
+
+        /*---读取该文章作者被关注的总数---*/
+        let getBeWatchedNumSql = "SELECT COUNT(*) AS nums,users.user_name FROM user_follow LEFT JOIN users ON user_follow.author_id = users.user_id WHERE users.user_name = ?";
+        let getBeWatchedNumParam = [msg.authorName];
+
+        results = await query(getBeWatchedNumSql,getBeWatchedNumParam);
+
+        msg.beWatchedNum = results[0].nums;
+
+        return msg;
+
+    },
+
+    async getArticleViews (postId){
+        let getArticleViewsSql = "SELECT article_views FROM article_watchs WHERE post_id = ?";
+        let getArticleViewsParam = [postId];
+
+        let results = await query(getArticleViewsSql,getArticleViewsParam);
+
+        return results[0].article_views;
+    },
+
 
 }
 

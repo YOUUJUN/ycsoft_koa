@@ -13,9 +13,8 @@
 
                 <div class="area cols-9">
 
-                    <hot-topic></hot-topic>
-
                     <panel></panel>
+
 
                 </div>
 
@@ -43,13 +42,13 @@
 <script>
     const navigation = () => import("../../components/Navigation.vue");
 
-    const hotTopic = () => import("./private/Hot.vue");
-    const panel = () => import("./private/Panel.vue");
-    const topics = () => import("./private/Topic.vue");
-    const userPanel = () => import("./private/User.vue");
+    const topics = () => import("../community/private/Topic.vue");
+    const panel  = () => import("./private/Panel.vue");
+    const userPanel  = () => import("./private/User.vue");
+
 
     export default {
-        components:{navigation,hotTopic,panel,topics,userPanel},
+        components:{navigation,panel,topics,userPanel},
         data (){
             return {
                 navigationList : [
@@ -76,7 +75,8 @@
                         target : "_blank"
                     }
                 ],
-                barList : []
+                barList : [],
+                author : ""
             }
         },
 
@@ -107,12 +107,12 @@
                 }).catch(err => {
                     console.log(err);
                 })
-            }
+            },
+
         },
 
         created() {
             this.getUserLogStatus();
-            let marscript = window.localStorage.getItem("marscript2");
         }
     };
 </script>
@@ -120,6 +120,8 @@
 
     @import "../../assets/css/youjun_base.css";
     @import "~font-awesome\css\font-awesome.min.css";
+
+    @import "/lib/editor.md/css/editormd.css";
 
 
 

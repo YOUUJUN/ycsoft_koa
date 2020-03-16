@@ -28,11 +28,8 @@
                                     <div class="info-row">
                                         <ul class="action-list">
                                             <li>
-                                                <object><a class="btn diy-btn" href="javascript:void(0)"
-                                                           onclick="doAsk(addLike,'180f2930-46c1-11e9-b5a4-db5a96966b9e')"
-                                                           data-v="180f2930-46c1-11e9-b5a4-db5a96966b9e"><i
-                                                        class="fa fa-heart"></i><span
-                                                        data-v="180f2930-46c1-11e9-b5a4-db5a96966b9e">0</span></a>
+                                                <object><a class="btn diy-btn" v-bind:class="{active: item.ifSubscribed}" href="javascript:void(0)"
+                                                           onclick="doAsk(addLike,'180f2930-46c1-11e9-b5a4-db5a96966b9e')"><i class="fa fa-heart"></i><span>{{item.likeNum}}</span></a>
                                                 </object>
                                             </li>
                                             <li>
@@ -93,6 +90,7 @@
                         topic : topicValue
                     }
                 }).then(msg => {
+                    console.log("msg ==== >",msg);
                     this.articleList = msg.data.data;
                 }).catch(err => {
                     console.log(err);
@@ -133,6 +131,11 @@
             }
 
         },
+
+        computed:{
+
+        },
+
         created() {
 
             this.getArticleList();
