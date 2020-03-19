@@ -118,8 +118,13 @@ module.exports = {
         try {
             let result = await page_user.verifyUserToken(token);
             console.log("result--------------",result);
+
+            if(result){
+                msg.logged = true;
+            }else{
+                msg.logged = false;
+            }
             msg.status = 1;
-            msg.logged = result;
         }catch (e) {
             console.error(e);
             msg.status = 0;
@@ -276,6 +281,28 @@ module.exports = {
 
         ctx.body = msg;
 
+    },
+
+    async getComment (ctx,next){
+        const msg = {
+            status : 0,
+            data : ""
+        }
+
+        let body = ctx.request.body;
+        let postId = body.postId;
+
+        try {
+            let results = await page_community.getComment(postId);
+
+            msg.status = 1;
+            msg.data = results;
+
+        }catch (e) {
+            console.error("get Author info failed",e)
+        }
+
+        ctx.body = msg;
     }
 
 };

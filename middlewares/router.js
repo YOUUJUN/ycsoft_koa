@@ -20,6 +20,7 @@ module.exports = (app) => {
     router.post('/community/getTopicList',homeController.getTopicList);
     router.post('/community/getArticleInfo',homeController.getArticleInfo);
     router.post('/community/getAuthorInfo',homeController.getAuthorInfo);
+    router.post('/community/getComment',homeController.getComment);
 
 
     router.post('/login',homeController.login);

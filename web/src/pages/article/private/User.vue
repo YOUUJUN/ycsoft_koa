@@ -66,6 +66,27 @@
 
 <style scoped>
 
+
+    .topic-name{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:10px;
+        border-bottom:1px solid #ddd;
+    }
+
+    .topic-name span{
+        font-size: 18px;
+        color:rgba(0,0,0,0.8);
+        font-weight: 600;
+    }
+
+    .topic-name .topic-href{
+        font-size: 15px;
+        align-self: end;
+        color: rgba(0,0,0,0.7);
+    }
+
     /*--------------右侧展示栏------------*/
 
     .profile-container{

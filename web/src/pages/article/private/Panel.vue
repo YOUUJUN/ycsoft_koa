@@ -1,6 +1,6 @@
 <template>
 
-    <div class="article-container">
+    <div>
 
         <div class="nick-title">
 
@@ -127,11 +127,6 @@
 
 
     /*----------文章容器---------*/
-
-    .article-container{
-        background-color: #fff;
-        box-shadow: 0 2px 6px 0 rgba(0,0,0,.15);
-    }
 
     .nick-title{
         padding:20px;

@@ -70536,3 +70536,3176 @@ b b14785420de44a86c4c18dfa16d98675
 ---------------------连接池连接数:------------------- 0
 a b14785420de44a86c4c18dfa16d98675
 b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- GET /lib/editor.md/css/editormd.css
+  <-- GET /css/chunk-0e01c129.css
+GET /css/chunk-0e01c129.css - 0ms
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1584320579,
+  exp: 1584493379,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1584320579,
+  exp: 1584493379,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 111ms 216b
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1584320579,
+  exp: 1584493379,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1584320579,
+  exp: 1584493379,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 24ms 463b
+  --> POST /community/getArticleInfo 200 48ms 411b
+  <-- GET /css/chunk-1229a7ab.css
+GET /css/chunk-1229a7ab.css - 0ms
+  --> GET /css/chunk-1229a7ab.css 404 5ms -
+  <-- GET /css/chunk-1d50d4fe.css
+  <-- GET /css/chunk-36edef46.css
+  <-- GET /css/chunk-38b6d17b.css
+  <-- GET /css/chunk-7df485a2.css
+  <-- GET /js/chunk-1229a7ab.js
+GET /css/chunk-36edef46.css - 0ms
+  --> GET /css/chunk-36edef46.css 404 16ms -
+  --> GET /css/chunk-38b6d17b.css 200 22ms 62b
+  --> GET /css/chunk-1d50d4fe.css 200 27ms 1.62kb
+GET /js/chunk-1229a7ab.js - 0ms
+  --> GET /js/chunk-1229a7ab.js 404 14ms -
+GET /css/chunk-7df485a2.css - 0ms
+  --> GET /css/chunk-7df485a2.css 404 18ms -
+别问，问就验证没通过
+  <-- GET /community/post/images/portrait.jpg
+  <-- GET /fonts/element-icons.woff
+GET /community/post/images/portrait.jpg - 0ms
+  --> GET /community/post/images/portrait.jpg 404 5ms -
+  <-- GET /lib/editor.md/jquery.min.js
+  --> GET /fonts/element-icons.woff 200 37ms 27.54kb
+  --> GET /lib/editor.md/jquery.min.js 200 26ms 29.92kb
+  <-- GET /users/53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1/portraits/0.07900732227868934.jpg
+  <-- GET /js/chunk-1d50d4fe.js
+  <-- GET /js/chunk-38b6d17b.js
+  --> GET /js/chunk-1d50d4fe.js 200 6ms 1.79kb
+  <-- GET /js/chunk-36edef46.js
+  <-- GET /js/chunk-7df485a2.js
+GET /js/chunk-36edef46.js - 0ms
+  --> GET /js/chunk-36edef46.js 404 4ms -
+GET /js/chunk-7df485a2.js - 0ms
+  --> GET /js/chunk-7df485a2.js 404 5ms -
+  --> GET /js/chunk-38b6d17b.js 200 44ms 7.32kb
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 9ms 5.46kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 6ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 24ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 3ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 16ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 4ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 12ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 3ms 15.95kb
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 201b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 11ms 411b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 3ms 431b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 6ms 201b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 441b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 12ms 411b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 94ms 201b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getTopicList 200 79ms 445b
+  --> POST /community/getArticleInfo 200 99ms 411b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 4ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 229ms 201b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 451b
+  --> POST /community/getArticleInfo 200 29ms 411b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 7ms 201b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 16ms 411b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 451b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 11ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 128ms 201b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 25ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 451b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 74ms 201b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+  --> POST /community/getArticleInfo 200 21ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 451b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 10ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 144ms 201b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+  --> POST /community/getArticleInfo 200 20ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 451b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 15ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 192ms 201b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+  --> POST /community/getArticleInfo 200 40ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 451b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 10ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 316ms 201b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 451b
+  --> POST /community/getArticleInfo 200 23ms 411b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 67ms 201b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 9ms 451b
+  --> POST /community/getArticleInfo 200 39ms 411b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 10ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 95ms 201b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 451b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 22ms 411b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 77ms 201b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getArticleInfo 200 22ms 411b
+  --> POST /community/getTopicList 200 7ms 451b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 172ms 201b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 445b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 15ms 411b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /
+OPTIONS / - 0ms
+  --> OPTIONS / 200 29ms 0b
+  <-- POST /
+POST / - 0ms
+  --> POST / 405 3ms -
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 77ms 201b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+  <-- OPTIONS /
+OPTIONS / - 0ms
+  --> OPTIONS / 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 16ms 411b
+  <-- POST /
+POST / - 0ms
+  --> POST / 405 1ms -
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 451b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 11ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 98ms 201b
+  <-- OPTIONS /
+OPTIONS / - 0ms
+  --> OPTIONS / 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 2ms 0b
+  <-- POST /
+POST / - 0ms
+  --> POST / 405 1ms -
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 19ms 411b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 451b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 15ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 93ms 201b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 17ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 451b
+  <-- OPTIONS /
+OPTIONS / - 0ms
+  --> OPTIONS / 200 1ms 0b
+  <-- POST /
+POST / - 0ms
+  --> POST / 405 1ms -
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /
+OPTIONS / - 0ms
+  --> OPTIONS / 200 16ms 0b
+  <-- POST /
+POST / - 0ms
+  --> POST / 405 2ms -
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /
+OPTIONS / - 0ms
+  --> OPTIONS / 200 12ms 0b
+  <-- POST /
+POST / - 0ms
+  --> POST / 405 3ms -
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 175ms 201b
+  <-- OPTIONS /
+OPTIONS / - 0ms
+  --> OPTIONS / 200 3ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 4ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 3ms 0b
+  <-- POST /
+POST / - 0ms
+  --> POST / 405 2ms -
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 37ms 451b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 21ms 411b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 14ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  xxx POST /community/getComment 500 2ms -
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 16ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  xxx POST /community/getComment 500 2ms -
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 15ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 141ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  xxx POST /community/getComment 500 2ms -
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 451b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 16ms 411b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 14ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 130ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 25ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  xxx POST /community/getComment 500 2ms -
+  --> POST /community/getTopicList 200 15ms 451b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 14ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 120ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 14ms 22b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 14ms 451b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 31ms 411b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 14ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 82ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 25ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getTopicList 200 6ms 451b
+  --> POST /community/getComment 200 5ms 22b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 86ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 23ms 411b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+  --> POST /community/getTopicList 200 12ms 451b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+results===>2 []
+  --> POST /community/getComment 200 8ms 22b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 14ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 83ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 27ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+postid undefined
+results===>2 []
+  --> POST /community/getComment 200 9ms 22b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 431b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 15ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+results===>2 []
+  --> POST /community/getComment 200 9ms 22b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 4ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 6ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 5ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 32ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+results===>2 []
+  --> POST /community/getComment 200 10ms 22b
+  --> POST /community/getTopicList 200 9ms 431b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 15ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 131ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 1ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+results===>2 []
+  --> POST /community/getComment 200 8ms 22b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 31ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 431b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 85ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 5ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 19ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+results===>2 []
+  --> POST /community/getComment 200 9ms 22b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 431b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 88ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 5ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+  --> POST /community/getArticleInfo 200 20ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+results===>2 []
+  --> POST /community/getComment 200 8ms 22b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 431b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 5ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 431b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 17ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+results===>2 []
+  --> POST /community/getComment 200 8ms 22b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 14ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 70ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 3ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 1ms
+  --> OPTIONS /community/getComment 200 4ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 21ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 6ms 431b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+results===>2 [
+  RowDataPacket {
+    id: 7,
+    comment_id: '4002cc90-3c10-11ea-bc92-c9f421a8f221',
+    post_id: '180f2930-46c1-11e9-b5a4-db5a96966b9e',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    object_id: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+    message: '12',
+    add_time: 2020-01-21T05:38:27.000Z,
+    nums: 0,
+    nickname: '柯涵',
+    portrait: '/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'A',
+    blog_url: ''
+  }
+]
+  --> POST /community/getComment 200 12ms 376b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 14ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 137ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 2ms 0b
+  --> POST /community/getArticleInfo 200 37ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 445b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+results===>2 [
+  RowDataPacket {
+    id: 7,
+    comment_id: '4002cc90-3c10-11ea-bc92-c9f421a8f221',
+    post_id: '180f2930-46c1-11e9-b5a4-db5a96966b9e',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    object_id: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+    message: '12',
+    add_time: 2020-01-21T05:38:27.000Z,
+    nums: 0,
+    nickname: '柯涵',
+    portrait: '/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'A',
+    blog_url: ''
+  }
+]
+  --> POST /community/getComment 200 7ms 376b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 15ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 5ms 376b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 106ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 9ms 376b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 20ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 9ms 445b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 76ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+  --> POST /community/getArticleInfo 200 27ms 411b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 445b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 9ms 376b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 11ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 75ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+  --> POST /community/getArticleInfo 200 27ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 445b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 8ms 376b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 15ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 14ms 376b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 67ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 13ms 376b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 14ms 445b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 19ms 411b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 74ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 8ms 445b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+  --> POST /community/getComment 200 10ms 376b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 17ms 411b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 14ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 13ms 376b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 12ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 8ms 376b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 10ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 5ms 376b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 23ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 445b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 89ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 6ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 5ms 376b
+  --> POST /community/getArticleInfo 200 33ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 445b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 11ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 7ms 376b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 13ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 7ms 376b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 10ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 84ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 3ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+  --> POST /community/getArticleInfo 200 43ms 411b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 16ms 439b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+  --> POST /community/getArticleInfo 200 14ms 411b
+别问，问就验证没通过
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 14ms 376b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584339136,
+  exp: 1584511936,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 439b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675

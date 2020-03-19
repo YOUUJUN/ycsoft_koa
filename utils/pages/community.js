@@ -216,6 +216,33 @@ const community = {
     },
 
 
+    async getComment(postId){
+        let getCommentSql = "SELECT article_comment.*,COUNT(article_recomment.id) AS nums,users.nickname,user_info.* FROM article_comment LEFT JOIN users ON article_comment.user_id = users.user_id LEFT JOIN user_info ON user_info.user_id = article_comment.user_id LEFT JOIN article_recomment ON article_comment.comment_id = article_recomment.comment_id WHERE article_comment.post_id = ? GROUP BY article_comment.add_time DESC LIMIT ?";
+        let getCommentParam = [postId,4];
+
+        let results = await query(getCommentSql, getCommentParam);
+
+        let msg = [];
+        let fixHead = "/personal/";
+        for(let i =0;i<results.length;i++){
+            let obj = {
+                commentid : results[i].comment_id,
+                userid : results[i].user_id,
+                nickname : results[i].nickname,
+                url : fixHead.concat(results[i].user_id),
+                portrait : results[i].portrait,
+                introduction : results[i].introduction,
+                addtime : results[i].add_time,
+                message : results[i].message,
+                reCommentNum : results[i].nums
+            }
+            msg.push(obj);
+        }
+
+        return msg;
+    }
+
+
 }
 
 

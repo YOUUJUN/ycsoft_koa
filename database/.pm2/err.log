@@ -31218,3 +31218,211 @@ SyntaxError: Invalid or unexpected token
     at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
     at require (internal/modules/cjs/helpers.js:74:18)
     at Object.<anonymous> (F:\ycsoft_koa_new\app.js:9:16)
+server error ReferenceError: ctx is not defined
+    at getComment (F:\ycsoft_koa_new\controler\home.js:287:20)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\app.js:43:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:13)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at filter (F:\ycsoft_koa_new\node_modules\koa-json\index.js:25:12)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+  request: {
+    method: 'POST',
+    url: '/community/getComment',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:74.0) Gecko/20100101 Firefox/74.0',
+      accept: 'application/json, text/plain, */*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json;charset=utf-8',
+      accesstoken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsInBhc3N3b3JkIjoiMzM5OWNmMDVkMzdiODk2NTBlMWMwNDBlMzFiZDY5YTEiLCJpYXQiOjE1ODQzMzkxMzYsImV4cCI6MTU4NDUxMTkzNiwiaXNzIjoiWU9VSlVOIn0.CDOaxV3yyo94lDoNzYJRqkSscXQ4DQrM9xFBFONOTHQ',
+      'content-length': '2',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      referer: 'http://localhost:8080/article/post/180f2930-46c1-11e9-b5a4-db5a96966b9e',
+      cookie: 'fuck=u; username=youjun; connect.sid=s%3ATpOIOGeUkkpw_HRrrPjIBxU6uIWi6sAd.T%2BD1l9%2FcBX6lUi72hMrEIfPw4peka4Ng%2Bki4x7kWzBY',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getComment',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error ReferenceError: ctx is not defined
+    at getComment (F:\ycsoft_koa_new\controler\home.js:294:20)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\app.js:43:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:13)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at filter (F:\ycsoft_koa_new\node_modules\koa-json\index.js:25:12)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+  request: {
+    method: 'POST',
+    url: '/community/getComment',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:74.0) Gecko/20100101 Firefox/74.0',
+      accept: 'application/json, text/plain, */*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json;charset=utf-8',
+      accesstoken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsInBhc3N3b3JkIjoiMzM5OWNmMDVkMzdiODk2NTBlMWMwNDBlMzFiZDY5YTEiLCJpYXQiOjE1ODQzMzkxMzYsImV4cCI6MTU4NDUxMTkzNiwiaXNzIjoiWU9VSlVOIn0.CDOaxV3yyo94lDoNzYJRqkSscXQ4DQrM9xFBFONOTHQ',
+      'content-length': '2',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      referer: 'http://localhost:8080/article/post/180f2930-46c1-11e9-b5a4-db5a96966b9e',
+      cookie: 'fuck=u; username=youjun; connect.sid=s%3ATpOIOGeUkkpw_HRrrPjIBxU6uIWi6sAd.T%2BD1l9%2FcBX6lUi72hMrEIfPw4peka4Ng%2Bki4x7kWzBY',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getComment',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error ReferenceError: ctx is not defined
+    at getComment (F:\ycsoft_koa_new\controler\home.js:292:20)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\app.js:43:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:13)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at filter (F:\ycsoft_koa_new\node_modules\koa-json\index.js:25:12)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+  request: {
+    method: 'POST',
+    url: '/community/getComment',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:74.0) Gecko/20100101 Firefox/74.0',
+      accept: 'application/json, text/plain, */*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json;charset=utf-8',
+      accesstoken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsInBhc3N3b3JkIjoiMzM5OWNmMDVkMzdiODk2NTBlMWMwNDBlMzFiZDY5YTEiLCJpYXQiOjE1ODQzMzkxMzYsImV4cCI6MTU4NDUxMTkzNiwiaXNzIjoiWU9VSlVOIn0.CDOaxV3yyo94lDoNzYJRqkSscXQ4DQrM9xFBFONOTHQ',
+      'content-length': '2',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      referer: 'http://localhost:8080/article/post/180f2930-46c1-11e9-b5a4-db5a96966b9e',
+      cookie: 'fuck=u; username=youjun; connect.sid=s%3ATpOIOGeUkkpw_HRrrPjIBxU6uIWi6sAd.T%2BD1l9%2FcBX6lUi72hMrEIfPw4peka4Ng%2Bki4x7kWzBY',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getComment',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error ReferenceError: ctx is not defined
+    at getComment (F:\ycsoft_koa_new\controler\home.js:292:20)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\app.js:43:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:13)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at filter (F:\ycsoft_koa_new\node_modules\koa-json\index.js:25:12)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5) {
+  request: {
+    method: 'POST',
+    url: '/community/getComment',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:74.0) Gecko/20100101 Firefox/74.0',
+      accept: 'application/json, text/plain, */*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json;charset=utf-8',
+      accesstoken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsInBhc3N3b3JkIjoiMzM5OWNmMDVkMzdiODk2NTBlMWMwNDBlMzFiZDY5YTEiLCJpYXQiOjE1ODQzMzkxMzYsImV4cCI6MTU4NDUxMTkzNiwiaXNzIjoiWU9VSlVOIn0.CDOaxV3yyo94lDoNzYJRqkSscXQ4DQrM9xFBFONOTHQ',
+      'content-length': '2',
+      origin: 'http://localhost:8080',
+      connection: 'keep-alive',
+      referer: 'http://localhost:8080/article/post/180f2930-46c1-11e9-b5a4-db5a96966b9e',
+      cookie: 'fuck=u; username=youjun; connect.sid=s%3ATpOIOGeUkkpw_HRrrPjIBxU6uIWi6sAd.T%2BD1l9%2FcBX6lUi72hMrEIfPw4peka4Ng%2Bki4x7kWzBY',
+      pragma: 'no-cache',
+      'cache-control': 'no-cache'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/getComment',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
