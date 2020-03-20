@@ -149,6 +149,9 @@
 
         updated (){
             // this.userData = this.$store.commit("getUserInfo");
+        },
+        mounted() {
+
         }
     }
 </script>

@@ -9,13 +9,10 @@ import "element-ui/lib/theme-chalk/index.css"
 /*---element-ui---*/
 Vue.use(ElementUI);
 
-// Vue.use(Dropdown);
-// Vue.use(DropdownMenu);
-// Vue.use(DropdownItem);
-// Vue.use(Button);
-
 let bus = new Vue;
 Vue.prototype.$bus = bus;
+
+Vue.prototype.$common = lib.common;
 
 Vue.config.productionTip = false;
 

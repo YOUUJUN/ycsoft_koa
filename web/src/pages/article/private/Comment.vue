@@ -6,24 +6,28 @@
         <h4 class="message-header">评论</h4>
 
 
-        <div class="comment-box">
+        <div class="comment-box" v-if="logged">
             <div class="comment-box-header">
                 <a class="comment-portrait"><img
                         src="/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg"></a>
 
                 <div class="field-textarea comment-textarea">
-                    <textarea id="comment-textarea" style="height:63px;overflow-y:hidden;"></textarea>
+                    <textarea id="comment-textarea" style="height:63px;overflow-y:hidden;" v-model="commentInfo.message"></textarea>
                 </div>
             </div>
 
-            <button class="btn post-btn" onclick="comment()">发表</button>
+            <button class="btn post-btn" @click="comment">发表</button>
+        </div>
+
+        <div class="welcome-box" v-else>
+            <button class="btn" @click="login">登录</button><span class="message-welcome"> 登录来发表您的看法吧！</span>
         </div>
 
 
         <ul class="comment-list">
 
 
-            <li class="comment-item" v-for="item of commentList">
+            <li class="comment-item" v-for="(item,index) of commentList" v-bind:key="index">
                 <a v-bind:href="item.url" class="comment-portrait">
                     <img v-bind:src="item.portrait">
                 </a>
@@ -38,24 +42,14 @@
                     <div class="comment-message">{{item.message}}</div>
 
                     <div class="comment-footer">
-                        <a class="re-comment" v-on:click="openReplyPanel()"><i class="fa fa-commenting-o"></i><span class="comment-count">{{item.reCommentNum}}条评论</span></a>
+                        <a class="re-comment" v-on:click="openReplyPanel(item,index)"><i class="fa fa-commenting-o"></i>
+                            <span class="comment-count" v-show="!item.existStatus">{{item.reCommentNum}}条评论</span>
+                            <span class="closeBtn" v-show="item.existStatus">收起评论</span>
+                        </a>
                         <span class="comment-time">{{getTimeDif(item.addtime)}}</span>
                     </div>
 
-                    <div class="re-comment-board popover-top">
-
-                        <ul class="re-comment-list"></ul>
-
-
-                        <div class="re-comment-textarea">
-                            <div class="field-textarea">
-                                <textarea id="re-comment-textarea" rows="1" oninput="reComment.changeBtn();"></textarea>
-                            </div>
-
-                            <button id="reCommentBtn" class="btn" onclick="reComment.post()">发表</button><button id="replyCancelBtn" class="btn" onclick="reComment.replyCancel();" style="display: none">取消</button>
-                        </div>
-
-                    </div>
+                    <re-comment v-bind:exist="item.existStatus" v-bind:commentInfo="item"></re-comment>
 
                 </div>
 
@@ -72,11 +66,20 @@
 </template>
 
 <script>
+
+    const reComment = () => import("./ReComment.vue");
+
     export default {
         name: "Comment",
+        components : {reComment},
         data(){
             return {
-                commentList : []
+                commentList : [],
+                commentInfo : {
+                    postId : "",
+                    message : "",
+                    addTime : ""
+                }
             }
         },
 
@@ -100,10 +103,45 @@
                 });
             },
 
-            openReplyPanel (){
+            openReplyPanel (target,index){
+                if(target.existStatus){
+                    this.$set(target,"existStatus",false);
+                }else{
+                    this.$set(target,"existStatus",true);
+                }
+            },
 
+            login(){
+                this.$parent.login();
+            },
+
+            comment(){
+                this.commentInfo.postId = this.$common.getHash();
+                this.commentInfo.addTime = new Date();
+                this.$axios({
+                    method : "post",
+                    url : "/community/addComment",
+                    data : {
+                        commentInfo : this.commentInfo
+                    }
+                }).then(res =>{
+                    alert(res.data.data);
+
+                    if(res.data.status == '1'){
+                        this.getComment();
+                    }
+
+                }).catch(err =>{
+
+                })
             }
 
+        },
+
+        computed : {
+            logged (){
+                return this.$store.state.logged;
+            }
         },
 
         mounted() {
@@ -237,6 +275,10 @@
         cursor:pointer;
     }
 
+    .re-comment:hover{
+        color:#409eff;
+    }
+
     .re-comment i{
         margin-right:6px;
         font-size: 16px;
@@ -307,27 +349,5 @@
         border-bottom:10px solid #fff;
     }
 
-    /*---回复输入框---*/
-
-
-    .re-comment-textarea{
-        display:flex;
-        flex-direction: row;
-    }
-
-    .re-comment-textarea textarea{
-        height:35px;
-        overflow: hidden;
-        overflow-wrap: break-word;
-        resize: none;
-        padding: 6px;
-        font-size: 14px;
-    }
-
-    .re-comment-textarea .btn{
-        line-height: 32px;
-        height: 35px;
-        margin-left: 10px;
-    }
 
 </style>

@@ -21,6 +21,11 @@ module.exports = (app) => {
     router.post('/community/getArticleInfo',homeController.getArticleInfo);
     router.post('/community/getAuthorInfo',homeController.getAuthorInfo);
     router.post('/community/getComment',homeController.getComment);
+    router.post('/community/getReComment',homeController.getReComment);
+    router.post('/community/addComment',homeController.addComment);
+    router.post('/community/addReComment',homeController.addReComment);
+
+
 
 
     router.post('/login',homeController.login);

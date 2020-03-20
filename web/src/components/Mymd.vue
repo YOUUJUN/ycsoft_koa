@@ -31,7 +31,6 @@
             fetchScript: function (url) {
                 return new Promise((resolve) => {
                     scriptjs(url, () => {
-                        console.log("good");
                         resolve()
                     })
                 })
@@ -61,7 +60,6 @@
                 return this.editor.getMarkdown()
             },
             setMarkdown: function (markdown) {
-                console.log("this.editor",this.editor);
                 return this.editor.setMarkdown(markdown)
             },
             init () {
@@ -75,7 +73,6 @@
             initPreView: function (markdown) {
                 let vm = this;
                 let config = vm.getConfig();
-                console.log("config------------",config);
                 if (markdown) {
                     config.markdown = markdown
                 }
@@ -93,7 +90,6 @@
                     vm.$nextTick(() => {
                         // vm.editor = window.editormd("editorId", config);
 
-                        console.log("this.editor",editormd);
                         vm.editor = editormd.markdownToHTML("editorId", config);
                         this.$refs["editorId"].classList.remove("hide");
 
@@ -101,7 +97,6 @@
                         //     vm.editor.setMarkdown("hello");
                         // });
                         vm.editor.on('change', () => {
-                            console.log("ok");
                             vm.editor = editormd.markdownToHTML("editorId", config);
 
                             // let html = vm.editor.getPreviewedHTML()
@@ -117,7 +112,6 @@
             initEditor: function (markdown) {
                 let vm = this;
                 let config = vm.getConfig();
-                console.log("config------------",config);
                 if (markdown) {
                     config.markdown = markdown
                 }
@@ -133,7 +127,6 @@
                     await vm.fetchScript('/lib/editor.md/editormd.min.js');
                     vm.jsLoadOver = true;
                     vm.$nextTick(() => {
-                        console.log("window.editormd",window.editormd);
                         vm.editor = window.editormd("editorId", config);
 
                         // vm.editor.on('load', () => {

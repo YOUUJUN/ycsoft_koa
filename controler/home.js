@@ -299,7 +299,85 @@ module.exports = {
             msg.data = results;
 
         }catch (e) {
-            console.error("get Author info failed",e)
+            console.error("get articleComment failed",e)
+        }
+
+        ctx.body = msg;
+    },
+
+    async getReComment (ctx,next){
+        const msg = {
+            status : 0,
+            data : ""
+        }
+
+        let body = ctx.request.body;
+        let commentId = body.commentId;
+        let postId = body.postId;
+
+        try {
+            let results = await page_community.getReComment(postId,commentId);
+
+            msg.status = 1;
+            msg.data = results;
+
+        }catch (e) {
+            console.error("get articleReComment info failed",e)
+        }
+
+        ctx.body = msg;
+    },
+
+
+    async addComment (ctx,next){
+        const msg = {
+            status : 0,
+            data : "发表评论失败!"
+        }
+
+        let logged = ctx.state.logged;
+        if(!logged){
+            console.log("not logged");
+            return;
+        }
+
+        let body = ctx.request.body;
+
+        try {
+            let results = await page_community.addComment(body,logged);
+
+            msg.status = results.status;
+            msg.data = results.info;
+
+        }catch (e) {
+            console.error("add comment failed",e)
+        }
+
+        ctx.body = msg;
+    },
+
+    async addReComment (ctx,next){
+        const msg = {
+            status : 0,
+            data : "发表评论失败!"
+        }
+
+        let logged = ctx.state.logged;
+        if(!logged){
+            console.log("not logged");
+            return;
+        }
+
+        let body = ctx.request.body;
+
+        try {
+            let results = await page_community.addReComment(body,logged);
+
+            msg.status = results.status;
+            msg.data = results.info;
+
+        }catch (e) {
+            console.error("add reComment failed",e)
         }
 
         ctx.body = msg;

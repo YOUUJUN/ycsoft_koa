@@ -3,7 +3,7 @@
 
         <header>
 
-            <navigation v-bind:list="navigationList"></navigation>
+            <navigation v-bind:list="navigationList" ref="navigation"></navigation>
 
         </header>
 
@@ -87,6 +87,9 @@
         },
 
         methods : {
+            login(){
+                this.$refs["navigation"].login();
+            },
             getTimeDif (timer){
                 var date = new Date(timer);
                 var newDate = new Date();

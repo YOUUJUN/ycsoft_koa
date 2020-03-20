@@ -1,4 +1,5 @@
 const query = require("../db/mysql/query");
+const uuid = require("uuid");
 
 const community = {
 
@@ -217,8 +218,8 @@ const community = {
 
 
     async getComment(postId){
-        let getCommentSql = "SELECT article_comment.*,COUNT(article_recomment.id) AS nums,users.nickname,user_info.* FROM article_comment LEFT JOIN users ON article_comment.user_id = users.user_id LEFT JOIN user_info ON user_info.user_id = article_comment.user_id LEFT JOIN article_recomment ON article_comment.comment_id = article_recomment.comment_id WHERE article_comment.post_id = ? GROUP BY article_comment.add_time DESC LIMIT ?";
-        let getCommentParam = [postId,4];
+        let getCommentSql = "SELECT article_comment.*,COUNT(article_recomment.id) AS nums,users.nickname,user_info.* FROM article_comment LEFT JOIN users ON article_comment.user_id = users.user_id LEFT JOIN user_info ON user_info.user_id = article_comment.user_id LEFT JOIN article_recomment ON article_comment.comment_id = article_recomment.comment_id WHERE article_comment.post_id = ? GROUP BY article_comment.id Order By article_comment.add_time Desc";
+        let getCommentParam = [postId];
 
         let results = await query(getCommentSql, getCommentParam);
 
@@ -240,6 +241,118 @@ const community = {
         }
 
         return msg;
+    },
+
+
+    async getReComment(postId,commentId){
+        console.log("postId",postId,commentId);
+        let getReCommentSql = "SELECT article_recomment.*,users.nickname,user_info.* FROM article_recomment LEFT JOIN users ON article_recomment.user_id = users.user_id LEFT JOIN user_info ON user_info.user_id = article_recomment.user_id WHERE article_recomment.post_id = ? AND article_recomment.comment_id = ? GROUP BY article_recomment.add_time";
+        let getReCommentParam = [postId,commentId];
+
+        let results = await query(getReCommentSql, getReCommentParam);
+
+        var msg = [];
+        var arr = "/personal/";
+        for(var i =0;i<results.length;i++){
+            let obj = {
+                commentid : results[i].comment_id,
+                userid : results[i].user_id,
+                nickname : results[i].nickname,
+                url : arr.concat(results[i].user_id),
+                portrait : results[i].portrait,
+                introduction : results[i].introduction,
+                addtime : results[i].add_time,
+                message : results[i].message
+            }
+            msg.push(obj);
+        }
+
+        return msg;
+    },
+
+
+    async addComment(body,logInfo){
+        let postId = body.commentInfo.postId;
+        let content = body.commentInfo.message;
+        let addTime = new Date().toLocaleString();
+        let userId = logInfo.userId;
+
+        let msg = {
+            info : '发表评论失败!',
+            status : 0
+        };
+
+        if(content == ''){
+            msg = {
+                info : '请输入评论内容',
+                status : 0
+            };
+
+            return msg;
+        }
+
+        let commentId = uuid.v1();
+
+        let getObjectIdSql = "SELECT users.user_id FROM article LEFT JOIN users ON users.user_name = article.post_author WHERE article.post_id = ? ";
+        let getObjectIdParam = [postId];
+
+        let results = await query(getObjectIdSql,getObjectIdParam);
+        console.log("results",results);
+        let objectId = results[0].user_id;
+
+        let addCommentSql = "INSERT INTO article_comment(id,comment_id,post_id,object_id,user_id,message,add_time) VALUE(0,?,?,?,?,?,?)";
+        let addCommentParam = [commentId,postId,objectId,userId,content,addTime];
+
+        results = await query(addCommentSql,addCommentParam);
+
+        if(results.affectedRows == '1'){
+            msg = {
+                info : '发表评论成功！',
+                status : 1
+            }
+        }
+
+        return msg;
+
+    },
+
+
+    async addReComment(body,logInfo){
+        let postId = body.replyInfo.postId;
+        let commentId = body.replyInfo.commentId;
+        let content = body.replyInfo.message;
+        let addTime = new Date().toLocaleString();
+        let userId = logInfo.userId;
+        let objectId = body.replyInfo.defendantId;
+
+        let msg = {
+            info : '发表评论失败!',
+            status : 0
+        };
+
+        if(content == ''){
+            msg = {
+                info : '请输入评论内容',
+                status : 0
+            };
+
+            return msg;
+        }
+
+        let addReCommentSql = "INSERT INTO article_recomment(id,comment_id,post_id,user_id,object_id,message,add_time) VALUE(0,?,?,?,?,?,?)";
+        let addReCommentParam = [commentId,postId,userId,objectId,content,addTime];
+
+        let results = await query(addReCommentSql,addReCommentParam);
+
+        if(results.affectedRows == '1'){
+            msg = {
+                info : '发表评论成功！',
+                status : 1
+            }
+        }
+
+        return msg;
+
     }
 
 
