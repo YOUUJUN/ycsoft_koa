@@ -13,17 +13,16 @@
 
                 <div class="area cols-9">
 
-                    <hot-topic></hot-topic>
+                    <panel v-bind:authorInfo = "authorInfo"></panel>
 
-                    <panel></panel>
+                    <tabs></tabs>
 
                 </div>
 
                 <div class="area cols-3">
 
-                    <user-panel></user-panel>
+                    <user v-bind:authorInfo = "authorInfo"></user>
 
-                    <topics></topics>
 
                 </div>
 
@@ -34,7 +33,6 @@
 
         <footer>
 
-            <!--            <foot></foot>-->
 
         </footer>
 
@@ -42,38 +40,20 @@
 </template>
 <script>
     const navigation = () => import("../../components/Navigation.vue");
-
-    const hotTopic = () => import("./private/Hot.vue");
     const panel = () => import("./private/Panel.vue");
-    const topics = () => import("./private/Topic.vue");
-    const userPanel = () => import("./private/User.vue");
+    const user = () => import("./private/User.vue");
+    const tabs = () => import("./private/Tabs.vue");
 
     export default {
-        components:{navigation,hotTopic,panel,topics,userPanel},
-        data (){
+        components : {navigation,panel,user,tabs},
+        data() {
             return {
                 navigationList : this.$store.state.navigationList,
-                barList : []
-            }
+                authorInfo : {}
+            };
         },
 
         methods : {
-            initializeUserConfig (){
-
-
-
-            },
-
-            setUserConfig (){
-
-
-            },
-
-            getUserConfig(){
-
-
-            },
-
             getUserLogStatus (){
                 this.$axios({
                     method : "post",
@@ -84,23 +64,48 @@
                 }).catch(err => {
                     console.log(err);
                 })
+            },
+
+            getAuthorInfo (){
+                this.$axios({
+                    method : "post",
+                    url : "/personal/getAuthorinfo",
+                    data : {
+                        userId : this.$common.getHash()
+                    }
+                }).then(value =>{
+                    console.log("value ====-====",value);
+                    this.authorInfo = value.data.data;
+                }).catch(err => {
+                    console.log(err);
+                })
             }
         },
 
-        created() {
-            this.getUserLogStatus();
+        computed : {
+
         },
+
+        watch : {
+
+        },
+
+        created (){
+            this.getUserLogStatus();
+            this.getAuthorInfo();
+        },
+
         mounted() {
+            console.log("logged",this.$store.state);
             this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
         }
     };
 </script>
+
 <style>
 
     @import "../../assets/css/youjun_base.css";
     @import "~font-awesome\css\font-awesome.min.css";
 
-
-
-
 </style>
+

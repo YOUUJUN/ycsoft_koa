@@ -42,6 +42,11 @@ module.exports = {
         await next();
     },
 
+    personal : async (ctx,next) =>{
+        ctx.url = '/personal.html';
+        await next();
+    },
+
     poster : async(ctx,next) =>{
         let postId = Path.basename(ctx.url);
 
@@ -381,8 +386,37 @@ module.exports = {
         }
 
         ctx.body = msg;
-    }
+    },
 
+
+    /*---personal---*/
+
+
+    async getAuthorinfo(ctx,next){
+
+        const msg = {
+            status : 0,
+            data : ""
+        }
+
+        let body = ctx.request.body;
+
+        let obj = {
+            userId : body.userId
+        }
+
+        try {
+            let results = await page_user.getUserInfo(obj);
+
+            msg.status = 1;
+            msg.data = results;
+
+        }catch (e) {
+            console.error("get articleReComment info failed",e)
+        }
+
+        ctx.body = msg;
+    }
 };
 
 

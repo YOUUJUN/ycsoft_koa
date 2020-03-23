@@ -7,6 +7,7 @@ Vue.config.productionTip = false;
 
 Vue.prototype.$echarts = lib.echarts;
 
+Vue.prototype.$common = lib.common;
 
 new Vue({
   store,

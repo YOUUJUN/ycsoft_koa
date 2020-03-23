@@ -1,27 +1,22 @@
 import Vue from 'vue'
-import Home from './Community.vue'
+import Home from './Personal.vue'
 import store from '../../store/index'
 import lib from '../../utils/lib'
-import VueCookies from 'vue-cookies'
 import ElementUI from 'element-ui'
 // import {Dropdown,DropdownMenu,DropdownItem,Button} from "element-ui"
 import "element-ui/lib/theme-chalk/index.css"
 
-Vue.use(VueCookies);
-
 /*---element-ui---*/
 Vue.use(ElementUI);
-
-// Vue.use(Dropdown);
-// Vue.use(DropdownMenu);
-// Vue.use(DropdownItem);
-// Vue.use(Button);
-
-Vue.prototype.$common = lib.common;
 
 Vue.config.productionTip = false;
 
 Vue.prototype.$axios = lib.axios;
+
+let bus = new Vue;
+Vue.prototype.$bus = bus;
+
+Vue.prototype.$common = lib.common;
 
 new Vue({
   store,

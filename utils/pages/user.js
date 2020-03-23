@@ -92,6 +92,14 @@ class User{
         let result1 = await query(userInfoSql,userInfoParam);
         console.log("result1",result1);
 
+        if(!info.username){
+            let userSql = "SELECT user_name,nickname FROM users WHERE user_id = ?";
+            let userParam = [info.userId];
+            let result0 = await query(userSql,userParam);
+            info.username = result0[0].user_name;
+            info.nickname = result0[0].nickname;
+        }
+
         /*--读取用户文章数--*/
         let getArticleCountSql = "SELECT COUNT(*) AS nums FROM article WHERE post_author =?";
         let getArticleCountParam = [info.username];
@@ -107,6 +115,11 @@ class User{
         let getBeWatchedNumParam = [info.username];
         let result4 = await query(getBeWatchedNumSql,getBeWatchedNumParam);
 
+        /*---读取用户被点赞总数---*/
+        let getUserLikeSql = "SELECT COUNT(*) AS nums,article.post_author FROM user_like LEFT JOIN article ON user_like.post_id = article.post_id WHERE article.post_author = ?";
+        let getUserLikeParam = [info.username];
+        let result5 = await query(getUserLikeSql,getUserLikeParam);
+
 
         let fixHead = "/personal/";
 
@@ -114,10 +127,12 @@ class User{
             nickname : info.nickname,
             url : fixHead.concat(info.userId),
             portrait : result1[0].portrait,
+            job : result1[0].job,
             introduction : result1[0].introduction,
             articleCount : result2[0].nums,
             concernNum : result3[0].nums,
-            beWatchedNum : result4[0].nums
+            beWatchedNum : result4[0].nums,
+            userLike : result5[0].nums
         };
 
         return userData;

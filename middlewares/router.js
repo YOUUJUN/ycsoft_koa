@@ -9,6 +9,7 @@ module.exports = (app) => {
     router.get('/contact',homeController.contact);
     router.get('/community',homeController.community);
     router.get("/community/post/:href",homeController.poster);
+    router.get("/personal/:href",homeController.personal);
 
 
     router.post('/getDocNavigation',homeController.getDocNavigation);
@@ -25,7 +26,7 @@ module.exports = (app) => {
     router.post('/community/addComment',homeController.addComment);
     router.post('/community/addReComment',homeController.addReComment);
 
-
+    router.post('/personal/getAuthorinfo',homeController.getAuthorinfo);
 
 
     router.post('/login',homeController.login);

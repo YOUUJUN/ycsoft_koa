@@ -151,7 +151,6 @@ const community = {
 
     /*---community-article---*/
 
-
     async getArticleInfo (postId){
 
         let getArticleSql = "SELECT article.*,users.nickname,users.user_id,user_info.portrait,user_info.introduction FROM article RIGHT JOIN users ON article.post_author = users.user_name LEFT JOIN user_info ON users.user_id = user_info.user_id WHERE article.post_id = ?";
@@ -192,8 +191,6 @@ const community = {
 
         results = await query(getUserLikeSql,getUserLikeParam);
         msg.userLike = results[0].nums;
-
-        msg.articleView = await community.getArticleViews(postId);
 
         /*---读取该文章作者被关注的总数---*/
         let getBeWatchedNumSql = "SELECT COUNT(*) AS nums,users.user_name FROM user_follow LEFT JOIN users ON user_follow.author_id = users.user_id WHERE users.user_name = ?";

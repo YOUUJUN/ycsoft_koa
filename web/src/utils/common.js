@@ -38,6 +38,14 @@ export default {
         return postId;
     },
 
+    getHrefHead (){
+        let path = window.location.pathname.split("/");
+        console.log("path",path);
+        let head = '/' + path[1];
+        console.log("head ==>",head);
+        return head;
+    },
+
     getUserInfo (){
         let userData = window.localStorage.getItem("userData");
         userData = JSON.parse(userData);

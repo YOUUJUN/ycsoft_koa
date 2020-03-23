@@ -7,6 +7,7 @@ Vue.config.productionTip = false;
 
 Vue.prototype.$axios = lib.axios;
 Vue.prototype.$editormd = lib.editormd;
+Vue.prototype.$common = lib.common;
 
 new Vue({
   store,

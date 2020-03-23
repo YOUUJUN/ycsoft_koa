@@ -33124,3 +33124,90 @@ add reComment failed ReferenceError: addCommentSql is not defined
     at filter (F:\ycsoft_koa_new\node_modules\koa-json\index.js:25:12)
     at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
     at bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:11)
+F:\ycsoft_koa_new\utils\pages\user.js:118
+            introduction : result1[0].introduction,
+            ^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:19)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\user.js:118
+            introduction : result1[0].introduction,
+            ^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:19)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\user.js:118
+            introduction : result1[0].introduction,
+            ^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:19)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+get articleReComment info failed TypeError: Cannot read property 'user_name' of undefined
+    at User.getUserInfo (F:\ycsoft_koa_new\utils\pages\user.js:99:40)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async getAuthorinfo (F:\ycsoft_koa_new\controler\home.js:409:27)
+    at async F:\ycsoft_koa_new\app.js:43:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:24:3
+get articleReComment info failed TypeError: Cannot read property 'user_name' of undefined
+    at User.getUserInfo (F:\ycsoft_koa_new\utils\pages\user.js:100:40)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async getAuthorinfo (F:\ycsoft_koa_new\controler\home.js:409:27)
+    at async F:\ycsoft_koa_new\app.js:43:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:24:3
+get articleReComment info failed TypeError: Cannot read property 'user_name' of undefined
+    at User.getUserInfo (F:\ycsoft_koa_new\utils\pages\user.js:100:40)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async getAuthorinfo (F:\ycsoft_koa_new\controler\home.js:409:27)
+    at async F:\ycsoft_koa_new\app.js:43:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:24:3

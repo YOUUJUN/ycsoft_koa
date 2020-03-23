@@ -58,7 +58,7 @@
                             </el-dropdown>
 
 
-                            <el-dropdown trigger="click" v-on:click="logout">
+                            <el-dropdown>
                                 <img class="header-portrait" v-bind:src="userData.portrait">
                                 <el-dropdown-menu slot="dropdown">
                                     <el-dropdown-item>个人资料</el-dropdown-item>
