@@ -66,7 +66,7 @@
         },
         computed : {
             logged (){
-                console.log("logged",this.$store.state.logged);
+                console.log("logged,user",this.$store.state.logged);
                 return this.$store.state.logged;
             }
         },

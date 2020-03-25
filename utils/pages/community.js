@@ -51,7 +51,7 @@ const community = {
         }
 
         if(userConfig.logged){
-            let subscribeResults = await community.getUserIfSubscribed(userConfig);
+            let subscribeResults = await community.getUserIfSubscribed(userConfig.logged);
 
             console.log("listResults ===>",listResults);
             listResults.forEach(function (item,index) {
@@ -97,7 +97,7 @@ const community = {
 
     getUserIfSubscribed : async (userConfig) =>{
         let sql = "SELECT post_id FROM article AS b WHERE b.post_id IN (SELECT a.post_id FROM user_like AS a WHERE user_name = ?)";
-        let param = [userConfig.logged.username];
+        let param = [userConfig.username];
         let results = await query(sql,param);
 
         let arr = [];
@@ -350,10 +350,71 @@ const community = {
 
         return msg;
 
+    },
+
+
+    async personalArticleList (ctx){
+        let body = ctx.request.body
+        let userId = body.userId;
+        let logged = ctx.state.logged;
+
+        let getArticleSql = "SELECT article.*,topic.topic_name,users.nickname,users.user_id,COUNT(user_like.id) AS nums FROM article LEFT JOIN topic ON article.topic_id = topic.topic_id LEFT JOIN users ON article.post_author = users.user_name LEFT JOIN user_like ON article.post_id = user_like.post_id WHERE users.user_id = ? GROUP BY article.post_date ORDER BY article.post_date DESC";
+        let getArticleParam = [userId];
+        let results = await query(getArticleSql,getArticleParam);
+
+        let getCommentSql = "SELECT COUNT(article_comment.id) AS nums FROM article LEFT JOIN article_comment ON article.post_id = article_comment.post_id LEFT JOIN users ON article.post_author = users.user_name WHERE users.user_id = ? GROUP BY article.post_date ORDER BY article.post_date DESC";
+        let results2 = await query(getCommentSql,getArticleParam);
+
+        let getReCommentSql = "SELECT COUNT(article_recomment.id) AS nums FROM article LEFT JOIN article_recomment ON article.post_id = article_recomment.post_id LEFT JOIN users ON article.post_author = users.user_name WHERE users.user_id = ? GROUP BY article.post_date ORDER BY article.post_date DESC";
+        let results3 = await query(getReCommentSql,getArticleParam);
+
+
+
+        let msg = [];
+        var arr = "/community/post/";
+        for(var i=0;i<results.length;i++){
+            let obj = {
+                title : results[i].post_title,
+                date : results[i].post_date,
+                url : arr.concat(results[i].post_id),
+                id : results[i].post_id,
+                likeNum : results[i].nums,
+                commentNum : results2[i].nums + results3[i].nums
+            }
+            msg.push(obj);
+        }
+
+
+        if(logged){
+            let subscribeResults = await community.getUserIfSubscribed(logged);
+
+            msg.forEach(function (item,index) {
+                if(subscribeResults.includes(item.post_id)){
+                    msg[index].ifSubscribed = true;
+                }else{
+                    msg[index].ifSubscribed = false;
+                }
+            })
+        }
+
+        return msg;
+
     }
 
 
+
+
 }
+
+
+
+
+
+
+
+
+
+
 
 
 module.exports = community;

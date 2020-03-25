@@ -61,7 +61,7 @@
                             <el-dropdown>
                                 <img class="header-portrait" v-bind:src="userData.portrait">
                                 <el-dropdown-menu slot="dropdown">
-                                    <el-dropdown-item>个人资料</el-dropdown-item>
+                                    <el-dropdown-item v-on:click.native="goToPersonal">个人资料</el-dropdown-item>
                                     <el-dropdown-item v-on:click.native="logout">退出登录</el-dropdown-item>
                                 </el-dropdown-menu>
                             </el-dropdown>
@@ -137,6 +137,12 @@
                 vm.$store.commit("changeLogStatus",false);
                 localStorage.setItem("marscript","");
                 location.reload();
+            },
+
+            goToPersonal(){
+                let vm = this;
+                console.log(vm.userData.url);
+                window.open(vm.userData.url, "_blank");
             }
 
         },
@@ -147,8 +153,9 @@
             }
         },
 
-        updated (){
-            // this.userData = this.$store.commit("getUserInfo");
+        created(){
+            this.userData = this.$common.getUserInfo();
+            console.log("this.userData",this.userData);
         },
         mounted() {
 

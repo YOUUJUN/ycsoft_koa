@@ -45,14 +45,15 @@
         },
         data (){
             return {
-                userInfo : {}
+                userInfo : {},
+                logged : true
             }
         },
         computed : {
-            logged (){
-                console.log("logged",this.$store.state.logged);
-                return this.$store.state.logged;
-            }
+            // logged (){
+            //     console.log("logged,panel",this.$store.state.logged);
+            //     return this.$store.state.logged;
+            // }
         },
         created() {
             this.userInfo = this.$common.getUserInfo();

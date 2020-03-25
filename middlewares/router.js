@@ -27,6 +27,9 @@ module.exports = (app) => {
     router.post('/community/addReComment',homeController.addReComment);
 
     router.post('/personal/getAuthorinfo',homeController.getAuthorinfo);
+    router.post('/personal/getArticleList',homeController.personalArticleList);
+    router.post('/personal/verifyOwner',homeController.verifyOwner);
+    router.post('/personal/getFollowUser',homeController.getFollowUser);
 
 
     router.post('/login',homeController.login);

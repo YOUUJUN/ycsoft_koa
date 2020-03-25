@@ -14,10 +14,11 @@ const TOKENSECRET = require("./utils/config/tokensecret");
 
 /*---登录状态检测中间件---*/
 app.use( async (ctx, next) =>{
-  if(ctx.url.match(/^\/community/)){
+  if(ctx.url.match(/^\/community/) || ctx.url.match(/^\/personal/)){
     let token = ctx.request.header.accesstoken || "";
     const page_user = require("./utils/pages/user");
     let result = await page_user.verifyUserToken(token);
+    console.log("result=================================>funck",result);
     ctx.state.logged = result;
 
   }

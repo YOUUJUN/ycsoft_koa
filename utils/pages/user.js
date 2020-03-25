@@ -120,6 +120,11 @@ class User{
         let getUserLikeParam = [info.username];
         let result5 = await query(getUserLikeSql,getUserLikeParam);
 
+        /*---读取用户关注话题数---*/
+        let getTargetNumSql = "SELECT COUNT(*) AS nums FROM user_focus WHERE user_name = ?";
+        let getTargetNumParam = [info.username];
+        let result6 = await query(getTargetNumSql,getTargetNumParam);
+
 
         let fixHead = "/personal/";
 
@@ -132,7 +137,8 @@ class User{
             articleCount : result2[0].nums,
             concernNum : result3[0].nums,
             beWatchedNum : result4[0].nums,
-            userLike : result5[0].nums
+            userLike : result5[0].nums,
+            topicNum : result6[0].nums
         };
 
         return userData;

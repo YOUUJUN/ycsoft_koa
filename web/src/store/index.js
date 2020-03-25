@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-Vue.use(Vuex)
+Vue.use(Vuex);
+
+let vm = new Vue;
 
 export default new Vuex.Store({
   state: {
@@ -38,7 +40,7 @@ export default new Vuex.Store({
   },
   mutations: {
     changeLogStatus(state, status){
-      state.logged = status;
+      vm.$set(state,"logged",status);
     },
 
     upDateNavigationIndex (state,payload){

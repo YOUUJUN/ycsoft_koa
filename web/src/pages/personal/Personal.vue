@@ -15,7 +15,7 @@
 
                     <panel v-bind:authorInfo = "authorInfo"></panel>
 
-                    <tabs></tabs>
+                    <tabs-panel v-bind:authorInfo = "authorInfo"></tabs-panel>
 
                 </div>
 
@@ -23,6 +23,7 @@
 
                     <user v-bind:authorInfo = "authorInfo"></user>
 
+                    <topics></topics>
 
                 </div>
 
@@ -40,12 +41,13 @@
 </template>
 <script>
     const navigation = () => import("../../components/Navigation.vue");
+    const topics = () => import("../community/private/Topic.vue");
     const panel = () => import("./private/Panel.vue");
     const user = () => import("./private/User.vue");
-    const tabs = () => import("./private/Tabs.vue");
+    const tabsPanel = () => import("./private/Tabs.vue");
 
     export default {
-        components : {navigation,panel,user,tabs},
+        components : {navigation,tabsPanel,panel,user,topics},
         data() {
             return {
                 navigationList : this.$store.state.navigationList,
@@ -59,10 +61,10 @@
                     method : "post",
                     url : "verifyToken"
                 }).then(value =>{
-                    console.log("value ====-====",value);
+                    console.log("value.data.logged",value.data.logged);
                     this.$store.commit("changeLogStatus",value.data.logged);
                 }).catch(err => {
-                    console.log(err);
+                    console.error(err);
                 })
             },
 
@@ -74,15 +76,15 @@
                         userId : this.$common.getHash()
                     }
                 }).then(value =>{
-                    console.log("value ====-====",value);
                     this.authorInfo = value.data.data;
                 }).catch(err => {
-                    console.log(err);
+                    console.error(err);
                 })
             }
+
         },
 
-        computed : {
+        computed:{
 
         },
 
@@ -90,14 +92,21 @@
 
         },
 
-        created (){
-            this.getUserLogStatus();
-            this.getAuthorInfo();
+        beforeCreate(){
+            console.log("父组件beforeCreate");
         },
-
-        mounted() {
-            console.log("logged",this.$store.state);
+        created(){
+            console.log("父组件created");
+            this.getUserLogStatus();
+            console.log("logged,父组件", this.$store.state.logged);
+            this.getAuthorInfo();
             this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
+        },
+        beforeMount() {
+            console.log("父组件beforeMount");
+        },
+        mounted() {
+            console.log("父组件mounted");
         }
     };
 </script>

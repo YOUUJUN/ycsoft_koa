@@ -416,7 +416,58 @@ module.exports = {
         }
 
         ctx.body = msg;
+    },
+
+
+    async personalArticleList(ctx, next) {
+        const msg = {
+            status: 0,
+            data: ""
+        }
+
+        try {
+            let results = await page_community.personalArticleList(ctx);
+
+            msg.status = 1;
+            msg.data = results;
+
+        } catch (e) {
+            console.error("get personalArticleList failed", e)
+        }
+
+        ctx.body = msg;
+    },
+
+    async verifyOwner(ctx,next){
+
+        let body = ctx.request.body;
+        let logged = ctx.state.logged;
+
+        const msg = {
+            status: 0,
+            data: ""
+        }
+
+        console.log("userId,bodyId",logged.userId,body.userId);
+
+        if(logged && logged.userId == body.userId){
+            msg.data = {
+                ifOwner : true
+            };
+        }else{
+            msg.data = {
+                ifOwner : false
+            };
+        }
+
+        ctx.body = msg;
+
+    },
+
+    async getFollowUser(ctx,next){
+
     }
+
 };
 
 
