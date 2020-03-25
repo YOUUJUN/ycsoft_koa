@@ -371,7 +371,7 @@ const community = {
 
 
         let msg = [];
-        var arr = "/community/post/";
+        let arr = "/community/post/";
         for(var i=0;i<results.length;i++){
             let obj = {
                 title : results[i].post_title,
@@ -399,9 +399,43 @@ const community = {
 
         return msg;
 
+    },
+
+    async getFollowUser(ctx){
+        let body = ctx.request.body;
+
+        let getTargetIdSql = "SELECT user_name FROM users WHERE user_id = ?";
+        let getTargetIdParam = [body.userId];
+
+        let result1 = await query(getTargetIdSql, getTargetIdParam);
+        let username = result1[0].user_name;
+
+        let getAuthorInfoSql = "SELECT user_follow.author_id, user_info.*,users.nickname FROM user_follow LEFT JOIN user_info ON user_info.user_id = user_follow.author_id LEFT JOIN users ON users.user_id = user_follow.author_id WHERE user_follow.user_name = ?";
+        let getAuthorInfoParam = [username];
+
+        let results = await query(getAuthorInfoSql,getAuthorInfoParam);
+
+        var data = [];
+
+        var arr = "/personal/";
+        for(var i=0;i<results.length;i++){
+            let obj = {
+                nickname : results[i].nickname,
+                id : results[i].user_id,
+                url : arr.concat(results[0].user_id),
+                portrait : results[i].portrait,
+                introduction : results[i].introduction
+            }
+            data.push(obj);
+        }
+
+        return data;
+
+    },
+
+    async addFollow(ctx){
+
     }
-
-
 
 
 }

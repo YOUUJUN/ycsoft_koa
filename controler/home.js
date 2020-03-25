@@ -466,6 +466,42 @@ module.exports = {
 
     async getFollowUser(ctx,next){
 
+        const msg = {
+            status: 0,
+            data: ""
+        }
+
+        try {
+            let results = await page_community.getFollowUser(ctx);
+
+            msg.status = 1;
+            msg.data = results;
+
+        } catch (e) {
+            console.error("get personalFollower failed", e)
+        }
+
+        ctx.body = msg;
+
+    },
+
+    async addFollow(ctx,next){
+        const msg = {
+            status: 0,
+            data: ""
+        }
+
+        try {
+            let results = await page_community.addFollow(ctx);
+
+            msg.status = 1;
+            msg.data = results;
+
+        } catch (e) {
+            console.error("get personalFollower failed", e)
+        }
+
+        ctx.body = msg;
     }
 
 };

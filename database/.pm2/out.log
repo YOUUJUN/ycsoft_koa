@@ -110414,3 +110414,4108 @@ b b14785420de44a86c4c18dfa16d98675
 ---------------------连接池连接数:------------------- 0
 a b14785420de44a86c4c18dfa16d98675
 b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 11ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 241ms 26b
+  --> POST /community/getHotList 200 23ms 217b
+  --> POST /community/getTopicList 200 24ms 443b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+listResults ===> [
+  RowDataPacket {
+    id: 100,
+    post_id: '180f2930-46c1-11e9-b5a4-db5a96966b9e',
+    post_author: '824000803@qq.com',
+    post_date: 2019-03-15T01:24:35.000Z,
+    post_title: 'EJDUWDNDW',
+    post_content: 'WIDPOPW',
+    topic_id: 13,
+    topic_name: 'CSGO',
+    nickname: 'YOUJUN',
+    user_id: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+    nums: 1,
+    replyNum: 9
+  },
+  RowDataPacket {
+    id: 99,
+    post_id: '2137c100-44a7-11e9-a0ef-8d85f4e44512',
+    post_author: '1',
+    post_date: 2019-03-12T09:13:41.000Z,
+    post_title: 'Editor.md使用文档',
+    post_content: '### 主要特性\n' +
+      '\n' +
+      '- 支持“标准”Markdown / CommonMark和Github风格的语法，也可变身为代码编辑器；\n' +
+      '- 支持实时预览、图片（跨域）上传、预格式文本/代码/表格插入、代码折叠、搜索替换、只读模式、自定义样式主题和多语言语法高亮等功能；\n' +
+      '- 支持ToC（Table of Contents）、Emoji表情、Task lists、@链接等Markdown扩展语法；\n' +
+      '- 支持TeX科学公式（基于KaTeX）、流程图 Flowchart 和 时序图 Sequence Diagram;\n' +
+      '- 支持识别和解析HTML标签，并且支持自定义过滤标签解析，具有可靠的安全性和几乎无限的扩展性；\n' +
+      '- 支持 AMD / CMD 模块化加载（支持 Require.js & Sea.js），并且支持自定义扩展插件；\n' +
+      '- 兼容主流的浏览器（IE8+）和Zepto.js，且支持iPad等平板设备；\n' +
+      '- 支持自定义主题样式；\n' +
+      '\n' +
+      '# Editor.md\n' +
+      '\n' +
+      '![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)\n' +
+      '\n' +
+      '![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)\n' +
+      '\n' +
+      '**目录 (Table of Contents)**\n' +
+      '\n' +
+      '[TOCM]\n' +
+      '\n' +
+      '[TOC]\n' +
+      '\n' +
+      '# Heading 1\n' +
+      '## Heading 2\n' +
+      '### Heading 3\n' +
+      '#### Heading 4\n' +
+      '##### Heading 5\n' +
+      '###### Heading 6\n' +
+      '# Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '## Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '### Heading 3 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '#### Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '##### Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '###### Heading 6 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '\n' +
+      '#### 标题（用底线的形式）Heading (underline)\n' +
+      '\n' +
+      'This is an H1\n' +
+      '=============\n' +
+      '\n' +
+      'This is an H2\n' +
+      '-------------\n' +
+      '\n' +
+      '### 字符效果和横线等\n' +
+      '                \n' +
+      '----\n' +
+      '\n' +
+      '~~删除线~~ <s>删除线（开启识别HTML标签时）</s>\n' +
+      '*斜体字*      _斜体字_\n' +
+      '**粗体**  __粗体__\n' +
+      '***粗斜体*** ___粗斜体___\n' +
+      '\n' +
+      '上标：X<sub>2</sub>，下标：O<sup>2</sup>\n' +
+      '\n' +
+      '**缩写(同HTML的abbr标签)**\n' +
+      '\n' +
+      '> 即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启\n' +
+      '\n' +
+      'The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.\n' +
+      '\n' +
+      '### 引用 Blockquotes\n' +
+      '\n' +
+      '> 引用文本 Blockquotes\n' +
+      '\n' +
+      '引用的行内混合 Blockquotes\n' +
+      '                    \n' +
+      '> 引用：如果想要插入空白换行`即<br />标签`，在插入处先键入两个以上的空格然后回车即可，[普通链接](http://localhost/)。\n' +
+      '\n' +
+      '### 锚点与链接 Links\n' +
+      '\n' +
+      '[普通链接](http://localhost/)\n' +
+      '\n' +
+      '[普通链接带标题](http://localhost/ "普通链接带标题")\n' +
+      '\n' +
+      '直接链接：<https://github.com>\n' +
+      '\n' +
+      '[锚点链接][anchor-id] \n' +
+      '\n' +
+      '[anchor-id]: http://www.this-anchor-link.com/\n' +
+      '\n' +
+      'GFM a-tail link @pandao\n' +
+      '\n' +
+      '> @pandao\n' +
+      '\n' +
+      '### 多语言代码高亮 Codes\n' +
+      '\n' +
+      '#### 行内代码 Inline code\n' +
+      '\n' +
+      '执行命令：`npm install marked`\n' +
+      '\n' +
+      '#### 缩进风格\n' +
+      '\n' +
+      '即缩进四个空格，也做为实现类似`<pre>`预格式化文本(Preformatted Text)的功能。\n' +
+      '\n' +
+      '    <?php\n' +
+      '        echo "Hello world!";\n' +
+      '    ?>\n' +
+      '    \n' +
+      '预格式化文本：\n' +
+      '\n' +
+      '    | First Header  | Second Header |\n' +
+      '    | ------------- | ------------- |\n' +
+      '    | Content Cell  | Content Cell  |\n' +
+      '    | Content Cell  | Content Cell  |\n' +
+      '\n' +
+      '#### JS代码　\n' +
+      '\n' +
+      '```javascript\n' +
+      'function test(){\n' +
+      '\tconsole.log("Hello world!");\n' +
+      '}\n' +
+      ' \n' +
+      '(function(){\n' +
+      '    var box = function(){\n' +
+      '        return box.fn.init();\n' +
+      '    };\n' +
+      '\n' +
+      '    box.prototype = box.fn = {\n' +
+      '        init : function(){\n' +
+      "            console.log('box.init()');\n" +
+      '\n' +
+      '\t\t\treturn this;\n' +
+      '        },\n' +
+      '\n' +
+      '\t\tadd : function(str){\n' +
+      '\t\t\talert("add", str);\n' +
+      '\n' +
+      '\t\t\treturn this;\n' +
+      '\t\t},\n' +
+      '\n' +
+      '\t\tremove : function(str){\n' +
+      '\t\t\talert("remove", str);\n' +
+      '\n' +
+      '\t\t\treturn this;\n' +
+      '\t\t}\n' +
+      '    };\n' +
+      '    \n' +
+      '    box.fn.init.prototype = box.fn;\n' +
+      '    \n' +
+      '    window.box =box;\n' +
+      '})();\n' +
+      '\n' +
+      'var testBox = box();\n' +
+      'testBox.add("jQuery").remove("jQuery");\n' +
+      '```\n' +
+      '\n' +
+      '#### HTML代码 HTML codes\n' +
+      '\n' +
+      '```html\n' +
+      '<!DOCTYPE html>\n' +
+      '<html>\n' +
+      '    <head>\n' +
+      '        <mate charest="utf-8" />\n' +
+      '        <title>Hello world!</title>\n' +
+      '    </head>\n' +
+      '    <body>\n' +
+      '        <h1>Hello world!</h1>\n' +
+      '    </body>\n' +
+      '</html>\n' +
+      '```\n' +
+      '\n' +
+      '### 图片 Images\n' +
+      '\n' +
+      'Image:\n' +
+      '\n' +
+      '![](https://pandao.github.io/editor.md/examples/images/4.jpg)\n' +
+      '\n' +
+      '> Follow your heart.\n' +
+      '\n' +
+      '![](https://pandao.github.io/editor.md/examples/images/8.jpg)\n' +
+      '\n' +
+      '> 图为：厦门白城沙滩\n' +
+      '\n' +
+      '图片加链接 (Image + Link)：\n' +
+      '\n' +
+      '[![](https://pandao.github.io/editor.md/examples/images/7.jpg)](https://pandao.github.io/editor.md/examples/images/7.jpg "李健首张专辑《似水流年》封面")\n' +
+      '\n' +
+      '> 图为：李健首张专辑《似水流年》封面\n' +
+      '                \n' +
+      '----\n' +
+      '\n' +
+      '### 列表 Lists\n' +
+      '\n' +
+      '#### 无序列表（减号）Unordered Lists (-)\n' +
+      '                \n' +
+      '- 列表一\n' +
+      '- 列表二\n' +
+      '- 列表三\n' +
+      '     \n' +
+      '#### 无序列表（星号）Unordered Lists (*)\n' +
+      '\n' +
+      '* 列表一\n' +
+      '* 列表二\n' +
+      '* 列表三\n' +
+      '\n' +
+      '#### 无序列表（加号和嵌套）Unordered Lists (+)\n' +
+      '                \n' +
+      '+ 列表一\n' +
+      '+ 列表二\n' +
+      '    + 列表二-1\n' +
+      '    + 列表二-2\n' +
+      '    + 列表二-3\n' +
+      '+ 列表三\n' +
+      '    * 列表一\n' +
+      '    * 列表二\n' +
+      '    * 列表三\n' +
+      '\n' +
+      '#### 有序列表 Ordered Lists (-)\n' +
+      '                \n' +
+      '1. 第一行\n' +
+      '2. 第二行\n' +
+      '3. 第三行\n' +
+      '\n' +
+      '#### GFM task list\n' +
+      '\n' +
+      '- [x] GFM task list 1\n' +
+      '- [x] GFM task list 2\n' +
+      '- [ ] GFM task list 3\n' +
+      '    - [ ] GFM task list 3-1\n' +
+      '    - [ ] GFM task list 3-2\n' +
+      '    - [ ] GFM task list 3-3\n' +
+      '- [ ] GFM task list 4\n' +
+      '    - [ ] GFM task list 4-1\n' +
+      '    - [ ] GFM task list 4-2\n' +
+      '                \n' +
+      '----\n' +
+      '                    \n' +
+      '### 绘制表格 Tables\n' +
+      '\n' +
+      '| 项目        | 价格   |  数量  |\n' +
+      '| --------   | -----:  | :----:  |\n' +
+      '| 计算机      | $1600   |   5     |\n' +
+      '| 手机        |   $12   |   12   |\n' +
+      '| 管线        |    $1    |  234  |\n' +
+      '                    \n' +
+      'First Header  | Second Header\n' +
+      '------------- | -------------\n' +
+      'Content Cell  | Content Cell\n' +
+      'Content Cell  | Content Cell \n' +
+      '\n' +
+      '| First Header  | Second Header |\n' +
+      '| ------------- | ------------- |\n' +
+      '| Content Cell  | Content Cell  |\n' +
+      '| Content Cell  | Content Cell  |\n' +
+      '\n' +
+      '| Function name | Description                    |\n' +
+      '| ------------- | ------------------------------ |\n' +
+      '| `help()`      | Display the help window.       |\n' +
+      '| `destroy()`   | **Destroy your computer!**     |\n' +
+      '\n' +
+      '| Left-Aligned  | Center Aligned  | Right Aligned |\n' +
+      '| :------------ |:---------------:| -----:|\n' +
+      '| col 3 is      | some wordy text | $1600 |\n' +
+      '| col 2 is      | centered        |   $12 |\n' +
+      '| zebra stripes | are neat        |    $1 |\n' +
+      '\n' +
+      '| Item      | Value |\n' +
+      '| --------- | -----:|\n' +
+      '| Computer  | $1600 |\n' +
+      '| Phone     |   $12 |\n' +
+      '| Pipe      |    $1 |\n' +
+      '                \n' +
+      '----\n' +
+      '\n' +
+      '#### 特殊符号 HTML Entities Codes\n' +
+      '\n' +
+      '© &  ¨ ™ ¡ £\n' +
+      '& < > ¥ € ® ± ¶ § ¦ ¯ « · \n' +
+      '\n' +
+      'X² Y³ ¾ ¼  ×  ÷   »\n' +
+      '\n' +
+      `18ºC  "  '\n` +
+      '\n' +
+      '### Emoji表情 :smiley:\n' +
+      '\n' +
+      '> Blockquotes :star:\n' +
+      '\n' +
+      '#### GFM task lists & Emoji & fontAwesome icon emoji & editormd logo emoji :editormd-logo-5x:\n' +
+      '\n' +
+      '- [x] :smiley: @mentions, :smiley: #refs, [links](), **formatting**, and <del>tags</del> supported :editormd-logo:;\n' +
+      '- [x] list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;\n' +
+      '- [x] [ ] :smiley: this is a complete item :smiley:;\n' +
+      '- [ ] []this is an incomplete item [test link](#) :fa-star: @pandao; \n' +
+      '- [ ] [ ]this is an incomplete item :fa-star: :fa-gear:;\n' +
+      '    - [ ] :smiley: this is an incomplete item [test link](#) :fa-star: :fa-gear:;\n' +
+      '    - [ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item [test link](#);\n' +
+      ' \n' +
+      '#### 反斜杠 Escape\n' +
+      '\n' +
+      '\\*literal asterisks\\*\n' +
+      '            \n' +
+      '### 科学公式 TeX(KaTeX)\n' +
+      '                    \n' +
+      '$$E=mc^2$$\n' +
+      '\n' +
+      '行内的公式$$E=mc^2$$行内的公式，行内的$$E=mc^2$$公式。\n' +
+      '\n' +
+      '$$\\(\\sqrt{3x-1}+(1+x)^2\\)$$\n' +
+      '                    \n' +
+      '$$\\sin(\\alpha)^{\\theta}=\\sum_{i=0}^{n}(x^i + \\cos(f))$$\n' +
+      '\n' +
+      '多行公式：\n' +
+      '\n' +
+      '```math\n' +
+      '\\displaystyle\n' +
+      '\\left( \\sum\\_{k=1}^n a\\_k b\\_k \\right)^2\n' +
+      '\\leq\n' +
+      '\\left( \\sum\\_{k=1}^n a\\_k^2 \\right)\n' +
+      '\\left( \\sum\\_{k=1}^n b\\_k^2 \\right)\n' +
+      '```\n' +
+      '\n' +
+      '```katex\n' +
+      '\\displaystyle \n' +
+      '    \\frac{1}{\n' +
+      '        \\Bigl(\\sqrt{\\phi \\sqrt{5}}-\\phi\\Bigr) e^{\n' +
+      '        \\frac25 \\pi}} = 1+\\frac{e^{-2\\pi}} {1+\\frac{e^{-4\\pi}} {\n' +
+      '        1+\\frac{e^{-6\\pi}}\n' +
+      '        {1+\\frac{e^{-8\\pi}}\n' +
+      '         {1+\\cdots} }\n' +
+      '        } \n' +
+      '    }\n' +
+      '```\n' +
+      '\n' +
+      '```latex\n' +
+      'f(x) = \\int_{-\\infty}^\\infty\n' +
+      '    \\hat f(\\xi)\\,e^{2 \\pi i \\xi x}\n' +
+      '    \\,d\\xi\n' +
+      '```\n' +
+      '                \n' +
+      '### 绘制流程图 Flowchart\n' +
+      '\n' +
+      '```flow\n' +
+      'st=>start: 用户登陆\n' +
+      'op=>operation: 登陆操作\n' +
+      'cond=>condition: 登陆成功 Yes or No?\n' +
+      'e=>end: 进入后台\n' +
+      '\n' +
+      'st->op->cond\n' +
+      'cond(yes)->e\n' +
+      'cond(no)->op\n' +
+      '```\n' +
+      '                    \n' +
+      '### 绘制序列图 Sequence Diagram\n' +
+      '                    \n' +
+      '```seq\n' +
+      'Andrew->China: Says Hello \n' +
+      'Note right of China: China thinks\\nabout it \n' +
+      'China-->Andrew: How are you? \n' +
+      'Andrew->>China: I am good thanks!\n' +
+      '```\n' +
+      '\n' +
+      '### End',
+    topic_id: 14,
+    topic_name: 'WEB前端',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 1,
+    replyNum: 0
+  },
+  RowDataPacket {
+    id: 96,
+    post_id: '38978a70-31c3-11e9-9fc8-bbb5a5c80194',
+    post_author: '1',
+    post_date: 2019-02-16T08:16:54.000Z,
+    post_title: 'dsad',
+    post_content: 'sdad',
+    topic_id: 25,
+    topic_name: 'dasds',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 0,
+    replyNum: 0
+  },
+  RowDataPacket {
+    id: 95,
+    post_id: '1815b3d0-31c3-11e9-9fc8-bbb5a5c80194',
+    post_author: '1',
+    post_date: 2019-02-16T08:16:00.000Z,
+    post_title: 'weqwe',
+    post_content: 'ewqe',
+    topic_id: 24,
+    topic_name: 'ewqewqe',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 0,
+    replyNum: 0
+  },
+  RowDataPacket {
+    id: 94,
+    post_id: 'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+    post_author: '1',
+    post_date: 2019-02-16T08:14:31.000Z,
+    post_title: 'ewqe',
+    post_content: 'weqwe',
+    topic_id: 23,
+    topic_name: 'eqwewe',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 1,
+    replyNum: 0
+  },
+  RowDataPacket {
+    id: 93,
+    post_id: '50f71510-31c1-11e9-aff5-13b22906e99a',
+    post_author: '1',
+    post_date: 2019-02-16T08:03:16.000Z,
+    post_title: 'ewqe',
+    post_content: 'ewqwe',
+    topic_id: 22,
+    topic_name: 'eqwe',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 0,
+    replyNum: 0
+  },
+  RowDataPacket {
+    id: 92,
+    post_id: '8b6c39e0-31b8-11e9-9286-cd911267878d',
+    post_author: '1',
+    post_date: 2019-02-16T07:00:29.000Z,
+    post_title: 'dasdsad',
+    post_content: 'sdads',
+    topic_id: 21,
+    topic_name: 'ssasas',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 0,
+    replyNum: 0
+  }
+]
+  --> POST /community/getArticleList 200 59ms 2.08kb
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 2ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 1ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getAuthorinfo
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 182ms 26b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'A',
+    blog_url: ''
+  }
+]
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 39ms 3.31kb
+  --> POST /personal/getAuthorinfo 200 60ms 304b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 431b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 3ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 2ms 36b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 5ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 431b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 5ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+listResults ===> [
+  RowDataPacket {
+    id: 100,
+    post_id: '180f2930-46c1-11e9-b5a4-db5a96966b9e',
+    post_author: '824000803@qq.com',
+    post_date: 2019-03-15T01:24:35.000Z,
+    post_title: 'EJDUWDNDW',
+    post_content: 'WIDPOPW',
+    topic_id: 13,
+    topic_name: 'CSGO',
+    nickname: 'YOUJUN',
+    user_id: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+    nums: 1,
+    replyNum: 9
+  },
+  RowDataPacket {
+    id: 99,
+    post_id: '2137c100-44a7-11e9-a0ef-8d85f4e44512',
+    post_author: '1',
+    post_date: 2019-03-12T09:13:41.000Z,
+    post_title: 'Editor.md使用文档',
+    post_content: '### 主要特性\n' +
+      '\n' +
+      '- 支持“标准”Markdown / CommonMark和Github风格的语法，也可变身为代码编辑器；\n' +
+      '- 支持实时预览、图片（跨域）上传、预格式文本/代码/表格插入、代码折叠、搜索替换、只读模式、自定义样式主题和多语言语法高亮等功能；\n' +
+      '- 支持ToC（Table of Contents）、Emoji表情、Task lists、@链接等Markdown扩展语法；\n' +
+      '- 支持TeX科学公式（基于KaTeX）、流程图 Flowchart 和 时序图 Sequence Diagram;\n' +
+      '- 支持识别和解析HTML标签，并且支持自定义过滤标签解析，具有可靠的安全性和几乎无限的扩展性；\n' +
+      '- 支持 AMD / CMD 模块化加载（支持 Require.js & Sea.js），并且支持自定义扩展插件；\n' +
+      '- 兼容主流的浏览器（IE8+）和Zepto.js，且支持iPad等平板设备；\n' +
+      '- 支持自定义主题样式；\n' +
+      '\n' +
+      '# Editor.md\n' +
+      '\n' +
+      '![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)\n' +
+      '\n' +
+      '![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)\n' +
+      '\n' +
+      '**目录 (Table of Contents)**\n' +
+      '\n' +
+      '[TOCM]\n' +
+      '\n' +
+      '[TOC]\n' +
+      '\n' +
+      '# Heading 1\n' +
+      '## Heading 2\n' +
+      '### Heading 3\n' +
+      '#### Heading 4\n' +
+      '##### Heading 5\n' +
+      '###### Heading 6\n' +
+      '# Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '## Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '### Heading 3 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '#### Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '##### Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '###### Heading 6 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '\n' +
+      '#### 标题（用底线的形式）Heading (underline)\n' +
+      '\n' +
+      'This is an H1\n' +
+      '=============\n' +
+      '\n' +
+      'This is an H2\n' +
+      '-------------\n' +
+      '\n' +
+      '### 字符效果和横线等\n' +
+      '                \n' +
+      '----\n' +
+      '\n' +
+      '~~删除线~~ <s>删除线（开启识别HTML标签时）</s>\n' +
+      '*斜体字*      _斜体字_\n' +
+      '**粗体**  __粗体__\n' +
+      '***粗斜体*** ___粗斜体___\n' +
+      '\n' +
+      '上标：X<sub>2</sub>，下标：O<sup>2</sup>\n' +
+      '\n' +
+      '**缩写(同HTML的abbr标签)**\n' +
+      '\n' +
+      '> 即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启\n' +
+      '\n' +
+      'The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.\n' +
+      '\n' +
+      '### 引用 Blockquotes\n' +
+      '\n' +
+      '> 引用文本 Blockquotes\n' +
+      '\n' +
+      '引用的行内混合 Blockquotes\n' +
+      '                    \n' +
+      '> 引用：如果想要插入空白换行`即<br />标签`，在插入处先键入两个以上的空格然后回车即可，[普通链接](http://localhost/)。\n' +
+      '\n' +
+      '### 锚点与链接 Links\n' +
+      '\n' +
+      '[普通链接](http://localhost/)\n' +
+      '\n' +
+      '[普通链接带标题](http://localhost/ "普通链接带标题")\n' +
+      '\n' +
+      '直接链接：<https://github.com>\n' +
+      '\n' +
+      '[锚点链接][anchor-id] \n' +
+      '\n' +
+      '[anchor-id]: http://www.this-anchor-link.com/\n' +
+      '\n' +
+      'GFM a-tail link @pandao\n' +
+      '\n' +
+      '> @pandao\n' +
+      '\n' +
+      '### 多语言代码高亮 Codes\n' +
+      '\n' +
+      '#### 行内代码 Inline code\n' +
+      '\n' +
+      '执行命令：`npm install marked`\n' +
+      '\n' +
+      '#### 缩进风格\n' +
+      '\n' +
+      '即缩进四个空格，也做为实现类似`<pre>`预格式化文本(Preformatted Text)的功能。\n' +
+      '\n' +
+      '    <?php\n' +
+      '        echo "Hello world!";\n' +
+      '    ?>\n' +
+      '    \n' +
+      '预格式化文本：\n' +
+      '\n' +
+      '    | First Header  | Second Header |\n' +
+      '    | ------------- | ------------- |\n' +
+      '    | Content Cell  | Content Cell  |\n' +
+      '    | Content Cell  | Content Cell  |\n' +
+      '\n' +
+      '#### JS代码　\n' +
+      '\n' +
+      '```javascript\n' +
+      'function test(){\n' +
+      '\tconsole.log("Hello world!");\n' +
+      '}\n' +
+      ' \n' +
+      '(function(){\n' +
+      '    var box = function(){\n' +
+      '        return box.fn.init();\n' +
+      '    };\n' +
+      '\n' +
+      '    box.prototype = box.fn = {\n' +
+      '        init : function(){\n' +
+      "            console.log('box.init()');\n" +
+      '\n' +
+      '\t\t\treturn this;\n' +
+      '        },\n' +
+      '\n' +
+      '\t\tadd : function(str){\n' +
+      '\t\t\talert("add", str);\n' +
+      '\n' +
+      '\t\t\treturn this;\n' +
+      '\t\t},\n' +
+      '\n' +
+      '\t\tremove : function(str){\n' +
+      '\t\t\talert("remove", str);\n' +
+      '\n' +
+      '\t\t\treturn this;\n' +
+      '\t\t}\n' +
+      '    };\n' +
+      '    \n' +
+      '    box.fn.init.prototype = box.fn;\n' +
+      '    \n' +
+      '    window.box =box;\n' +
+      '})();\n' +
+      '\n' +
+      'var testBox = box();\n' +
+      'testBox.add("jQuery").remove("jQuery");\n' +
+      '```\n' +
+      '\n' +
+      '#### HTML代码 HTML codes\n' +
+      '\n' +
+      '```html\n' +
+      '<!DOCTYPE html>\n' +
+      '<html>\n' +
+      '    <head>\n' +
+      '        <mate charest="utf-8" />\n' +
+      '        <title>Hello world!</title>\n' +
+      '    </head>\n' +
+      '    <body>\n' +
+      '        <h1>Hello world!</h1>\n' +
+      '    </body>\n' +
+      '</html>\n' +
+      '```\n' +
+      '\n' +
+      '### 图片 Images\n' +
+      '\n' +
+      'Image:\n' +
+      '\n' +
+      '![](https://pandao.github.io/editor.md/examples/images/4.jpg)\n' +
+      '\n' +
+      '> Follow your heart.\n' +
+      '\n' +
+      '![](https://pandao.github.io/editor.md/examples/images/8.jpg)\n' +
+      '\n' +
+      '> 图为：厦门白城沙滩\n' +
+      '\n' +
+      '图片加链接 (Image + Link)：\n' +
+      '\n' +
+      '[![](https://pandao.github.io/editor.md/examples/images/7.jpg)](https://pandao.github.io/editor.md/examples/images/7.jpg "李健首张专辑《似水流年》封面")\n' +
+      '\n' +
+      '> 图为：李健首张专辑《似水流年》封面\n' +
+      '                \n' +
+      '----\n' +
+      '\n' +
+      '### 列表 Lists\n' +
+      '\n' +
+      '#### 无序列表（减号）Unordered Lists (-)\n' +
+      '                \n' +
+      '- 列表一\n' +
+      '- 列表二\n' +
+      '- 列表三\n' +
+      '     \n' +
+      '#### 无序列表（星号）Unordered Lists (*)\n' +
+      '\n' +
+      '* 列表一\n' +
+      '* 列表二\n' +
+      '* 列表三\n' +
+      '\n' +
+      '#### 无序列表（加号和嵌套）Unordered Lists (+)\n' +
+      '                \n' +
+      '+ 列表一\n' +
+      '+ 列表二\n' +
+      '    + 列表二-1\n' +
+      '    + 列表二-2\n' +
+      '    + 列表二-3\n' +
+      '+ 列表三\n' +
+      '    * 列表一\n' +
+      '    * 列表二\n' +
+      '    * 列表三\n' +
+      '\n' +
+      '#### 有序列表 Ordered Lists (-)\n' +
+      '                \n' +
+      '1. 第一行\n' +
+      '2. 第二行\n' +
+      '3. 第三行\n' +
+      '\n' +
+      '#### GFM task list\n' +
+      '\n' +
+      '- [x] GFM task list 1\n' +
+      '- [x] GFM task list 2\n' +
+      '- [ ] GFM task list 3\n' +
+      '    - [ ] GFM task list 3-1\n' +
+      '    - [ ] GFM task list 3-2\n' +
+      '    - [ ] GFM task list 3-3\n' +
+      '- [ ] GFM task list 4\n' +
+      '    - [ ] GFM task list 4-1\n' +
+      '    - [ ] GFM task list 4-2\n' +
+      '                \n' +
+      '----\n' +
+      '                    \n' +
+      '### 绘制表格 Tables\n' +
+      '\n' +
+      '| 项目        | 价格   |  数量  |\n' +
+      '| --------   | -----:  | :----:  |\n' +
+      '| 计算机      | $1600   |   5     |\n' +
+      '| 手机        |   $12   |   12   |\n' +
+      '| 管线        |    $1    |  234  |\n' +
+      '                    \n' +
+      'First Header  | Second Header\n' +
+      '------------- | -------------\n' +
+      'Content Cell  | Content Cell\n' +
+      'Content Cell  | Content Cell \n' +
+      '\n' +
+      '| First Header  | Second Header |\n' +
+      '| ------------- | ------------- |\n' +
+      '| Content Cell  | Content Cell  |\n' +
+      '| Content Cell  | Content Cell  |\n' +
+      '\n' +
+      '| Function name | Description                    |\n' +
+      '| ------------- | ------------------------------ |\n' +
+      '| `help()`      | Display the help window.       |\n' +
+      '| `destroy()`   | **Destroy your computer!**     |\n' +
+      '\n' +
+      '| Left-Aligned  | Center Aligned  | Right Aligned |\n' +
+      '| :------------ |:---------------:| -----:|\n' +
+      '| col 3 is      | some wordy text | $1600 |\n' +
+      '| col 2 is      | centered        |   $12 |\n' +
+      '| zebra stripes | are neat        |    $1 |\n' +
+      '\n' +
+      '| Item      | Value |\n' +
+      '| --------- | -----:|\n' +
+      '| Computer  | $1600 |\n' +
+      '| Phone     |   $12 |\n' +
+      '| Pipe      |    $1 |\n' +
+      '                \n' +
+      '----\n' +
+      '\n' +
+      '#### 特殊符号 HTML Entities Codes\n' +
+      '\n' +
+      '© &  ¨ ™ ¡ £\n' +
+      '& < > ¥ € ® ± ¶ § ¦ ¯ « · \n' +
+      '\n' +
+      'X² Y³ ¾ ¼  ×  ÷   »\n' +
+      '\n' +
+      `18ºC  "  '\n` +
+      '\n' +
+      '### Emoji表情 :smiley:\n' +
+      '\n' +
+      '> Blockquotes :star:\n' +
+      '\n' +
+      '#### GFM task lists & Emoji & fontAwesome icon emoji & editormd logo emoji :editormd-logo-5x:\n' +
+      '\n' +
+      '- [x] :smiley: @mentions, :smiley: #refs, [links](), **formatting**, and <del>tags</del> supported :editormd-logo:;\n' +
+      '- [x] list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;\n' +
+      '- [x] [ ] :smiley: this is a complete item :smiley:;\n' +
+      '- [ ] []this is an incomplete item [test link](#) :fa-star: @pandao; \n' +
+      '- [ ] [ ]this is an incomplete item :fa-star: :fa-gear:;\n' +
+      '    - [ ] :smiley: this is an incomplete item [test link](#) :fa-star: :fa-gear:;\n' +
+      '    - [ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item [test link](#);\n' +
+      ' \n' +
+      '#### 反斜杠 Escape\n' +
+      '\n' +
+      '\\*literal asterisks\\*\n' +
+      '            \n' +
+      '### 科学公式 TeX(KaTeX)\n' +
+      '                    \n' +
+      '$$E=mc^2$$\n' +
+      '\n' +
+      '行内的公式$$E=mc^2$$行内的公式，行内的$$E=mc^2$$公式。\n' +
+      '\n' +
+      '$$\\(\\sqrt{3x-1}+(1+x)^2\\)$$\n' +
+      '                    \n' +
+      '$$\\sin(\\alpha)^{\\theta}=\\sum_{i=0}^{n}(x^i + \\cos(f))$$\n' +
+      '\n' +
+      '多行公式：\n' +
+      '\n' +
+      '```math\n' +
+      '\\displaystyle\n' +
+      '\\left( \\sum\\_{k=1}^n a\\_k b\\_k \\right)^2\n' +
+      '\\leq\n' +
+      '\\left( \\sum\\_{k=1}^n a\\_k^2 \\right)\n' +
+      '\\left( \\sum\\_{k=1}^n b\\_k^2 \\right)\n' +
+      '```\n' +
+      '\n' +
+      '```katex\n' +
+      '\\displaystyle \n' +
+      '    \\frac{1}{\n' +
+      '        \\Bigl(\\sqrt{\\phi \\sqrt{5}}-\\phi\\Bigr) e^{\n' +
+      '        \\frac25 \\pi}} = 1+\\frac{e^{-2\\pi}} {1+\\frac{e^{-4\\pi}} {\n' +
+      '        1+\\frac{e^{-6\\pi}}\n' +
+      '        {1+\\frac{e^{-8\\pi}}\n' +
+      '         {1+\\cdots} }\n' +
+      '        } \n' +
+      '    }\n' +
+      '```\n' +
+      '\n' +
+      '```latex\n' +
+      'f(x) = \\int_{-\\infty}^\\infty\n' +
+      '    \\hat f(\\xi)\\,e^{2 \\pi i \\xi x}\n' +
+      '    \\,d\\xi\n' +
+      '```\n' +
+      '                \n' +
+      '### 绘制流程图 Flowchart\n' +
+      '\n' +
+      '```flow\n' +
+      'st=>start: 用户登陆\n' +
+      'op=>operation: 登陆操作\n' +
+      'cond=>condition: 登陆成功 Yes or No?\n' +
+      'e=>end: 进入后台\n' +
+      '\n' +
+      'st->op->cond\n' +
+      'cond(yes)->e\n' +
+      'cond(no)->op\n' +
+      '```\n' +
+      '                    \n' +
+      '### 绘制序列图 Sequence Diagram\n' +
+      '                    \n' +
+      '```seq\n' +
+      'Andrew->China: Says Hello \n' +
+      'Note right of China: China thinks\\nabout it \n' +
+      'China-->Andrew: How are you? \n' +
+      'Andrew->>China: I am good thanks!\n' +
+      '```\n' +
+      '\n' +
+      '### End',
+    topic_id: 14,
+    topic_name: 'WEB前端',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 1,
+    replyNum: 0
+  },
+  RowDataPacket {
+    id: 96,
+    post_id: '38978a70-31c3-11e9-9fc8-bbb5a5c80194',
+    post_author: '1',
+    post_date: 2019-02-16T08:16:54.000Z,
+    post_title: 'dsad',
+    post_content: 'sdad',
+    topic_id: 25,
+    topic_name: 'dasds',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 0,
+    replyNum: 0
+  },
+  RowDataPacket {
+    id: 95,
+    post_id: '1815b3d0-31c3-11e9-9fc8-bbb5a5c80194',
+    post_author: '1',
+    post_date: 2019-02-16T08:16:00.000Z,
+    post_title: 'weqwe',
+    post_content: 'ewqe',
+    topic_id: 24,
+    topic_name: 'ewqewqe',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 0,
+    replyNum: 0
+  },
+  RowDataPacket {
+    id: 94,
+    post_id: 'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+    post_author: '1',
+    post_date: 2019-02-16T08:14:31.000Z,
+    post_title: 'ewqe',
+    post_content: 'weqwe',
+    topic_id: 23,
+    topic_name: 'eqwewe',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 1,
+    replyNum: 0
+  },
+  RowDataPacket {
+    id: 93,
+    post_id: '50f71510-31c1-11e9-aff5-13b22906e99a',
+    post_author: '1',
+    post_date: 2019-02-16T08:03:16.000Z,
+    post_title: 'ewqe',
+    post_content: 'ewqwe',
+    topic_id: 22,
+    topic_name: 'eqwe',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 0,
+    replyNum: 0
+  },
+  RowDataPacket {
+    id: 92,
+    post_id: '8b6c39e0-31b8-11e9-9286-cd911267878d',
+    post_author: '1',
+    post_date: 2019-02-16T07:00:29.000Z,
+    post_title: 'dasdsad',
+    post_content: 'sdads',
+    topic_id: 21,
+    topic_name: 'ssasas',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 0,
+    replyNum: 0
+  }
+]
+  --> POST /community/getArticleList 200 23ms 2.08kb
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 5ms 26b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 4ms 217b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+listResults ===> [
+  RowDataPacket {
+    id: 100,
+    post_id: '180f2930-46c1-11e9-b5a4-db5a96966b9e',
+    post_author: '824000803@qq.com',
+    post_date: 2019-03-15T01:24:35.000Z,
+    post_title: 'EJDUWDNDW',
+    post_content: 'WIDPOPW',
+    topic_id: 13,
+    topic_name: 'CSGO',
+    nickname: 'YOUJUN',
+    user_id: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+    nums: 1,
+    replyNum: 9
+  },
+  RowDataPacket {
+    id: 99,
+    post_id: '2137c100-44a7-11e9-a0ef-8d85f4e44512',
+    post_author: '1',
+    post_date: 2019-03-12T09:13:41.000Z,
+    post_title: 'Editor.md使用文档',
+    post_content: '### 主要特性\n' +
+      '\n' +
+      '- 支持“标准”Markdown / CommonMark和Github风格的语法，也可变身为代码编辑器；\n' +
+      '- 支持实时预览、图片（跨域）上传、预格式文本/代码/表格插入、代码折叠、搜索替换、只读模式、自定义样式主题和多语言语法高亮等功能；\n' +
+      '- 支持ToC（Table of Contents）、Emoji表情、Task lists、@链接等Markdown扩展语法；\n' +
+      '- 支持TeX科学公式（基于KaTeX）、流程图 Flowchart 和 时序图 Sequence Diagram;\n' +
+      '- 支持识别和解析HTML标签，并且支持自定义过滤标签解析，具有可靠的安全性和几乎无限的扩展性；\n' +
+      '- 支持 AMD / CMD 模块化加载（支持 Require.js & Sea.js），并且支持自定义扩展插件；\n' +
+      '- 兼容主流的浏览器（IE8+）和Zepto.js，且支持iPad等平板设备；\n' +
+      '- 支持自定义主题样式；\n' +
+      '\n' +
+      '# Editor.md\n' +
+      '\n' +
+      '![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)\n' +
+      '\n' +
+      '![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)\n' +
+      '\n' +
+      '**目录 (Table of Contents)**\n' +
+      '\n' +
+      '[TOCM]\n' +
+      '\n' +
+      '[TOC]\n' +
+      '\n' +
+      '# Heading 1\n' +
+      '## Heading 2\n' +
+      '### Heading 3\n' +
+      '#### Heading 4\n' +
+      '##### Heading 5\n' +
+      '###### Heading 6\n' +
+      '# Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '## Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '### Heading 3 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '#### Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '##### Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '###### Heading 6 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+      '\n' +
+      '#### 标题（用底线的形式）Heading (underline)\n' +
+      '\n' +
+      'This is an H1\n' +
+      '=============\n' +
+      '\n' +
+      'This is an H2\n' +
+      '-------------\n' +
+      '\n' +
+      '### 字符效果和横线等\n' +
+      '                \n' +
+      '----\n' +
+      '\n' +
+      '~~删除线~~ <s>删除线（开启识别HTML标签时）</s>\n' +
+      '*斜体字*      _斜体字_\n' +
+      '**粗体**  __粗体__\n' +
+      '***粗斜体*** ___粗斜体___\n' +
+      '\n' +
+      '上标：X<sub>2</sub>，下标：O<sup>2</sup>\n' +
+      '\n' +
+      '**缩写(同HTML的abbr标签)**\n' +
+      '\n' +
+      '> 即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启\n' +
+      '\n' +
+      'The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.\n' +
+      '\n' +
+      '### 引用 Blockquotes\n' +
+      '\n' +
+      '> 引用文本 Blockquotes\n' +
+      '\n' +
+      '引用的行内混合 Blockquotes\n' +
+      '                    \n' +
+      '> 引用：如果想要插入空白换行`即<br />标签`，在插入处先键入两个以上的空格然后回车即可，[普通链接](http://localhost/)。\n' +
+      '\n' +
+      '### 锚点与链接 Links\n' +
+      '\n' +
+      '[普通链接](http://localhost/)\n' +
+      '\n' +
+      '[普通链接带标题](http://localhost/ "普通链接带标题")\n' +
+      '\n' +
+      '直接链接：<https://github.com>\n' +
+      '\n' +
+      '[锚点链接][anchor-id] \n' +
+      '\n' +
+      '[anchor-id]: http://www.this-anchor-link.com/\n' +
+      '\n' +
+      'GFM a-tail link @pandao\n' +
+      '\n' +
+      '> @pandao\n' +
+      '\n' +
+      '### 多语言代码高亮 Codes\n' +
+      '\n' +
+      '#### 行内代码 Inline code\n' +
+      '\n' +
+      '执行命令：`npm install marked`\n' +
+      '\n' +
+      '#### 缩进风格\n' +
+      '\n' +
+      '即缩进四个空格，也做为实现类似`<pre>`预格式化文本(Preformatted Text)的功能。\n' +
+      '\n' +
+      '    <?php\n' +
+      '        echo "Hello world!";\n' +
+      '    ?>\n' +
+      '    \n' +
+      '预格式化文本：\n' +
+      '\n' +
+      '    | First Header  | Second Header |\n' +
+      '    | ------------- | ------------- |\n' +
+      '    | Content Cell  | Content Cell  |\n' +
+      '    | Content Cell  | Content Cell  |\n' +
+      '\n' +
+      '#### JS代码　\n' +
+      '\n' +
+      '```javascript\n' +
+      'function test(){\n' +
+      '\tconsole.log("Hello world!");\n' +
+      '}\n' +
+      ' \n' +
+      '(function(){\n' +
+      '    var box = function(){\n' +
+      '        return box.fn.init();\n' +
+      '    };\n' +
+      '\n' +
+      '    box.prototype = box.fn = {\n' +
+      '        init : function(){\n' +
+      "            console.log('box.init()');\n" +
+      '\n' +
+      '\t\t\treturn this;\n' +
+      '        },\n' +
+      '\n' +
+      '\t\tadd : function(str){\n' +
+      '\t\t\talert("add", str);\n' +
+      '\n' +
+      '\t\t\treturn this;\n' +
+      '\t\t},\n' +
+      '\n' +
+      '\t\tremove : function(str){\n' +
+      '\t\t\talert("remove", str);\n' +
+      '\n' +
+      '\t\t\treturn this;\n' +
+      '\t\t}\n' +
+      '    };\n' +
+      '    \n' +
+      '    box.fn.init.prototype = box.fn;\n' +
+      '    \n' +
+      '    window.box =box;\n' +
+      '})();\n' +
+      '\n' +
+      'var testBox = box();\n' +
+      'testBox.add("jQuery").remove("jQuery");\n' +
+      '```\n' +
+      '\n' +
+      '#### HTML代码 HTML codes\n' +
+      '\n' +
+      '```html\n' +
+      '<!DOCTYPE html>\n' +
+      '<html>\n' +
+      '    <head>\n' +
+      '        <mate charest="utf-8" />\n' +
+      '        <title>Hello world!</title>\n' +
+      '    </head>\n' +
+      '    <body>\n' +
+      '        <h1>Hello world!</h1>\n' +
+      '    </body>\n' +
+      '</html>\n' +
+      '```\n' +
+      '\n' +
+      '### 图片 Images\n' +
+      '\n' +
+      'Image:\n' +
+      '\n' +
+      '![](https://pandao.github.io/editor.md/examples/images/4.jpg)\n' +
+      '\n' +
+      '> Follow your heart.\n' +
+      '\n' +
+      '![](https://pandao.github.io/editor.md/examples/images/8.jpg)\n' +
+      '\n' +
+      '> 图为：厦门白城沙滩\n' +
+      '\n' +
+      '图片加链接 (Image + Link)：\n' +
+      '\n' +
+      '[![](https://pandao.github.io/editor.md/examples/images/7.jpg)](https://pandao.github.io/editor.md/examples/images/7.jpg "李健首张专辑《似水流年》封面")\n' +
+      '\n' +
+      '> 图为：李健首张专辑《似水流年》封面\n' +
+      '                \n' +
+      '----\n' +
+      '\n' +
+      '### 列表 Lists\n' +
+      '\n' +
+      '#### 无序列表（减号）Unordered Lists (-)\n' +
+      '                \n' +
+      '- 列表一\n' +
+      '- 列表二\n' +
+      '- 列表三\n' +
+      '     \n' +
+      '#### 无序列表（星号）Unordered Lists (*)\n' +
+      '\n' +
+      '* 列表一\n' +
+      '* 列表二\n' +
+      '* 列表三\n' +
+      '\n' +
+      '#### 无序列表（加号和嵌套）Unordered Lists (+)\n' +
+      '                \n' +
+      '+ 列表一\n' +
+      '+ 列表二\n' +
+      '    + 列表二-1\n' +
+      '    + 列表二-2\n' +
+      '    + 列表二-3\n' +
+      '+ 列表三\n' +
+      '    * 列表一\n' +
+      '    * 列表二\n' +
+      '    * 列表三\n' +
+      '\n' +
+      '#### 有序列表 Ordered Lists (-)\n' +
+      '                \n' +
+      '1. 第一行\n' +
+      '2. 第二行\n' +
+      '3. 第三行\n' +
+      '\n' +
+      '#### GFM task list\n' +
+      '\n' +
+      '- [x] GFM task list 1\n' +
+      '- [x] GFM task list 2\n' +
+      '- [ ] GFM task list 3\n' +
+      '    - [ ] GFM task list 3-1\n' +
+      '    - [ ] GFM task list 3-2\n' +
+      '    - [ ] GFM task list 3-3\n' +
+      '- [ ] GFM task list 4\n' +
+      '    - [ ] GFM task list 4-1\n' +
+      '    - [ ] GFM task list 4-2\n' +
+      '                \n' +
+      '----\n' +
+      '                    \n' +
+      '### 绘制表格 Tables\n' +
+      '\n' +
+      '| 项目        | 价格   |  数量  |\n' +
+      '| --------   | -----:  | :----:  |\n' +
+      '| 计算机      | $1600   |   5     |\n' +
+      '| 手机        |   $12   |   12   |\n' +
+      '| 管线        |    $1    |  234  |\n' +
+      '                    \n' +
+      'First Header  | Second Header\n' +
+      '------------- | -------------\n' +
+      'Content Cell  | Content Cell\n' +
+      'Content Cell  | Content Cell \n' +
+      '\n' +
+      '| First Header  | Second Header |\n' +
+      '| ------------- | ------------- |\n' +
+      '| Content Cell  | Content Cell  |\n' +
+      '| Content Cell  | Content Cell  |\n' +
+      '\n' +
+      '| Function name | Description                    |\n' +
+      '| ------------- | ------------------------------ |\n' +
+      '| `help()`      | Display the help window.       |\n' +
+      '| `destroy()`   | **Destroy your computer!**     |\n' +
+      '\n' +
+      '| Left-Aligned  | Center Aligned  | Right Aligned |\n' +
+      '| :------------ |:---------------:| -----:|\n' +
+      '| col 3 is      | some wordy text | $1600 |\n' +
+      '| col 2 is      | centered        |   $12 |\n' +
+      '| zebra stripes | are neat        |    $1 |\n' +
+      '\n' +
+      '| Item      | Value |\n' +
+      '| --------- | -----:|\n' +
+      '| Computer  | $1600 |\n' +
+      '| Phone     |   $12 |\n' +
+      '| Pipe      |    $1 |\n' +
+      '                \n' +
+      '----\n' +
+      '\n' +
+      '#### 特殊符号 HTML Entities Codes\n' +
+      '\n' +
+      '© &  ¨ ™ ¡ £\n' +
+      '& < > ¥ € ® ± ¶ § ¦ ¯ « · \n' +
+      '\n' +
+      'X² Y³ ¾ ¼  ×  ÷   »\n' +
+      '\n' +
+      `18ºC  "  '\n` +
+      '\n' +
+      '### Emoji表情 :smiley:\n' +
+      '\n' +
+      '> Blockquotes :star:\n' +
+      '\n' +
+      '#### GFM task lists & Emoji & fontAwesome icon emoji & editormd logo emoji :editormd-logo-5x:\n' +
+      '\n' +
+      '- [x] :smiley: @mentions, :smiley: #refs, [links](), **formatting**, and <del>tags</del> supported :editormd-logo:;\n' +
+      '- [x] list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;\n' +
+      '- [x] [ ] :smiley: this is a complete item :smiley:;\n' +
+      '- [ ] []this is an incomplete item [test link](#) :fa-star: @pandao; \n' +
+      '- [ ] [ ]this is an incomplete item :fa-star: :fa-gear:;\n' +
+      '    - [ ] :smiley: this is an incomplete item [test link](#) :fa-star: :fa-gear:;\n' +
+      '    - [ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item [test link](#);\n' +
+      ' \n' +
+      '#### 反斜杠 Escape\n' +
+      '\n' +
+      '\\*literal asterisks\\*\n' +
+      '            \n' +
+      '### 科学公式 TeX(KaTeX)\n' +
+      '                    \n' +
+      '$$E=mc^2$$\n' +
+      '\n' +
+      '行内的公式$$E=mc^2$$行内的公式，行内的$$E=mc^2$$公式。\n' +
+      '\n' +
+      '$$\\(\\sqrt{3x-1}+(1+x)^2\\)$$\n' +
+      '                    \n' +
+      '$$\\sin(\\alpha)^{\\theta}=\\sum_{i=0}^{n}(x^i + \\cos(f))$$\n' +
+      '\n' +
+      '多行公式：\n' +
+      '\n' +
+      '```math\n' +
+      '\\displaystyle\n' +
+      '\\left( \\sum\\_{k=1}^n a\\_k b\\_k \\right)^2\n' +
+      '\\leq\n' +
+      '\\left( \\sum\\_{k=1}^n a\\_k^2 \\right)\n' +
+      '\\left( \\sum\\_{k=1}^n b\\_k^2 \\right)\n' +
+      '```\n' +
+      '\n' +
+      '```katex\n' +
+      '\\displaystyle \n' +
+      '    \\frac{1}{\n' +
+      '        \\Bigl(\\sqrt{\\phi \\sqrt{5}}-\\phi\\Bigr) e^{\n' +
+      '        \\frac25 \\pi}} = 1+\\frac{e^{-2\\pi}} {1+\\frac{e^{-4\\pi}} {\n' +
+      '        1+\\frac{e^{-6\\pi}}\n' +
+      '        {1+\\frac{e^{-8\\pi}}\n' +
+      '         {1+\\cdots} }\n' +
+      '        } \n' +
+      '    }\n' +
+      '```\n' +
+      '\n' +
+      '```latex\n' +
+      'f(x) = \\int_{-\\infty}^\\infty\n' +
+      '    \\hat f(\\xi)\\,e^{2 \\pi i \\xi x}\n' +
+      '    \\,d\\xi\n' +
+      '```\n' +
+      '                \n' +
+      '### 绘制流程图 Flowchart\n' +
+      '\n' +
+      '```flow\n' +
+      'st=>start: 用户登陆\n' +
+      'op=>operation: 登陆操作\n' +
+      'cond=>condition: 登陆成功 Yes or No?\n' +
+      'e=>end: 进入后台\n' +
+      '\n' +
+      'st->op->cond\n' +
+      'cond(yes)->e\n' +
+      'cond(no)->op\n' +
+      '```\n' +
+      '                    \n' +
+      '### 绘制序列图 Sequence Diagram\n' +
+      '                    \n' +
+      '```seq\n' +
+      'Andrew->China: Says Hello \n' +
+      'Note right of China: China thinks\\nabout it \n' +
+      'China-->Andrew: How are you? \n' +
+      'Andrew->>China: I am good thanks!\n' +
+      '```\n' +
+      '\n' +
+      '### End',
+    topic_id: 14,
+    topic_name: 'WEB前端',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 1,
+    replyNum: 0
+  },
+  RowDataPacket {
+    id: 96,
+    post_id: '38978a70-31c3-11e9-9fc8-bbb5a5c80194',
+    post_author: '1',
+    post_date: 2019-02-16T08:16:54.000Z,
+    post_title: 'dsad',
+    post_content: 'sdad',
+    topic_id: 25,
+    topic_name: 'dasds',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 0,
+    replyNum: 0
+  },
+  RowDataPacket {
+    id: 95,
+    post_id: '1815b3d0-31c3-11e9-9fc8-bbb5a5c80194',
+    post_author: '1',
+    post_date: 2019-02-16T08:16:00.000Z,
+    post_title: 'weqwe',
+    post_content: 'ewqe',
+    topic_id: 24,
+    topic_name: 'ewqewqe',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 0,
+    replyNum: 0
+  },
+  RowDataPacket {
+    id: 94,
+    post_id: 'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+    post_author: '1',
+    post_date: 2019-02-16T08:14:31.000Z,
+    post_title: 'ewqe',
+    post_content: 'weqwe',
+    topic_id: 23,
+    topic_name: 'eqwewe',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 1,
+    replyNum: 0
+  },
+  RowDataPacket {
+    id: 93,
+    post_id: '50f71510-31c1-11e9-aff5-13b22906e99a',
+    post_author: '1',
+    post_date: 2019-02-16T08:03:16.000Z,
+    post_title: 'ewqe',
+    post_content: 'ewqwe',
+    topic_id: 22,
+    topic_name: 'eqwe',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 0,
+    replyNum: 0
+  },
+  RowDataPacket {
+    id: 92,
+    post_id: '8b6c39e0-31b8-11e9-9286-cd911267878d',
+    post_author: '1',
+    post_date: 2019-02-16T07:00:29.000Z,
+    post_title: 'dasdsad',
+    post_content: 'sdads',
+    topic_id: 21,
+    topic_name: 'ssasas',
+    nickname: '柯涵',
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    nums: 0,
+    replyNum: 0
+  }
+]
+  --> POST /community/getArticleList 200 31ms 2.08kb
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 9ms 443b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 11ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getAuthorinfo
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 298ms 26b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'A',
+    blog_url: ''
+  }
+]
+  --> POST /community/getTopicList 200 27ms 441b
+  --> POST /personal/getAuthorinfo 200 101ms 304b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 108ms 3.31kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 1ms 36b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 23ms 3.31kb
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 19ms 3.31kb
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 12ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 14ms 3.31kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 1ms 36b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 17ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 1ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getAuthorinfo
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 229ms 26b
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'A',
+    blog_url: ''
+  }
+]
+  --> POST /personal/getAuthorinfo 200 24ms 304b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 9ms 445b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 35ms 3.31kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 2ms 36b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 27ms 3.31kb
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 15ms 3.31kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 21ms 3.31kb
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 13ms 3.31kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 0ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 22ms 3.31kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 2ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 1ms 36b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 11ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 20ms 3.31kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 2ms 36b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 1ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 6ms 26b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'A',
+    blog_url: ''
+  }
+]
+  --> POST /personal/getAuthorinfo 200 28ms 304b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 25ms 3.31kb
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 445b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 0ms 36b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 21ms 3.31kb
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 2ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'A',
+    blog_url: ''
+  }
+]
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 184ms 26b
+  --> POST /personal/getAuthorinfo 200 33ms 304b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 0ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 6ms 445b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 33ms 3.31kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 1ms 36b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 8ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 16ms 3.31kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 1ms 36b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getFollowUser
+OPTIONS /personal/getFollowUser - 0ms
+  --> OPTIONS /personal/getFollowUser 200 1ms 0b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 9ms 22b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 19ms 3.31kb
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 9ms 22b
+decodedValue----====> {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  password: '3399cf05d37b89650e1c040e31bd69a1',
+  iat: 1584948903,
+  exp: 1585121703,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 14ms 3.31kb
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 3ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'A',
+    blog_url: ''
+  }
+]
+  --> POST /personal/getAuthorinfo 200 18ms 304b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 445b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getArticleList
+  --> POST /personal/getArticleList 200 19ms 2.98kb
+  <-- OPTIONS /login
+OPTIONS /login - 0ms
+  --> OPTIONS /login 200 2ms 0b
+  <-- POST /login
+result1 [
+  RowDataPacket {
+    id: 6,
+    user_id: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+    portrait: '/users/53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1/portraits/0.07900732227868934.jpg',
+    job: 'CSGO大地球',
+    introduction: '<a href="/">click me!!!</a>',
+    blog_url: ''
+  }
+]
+  --> POST /login 200 16ms 715b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 1ms 0b
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 1ms 37b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 1ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 5ms 26b
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'A',
+    blog_url: ''
+  }
+]
+  --> POST /personal/getAuthorinfo 200 24ms 304b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  '06ff49b0-1bc2-11e9-b6f4-efeb906e68fe',
+  '1a7659c0-1bc2-11e9-b6f4-efeb906e68fe',
+  '321c9490-1bc2-11e9-b6f4-efeb906e68fe',
+  '2137c100-44a7-11e9-a0ef-8d85f4e44512'
+]
+  --> POST /personal/getArticleList 200 28ms 3.31kb
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 3ms 445b
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 1ms 37b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getFollowUser
+OPTIONS /personal/getFollowUser - 0ms
+  --> OPTIONS /personal/getFollowUser 200 1ms 0b
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 11ms 22b
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  '06ff49b0-1bc2-11e9-b6f4-efeb906e68fe',
+  '1a7659c0-1bc2-11e9-b6f4-efeb906e68fe',
+  '321c9490-1bc2-11e9-b6f4-efeb906e68fe',
+  '2137c100-44a7-11e9-a0ef-8d85f4e44512'
+]
+  --> POST /personal/getArticleList 200 28ms 3.31kb
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 4ms 22b
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  '06ff49b0-1bc2-11e9-b6f4-efeb906e68fe',
+  '1a7659c0-1bc2-11e9-b6f4-efeb906e68fe',
+  '321c9490-1bc2-11e9-b6f4-efeb906e68fe',
+  '2137c100-44a7-11e9-a0ef-8d85f4e44512'
+]
+  --> POST /personal/getArticleList 200 22ms 3.31kb
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 6ms 22b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  '06ff49b0-1bc2-11e9-b6f4-efeb906e68fe',
+  '1a7659c0-1bc2-11e9-b6f4-efeb906e68fe',
+  '321c9490-1bc2-11e9-b6f4-efeb906e68fe',
+  '2137c100-44a7-11e9-a0ef-8d85f4e44512'
+]
+  --> POST /personal/getArticleList 200 20ms 3.31kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getFollowUser
+OPTIONS /personal/getFollowUser - 0ms
+  --> OPTIONS /personal/getFollowUser 200 1ms 0b
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 10ms 22b
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 5ms 22b
+decodedValue----====> {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '824000803@qq.com',
+  nickname: 'YOUJUN',
+  userId: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+  password: '0dc54dcb2163e9911041d1b3656a0f78',
+  iat: 1585121300,
+  exp: 1585294100,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  '06ff49b0-1bc2-11e9-b6f4-efeb906e68fe',
+  '1a7659c0-1bc2-11e9-b6f4-efeb906e68fe',
+  '321c9490-1bc2-11e9-b6f4-efeb906e68fe',
+  '2137c100-44a7-11e9-a0ef-8d85f4e44512'
+]
+  --> POST /personal/getArticleList 200 20ms 3.31kb
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'A',
+    blog_url: ''
+  }
+]
+  --> POST /personal/getAuthorinfo 200 21ms 304b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 445b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getArticleList
+  --> POST /personal/getArticleList 200 37ms 2.98kb
+  <-- OPTIONS /login
+OPTIONS /login - 0ms
+  --> OPTIONS /login 200 1ms 0b
+  <-- POST /login
+result1 [
+  RowDataPacket {
+    id: 8,
+    user_id: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+    portrait: '/user-images/0.1436446423680504.jpg',
+    job: '',
+    introduction: '',
+    blog_url: ''
+  }
+]
+  --> POST /login 200 17ms 599b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 1ms
+  --> OPTIONS /personal/verifyOwner 200 1ms 0b
+decodedValue----====> {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 59660e70-2e76-11e9-86b0-dbccef6f7c54 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 1ms 37b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 1ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+decodedValue----====> {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'A',
+    blog_url: ''
+  }
+]
+  --> POST /personal/getAuthorinfo 200 15ms 304b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 1ms
+  --> OPTIONS /community/getTopicList 200 3ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+decodedValue----====> {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 6ms 445b
+decodedValue----====> {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > []
+  --> POST /personal/getArticleList 200 21ms 3.31kb
+decodedValue----====> {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 59660e70-2e76-11e9-86b0-dbccef6f7c54 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 1ms 37b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 1ms 0b
+  <-- POST /verifyToken
+decodedValue----====> {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+result-------------- {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+decodedValue----====> {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'A',
+    blog_url: ''
+  }
+]
+  --> POST /personal/getAuthorinfo 200 16ms 304b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+decodedValue----====> {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+decodedValue----====> {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+arr === > []
+  --> POST /personal/getArticleList 200 27ms 3.31kb
+  --> POST /community/getTopicList 200 7ms 443b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 1ms 0b
+decodedValue----====> {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+result=================================>funck {
+  username: '2',
+  nickname: '2',
+  userId: '59660e70-2e76-11e9-86b0-dbccef6f7c54',
+  password: '526204e1befb727cfe2b792e33247471',
+  iat: 1585121330,
+  exp: 1585294130,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 59660e70-2e76-11e9-86b0-dbccef6f7c54 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 0ms 37b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'A',
+    blog_url: ''
+  }
+]
+  --> POST /personal/getAuthorinfo 200 17ms 304b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 3ms 439b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getArticleList
+  --> POST /personal/getArticleList 200 13ms 2.98kb
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 3ms 443b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+  --> POST /community/getArticleList 200 14ms 1.93kb
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 2ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 439b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+  --> POST /community/getArticleList 200 19ms 1.93kb
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 12ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 3ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+  --> POST /community/getTopicList 200 105ms 439b
+  --> POST /community/getHotList 200 177ms 217b
+  --> POST /community/getArticleList 200 58ms 1.93kb
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 13ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+  --> POST /community/getHotList 200 90ms 217b
+  --> POST /community/getTopicList 200 49ms 443b
+  --> POST /community/getArticleList 200 36ms 1.93kb
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 3ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 6,
+    user_id: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+    portrait: '/users/53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1/portraits/0.07900732227868934.jpg',
+    job: 'CSGO大地球',
+    introduction: '<a href="/">click me!!!</a>',
+    blog_url: ''
+  }
+]
+  --> POST /personal/getAuthorinfo 200 15ms 331b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 6ms 443b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getArticleList
+  --> POST /personal/getArticleList 200 14ms 209b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getFollowUser
+OPTIONS /personal/getFollowUser - 0ms
+  --> OPTIONS /personal/getFollowUser 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 5ms 252b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 12ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getAuthorinfo
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getArticleList
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+result1 [
+  RowDataPacket {
+    id: 6,
+    user_id: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+    portrait: '/users/53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1/portraits/0.07900732227868934.jpg',
+    job: 'CSGO大地球',
+    introduction: '<a href="/">click me!!!</a>',
+    blog_url: ''
+  }
+]
+  --> POST /community/getTopicList 200 27ms 443b
+  --> POST /personal/getArticleList 200 48ms 209b
+  --> POST /personal/getAuthorinfo 200 139ms 331b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getFollowUser
+OPTIONS /personal/getFollowUser - 0ms
+  --> OPTIONS /personal/getFollowUser 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 7ms 252b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 13ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 3ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getAuthorinfo
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getArticleList
+result1 [
+  RowDataPacket {
+    id: 6,
+    user_id: '53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1',
+    portrait: '/users/53ad8ae0-1bba-11e9-a25d-f1ddeaef74d1/portraits/0.07900732227868934.jpg',
+    job: 'CSGO大地球',
+    introduction: '<a href="/">click me!!!</a>',
+    blog_url: ''
+  }
+]
+  --> POST /personal/getAuthorinfo 200 85ms 331b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 439b
+  --> POST /personal/getArticleList 200 70ms 209b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getFollowUser
+OPTIONS /personal/getFollowUser - 0ms
+  --> OPTIONS /personal/getFollowUser 200 0ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 13ms 252b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getArticleList
+  --> POST /personal/getArticleList 200 19ms 209b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getFollowUser
+OPTIONS /personal/getFollowUser - 0ms
+  --> OPTIONS /personal/getFollowUser 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 6ms 252b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 0ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getArticleList
+  --> POST /personal/getArticleList 200 14ms 209b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 4ms 252b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'A',
+    blog_url: ''
+  }
+]
+  --> POST /personal/getAuthorinfo 200 16ms 304b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 443b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getArticleList
+  --> POST /personal/getArticleList 200 12ms 2.98kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getArticleList
+  --> POST /personal/getArticleList 200 15ms 209b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getFollowUser
+OPTIONS /personal/getFollowUser - 0ms
+  --> OPTIONS /personal/getFollowUser 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 6ms 252b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getArticleList
+  --> POST /personal/getArticleList 200 17ms 209b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getFollowUser
+OPTIONS /personal/getFollowUser - 0ms
+  --> OPTIONS /personal/getFollowUser 200 3ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 5ms 252b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 9ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getArticleList
+  --> POST /personal/getArticleList 200 64ms 209b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getFollowUser
+OPTIONS /personal/getFollowUser - 0ms
+  --> OPTIONS /personal/getFollowUser 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 6ms 252b
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675
+---------------------连接池连接数:------------------- 0
+a b14785420de44a86c4c18dfa16d98675
+b b14785420de44a86c4c18dfa16d98675

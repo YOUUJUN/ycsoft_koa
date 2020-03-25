@@ -30,6 +30,7 @@ module.exports = (app) => {
     router.post('/personal/getArticleList',homeController.personalArticleList);
     router.post('/personal/verifyOwner',homeController.verifyOwner);
     router.post('/personal/getFollowUser',homeController.getFollowUser);
+    router.post('/personal/addFollow',homeController.addFollow);
 
 
     router.post('/login',homeController.login);

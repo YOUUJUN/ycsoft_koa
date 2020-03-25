@@ -30,7 +30,31 @@
             </ul>
 
         </el-tab-pane>
-        <el-tab-pane :label="'关注的人  '+ authorInfo.concernNum">关注的人</el-tab-pane>
+        <el-tab-pane :label="'关注的人  '+ authorInfo.concernNum">
+
+            <ul class="article-list">
+
+                <li class="user-article" v-for="item of followerList">
+                    <a class="topic-href" target="_blank" v-bind:href="item.url">
+                        <div class="follow-box">
+                            <img class="follow-portrait" v-bind:src="item.portrait">
+                            <div class="follow-info">
+                                <span class="nickname">{{item.nickname}}</span>
+                                <span class="introduction">{{item.introduction}}</span>
+                            </div>
+                        </div>
+
+                        <div class="topic-detail-follow">
+                            <object>
+                                <a href="javascript:void(0);" id="focus" class="btn" @click="addFollow(item.id)">关注</a>
+                            </object>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+
+        </el-tab-pane>
         <el-tab-pane :label="'关注标签  '+ authorInfo.topicNum">关注标签</el-tab-pane>
     </el-tabs>
 
@@ -47,15 +71,37 @@
                 userInfo: {},
                 text: "<span style='color:red;'>hello</span>",
                 articleList : [],
+                followerList : [],
                 owner : false
             }
         },
         methods: {
             changeTabLogout(target) {
-                if (target.index == "0") {
-                    this.getArticleList();
-
+                // if (target.index == "0") {
+                //     this.getArticleList();
+                // }
+                switch (target.index) {
+                    case "0":
+                        this.getArticleList();
+                        break;
+                    case "1":
+                        this.getFollowerList();
+                        break;
                 }
+            },
+
+            getFollowerList (){
+                this.$axios({
+                    method : "post",
+                    url : "/personal/getFollowUser",
+                    data : {
+                        userId : this.$common.getHash()
+                    }
+                }).then(res => {
+                    this.followerList = res.data.data;
+                }).catch(err => {
+
+                })
             },
 
 
@@ -71,6 +117,10 @@
                 }).catch(err => {
 
                 })
+            },
+
+            addFollow(){
+
             },
 
             getTimeDif (timer){
@@ -277,6 +327,54 @@
 
     .btn.diy-btn.active i {
         color: red;
+    }
+
+
+    /*----------话题分类显示----------*/
+
+    .user-article .topic-href{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        padding:25px;
+    }
+
+    .topic-title h2 {
+        font-size: 22px;
+        margin:0;
+    }
+
+    /*-------------关注的人分类-------------*/
+
+    .follow-box{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .follow-portrait{
+        width:50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right:20px;
+    }
+
+    .follow-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .follow-info .nickname{
+        font-size: 16px;
+        font-weight: 600;
+        color: #2e3135;
+        margin-bottom: 5px;
+    }
+
+    .follow-info .introduction{
+        font-size: 14px;
+        color: rgba(0,0,0,0.5);
     }
 
 

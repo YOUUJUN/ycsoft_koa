@@ -15,7 +15,7 @@
                                     <div class="info-row">
                                         <ul class="meta-list">
                                             <li>
-                                                <object><a v-bind:userUrl="item.userUrl"><span class="username">{{item.author}}</span>
+                                                <object><a v-bind:href="item.userUrl"><span class="username">{{item.author}}</span>
                                                     -</a></object>
                                             </li>
                                             <li><span class="time">{{getTimeDif(item.date)}}</span> -</li>
