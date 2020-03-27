@@ -29,7 +29,7 @@
         <div class="personal-control">
 
             <a href="/users/setting" class="btn" v-if="logged">编辑个人资料</a>
-            <button id="followBtn" class="btn" onclick="doAsk(addFollow,' ',this)" v-else>关注</button>
+            <button id="followBtn" class="btn" @click="addFollow(authorInfo.userId)" v-else>关注</button>
 
         </div>
 
@@ -49,6 +49,23 @@
                 logged : true
             }
         },
+
+        methods : {
+            checkUserBind (){
+                this.$axios({
+                    method : "post",
+                    url : "/personal/checkUserAuthorBind",
+                    data : {
+                        userId : this.$common.getHash()
+                    }
+                }).then(res => {
+
+                }).catch(err => {
+
+                })
+            }
+        },
+
         computed : {
             // logged (){
             //     console.log("logged,panel",this.$store.state.logged);

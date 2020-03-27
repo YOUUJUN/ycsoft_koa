@@ -34,7 +34,7 @@
 
             <ul class="article-list">
 
-                <li class="user-article" v-for="item of followerList">
+                <li class="user-article" v-for="(item) of followerList">
                     <a class="topic-href" target="_blank" v-bind:href="item.url">
                         <div class="follow-box">
                             <img class="follow-portrait" v-bind:src="item.portrait">
@@ -46,7 +46,8 @@
 
                         <div class="topic-detail-follow">
                             <object>
-                                <a href="javascript:void(0);" id="focus" class="btn" @click="addFollow(item.id)">关注</a>
+                                <a href="javascript:void(0);" class="btn active" @click="addFollow(item)" v-if="item.ifFollowed">已关注</a>
+                                <a href="javascript:void(0);" class="btn" @click="addFollow(item)" v-else>关注</a>
                             </object>
                         </div>
                     </a>
@@ -99,6 +100,7 @@
                     }
                 }).then(res => {
                     this.followerList = res.data.data;
+                    console.log("followerList",this.followerList);
                 }).catch(err => {
 
                 })
@@ -119,8 +121,8 @@
                 })
             },
 
-            addFollow(){
-
+            addFollow(item){
+                this.$emit("addFollow",item);
             },
 
             getTimeDif (timer){

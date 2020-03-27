@@ -353,6 +353,9 @@ const community = {
     },
 
 
+    /*---personal---*/
+
+
     async personalArticleList (ctx){
         let body = ctx.request.body
         let userId = body.userId;
@@ -402,6 +405,9 @@ const community = {
     },
 
     async getFollowUser(ctx){
+
+        let logged = ctx.state.logged;
+
         let body = ctx.request.body;
 
         let getTargetIdSql = "SELECT user_name FROM users WHERE user_id = ?";
@@ -424,17 +430,133 @@ const community = {
                 id : results[i].user_id,
                 url : arr.concat(results[0].user_id),
                 portrait : results[i].portrait,
-                introduction : results[i].introduction
+                introduction : results[i].introduction,
+                ifFollowed : false
             }
             data.push(obj);
         }
+
+
+
+        if(logged){
+            let checkFollowSql = "SELECT author_id FROM user_follow WHERE user_name = ?";
+            let checkFollowParam = [logged.username];
+
+            results = await query(checkFollowSql,checkFollowParam);
+
+            var checkList = [];
+
+            for(var i=0;i<results.length;i++){
+                checkList[i] = results[i].author_id;
+            }
+
+
+            for(let item of data){
+                if(checkList.includes(item.id)){
+                    item.ifFollowed = true;
+                }else{
+                    item.ifFollowed = false;
+                }
+            }
+        }
+
 
         return data;
 
     },
 
-    async addFollow(ctx){
 
+    async checkUserAuthorBind (ctx){
+        let body = ctx.request.body;
+        let logged = ctx.state.logged;
+
+        let checkIfConcernSql = "SELECT COUNT(*) AS nums FROM user_follow WHERE user_name = ? AND author_id = ?";
+        let checkIfConcernParam = [logged.username,body.userId];
+
+        let result = await query(checkIfConcernSql, checkIfConcernParam);
+
+        if(results[0].nums == 0){
+            return false;
+        }else{
+            return true;
+        }
+
+    },
+
+    async addFollow(ctx){
+        let msg = {
+            data : "操作失败!",
+            status : 0
+        };
+
+        let logged = ctx.state.logged;
+
+        if(!logged){
+            return;
+        }
+        let body = ctx.request.body;
+        console.log("logged==--==",logged);
+        let authorId = body.userId;
+        let username = logged.username;
+
+        if(logged.userId == authorId){
+            return {
+                data : "不能关注自己哦!",
+                status : 0
+            };
+        }
+
+        let checkFollowSql = "SELECT COUNT(*) AS nums FROM user_follow WHERE user_name = ? AND author_id = ?";
+        let checkFollowParam = [username,authorId];
+
+        console.log("1--------------");
+
+        /*---查询是否已经关注该作者---*/
+        let result = await query(checkFollowSql,checkFollowParam);
+
+        let nums = result[0].nums;
+
+        console.log("nums",nums);
+
+        if(nums === 0){
+            let upDateFollowSql = "INSERT user_follow(id,user_name,author_id) VALUE(0,?,?)";
+            let upDateFollowParam = [username,authorId];
+
+            let result = await query(upDateFollowSql,upDateFollowParam);
+
+            if(result.affectedRows == '1'){
+                msg = {
+                    data : "关注成功!",
+                    status : 1
+                };
+
+            }
+        }else {
+
+            let delFollowSql = "DELETE FROM user_follow WHERE user_name = ? AND author_id = ?";
+            let delFollowParam = [username,authorId];
+
+            result = await query(delFollowSql,delFollowParam);
+
+            console.log("ok",result);
+
+            if(result.affectedRows == '1'){
+
+                msg = {
+                    data : "取消关注成功!",
+                    status : 2
+                };
+
+            }
+
+        }
+
+        return msg;
+
+    },
+
+    async getFocusTopic(ctx){
+        let body = ctx.request.body;
     }
 
 

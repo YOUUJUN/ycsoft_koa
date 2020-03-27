@@ -130,6 +130,7 @@ class User{
 
         let userData = {
             nickname : info.nickname,
+            userId : info.userId,
             url : fixHead.concat(info.userId),
             portrait : result1[0].portrait,
             job : result1[0].job,

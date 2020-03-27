@@ -15,7 +15,7 @@
 
                     <panel v-bind:authorInfo = "authorInfo"></panel>
 
-                    <tabs-panel v-bind:authorInfo = "authorInfo"></tabs-panel>
+                    <tabs-panel v-bind:authorInfo = "authorInfo" @addFollow="addFollow" ref="tabs"></tabs-panel>
 
                 </div>
 
@@ -77,7 +77,28 @@
                     }
                 }).then(value =>{
                     this.authorInfo = value.data.data;
+                    console.log("authorInfo",this.authorInfo);
                 }).catch(err => {
+                    console.error(err);
+                })
+            },
+
+            addFollow(item,index){
+                console.log("item",item);
+                this.$axios({
+                    method : "post",
+                    url : "/personal/addFollow",
+                    data : {
+                        userId : item.id
+                    }
+                }).then(res => {
+                    alert(res.data.data);
+                    if(res.data.status == '1'){
+                        item.ifFollowed = true;
+                    }else if(res.data.status == '2'){
+                        item.ifFollowed = false;
+                    }
+                }).catch(err =>{
                     console.error(err);
                 })
             }
@@ -85,6 +106,11 @@
         },
 
         computed:{
+
+            getLogStatus (){
+                this.logged = this.$store.state.logged;
+                let result = this.verifyOwner();
+            }
 
         },
 

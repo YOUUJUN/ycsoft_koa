@@ -78,7 +78,7 @@ module.exports = {
         let hash = href[href.length - 1];
         let results = await page_guide.getDocByHash(hash);
 
-        const msg = {
+        let msg = {
             status : 0,
             content : "未知错误!"
         };
@@ -114,7 +114,7 @@ module.exports = {
     },
 
     async verifyToken (ctx, next) {
-        const msg = {
+        let msg = {
             status: 0,
             logged: false
         }
@@ -144,7 +144,7 @@ module.exports = {
     /*--community--*/
     getHotList : async (ctx, next) =>{
 
-        const msg = {
+        let msg = {
             status : 0,
             data : ""
         }
@@ -163,7 +163,7 @@ module.exports = {
 
     getArticleList : async (ctx, next) =>{
 
-        const msg = {
+        let msg = {
             status : 0,
             data : "",
             info : ""
@@ -175,7 +175,7 @@ module.exports = {
         let searchIndex = body.postIndex;
         let searchTopic = body.topic;
 
-        const userConfig = {};
+        let userConfig = {};
 
         userConfig.searchIndex = searchIndex;
         userConfig.searchTopic = searchTopic;
@@ -221,7 +221,7 @@ module.exports = {
     },
 
     getTopicList : async (ctx, next) =>{
-        const msg = {
+        let msg = {
             status : 0,
             data : ""
         }
@@ -243,7 +243,7 @@ module.exports = {
 
     getArticleInfo : async (ctx,next) =>{
 
-        const msg = {
+        let msg = {
             status : 0,
             data : ""
         }
@@ -264,32 +264,8 @@ module.exports = {
         ctx.body = msg;
     },
 
-    getAuthorInfo : async (ctx,next) =>{
-
-        const msg = {
-            status : 0,
-            data : ""
-        }
-
-        let body = ctx.request.body;
-        let postId = body.postId;
-
-        try {
-            let results = await page_community.getAuthorInfo(postId);
-
-            msg.status = 1;
-            msg.data = results;
-
-        }catch (e) {
-            console.error("get Author info failed",e)
-        }
-
-        ctx.body = msg;
-
-    },
-
     async getComment (ctx,next){
-        const msg = {
+        let msg = {
             status : 0,
             data : ""
         }
@@ -311,7 +287,7 @@ module.exports = {
     },
 
     async getReComment (ctx,next){
-        const msg = {
+        let msg = {
             status : 0,
             data : ""
         }
@@ -335,7 +311,7 @@ module.exports = {
 
 
     async addComment (ctx,next){
-        const msg = {
+        let msg = {
             status : 0,
             data : "发表评论失败!"
         }
@@ -362,7 +338,7 @@ module.exports = {
     },
 
     async addReComment (ctx,next){
-        const msg = {
+        let msg = {
             status : 0,
             data : "发表评论失败!"
         }
@@ -394,7 +370,7 @@ module.exports = {
 
     async getAuthorinfo(ctx,next){
 
-        const msg = {
+        let msg = {
             status : 0,
             data : ""
         }
@@ -420,7 +396,7 @@ module.exports = {
 
 
     async personalArticleList(ctx, next) {
-        const msg = {
+        let msg = {
             status: 0,
             data: ""
         }
@@ -443,7 +419,7 @@ module.exports = {
         let body = ctx.request.body;
         let logged = ctx.state.logged;
 
-        const msg = {
+        let msg = {
             status: 0,
             data: ""
         }
@@ -466,7 +442,7 @@ module.exports = {
 
     async getFollowUser(ctx,next){
 
-        const msg = {
+        let msg = {
             status: 0,
             data: ""
         }
@@ -486,25 +462,75 @@ module.exports = {
     },
 
     async addFollow(ctx,next){
-        const msg = {
+        let msg = {
             status: 0,
             data: ""
         }
 
         try {
             let results = await page_community.addFollow(ctx);
+            msg = results;
+
+        } catch (e) {
+
+            msg.data = "关注失败!";
+            console.error("get personalFollower failed", e)
+        }
+
+        ctx.body = msg;
+    },
+
+    async getFocusTopic(ctx,next){
+
+        let msg = {
+            status: 0,
+            data: ""
+        }
+
+        try {
+            let results = await page_community.getFocusTopic(ctx);
 
             msg.status = 1;
             msg.data = results;
 
         } catch (e) {
-            console.error("get personalFollower failed", e)
+            console.error("get personalFocusTopic failed", e)
         }
 
         ctx.body = msg;
+
+    },
+
+    async checkUserAuthorBind(ctx, next){
+
+        let msg = {
+            status: 0,
+            data: ""
+        }
+
+        try {
+            let results = await page_community.checkUserAuthorBind(ctx);
+
+            msg.status = 1;
+            msg.data = results;
+
+        } catch (e) {
+            console.error("checkUserAuthorBind failed", e)
+        }
+
+        ctx.body = msg;
+
     }
 
+
+
+
+
+
 };
+
+
+
 
 
 

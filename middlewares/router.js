@@ -20,7 +20,6 @@ module.exports = (app) => {
     router.post('/community/getArticleList',homeController.getArticleList);
     router.post('/community/getTopicList',homeController.getTopicList);
     router.post('/community/getArticleInfo',homeController.getArticleInfo);
-    router.post('/community/getAuthorInfo',homeController.getAuthorInfo);
     router.post('/community/getComment',homeController.getComment);
     router.post('/community/getReComment',homeController.getReComment);
     router.post('/community/addComment',homeController.addComment);
@@ -31,6 +30,9 @@ module.exports = (app) => {
     router.post('/personal/verifyOwner',homeController.verifyOwner);
     router.post('/personal/getFollowUser',homeController.getFollowUser);
     router.post('/personal/addFollow',homeController.addFollow);
+    router.post('/personal/getFocusTopic',homeController.getFocusTopic);
+    router.post('/personal/checkUserAuthorBind',homeController.checkUserAuthorBind);
+
 
 
     router.post('/login',homeController.login);
