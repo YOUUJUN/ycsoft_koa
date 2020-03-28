@@ -1,6 +1,5 @@
 <template>
     <div id="app">
-
         <header>
 
             <navigation v-bind:list="navigationList"></navigation>
@@ -11,17 +10,18 @@
 
             <div class="container" style="margin-top:25px;">
 
+                {{getLogStatus}}
                 <div class="area cols-9">
 
-                    <panel v-bind:authorInfo = "authorInfo"></panel>
+                    <panel v-bind:authorInfo = "authorInfo" v-bind:owner="owner" @addFollow="addFollow"></panel>
 
-                    <tabs-panel v-bind:authorInfo = "authorInfo" @addFollow="addFollow" ref="tabs"></tabs-panel>
+                    <tabs-panel v-bind:authorInfo = "authorInfo" v-bind:owner="owner" @addFollow="addFollow" ref="tabs"></tabs-panel>
 
                 </div>
 
                 <div class="area cols-3">
 
-                    <user v-bind:authorInfo = "authorInfo"></user>
+                    <user v-bind:authorInfo = "authorInfo" v-bind:owner="owner"></user>
 
                     <topics></topics>
 
@@ -51,7 +51,8 @@
         data() {
             return {
                 navigationList : this.$store.state.navigationList,
-                authorInfo : {}
+                authorInfo : {},
+                owner : false
             };
         },
 
@@ -83,8 +84,7 @@
                 })
             },
 
-            addFollow(item,index){
-                console.log("item",item);
+            addFollow(item){
                 this.$axios({
                     method : "post",
                     url : "/personal/addFollow",
@@ -101,6 +101,22 @@
                 }).catch(err =>{
                     console.error(err);
                 })
+            },
+
+            verifyOwner(){
+                if(this.logged){
+                    this.$axios({
+                        method : "post",
+                        url : "/personal/verifyOwner",
+                        data : {
+                            userId : this.$common.getHash()
+                        }
+                    }).then(res =>{
+                        this.owner = res.data.data.ifOwner;
+                    }).catch(err =>{
+                        console.error(err);
+                    })
+                }
             }
 
         },

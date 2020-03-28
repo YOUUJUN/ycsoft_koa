@@ -28,9 +28,9 @@
 
         <div class="personal-control">
 
-            <a href="/users/setting" class="btn" v-if="logged">编辑个人资料</a>
-            <button id="followBtn" class="btn" @click="addFollow(authorInfo.userId)" v-else>关注</button>
-
+            <a href="/users/setting" class="btn" v-if="owner">编辑个人资料</a>
+            <button class="btn active" @click="addFollow(authorInfo)" v-else-if="userFollowed">已关注</button>
+            <button class="btn" @click="addFollow(authorInfo)" v-else>关注</button>
         </div>
 
     </div>
@@ -41,12 +41,13 @@
     export default {
         name: "Panel",
         props :{
-            authorInfo : Object
+            authorInfo : Object,
+            owner : Boolean
         },
         data (){
             return {
                 userInfo : {},
-                logged : true
+                userFollowed : false
             }
         },
 
@@ -59,19 +60,26 @@
                         userId : this.$common.getHash()
                     }
                 }).then(res => {
-
+                    this.userFollowed = res.data.data;
                 }).catch(err => {
-
+                    console.error(err);
                 })
+            },
+
+            addFollow(item){
+                item.id = item.postId;
+                this.$emit("addFollow",item);
+                this.checkUserBind();
             }
         },
 
         computed : {
-            // logged (){
-            //     console.log("logged,panel",this.$store.state.logged);
-            //     return this.$store.state.logged;
-            // }
+
         },
+        mounted () {
+            this.checkUserBind();
+        },
+
         created() {
             this.userInfo = this.$common.getUserInfo();
         }

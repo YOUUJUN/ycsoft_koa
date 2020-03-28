@@ -473,7 +473,7 @@ const community = {
         let checkIfConcernSql = "SELECT COUNT(*) AS nums FROM user_follow WHERE user_name = ? AND author_id = ?";
         let checkIfConcernParam = [logged.username,body.userId];
 
-        let result = await query(checkIfConcernSql, checkIfConcernParam);
+        let results = await query(checkIfConcernSql, checkIfConcernParam);
 
         if(results[0].nums == 0){
             return false;
@@ -495,9 +495,10 @@ const community = {
             return;
         }
         let body = ctx.request.body;
-        console.log("logged==--==",logged);
+
         let authorId = body.userId;
         let username = logged.username;
+        console.log("username==--==",username,authorId);
 
         if(logged.userId == authorId){
             return {
@@ -509,16 +510,14 @@ const community = {
         let checkFollowSql = "SELECT COUNT(*) AS nums FROM user_follow WHERE user_name = ? AND author_id = ?";
         let checkFollowParam = [username,authorId];
 
-        console.log("1--------------");
-
         /*---查询是否已经关注该作者---*/
         let result = await query(checkFollowSql,checkFollowParam);
 
         let nums = result[0].nums;
 
-        console.log("nums",nums);
+        console.log("nums ====> ",nums);
 
-        if(nums === 0){
+        if(nums == "0"){
             let upDateFollowSql = "INSERT user_follow(id,user_name,author_id) VALUE(0,?,?)";
             let upDateFollowParam = [username,authorId];
 

@@ -11,7 +11,6 @@
                             <span class="time">发表于：{{getTimeDif(item.date)}}</span>
                         </div>
 
-                        {{getLogStatus}}
                         <div class="operation-box" v-if="owner">
                             <object><a href="\editor\2137c100-44a7-11e9-a0ef-8d85f4e44512" class="btn" style="margin-right:10px;">修改</a></object>
                             <object><a href="javascript:void(0);" class="btn" onclick="doWith('2137c100-44a7-11e9-a0ef-8d85f4e44512','del')">删除</a></object>
@@ -65,15 +64,15 @@
     export default {
         name: "Tabs",
         props: {
-            authorInfo: Object
+            authorInfo: Object,
+            owner : Boolean
         },
         data() {
             return {
                 userInfo: {},
                 text: "<span style='color:red;'>hello</span>",
                 articleList : [],
-                followerList : [],
-                owner : false
+                followerList : []
             }
         },
         methods: {
@@ -129,30 +128,9 @@
                 return this.$common.getTimeDif(timer);
             },
 
-            verifyOwner(){
-                if(this.logged){
-                    this.$axios({
-                        method : "post",
-                        url : "/personal/verifyOwner",
-                        data : {
-                            userId : this.$common.getHash()
-                        }
-                    }).then(res =>{
-                        this.owner = res.data.data.ifOwner;
-                    }).catch(err =>{
-                        console.error(err);
-                    })
-                }
-            }
-
         },
 
         computed : {
-
-            getLogStatus (){
-                this.logged = this.$store.state.logged;
-                let result = this.verifyOwner();
-            }
 
         },
 
@@ -169,7 +147,6 @@
         },
         mounted() {
             console.log("子组件mounted");
-            this.verifyOwner();
         }
     }
 </script>

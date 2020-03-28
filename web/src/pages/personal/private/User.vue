@@ -2,7 +2,7 @@
 
     <div>
 
-        <div class="profile-container" v-if="logged">
+        <div class="profile-container" v-if="owner">
             <ul class="stat-list">
                 <li>
                     <div class="article">关注</div>
@@ -57,7 +57,8 @@
     export default {
         name: "User",
         props :{
-            authorInfo : Object
+            authorInfo : Object,
+            owner : Boolean
         },
         data (){
             return {
@@ -65,10 +66,8 @@
             }
         },
         computed : {
-            logged (){
-                console.log("logged,user",this.$store.state.logged);
-                return this.$store.state.logged;
-            }
+
+
         },
 
         created() {
