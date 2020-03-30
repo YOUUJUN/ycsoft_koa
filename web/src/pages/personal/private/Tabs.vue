@@ -55,7 +55,27 @@
             </ul>
 
         </el-tab-pane>
-        <el-tab-pane :label="'关注标签  '+ authorInfo.topicNum">关注标签</el-tab-pane>
+        <el-tab-pane :label="'关注标签  '+ authorInfo.topicNum">
+
+            <ul class="article-list">
+
+                <li class="user-article" v-for="item of focusTopics">
+                    <a class="topic-href" target="_blank" v-bind:href="'/community/topics/'.concat(item.name)">
+                        <div class="topic-title">
+                            <h2>{{item.name}}</h2>
+                        </div>
+                        <div class="topic-detail-follow">
+                            <object>
+                                <a href="javascript:void(0);" class="btn active" @click="addFocus(item)" v-if="item.userFocused">已关注</a>
+                                <a href="javascript:void(0);" class="btn" @click="addFocus(item)" v-else>关注</a>
+                            </object>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+
+        </el-tab-pane>
     </el-tabs>
 
 </template>
@@ -72,20 +92,21 @@
                 userInfo: {},
                 text: "<span style='color:red;'>hello</span>",
                 articleList : [],
-                followerList : []
+                followerList : [],
+                focusTopics : []
             }
         },
         methods: {
             changeTabLogout(target) {
-                // if (target.index == "0") {
-                //     this.getArticleList();
-                // }
                 switch (target.index) {
                     case "0":
                         this.getArticleList();
                         break;
                     case "1":
                         this.getFollowerList();
+                        break;
+                    case "2":
+                        this.getFocusTopic();
                         break;
                 }
             },
@@ -101,7 +122,7 @@
                     this.followerList = res.data.data;
                     console.log("followerList",this.followerList);
                 }).catch(err => {
-
+                    console.error(err);
                 })
             },
 
@@ -116,12 +137,46 @@
                 }).then(res => {
                     this.articleList = res.data.data;
                 }).catch(err => {
+                    console.error(err);
+                })
+            },
 
+            getFocusTopic(){
+                this.$axios({
+                    method : "post",
+                    url : "/personal/getFocusTopic",
+                    data : {
+                        userId : this.$common.getHash()
+                    }
+                }).then(res => {
+                    this.focusTopics = res.data.data;
+                    console.log("focusTopics",this.focusTopics);
+                }).catch(err => {
+                    console.error(err);
                 })
             },
 
             addFollow(item){
                 this.$emit("addFollow",item);
+            },
+
+            addFocus(item){
+                this.$axios({
+                    method : "post",
+                    url : "/community/addFocus",
+                    data : {
+                        topicName : item.name
+                    }
+                }).then(res => {
+                    alert(res.data.data);
+                    if(res.data.status == '1'){
+                        item.userFocused = true;
+                    }else if(res.data.status == '2'){
+                        item.userFocused = false;
+                    }
+                }).catch(err =>{
+                    console.error(err);
+                })
             },
 
             getTimeDif (timer){

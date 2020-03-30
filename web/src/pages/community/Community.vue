@@ -15,7 +15,8 @@
 
                     <hot-topic></hot-topic>
 
-                    <panel></panel>
+                    <panel v-bind:forTopics="false"></panel>
+
 
                 </div>
 
@@ -85,6 +86,7 @@
                     console.log(err);
                 })
             }
+
         },
 
         created() {

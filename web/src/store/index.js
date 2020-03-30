@@ -1,9 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import lib from '../utils/lib';
 Vue.use(Vuex);
 
+Vue.prototype.$axios = lib.axios;
+
 let vm = new Vue;
+
 
 export default new Vuex.Store({
   state: {
@@ -46,7 +50,7 @@ export default new Vuex.Store({
     upDateNavigationIndex (state,payload){
       let naviArr = state.navigationList;
 
-      if(payload == "/personal"){
+      if(payload == "/personal" || payload == "/topics"){
         payload = "/community";
       }
 
@@ -59,7 +63,21 @@ export default new Vuex.Store({
 
       state.navigationList = naviArr;
 
+    },
+
+    getUserLogStatus (){
+      vm.$axios({
+        method : "post",
+        url : "verifyToken"
+      }).then(value =>{
+        console.log("value ====-====",value);
+        this.commit("changeLogStatus",value.data.logged);
+      }).catch(err => {
+        console.log(err);
+      })
     }
+
+
   },
   actions: {
 

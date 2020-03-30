@@ -23,11 +23,21 @@
     export default {
         data() {
 
+            return {
+
+            }
+
+        },
+        methods : {
 
         },
 
-        watch : {
+        created () {
+            this.$store.commit("getUserLogStatus");
+        },
 
+        mounted() {
+            this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
         }
     };
 </script>

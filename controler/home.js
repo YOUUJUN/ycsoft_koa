@@ -47,6 +47,10 @@ module.exports = {
         await next();
     },
 
+    async topics(ctx,next){
+
+    },
+
     poster : async(ctx,next) =>{
         let postId = Path.basename(ctx.url);
 
@@ -473,7 +477,7 @@ module.exports = {
 
         } catch (e) {
 
-            msg.data = "关注失败!";
+            msg.data = "操作失败!";
             console.error("get personalFollower failed", e)
         }
 
@@ -520,9 +524,44 @@ module.exports = {
 
         ctx.body = msg;
 
-    }
+    },
+
+    async addFocus(ctx,next){
+        let msg = {
+            status: 0,
+            data: ""
+        }
+
+        try {
+            let results = await page_community.addFocus(ctx);
+            msg = results;
+
+        } catch (e) {
+
+            msg.data = "操作失败!";
+            console.error("addFocus failed", e)
+        }
+
+        ctx.body = msg;
+    },
 
 
+    async getTopicInfo(ctx,next){
+        let msg = {
+            status: 0,
+            data: ""
+        }
+
+        try {
+            let results = await page_community.getTopicInfo(ctx);
+            msg.data = results;
+            msg.status = 1;
+        } catch (e) {
+            console.error("getTopicInfo failed", e)
+        }
+
+        ctx.body = msg;
+    },
 
 
 

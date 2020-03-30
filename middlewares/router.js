@@ -33,6 +33,11 @@ module.exports = (app) => {
     router.post('/personal/getFocusTopic',homeController.getFocusTopic);
     router.post('/personal/checkUserAuthorBind',homeController.checkUserAuthorBind);
 
+    router.post('/community/addFocus',homeController.addFocus);
+
+    router.get('/community/topics/:href',homeController.topics);
+    router.post('/community/getTopicInfo',homeController.getTopicInfo);
+
 
 
     router.post('/login',homeController.login);

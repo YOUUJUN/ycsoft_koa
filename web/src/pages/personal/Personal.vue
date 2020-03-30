@@ -125,7 +125,7 @@
 
             getLogStatus (){
                 this.logged = this.$store.state.logged;
-                let result = this.verifyOwner();
+                this.verifyOwner();
             }
 
         },
@@ -135,20 +135,18 @@
         },
 
         beforeCreate(){
-            console.log("父组件beforeCreate");
+
         },
         created(){
-            console.log("父组件created");
             this.getUserLogStatus();
-            console.log("logged,父组件", this.$store.state.logged);
             this.getAuthorInfo();
             this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
         },
         beforeMount() {
-            console.log("父组件beforeMount");
+
         },
         mounted() {
-            console.log("父组件mounted");
+
         }
     };
 </script>

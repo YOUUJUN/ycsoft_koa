@@ -68,6 +68,9 @@
 <script>
     export default {
         name: "Panel",
+        props : {
+            forTopics : Boolean
+        },
         data() {
             return {
                 articleList: [],
@@ -138,7 +141,11 @@
 
         created() {
 
-            this.getArticleList();
+            if(this.forTopics){
+                this.getArticleList(this.$common.getHash());
+            }else{
+                this.getArticleList();
+            }
         }
     }
 </script>
