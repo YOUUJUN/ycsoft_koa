@@ -13,20 +13,8 @@
                     <div class="tags-box">
                         <img src="/images/topic-mid-img.png">
                         <div class="topic-tips">
-                            <div data-target="topicName">CSGO</div>
-                            <div>5 文章 · 2 关注</div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="/community/topics/WEB前端" class="topic-tags-link">
-                    <div class="tags-box">
-                        <img src="/images/topic-mid-img.png">
-                        <div class="topic-tips">
-                            <div data-target="topicName">WEB前端</div>
-                            <div>2 文章 · 1 关注</div>
+                            <div data-target="topicName">{{item.topicName}}</div>
+                            <div>{{item.articleNum}} 文章 · {{item.focusNum}} 关注</div>
                         </div>
                     </div>
                 </a>
@@ -49,9 +37,13 @@
             getTopicList (){
                 this.$axios({
                     method : "POST",
-                    url : "/community/getTopicList"
+                    url : "/community/getTopicList",
+                    data : {
+                        limit : true
+                    }
                 }).then(value => {
                     this.topicList = value.data.data;
+                    console.log("topicList",this.topicList);
                 }).catch(err =>{
                     console.log(err);
                 })

@@ -24,24 +24,7 @@
         name: "Hot",
         data () {
             return {
-                hotTopic : [
-                    {
-                        url:"/community/topics/CSGO",
-                        name:"CSGO"
-                    },
-                    {
-                        url:"/community/topics/NODE",
-                        name:"SQL"
-                    },
-                    {
-                        url:"/community/topics/WEB前端",
-                        name:"WEB前端"
-                    },
-                    {
-                        url:"/community/topics/SQL",
-                        name:"SQL"
-                    }
-                    ]
+                hotTopic : []
             }
         },
 

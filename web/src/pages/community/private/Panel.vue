@@ -19,7 +19,7 @@
                                                     -</a></object>
                                             </li>
                                             <li><span class="time">{{getTimeDif(item.date)}}</span> -</li>
-                                            <li><span class="tag">{{item.topic}}</span></li>
+                                            <li><a v-bind:href="'/community/topics/'.concat(item.topic)"><span class="tag">{{item.topic}}</span></a></li>
                                         </ul>
                                     </div>
                                     <div class="info-row">
@@ -233,7 +233,7 @@
 
     .btn.diy-btn{
         height: 20px;
-        line-height: 16px;
+        line-height: 20px;
         color: #409eff;
         font-size: 13px;
         background-color: #fff;

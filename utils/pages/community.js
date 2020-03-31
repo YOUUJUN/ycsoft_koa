@@ -121,6 +121,8 @@ const community = {
 
 
     getTopicList: async (ctx) => {
+        let logged = ctx.state.logged;
+
         let body = ctx.request.body;
         let limit = body.limit;
 
@@ -128,12 +130,12 @@ const community = {
         let getArticleNumParam = [];
 
 
-        if (limit && limit == 'false') {
-            getArticleNumSql = "SELECT COUNT(user_focus.topic_id) AS focus_num, n.topic_name, n.article_num FROM (SELECT topic.topic_name, topic.topic_id, COUNT(article.topic_id) AS article_num FROM topic LEFT JOIN article ON topic.topic_id = article.topic_id GROUP BY article.topic_id) AS n LEFT JOIN user_focus ON n.topic_id = user_focus.topic_id GROUP BY n.topic_name ORDER BY article_num DESC";
-            getArticleNumParam = [];
-        } else {
+        if (limit) {
             getArticleNumSql = "SELECT COUNT(user_focus.topic_id) AS focus_num, n.topic_name, n.article_num FROM (SELECT topic.topic_name, topic.topic_id, COUNT(article.topic_id) AS article_num FROM topic LEFT JOIN article ON topic.topic_id = article.topic_id GROUP BY article.topic_id) AS n LEFT JOIN user_focus ON n.topic_id = user_focus.topic_id GROUP BY n.topic_name ORDER BY article_num DESC LIMIT ? OFFSET ?";
             getArticleNumParam = [5, 0];
+        } else {
+            getArticleNumSql = "SELECT COUNT(user_focus.topic_id) AS focus_num, n.topic_name, n.article_num FROM (SELECT topic.topic_name, topic.topic_id, COUNT(article.topic_id) AS article_num FROM topic LEFT JOIN article ON topic.topic_id = article.topic_id GROUP BY article.topic_id) AS n LEFT JOIN user_focus ON n.topic_id = user_focus.topic_id GROUP BY n.topic_name ORDER BY article_num DESC";
+            getArticleNumParam = [];
         }
 
         let results = await query(getArticleNumSql, getArticleNumParam);
@@ -142,13 +144,37 @@ const community = {
         let msg = [];
 
         for (let i = 0; i < results.length; i++) {
-            msg[i] = {
+            let obj = {
                 url: arr.concat(results[i].topic_name),
                 topicName: results[i].topic_name,
                 focusNum: results[i].focus_num,
-                articleNum: results[i].article_num
+                articleNum: results[i].article_num,
+                ifFocused : false
+            }
+            msg.push(obj);
+        }
+
+
+        if(logged){
+            let userFocusTopicSql = "SELECT topic.topic_name FROM user_focus LEFT JOIN topic ON user_focus.topic_id = topic.topic_id WHERE user_name = ?";
+            let userFocusTopicParam = [logged.username];
+
+            results = await query(userFocusTopicSql,userFocusTopicParam);
+
+            let focusList = [];
+            for(let item of results){
+                focusList.push(item.topic_name);
+            }
+
+            for(let item of msg){
+                if(focusList.includes(item.topicName)){
+                    item.ifFocused = true;
+                }else{
+                    item.ifFocused = false;
+                }
             }
         }
+
 
         return msg;
 

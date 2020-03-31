@@ -3,7 +3,7 @@
 
         <header>
 
-
+            <navigation v-bind:list="navigationList"></navigation>
 
         </header>
 
@@ -20,11 +20,12 @@
     </div>
 </template>
 <script>
+    const navigation = () => import("../../components/Navigation.vue");
     export default {
         data() {
 
             return {
-
+                navigationList : this.$store.state.navigationList,
             }
 
         },

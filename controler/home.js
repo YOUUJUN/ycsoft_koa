@@ -48,7 +48,15 @@ module.exports = {
     },
 
     async topics(ctx,next){
+        console.log("url==>",ctx.url);
+        let hashArr = ctx.url.split("/");
+        if(hashArr[2]){
+            ctx.url = '/topics.html';
+        }else{
+            ctx.url = '/topicList.html';
+        }
 
+        await next();
     },
 
     poster : async(ctx,next) =>{
