@@ -31,6 +31,7 @@ module.exports = {
         ctx.url = '/guide.html';
         await next();
     },
+    
 
     contact : async (ctx,next) =>{
         ctx.url = '/contact.html';
