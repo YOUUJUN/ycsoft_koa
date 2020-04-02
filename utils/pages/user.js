@@ -9,7 +9,6 @@ class User{
     async register (){
 
 
-
     }
 
     async login (info){
