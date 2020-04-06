@@ -169,6 +169,7 @@ class User{
                 console.log("别问，问就验证没通过");
                 return false;
             }else{
+                console.log("ok");
                 decodedValue = decoded;
             }
         })
