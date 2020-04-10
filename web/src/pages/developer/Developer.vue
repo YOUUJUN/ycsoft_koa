@@ -22,6 +22,7 @@
 <script>
     const navigation = () => import("../../components/Navigation.vue");
     export default {
+        components : {navigation},
         data() {
 
             return {

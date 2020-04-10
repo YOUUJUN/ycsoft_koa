@@ -50,7 +50,7 @@ export default new Vuex.Store({
     upDateNavigationIndex (state,payload){
       let naviArr = state.navigationList;
 
-      if(payload == "/personal" || payload == "/topics"){
+      if(payload == "/personal" || payload == "/topics" || payload == "setting" || payload == "topicList"){
         payload = "/community";
       }
 

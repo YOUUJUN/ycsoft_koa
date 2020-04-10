@@ -70,6 +70,7 @@
         methods : {
 
             addFocus(item){
+                console.log("item =>",item);
                 this.$axios({
                     method : "post",
                     url : "/community/addFocus",

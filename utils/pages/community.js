@@ -654,6 +654,7 @@ const community = {
         let body = ctx.request.body;
 
         let topicName = body.topicName;
+        console.log("body",body);
 
         /*---根据话题名获取话题ID---*/
         let getTopicIdSql = "SELECT topic_id FROM topic WHERE topic_name = ?";

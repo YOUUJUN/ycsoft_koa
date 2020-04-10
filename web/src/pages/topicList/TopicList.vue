@@ -65,7 +65,7 @@
                     method : "post",
                     url : "/community/addFocus",
                     data : {
-                        topicName : item.name
+                        topicName : item.topicName
                     }
                 }).then(res => {
                     alert(res.data.data);
