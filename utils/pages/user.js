@@ -133,6 +133,7 @@ class User{
             url : fixHead.concat(info.userId),
             portrait : result1[0].portrait,
             job : result1[0].job,
+            blogUrl : result1[0].blog_url,
             introduction : result1[0].introduction,
             articleCount : result2[0].nums,
             concernNum : result3[0].nums,

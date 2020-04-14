@@ -13,7 +13,7 @@
                 {{getLogStatus}}
                 <div class="area cols-9">
 
-                    <panel v-bind:authorInfo = "authorInfo" v-bind:owner="owner" @addFollow="addFollow"></panel>
+                    <panel v-bind:authorInfo = "authorInfo" v-bind:owner="owner" @addFollow="addFollow" v-bind:hello="sayHi"></panel>
 
                     <tabs-panel v-bind:authorInfo = "authorInfo" v-bind:owner="owner" @addFollow="addFollow" ref="tabs"></tabs-panel>
 
@@ -52,7 +52,8 @@
             return {
                 navigationList : this.$store.state.navigationList,
                 authorInfo : {},
-                owner : false
+                owner : false,
+                sayHi : "hi"
             };
         },
 
@@ -135,18 +136,31 @@
         },
 
         beforeCreate(){
-
+            console.log("父组件--beforeCreate");
         },
         created(){
             this.getUserLogStatus();
             this.getAuthorInfo();
             this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
+            console.log("父组件--created");
         },
         beforeMount() {
-
+            console.log("父组件--beforeMount");
         },
         mounted() {
-
+            console.log("父组件--mounted");
+        },
+        beforeUpdate() {
+            console.log("父组件--beforeUpdate");
+        },
+        updated() {
+            console.log("父组件--updated");
+        },
+        beforeDestroy() {
+            console.log("父组件--beforeDestroy");
+        },
+        destroyed() {
+            console.log("父组件--destroyed");
         }
     };
 </script>

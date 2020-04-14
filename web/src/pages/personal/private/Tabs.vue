@@ -189,19 +189,9 @@
 
         },
 
-        beforeCreate(){
-            console.log("子组件beforeCreate");
-        },
         created() {
             this.userInfo = this.$common.getUserInfo();
-            console.log("子组件created");
             this.getArticleList();
-        },
-        beforeMount() {
-            console.log("子组件beforeMount");
-        },
-        mounted() {
-            console.log("子组件mounted");
         }
     }
 </script>

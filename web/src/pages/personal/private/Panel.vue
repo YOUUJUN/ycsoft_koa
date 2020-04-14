@@ -76,12 +76,33 @@
         computed : {
 
         },
-        mounted () {
-            this.checkUserBind();
-        },
 
+        beforeCreate(){
+            console.log("子组件--beforeCreate");
+        },
         created() {
             this.userInfo = this.$common.getUserInfo();
+            console.log("子组件--created");
+        },
+        beforeMount(){
+            console.log("子组件--beforeMount");
+        },
+        mounted () {
+            this.checkUserBind();
+            console.log("子组件--mounted");
+            console.log("attrs",this.$attrs);
+        },
+        beforeUpdate() {
+            console.log("子组件--beforeUpdate");
+        },
+        updated() {
+            console.log("子组件--updated");
+        },
+        beforeDestroy() {
+            console.log("子组件--beforeDestroy");
+        },
+        destroyed() {
+            console.log("子组件--destroyed");
         }
     }
 </script>

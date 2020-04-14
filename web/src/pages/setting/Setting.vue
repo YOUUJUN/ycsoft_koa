@@ -28,7 +28,7 @@
 
                                         <div class="portrait-box">
 
-                                            <img id="portraitImg" src="/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg">
+                                            <img id="portraitImg" v-bind:src="userData.portrait">
 
                                             <div class="action-box">
                                                 <div class="hint">支持文件大小 5M 以内的图片</div>
@@ -43,28 +43,28 @@
                                 <li class="setting-item">
                                     <span class="title">昵称</span>
                                     <div class="box">
-                                        <input type="text" name="nickname" class="setting-input" value="柯涵" placeholder="你可以在这里更改你的昵称">
+                                        <input type="text" v-model="userData.nickname" class="setting-input" placeholder="你可以在这里更改你的昵称">
                                         <button class="btn save-btn">保存</button>
                                     </div>
                                 </li>
                                 <li class="setting-item">
                                     <span class="title">职位</span>
                                     <div class="box">
-                                        <input type="text" name="job" class="setting-input" value="CSGO职业哥" placeholder="关于你的职业">
+                                        <input type="text" v-model="userData.job" class="setting-input" placeholder="关于你的职业">
                                         <button class="btn save-btn">保存</button>
                                     </div>
                                 </li>
                                 <li class="setting-item">
                                     <span class="title">个人介绍</span>
                                     <div class="box">
-                                        <input type="text" name="introduction" class="setting-input" value="A" placeholder="你的兴趣爱好">
+                                        <input type="text" v-model="userData.introduction" class="setting-input" placeholder="你的兴趣爱好">
                                         <button class="btn save-btn">保存</button>
                                     </div>
                                 </li>
                                 <li class="setting-item">
                                     <span class="title">个人博客地址</span>
                                     <div class="box">
-                                        <input type="text" name="blogUrl" class="setting-input" value="" placeholder="你的个人博客的地址">
+                                        <input type="text" v-model="userData.blogUrl" class="setting-input" placeholder="你的个人博客的地址">
                                         <button class="btn save-btn">保存</button>
                                     </div>
                                 </li>
@@ -98,15 +98,29 @@
 
             return {
                 navigationList : this.$store.state.navigationList,
+                userData : {}
             }
 
         },
         methods : {
 
+            getUserLogStatus (){
+                this.$axios({
+                    method : "post",
+                    url : "verifyToken"
+                }).then(value =>{
+                    console.log("value ====-====",value);
+                    this.$store.commit("changeLogStatus",value.data.logged);
+                }).catch(err => {
+                    console.log(err);
+                })
+            },
+
         },
 
         created () {
-            this.$store.commit("getUserLogStatus");
+            this.getUserLogStatus();
+            this.userData = this.$common.getUserInfo();
         },
 
         mounted() {

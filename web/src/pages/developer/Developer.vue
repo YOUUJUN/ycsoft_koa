@@ -31,11 +31,22 @@
 
         },
         methods : {
+            getUserLogStatus (){
+                this.$axios({
+                    method : "post",
+                    url : "verifyToken"
+                }).then(value =>{
+                    console.log("value ====-====",value);
+                    this.$store.commit("changeLogStatus",value.data.logged);
+                }).catch(err => {
+                    console.log(err);
+                })
+            }
 
         },
 
         created () {
-            this.$store.commit("getUserLogStatus");
+            this.getUserLogStatus();
         },
 
         mounted() {
