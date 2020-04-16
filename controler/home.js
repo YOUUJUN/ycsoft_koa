@@ -48,6 +48,12 @@ module.exports = {
         await next();
     },
 
+    /*用户设置界面跳转*/
+    async setting(ctx,next){
+        ctx.url = '/setting.html';
+        await next();
+    },
+
     async topics(ctx,next){
         console.log("url==>",ctx.url);
         let hashArr = ctx.url.split("/");
@@ -332,6 +338,7 @@ module.exports = {
         let logged = ctx.state.logged;
         if(!logged){
             console.log("not logged");
+            ctx.body = msg;
             return;
         }
 
@@ -359,6 +366,7 @@ module.exports = {
         let logged = ctx.state.logged;
         if(!logged){
             console.log("not logged");
+            ctx.body = msg;
             return;
         }
 
@@ -572,6 +580,33 @@ module.exports = {
         ctx.body = msg;
     },
 
+
+    /*-用户上传头像-*/
+    async upLoadPortrait(ctx,next){
+        console.log("this===>?",this);
+        let msg = {
+            data : '修改失败！登录状态超时.',
+            status : 0
+        };
+
+        if(!ctx.state.logged){
+            ctx.body = msg;
+            return;
+        }
+
+        try {
+            let results = await page_community.upLoadPortrait(ctx);
+            msg = {
+                data : '上传图片成功',
+                status : 1,
+                url : results
+            };
+        } catch (e) {
+            console.error("upLoadPortrait failed", e)
+        }
+
+        ctx.body = msg;
+    }
 
 
 

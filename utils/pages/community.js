@@ -1,5 +1,6 @@
 const query = require("../db/mysql/query");
 const uuid = require("uuid");
+var formidable = require('formidable');
 
 const community = {
 
@@ -745,6 +746,30 @@ const community = {
         }
 
         return data;
+
+    },
+
+
+
+    /*---用户设置---*/
+    /*-用户上传头像-*/
+    async upLoadPortrait(ctx){
+        console.log("ctx====>",ctx);
+
+        var form = new formidable.IncomingForm();
+        form.encoding = 'utf-8';
+        form.uploadDir = './database/expose/user-images/';
+        form.keepExtensions = true;
+        form.maxFieldsSize = 5*1024*1024;
+
+        form.parse(ctx.req,function(err,fields,files){
+            if(err){
+                console.error(err);
+            }
+
+            console.log("files",files);
+        })
+
 
     }
 

@@ -10,11 +10,10 @@ module.exports = (app) => {
     router.get('/community',homeController.community);
     router.get("/community/post/:href",homeController.poster);
     router.get("/personal/:href",homeController.personal);
-
+    router.get('/guide/:href',homeController.getDocByHash);
+    router.get('/users/setting',homeController.setting);
 
     router.post('/getDocNavigation',homeController.getDocNavigation);
-
-    router.get('/guide/:href',homeController.getDocByHash);
 
     router.post('/community/getHotList',homeController.getHotList);
     router.post('/community/getArticleList',homeController.getArticleList);
@@ -37,6 +36,9 @@ module.exports = (app) => {
 
     router.get('/community/topics/:href',homeController.topics);
     router.post('/community/getTopicInfo',homeController.getTopicInfo);
+
+    /*-用户上传头像-*/
+    router.post('/users/uploadimg',homeController.upLoadPortrait)
 
 
 

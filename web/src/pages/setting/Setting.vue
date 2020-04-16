@@ -32,8 +32,8 @@
 
                                             <div class="action-box">
                                                 <div class="hint">支持文件大小 5M 以内的图片</div>
-                                                <button class="btn upload-btn" onclick="getImg()">点击上传</button>
-                                                <input type="file" id="portrait" name="portrait" accept="image/*" style="display:none" onchange="getFile(this)">
+                                                <button class="btn upload-btn" @click="getImg()">点击上传</button>
+                                                <input type="file" ref="portrait" accept="image/*" style="display:none" v-on:change="getFile()">
                                             </div>
 
                                         </div>
@@ -115,6 +115,69 @@
                     console.log(err);
                 })
             },
+
+            getImg (){
+                this.$refs["portrait"].click();
+            },
+
+            getFile(){
+                var vm = this;
+                var file = this.$refs["portrait"].files[0];
+                var fileReader = new FileReader();
+                fileReader.readAsDataURL(file);
+
+                fileReader.onload = function (ev) {
+                    var baseCode = ev.target.result;
+                    console.log(baseCode);
+                    var imgBlob = vm.convertToBlob(baseCode, 'image/jpg');
+                    console.log(imgBlob);
+
+                    var formData = new window.FormData();
+                    formData.append('file',imgBlob);
+
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.open("POST","/users/uploadimg");
+                    xmlhttp.send(formData);
+
+                    xmlhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            var msg = JSON.parse(this.responseText);
+                            console.log(msg);
+                            alert(msg.data);
+                            if(msg.status == 1){
+                                document.getElementById("portraitImg").src = msg.url;
+                            }
+                        }
+                    };
+
+                };
+            },
+
+            convertToBlob (base64Data, type) {
+                //去掉base64中的换行符，webkit会自动去除，但是IOS9以及IOS8中不会自动去除，导致转换出错
+                base64Data = base64Data.replace(/\s/g, '');
+
+                var text = window.atob(base64Data.split(",")[1]);
+                var buffer = new ArrayBuffer(text.length);
+                var ubuffer = new Uint8Array(buffer);
+                for (var i = 0; i < text.length; i++) {
+                    ubuffer[i] = text.charCodeAt(i);
+                }
+
+                var Builder = window.WebKitBlobBuilder || window.MozBlobBuilder;
+                var blob;
+
+                if (Builder) {
+                    var builder = new Builder();
+                    builder.append(buffer);
+                    blob = builder.getBlob(type);
+                } else {
+                    blob = new window.Blob([buffer], {
+                        type: type
+                    });
+                }
+                return blob;
+            }
 
         },
 
