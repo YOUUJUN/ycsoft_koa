@@ -27,6 +27,8 @@
 
             return {
                 navigationList : this.$store.state.navigationList,
+
+
             }
 
         },
