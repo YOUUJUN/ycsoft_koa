@@ -6,6 +6,10 @@ const TOKENSECRET = require("../config/tokensecret");
 
 class User{
 
+    constructor (){
+        this.status = "miao?";
+    }
+
     async register (){
 
 
@@ -61,8 +65,7 @@ class User{
                 let obj = {
                     username : username,
                     nickname : nickname,
-                    userId : userId,
-                    password: realPass
+                    userId : userId
                 }
 
                 let token = this.createUserToken(obj);
@@ -147,11 +150,6 @@ class User{
     }
 
     createUserToken (info){
-
-        let fixedPassword = this.encryptPassword(info.password);
-
-        info.password = fixedPassword;
-
         let userInfo = info;
 
         let token = jwt.sign(userInfo, TOKENSECRET, {
@@ -175,13 +173,8 @@ class User{
             }
         })
 
-        if(decodedValue && decodedValue.username && decodedValue.password){
-            let result = await _this.verifyUserPassword(decodedValue.username,decodedValue.password);
-
-            if(result){
-                console.log("decodedValue----====>",decodedValue);
-                return decodedValue;
-            }
+        if(decodedValue && decodedValue.username){
+            return decodedValue;
         }
 
         return false;
@@ -213,18 +206,18 @@ class User{
     }
 
     sayHi (){
-        console.log("fucking hi?");
+        console.log("fucking hi?",this.status);
     }
 
 }
 
 let user = new User;
 
-let a = user.encryptPassword("123456");
-console.log("a",a);
-
-let b = user.encryptPassword("123456");
-console.log("b",b);
+// let a = user.encryptPassword("123456");
+// console.log("a",a);
+//
+// let b = user.encryptPassword("123456");
+// console.log("b",b);
 
 
 module.exports = user;

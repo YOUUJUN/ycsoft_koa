@@ -12,6 +12,7 @@ const session = require('koa-session');
 const jwt = require("jsonwebtoken");
 const TOKENSECRET = require("./utils/config/tokensecret");
 
+
 /*---登录状态检测中间件---*/
 app.use( async (ctx, next) =>{
   if(ctx.url.match(/^\/community/) || ctx.url.match(/^\/personal/) || ctx.url.match(/^\/users/)){
@@ -29,6 +30,7 @@ app.use( async (ctx, next) =>{
 // onerror(app);
 
 // middlewares
+// app.use(bodyparser());
 app.use(bodyparser({
   enableTypes:['json', 'form', 'text']
 }));

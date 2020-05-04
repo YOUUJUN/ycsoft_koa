@@ -756,28 +756,55 @@ const community = {
     /*---用户设置---*/
     /*-用户上传头像-*/
     async upLoadPortrait(ctx){
+        // const multiparty = require("multiparty");
+        // let form = new multiparty.Form({uploadDir:Path.join(__dirname,"../../database")});
+        // await form.parse(ctx.req,function(err,fields,files){
+        //     if(err){throw err; return;}
+        //     console.log(fields);//除文件外的其他附带信息
+        //     console.log(files.file[0]);//文件信息
+        //     return ;
+        // });
 
-        let file = ctx.request;
-        console.log("file",file);
-        console.log("__dirname",Path.join(__dirname,"../../database"));
-        let readStream = fs.createReadStream(file.path);
-        let writeStream = fs.createWriteStream(Path.join(__dirname,"../../database"));
 
-
-
-        // var form = new formidable.IncomingForm();
-        // form.encoding = 'utf-8';
-        // form.uploadDir = './database/expose/user-images/';
-        // form.keepExtensions = true;
-        // form.maxFieldsSize = 5*1024*1024;
+        // const Busboy = require('busboy');
         //
-        // form.parse(ctx.request,function(err,fields,files){
-        //     if(err){
-        //         console.error(err);
-        //     }
+        // let busboy = new Busboy(ctx.req);
         //
-        //     console.log("files",files);
-        // })
+        // busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
+        //     console.log('File [' + fieldname + ']: filename: ' + filename + ', encoding: ' + encoding + ', mimetype: ' + mimetype);
+        //     file.on('data', function(data) {
+        //         console.log('File [' + fieldname + '] got ' + data.length + ' bytes');
+        //     });
+        //     file.on('end', function() {
+        //         console.log('File [' + fieldname + '] Finished');
+        //     });
+        // });
+        // busboy.on('field', function(fieldname, val, fieldnameTruncated, valTruncated, encoding, mimetype) {
+        //     console.log('Field [' + fieldname + ']: value: ' + inspect(val));
+        // });
+        // busboy.on('finish', function() {
+        //     console.log('Done parsing form!');
+        //     // res.writeHead(303, { Connection: 'close', Location: '/' });
+        //     // res.end();
+        // });
+
+        // console.log('ctx.request.body', ctx.request.files[0]);
+        console.log('ctx.request.body', ctx.req);
+        // console.log('ctx.request', ctx.request.body);
+
+
+
+        // let file = ctx.request;
+        // console.log('ctx.request.file', ctx.request.file);
+        // console.log('ctx.file', ctx.file);
+        // console.log('ctx.request.body', ctx.request.body);
+        // console.log("__dirname",Path.join(__dirname,"../../database"));
+        // console.log("file",file.path);
+        // let readStream = fs.createReadStream(file);
+        // let writeStream = fs.createWriteStream(Path.join(__dirname,"../../database"));
+        // readStream.pipe(writeStream);
+
+
 
 
     }
