@@ -136,7 +136,12 @@
                     formData.append('file',imgBlob);
 
                     var xmlhttp = new XMLHttpRequest();
-                    xmlhttp.open("POST","/users/uploadimg");
+
+                    xmlhttp.open("POST","http://localhost:3000/users/uploadimg");
+                    let marscript = window.localStorage.getItem("marscript");
+                    if (marscript) {
+                        xmlhttp.setRequestHeader("accessToken",marscript);
+                    }
                     xmlhttp.send(formData);
 
                     xmlhttp.onreadystatechange = function() {

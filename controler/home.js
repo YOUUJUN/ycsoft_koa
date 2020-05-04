@@ -583,7 +583,7 @@ module.exports = {
 
     /*-用户上传头像-*/
     async upLoadPortrait(ctx,next){
-        console.log("this===>?",this);
+
         let msg = {
             data : '修改失败！登录状态超时.',
             status : 0
