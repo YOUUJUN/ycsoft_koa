@@ -2145,3 +2145,1021 @@ ctx.request.body IncomingMessage {
 }
   --> POST /users/uploadimg 200 20ms 40b
 ---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588576344,
+  exp: 1588749144,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 12ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- GET /community
+  --> GET /community 200 83ms 1.35kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- GET /users/setting
+  <-- GET /css/chunk-vendors.css
+  --> GET /users/setting 200 32ms 999b
+  <-- GET /css/chunk-1e91e5c4.css
+  <-- GET /css/chunk-4eb9ad46.css
+  <-- GET /css/chunk-660772a7.css
+  <-- GET /css/chunk-936b62c6.css
+  <-- GET /css/chunk-d27458f6.css
+  <-- GET /css/chunk-f223234c.css
+  --> GET /css/chunk-1e91e5c4.css 200 31ms 2.9kb
+  --> GET /css/chunk-4eb9ad46.css 200 32ms 1.62kb
+  --> GET /css/chunk-660772a7.css 200 38ms 1.45kb
+  --> GET /css/chunk-936b62c6.css 200 43ms 3.58kb
+  <-- GET /js/chunk-1e91e5c4.js
+  <-- GET /js/chunk-4eb9ad46.js
+  --> GET /css/chunk-f223234c.css 200 45ms 2.61kb
+  --> GET /css/chunk-d27458f6.css 200 57ms 1.16kb
+  --> GET /js/chunk-4eb9ad46.js 200 17ms 1.42kb
+  --> GET /js/chunk-1e91e5c4.js 200 32ms 7.26kb
+  <-- GET /js/chunk-660772a7.js
+  <-- GET /js/chunk-936b62c6.js
+  --> GET /js/chunk-660772a7.js 200 42ms 2.79kb
+  --> GET /js/chunk-936b62c6.js 200 42ms 31.48kb
+  <-- GET /css/chunk-vendors.css
+  <-- GET /css/setting.css
+  <-- GET /js/chunk-vendors.js
+  <-- GET /js/setting.js
+  -x- GET /js/setting.js 200 101ms 3.97kb
+  -x- GET /js/chunk-vendors.js 200 103ms 562.67kb
+  -x- GET /css/setting.css 200 114ms 2.25kb
+  -x- GET /css/chunk-vendors.css 200 115ms 40.76kb
+  <-- GET /css/chunk-1e91e5c4.css
+  <-- GET /css/chunk-936b62c6.css
+  <-- GET /js/chunk-936b62c6.js
+  <-- GET /js/chunk-1e91e5c4.js
+  --> GET /css/chunk-1e91e5c4.css 200 16ms 2.9kb
+  --> GET /css/chunk-936b62c6.css 200 16ms 3.58kb
+  --> GET /js/chunk-936b62c6.js 200 16ms 31.48kb
+  --> GET /js/chunk-1e91e5c4.js 200 16ms 7.26kb
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588576344,
+  exp: 1588749144,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588576344,
+  exp: 1588749144,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 4ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588576344,
+  exp: 1588749144,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588576344,
+  exp: 1588749144,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getComment 200 86ms 1.44kb
+  --> POST /community/getTopicList 200 86ms 517b
+  --> POST /community/getArticleInfo 200 184ms 411b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588576344,
+  exp: 1588749144,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /users/uploadimg
+OPTIONS /users/uploadimg - 0ms
+  --> OPTIONS /users/uploadimg 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588576344,
+  exp: 1588749144,
+  iss: 'YOUJUN'
+}
+  <-- POST /users/uploadimg
+ctx.request.body ReadStream {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 65536,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: null,
+    pipesCount: 0,
+    flowing: null,
+    ended: false,
+    endEmitted: false,
+    reading: false,
+    sync: true,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    paused: true,
+    emitClose: false,
+    autoDestroy: false,
+    destroyed: false,
+    defaultEncoding: 'utf8',
+    awaitDrain: 0,
+    readingMore: false,
+    decoder: null,
+    encoding: null
+  },
+  readable: true,
+  _events: [Object: null prototype] { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: 'F:\\ycsoft_koa_new\\database\\4ba19980-8f32-11ea-8a46-5bb11b8e1b78blob',
+  fd: null,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: Infinity,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 0,
+  closed: false,
+  fieldname: 'file',
+  filename: 'blob',
+  encoding: '7bit',
+  mimetype: 'image/jpg'
+}
+  --> POST /users/uploadimg 200 18ms 40b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 22ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 15ms 27b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 7ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /users/uploadimg
+OPTIONS /users/uploadimg - 0ms
+  --> OPTIONS /users/uploadimg 200 4ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /users/uploadimg
+  --> POST /users/uploadimg 200 44ms 56b
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /users/uploadimg
+OPTIONS /users/uploadimg - 0ms
+  --> OPTIONS /users/uploadimg 200 12ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /users/uploadimg
+  --> POST /users/uploadimg 200 49ms 56b
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /users/uploadimg
+OPTIONS /users/uploadimg - 0ms
+  --> OPTIONS /users/uploadimg 200 16ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /users/uploadimg
+  --> POST /users/uploadimg 200 52ms 56b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 18ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 10ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /users/uploadimg
+OPTIONS /users/uploadimg - 0ms
+  --> OPTIONS /users/uploadimg 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /users/uploadimg
+  --> POST /users/uploadimg 200 20ms 56b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /login
+OPTIONS /login - 0ms
+  --> OPTIONS /login 200 12ms 0b
+  <-- POST /login
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '/users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'A',
+    blog_url: ''
+  }
+]
+  --> POST /login 200 144ms 668b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 9ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /users/uploadimg
+OPTIONS /users/uploadimg - 0ms
+  --> OPTIONS /users/uploadimg 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  <-- POST /users/uploadimg
+ctx.request.body ReadStream {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 65536,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: null,
+    pipesCount: 0,
+    flowing: null,
+    ended: false,
+    endEmitted: false,
+    reading: false,
+    sync: true,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    paused: true,
+    emitClose: false,
+    autoDestroy: false,
+    destroyed: false,
+    defaultEncoding: 'utf8',
+    awaitDrain: 0,
+    readingMore: false,
+    decoder: null,
+    encoding: null
+  },
+  readable: true,
+  _events: [Object: null prototype] { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: 'F:\\ycsoft_koa_new\\database\\dd45a7a0-9004-11ea-89ff-3900003adf84blob',
+  fd: null,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: Infinity,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 0,
+  closed: false,
+  fieldname: 'file',
+  filename: 'blob',
+  encoding: '7bit',
+  mimetype: 'image/jpg'
+}
+  --> POST /users/uploadimg 200 45ms 56b
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /users/uploadimg
+OPTIONS /users/uploadimg - 0ms
+  --> OPTIONS /users/uploadimg 200 15ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  <-- POST /users/uploadimg
+ctx.request.body ReadStream {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 65536,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: null,
+    pipesCount: 0,
+    flowing: null,
+    ended: false,
+    endEmitted: false,
+    reading: false,
+    sync: true,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    paused: true,
+    emitClose: false,
+    autoDestroy: false,
+    destroyed: false,
+    defaultEncoding: 'utf8',
+    awaitDrain: 0,
+    readingMore: false,
+    decoder: null,
+    encoding: null
+  },
+  readable: true,
+  _events: [Object: null prototype] { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: 'F:\\ycsoft_koa_new\\database\\f5c133d0-9004-11ea-a3cc-37466e6fd75dblob',
+  fd: null,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: Infinity,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 0,
+  closed: false,
+  fieldname: 'file',
+  filename: 'blob',
+  encoding: '7bit',
+  mimetype: 'image/jpg'
+}
+readStream ReadStream {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 65536,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: null,
+    pipesCount: 0,
+    flowing: null,
+    ended: false,
+    endEmitted: false,
+    reading: false,
+    sync: true,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    paused: true,
+    emitClose: false,
+    autoDestroy: false,
+    destroyed: false,
+    defaultEncoding: 'utf8',
+    awaitDrain: 0,
+    readingMore: false,
+    decoder: null,
+    encoding: null
+  },
+  readable: true,
+  _events: [Object: null prototype] { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: 'F:\\ycsoft_koa_new\\database\\f5c133d0-9004-11ea-a3cc-37466e6fd75dblob',
+  fd: null,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: Infinity,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 0,
+  closed: false
+}
+  --> POST /users/uploadimg 200 47ms 40b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /users/uploadimg
+OPTIONS /users/uploadimg - 0ms
+  --> OPTIONS /users/uploadimg 200 17ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  <-- POST /users/uploadimg
+ctx.request.body ReadStream {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 65536,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: null,
+    pipesCount: 0,
+    flowing: null,
+    ended: false,
+    endEmitted: false,
+    reading: false,
+    sync: true,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    paused: true,
+    emitClose: false,
+    autoDestroy: false,
+    destroyed: false,
+    defaultEncoding: 'utf8',
+    awaitDrain: 0,
+    readingMore: false,
+    decoder: null,
+    encoding: null
+  },
+  readable: true,
+  _events: [Object: null prototype] { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: 'F:\\ycsoft_koa_new\\database\\1a2303c0-9005-11ea-95d3-eff726faf14bblob',
+  fd: null,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: Infinity,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 0,
+  closed: false,
+  fieldname: 'file',
+  filename: 'blob',
+  encoding: '7bit',
+  mimetype: 'image/jpg'
+}
+readStream ReadStream {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 65536,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: null,
+    pipesCount: 0,
+    flowing: null,
+    ended: false,
+    endEmitted: false,
+    reading: false,
+    sync: true,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    paused: true,
+    emitClose: false,
+    autoDestroy: false,
+    destroyed: false,
+    defaultEncoding: 'utf8',
+    awaitDrain: 0,
+    readingMore: false,
+    decoder: null,
+    encoding: null
+  },
+  readable: true,
+  _events: [Object: null prototype] { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: 'F:\\ycsoft_koa_new\\database\\1a2303c0-9005-11ea-95d3-eff726faf14bblob',
+  fd: null,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: Infinity,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 0,
+  closed: false
+}
+  --> POST /users/uploadimg 200 68ms 40b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /users/uploadimg
+OPTIONS /users/uploadimg - 0ms
+  --> OPTIONS /users/uploadimg 200 10ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  <-- POST /users/uploadimg
+headers {
+  host: 'localhost:3000',
+  'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:74.0) Gecko/20100101 Firefox/74.0',
+  accept: '*/*',
+  'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding': 'gzip, deflate',
+  accesstoken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU4ODgxNjEwOCwiZXhwIjoxNTg4OTg4OTA4LCJpc3MiOiJZT1VKVU4ifQ.QgrmVBFG4MHfHZRQAdvkb5ThkH6yPnmP7yfmysWVjNY',
+  'content-type': 'multipart/form-data; boundary=---------------------------1894641732873098873345752069',
+  'content-length': '60911',
+  origin: 'http://localhost:8080',
+  connection: 'keep-alive',
+  referer: 'http://localhost:8080/setting'
+}
+ctx.request.body ReadStream {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 65536,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: null,
+    pipesCount: 0,
+    flowing: null,
+    ended: false,
+    endEmitted: false,
+    reading: false,
+    sync: true,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    paused: true,
+    emitClose: false,
+    autoDestroy: false,
+    destroyed: false,
+    defaultEncoding: 'utf8',
+    awaitDrain: 0,
+    readingMore: false,
+    decoder: null,
+    encoding: null
+  },
+  readable: true,
+  _events: [Object: null prototype] { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: 'F:\\ycsoft_koa_new\\database\\ec91b630-9005-11ea-99bf-f187b92befd3blob',
+  fd: null,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: Infinity,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 0,
+  closed: false,
+  fieldname: 'file',
+  filename: 'blob',
+  encoding: '7bit',
+  mimetype: 'image/jpg'
+}
+readStream ReadStream {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 65536,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: null,
+    pipesCount: 0,
+    flowing: null,
+    ended: false,
+    endEmitted: false,
+    reading: false,
+    sync: true,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    paused: true,
+    emitClose: false,
+    autoDestroy: false,
+    destroyed: false,
+    defaultEncoding: 'utf8',
+    awaitDrain: 0,
+    readingMore: false,
+    decoder: null,
+    encoding: null
+  },
+  readable: true,
+  _events: [Object: null prototype] { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: 'F:\\ycsoft_koa_new\\database\\ec91b630-9005-11ea-99bf-f187b92befd3blob',
+  fd: null,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: Infinity,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 0,
+  closed: false
+}
+  --> POST /users/uploadimg 200 23ms 40b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 17ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 17ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 4ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+  --> POST /community/getArticleInfo 200 299ms 411b
+  --> POST /community/getTopicList 200 193ms 532b
+  --> POST /community/getComment 200 190ms 1.44kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /users/uploadimg
+OPTIONS /users/uploadimg - 0ms
+  --> OPTIONS /users/uploadimg 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  <-- POST /users/uploadimg
+headers {
+  host: 'localhost:3000',
+  'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:74.0) Gecko/20100101 Firefox/74.0',
+  accept: '*/*',
+  'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding': 'gzip, deflate',
+  accesstoken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU4ODgxNjEwOCwiZXhwIjoxNTg4OTg4OTA4LCJpc3MiOiJZT1VKVU4ifQ.QgrmVBFG4MHfHZRQAdvkb5ThkH6yPnmP7yfmysWVjNY',
+  'content-type': 'multipart/form-data; boundary=---------------------------444338180734079883968368254',
+  'content-length': '60909',
+  origin: 'http://localhost:8080',
+  connection: 'keep-alive',
+  referer: 'http://localhost:8080/setting'
+}
+ctx.request.body ReadStream {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 65536,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: null,
+    pipesCount: 0,
+    flowing: null,
+    ended: false,
+    endEmitted: false,
+    reading: false,
+    sync: true,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    paused: true,
+    emitClose: false,
+    autoDestroy: false,
+    destroyed: false,
+    defaultEncoding: 'utf8',
+    awaitDrain: 0,
+    readingMore: false,
+    decoder: null,
+    encoding: null
+  },
+  readable: true,
+  _events: [Object: null prototype] { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: 'F:\\ycsoft_koa_new\\database\\7cbcd370-9029-11ea-9fbd-551a3c6990e4blob',
+  fd: null,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: Infinity,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 0,
+  closed: false,
+  fieldname: 'file',
+  filename: 'blob',
+  encoding: '7bit',
+  mimetype: 'image/jpg'
+}
+readStream ReadStream {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 65536,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: null,
+    pipesCount: 0,
+    flowing: null,
+    ended: false,
+    endEmitted: false,
+    reading: false,
+    sync: true,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    paused: true,
+    emitClose: false,
+    autoDestroy: false,
+    destroyed: false,
+    defaultEncoding: 'utf8',
+    awaitDrain: 0,
+    readingMore: false,
+    decoder: null,
+    encoding: null
+  },
+  readable: true,
+  _events: [Object: null prototype] { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path: 'F:\\ycsoft_koa_new\\database\\7cbcd370-9029-11ea-9fbd-551a3c6990e4blob',
+  fd: null,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: Infinity,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 0,
+  closed: false
+}
+next undefined
+  --> POST /users/uploadimg 200 66ms 40b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /users/uploadimg
+OPTIONS /users/uploadimg - 0ms
+  --> OPTIONS /users/uploadimg 200 8ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  <-- POST /users/uploadimg
+  --> POST /users/uploadimg 200 16ms 56b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 12ms 0b
+  <-- POST /getDocNavigation
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 1ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 3ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 109ms 503b
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 45ms 9.31kb
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 14ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 6ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 3ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 4ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1588816108,
+  exp: 1588988908,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 16ms 531b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 54ms 2.08kb
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0

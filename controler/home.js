@@ -595,7 +595,7 @@ module.exports = {
         }
 
         try {
-            let results = await page_community.upLoadPortrait(ctx);
+            let results = await page_community.upLoadPortrait(ctx,next);
             msg = {
                 data : '上传图片成功',
                 status : 1,

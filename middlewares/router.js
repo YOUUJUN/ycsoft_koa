@@ -5,6 +5,8 @@ const uuid = require("uuid");
 const Path = require("path");
 const busboy = require('koa-busboy');
 
+
+//format 表单提交
 const uploader = busboy({
     dest: Path.join(__dirname,"../database"), // default is system temp folder (`os.tmpdir()`)
     fnDestFilename: (fieldname, filename) => uuid.v1() + filename
@@ -47,7 +49,7 @@ module.exports = (app) => {
     router.post('/community/getTopicInfo',homeController.getTopicInfo);
 
     /*-用户上传头像-*/
-    router.post('/users/uploadimg',homeController.upLoadPortrait)
+    router.post('/users/uploadimg',uploader,homeController.upLoadPortrait)
 
 
 

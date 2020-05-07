@@ -765,47 +765,14 @@ const community = {
         //     return ;
         // });
 
+        var logged = ctx.state.logged;
 
-        // const Busboy = require('busboy');
-        //
-        // let busboy = new Busboy(ctx.req);
-        //
-        // busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
-        //     console.log('File [' + fieldname + ']: filename: ' + filename + ', encoding: ' + encoding + ', mimetype: ' + mimetype);
-        //     file.on('data', function(data) {
-        //         console.log('File [' + fieldname + '] got ' + data.length + ' bytes');
-        //     });
-        //     file.on('end', function() {
-        //         console.log('File [' + fieldname + '] Finished');
-        //     });
-        // });
-        // busboy.on('field', function(fieldname, val, fieldnameTruncated, valTruncated, encoding, mimetype) {
-        //     console.log('Field [' + fieldname + ']: value: ' + inspect(val));
-        // });
-        // busboy.on('finish', function() {
-        //     console.log('Done parsing form!');
-        //     // res.writeHead(303, { Connection: 'close', Location: '/' });
-        //     // res.end();
-        // });
-
-        // console.log('ctx.request.body', ctx.request.files[0]);
-        console.log('ctx.request.body', ctx.req);
-        // console.log('ctx.request', ctx.request.body);
+        let savePath = '';
 
 
+        const uploader = require("../lib/uploader");
 
-        // let file = ctx.request;
-        // console.log('ctx.request.file', ctx.request.file);
-        // console.log('ctx.file', ctx.file);
-        // console.log('ctx.request.body', ctx.request.body);
-        // console.log("__dirname",Path.join(__dirname,"../../database"));
-        // console.log("file",file.path);
-        // let readStream = fs.createReadStream(file);
-        // let writeStream = fs.createWriteStream(Path.join(__dirname,"../../database"));
-        // readStream.pipe(writeStream);
-
-
-
+        uploader(ctx);
 
     }
 
