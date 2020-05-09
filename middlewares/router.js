@@ -8,7 +8,7 @@ const busboy = require('koa-busboy');
 
 //format 表单提交
 const uploader = busboy({
-    dest: Path.join(__dirname,"../database"), // default is system temp folder (`os.tmpdir()`)
+    dest: Path.join(__dirname,"../database/cache"), // default is system temp folder (`os.tmpdir()`)
     fnDestFilename: (fieldname, filename) => uuid.v1() + filename
 });
 

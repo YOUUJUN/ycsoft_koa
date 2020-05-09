@@ -4,6 +4,8 @@ var formidable = require('formidable');
 const fs = require("fs");
 const Path = require("path");
 
+const Uploader = require("../lib/uploader");
+
 const community = {
 
     getHotList: async () => {
@@ -767,12 +769,10 @@ const community = {
 
         var logged = ctx.state.logged;
 
-        let savePath = '';
+        let uploader = new Uploader(ctx);
+        let savePath = Path.join(__dirname,"../../database/foo/miao");
 
-
-        const uploader = require("../lib/uploader");
-
-        uploader(ctx);
+        uploader.saveAs(savePath);
 
     }
 
