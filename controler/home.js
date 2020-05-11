@@ -596,13 +596,27 @@ module.exports = {
 
         try {
             let results = await page_community.upLoadPortrait(ctx,next);
-            msg = {
-                data : '上传图片成功',
-                status : 1,
-                url : results
-            };
+            if(results.status === false){
+                msg = {
+                    data : '上传图片失败，图片大小超过上传限制',
+                    status : 0,
+                    url : ""
+                };
+            }else{
+                msg = {
+                    data : '上传图片成功',
+                    status : 1,
+                    url : results.path
+                };
+            }
+
         } catch (e) {
-            console.error("upLoadPortrait failed", e)
+            console.error("upLoadPortrait failed", e);
+            msg = {
+                data : '未知错误,请联系管理员',
+                status : 0,
+                url : ""
+            };
         }
 
         ctx.body = msg;

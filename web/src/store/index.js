@@ -41,6 +41,7 @@ export default new Vuex.Store({
       }
     ]
 
+
   },
   mutations: {
     changeLogStatus(state, status){

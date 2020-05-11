@@ -123,14 +123,13 @@
             getFile(){
                 var vm = this;
                 var file = this.$refs["portrait"].files[0];
+                var fileType = file.type;
                 var fileReader = new FileReader();
                 fileReader.readAsDataURL(file);
 
                 fileReader.onload = function (ev) {
                     var baseCode = ev.target.result;
-                    console.log(baseCode);
-                    var imgBlob = vm.convertToBlob(baseCode, 'image/jpg');
-                    console.log(imgBlob);
+                    var imgBlob = vm.convertToBlob(baseCode, fileType);
 
                     var formData = new window.FormData();
                     formData.append('file',imgBlob);
@@ -150,7 +149,7 @@
                             console.log(msg);
                             alert(msg.data);
                             if(msg.status == 1){
-                                document.getElementById("portraitImg").src = msg.url;
+                                document.getElementById("portraitImg").src = baseCode;
                             }
                         }
                     };

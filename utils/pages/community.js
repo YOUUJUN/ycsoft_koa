@@ -768,12 +768,34 @@ const community = {
         // });
 
         var logged = ctx.state.logged;
+        let userId = logged.userId;
+        let savePath = Path.join(__dirname,"../../database/expose/users/",userId,"/portraits");
 
         let uploader = new Uploader(ctx);
-        let savePath = Path.join(__dirname,"../../database/foo/miao");
 
-        uploader.saveAs(savePath);
+        let fileName = uploader.saveAs(savePath);
 
+        let obj = {
+            status : false,
+            path : ""
+        }
+        if(fileName){
+            let exposePath = Path.join("users",userId,"portraits",fileName);
+
+            let changeUserPortraitSql = "UPDATE user_info SET portrait = ? WHERE user_id = ?";
+            let changeUserPortraitParam = [exposePath,userId];
+
+            let results = await query(changeUserPortraitSql,changeUserPortraitParam);
+
+            console.log("results",results);
+
+            obj = {
+                status : true,
+                path : exposePath
+            }
+        }
+
+        return obj;
     }
 
 
