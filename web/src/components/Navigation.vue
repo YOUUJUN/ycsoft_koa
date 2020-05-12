@@ -143,6 +143,11 @@
                 let vm = this;
                 console.log(vm.userData.url);
                 window.open(vm.userData.url, "_blank");
+            },
+
+            syncUserInfo (){
+                this.userData = this.$common.getUserInfo();
+                console.log("this.userData",this.userData);
             }
 
         },
@@ -154,8 +159,8 @@
         },
 
         created(){
-            this.userData = this.$common.getUserInfo();
-            console.log("this.userData",this.userData);
+            console.log("creating navigation----------!");
+            this.syncUserInfo();
         },
         mounted() {
 

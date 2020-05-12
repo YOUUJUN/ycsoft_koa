@@ -583,7 +583,7 @@ module.exports = {
 
     /*-用户上传头像-*/
     async upLoadPortrait(ctx,next){
-
+        console.log("request----?",ctx.request.host);
         let msg = {
             data : '修改失败！登录状态超时.',
             status : 0
@@ -595,7 +595,7 @@ module.exports = {
         }
 
         try {
-            let results = await page_community.upLoadPortrait(ctx,next);
+            let results = await page_user.upLoadPortrait(ctx,next);
             if(results.status === false){
                 msg = {
                     data : '上传图片失败，图片大小超过上传限制',
@@ -620,9 +620,56 @@ module.exports = {
         }
 
         ctx.body = msg;
+    },
+
+
+    async getUserInfo(ctx, next){
+
+        let msg = {
+            status : 0,
+            data : ""
+        }
+
+        let logged = ctx.state.logged;
+
+        let obj = {
+            userId : logged.userId
+        }
+
+        try {
+            let results = await page_user.getUserInfo(obj);
+
+            msg.status = 1;
+            msg.data = results;
+
+        }catch (e) {
+            console.error("get user info failed",e);
+        }
+
+        ctx.body = msg;
+
+    },
+
+
+    /*-修改用户信息-*/
+    async modifyUserInfo(ctx,next){
+
+        let results;
+
+        try {
+            results = await page_user.modifyUserInfo(ctx);
+
+        }catch (e) {
+            console.error("get user info failed",e);
+            results = {
+                data : "未知错误，请联系管理员",
+                status : 0
+            }
+        }
+
+        ctx.body = results;
+
     }
-
-
 
 };
 

@@ -755,48 +755,7 @@ const community = {
 
 
 
-    /*---用户设置---*/
-    /*-用户上传头像-*/
-    async upLoadPortrait(ctx){
-        // const multiparty = require("multiparty");
-        // let form = new multiparty.Form({uploadDir:Path.join(__dirname,"../../database")});
-        // await form.parse(ctx.req,function(err,fields,files){
-        //     if(err){throw err; return;}
-        //     console.log(fields);//除文件外的其他附带信息
-        //     console.log(files.file[0]);//文件信息
-        //     return ;
-        // });
 
-        var logged = ctx.state.logged;
-        let userId = logged.userId;
-        let savePath = Path.join(__dirname,"../../database/expose/users/",userId,"/portraits");
-
-        let uploader = new Uploader(ctx);
-
-        let fileName = uploader.saveAs(savePath);
-
-        let obj = {
-            status : false,
-            path : ""
-        }
-        if(fileName){
-            let exposePath = Path.join("users",userId,"portraits",fileName);
-
-            let changeUserPortraitSql = "UPDATE user_info SET portrait = ? WHERE user_id = ?";
-            let changeUserPortraitParam = [exposePath,userId];
-
-            let results = await query(changeUserPortraitSql,changeUserPortraitParam);
-
-            console.log("results",results);
-
-            obj = {
-                status : true,
-                path : exposePath
-            }
-        }
-
-        return obj;
-    }
 
 
 }

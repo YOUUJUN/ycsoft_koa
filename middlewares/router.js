@@ -49,10 +49,11 @@ module.exports = (app) => {
     router.post('/community/getTopicInfo',homeController.getTopicInfo);
 
     /*-用户上传头像-*/
-    router.post('/users/uploadimg',uploader,homeController.upLoadPortrait)
-
-
-
+    router.post('/users/uploadimg',uploader,homeController.upLoadPortrait);
+    /*-获取用户信息-*/
+    router.post('/users/getUserInfo',homeController.getUserInfo);
+    /*-修改用户信息-*/
+    router.post('/users/modifyUserInfo',homeController.modifyUserInfo);
     router.post('/login',homeController.login);
 
     router.post('/verifyToken',homeController.verifyToken);

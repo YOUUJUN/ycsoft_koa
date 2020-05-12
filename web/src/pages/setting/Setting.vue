@@ -3,7 +3,7 @@
 
         <header>
 
-            <navigation v-bind:list="navigationList"></navigation>
+            <navigation v-bind:list="navigationList" ref="navigation"></navigation>
 
         </header>
 
@@ -44,28 +44,28 @@
                                     <span class="title">昵称</span>
                                     <div class="box">
                                         <input type="text" v-model="userData.nickname" class="setting-input" placeholder="你可以在这里更改你的昵称">
-                                        <button class="btn save-btn">保存</button>
+                                        <button class="btn save-btn" @click="modifyUserInfo('nickname')">保存</button>
                                     </div>
                                 </li>
                                 <li class="setting-item">
                                     <span class="title">职位</span>
                                     <div class="box">
                                         <input type="text" v-model="userData.job" class="setting-input" placeholder="关于你的职业">
-                                        <button class="btn save-btn">保存</button>
+                                        <button class="btn save-btn" @click="modifyUserInfo('job')">保存</button>
                                     </div>
                                 </li>
                                 <li class="setting-item">
                                     <span class="title">个人介绍</span>
                                     <div class="box">
                                         <input type="text" v-model="userData.introduction" class="setting-input" placeholder="你的兴趣爱好">
-                                        <button class="btn save-btn">保存</button>
+                                        <button class="btn save-btn" @click="modifyUserInfo('introduction')">保存</button>
                                     </div>
                                 </li>
                                 <li class="setting-item">
                                     <span class="title">个人博客地址</span>
                                     <div class="box">
                                         <input type="text" v-model="userData.blogUrl" class="setting-input" placeholder="你的个人博客的地址">
-                                        <button class="btn save-btn">保存</button>
+                                        <button class="btn save-btn" @click="modifyUserInfo('blogUrl')">保存</button>
                                     </div>
                                 </li>
 
@@ -150,6 +150,7 @@
                             alert(msg.data);
                             if(msg.status == 1){
                                 document.getElementById("portraitImg").src = baseCode;
+                                vm.syncUserInfo();
                             }
                         }
                     };
@@ -181,6 +182,47 @@
                     });
                 }
                 return blob;
+            },
+
+            syncUserInfo (){
+                this.$axios({
+                    method : "post",
+                    url : "/users/getUserInfo"
+                }).then(value =>{
+                    localStorage.setItem("userData",JSON.stringify(value.data.data));
+                    this.$refs["navigation"].syncUserInfo();
+                }).catch(err => {
+                    console.log(err);
+                })
+            },
+
+            modifyUserInfo(key){
+                let value = this.userData[key];
+                this.$axios({
+                    method : "POST",
+                    url : "/users/modifyUserInfo",
+                    data : {
+                        key : key,
+                        value : value
+                    }
+                }).then(value => {
+
+                    if(value.status == "1"){
+                        this.$notify({
+                            title: '成功',
+                            message: value.data.data,
+                            type: 'success'
+                        });
+                        this.syncUserInfo();
+                    }else{
+                        this.$notify.error({
+                            title: '错误',
+                            message: value.data.data
+                        });
+                    }
+                }).catch(err => {
+                    console.error(err);
+                })
             }
 
         },

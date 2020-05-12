@@ -21,7 +21,7 @@
             </div>
             <div class="profile">
 
-                <a href="javascript:void(0);" class="user-img"><img v-bind:src="authorInfo.url"></a>
+                <a href="javascript:void(0);" class="user-img"><img v-bind:src="authorInfo.portrait"></a>
 
                 <div class="user-info">
 
@@ -72,6 +72,7 @@
 
         created() {
             this.userInfo = this.$common.getUserInfo();
+            console.log("userInfo==================",this.userInfo);
         }
     }
 </script>

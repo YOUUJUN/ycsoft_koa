@@ -6,7 +6,7 @@
 
             <div class="head-portrait">
 
-                <img v-bind:src="authorInfo.url">
+                <img v-bind:src="authorInfo.portrait">
 
             </div>
 

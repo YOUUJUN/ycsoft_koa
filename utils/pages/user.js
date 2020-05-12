@@ -2,7 +2,9 @@ const query = require("../db/mysql/query");
 const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
 const TOKENSECRET = require("../config/tokensecret");
+const Path = require("path");
 
+const Uploader = require("../lib/uploader");
 
 class User{
 
@@ -208,6 +210,118 @@ class User{
     sayHi (){
         console.log("fucking hi?",this.status);
     }
+
+    /*---用户设置---*/
+    /*-用户上传头像-*/
+    async upLoadPortrait(ctx){
+        // const multiparty = require("multiparty");
+        // let form = new multiparty.Form({uploadDir:Path.join(__dirname,"../../database")});
+        // await form.parse(ctx.req,function(err,fields,files){
+        //     if(err){throw err; return;}
+        //     console.log(fields);//除文件外的其他附带信息
+        //     console.log(files.file[0]);//文件信息
+        //     return ;
+        // });
+
+        var logged = ctx.state.logged;
+        let userId = logged.userId;
+        let savePath = Path.join(__dirname,"../../database/expose/users/",userId,"/portraits");
+
+        let uploader = new Uploader(ctx);
+
+        let fileName = uploader.saveAs(savePath);
+
+        let obj = {
+            status : false,
+            path : ""
+        }
+        if(fileName){
+            let exposePath = Path.join("/users",userId,"portraits",fileName);
+
+            let changeUserPortraitSql = "UPDATE user_info SET portrait = ? WHERE user_id = ?";
+            let changeUserPortraitParam = [exposePath,userId];
+
+            let results = await query(changeUserPortraitSql,changeUserPortraitParam);
+
+            console.log("results",results);
+
+            obj = {
+                status : true,
+                path : exposePath
+            }
+        }
+
+        return obj;
+    }
+
+    async modifyUserInfo(ctx){
+
+        let body = ctx.request.body;
+        let logged = ctx.state.logged;
+        if(!logged){
+            console.log("没有获取到登录状态!");
+            return;
+        }
+
+        let userid = logged.userId;
+
+        let msg = {
+            status : 0,
+            data : "修改失败!"
+        }
+
+        let key = body.key;
+        let value = body.value;
+
+        let editUserInfoSql = "";
+        let editUserInfoParam = [];
+
+        switch (key){
+            case 'nickname':
+                if(value.indexOf(' ')>=0 ||value == ''){
+                    editUserInfoSql = "";
+                    msg = {
+                        data : "昵称不能为空!",
+                        status : 0
+                    };
+                }else{
+                    editUserInfoSql = "UPDATE users SET nickname = ? WHERE user_id = ? ";
+                    editUserInfoParam = [value,userid];
+                }
+                break;
+
+            case 'job':
+                editUserInfoSql = " UPDATE user_info SET job = ? WHERE user_id = ? ";
+                editUserInfoParam = [value,userid];
+                break;
+
+            case 'introduction':
+                editUserInfoSql = "UPDATE user_info SET introduction = ? WHERE user_id = ? ";
+                editUserInfoParam = [value,userid];
+                break;
+
+            case 'blogUrl':
+                editUserInfoSql = "UPDATE user_info SET blog_url = ? WHERE user_id = ? ";
+                editUserInfoParam = [value,userid];
+                break;
+        }
+
+        if(editUserInfoSql == ""){
+            return msg;
+        }
+
+        let results = await query(editUserInfoSql,editUserInfoParam);
+
+        if(results.affectedRows == "1"){
+            msg = {
+                data : "修改成功!",
+                status : 1
+            };
+        }
+
+        return msg;
+    }
+
 
 }
 
