@@ -273,15 +273,21 @@ class User{
         let key = body.key;
         let value = body.value;
 
-        let editUserInfoSql = "";
+        let editUserInfoSql = null;
         let editUserInfoParam = [];
 
         switch (key){
             case 'nickname':
                 if(value.indexOf(' ')>=0 ||value == ''){
-                    editUserInfoSql = "";
+                    editUserInfoSql = null;
                     msg = {
-                        data : "昵称不能为空!",
+                        data : "昵称不能为空,或包含空格!",
+                        status : 0
+                    };
+                }else if(value.length > 20){
+                    editUserInfoSql = null;
+                    msg = {
+                        data : "昵称不能超过20个字符!",
                         status : 0
                     };
                 }else{
@@ -306,7 +312,7 @@ class User{
                 break;
         }
 
-        if(editUserInfoSql == ""){
+        if(editUserInfoSql == null){
             return msg;
         }
 

@@ -207,7 +207,7 @@
                     }
                 }).then(value => {
 
-                    if(value.status == "1"){
+                    if(value.data.status == "1"){
                         this.$notify({
                             title: '成功',
                             message: value.data.data,
