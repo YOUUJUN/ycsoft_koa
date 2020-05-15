@@ -55,6 +55,8 @@ module.exports = (app) => {
     /*-修改用户信息-*/
     router.post('/users/modifyUserInfo',homeController.modifyUserInfo);
     router.post('/login',homeController.login);
+    router.post('/register',homeController.register);
+
 
     router.post('/verifyToken',homeController.verifyToken);
 

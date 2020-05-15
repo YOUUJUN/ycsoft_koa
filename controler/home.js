@@ -132,6 +132,21 @@ module.exports = {
 
     },
 
+    async register(ctx, next){
+        let body = ctx.request.body;
+
+        try {
+            let results = await page_user.register(body);
+
+            ctx.body = results;
+        }catch (err) {
+            console.error(err);
+            ctx.body = {
+                info:"未知错误，请联系管理员!"
+            }
+        }
+    },
+
     async verifyToken (ctx, next) {
         let msg = {
             status: 0,

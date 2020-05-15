@@ -49,13 +49,20 @@
                 </a></li>
 
 
-            <li id="loader" class="item">
+            <li id="loader" class="item" ref="loader">
 
-                <ul class="skeleton-box">
+                <ul class="skeleton-box" v-if="postSwitch">
                     <li></li>
                     <li></li>
                     <li></li>
                 </ul>
+
+                <div class="skeleton-info-box" v-else>
+                    <ul>
+                        <li><span class="modal-icon fa fa-file-text-o"></span></li>
+                        <li><span class="skeleton-info">已经加载完全部文章了哦！</span></li>
+                    </ul>
+                </div>
 
             </li>
 
@@ -74,7 +81,8 @@
         data() {
             return {
                 articleList: [],
-                postIndex : 0
+                postIndex : 0,
+                postSwitch : true
             }
         },
         methods: {
@@ -93,8 +101,13 @@
                         topic : topicValue
                     }
                 }).then(msg => {
-                    console.log("msg ==== >",msg);
-                    this.articleList = msg.data.data;
+                    if(msg.data.data.length === 0){
+                        this.postSwitch = false;
+                        return;
+                    }
+                    console.log("data ==== >",msg.data.data);
+                    this.articleList = this.articleList.concat(msg.data.data);
+                    console.log("articleList",this.articleList);
                 }).catch(err => {
                     console.log(err);
                 })
@@ -131,6 +144,32 @@
                 }
 
                 return str;
+            },
+
+            setScrollLoader (){
+                var vm = this;
+                /*---首页滚动加载---*/
+                window.addEventListener('scroll',function(){
+                    var loader = vm.$refs["loader"];
+                    var scrollTop = document.documentElement.scrollTop;
+                    console.log("scrollTop ------------------",scrollTop);
+                    var canSee = document.documentElement.clientHeight;
+                    console.log("canSee ------------------",canSee);
+                    var docHeight = document.body.scrollHeight;
+                    console.log("docHeight ------------------",docHeight);
+                    var num = loader.offsetHeight;
+                    console.log("num --------------------",num);
+
+                    var positionValue = docHeight - (scrollTop + canSee);
+
+                    if(positionValue == 0){
+                        if(vm.forTopics){
+                            vm.getArticleList(vm.$common.getHash());
+                        }else{
+                            vm.getArticleList();
+                        }
+                    }
+                });
             }
 
         },
@@ -146,6 +185,10 @@
             }else{
                 this.getArticleList();
             }
+        },
+
+        mounted() {
+            this.setScrollLoader();
         }
     }
 </script>

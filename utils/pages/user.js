@@ -3,6 +3,9 @@ const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
 const TOKENSECRET = require("../config/tokensecret");
 const Path = require("path");
+const uuid = require("uuid");
+const fs = require("fs");
+const fsPromise = require("fs").promises;
 
 const Uploader = require("../lib/uploader");
 
@@ -12,11 +15,133 @@ class User{
         this.status = "miao?";
     }
 
-    async register (){
+    /*-注册-*/
+    async register (info){
+
+        let nickname = info.nickname;
+        let username = info.email;
+        let password = info.password;
+        let repassword = info.repassword;
+        let user_id = uuid.v1();
+        let msg = {
+            status : 0,
+            data : "未知错误，请联系管理员!"
+        };
+
+        let searchsql = "SELECT COUNT(*) AS nums FROM users WHERE user_name = ?";
+        let searchparams = [username];
+
+        let addsql = "INSERT INTO users(id,user_id,nickname,user_name,password) VALUE(0,?,?,?,?)";
+        let addparams = [user_id,nickname,username,password];
+
+        if(nickname.indexOf(' ')>=0 ||nickname == ''){
+            msg = {
+                status : 0,
+                data : '昵称不能为空!'
+            };
+
+            return msg;
+        }
+
+        if(nickname.length > 20){
+            msg = {
+                data : "昵称不能超过20个字符!",
+                status : 0
+            };
+
+            return msg;
+        }
+
+        if(username.indexOf(' ')>=0 || username == ''){
+            msg = {
+                status : 0,
+                data : '邮箱不能为空!'
+            };
+
+            return msg;
+        }
+
+        if(password.length > 20){
+            msg = {
+                data : "密码不能超过20个字符!",
+                status : 0
+            };
+
+            return msg;
+        }
+
+        if(password.indexOf(' ')>=0 || password == ''){
+            msg = {
+                status : 0,
+                data : '密码不能为空!'
+            };
+            return msg;
+        }
+
+        if(password != repassword){
+            msg = {
+                status : 0,
+                data : '俩次输入密码不一致!'
+            };
+            return msg;
+        }
+
+        let results = await query(searchsql,searchparams);
+
+        if(results[0].nums === 0){
+
+            let status = await this.initializeUser(user_id);
+
+            if(status === true){
+                results = await query(addsql,addparams);
+                if(results.affectedRows == '1'){
+                    msg = {
+                        status : 1,
+                        data : "注册成功!"
+                    }
+                }
+            }
+
+        }else{
+            msg = {
+                status : 0,
+                message : "该邮箱已被注册!"
+            };
+        }
 
 
+        return msg;
     }
 
+
+    /*--初始化用户信息--*/
+    async initializeUser(userid){
+        try{
+            const userPathFixer = Path.join(__dirname,"../../database/expose/users/");
+
+            let DefaultPortrait = "/user-images/0.1436446423680504.jpg";
+
+            let addExtralInfoSql = "INSERT INTO user_info(id,user_id,portrait,job,introduction,blog_url) VALUE(0,?,?,'','','')";
+            let addExtralInfoParam = [userid,DefaultPortrait];
+
+            let results = await query(addExtralInfoSql,addExtralInfoParam);
+
+            let createPath = Path.join(userPathFixer,userid);
+            await fsPromise.mkdir(createPath);
+            let createPortraits =  Path.join(createPath,"portraits");
+            await fsPromise.mkdir(createPortraits);
+            let createArticle = Path.join(createPath,"articles");
+            await fsPromise.mkdir(createArticle);
+        }catch(err){
+            console.error("初始化用户信息失败!",err);
+            return false;
+        }
+
+        return true;
+    }
+
+
+    /*-登录-*/
     async login (info){
         let searchUser = " SELECT * FROM users WHERE user_name = ? ";
         let userParams = [info.username];
@@ -297,13 +422,30 @@ class User{
                 break;
 
             case 'job':
-                editUserInfoSql = " UPDATE user_info SET job = ? WHERE user_id = ? ";
-                editUserInfoParam = [value,userid];
+                if(value.length > 20){
+                    editUserInfoSql = null;
+                    msg = {
+                        data : "职位介绍不能超过20个字符!",
+                        status : 0
+                    };
+                }else{
+                    editUserInfoSql = " UPDATE user_info SET job = ? WHERE user_id = ? ";
+                    editUserInfoParam = [value,userid];
+                }
+
                 break;
 
             case 'introduction':
-                editUserInfoSql = "UPDATE user_info SET introduction = ? WHERE user_id = ? ";
-                editUserInfoParam = [value,userid];
+                if(value.length > 100){
+                    editUserInfoSql = null;
+                    msg = {
+                        data : "个人介绍不能超过100个字符!",
+                        status : 0
+                    };
+                }else {
+                    editUserInfoSql = "UPDATE user_info SET introduction = ? WHERE user_id = ? ";
+                    editUserInfoParam = [value, userid];
+                }
                 break;
 
             case 'blogUrl':
@@ -327,7 +469,6 @@ class User{
 
         return msg;
     }
-
 
 }
 

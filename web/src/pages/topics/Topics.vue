@@ -120,6 +120,7 @@
 <style>
 
     @import "../../assets/css/youjun_base.css";
+    @import "../../assets/css/component.css";
     @import "~font-awesome\css\font-awesome.min.css";
 
 

@@ -21183,3 +21183,6007 @@ msg [
 ---------------------连接池连接数:------------------- 0
 ---------------------连接池连接数:------------------- 0
 ---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 18ms 26b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 11ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 43ms 26b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 7ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 335ms 217b
+  --> POST /community/getTopicList 200 96ms 532b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 206ms 2.08kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 7ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '\\users\\0192e830-1bbb-11e9-b9c9-cdaf3c9a2410\\portraits\\0.27955053535978047.jpeg',
+    job: 'CSGO职业哥',
+    introduction: 'A2',
+    blog_url: 'hello?'
+  }
+]
+  --> POST /personal/getAuthorinfo 200 44ms 377b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 8ms 551b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/checkUserAuthorBind
+OPTIONS /personal/checkUserAuthorBind - 0ms
+  --> OPTIONS /personal/checkUserAuthorBind 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/checkUserAuthorBind
+  --> POST /personal/checkUserAuthorBind 200 8ms 25b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 36ms 3.31kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 3ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 2ms 36b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 5ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 5ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /users/modifyUserInfo
+OPTIONS /users/modifyUserInfo - 0ms
+  --> OPTIONS /users/modifyUserInfo 200 0ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /users/modifyUserInfo
+  --> POST /users/modifyUserInfo 200 16ms 35b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /users/getUserInfo
+OPTIONS /users/getUserInfo - 0ms
+  --> OPTIONS /users/getUserInfo 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /users/getUserInfo
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '\\users\\0192e830-1bbb-11e9-b9c9-cdaf3c9a2410\\portraits\\0.27955053535978047.jpeg',
+    job: 'CSGO职业哥1',
+    introduction: 'A2',
+    blog_url: 'hello?'
+  }
+]
+  --> POST /users/getUserInfo 200 27ms 378b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 6ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /users/modifyUserInfo
+OPTIONS /users/modifyUserInfo - 0ms
+  --> OPTIONS /users/modifyUserInfo 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /users/modifyUserInfo
+  --> POST /users/modifyUserInfo 200 1ms 52b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /users/modifyUserInfo
+OPTIONS /users/modifyUserInfo - 0ms
+  --> OPTIONS /users/modifyUserInfo 200 10ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /users/modifyUserInfo
+  --> POST /users/modifyUserInfo 200 3ms 58b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '\\users\\0192e830-1bbb-11e9-b9c9-cdaf3c9a2410\\portraits\\0.27955053535978047.jpeg',
+    job: 'CSGO职业哥1',
+    introduction: 'A2',
+    blog_url: 'hello?'
+  }
+]
+  --> POST /personal/getAuthorinfo 200 110ms 378b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/checkUserAuthorBind
+OPTIONS /personal/checkUserAuthorBind - 0ms
+  --> OPTIONS /personal/checkUserAuthorBind 200 3ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/checkUserAuthorBind
+  --> POST /personal/checkUserAuthorBind 200 3ms 25b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 551b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 5ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 28ms 3.31kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 1ms 36b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 38ms 2.08kb
+  --> POST /community/getTopicList 200 27ms 551b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 5ms 217b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicInfo
+OPTIONS /community/getTopicInfo - 0ms
+  --> OPTIONS /community/getTopicInfo 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicInfo
+  --> POST /community/getTopicInfo 200 6ms 22b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: 'topics' }
+searchTopic ==> topics
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 23ms 32b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 551b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 0ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 1ms 26b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 8ms 1.32kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 7ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 4ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 17ms 2.08kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 551b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 5ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 26ms 2.08kb
+  --> POST /community/getTopicList 200 9ms 551b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 5ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 2ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 23ms 2.08kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 1ms
+  --> OPTIONS /community/getTopicList 200 3ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 9ms 551b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 4ms 217b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 29ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 551b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 17ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 12ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleInfo
+OPTIONS /community/getArticleInfo - 0ms
+  --> OPTIONS /community/getArticleInfo 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleInfo
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getComment
+OPTIONS /community/getComment - 0ms
+  --> OPTIONS /community/getComment 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 1ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getComment
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getComment 200 95ms 1.45kb
+  --> POST /community/getTopicList 200 89ms 551b
+  --> POST /community/getArticleInfo 200 186ms 411b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getReComment
+OPTIONS /community/getReComment - 0ms
+  --> OPTIONS /community/getReComment 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getReComment
+postId 180f2930-46c1-11e9-b5a4-db5a96966b9e 89785320-6a7a-11ea-b8db-dda391dfd638
+  --> POST /community/getReComment 200 8ms 390b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getReComment
+postId 180f2930-46c1-11e9-b5a4-db5a96966b9e 6f2e4b80-6a59-11ea-b303-4fbad07004f4
+  --> POST /community/getReComment 200 3ms 22b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getReComment
+postId 180f2930-46c1-11e9-b5a4-db5a96966b9e bdf124a0-697c-11ea-9d27-3b59ead0882a
+  --> POST /community/getReComment 200 3ms 22b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 5ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 1ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 6ms 217b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 39ms 2.08kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 4ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 551b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 3ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 1ms 26b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '\\users\\0192e830-1bbb-11e9-b9c9-cdaf3c9a2410\\portraits\\0.27955053535978047.jpeg',
+    job: 'CSGO职业哥1',
+    introduction: 'A2',
+    blog_url: 'hello?'
+  }
+]
+  --> POST /personal/getAuthorinfo 200 14ms 378b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/checkUserAuthorBind
+OPTIONS /personal/checkUserAuthorBind - 0ms
+  --> OPTIONS /personal/checkUserAuthorBind 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/checkUserAuthorBind
+  --> POST /personal/checkUserAuthorBind 200 3ms 25b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 6ms 551b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 24ms 3.31kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 1ms 36b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getFollowUser
+OPTIONS /personal/getFollowUser - 0ms
+  --> OPTIONS /personal/getFollowUser 200 0ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 5ms 298b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getFocusTopic
+OPTIONS /personal/getFocusTopic - 0ms
+  --> OPTIONS /personal/getFocusTopic 200 0ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getFocusTopic
+msg [
+  { name: 'NODE', userFocused: true },
+  { name: 'WEB前端', userFocused: true },
+  { name: 'CSGO', userFocused: true },
+  { name: 'SQL', userFocused: true }
+]
+  --> POST /personal/getFocusTopic 200 8ms 165b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 0ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 17ms 3.31kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 9ms 298b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 30ms 3.31kb
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 1ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 4ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 217b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 34ms 2.08kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 11ms 551b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 11ms 26b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '\\users\\0192e830-1bbb-11e9-b9c9-cdaf3c9a2410\\portraits\\0.27955053535978047.jpeg',
+    job: 'CSGO职业哥1',
+    introduction: 'A2',
+    blog_url: 'hello?'
+  }
+]
+  --> POST /personal/getAuthorinfo 200 65ms 378b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 23ms 3.31kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/checkUserAuthorBind
+OPTIONS /personal/checkUserAuthorBind - 0ms
+  --> OPTIONS /personal/checkUserAuthorBind 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/checkUserAuthorBind
+  --> POST /personal/checkUserAuthorBind 200 5ms 25b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 3ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 6ms 551b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 1ms 36b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 4ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- GET /community
+  --> GET /community 200 91ms 1.35kb
+  <-- GET /css/chunk-vendors.css
+  <-- GET /css/community.css
+  <-- GET /js/chunk-vendors.js
+  <-- GET /js/community.js
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 1ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getTopicList 200 12ms 551b
+  <-- GET /css/chunk-0730b527.css
+  <-- GET /css/chunk-660772a7.css
+  <-- GET /css/chunk-4eb9ad46.css
+  <-- GET /css/chunk-1e91e5c4.css
+  <-- GET /css/chunk-d27458f6.css
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 58ms 2.08kb
+  <-- GET /css/chunk-f223234c.css
+  --> GET /css/chunk-1e91e5c4.css 200 94ms 2.9kb
+  --> GET /css/chunk-4eb9ad46.css 200 96ms 1.62kb
+  --> GET /css/chunk-d27458f6.css 200 91ms 1.16kb
+  --> GET /css/chunk-f223234c.css 200 64ms 2.61kb
+  --> GET /css/chunk-660772a7.css 200 121ms 1.45kb
+  --> GET /css/chunk-0730b527.css 200 137ms 3.58kb
+  <-- GET /css/chunk-0730b527.css
+  <-- GET /css/chunk-1e91e5c4.css
+  <-- GET /css/chunk-4eb9ad46.css
+  <-- GET /css/chunk-660772a7.css
+  <-- GET /css/chunk-d27458f6.css
+  <-- GET /css/chunk-f223234c.css
+  --> GET /css/chunk-1e91e5c4.css 200 10ms 2.9kb
+  --> GET /css/chunk-0730b527.css 200 10ms 3.58kb
+  --> GET /css/chunk-f223234c.css 200 8ms 2.61kb
+  --> GET /css/chunk-d27458f6.css 200 9ms 1.16kb
+  --> GET /css/chunk-660772a7.css 200 11ms 1.45kb
+  --> GET /css/chunk-4eb9ad46.css 200 54ms 1.62kb
+  <-- GET /js/chunk-0730b527.js
+  <-- GET /js/chunk-1e91e5c4.js
+  <-- GET /js/chunk-4eb9ad46.js
+  <-- GET /js/chunk-660772a7.js
+  <-- GET /js/chunk-d27458f6.js
+  <-- GET /js/chunk-f223234c.js
+  --> GET /js/chunk-0730b527.js 200 36ms 31.5kb
+  --> GET /js/chunk-1e91e5c4.js 200 36ms 7.26kb
+  --> GET /js/chunk-4eb9ad46.js 200 30ms 1.42kb
+  --> GET /js/chunk-f223234c.js 200 39ms 3.08kb
+  --> GET /js/chunk-d27458f6.js 200 42ms 1008b
+  --> GET /js/chunk-660772a7.js 200 63ms 2.79kb
+  <-- GET /css/chunk-vendors.css
+  <-- GET /css/community.css
+  <-- GET /js/chunk-vendors.js
+  <-- GET /js/community.js
+  --> GET /css/chunk-vendors.css 200 26ms 40.76kb
+  --> GET /css/community.css 200 25ms 8.97kb
+  --> GET /js/community.js 200 43ms 7.98kb
+  --> GET /js/chunk-vendors.js 200 90ms 569.9kb
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+  <-- GET /favicon.ico
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 18ms 1.93kb
+  --> GET /favicon.ico 200 41ms 59.28kb
+  <-- GET /images/logo.png
+  <-- GET /fonts/fontawesome-webfont.woff2
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 3ms 553b
+  --> GET /images/logo.png 200 40ms 6.26kb
+  --> GET /fonts/fontawesome-webfont.woff2 200 39ms 75.35kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- GET /users/setting
+  --> GET /users/setting 200 86ms 999b
+  <-- GET /css/chunk-0730b527.css
+  <-- GET /css/chunk-1e91e5c4.css
+  <-- GET /css/chunk-4eb9ad46.css
+  --> GET /css/chunk-0730b527.css 200 8ms 3.58kb
+  --> GET /css/chunk-4eb9ad46.css 200 7ms 1.62kb
+  <-- GET /css/chunk-660772a7.css
+  <-- GET /css/chunk-d27458f6.css
+  --> GET /css/chunk-660772a7.css 200 5ms 1.45kb
+  --> GET /css/chunk-d27458f6.css 200 5ms 1.16kb
+  <-- GET /css/chunk-f223234c.css
+  --> GET /css/chunk-1e91e5c4.css 200 44ms 2.9kb
+  --> GET /css/chunk-f223234c.css 200 17ms 2.61kb
+  <-- GET /images/topic-mid-img.png
+  <-- GET /css/setting.css
+  <-- GET /css/chunk-vendors.css
+  <-- GET /js/setting.js
+  --> GET /images/topic-mid-img.png 200 22ms 1.21kb
+  --> GET /css/setting.css 200 18ms 2.25kb
+  --> GET /js/setting.js 200 55ms 4.68kb
+  <-- GET /js/chunk-0730b527.js
+  <-- GET /js/chunk-1e91e5c4.js
+  <-- GET /js/chunk-4eb9ad46.js
+  <-- GET /js/chunk-660772a7.js
+  --> GET /js/chunk-0730b527.js 200 9ms 31.5kb
+  --> GET /js/chunk-1e91e5c4.js 200 8ms 7.26kb
+  --> GET /js/chunk-4eb9ad46.js 200 8ms 1.42kb
+  --> GET /js/chunk-660772a7.js 200 8ms 2.79kb
+  <-- GET /js/chunk-d27458f6.js
+  <-- GET /js/chunk-f223234c.js
+  --> GET /js/chunk-f223234c.js 200 4ms 3.08kb
+  --> GET /js/chunk-d27458f6.js 200 13ms 1008b
+别问，问就验证没通过
+result=================================>funck false
+  <-- GET /users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.8224783017476776.jpeg
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 2ms 27b
+  --> GET /users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.8224783017476776.jpeg 200 70ms 1.3mb
+  <-- GET /images/logo.png
+  <-- GET /fonts/fontawesome-webfont.woff2
+  <-- GET /favicon.ico
+  <-- GET /css/chunk-0730b527.css
+  <-- GET /css/chunk-1e91e5c4.css
+  <-- GET /js/chunk-0730b527.js
+  <-- GET /js/chunk-1e91e5c4.js
+  --> GET /css/chunk-0730b527.css 200 9ms 3.58kb
+  --> GET /js/chunk-0730b527.js 200 8ms 31.5kb
+  --> GET /js/chunk-1e91e5c4.js 200 7ms 7.26kb
+  --> GET /css/chunk-1e91e5c4.css 200 15ms 2.9kb
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 11ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 13ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 5ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+  --> POST /community/getHotList 200 72ms 217b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 24ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 11ms 551b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 1ms 26b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 35ms 2.08kb
+  --> POST /community/getTopicList 200 21ms 551b
+  --> POST /community/getHotList 200 16ms 217b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 0ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 4ms 217b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 551b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 25ms 2.08kb
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 12ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 105ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 56ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 87ms 2.08kb
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 12ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 3ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 53ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 120ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 43ms 2.08kb
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 23ms 2.08kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 7ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 539b
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 11ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 70ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 129ms 2.08kb
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 25ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 217b
+  --> POST /community/getTopicList 200 28ms 539b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 21ms 2.07kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 13ms 984b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 4, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 5, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 15ms 68b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 20ms 68b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 6, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 7, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 18ms 68b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 23ms 68b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 8, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 15ms 68b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 1ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 2ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 0ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 517b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 17ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 20ms 2.07kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 17ms 984b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 4, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 18ms 68b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 1ms 26b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 5ms 217b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 18ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 517b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 20ms 2.07kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 14ms 984b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 4, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 15ms 68b
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 16ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 120ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 60ms 2.08kb
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 3ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 12ms 517b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 7ms 217b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 20ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 20ms 2.07kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 29ms 984b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 8ms 217b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 14ms 517b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 25ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 19ms 2.07kb
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 14ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 61ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 117ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 64ms 2.08kb
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 539b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 20ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 4ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 22ms 2.07kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 21ms 984b
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 13ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 51ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 126ms 2.08kb
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 4ms 217b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 36ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 6ms 517b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 4ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 24ms 2.07kb
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 13ms 26b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 1ms 26b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 445ms 217b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getHotList 200 1,812ms 217b
+  --> POST /community/getTopicList 200 643ms 526b
+  --> POST /community/getTopicList 200 636ms 526b
+  --> POST /community/getTopicList 200 628ms 526b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 615ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 670ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 217b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 34ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 18ms 2.07kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 17ms 984b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 4, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 13ms 68b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 22ms 2.07kb
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 6ms 217b
+  --> POST /community/getTopicList 200 15ms 526b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 26ms 2.08kb
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 8ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 41ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 99ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 42ms 2.08kb
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 25ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getTopicList 200 11ms 526b
+  --> POST /community/getHotList 200 10ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 23ms 2.07kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 18ms 984b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 4, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 16ms 68b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 5, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 26ms 68b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 6, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 17ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 7, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 23ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 8, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 17ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 15ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 25ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 31ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 20ms 2.07kb
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 13ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 53ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 103ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 55ms 2.08kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 26ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 28ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 19ms 2.08kb
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 11ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 74ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 44ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 40ms 2.08kb
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 9ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 82ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 43ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 50ms 2.08kb
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 526b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 22ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 4ms 217b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 20ms 2.07kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 21ms 984b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 4, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 17ms 68b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 5, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 19ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 6, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 19ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 7, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 18ms 68b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 8, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 13ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 3ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 9, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 15ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 10, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 21ms 68b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 5ms 217b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 526b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 24ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 21ms 2.07kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 15ms 984b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 4, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 33ms 68b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 5, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 18ms 68b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 9ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 25ms 2.08kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 526b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicInfo
+OPTIONS /community/getTopicInfo - 0ms
+  --> OPTIONS /community/getTopicInfo 200 1ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicInfo
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+  --> POST /community/getTopicInfo 200 11ms 60b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: 'CSGO' }
+searchTopic ==> CSGO
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 13ms 1.48kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 526b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 19ms 2.07kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 18ms 984b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 4, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 19ms 68b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 5, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 19ms 68b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 6, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 19ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 5ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 7, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 21ms 68b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 8, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 19ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 9, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 16ms 68b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 20ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicInfo
+OPTIONS /community/getTopicInfo - 0ms
+  --> OPTIONS /community/getTopicInfo 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 12ms 26b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicInfo
+  --> POST /community/getTopicInfo 200 72ms 60b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 8ms 551b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: 'CSGO' }
+searchTopic ==> CSGO
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 21ms 1.48kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 14ms 2.07kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 17ms 984b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 4, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 13ms 68b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 5, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 19ms 68b
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 10ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: 'CSGO' }
+searchTopic ==> CSGO
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: 'CSGO' }
+searchTopic ==> CSGO
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 71ms 68b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 114ms 2.08kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 73ms 1.48kb
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 77ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: 'CSGO' }
+searchTopic ==> CSGO
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 23ms 68b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicInfo
+OPTIONS /community/getTopicInfo - 0ms
+  --> OPTIONS /community/getTopicInfo 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicInfo
+  --> POST /community/getTopicInfo 200 9ms 60b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 3ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 551b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: 'CSGO' }
+searchTopic ==> CSGO
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 21ms 1.48kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: 'CSGO' }
+searchTopic ==> CSGO
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 15ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 3ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: 'CSGO' }
+searchTopic ==> CSGO
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 16ms 68b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 4, topic: 'CSGO' }
+searchTopic ==> CSGO
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 23ms 68b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 2ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 5ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 553b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 18ms 1.93kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 17ms 1.92kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 18ms 921b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 4, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 14ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 5, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 15ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 6, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 15ms 68b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 0ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 2ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getTopicList 200 7ms 553b
+  --> POST /community/getArticleList 200 16ms 1.93kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 12ms 1.92kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 20ms 921b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 4, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 16ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 5, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 13ms 68b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 4ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 553b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 18ms 1.93kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 16ms 1.92kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 11ms 921b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 4, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 14ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 5, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 11ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 6, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 15ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 4ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 5, topic: 'CSGO' }
+searchTopic ==> CSGO
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 18ms 68b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 6, topic: 'CSGO' }
+searchTopic ==> CSGO
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 19ms 68b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 6ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 6ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 8ms 217b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 551b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 26ms 2.08kb
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 3ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 10ms 26b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+  --> POST /community/getHotList 200 131ms 217b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 47ms 2.08kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589358724,
+  exp: 1589531524,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 517b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 2ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+  --> POST /community/getArticleList 200 21ms 1.93kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 521b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 13ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 5ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 9ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 217ms 217b
+  --> POST /community/getTopicList 200 31ms 521b
+  --> POST /community/getArticleList 200 75ms 1.93kb
+  <-- OPTIONS /login
+OPTIONS /login - 0ms
+  --> OPTIONS /login 200 2ms 0b
+  <-- POST /login
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '\\users\\0192e830-1bbb-11e9-b9c9-cdaf3c9a2410\\portraits\\0.27955053535978047.jpeg',
+    job: 'CSGO职业哥1',
+    introduction: 'A2',
+    blog_url: 'hello?'
+  }
+]
+  --> POST /login 200 18ms 681b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 7ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 14ms 2.08kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 6ms 517b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 1ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 0ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '\\users\\0192e830-1bbb-11e9-b9c9-cdaf3c9a2410\\portraits\\0.27955053535978047.jpeg',
+    job: 'CSGO职业哥1',
+    introduction: 'A2',
+    blog_url: 'hello?'
+  }
+]
+  --> POST /personal/getAuthorinfo 200 20ms 378b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/checkUserAuthorBind
+OPTIONS /personal/checkUserAuthorBind - 0ms
+  --> OPTIONS /personal/checkUserAuthorBind 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/checkUserAuthorBind
+  --> POST /personal/checkUserAuthorBind 200 3ms 25b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 30ms 3.31kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 517b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/verifyOwner
+userId,bodyId 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410 0192e830-1bbb-11e9-b9c9-cdaf3c9a2410
+  --> POST /personal/verifyOwner 200 2ms 36b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getFocusTopic
+OPTIONS /personal/getFocusTopic - 0ms
+  --> OPTIONS /personal/getFocusTopic 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getFocusTopic
+msg [
+  { name: 'NODE', userFocused: true },
+  { name: 'WEB前端', userFocused: true },
+  { name: 'CSGO', userFocused: true },
+  { name: 'SQL', userFocused: true }
+]
+  --> POST /personal/getFocusTopic 200 5ms 165b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 21ms 3.31kb
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getFocusTopic
+msg [
+  { name: 'NODE', userFocused: true },
+  { name: 'WEB前端', userFocused: true },
+  { name: 'CSGO', userFocused: true },
+  { name: 'SQL', userFocused: true }
+]
+  --> POST /personal/getFocusTopic 200 7ms 165b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  <-- POST /personal/getArticleList
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /personal/getArticleList 200 20ms 3.31kb
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 14ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1589529919,
+  exp: 1589702719,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getTopicList 200 7ms 517b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 18ms 2.08kb
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 2ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 15ms 1.93kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 3ms 521b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- GET /js/setting.js.map
+  <-- GET /js/chunk-0730b527.js.map
+  --> GET /js/setting.js.map 200 158ms 49.1kb
+  --> GET /js/chunk-0730b527.js.map 200 127ms 463.04kb
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 17ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 3ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 220ms 217b
+  --> POST /community/getTopicList 200 15ms 521b
+  --> POST /community/getArticleList 200 51ms 1.93kb
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 2ms 0b
+  <-- POST /register
+  --> POST /register 200 3ms 45b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 16ms 0b
+  <-- POST /register
+  --> POST /register 200 87ms 47b
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 3ms 0b
+  <-- POST /register
+  --> POST /register 200 33ms 35b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /register
+OPTIONS /register - 0ms
+  --> OPTIONS /register 200 8ms 0b
+  <-- POST /register
+  --> POST /register 200 64ms 47b
+  <-- POST /register
+  --> POST /register 200 22ms 35b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0

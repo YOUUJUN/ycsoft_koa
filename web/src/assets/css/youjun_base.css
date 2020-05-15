@@ -9,6 +9,8 @@
 
 body {
     margin: 0;
+    font-size: 14px;
+    line-height: 1.42857143;
 }
 
 img{
@@ -29,9 +31,18 @@ p{
 }
 
 a{
+    color: #337ab7;
     text-decoration: none;
 }
 
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+a:active, a:hover {
+    outline: 0;
+}
 
 /*--------------框架结构---------------*/
 
