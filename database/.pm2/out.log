@@ -27187,3 +27187,150 @@ OPTIONS /register - 0ms
   --> POST /register 200 22ms 35b
 ---------------------连接池连接数:------------------- 0
 ---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 20ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 1ms
+  --> OPTIONS /community/getArticleList 200 6ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+  --> POST /community/getHotList 200 194ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getArticleList 200 36ms 1.93kb
+  --> POST /community/getTopicList 200 86ms 521b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 2ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 23ms 1.93kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 9ms 521b
+---------------------连接池连接数:------------------- 0
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 17ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 2ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 291ms 217b
+  --> POST /community/getTopicList 200 134ms 521b
+  --> POST /community/getArticleList 200 177ms 1.93kb
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getHotList 200 5ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 521b
+  --> POST /community/getArticleList 200 18ms 1.93kb
+---------------------连接池连接数:------------------- 0
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 17ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 133ms 217b
+  --> POST /community/getTopicList 200 59ms 521b
+  --> POST /community/getArticleList 200 73ms 1.93kb
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 217b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getTopicList 200 4ms 521b
+  --> POST /community/getArticleList 200 18ms 1.93kb
+---------------------连接池连接数:------------------- 0

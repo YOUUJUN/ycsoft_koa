@@ -10,9 +10,12 @@ import axios from 'axios';
 let myDIYAxios = function(options){
 
     console.log("well, i think i can do something here");
+    const DevBaseUrl = 'http://127.0.0.1:3000';
+    const ProdBashUrl = 'http://106.13.63.236';
 
+    let baseURL = process.env.NODE_ENV !== 'production' ? DevBaseUrl : ProdBashUrl;
     let $axios = axios.create({
-        baseURL : "http://localhost:3000",
+        baseURL : baseURL,
         withCredentials :true
     });
 
