@@ -366,7 +366,7 @@
     }
 
     .topic-title h2 {
-        font-size: 22px;
+        font-size: 20px;
         margin:0;
     }
 

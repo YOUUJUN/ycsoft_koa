@@ -140,9 +140,15 @@
                         console.log("value ====-====>",value);
                         this.warn = value.data.info;
                         if(value.data.ret_code == 0){
-                            alert('登录失败!');
+                            this.$notify.error({
+                                title: '登录失败!',
+                                message: value.data.info
+                            });
                         }else if(value.data.ret_code == 1){
-                            alert('登录成功!');
+                            this.$notify({
+                                title: '登录成功!',
+                                type: 'success'
+                            });
                             localStorage.setItem("marscript",value.data.token);
                             localStorage.setItem("userData",JSON.stringify(value.data.userData));
                             vm.$store.commit("changeLogStatus",true);
