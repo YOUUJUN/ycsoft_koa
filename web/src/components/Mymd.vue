@@ -1,6 +1,6 @@
 <template>
     <div class="markdown-editor-box">
-        <link rel="stylesheet" href="/static/editor.md/css/editormd.min.css">
+        <link rel="stylesheet" href="/lib/editor.md/css/editormd.css">
         <div id="editorId" ref="editorId" class="hide"></div>
     </div>
 </template>
@@ -66,8 +66,10 @@
                 let vm = this;
                 if(vm.preview){
                     vm.initPreView(vm.initData);
+                    console.log("A-----");
                 }else{
-                    vm.initEditor("hoaudwidwiuudwiuudbwiubdw");
+                    vm.initEditor();
+                    console.log("B-----");
                 }
             },
             initPreView: function (markdown) {
@@ -88,8 +90,13 @@
                     await vm.fetchScript('/lib/editor.md/editormd.min.js');
                     vm.jsLoadOver = true;
                     vm.$nextTick(() => {
-                        // vm.editor = window.editormd("editorId", config);
 
+                        // console.log("editormd-------------",window.editormd);
+
+
+
+                        // vm.editor = window.editormd("editorId", config);
+                        console.log("editormd-------------",window.editormd);
                         vm.editor = editormd.markdownToHTML("editorId", config);
                         this.$refs["editorId"].classList.remove("hide");
 
@@ -127,7 +134,12 @@
                     await vm.fetchScript('/lib/editor.md/editormd.min.js');
                     vm.jsLoadOver = true;
                     vm.$nextTick(() => {
-                        vm.editor = window.editormd("editorId", config);
+
+                        console.log("editormd-------------",window.editormd);
+                        vm.editor = editormd("editorId", config);
+                        this.$refs["editorId"].classList.remove("hide");
+
+
 
                         // vm.editor.on('load', () => {
                         //     vm.editor.setMarkdown("hello");
@@ -162,7 +174,7 @@
                 if (vm.editor && vm.jsLoadOver) {
                     try {
                         vm.watch();
-                        vm.previewing();
+                        // vm.previewing();
                         window.clearInterval(vm.timer);
                         vm.timer = null
                     } catch (e) {
@@ -182,5 +194,6 @@
 <style>
     #editorId{
         box-sizing: border-box;
+        z-index: 9999;
     }
 </style>

@@ -9,7 +9,7 @@
 
         <main class="main-page">
 
-            <div class="container">
+            <div class="container reWidth">
 
                 <div class="area cols-12">
 
@@ -17,7 +17,8 @@
 
                         <div class="edit-title">
 
-                            <h4>文档名称:</h4>
+                            <h4 v-if="pageProperty === 'Article'">文章名称:</h4>
+                            <h4 v-else>文档名称:</h4>
 
                         </div>
                         <div class="fill-title-box">
@@ -25,7 +26,7 @@
 
 
 
-                                <input type="text" name="postTitle" placeholder="文档标题">
+                                <input type="text" placeholder="文档标题" v-model="articleInfo.title">
 
 
                             </div>
@@ -35,34 +36,52 @@
 
                         <div class="edit-title">
 
-                            <h4>文档内容:</h4>
+                            <h4 v-if="pageProperty === 'Article'">文章内容:</h4>
+                            <h4 v-else>文档内容:</h4>
 
                         </div>
-                        <editor-md v-bind:config="config" v-bind:preview="false" v-bind:initData="articleInfo.content"></editor-md>
+                        <editor-md ref="md" v-bind:preview="false" v-bind:initData="articleInfo.content"></editor-md>
 
 
                         <div class="post-btn-container">
 
                             <div class="topic-select-box">
+
                                 <div class="field-text">
-
-
-
-                                    <input type="text" name="postTopic" placeholder="管理员你好!创建一个新的文档类别吗？">
-
-
+                                    <input type="text" placeholder="管理员你好!创建一个新的文档类别吗？" v-model="articleInfo.topic">
                                 </div>
 
 
 
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">选择已有文档类别
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul id="topicList" class="dropdown-menu" role="menu">
+                                <div class="btn-group" v-if="pageProperty === 'Article'">
+                                    <el-dropdown @command="selectArticleTopic">
+                                        <el-button type="primary">
+                                            选择已有文章类别<i class="el-icon-arrow-down el-icon--right"></i>
+                                        </el-button>
+                                        <el-dropdown-menu slot="dropdown">
+                                            <el-dropdown-item>黄金糕</el-dropdown-item>
+                                            <el-dropdown-item>狮子头</el-dropdown-item>
+                                            <el-dropdown-item>螺蛳粉</el-dropdown-item>
+                                            <el-dropdown-item>双皮奶</el-dropdown-item>
+                                            <el-dropdown-item>蚵仔煎</el-dropdown-item>
+                                        </el-dropdown-menu>
+                                    </el-dropdown>
+                                </div>
 
 
-                                        <li><a href="javascript:void(0);">平台使用教程</a></li><li><a href="javascript:void(0);">平台内部JavaScript库</a></li><li><a href="javascript:void(0);">平台组件</a></li><li><a href="javascript:void(0);">eqwewqe</a></li></ul>
+                                <div class="btn-group" v-else>
+                                    <el-dropdown @command="selectDoctype">
+                                        <el-button type="primary">
+                                            选择已有文档类别<i class="el-icon-arrow-down el-icon--right"></i>
+                                        </el-button>
+                                        <el-dropdown-menu slot="dropdown">
+                                            <el-dropdown-item>黄金糕</el-dropdown-item>
+                                            <el-dropdown-item>狮子头</el-dropdown-item>
+                                            <el-dropdown-item>螺蛳粉</el-dropdown-item>
+                                            <el-dropdown-item>双皮奶</el-dropdown-item>
+                                            <el-dropdown-item>蚵仔煎</el-dropdown-item>
+                                        </el-dropdown-menu>
+                                    </el-dropdown>
                                 </div>
 
 
@@ -70,7 +89,8 @@
 
 
 
-                            <button class="btn lg-btn" onclick="sendDoc()">发布文档</button>
+                            <button class="btn lg-btn" @click="sendArticle" v-if="pageProperty === 'Article'">发布文章</button>
+                            <button class="btn lg-btn" @click="sendDoc" v-else>发布文档</button>
 
 
 
@@ -102,17 +122,11 @@
 
             return {
                 navigationList : this.$store.state.navigationList,
-                config : {
-                    htmlDecode: "style,script,iframe",
-                    emoji: true,
-                    taskList: true,
-                    tex: true, // 默认不解析
-                    flowChart: true, // 默认不解析
-                    sequenceDiagram: true, // 默认不解析
-                    codeFold: true
-                },
+                pageProperty : "Article",
                 articleInfo : {
-                    content : "hello?"
+                    content : "",
+                    title : "",
+                    topic : ""
                 }
             }
 
@@ -128,12 +142,55 @@
                 }).catch(err => {
                     console.log(err);
                 })
+            },
+
+            getPageProperty (){
+                let path = window.location.pathname.split("/");
+                if(path[1] == "article"){
+                    this.pageProperty = "Article";
+                }else if(path[1] == "doc"){
+                    this.pageProperty = "Doc";
+                }
+            },
+
+            initCombox (){
+
+            },
+
+            selectArticleTopic(){
+
+            },
+
+            selectDoctype(){
+
+            },
+
+            sendArticle(){
+
+            },
+
+            sendDoc(){
+                let editor = this.$refs["md"];
+                let markDown = editor.getMarkdown();
+                console.log("markDown",markDown);
+                if(!markDown){
+                    alert("空");
+                }
+if(markDown.length < 10){
+                    alert("内容似乎太少了呢？");
+                }
             }
 
         },
 
         created () {
+            var vm = this;
             this.getUserLogStatus();
+            vm.getPageProperty();
+            console.log("getPageProperty",vm.pageProperty);
+
+
+
         },
 
         mounted() {
@@ -213,6 +270,20 @@
         height: 36px;
         line-height: 33px;
         font-size: 15px;
+    }
+
+
+    /*---fix element-UI---*/
+
+    .topic-select-box button{
+        padding: 6px;
+        vertical-align: top;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .el-dropdown-menu{
+        z-index: 9999 !important;
     }
 
 </style>

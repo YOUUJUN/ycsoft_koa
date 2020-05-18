@@ -19,6 +19,10 @@ Vue.config.productionTip = false;
 
 Vue.prototype.$axios = lib.axios;
 
+const DevBaseUrl = 'http://127.0.0.1:3000';
+const ProdBashUrl = 'http://106.13.63.236';
+Vue.prototype.baseURL = process.env.NODE_ENV !== 'production' ? DevBaseUrl : ProdBashUrl;
+
 new Vue({
   store,
   render: h => h(Home)

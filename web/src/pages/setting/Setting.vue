@@ -136,7 +136,7 @@
 
                     var xmlhttp = new XMLHttpRequest();
 
-                    xmlhttp.open("POST","http://localhost:3000/users/uploadimg");
+                    xmlhttp.open("POST",vm.baseURL.concat("/users/uploadimg"));
                     let marscript = window.localStorage.getItem("marscript");
                     if (marscript) {
                         xmlhttp.setRequestHeader("accessToken",marscript);
@@ -234,6 +234,7 @@
 
         mounted() {
             this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
+            console.log("baseUrl",this.$axios.baseURL);
         }
     };
 </script>
