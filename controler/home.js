@@ -9,6 +9,7 @@ const Path = require("path");
 const page_guide = require("../utils/pages/guide");
 const page_community = require("../utils/pages/community");
 const page_user = require("../utils/pages/user");
+const page_editor = require("../utils/pages/editor");
 
 module.exports = {
     index : async (ctx,next) =>{
@@ -53,6 +54,16 @@ module.exports = {
         ctx.url = '/setting.html';
         await next();
     },
+
+
+    async editor(ctx,next){
+        let params = ctx.params;
+        console.log("params-----!",params);
+
+
+    },
+
+
 
     async topics(ctx,next){
         console.log("url==>",ctx.url);
@@ -684,7 +695,26 @@ module.exports = {
 
         ctx.body = results;
 
+    },
+
+
+
+    /*---editor---*/
+    async getEditorDropDown(ctx,next){
+
+        let results;
+
+        try {
+            results = await page_editor.getEditorDropDown(ctx);
+
+        }catch (e) {
+            console.error("get user info failed",e);
+        }
+
+        ctx.body = results;
+
     }
+
 
 };
 

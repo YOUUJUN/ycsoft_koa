@@ -3681,3 +3681,222 @@ arr === > [
 ]
   --> POST /community/getArticleList 200 19ms 68b
 ---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 16ms 27b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 5ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 305ms 217b
+  --> POST /community/getTopicList 200 123ms 521b
+  --> POST /community/getArticleList 200 135ms 1.93kb
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 2ms 27b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 15ms 27b
+---------------------连接池连接数:------------------- 0
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 34ms 27b
+---------------------连接池连接数:------------------- 0
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 20ms 27b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 18ms 27b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- GET /
+  --> GET / 200 90ms 1.24kb
+  <-- GET /css/chunk-vendors.css
+  --> GET /css/chunk-vendors.css 200 12ms 40.76kb
+  <-- GET /css/index.css
+  <-- GET /js/chunk-vendors.js
+  <-- GET /js/index.js
+  --> GET /css/index.css 200 19ms 9.4kb
+  --> GET /js/index.js 200 16ms 8.04kb
+  --> GET /js/chunk-vendors.js 200 29ms 570.35kb
+  <-- GET /css/chunk-0730b527.css
+  <-- GET /js/chunk-0730b527.js
+  <-- GET /css/chunk-4e487f1e.css
+  --> GET /css/chunk-0730b527.css 200 11ms 3.58kb
+  --> GET /js/chunk-0730b527.js 200 11ms 31.5kb
+  --> GET /css/chunk-4e487f1e.css 200 12ms 1.42kb
+  <-- GET /js/chunk-4e487f1e.js
+  <-- GET /css/chunk-445613ca.css
+  <-- GET /js/chunk-445613ca.js
+  --> GET /js/chunk-4e487f1e.js 200 12ms 1.03kb
+  --> GET /css/chunk-445613ca.css 200 11ms 488b
+  --> GET /js/chunk-445613ca.js 200 10ms 2.01kb
+  <-- GET /css/chunk-bf898d58.css
+  --> GET /css/chunk-bf898d58.css 200 4ms 163b
+  <-- GET /js/chunk-bf898d58.js
+  --> GET /js/chunk-bf898d58.js 200 11ms 748b
+  <-- GET /css/chunk-0e323e5c.css
+  <-- GET /js/chunk-0e323e5c.js
+  --> GET /css/chunk-0e323e5c.css 200 8ms 2.9kb
+  <-- GET /fonts/fontawesome-webfont.woff2
+  <-- GET /images/logo.png
+  --> GET /js/chunk-0e323e5c.js 200 11ms 7.33kb
+  <-- GET /images/showimg1.png
+  --> GET /fonts/fontawesome-webfont.woff2 200 18ms 75.35kb
+  --> GET /images/logo.png 200 20ms 6.26kb
+  --> GET /images/showimg1.png 200 21ms 92.01kb
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 200 13ms 59.28kb
+  <-- GET /css/chunk-0730b527.css
+  <-- GET /css/chunk-0e323e5c.css
+  <-- GET /css/chunk-445613ca.css
+  <-- GET /css/chunk-4e487f1e.css
+  --> GET /css/chunk-0730b527.css 200 46ms 3.58kb
+  --> GET /css/chunk-0e323e5c.css 200 21ms 2.9kb
+  --> GET /css/chunk-445613ca.css 200 21ms 488b
+  --> GET /css/chunk-4e487f1e.css 200 22ms 1.42kb
+  <-- GET /css/chunk-bf898d58.css
+  <-- GET /js/chunk-0730b527.js
+  --> GET /js/chunk-0730b527.js 200 6ms 31.5kb
+  --> GET /css/chunk-bf898d58.css 200 13ms 163b
+  <-- GET /js/chunk-0e323e5c.js
+  <-- GET /js/chunk-445613ca.js
+  <-- GET /js/chunk-4e487f1e.js
+  --> GET /js/chunk-0e323e5c.js 200 12ms 7.33kb
+  --> GET /js/chunk-445613ca.js 200 11ms 2.01kb
+  --> GET /js/chunk-4e487f1e.js 200 11ms 1.03kb
+  <-- GET /js/chunk-bf898d58.js
+  --> GET /js/chunk-bf898d58.js 200 12ms 748b
+  <-- GET /editor/doc
+params-----! { href: 'doc' }
+  --> GET /editor/doc 404 5ms -
+  <-- GET /editor/doc/draft/sasasas
+GET /editor/doc/draft/sasasas - 0ms
+  --> GET /editor/doc/draft/sasasas 404 3ms -
+  <-- GET /favicon.ico
+  <-- GET /editor/doc/draft/sasasas
+GET /editor/doc/draft/sasasas - 0ms
+  --> GET /editor/doc/draft/sasasas 404 4ms -
+  <-- GET /editor/doc/draft
+GET /editor/doc/draft - 0ms
+  --> GET /editor/doc/draft 404 13ms -
+  <-- GET /editor/doc/draft
+GET /editor/doc/draft - 0ms
+  --> GET /editor/doc/draft 404 4ms -
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- GET /editor/doc/draft
+params-----! { href: 'doc', hash: 'draft' }
+  --> GET /editor/doc/draft 404 16ms -
+  <-- GET /editor/doc/draft/sasas
+GET /editor/doc/draft/sasas - 0ms
+  --> GET /editor/doc/draft/sasas 404 19ms -
+  <-- GET /editor/doc/
+GET /editor/doc/ - 0ms
+  --> GET /editor/doc/ 404 144ms -
+  <-- GET /favicon.ico
+  <-- GET /editor
+GET /editor - 0ms
+  --> GET /editor 404 9ms -
+---------------------连接池连接数:------------------- 0
+  <-- GET /editor
+GET /editor - 0ms
+  --> GET /editor 404 17ms -
+  <-- GET /editor/doc
+params-----! { '0': 'doc' }
+  --> GET /editor/doc 404 4ms -
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- GET /editor/doc
+GET /editor/doc - 0ms
+  --> GET /editor/doc 404 85ms -
+  <-- GET /editor/doc
+GET /editor/doc - 0ms
+  --> GET /editor/doc 404 14ms -
+  <-- GET /editor/
+GET /editor/ - 0ms
+  --> GET /editor/ 404 9ms -
+  <-- GET /editor/doc
+GET /editor/doc - 0ms
+  --> GET /editor/doc 404 7ms -
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0

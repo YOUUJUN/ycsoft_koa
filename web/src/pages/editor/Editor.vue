@@ -135,7 +135,7 @@
             getUserLogStatus (){
                 this.$axios({
                     method : "post",
-                    url : "verifyToken"
+                    url : "/verifyToken"
                 }).then(value =>{
                     console.log("value ====-====",value);
                     this.$store.commit("changeLogStatus",value.data.logged);
@@ -146,15 +146,33 @@
 
             getPageProperty (){
                 let path = window.location.pathname.split("/");
-                if(path[1] == "article"){
+                if(path[2] == "article"){
                     this.pageProperty = "Article";
-                }else if(path[1] == "doc"){
+                }else if(path[2] == "doc"){
                     this.pageProperty = "Doc";
                 }
+
             },
 
-            initCombox (){
+            initDropdown (){
+                let type = "article";
+                if(this.pageProperty == "Article"){
+                    type = "article";
+                }else if(this.pageProperty == "Doc"){
+                    type = "doc";
+                }
 
+                this.$axios({
+                    method : "post",
+                    url : "/getEditorDropDown",
+                    data : {
+                        type : type
+                    }
+                }).then(value =>{
+
+                }).catch(err =>{
+
+                })
             },
 
             selectArticleTopic(){

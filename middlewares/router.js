@@ -23,6 +23,10 @@ module.exports = (app) => {
     router.get("/personal/:href",homeController.personal);
     router.get('/guide/:href',homeController.getDocByHash);
     router.get('/users/setting',homeController.setting);
+    /*--editor  artical,doc  drafts --*/
+    router.get('/editor/article/',homeController.editor);
+
+
 
     router.post('/getDocNavigation',homeController.getDocNavigation);
 
@@ -56,6 +60,11 @@ module.exports = (app) => {
     router.post('/users/modifyUserInfo',homeController.modifyUserInfo);
     router.post('/login',homeController.login);
     router.post('/register',homeController.register);
+
+
+    /*--editor--*/
+    router.post('/getEditorDropDown',homeController.getEditorDropDown);
+
 
 
     router.post('/verifyToken',homeController.verifyToken);
