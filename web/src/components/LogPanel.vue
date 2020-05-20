@@ -150,6 +150,7 @@
                                 type: 'success'
                             });
                             localStorage.setItem("marscript",value.data.token);
+                            vm.$common.setCookie("marscript",value.data.token);
                             localStorage.setItem("userData",JSON.stringify(value.data.userData));
                             vm.$store.commit("changeLogStatus",true);
                             this.closeLogPanel();

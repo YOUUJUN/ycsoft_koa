@@ -24,12 +24,12 @@ module.exports = (app) => {
     router.get('/guide/:href',homeController.getDocByHash);
     router.get('/users/setting',homeController.setting);
     /*--editor  artical,doc  drafts --*/
-    router.get('/editor/article/',homeController.editor);
+    router.get('/editor/:project/drafts/:href',homeController.editor);
 
-
-
+    /*--page- guide--*/
     router.post('/getDocNavigation',homeController.getDocNavigation);
 
+    /*--page- community--*/
     router.post('/community/getHotList',homeController.getHotList);
     router.post('/community/getArticleList',homeController.getArticleList);
     router.post('/community/getTopicList',homeController.getTopicList);
@@ -38,7 +38,11 @@ module.exports = (app) => {
     router.post('/community/getReComment',homeController.getReComment);
     router.post('/community/addComment',homeController.addComment);
     router.post('/community/addReComment',homeController.addReComment);
+    router.post('/community/addFocus',homeController.addFocus);
+    router.get('/community/topics/:href',homeController.topics);
+    router.post('/community/getTopicInfo',homeController.getTopicInfo);
 
+    /*--page- personal--*/
     router.post('/personal/getAuthorinfo',homeController.getAuthorinfo);
     router.post('/personal/getArticleList',homeController.personalArticleList);
     router.post('/personal/verifyOwner',homeController.verifyOwner);
@@ -47,10 +51,6 @@ module.exports = (app) => {
     router.post('/personal/getFocusTopic',homeController.getFocusTopic);
     router.post('/personal/checkUserAuthorBind',homeController.checkUserAuthorBind);
 
-    router.post('/community/addFocus',homeController.addFocus);
-
-    router.get('/community/topics/:href',homeController.topics);
-    router.post('/community/getTopicInfo',homeController.getTopicInfo);
 
     /*-用户上传头像-*/
     router.post('/users/uploadimg',uploader,homeController.upLoadPortrait);
@@ -63,7 +63,7 @@ module.exports = (app) => {
 
 
     /*--editor--*/
-    router.post('/getEditorDropDown',homeController.getEditorDropDown);
+    router.post('/editor/getEditorDropDown',homeController.getEditorDropDown);
 
 
 

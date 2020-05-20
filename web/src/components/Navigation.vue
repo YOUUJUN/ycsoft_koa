@@ -136,6 +136,7 @@
                 console.log("hello?");
                 vm.$store.commit("changeLogStatus",false);
                 localStorage.setItem("marscript","");
+                vm.$common.setCookie("marscript","");
                 location.reload();
             },
 

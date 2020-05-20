@@ -32,7 +32,7 @@ module.exports = {
         ctx.url = '/guide.html';
         await next();
     },
-    
+
 
     contact : async (ctx,next) =>{
         ctx.url = '/contact.html';
@@ -57,10 +57,42 @@ module.exports = {
 
 
     async editor(ctx,next){
+        let logged = ctx.state.logged;
+        console.log("logged-----!?",logged);
+        if(!logged){
+            console.log("ok-----------------");
+            ctx.url = '/offline.html';
+            await next();
+            return;
+        }
+
+
         let params = ctx.params;
         console.log("params-----!",params);
+        let project = params.project;
+        let code = params.href;
 
 
+        if(project == "article"){
+
+            if(code === "new"){
+
+
+
+            }
+
+
+            ctx.url = '/editor.html';
+
+        }else if(project == "doc"){
+
+            ctx.url = '/editor.html';
+
+        }else{
+            ctx.response.status = 404;
+        }
+
+        await next();
     },
 
 
@@ -132,7 +164,6 @@ module.exports = {
 
         try {
             let results = await page_user.login(body);
-
             ctx.body = results;
         }catch (err) {
             console.error(err);
