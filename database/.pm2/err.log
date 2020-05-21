@@ -397,3 +397,1644 @@ server error Error: next() called multiple times
   res: '<original node res>',
   socket: '<original node socket>'
 }
+server error [Error: ENOENT: no such file or directory, open 'F:\vue-dist\editor.html'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\vue-dist\\editor.html'
+} {
+  request: {
+    method: 'GET',
+    url: '/editor/article/drafts/new',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:68.0) Gecko/20100101 Firefox/68.0',
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      connection: 'keep-alive',
+      cookie: 'marscript=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDAyMjU4OSwiZXhwIjoxNTkwMTk1Mzg5LCJpc3MiOiJZT1VKVU4ifQ._n9DF-wTBUTI90pyMoVCiFH7AeiEkuMqXAIojvhXMRk',
+      'upgrade-insecure-requests': '1'
+    }
+  },
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true',
+      'content-type': 'application/octet-stream'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/editor/article/drafts/new',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+server error TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type object
+    at Function.from (buffer.js:305:9)
+    at editor (F:\ycsoft_koa_new\controler\home.js:87:31)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\app.js:48:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:13)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at filter (F:\ycsoft_koa_new\node_modules\koa-json\index.js:25:12)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:11) {
+  code: 'ERR_INVALID_ARG_TYPE'
+} {
+  request: {
+    method: 'GET',
+    url: '/editor/article/drafts/new',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:68.0) Gecko/20100101 Firefox/68.0',
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      connection: 'keep-alive',
+      cookie: 'marscript=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDAyMjU4OSwiZXhwIjoxNTkwMTk1Mzg5LCJpc3MiOiJZT1VKVU4ifQ._n9DF-wTBUTI90pyMoVCiFH7AeiEkuMqXAIojvhXMRk',
+      'upgrade-insecure-requests': '1',
+      'cache-control': 'max-age=0'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/editor/article/drafts/new',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+F:\ycsoft_koa_new\utils\lib\common.js:8
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:8
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:8
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:8
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:8
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:8
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:8
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:8
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:8
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:8
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:8
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:8
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:8
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:8
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:11
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:11
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:11
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:11
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:11
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:11
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:11
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:11
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:11
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:11
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:12
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:12
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\lib\common.js:12
+        let content = await fsPromises.readFile(readPath);
+                      ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:15:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+[Error: ENOENT: no such file or directory, open 'F:\ycsoft_koa_new\utils\vue-dist\editor.html'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\ycsoft_koa_new\\utils\\vue-dist\\editor.html'
+}
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\editor.js:15
+            let results = await query(getTopicSql);
+                          ^^^^^
+
+SyntaxError: await is only valid in async function
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+server error Error: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:201:27) {
+  errno: 'ECONNRESET',
+  code: 'ECONNRESET',
+  syscall: 'read',
+  headerSent: true
+} {
+  request: {
+    method: 'GET',
+    url: '/favicon.ico',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:68.0) Gecko/20100101 Firefox/68.0',
+      accept: 'image/webp,*/*',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      connection: 'keep-alive',
+      cookie: 'marscript=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDAyMjU4OSwiZXhwIjoxNTkwMTk1Mzg5LCJpc3MiOiJZT1VKVU4ifQ._n9DF-wTBUTI90pyMoVCiFH7AeiEkuMqXAIojvhXMRk',
+      'cache-control': 'max-age=0'
+    }
+  },
+  response: {
+    status: 200,
+    message: 'OK',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true',
+      'content-length': '60700',
+      'last-modified': 'Thu, 21 May 2020 06:33:59 GMT',
+      'cache-control': 'max-age=0',
+      'content-type': 'image/vnd.microsoft.icon'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/favicon.ico',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+Error: post `/editor/draftsStorage`: `middleware` must be a function, not `undefined`
+    at Layer.<anonymous> (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:39:13)
+    at Array.forEach (<anonymous>)
+    at new Layer (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:36:14)
+    at Router.register (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:553:15)
+    at Router.<computed> [as post] (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:202:10)
+    at module.exports (F:\ycsoft_koa_new\middlewares\router.js:67:12)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:60:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+Error: post `/editor/draftsStorage`: `middleware` must be a function, not `undefined`
+    at Layer.<anonymous> (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:39:13)
+    at Array.forEach (<anonymous>)
+    at new Layer (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:36:14)
+    at Router.register (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:553:15)
+    at Router.<computed> [as post] (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:202:10)
+    at module.exports (F:\ycsoft_koa_new\middlewares\router.js:67:12)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:60:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+Error: post `/editor/draftsStorage`: `middleware` must be a function, not `undefined`
+    at Layer.<anonymous> (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:39:13)
+    at Array.forEach (<anonymous>)
+    at new Layer (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:36:14)
+    at Router.register (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:553:15)
+    at Router.<computed> [as post] (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:202:10)
+    at module.exports (F:\ycsoft_koa_new\middlewares\router.js:67:12)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:60:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+Error: post `/editor/draftsStorage`: `middleware` must be a function, not `undefined`
+    at Layer.<anonymous> (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:39:13)
+    at Array.forEach (<anonymous>)
+    at new Layer (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:36:14)
+    at Router.register (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:553:15)
+    at Router.<computed> [as post] (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:202:10)
+    at module.exports (F:\ycsoft_koa_new\middlewares\router.js:67:12)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:60:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+Error: post `/editor/draftsStorage`: `middleware` must be a function, not `undefined`
+    at Layer.<anonymous> (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:39:13)
+    at Array.forEach (<anonymous>)
+    at new Layer (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:36:14)
+    at Router.register (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:553:15)
+    at Router.<computed> [as post] (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:202:10)
+    at module.exports (F:\ycsoft_koa_new\middlewares\router.js:67:12)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:60:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+Error: post `/editor/draftsStorage`: `middleware` must be a function, not `undefined`
+    at Layer.<anonymous> (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:39:13)
+    at Array.forEach (<anonymous>)
+    at new Layer (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:36:14)
+    at Router.register (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:553:15)
+    at Router.<computed> [as post] (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:202:10)
+    at module.exports (F:\ycsoft_koa_new\middlewares\router.js:67:12)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:60:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+Error: post `/editor/draftsStorage`: `middleware` must be a function, not `undefined`
+    at Layer.<anonymous> (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:39:13)
+    at Array.forEach (<anonymous>)
+    at new Layer (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:36:14)
+    at Router.register (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:553:15)
+    at Router.<computed> [as post] (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:202:10)
+    at module.exports (F:\ycsoft_koa_new\middlewares\router.js:67:12)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:60:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+Error: post `/editor/draftsStorage`: `middleware` must be a function, not `undefined`
+    at Layer.<anonymous> (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:39:13)
+    at Array.forEach (<anonymous>)
+    at new Layer (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:36:14)
+    at Router.register (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:553:15)
+    at Router.<computed> [as post] (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:202:10)
+    at module.exports (F:\ycsoft_koa_new\middlewares\router.js:67:12)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:60:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+Error: post `/editor/draftsStorage`: `middleware` must be a function, not `undefined`
+    at Layer.<anonymous> (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:39:13)
+    at Array.forEach (<anonymous>)
+    at new Layer (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:36:14)
+    at Router.register (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:553:15)
+    at Router.<computed> [as post] (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:202:10)
+    at module.exports (F:\ycsoft_koa_new\middlewares\router.js:67:12)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:60:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+Error: post `/editor/draftsStorage`: `middleware` must be a function, not `undefined`
+    at Layer.<anonymous> (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:39:13)
+    at Array.forEach (<anonymous>)
+    at new Layer (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:36:14)
+    at Router.register (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:553:15)
+    at Router.<computed> [as post] (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:202:10)
+    at module.exports (F:\ycsoft_koa_new\middlewares\router.js:67:12)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:60:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+Error: post `/editor/draftsStorage`: `middleware` must be a function, not `undefined`
+    at Layer.<anonymous> (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:39:13)
+    at Array.forEach (<anonymous>)
+    at new Layer (F:\ycsoft_koa_new\node_modules\koa-router\lib\layer.js:36:14)
+    at Router.register (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:553:15)
+    at Router.<computed> [as post] (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:202:10)
+    at module.exports (F:\ycsoft_koa_new\middlewares\router.js:67:12)
+    at Object.<anonymous> (F:\ycsoft_koa_new\app.js:60:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\bin\www:7:11)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)

@@ -59,11 +59,7 @@
                                             选择已有文章类别<i class="el-icon-arrow-down el-icon--right"></i>
                                         </el-button>
                                         <el-dropdown-menu slot="dropdown">
-                                            <el-dropdown-item>黄金糕</el-dropdown-item>
-                                            <el-dropdown-item>狮子头</el-dropdown-item>
-                                            <el-dropdown-item>螺蛳粉</el-dropdown-item>
-                                            <el-dropdown-item>双皮奶</el-dropdown-item>
-                                            <el-dropdown-item>蚵仔煎</el-dropdown-item>
+                                            <el-dropdown-item v-for="item in topicDropDown" v-bind:command=item>{{item}}</el-dropdown-item>
                                         </el-dropdown-menu>
                                     </el-dropdown>
                                 </div>
@@ -75,11 +71,7 @@
                                             选择已有文档类别<i class="el-icon-arrow-down el-icon--right"></i>
                                         </el-button>
                                         <el-dropdown-menu slot="dropdown">
-                                            <el-dropdown-item>黄金糕</el-dropdown-item>
-                                            <el-dropdown-item>狮子头</el-dropdown-item>
-                                            <el-dropdown-item>螺蛳粉</el-dropdown-item>
-                                            <el-dropdown-item>双皮奶</el-dropdown-item>
-                                            <el-dropdown-item>蚵仔煎</el-dropdown-item>
+                                            <el-dropdown-item v-for="item in topicDropDown">{{item}}</el-dropdown-item>
                                         </el-dropdown-menu>
                                     </el-dropdown>
                                 </div>
@@ -127,7 +119,8 @@
                     content : "",
                     title : "",
                     topic : ""
-                }
+                },
+                topicDropDown : []
             }
 
         },
@@ -155,31 +148,42 @@
             },
 
             initDropdown (){
-                let type = "article";
-                if(this.pageProperty == "Article"){
-                    type = "article";
-                }else if(this.pageProperty == "Doc"){
-                    type = "doc";
-                }
-
                 this.$axios({
                     method : "post",
-                    url : "/getEditorDropDown",
+                    url : "/editor/getEditorDropDown",
                     data : {
-                        type : type
+                        type : this.pageProperty
                     }
                 }).then(value =>{
-
+                    console.log("topicDropDown =====================",value.data);
+                    this.topicDropDown = value.data;
                 }).catch(err =>{
-
+                    console.error(err);
                 })
             },
 
-            selectArticleTopic(){
-
+            selectArticleTopic(command){
+                this.articleInfo.topic = command;
             },
 
-            selectDoctype(){
+            selectDoctype(command){
+                this.articleInfo.topic = command;
+            },
+
+
+            cacheArticle (){
+                this.$axios({
+                    method : "post",
+                    url : "/editor/draftsStorage",
+                    data : {
+                        type : this.pageProperty,
+                        content : this.articleInfo
+                    }
+                }).then(value => {
+
+                }).catch(err => {
+                    console.error(err);
+                })
 
             },
 
@@ -206,9 +210,9 @@ if(markDown.length < 10){
             this.getUserLogStatus();
             vm.getPageProperty();
             console.log("getPageProperty",vm.pageProperty);
+            vm.initDropdown();
 
-
-
+            vm.cacheArticle();
         },
 
         mounted() {

@@ -61,7 +61,7 @@ const buildPageSync = () => {
             let entry = path.posix.join("src/pages", file,file.concat('.js'));
             page.entry = entry;
             page.template = path.posix.join("src/pages", file,file.concat('.html'));
-            page.filename = file.concat('.html');
+            page.filename = "../vue-pages/".concat(file,'.html');
             pages[file] = page;
         }
 
@@ -75,7 +75,8 @@ delete require.cache[module.id];
 module.exports = function(){
     return {
         publicPath : '/',
-        outputDir : './../vue-dist',
+        outputDir : './../vue-public',
+        assetsDir : "static",
         filenameHashing : false,
         pages : buildPageSync(),
         devServer : {

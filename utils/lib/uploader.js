@@ -5,7 +5,6 @@ const fsPromise = require("fs").promises;
 
 
 const tools = new (require("./tools"))();
-// let tools = new Tools;
 
 class Uploader{
     constructor(ctx){

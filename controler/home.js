@@ -1,5 +1,6 @@
 const router = require('koa-router')();
 
+const fs = require("fs");
 const fsPromises = require('fs').promises;
 
 const util = require("util");
@@ -11,6 +12,8 @@ const page_community = require("../utils/pages/community");
 const page_user = require("../utils/pages/user");
 const page_editor = require("../utils/pages/editor");
 
+const common = require("../utils/lib/common");
+
 module.exports = {
     index : async (ctx,next) =>{
 
@@ -18,40 +21,40 @@ module.exports = {
         let responseBody = ctx.response;
         let nodeRequestBody = ctx.req;
 
-        ctx.url = '/index.html';
+        ctx.body = await common.readPages('index.html');
 
         await next();
     },
 
     products : async (ctx,next) =>{
-        ctx.url = '/product.html';
+        ctx.body = await common.readPages('product.html');
         await next();
     },
 
     guide : async (ctx,next) =>{
-        ctx.url = '/guide.html';
+        ctx.body = await common.readPages('guide.html');
         await next();
     },
 
 
     contact : async (ctx,next) =>{
-        ctx.url = '/contact.html';
+        ctx.body = await common.readPages('contact.html');
         await next();
     },
 
     community : async (ctx,next) =>{
-        ctx.url = '/community.html';
+        ctx.body = await common.readPages('community.html');
         await next();
     },
 
     personal : async (ctx,next) =>{
-        ctx.url = '/personal.html';
+        ctx.body = await common.readPages('personal.html');
         await next();
     },
 
     /*用户设置界面跳转*/
     async setting(ctx,next){
-        ctx.url = '/setting.html';
+        ctx.body = await common.readPages('setting.html');
         await next();
     },
 
@@ -61,7 +64,7 @@ module.exports = {
         console.log("logged-----!?",logged);
         if(!logged){
             console.log("ok-----------------");
-            ctx.url = '/offline.html';
+            ctx.body = await common.readPages('offline.html');
             await next();
             return;
         }
@@ -75,18 +78,15 @@ module.exports = {
 
         if(project == "article"){
 
-            if(code === "new"){
-
-
+            if(code !== "new"){
 
             }
 
-
-            ctx.url = '/editor.html';
+            ctx.body = await common.readPages("editor.html");
 
         }else if(project == "doc"){
 
-            ctx.url = '/editor.html';
+            ctx.body = await common.readPages("editor.html");
 
         }else{
             ctx.response.status = 404;
@@ -101,9 +101,9 @@ module.exports = {
         console.log("url==>",ctx.url);
         let hashArr = ctx.url.split("/");
         if(hashArr[2]){
-            ctx.url = '/topics.html';
+            ctx.body = await common.readPages('topics.html');
         }else{
-            ctx.url = '/topicList.html';
+            ctx.body = await common.readPages('topicList.html');
         }
 
         await next();
@@ -116,11 +116,11 @@ module.exports = {
         console.log("results",results);
         if(JSON.stringify(results) == "{}"){
 
-            ctx.url = '/error.html'
+            ctx.body = await common.readPages('error.html');
 
             await next();
         }else {
-            ctx.url = '/article.html';
+            ctx.body = await common.readPages('article.html');
             await next();
         }
     },
@@ -164,6 +164,7 @@ module.exports = {
 
         try {
             let results = await page_user.login(body);
+            ctx.cookies.set("marscript",results.token);
             ctx.body = results;
         }catch (err) {
             console.error(err);
@@ -733,19 +734,45 @@ module.exports = {
     /*---editor---*/
     async getEditorDropDown(ctx,next){
 
-        let results;
+        let results = [];
 
         try {
             results = await page_editor.getEditorDropDown(ctx);
-
         }catch (e) {
             console.error("get user info failed",e);
         }
 
         ctx.body = results;
 
-    }
+    },
 
+    async draftsStorage(ctx, next){
+        let logged = ctx.state.logged;
+
+        if(!logged){
+            return;
+        }
+
+        let body = ctx.request.body;
+        let referer = ctx.request.header.referer;
+        let type = body.type;
+        let content = body.content;
+
+        let userId = logged.userId;
+
+        if(referer.indexOf("/article/drafts/new") !== -1 && type === "Article"){
+
+
+
+        }else if(referer.indexOf("/doc/drafts/new") !== -1 && type === "Doc"){
+
+        }else{
+            let articleId = referer.split("/").pop();
+
+        }
+
+
+    }
 
 };
 

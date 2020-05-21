@@ -17,6 +17,7 @@ const TOKENSECRET = require("./utils/config/tokensecret");
 app.use( async (ctx, next) =>{
   if(ctx.url.match(/^\/community/) || ctx.url.match(/^\/personal/) || ctx.url.match(/^\/users/) || ctx.url.match(/^\/editor/)){
     let cookie = ctx.cookies.get("marscript");
+    console.log("cookie=======?",cookie);
     let token = ctx.request.header.accesstoken || cookie || "";
     const page_user = require("./utils/pages/user");
     let result = await page_user.verifyUserToken(token);
@@ -60,7 +61,7 @@ router(app);
 
 app.use(require('koa-static')(__dirname + '/database/expose'));
 app.use(require('koa-static')(__dirname + '/views'));
-app.use(require('koa-static')(__dirname + '/vue-dist'));
+app.use(require('koa-static')(__dirname + '/vue-public'));
 
 //添加ejs模板并修改模板后缀为html
 // app.use(views(__dirname + '/vue-dist', {
