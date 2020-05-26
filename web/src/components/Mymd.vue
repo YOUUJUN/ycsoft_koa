@@ -17,6 +17,10 @@
             },
             initData: {
                 'type': String
+            },
+
+            syncContent : {
+                type : String
             }
         },
         data: function () {
@@ -64,12 +68,11 @@
             },
             init () {
                 let vm = this;
+
                 if(vm.preview){
                     vm.initPreView(vm.initData);
-                    console.log("A-----");
                 }else{
                     vm.initEditor();
-                    console.log("B-----");
                 }
             },
             initPreView: function (markdown) {
@@ -91,12 +94,10 @@
                     vm.jsLoadOver = true;
                     vm.$nextTick(() => {
 
-                        // console.log("editormd-------------",window.editormd);
 
 
 
                         // vm.editor = window.editormd("editorId", config);
-                        console.log("editormd-------------",window.editormd);
                         vm.editor = editormd.markdownToHTML("editorId", config);
                         this.$refs["editorId"].classList.remove("hide");
 
@@ -122,6 +123,7 @@
                 if (markdown) {
                     config.markdown = markdown
                 }
+
                 (async () => {
                     await vm.fetchScript('/lib/editor.md/jquery.min.js');
                     await vm.fetchScript('/lib/editor.md/lib/marked.min.js');
@@ -135,10 +137,26 @@
                     vm.jsLoadOver = true;
                     vm.$nextTick(() => {
 
-                        console.log("editormd-------------",window.editormd);
+                        config.onload = function() {
+                            let codeMirror = this.codeMirror[0];
+
+                            let callback = function(mutations){
+                                for(let mutation of mutations){
+                                    if(mutation.type === "attributes"){
+                                        let classList = codeMirror.getAttribute("class");
+                                        if(classList.indexOf("CodeMirror-focused") === -1){
+                                            vm.$emit("draftsStorage");
+                                        }
+                                    }
+                                }
+                            };
+                            let config = { attributes: true, childList: false, subtree: false };
+                            let observer = new MutationObserver(callback);
+                            observer.observe(codeMirror,config);
+                        };
+
                         vm.editor = editormd("editorId", config);
                         this.$refs["editorId"].classList.remove("hide");
-
 
 
                         // vm.editor.on('load', () => {
@@ -165,6 +183,11 @@
                 docArea.appendChild(textArea);
                 textArea.value = newV;
                 editormd.markdownToHTML("editorId", this.config);
+            },
+
+            syncContent(newValue, oldValue){
+                console.log("newValue =====>",newValue);
+                // this.config.markdown = newValue;
             }
         },
         mounted: function () {
@@ -180,8 +203,9 @@
                     } catch (e) {
                     }
                 }
-            }, 80)
+            }, 80);
         },
+
         destroyed: function () {
             let vm = this;
             if (vm.timer != null) {
@@ -194,6 +218,6 @@
 <style>
     #editorId{
         box-sizing: border-box;
-        z-index: 9999;
+        z-index: 998;
     }
 </style>

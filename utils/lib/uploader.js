@@ -39,6 +39,37 @@ class Uploader{
         return randomFileName;
     }
 
+
+    /*
+    * options : {
+    *   path : "",
+    *   name : "",
+    *   content : ""
+    * }
+    *
+    *
+    * */
+    saveDraft(options){
+        const splitFixer = "@!@";
+        let combineName = options.content.topic.concat(splitFixer,options.content.title,splitFixer,options.name);
+        console.log("combineName======",combineName);
+        let readStream = fs.createReadStream(options.content.content);
+        let finalPath = Path.join(options.path,combineName);
+        let writeStream = fs.createWriteStream(finalPath);
+        console.log("writeStream-=-=-=-=",writeStream);
+        readStream.pipe(writeStream);
+        console.log("done");
+
+        return finalPath;
+    }
+
 }
 
 module.exports = Uploader;
+
+
+
+
+
+
+

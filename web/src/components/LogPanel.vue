@@ -239,7 +239,7 @@
         height:auto;
         width:400px;
         background-color: #fff;
-        z-index: 1001;
+        z-index: 999;
     }
 
     .dialog-title-content{

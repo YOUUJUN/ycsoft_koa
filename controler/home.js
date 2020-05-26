@@ -718,7 +718,7 @@ module.exports = {
             results = await page_user.modifyUserInfo(ctx);
 
         }catch (e) {
-            console.error("get user info failed",e);
+            console.error("modifyUserInfo failed",e);
             results = {
                 data : "未知错误，请联系管理员",
                 status : 0
@@ -732,6 +732,7 @@ module.exports = {
 
 
     /*---editor---*/
+    /*--获取topic下拉列表值--*/
     async getEditorDropDown(ctx,next){
 
         let results = [];
@@ -739,38 +740,47 @@ module.exports = {
         try {
             results = await page_editor.getEditorDropDown(ctx);
         }catch (e) {
-            console.error("get user info failed",e);
+            console.error("getEditorDropDown failed",e);
         }
 
         ctx.body = results;
 
     },
 
+    /*--储存草稿--*/
     async draftsStorage(ctx, next){
-        let logged = ctx.state.logged;
 
-        if(!logged){
-            return;
+        let results = [];
+
+        try {
+            results = await page_editor.draftsStorage(ctx);
+        }catch (e) {
+            console.error("draftsStorage failed",e);
         }
 
-        let body = ctx.request.body;
-        let referer = ctx.request.header.referer;
-        let type = body.type;
-        let content = body.content;
+        ctx.body = results;
 
-        let userId = logged.userId;
+    },
 
-        if(referer.indexOf("/article/drafts/new") !== -1 && type === "Article"){
+    /*--通过href获取所指定的文档&文章信息--*/
+    async getEditorInfo(ctx, next){
 
+        let results = {
+            status : 0,
+            data : {},
+            msg : "获取文章错误！"
+        };
 
-
-        }else if(referer.indexOf("/doc/drafts/new") !== -1 && type === "Doc"){
-
-        }else{
-            let articleId = referer.split("/").pop();
-
+        try {
+            results.data = await page_editor.getEditorInfo(ctx);
+            results.status = 1;
+            results.msg = "获取文章成功!"
+        }catch (e) {
+            results.status = 0;
+            console.error("getEditorInfo failed",e);
         }
 
+        ctx.body = results;
 
     }
 

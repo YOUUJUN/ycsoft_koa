@@ -40,7 +40,7 @@
                             <h4 v-else>文档内容:</h4>
 
                         </div>
-                        <editor-md ref="md" v-bind:preview="false" v-bind:initData="articleInfo.content"></editor-md>
+                        <editor-md ref="md" v-bind:syncContent="articleInfo.content" v-bind:preview="false" @draftsStorage="cacheArticle"></editor-md>
 
 
                         <div class="post-btn-container">
@@ -130,10 +130,9 @@
                     method : "post",
                     url : "/verifyToken"
                 }).then(value =>{
-                    console.log("value ====-====",value);
                     this.$store.commit("changeLogStatus",value.data.logged);
                 }).catch(err => {
-                    console.log(err);
+                    console.error(err);
                 })
             },
 
@@ -155,11 +154,45 @@
                         type : this.pageProperty
                     }
                 }).then(value =>{
-                    console.log("topicDropDown =====================",value.data);
                     this.topicDropDown = value.data;
                 }).catch(err =>{
                     console.error(err);
                 })
+            },
+
+            initArticleInfo(){
+                let postId = this.$common.getHash();
+                console.log("postId======",postId);
+                if(postId !== "new"){
+                    this.$axios({
+                        method : "post",
+                        url : "/editor/getEditorInfo",
+                        data : {
+                            postId : postId,
+                            type : this.pageProperty
+                        }
+                    }).then(value =>{
+                        if(value.data.status === 0){
+                            this.$notify.error({
+                                message: value.data.msg
+                            });
+
+                            let hrefArr = location.href.split('/');
+                            hrefArr.pop();
+                            hrefArr.push("new");
+                            let newHref = hrefArr.join("/");
+                            location.href = newHref;
+                            return;
+                        }
+
+                        this.articleInfo = value.data.data;
+                        this.$refs["md"].initEditor(value.data.data.content);
+
+                    }).catch(err=>{
+                        console.error(err);
+                    })
+                }
+
             },
 
             selectArticleTopic(command){
@@ -172,6 +205,8 @@
 
 
             cacheArticle (){
+                this.articleInfo.content = this.$refs["md"].getMarkdown();
+
                 this.$axios({
                     method : "post",
                     url : "/editor/draftsStorage",
@@ -180,7 +215,14 @@
                         content : this.articleInfo
                     }
                 }).then(value => {
-
+                    let cacheId = value.data.data;
+                    if(cacheId){
+                        let hrefArr = location.href.split('/');
+                        hrefArr.pop();
+                        hrefArr.push(cacheId);
+                        let newHref = hrefArr.join("/");
+                        history.pushState(null,null,newHref);
+                    }
                 }).catch(err => {
                     console.error(err);
                 })
@@ -194,7 +236,6 @@
             sendDoc(){
                 let editor = this.$refs["md"];
                 let markDown = editor.getMarkdown();
-                console.log("markDown",markDown);
                 if(!markDown){
                     alert("空");
                 }
@@ -209,14 +250,14 @@ if(markDown.length < 10){
             var vm = this;
             this.getUserLogStatus();
             vm.getPageProperty();
-            console.log("getPageProperty",vm.pageProperty);
             vm.initDropdown();
-
-            vm.cacheArticle();
+            vm.initArticleInfo();
         },
 
         mounted() {
             this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
+
+
         }
     };
 </script>

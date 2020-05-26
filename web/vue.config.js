@@ -61,7 +61,13 @@ const buildPageSync = () => {
             let entry = path.posix.join("src/pages", file,file.concat('.js'));
             page.entry = entry;
             page.template = path.posix.join("src/pages", file,file.concat('.html'));
-            page.filename = "../vue-pages/".concat(file,'.html');
+            console.log("env--------------------------------------",process.env.NODE_ENV);
+            if(process.env.NODE_ENV !== 'production'){
+                page.filename = file.concat('.html');
+            }else{
+                page.filename = "../vue-pages/".concat(file,'.html');
+            }
+            // page.filename = file.concat('.html');
             pages[file] = page;
         }
 

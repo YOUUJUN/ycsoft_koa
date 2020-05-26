@@ -128,10 +128,21 @@ class User{
 
             let createPath = Path.join(userPathFixer,userid);
             await fsPromise.mkdir(createPath);
-            let createPortraits =  Path.join(createPath,"portraits");
+            /*-创建图片柜-*/
+            let createImageBox = Path.join(createPath,"images");
+            await fsPromise.mkdir(createImageBox);
+            let createPortraits =  Path.join(createImageBox,"portraits");
             await fsPromise.mkdir(createPortraits);
-            let createArticle = Path.join(createPath,"articles");
+            let createArticle = Path.join(createImageBox,"articles");
             await fsPromise.mkdir(createArticle);
+            /*-创建草稿箱-*/
+            let createdraftBox = Path.join(createPath,"drafts");
+            await fsPromise.mkdir(createdraftBox);
+            let createdraftArticle = Path.join(createdraftBox,"article");
+            await fsPromise.mkdir(createdraftArticle);
+            let createdraftDoc = Path.join(createdraftBox,"doc");
+            await fsPromise.mkdir(createdraftDoc);
+
         }catch(err){
             console.error("初始化用户信息失败!",err);
             return false;
@@ -350,7 +361,7 @@ class User{
 
         var logged = ctx.state.logged;
         let userId = logged.userId;
-        let savePath = Path.join(__dirname,"../../database/expose/users/",userId,"/portraits");
+        let savePath = Path.join(__dirname,"../../database/expose/users/",userId,"/images/portraits");
 
         let uploader = new Uploader(ctx);
 
@@ -361,7 +372,7 @@ class User{
             path : ""
         }
         if(fileName){
-            let exposePath = Path.join("/users",userId,"portraits",fileName);
+            let exposePath = Path.join("/users",userId,"/images/portraits",fileName);
 
             let changeUserPortraitSql = "UPDATE user_info SET portrait = ? WHERE user_id = ?";
             let changeUserPortraitParam = [exposePath,userId];
