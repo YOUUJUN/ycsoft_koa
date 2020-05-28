@@ -71,14 +71,12 @@
                                             选择已有文档类别<i class="el-icon-arrow-down el-icon--right"></i>
                                         </el-button>
                                         <el-dropdown-menu slot="dropdown">
-                                            <el-dropdown-item v-for="item in topicDropDown">{{item}}</el-dropdown-item>
+                                            <el-dropdown-item v-for="item in topicDropDown" v-bind:command=item>{{item}}</el-dropdown-item>
                                         </el-dropdown-menu>
                                     </el-dropdown>
                                 </div>
 
-
                             </div>
-
 
 
                             <button class="btn lg-btn" @click="sendArticle" v-if="pageProperty === 'Article'">发布文章</button>
@@ -239,7 +237,7 @@
                 if(!markDown){
                     alert("空");
                 }
-if(markDown.length < 10){
+                if(markDown.length < 10){
                     alert("内容似乎太少了呢？");
                 }
             }

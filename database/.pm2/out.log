@@ -7798,3 +7798,773 @@ result=================================>funck {
   <-- POST /community/getReComment
 postId 180f2930-46c1-11e9-b5a4-db5a96966b9e 89785320-6a7a-11ea-b8db-dda391dfd638
   --> POST /community/getReComment 200 5ms 390b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 3ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 11ms 27b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 124ms 130b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 10ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 3ms 32b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 4ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 2ms 32b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 15ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 3ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 15ms 27b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 131ms 130b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 4ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 3ms 32b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 22ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 9ms 32b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 8ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 4ms 32b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 2ms 32b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 18ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 3ms 32b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 31ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 2ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 79ms 27b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 305ms 75b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 4ms 32b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 6ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 1ms 32b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 2ms 32b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 5ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 2ms 32b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 1ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 1ms 32b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 2ms 32b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 0ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 2ms 32b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 2ms 32b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 2ms 32b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 4ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 4ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 13ms 75b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 1ms 32b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/draftsStorage
+  --> POST /editor/draftsStorage 200 3ms 32b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 2ms 27b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getHotList
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 87ms 217b
+  --> POST /community/getTopicList 200 53ms 521b
+  --> POST /community/getArticleList 200 114ms 1.93kb
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 28ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 4ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 18ms 27b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 139ms 75b
+  <-- OPTIONS /login
+OPTIONS /login - 0ms
+  --> OPTIONS /login 200 1ms 0b
+  <-- POST /login
+result1 [
+  RowDataPacket {
+    id: 7,
+    user_id: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    portrait: '\\users\\0192e830-1bbb-11e9-b9c9-cdaf3c9a2410\\images\\portraits\\0.6618718511797181.jpeg',
+    job: 'CSGO职业哥1',
+    introduction: 'A2',
+    blog_url: 'hello?'
+  }
+]
+  --> POST /login 200 76ms 688b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 5ms 26b
+cookie=======? eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDY1NDIzNiwiZXhwIjoxNTkwODI3MDM2LCJpc3MiOiJZT1VKVU4ifQ.JYhQpzViWqR6Q6MTDv3C4dsRWImcXq6gD7l3SKJgYLs
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 6ms 75b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 5ms 0b
+cookie=======? eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDY1NDIzNiwiZXhwIjoxNTkwODI3MDM2LCJpc3MiOiJZT1VKVU4ifQ.JYhQpzViWqR6Q6MTDv3C4dsRWImcXq6gD7l3SKJgYLs
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '', title: '', topic: '' }
+  --> POST /editor/draftsStorage 200 28ms 85b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 24ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 4ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 4ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 20ms 26b
+cookie=======? eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDY1NDIzNiwiZXhwIjoxNTkwODI3MDM2LCJpc3MiOiJZT1VKVU4ifQ.JYhQpzViWqR6Q6MTDv3C4dsRWImcXq6gD7l3SKJgYLs
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDY1NDIzNiwiZXhwIjoxNTkwODI3MDM2LCJpc3MiOiJZT1VKVU4ifQ.JYhQpzViWqR6Q6MTDv3C4dsRWImcXq6gD7l3SKJgYLs
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorDropDown 200 221ms 130b
+  --> POST /editor/getEditorInfo 200 114ms 52b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+cookie=======? eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDY1NDIzNiwiZXhwIjoxNTkwODI3MDM2LCJpc3MiOiJZT1VKVU4ifQ.JYhQpzViWqR6Q6MTDv3C4dsRWImcXq6gD7l3SKJgYLs
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 6ms 130b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDY1NDIzNiwiZXhwIjoxNTkwODI3MDM2LCJpc3MiOiJZT1VKVU4ifQ.JYhQpzViWqR6Q6MTDv3C4dsRWImcXq6gD7l3SKJgYLs
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '', title: '', topic: '' }
+  --> POST /editor/draftsStorage 200 16ms 85b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 8ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 1ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 2ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 3ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 23ms 26b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+cookie=======? eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDY1NDIzNiwiZXhwIjoxNTkwODI3MDM2LCJpc3MiOiJZT1VKVU4ifQ.JYhQpzViWqR6Q6MTDv3C4dsRWImcXq6gD7l3SKJgYLs
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDY1NDIzNiwiZXhwIjoxNTkwODI3MDM2LCJpc3MiOiJZT1VKVU4ifQ.JYhQpzViWqR6Q6MTDv3C4dsRWImcXq6gD7l3SKJgYLs
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDY1NDIzNiwiZXhwIjoxNTkwODI3MDM2LCJpc3MiOiJZT1VKVU4ifQ.JYhQpzViWqR6Q6MTDv3C4dsRWImcXq6gD7l3SKJgYLs
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorDropDown 200 145ms 130b
+  --> POST /editor/getEditorDropDown 200 59ms 130b
+  --> POST /editor/getEditorInfo 200 51ms 169b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDY1NDIzNiwiZXhwIjoxNTkwODI3MDM2LCJpc3MiOiJZT1VKVU4ifQ.JYhQpzViWqR6Q6MTDv3C4dsRWImcXq6gD7l3SKJgYLs
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '', title: '', topic: '' }
+  --> POST /editor/draftsStorage 200 18ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDY1NDIzNiwiZXhwIjoxNTkwODI3MDM2LCJpc3MiOiJZT1VKVU4ifQ.JYhQpzViWqR6Q6MTDv3C4dsRWImcXq6gD7l3SKJgYLs
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '2a7698e0-a0bd-11ea-8629-4dda32dedc3b',
+  title: '空标题',
+  content: '',
+  topic: null,
+  time: null,
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '2a7698e0-a0bd-11ea-8629-4dda32dedc3b',
+  postTitle: '空标题',
+  postDate: '2020-5-28 17:10:32',
+  postContent: '',
+  postCategory: null
+}
+topicId============ 
+  --> POST /editor/draftsStorage 200 23ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDY1NDIzNiwiZXhwIjoxNTkwODI3MDM2LCJpc3MiOiJZT1VKVU4ifQ.JYhQpzViWqR6Q6MTDv3C4dsRWImcXq6gD7l3SKJgYLs
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '2a7698e0-a0bd-11ea-8629-4dda32dedc3b',
+  title: '空标题',
+  content: '',
+  topic: null,
+  time: null,
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '2a7698e0-a0bd-11ea-8629-4dda32dedc3b',
+  postTitle: '空标题',
+  postDate: '2020-5-28 17:10:33',
+  postContent: '',
+  postCategory: null
+}
+topicId============ 
+  --> POST /editor/draftsStorage 200 26ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjEiLCJuaWNrbmFtZSI6Iuafr-a2tSIsInVzZXJJZCI6IjAxOTJlODMwLTFiYmItMTFlOS1iOWM5LWNkYWYzYzlhMjQxMCIsImlhdCI6MTU5MDY1NDIzNiwiZXhwIjoxNTkwODI3MDM2LCJpc3MiOiJZT1VKVU4ifQ.JYhQpzViWqR6Q6MTDv3C4dsRWImcXq6gD7l3SKJgYLs
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '2a7698e0-a0bd-11ea-8629-4dda32dedc3b',
+  title: '空标题',
+  content: '',
+  topic: null,
+  time: null,
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '2a7698e0-a0bd-11ea-8629-4dda32dedc3b',
+  postTitle: '空标题',
+  postDate: '2020-5-28 17:10:33',
+  postContent: '',
+  postCategory: null
+}
+topicId============ 
+  --> POST /editor/draftsStorage 200 13ms 85b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
