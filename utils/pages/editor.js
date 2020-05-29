@@ -38,7 +38,7 @@ class Editor{
         }
 
         return msg;
-    }草稿
+    }
 
     async draftsStorage(ctx){
         let logged = ctx.state.logged;
@@ -221,8 +221,13 @@ class Editor{
         if(results.affectedRows == "1"){
             return options.postId;
         }
+    }
+
+    /*--删除草稿--*/
+    async delDrafts(type, postId){
 
     }
+
 
     /*--修改草稿--*/
     async saveDrafts(options){
@@ -396,6 +401,59 @@ class Editor{
 
         console.log("search results ======>",results);
 
+    }
+
+
+    async postArticle(ctx){
+        let logged = ctx.state.logged;
+        if(!logged){
+            return false;
+        }
+
+        let referer = ctx.request.header.referer;
+        let body = ctx.request.body;
+
+        let postId = referer.split("/").pop();
+
+        let content = body.content;
+        let userId = logged.userId;
+        let postDate = new Date().toLocaleString();
+
+
+        let options = {
+            userId : userId,
+            postId : postId,
+            postTitle : content.title,
+            PostDate : postDate,
+            postContent : content.content,
+            postCategory : content.topic
+        }
+
+        let checkSql = "SELECT COUNT(*) AS nums FROM article WHERE post_author = ? AND post_id = ?";
+        let checkParams = [userId,postId];
+
+        let results = await query(checkSql, checkParams);
+
+        if(results[0].nums !== "0"){
+            return {
+                message : "发表文章失败!该文章已经处于发表状态!",
+                status : 0
+            }
+        }
+
+
+        let topicId = await this.getTopicId(options.postCategory);
+
+        let addsql = "INSERT INTO article(id,post_id,post_author,latest_modify_date,post_title,post_content,topic_id) VALUE(0,?,?,?,?,?,?)";
+        let addparams = [options.postId,options.userId,options.postDate,options.postTitle,options.postContent,topicId];
+
+        results = await query(addsql, addparams);
+
+        if(results.affectedRows == "1"){
+            return {
+                message : ""
+            };
+        }
     }
 
 }

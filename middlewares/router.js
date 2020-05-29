@@ -66,6 +66,8 @@ module.exports = (app) => {
     router.post('/editor/getEditorDropDown',homeController.getEditorDropDown);
     router.post('/editor/draftsStorage',homeController.draftsStorage);
     router.post('/editor/getEditorInfo',homeController.getEditorInfo);
+    router.post('/editor/postArticle',homeController.postArticle);
+    router.post('/editor/postDoc',homeController.postDoc);
 
 
 

@@ -8568,3 +8568,4133 @@ topicId============
 ---------------------连接池连接数:------------------- 0
 ---------------------连接池连接数:------------------- 0
 ---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 26ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 13ms 26b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 3ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 8ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getHotList
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 3ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 376ms 217b
+  --> POST /community/getTopicList 200 126ms 539b
+arr === > [
+  'e3638f40-31c2-11e9-81e8-8905fedabf1e',
+  '180f2930-46c1-11e9-b5a4-db5a96966b9e'
+]
+  --> POST /community/getArticleList 200 174ms 2.08kb
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 3ms 130b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '', title: '', topic: '' }
+  --> POST /editor/draftsStorage 200 26ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '', title: '', topic: '' }
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: '',
+  postDate: '2020-5-29 9:33:51',
+  postContent: '',
+  postCategory: ''
+}
+topicId============ 
+  --> POST /editor/draftsStorage 200 13ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '', title: '', topic: '' }
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: '',
+  postDate: '2020-5-29 9:33:56',
+  postContent: '',
+  postCategory: ''
+}
+topicId============ 
+  --> POST /editor/draftsStorage 200 12ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: 'wq', title: 'wqw', topic: '' }
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:33:57',
+  postContent: 'wq',
+  postCategory: ''
+}
+topicId============ 
+  --> POST /editor/draftsStorage 200 17ms 85b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 1ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 3ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 6ms 130b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorInfo 200 7ms 187b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wq',
+  topic: null,
+  time: '2020-05-29T01:33:57.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:34:07',
+  postContent: 'wq',
+  postCategory: null
+}
+topicId============ 
+  --> POST /editor/draftsStorage 200 11ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wq',
+  topic: '《我的》',
+  time: '2020-05-29T01:33:57.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:34:09',
+  postContent: 'wq',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 17ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:33:57.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:34:13',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 15ms 85b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 4ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorDropDown 200 8ms 130b
+  --> POST /editor/getEditorInfo 200 6ms 204b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:34:13.000Z',
+  author: '柯涵'
+}
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:34:13.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:34:51',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:34:51',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+已有话题！
+topicId============ 20
+topicId============ 20
+  --> POST /editor/draftsStorage 200 26ms 85b
+  --> POST /editor/draftsStorage 200 22ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 0ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:34:13.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:35:11',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 18ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:34:13.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:35:18',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 19ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:34:13.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:35:20',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 15ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:34:13.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:35:23',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 22ms 85b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 24ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 14ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorDropDown 200 94ms 130b
+  --> POST /editor/getEditorInfo 200 31ms 204b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:35:23.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:43:19',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 25ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:35:23.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:43:19',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 25ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:35:23.000Z',
+  author: '柯涵'
+}
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:35:23.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:43:20',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:43:20',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+已有话题！
+topicId============ 20
+topicId============ 20
+  --> POST /editor/draftsStorage 200 33ms 85b
+  --> POST /editor/draftsStorage 200 27ms 85b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 27ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 8ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 4ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 24ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorDropDown 200 144ms 130b
+  --> POST /editor/getEditorInfo 200 51ms 204b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:43:20.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:44:57',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 29ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:43:20.000Z',
+  author: '柯涵'
+}
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:44:59',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 19ms 85b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:43:20.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:44:59',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 14ms 85b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 4ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 1ms 0b
+  --> POST /editor/getEditorDropDown 200 7ms 130b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorInfo 200 9ms 204b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 9ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:44:59.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:45:56',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 159ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:44:59.000Z',
+  author: '柯涵'
+}
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:45:56',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:44:59.000Z',
+  author: '柯涵'
+}
+已有话题！
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:45:56',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+topicId============ 20
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 55ms 85b
+  --> POST /editor/draftsStorage 200 17ms 85b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 6ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 1ms 26b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 3ms 130b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorInfo 200 4ms 204b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:45:56.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:46:15',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 21ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:45:56.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:46:15',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 13ms 85b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:45:56.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:46:16',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 11ms 85b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 34ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 5ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 19ms 26b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 2ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorDropDown 200 123ms 130b
+  --> POST /editor/getEditorInfo 200 58ms 204b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:46:16.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:47:34',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 28ms 85b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 38ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 5ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 15ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorDropDown 200 115ms 130b
+  --> POST /editor/getEditorInfo 200 76ms 204b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 4ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:47:34.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:49:11',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 31ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:47:34.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:49:11',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 18ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 4ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:47:34.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:49:12',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:47:34.000Z',
+  author: '柯涵'
+}
+已有话题！
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:49:12',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+topicId============ 20
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 31ms 85b
+  --> POST /editor/draftsStorage 200 30ms 85b
+---------------------连接池连接数:------------------- 0
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 29ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqw',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:47:34.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqw',
+  postDate: '2020-5-29 9:49:29',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 139ms 85b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 1ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorDropDown 200 7ms 130b
+  --> POST /editor/getEditorInfo 200 27ms 204b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 19ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 3ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 19ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorInfo 200 117ms 204b
+  --> POST /editor/getEditorDropDown 200 79ms 130b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqww',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:49:29.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqww',
+  postDate: '2020-5-29 9:52:51',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 57ms 85b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 16ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 1ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 18ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 90ms 130b
+  --> POST /editor/getEditorInfo 200 225ms 205b
+---------------------连接池连接数:------------------- 0
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 22ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 2ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 4ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 11ms 26b
+  --> POST /editor/getEditorInfo 200 114ms 205b
+  --> POST /editor/getEditorDropDown 200 63ms 130b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 17ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 3ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 5ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 16ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 220ms 130b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorInfo 200 7ms 205b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqww',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:52:51.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqww',
+  postDate: '2020-5-29 9:56:40',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 40ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 1ms
+  --> OPTIONS /editor/draftsStorage 200 4ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqww',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:52:51.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqww',
+  postDate: '2020-5-29 9:57:22',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 68ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqww2',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:52:51.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqww2',
+  postDate: '2020-5-29 9:57:39',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 25ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 5ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqww2',
+  content: 'wqw121212',
+  topic: '《我的》',
+  time: '2020-05-29T01:52:51.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqww2',
+  postDate: '2020-5-29 9:58:12',
+  postContent: 'wqw121212',
+  postCategory: '《我的》'
+}
+已有话题！
+topicId============ 20
+  --> POST /editor/draftsStorage 200 25ms 85b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 28ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 1ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 12ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorInfo 200 53ms 206b
+  --> POST /editor/getEditorDropDown 200 183ms 130b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqww2',
+  content: 'wqw121212',
+  topic: 'sass',
+  time: '2020-05-29T01:58:12.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqww2',
+  postDate: '2020-5-29 9:59:11',
+  postContent: 'wqw121212',
+  postCategory: 'sass'
+}
+已有话题！
+topicId============ 19
+  --> POST /editor/draftsStorage 200 32ms 85b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 7ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 9ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 7ms 130b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorInfo 200 6ms 198b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqww2',
+  content: 'wqw121212',
+  topic: 'sass',
+  time: '2020-05-29T01:59:11.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqww2',
+  postDate: '2020-5-29 9:59:26',
+  postContent: 'wqw121212',
+  postCategory: 'sass'
+}
+已有话题！
+topicId============ 19
+  --> POST /editor/draftsStorage 200 31ms 85b
+---------------------连接池连接数:------------------- 0
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 17ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqww2',
+  content: 'wqw121212',
+  topic: 'NODE',
+  time: '2020-05-29T01:59:11.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqww2',
+  postDate: '2020-5-29 10:00:31',
+  postContent: 'wqw121212',
+  postCategory: 'NODE'
+}
+已有话题！
+topicId============ 15
+  --> POST /editor/draftsStorage 200 349ms 85b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 4ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 6ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorDropDown 200 16ms 130b
+  --> POST /editor/getEditorInfo 200 27ms 198b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 5ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqww2',
+  content: 'wqw121212',
+  topic: 'NODE',
+  time: '2020-05-29T02:00:31.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqww2',
+  postDate: '2020-5-29 10:00:42',
+  postContent: 'wqw121212',
+  postCategory: 'NODE'
+}
+已有话题！
+topicId============ 15
+  --> POST /editor/draftsStorage 200 31ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqww2',
+  content: 'wqw121212',
+  topic: 'sass',
+  time: '2020-05-29T02:00:31.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqww2',
+  postDate: '2020-5-29 10:00:45',
+  postContent: 'wqw121212',
+  postCategory: 'sass'
+}
+已有话题！
+topicId============ 19
+  --> POST /editor/draftsStorage 200 29ms 85b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 15ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 3ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 4ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 15ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorDropDown 200 139ms 130b
+  --> POST /editor/getEditorInfo 200 46ms 198b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqww2',
+  content: 'wqw121212',
+  topic: 'sass',
+  time: '2020-05-29T02:00:45.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqww2',
+  postDate: '2020-5-29 10:02:35',
+  postContent: 'wqw121212',
+  postCategory: 'sass'
+}
+已有话题！
+topicId============ 19
+  --> POST /editor/draftsStorage 200 25ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqww2',
+  content: 'wqw121212',
+  topic: 'sass',
+  time: '2020-05-29T02:00:45.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqww2',
+  postDate: '2020-5-29 10:02:36',
+  postContent: 'wqw121212',
+  postCategory: 'sass'
+}
+已有话题！
+topicId============ 19
+  --> POST /editor/draftsStorage 200 21ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqww2',
+  content: 'wqw121212',
+  topic: 'sass',
+  time: '2020-05-29T02:00:45.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqww2',
+  postDate: '2020-5-29 10:02:36',
+  postContent: 'wqw121212',
+  postCategory: 'sass'
+}
+已有话题！
+topicId============ 19
+  --> POST /editor/draftsStorage 200 15ms 85b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  title: 'wqww2',
+  content: 'wqw121212',
+  topic: 'sass',
+  time: '2020-05-29T02:00:45.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: '724bfb30-a14c-11ea-9cf0-6db2454156d1',
+  postTitle: 'wqww2',
+  postDate: '2020-5-29 10:02:36',
+  postContent: 'wqw121212',
+  postCategory: 'sass'
+}
+已有话题！
+topicId============ 19
+  --> POST /editor/draftsStorage 200 33ms 85b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 1ms
+  --> OPTIONS /verifyToken 200 14ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 18ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 171ms 130b
+  --> POST /editor/getEditorInfo 200 336ms 198b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 3ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 3ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 12ms 130b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorInfo 200 8ms 198b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 14ms 75b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 5ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '', title: '', topic: '' }
+  --> POST /editor/draftsStorage 200 20ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '', title: 'ww', topic: '' }
+options=============== {
+  type: 'doc',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  postTitle: 'ww',
+  postDate: '2020-5-29 10:04:40',
+  postContent: '',
+  postCategory: ''
+}
+categoryId============ 
+  --> POST /editor/draftsStorage 200 7ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: 'wqw', title: 'ww', topic: '' }
+options=============== {
+  type: 'doc',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  postTitle: 'ww',
+  postDate: '2020-5-29 10:04:41',
+  postContent: 'wqw',
+  postCategory: ''
+}
+categoryId============ 
+  --> POST /editor/draftsStorage 200 12ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: 'wqw', title: 'ww', topic: '平台组件' }
+options=============== {
+  type: 'doc',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  postTitle: 'ww',
+  postDate: '2020-5-29 10:04:44',
+  postContent: 'wqw',
+  postCategory: '平台组件'
+}
+已有文档分类！
+categoryId============ undefined
+  --> POST /editor/draftsStorage 200 16ms 85b
+---------------------连接池连接数:------------------- 0
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 18ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 1ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 11ms 26b
+  --> POST /editor/getEditorDropDown 200 63ms 75b
+docResults ===============> [
+  RowDataPacket {
+    latest_modify_date: 2020-05-29T02:04:44.000Z,
+    post_author: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    post_title: 'ww',
+    post_content: 'wqw',
+    post_category_name: null
+  }
+]
+  --> POST /editor/getEditorInfo 200 124ms 187b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 20ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 4ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 6ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 11ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorDropDown 200 319ms 75b
+docResults ===============> [
+  RowDataPacket {
+    latest_modify_date: 2020-05-29T02:04:44.000Z,
+    post_author: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    post_title: 'ww',
+    post_content: 'wqw',
+    post_category_name: null
+  }
+]
+  --> POST /editor/getEditorInfo 200 222ms 187b
+---------------------连接池连接数:------------------- 0
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 19ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 5ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 4ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 10ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorDropDown 200 276ms 75b
+docResults ===============> [
+  RowDataPacket {
+    latest_modify_date: 2020-05-29T02:04:44.000Z,
+    post_author: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    post_title: 'ww',
+    post_content: 'wqw',
+    post_category_name: null
+  }
+]
+  --> POST /editor/getEditorInfo 200 52ms 187b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 4ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 3ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorDropDown 200 9ms 75b
+docResults ===============> [
+  RowDataPacket {
+    latest_modify_date: 2020-05-29T02:04:44.000Z,
+    post_author: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+    post_title: 'ww',
+    post_content: 'wqw',
+    post_category_name: null
+  }
+]
+  --> POST /editor/getEditorInfo 200 8ms 187b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  title: 'ww',
+  content: 'wqw',
+  topic: null,
+  time: '2020-05-29T02:04:44.000Z',
+  author: '柯涵'
+}
+options=============== {
+  type: 'doc',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  postTitle: 'ww',
+  postDate: '2020-5-29 10:10:51',
+  postContent: 'wqw',
+  postCategory: null
+}
+categoryId============ 
+  --> POST /editor/draftsStorage 200 10ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  title: 'ww',
+  content: 'wqw',
+  topic: null,
+  time: '2020-05-29T02:04:44.000Z',
+  author: '柯涵'
+}
+options=============== {
+  type: 'doc',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  postTitle: 'ww',
+  postDate: '2020-5-29 10:10:57',
+  postContent: 'wqw',
+  postCategory: null
+}
+categoryId============ 
+  --> POST /editor/draftsStorage 200 18ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  title: 'ww',
+  content: 'wqw',
+  topic: null,
+  time: '2020-05-29T02:04:44.000Z',
+  author: '柯涵'
+}
+options=============== {
+  type: 'doc',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  postTitle: 'ww',
+  postDate: '2020-5-29 10:11:11',
+  postContent: 'wqw',
+  postCategory: null
+}
+categoryId============ 
+  --> POST /editor/draftsStorage 200 15ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  title: 'ww',
+  content: 'wqw',
+  topic: null,
+  time: '2020-05-29T02:04:44.000Z',
+  author: '柯涵'
+}
+options=============== {
+  type: 'doc',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  postTitle: 'ww',
+  postDate: '2020-5-29 10:11:15',
+  postContent: 'wqw',
+  postCategory: null
+}
+categoryId============ 
+  --> POST /editor/draftsStorage 200 10ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  title: 'ww',
+  content: 'wqw',
+  topic: null,
+  time: '2020-05-29T02:04:44.000Z',
+  author: '柯涵'
+}
+options=============== {
+  type: 'doc',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  postTitle: 'ww',
+  postDate: '2020-5-29 10:11:16',
+  postContent: 'wqw',
+  postCategory: null
+}
+categoryId============ 
+  --> POST /editor/draftsStorage 200 15ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  title: 'ww',
+  content: 'wqw',
+  topic: null,
+  time: '2020-05-29T02:04:44.000Z',
+  author: '柯涵'
+}
+options=============== {
+  type: 'doc',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  postTitle: 'ww',
+  postDate: '2020-5-29 10:12:12',
+  postContent: 'wqw',
+  postCategory: null
+}
+categoryId============ 
+  --> POST /editor/draftsStorage 200 24ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  title: 'ww',
+  content: 'wqw',
+  topic: null,
+  time: '2020-05-29T02:04:44.000Z',
+  author: '柯涵'
+}
+options=============== {
+  type: 'doc',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'c16d1ab0-a150-11ea-8f22-d9a515660622',
+  postTitle: 'ww',
+  postDate: '2020-5-29 10:12:15',
+  postContent: 'wqw',
+  postCategory: null
+}
+categoryId============ 
+  --> POST /editor/draftsStorage 200 18ms 85b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 22ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 1ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 15ms 26b
+  --> POST /editor/getEditorDropDown 200 159ms 130b
+  --> POST /editor/getEditorInfo 200 118ms 52b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 10ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 4ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 6ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 4ms 130b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '', title: '', topic: '' }
+  --> POST /editor/draftsStorage 200 29ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '', title: '2', topic: '' }
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'fc237b50-a154-11ea-bb45-c3d6e02b0d94',
+  postTitle: '2',
+  postDate: '2020-5-29 10:34:59',
+  postContent: '',
+  postCategory: ''
+}
+topicId============ 
+  --> POST /editor/draftsStorage 200 28ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '22', title: '2', topic: '' }
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'fc237b50-a154-11ea-bb45-c3d6e02b0d94',
+  postTitle: '2',
+  postDate: '2020-5-29 10:35:00',
+  postContent: '22',
+  postCategory: ''
+}
+topicId============ 
+  --> POST /editor/draftsStorage 200 22ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 6ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '222121212', title: '2', topic: '' }
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'fc237b50-a154-11ea-bb45-c3d6e02b0d94',
+  postTitle: '2',
+  postDate: '2020-5-29 10:35:06',
+  postContent: '222121212',
+  postCategory: ''
+}
+topicId============ 
+  --> POST /editor/draftsStorage 200 29ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '2221212122221212', title: '2', topic: '' }
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'fc237b50-a154-11ea-bb45-c3d6e02b0d94',
+  postTitle: '2',
+  postDate: '2020-5-29 10:35:10',
+  postContent: '2221212122221212',
+  postCategory: ''
+}
+topicId============ 
+  --> POST /editor/draftsStorage 200 14ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '2221212122221212', title: '2', topic: 'eqwewe' }
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'fc237b50-a154-11ea-bb45-c3d6e02b0d94',
+  postTitle: '2',
+  postDate: '2020-5-29 10:35:14',
+  postContent: '2221212122221212',
+  postCategory: 'eqwewe'
+}
+已有话题！
+topicId============ 23
+  --> POST /editor/draftsStorage 200 19ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 10ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '2221212122221212', title: '2', topic: 'eqwewe' }
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'fc237b50-a154-11ea-bb45-c3d6e02b0d94',
+  postTitle: '2',
+  postDate: '2020-5-29 10:35:17',
+  postContent: '2221212122221212',
+  postCategory: 'eqwewe'
+}
+已有话题！
+topicId============ 23
+  --> POST /editor/draftsStorage 200 14ms 85b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 38ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 2ms 0b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 5ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 13ms 26b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorInfo
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 190ms 130b
+  --> POST /editor/getEditorInfo 200 283ms 203b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 5ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: 'fc237b50-a154-11ea-bb45-c3d6e02b0d94',
+  title: '2',
+  content: '2221212122221212',
+  topic: 'eqwewe',
+  time: '2020-05-29T02:35:17.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'fc237b50-a154-11ea-bb45-c3d6e02b0d94',
+  postTitle: '2',
+  postDate: '2020-5-29 10:39:35',
+  postContent: '2221212122221212',
+  postCategory: 'eqwewe'
+}
+已有话题！
+topicId============ 23
+  --> POST /editor/draftsStorage 200 45ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 4ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: 'fc237b50-a154-11ea-bb45-c3d6e02b0d94',
+  title: '2',
+  content: '2221212122221212',
+  topic: 'eqwewe',
+  time: '2020-05-29T02:35:17.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 1
+options=============== {
+  type: 'article',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  userName: '1',
+  postId: 'fc237b50-a154-11ea-bb45-c3d6e02b0d94',
+  postTitle: '2',
+  postDate: '2020-5-29 10:39:36',
+  postContent: '2221212122221212',
+  postCategory: 'eqwewe'
+}
+已有话题！
+topicId============ 23
+  --> POST /editor/draftsStorage 200 30ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/postArticle
+OPTIONS /editor/postArticle - 0ms
+  --> OPTIONS /editor/postArticle 200 1ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/postArticle
+已有话题！
+  --> POST /editor/postArticle 200 17ms 51b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: 'fc237b50-a154-11ea-bb45-c3d6e02b0d94',
+  title: '2',
+  content: '2221212122221212',
+  topic: 'eqwewe',
+  time: '2020-05-29T02:35:17.000Z',
+  author: '柯涵'
+}
+checkArticleResults[0].nums================ 2
+  --> POST /editor/draftsStorage 200 6ms 61b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/postArticle
+OPTIONS /editor/postArticle - 0ms
+  --> OPTIONS /editor/postArticle 200 25ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/postArticle
+已有话题！
+  --> POST /editor/postArticle 200 142ms 51b
+---------------------连接池连接数:------------------- 0
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/postArticle
+OPTIONS /editor/postArticle - 0ms
+  --> OPTIONS /editor/postArticle 200 18ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/postArticle
+已有话题！
+  --> POST /editor/postArticle 200 128ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/postArticle
+OPTIONS /editor/postArticle - 0ms
+  --> OPTIONS /editor/postArticle 200 16ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/postArticle
+已有话题！
+  --> POST /editor/postArticle 200 31ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/postArticle
+OPTIONS /editor/postArticle - 0ms
+  --> OPTIONS /editor/postArticle 200 2ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/postArticle
+已有话题！
+  --> POST /editor/postArticle 200 21ms 85b
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/postArticle
+OPTIONS /editor/postArticle - 0ms
+  --> OPTIONS /editor/postArticle 200 3ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/postArticle
+已有话题！
+  --> POST /editor/postArticle 200 19ms 85b
+---------------------连接池连接数:------------------- 0
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/postArticle
+OPTIONS /editor/postArticle - 0ms
+  --> OPTIONS /editor/postArticle 200 11ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/postArticle
+已有话题！
+  --> POST /editor/postArticle 200 136ms 85b
+---------------------连接池连接数:------------------- 0
+cookie=======? undefined
+别问，问就验证没通过
+result=================================>funck false
+  <-- OPTIONS /editor/postArticle
+OPTIONS /editor/postArticle - 0ms
+  --> OPTIONS /editor/postArticle 200 17ms 0b
+cookie=======? undefined
+ok
+result=================================>funck {
+  username: '1',
+  nickname: '柯涵',
+  userId: '0192e830-1bbb-11e9-b9c9-cdaf3c9a2410',
+  iat: 1590654236,
+  exp: 1590827036,
+  iss: 'YOUJUN'
+}
+  <-- POST /editor/postArticle
+已有话题！
+  --> POST /editor/postArticle 200 125ms 85b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0

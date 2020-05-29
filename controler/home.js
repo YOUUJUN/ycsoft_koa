@@ -782,8 +782,53 @@ module.exports = {
 
         ctx.body = results;
 
-    }
+    },
 
+    /*--发表文章--*/
+    async postArticle(ctx,next){
+        let results = {
+            message : "发表失败!未知错误!",
+            status : 0,
+        };
+
+        try {
+            let postStatus = await page_editor.postArticle(ctx);
+            if(postStatus){
+                results = {
+                    message : "发表成功!发表文章到"+postStatus.postCategory+"..发表时间为"+postStatus.postDate,
+                    status : 1,
+                }
+            }
+        }catch (e) {
+            console.error("postArticle failed",e);
+        }
+
+        ctx.body = results;
+    },
+
+    /*--发表文档--*/
+    async postDoc(ctx,next){
+
+        let results = {
+            message : "发表失败!未知错误!",
+            status : 0,
+        };
+
+        try {
+            let postStatus = await page_editor.postDoc(ctx);
+            if(postStatus){
+                results = {
+                    message : "发表成功!"+"发表文章",
+                    status : 0,
+                }
+            }
+
+        }catch (e) {
+            console.error("postDoc failed",e);
+        }
+
+        ctx.body = results;
+    }
 };
 
 

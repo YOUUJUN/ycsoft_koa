@@ -26,7 +26,7 @@
 
 
 
-                                <input type="text" placeholder="文档标题" v-model="articleInfo.title">
+                                <input type="text" placeholder="文档标题" v-model="articleInfo.title" v-on:focusout="cacheArticle">
 
 
                             </div>
@@ -48,7 +48,7 @@
                             <div class="topic-select-box">
 
                                 <div class="field-text">
-                                    <input type="text" placeholder="管理员你好!创建一个新的文档类别吗？" v-model="articleInfo.topic">
+                                    <input type="text" placeholder="管理员你好!创建一个新的文档类别吗？" v-model="articleInfo.topic" v-on:focusout="cacheArticle">
                                 </div>
 
 
@@ -122,7 +122,12 @@
             }
 
         },
+
         methods : {
+            sayHi(){
+                console.log("hi");
+            },
+
             getUserLogStatus (){
                 this.$axios({
                     method : "post",
@@ -195,10 +200,12 @@
 
             selectArticleTopic(command){
                 this.articleInfo.topic = command;
+                this.cacheArticle();
             },
 
             selectDoctype(command){
                 this.articleInfo.topic = command;
+                this.cacheArticle();
             },
 
 
@@ -229,17 +236,84 @@
 
             sendArticle(){
 
+                let editor = this.$refs["md"];
+                let markDown = editor.getMarkdown();
+                let topic = this.articleInfo.topic;
+                if(!topic){
+                    this.$notify({
+                        title: '发表失败!',
+                        message: '未选择发表文章话题!',
+                        type: 'error'
+                    });
+                }
+
+                if(markDown.length < 10){
+                    this.$notify({
+                        title: '发表失败!',
+                        message: '文章字数为超过最低发表字数限制!',
+                        type: 'error'
+                    });
+                }
+
+                this.$axios({
+                    method : "post",
+                    url : "/editor/postArticle",
+                    data : {
+                        content : this.articleInfo
+                    }
+                }).then(value =>{
+                    if(value.data.status === 0){
+                        this.$notify({
+                            title: '发表失败!',
+                            message: value.data.message,
+                            type: 'error'
+                        });
+                    }else if(value.data.status === 1){
+                        this.$notify({
+                            title: '发表成功!',
+                            message: value.data.message,
+                            type: 'success'
+                        });
+                    }
+
+                }).catch(err=>{
+
+                });
+
             },
 
             sendDoc(){
                 let editor = this.$refs["md"];
                 let markDown = editor.getMarkdown();
-                if(!markDown){
-                    alert("空");
+                let topic = this.articleInfo.topic;
+                if(!topic){
+                    this.$notify({
+                        title: '发表失败!',
+                        message: '未选择发表文档分类!',
+                        type: 'error'
+                    });
                 }
+
                 if(markDown.length < 10){
-                    alert("内容似乎太少了呢？");
+                    this.$notify({
+                        title: '发表失败!',
+                        message: '文档字数为超过最低发表字数限制!',
+                        type: 'error'
+                    });
                 }
+
+                this.$axios({
+                    method : "post",
+                    url : "/editor/postDoc",
+                    data : {
+                        content : this.articleInfo
+                    }
+                }).then(value =>{
+
+                }).catch(err=>{
+
+                });
+
             }
 
         },
