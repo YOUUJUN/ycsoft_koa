@@ -223,9 +223,124 @@ class Editor{
         }
     }
 
-    /*--删除草稿--*/
-    async delDrafts(type, postId){
+    /*--删除文章--*/
+    async delArticle(ctx){
+        let msg = {
+            status : 0,
+            message : "删除失败!"
+        };
+        let logged = ctx.state.logged;
+        console.log("logged-------------delArticle--",logged)
+        if(!logged){
+            return msg;
+        }
+        let body = ctx.request.body;
+        let userId = logged.userId;
+        let status = body.status;
+        let postId = body.postId;
 
+        let delSql = "";
+        let delParams = [];
+        let results = [];
+
+        switch(status){
+            case "drafts":
+
+                delSql = "DELETE FROM article_drafts WHERE post_author = ? AND post_id = ?";
+                delParams = [userId, postId];
+
+                results = await query(delSql, delParams);
+
+                console.log("results2 ====>",userId,postId,results);
+
+                if(results.affectedRows == "1"){
+                    msg = {
+                        status : 1,
+                        message : "删除成功!"
+                    };
+                }
+
+                break;
+
+            case "posts":
+
+                delSql = "DELETE FROM article WHERE post_author = ? AND post_id = ?";
+                delParams = [userId, postId];
+
+                results = await query(delSql, delParams);
+                console.log("delParams",delParams);
+
+                if(results.affectedRows == "1"){
+                    msg = {
+                        status : 1,
+                        message : "删除成功!"
+                    };
+                }
+
+                break;
+        }
+
+        return msg;
+
+    }
+
+
+    /*--删除文档--*/
+    async delDoc(ctx){
+        let msg = {
+            status : 0,
+            message : "删除失败!"
+        };
+        let logged = ctx.state.logged;
+        if(!logged){
+            return msg;
+        }
+        let body = ctx.request.body;
+        let userId = logged.userId;
+        let status = body.status;
+        let postId = body.postId;
+
+        let delSql = "";
+        let delParams = [];
+        let results = [];
+
+        switch(status){
+            case "drafts":
+
+                delSql = "DELETE FROM doc_drafts WHERE post_author = ? AND post_id = ?";
+                delParams = [userId, postId];
+
+                results = await query(delSql, delParams);
+
+                console.log("results2 ====>",userId,postId,results);
+
+                if(results.affectedRows == "1"){
+                    msg = {
+                        status : 1,
+                        message : "删除成功!"
+                    };
+                }
+
+                break;
+
+            case "posts":
+
+                delSql = "DELETE FROM doc_drafts WHERE post_author = ? AND post_id = ?";
+                delParams = [userId, postId];
+
+                results = await query(delSql, delParams);
+
+                if(results.affectedRows == "1"){
+                    msg = {
+                        status : 1,
+                        message : "删除成功!"
+                    };
+                }
+
+                break;
+        }
+
+        return msg;
     }
 
 
@@ -338,10 +453,11 @@ class Editor{
 
         results = await query(getTopicNameSql,getTopicNameParam);
 
-        return results.post_category_id;
+        return results[0].post_category_id;
     }
 
 
+    /*--通过href获取所指定的文档&文章信息功能--*/
     async getEditorInfo(ctx){
         let logged = ctx.state.logged;
         if(!logged){
@@ -399,15 +515,17 @@ class Editor{
 
         }
 
-        console.log("search results ======>",results);
-
     }
 
 
+    /*--发表文章功能--*/
     async postArticle(ctx){
         let logged = ctx.state.logged;
         if(!logged){
-            return false;
+            return {
+                message : "发表文章失败!请检查登录状态!",
+                status : 0
+            }
         }
 
         let referer = ctx.request.header.referer;
@@ -434,7 +552,7 @@ class Editor{
 
         let results = await query(checkSql, checkParams);
 
-        if(results[0].nums !== "0"){
+        if(results[0].nums !== 0){
             return {
                 message : "发表文章失败!该文章已经处于发表状态!",
                 status : 0
@@ -444,16 +562,134 @@ class Editor{
 
         let topicId = await this.getTopicId(options.postCategory);
 
-        let addsql = "INSERT INTO article(id,post_id,post_author,latest_modify_date,post_title,post_content,topic_id) VALUE(0,?,?,?,?,?,?)";
-        let addparams = [options.postId,options.userId,options.postDate,options.postTitle,options.postContent,topicId];
+        let addsql = "INSERT INTO article(id,post_id,post_author,post_date,post_title,post_content,topic_id) VALUE(0,?,?,?,?,?,?)";
+        let addparams = [options.postId,options.userId,options.PostDate,options.postTitle,options.postContent,topicId];
 
         results = await query(addsql, addparams);
 
         if(results.affectedRows == "1"){
             return {
-                message : ""
+                message : "发表成功!发表文章到"+options.postCategory+"..发表时间为"+options.PostDate,
+                status : 1
             };
         }
+    }
+
+
+    /*--发表文档功能--*/
+    async postDoc(ctx){
+        let logged = ctx.state.logged;
+        if(!logged){
+            return {
+                message : "发表文档失败!请检查登录状态!",
+                status : 0
+            }
+        }
+
+        let referer = ctx.request.header.referer;
+        let body = ctx.request.body;
+
+        let postId = referer.split("/").pop();
+
+        let content = body.content;
+        let userId = logged.userId;
+        let postDate = new Date().toLocaleString();
+
+
+        let options = {
+            userId : userId,
+            postId : postId,
+            postTitle : content.title,
+            PostDate : postDate,
+            postContent : content.content,
+            postCategory : content.topic
+        }
+
+        let checkSql = "SELECT COUNT(*) AS nums FROM framework_document WHERE post_author = ? AND post_id = ?";
+        let checkParams = [userId,postId];
+
+        let results = await query(checkSql, checkParams);
+
+        if(results[0].nums !== 0){
+            return {
+                message : "发表文档失败!该文档已经处于发表状态!",
+                status : 0
+            }
+        }
+
+
+        let categoryId = await this.getCategoryId(options.postCategory);
+
+        let addsql = "INSERT INTO framework_document(id,post_id,post_author,post_date,post_title,post_content,post_category) VALUE(0,?,?,?,?,?,?)";
+        let addparams = [options.postId,options.userId,options.PostDate,options.postTitle,options.postContent,categoryId];
+
+        results = await query(addsql, addparams);
+
+        if(results.affectedRows == "1"){
+            return {
+                message : "发表成功!发表文档到"+options.postCategory+"..发表时间为"+options.PostDate,
+                status : 1
+            };
+        }
+    }
+
+    /*--获取草稿列表--*/
+    async getDraftsList(ctx){
+        let logged = ctx.state.logged;
+        console.log("getDraftsList",logged);
+        if(!logged){
+            return;
+        }
+
+        let userId = logged.userId;
+        let target = ctx.request.body.target;
+
+        let arr = [];
+
+        let results = [];
+        switch(target){
+
+            case "Doc" :
+
+                let getDocDraftsSql = "SELECT doc_drafts.* FROM doc_drafts WHERE doc_drafts.post_author = ? ORDER BY doc_drafts.latest_modify_date DESC";
+                let getDocDraftsParam = [userId];
+                results = await query(getDocDraftsSql, getDocDraftsParam);
+
+                arr = [];
+                for(let item of results){
+                    let obj = {
+                        type : "doc",
+                        id : item.post_id,
+                        title : item.post_title,
+                        date : new Date(item.latest_modify_date).toLocaleString(),
+                    }
+                    arr.push(obj);
+                }
+
+                break;
+
+
+            case "Article" :
+
+                let getAryticleDraftsSql = "SELECT article_drafts.* FROM article_drafts WHERE article_drafts.post_author = ? ORDER BY article_drafts.latest_modify_date DESC";
+                let getAryticleDraftsParam = [userId];
+                results = await query(getAryticleDraftsSql, getAryticleDraftsParam);
+
+                arr = [];
+                for(let item of results){
+                    let obj = {
+                        type : "article",
+                        id : item.post_id,
+                        title : item.post_title,
+                        date : new Date(item.latest_modify_date).toLocaleString(),
+                    }
+                    arr.push(obj);
+                }
+
+                break;
+        }
+
+        return arr;
     }
 
 }

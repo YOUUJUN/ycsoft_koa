@@ -15,13 +15,11 @@ const TOKENSECRET = require("./utils/config/tokensecret");
 
 /*---登录状态检测中间件---*/
 app.use( async (ctx, next) =>{
-  if(ctx.url.match(/^\/community/) || ctx.url.match(/^\/personal/) || ctx.url.match(/^\/users/) || ctx.url.match(/^\/editor/)){
+  if(ctx.url.match(/^\/community/) || ctx.url.match(/^\/personal/) || ctx.url.match(/^\/users/) || ctx.url.match(/^\/editor/) || ctx.url.match(/^\/offline/)){
     let cookie = ctx.cookies.get("marscript");
-    console.log("cookie=======?",cookie);
     let token = ctx.request.header.accesstoken || cookie || "";
     const page_user = require("./utils/pages/user");
     let result = await page_user.verifyUserToken(token);
-    console.log("result=================================>funck",result);
     ctx.state.logged = result;
 
   }

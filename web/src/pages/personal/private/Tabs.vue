@@ -4,7 +4,7 @@
 
             <ul class="article-list">
 
-                <li class="user-article" v-for="item of articleList">
+                <li class="user-article" v-for="(item,index) of articleList">
                     <a class="article-href" target="_blank" v-bind:href="item.url">
                         <div class="user-article-name">
                             <span class="name">{{item.title}}</span>
@@ -13,13 +13,13 @@
 
                         <div class="operation-box" v-if="owner">
                             <object><a href="\editor\2137c100-44a7-11e9-a0ef-8d85f4e44512" class="btn" style="margin-right:10px;">修改</a></object>
-                            <object><a href="javascript:void(0);" class="btn" onclick="doWith('2137c100-44a7-11e9-a0ef-8d85f4e44512','del')">删除</a></object>
+                            <object><a href="javascript:void(0);" class="btn" @click="delArticle(index,item.id)">删除</a></object>
                         </div>
 
                         <div class="operation-box" v-else>
                             <ul class="action-list">
                                 <li><object><a class="btn diy-btn" href="javascript:void(0)" onclick="doAsk(addLike,'2137c100-44a7-11e9-a0ef-8d85f4e44512',this)" data-v="2137c100-44a7-11e9-a0ef-8d85f4e44512"><i class="fa fa-heart"></i><span data-v="2137c100-44a7-11e9-a0ef-8d85f4e44512">{{item.likeNum}}</span></a></object></li>
-                                <li><object><a class="btn diy-btn" href="/community/post/2137c100-44a7-11e9-a0ef-8d85f4e44512#Comment"><i class="fa fa-comment"></i>{{item.commentNum}}</a></object></li>
+                                <li><object><a class="btn diy-btn" href="javascript:void(0);"><i class="fa fa-comment"></i>{{item.commentNum}}</a></object></li>
                             </ul>
                         </div>
 
@@ -76,6 +76,40 @@
             </ul>
 
         </el-tab-pane>
+
+        <el-tab-pane :label="'项目管理  ' + 2">
+
+            <ul class="article-list">
+                <li class="user-article">
+                    <object>
+                        <a href="javascript:void(0);" class="topic-href">
+                            <div class="topic-title">
+                                <h2>文章草稿</h2>
+                            </div>
+                            <div class="topic-detail-follow">
+                                <object><a href="/editor/article/drafts" class="btn" target="_blank">管理</a></object>
+                            </div>
+                        </a>
+                    </object>
+                </li>
+
+                <li class="user-article">
+                    <object>
+                        <a href="javascript:void(0);" class="topic-href">
+                            <div class="topic-title">
+                                <h2>文档草稿</h2>
+                            </div>
+                            <div class="topic-detail-follow">
+                                <object><a href="/editor/doc/drafts" class="btn" target="_blank">管理</a></object>
+                            </div>
+                        </a>
+                    </object>
+                </li>
+            </ul>
+
+        </el-tab-pane>
+
+
     </el-tabs>
 
 </template>
@@ -182,6 +216,35 @@
             getTimeDif (timer){
                 return this.$common.getTimeDif(timer);
             },
+
+
+            delArticle(index,postId){
+                this.$axios({
+                    method : "post",
+                    url : "/editor/delArticle",
+                    data : {
+                        postId : postId,
+                        status : "posts"
+                    }
+                }).then(value => {
+                    if(value.data.status === 1){
+                        this.draftsList.splice(index, 1);
+
+                        this.$notify({
+                            title: '删除成功!',
+                            type: 'success'
+                        });
+
+                    }else{
+                        this.$notify({
+                            title: '删除失败!',
+                            type: 'error'
+                        });
+                    }
+                }).catch(err => {
+                    console.error(err);
+                });
+            }
 
         },
 

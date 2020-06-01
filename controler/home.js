@@ -59,19 +59,29 @@ module.exports = {
     },
 
 
+    /*--drafts list--*/
+    async drafts(ctx,next){
+        let logged = ctx.state.logged;
+        let params = ctx.params;
+        if(!logged){
+            ctx.url = '/offline.html';
+        }else{
+            ctx.body = await common.readPages('drafts.html');
+        }
+
+        await next();
+    },
+
     async editor(ctx,next){
         let logged = ctx.state.logged;
-        console.log("logged-----!?",logged);
         if(!logged){
-            console.log("ok-----------------");
-            ctx.body = await common.readPages('offline.html');
+            ctx.url = '/offline.html';
             await next();
             return;
         }
 
 
         let params = ctx.params;
-        console.log("params-----!",params);
         let project = params.project;
         let code = params.href;
 
@@ -98,14 +108,16 @@ module.exports = {
 
 
     async topics(ctx,next){
-        console.log("url==>",ctx.url);
-        let hashArr = ctx.url.split("/");
-        if(hashArr[2]){
-            ctx.body = await common.readPages('topics.html');
-        }else{
-            ctx.body = await common.readPages('topicList.html');
-        }
+        let params = ctx.params;
+        let href = params.href;
 
+        ctx.body = await common.readPages('topics.html');
+        await next();
+    },
+
+
+    async topicsList(ctx, next){
+        ctx.body = await common.readPages('topicList.html');
         await next();
     },
 
@@ -173,6 +185,11 @@ module.exports = {
             }
         }
 
+    },
+
+    async logout(ctx, next){
+        ctx.cookies.set("marscript","");
+        ctx.body = "登出成功！";
     },
 
     async register(ctx, next){
@@ -786,48 +803,92 @@ module.exports = {
 
     /*--发表文章--*/
     async postArticle(ctx,next){
-        let results = {
+        let msg = {
             message : "发表失败!未知错误!",
             status : 0,
         };
 
         try {
-            let postStatus = await page_editor.postArticle(ctx);
-            if(postStatus){
-                results = {
-                    message : "发表成功!发表文章到"+postStatus.postCategory+"..发表时间为"+postStatus.postDate,
-                    status : 1,
-                }
+            let results = await page_editor.postArticle(ctx);
+            msg = {
+                message : results.message,
+                status : results.status
             }
         }catch (e) {
             console.error("postArticle failed",e);
         }
 
-        ctx.body = results;
+        ctx.body = msg;
     },
 
     /*--发表文档--*/
     async postDoc(ctx,next){
 
-        let results = {
+        let msg = {
             message : "发表失败!未知错误!",
             status : 0,
         };
 
         try {
-            let postStatus = await page_editor.postDoc(ctx);
-            if(postStatus){
-                results = {
-                    message : "发表成功!"+"发表文章",
-                    status : 0,
-                }
+            let results = await page_editor.postDoc(ctx);
+            msg = {
+                message : results.message,
+                status : results.status
             }
-
         }catch (e) {
             console.error("postDoc failed",e);
         }
 
-        ctx.body = results;
+        ctx.body = msg;
+    },
+
+    /*--获取草稿列表--*/
+    async getDraftsList(ctx, next){
+
+        let results = [];
+        try{
+            results = await page_editor.getDraftsList(ctx);
+        }catch (e) {
+            console.error(e);
+        }
+
+        ctx.body = results
+
+    },
+
+    /*--删除文章--*/
+    async delArticle(ctx, next) {
+
+        let msg = {
+            status : 0,
+            message : "删除失败!"
+        };
+
+        try {
+            let results = await page_editor.delArticle(ctx);
+            msg = results;
+        } catch (e) {
+            console.error(e);
+        }
+
+        ctx.body = msg;
+    },
+
+    /*--删除文档--*/
+    async delDoc(ctx, next){
+        let msg = {
+            status : 0,
+            message : "删除失败!"
+        };
+
+        try {
+            let results = await page_editor.delDoc(ctx);
+            msg = results;
+        } catch (e) {
+            console.error(e);
+        }
+
+        ctx.body = msg;
     }
 };
 

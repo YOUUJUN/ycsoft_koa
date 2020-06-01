@@ -19,10 +19,14 @@ module.exports = (app) => {
     router.get('/guide',homeController.guide);
     router.get('/contact',homeController.contact);
     router.get('/community',homeController.community);
+    router.get('/community/topics',homeController.topicsList);
+    router.get('/community/topics/:href',homeController.topics);
     router.get("/community/post/:href",homeController.poster);
     router.get("/personal/:href",homeController.personal);
     router.get('/guide/:href',homeController.getDocByHash);
     router.get('/users/setting',homeController.setting);
+    /*--drafts list--*/
+    router.get('/editor/:project/drafts',homeController.drafts);
     /*--editor  artical,doc  drafts --*/
     router.get('/editor/:project/drafts/:href',homeController.editor);
 
@@ -39,7 +43,6 @@ module.exports = (app) => {
     router.post('/community/addComment',homeController.addComment);
     router.post('/community/addReComment',homeController.addReComment);
     router.post('/community/addFocus',homeController.addFocus);
-    router.get('/community/topics/:href',homeController.topics);
     router.post('/community/getTopicInfo',homeController.getTopicInfo);
 
     /*--page- personal--*/
@@ -59,6 +62,7 @@ module.exports = (app) => {
     /*-修改用户信息-*/
     router.post('/users/modifyUserInfo',homeController.modifyUserInfo);
     router.post('/login',homeController.login);
+    router.post('/logout',homeController.logout);
     router.post('/register',homeController.register);
 
 
@@ -68,7 +72,9 @@ module.exports = (app) => {
     router.post('/editor/getEditorInfo',homeController.getEditorInfo);
     router.post('/editor/postArticle',homeController.postArticle);
     router.post('/editor/postDoc',homeController.postDoc);
-
+    router.post('/editor/getDraftsList',homeController.getDraftsList);
+    router.post('/editor/delArticle',homeController.delArticle);
+    router.post('/editor/delDoc',homeController.delDoc);
 
 
     router.post('/verifyToken',homeController.verifyToken);

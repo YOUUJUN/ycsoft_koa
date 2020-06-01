@@ -245,6 +245,8 @@
                         message: '未选择发表文章话题!',
                         type: 'error'
                     });
+
+                    return;
                 }
 
                 if(markDown.length < 10){
@@ -253,6 +255,8 @@
                         message: '文章字数为超过最低发表字数限制!',
                         type: 'error'
                     });
+
+                    return;
                 }
 
                 this.$axios({
@@ -274,10 +278,15 @@
                             message: value.data.message,
                             type: 'success'
                         });
+
+                        setTimeout(function(){
+                            location.href = location.origin.concat("/community");
+                        },800);
+
                     }
 
                 }).catch(err=>{
-
+                    console.error(err);
                 });
 
             },
@@ -292,6 +301,8 @@
                         message: '未选择发表文档分类!',
                         type: 'error'
                     });
+
+                    return;
                 }
 
                 if(markDown.length < 10){
@@ -300,6 +311,8 @@
                         message: '文档字数为超过最低发表字数限制!',
                         type: 'error'
                     });
+
+                    return;
                 }
 
                 this.$axios({
@@ -309,9 +322,27 @@
                         content : this.articleInfo
                     }
                 }).then(value =>{
+                    if(value.data.status === 0){
+                        this.$notify({
+                            title: '发表失败!',
+                            message: value.data.message,
+                            type: 'error'
+                        });
+                    }else if(value.data.status === 1){
+                        this.$notify({
+                            title: '发表成功!',
+                            message: value.data.message,
+                            type: 'success'
+                        });
+
+                        setTimeout(function(){
+                            location.href = location.origin.concat("/guide");
+                        },800);
+
+                    }
 
                 }).catch(err=>{
-
+                    console.error(err);
                 });
 
             }
@@ -328,8 +359,6 @@
 
         mounted() {
             this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
-
-
         }
     };
 </script>

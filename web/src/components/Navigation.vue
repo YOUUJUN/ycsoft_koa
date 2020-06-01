@@ -133,11 +133,18 @@
 
             logout : function () {
                 let vm = this;
-                console.log("hello?");
-                vm.$store.commit("changeLogStatus",false);
-                localStorage.setItem("marscript","");
-                vm.$common.setCookie("marscript","");
-                location.reload();
+                this.$axios({
+                    method : "post",
+                    url : "/logout"
+                }).then(value => {
+                    vm.$store.commit("changeLogStatus",false);
+                    localStorage.setItem("marscript","");
+                    location.reload();
+                }).catch(err => {
+                    console.error(err);
+                })
+
+
             },
 
             goToPersonal(){

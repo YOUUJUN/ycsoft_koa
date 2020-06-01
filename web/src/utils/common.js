@@ -80,6 +80,10 @@ export default {
         }
     },
 
+    delCookie(cname) {
+        var cvalue = this.getCookie(cname);
+        document.cookie = 'marscript='+cvalue+';expires=Thu, 01 Jan 1970 00:00:00 GMT'
+    },
 
     getLocalStorageMaxRoom() {
         if(!window.localStorage) {
