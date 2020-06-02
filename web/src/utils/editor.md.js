@@ -1,3 +1,5 @@
+
+
 const defaultConfig = {
     // width: "100%",
     // height: 600,
@@ -49,7 +51,7 @@ const defaultConfig = {
     saveHTMLToTextarea : true,
     imageUpload : true,
     imageFormats : ["jpg","jpeg","gif","png","bmp","webp"],
-    imageUploadURL : "/editor/uploadimg",
+    imageUploadURL : "http://106.13.63.236/editor/uploadimg",
     emoji: true,
     taskList: true,
     tocm: true,         // Using [TOCM]

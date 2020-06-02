@@ -80,9 +80,11 @@
                 }).then(res => {
                     alert(res.data.data);
                     if(res.data.status == '1'){
+                        this.topicInfo.num += 1;
                         item.ifFocused = true;
                     }else if(res.data.status == '2'){
                         item.ifFocused = false;
+                        this.topicInfo.num -= 1;
                     }
                 }).catch(err =>{
                     console.error(err);

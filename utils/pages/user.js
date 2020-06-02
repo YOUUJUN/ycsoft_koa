@@ -242,7 +242,7 @@ class User{
 
         /*--读取用户文章数--*/
         let getArticleCountSql = "SELECT COUNT(*) AS nums FROM article WHERE post_author =?";
-        let getArticleCountParam = [info.username];
+        let getArticleCountParam = [info.userId];
         let result2 = await query(getArticleCountSql,getArticleCountParam);
 
         /*--读取用户所关注人数--*/
@@ -257,7 +257,7 @@ class User{
 
         /*---读取用户被点赞总数---*/
         let getUserLikeSql = "SELECT COUNT(*) AS nums,article.post_author FROM user_like LEFT JOIN article ON user_like.post_id = article.post_id WHERE article.post_author = ?";
-        let getUserLikeParam = [info.username];
+        let getUserLikeParam = [info.userId];
         let result5 = await query(getUserLikeSql,getUserLikeParam);
 
         /*---读取用户关注话题数---*/

@@ -72,7 +72,7 @@
                     <input type="password" name="re-password" placeholder="确认你的密码" v-model="registerData.repassword" v-on:blur="registerChecker">
                 </div>
             </div>
-                <div class="turn-to"><a href="javascript:void(0);" v-on:click="togglePanel">已有账号? 点此登录</a></div></div>
+                <div class="turn-to"><a href="javascript:void(0);" v-on:click="togglePanel" ref="toggle">已有账号? 点此登录</a></div></div>
 
             <div class="dialog-resize-helper dialog-resize-s"></div>
             <div class="dialog-resize-helper dialog-resize-x"></div>
@@ -171,9 +171,16 @@
                         console.log(value);
                         this.warn = value.data.message;
                         if(value.data.status == 0){
-                            alert('注册失败!');
+                            this.$notify({
+                                title: '注册失败!',
+                                type: 'success'
+                            });
                         }else if(value.data.status == 1){
-                            alert('注册成功!');
+                            this.$notify({
+                                title: '注册成功!',
+                                type: 'success'
+                            });
+                            this.$refs["toggle"].click();
                         }
                     }).catch(err => {
                         console.log(err);

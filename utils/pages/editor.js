@@ -112,7 +112,6 @@ class Editor{
                 let articleId = await this.saveDrafts({
                     type : "article",
                     userId : userId,
-                    userName : username,
                     postId : docName,
                     postTitle : content.title,
                     postDate : postDate,
@@ -148,7 +147,6 @@ class Editor{
                 let docId = await this.saveDrafts({
                     type : "doc",
                     userId : userId,
-                    userName : username,
                     postId : docName,
                     postTitle : content.title,
                     postDate : postDate,
@@ -182,7 +180,6 @@ class Editor{
     *options : {
     *   type,
     *   userId,
-    *   userName
     *   postId,
     *   postTitle,
     *   postDate,
@@ -325,7 +322,7 @@ class Editor{
 
             case "posts":
 
-                delSql = "DELETE FROM doc_drafts WHERE post_author = ? AND post_id = ?";
+                delSql = "DELETE FROM framework_document WHERE post_author = ? AND post_id = ?";
                 delParams = [userId, postId];
 
                 results = await query(delSql, delParams);
@@ -394,6 +391,7 @@ class Editor{
         if(!topicName){
             return "";
         }
+        console.log("topicName-=====>",topicName);
 
         let lowChecker = topicName.toLowerCase();
         let checktopicsql = "SELECT COUNT(*) AS nums FROM topic WHERE LCASE(topic_name) = ?";
@@ -535,6 +533,7 @@ class Editor{
 
         let content = body.content;
         let userId = logged.userId;
+        let username = logged.username;
         let postDate = new Date().toLocaleString();
 
 
@@ -568,6 +567,12 @@ class Editor{
         results = await query(addsql, addparams);
 
         if(results.affectedRows == "1"){
+
+            var newArticleWatchsSql = "INSERT INTO article_watchs(id,post_id,post_author,article_views) VALUE(0,?,?,0)";
+            var newArticleWatchsParam = [postId,username];
+
+            await query(newArticleWatchsSql, newArticleWatchsParam);
+
             return {
                 message : "发表成功!发表文章到"+options.postCategory+"..发表时间为"+options.PostDate,
                 status : 1
@@ -633,6 +638,78 @@ class Editor{
         }
     }
 
+
+    /*----修改已发表文章功能（退回草稿）----*/
+    async modifyArticle(ctx){
+        let msg = {
+            message : "修改失败!未知错误!",
+            status : 0
+        };
+        let logged = ctx.state.logged;
+        if(!logged){
+            msg = {
+                message : "修改失败!请检查登录状态!",
+                status : 0
+            };
+
+            return msg;
+        }
+
+        let body = ctx.request.body;
+        let userId = logged.userId;
+        let postId = body.postId;
+
+        let checkSql = "SELECT COUNT(*) AS nums FROM article WHERE post_author = ? AND post_id = ?";
+        let checkParams = [userId,postId];
+
+        let results = await query(checkSql, checkParams);
+
+        if(results[0].nums === 0){
+            return {
+                message : "修改失败!改文章未处于发表状态!",
+                status : 0
+            }
+        }
+
+        const page_community = require("./community");
+
+        results = await page_community.getArticleInfo(postId);
+
+        let options = {
+            type : "article",
+            userId : userId,
+            postId : postId,
+            postTitle : results.title,
+            PostDate : results.date,
+            postContent : results.content,
+            postCategory : results.topicName
+        }
+
+        let articleDraftId = await this.newDrafts(options)
+
+        if(!articleDraftId){
+            return {
+                message : "修改失败!未知错误!",
+                status : 0
+            }
+        }
+
+        let delSql = "DELETE FROM article WHERE post_author = ? AND post_id = ?";
+        let delParams = [userId, postId];
+
+        results = await query(delSql, delParams);
+
+        if(results.affectedRows === 1){
+            return {
+                message : "修改成功!",
+                status : 1,
+                data : articleDraftId
+            }
+        }
+
+    }
+
+
     /*--获取草稿列表--*/
     async getDraftsList(ctx){
         let logged = ctx.state.logged;
@@ -690,6 +767,42 @@ class Editor{
         }
 
         return arr;
+    }
+
+
+    /*--文章编辑上传图片--*/
+
+    async editorUploadimg(ctx){
+        let msg = {
+            message : '图片上传失败!',
+            success : 0,
+            url : ""
+        };
+        let logged = ctx.state.logged;
+        if(!logged){
+            return msg;
+        }
+
+        let userId = logged.userId;
+
+        let savePath = Path.join(__dirname,"../../database/expose/users/",userId,"/images/articles");
+
+        let uploader = new Uploader(ctx);
+
+        let fileName = uploader.saveAs(savePath);
+
+        if(fileName){
+            let exposePath = Path.join("/users",userId,"/images/articles",fileName);
+
+            msg = {
+                message : '图片上传成功!',
+                success : 1,
+                url : exposePath
+            }
+        }
+
+        return msg;
+
     }
 
 }

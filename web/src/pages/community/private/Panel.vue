@@ -28,14 +28,14 @@
                                     <div class="info-row">
                                         <ul class="action-list">
                                             <li>
-                                                <object><a class="btn diy-btn" v-bind:class="{active: item.ifSubscribed}" href="javascript:void(0)"
-                                                           onclick="doAsk(addLike,'180f2930-46c1-11e9-b5a4-db5a96966b9e')"><i class="fa fa-heart"></i><span>{{item.likeNum}}</span></a>
+                                                <object><a class="btn diy-btn" v-bind:class="{active: item.ifSubscribed}" href="javascript:void(0)" @click="addLike(item)"><i class="fa fa-heart"></i><span>{{item.likeNum}}</span></a>
                                                 </object>
                                             </li>
                                             <li>
-                                                <object><a class="btn diy-btn"
-                                                           href="/community/post/180f2930-46c1-11e9-b5a4-db5a96966b9e#Comment"><i
-                                                        class="fa fa-comment"></i>{{item.replyNum}}</a></object>
+                                                <object>
+                                                    <a class="btn diy-btn" v-bind:href="'/community/post/'+ item.id +'#Comment'">
+                                                        <i class="fa fa-comment"></i>{{item.replyNum}}</a>
+                                                </object>
                                             </li>
                                         </ul>
                                     </div>
@@ -170,6 +170,34 @@
                         }
                     }
                 });
+            },
+
+            addLike(item){
+                let postId = item.id;
+
+                this.$axios({
+                    method : "post",
+                    url : "/community/addLike",
+                    data : {
+                        postId : postId
+                    }
+                }).then(value =>{
+                    if(value.data.success === 0){
+                        return;
+                    }
+
+                    if(value.data.status === 1){
+                        item.ifSubscribed = true;
+                        item.likeNum += 1;
+                    }else if(value.data.status === 0){
+                        item.ifSubscribed = false;
+                        item.likeNum -= 1;
+                    }
+
+                }).catch(err => {
+                    console.error(err);
+                })
+
             }
 
         },

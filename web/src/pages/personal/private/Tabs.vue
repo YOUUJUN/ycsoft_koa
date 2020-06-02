@@ -12,13 +12,13 @@
                         </div>
 
                         <div class="operation-box" v-if="owner">
-                            <object><a href="\editor\2137c100-44a7-11e9-a0ef-8d85f4e44512" class="btn" style="margin-right:10px;">修改</a></object>
+                            <object><a href="javascript:void(0);" class="btn" style="margin-right:10px;" @click="modifyArticle(item.id)">修改</a></object>
                             <object><a href="javascript:void(0);" class="btn" @click="delArticle(index,item.id)">删除</a></object>
                         </div>
 
                         <div class="operation-box" v-else>
                             <ul class="action-list">
-                                <li><object><a class="btn diy-btn" href="javascript:void(0)" onclick="doAsk(addLike,'2137c100-44a7-11e9-a0ef-8d85f4e44512',this)" data-v="2137c100-44a7-11e9-a0ef-8d85f4e44512"><i class="fa fa-heart"></i><span data-v="2137c100-44a7-11e9-a0ef-8d85f4e44512">{{item.likeNum}}</span></a></object></li>
+                                <li><object><a class="btn diy-btn" href="javascript:void(0)" @click="addLike(item)"><i class="fa fa-heart"></i><span>{{item.likeNum}}</span></a></object></li>
                                 <li><object><a class="btn diy-btn" href="javascript:void(0);"><i class="fa fa-comment"></i>{{item.commentNum}}</a></object></li>
                             </ul>
                         </div>
@@ -213,6 +213,34 @@
                 })
             },
 
+            addLike(item){
+                let postId = item.id;
+
+                this.$axios({
+                    method : "post",
+                    url : "/community/addLike",
+                    data : {
+                        postId : postId
+                    }
+                }).then(value =>{
+                    if(value.data.success === 0){
+                        return;
+                    }
+
+                    if(value.data.status === 1){
+                        item.ifSubscribed = true;
+                        item.likeNum += 1;
+                    }else if(value.data.status === 0){
+                        item.ifSubscribed = false;
+                        item.likeNum -= 1;
+                    }
+
+                }).catch(err => {
+                    console.error(err);
+                })
+
+            },
+
             getTimeDif (timer){
                 return this.$common.getTimeDif(timer);
             },
@@ -244,6 +272,38 @@
                 }).catch(err => {
                     console.error(err);
                 });
+            },
+
+
+            modifyArticle(postId){
+
+                this.$axios({
+                    method : "post",
+                    url : "/editor/modifyArticle",
+                    data : {
+                        postId : postId
+                    }
+                }).then(value=>{
+                    if(value.data.status === 0){
+                        this.$notify({
+                            title: '修改失败!',
+                            message : value.data.message,
+                            type: 'error'
+                        });
+                    }else if(value.data.status === 1){
+                        this.$notify({
+                            message: '文章退回修改成功!跳转编辑页面...',
+                            type: 'success'
+                        });
+                        setTimeout(function () {
+                            location.href = "/editor/article/drafts/".concat(value.data.data);
+                        },800);
+                    }
+
+                }).catch(err => {
+                    console.error(err);
+                })
+
             }
 
         },

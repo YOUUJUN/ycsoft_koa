@@ -47,13 +47,13 @@
 <!--                                <dd><a onclick="users.logout();">退出登录</a></dd>-->
 <!--                            </dl>-->
 
-                            <el-dropdown trigger="click">
+                            <el-dropdown trigger="click" @command="launch">
                                 <el-button type="primary" size="mini">
                                     发起<i class="el-icon-arrow-down el-icon--right"></i>
                                 </el-button>
                                 <el-dropdown-menu slot="dropdown">
-                                    <el-dropdown-item>文章</el-dropdown-item>
-                                    <el-dropdown-item>文档</el-dropdown-item>
+                                    <el-dropdown-item v-bind:command="'article'">文章</el-dropdown-item>
+                                    <el-dropdown-item v-bind:command="'doc'">文档</el-dropdown-item>
                                 </el-dropdown-menu>
                             </el-dropdown>
 
@@ -156,6 +156,12 @@
             syncUserInfo (){
                 this.userData = this.$common.getUserInfo();
                 console.log("this.userData",this.userData);
+            },
+
+            launch(command){
+                console.log(command);
+                let url = "/editor/"+command+"/drafts/new";
+                location.href = url;
             }
 
         },

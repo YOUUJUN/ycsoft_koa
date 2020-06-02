@@ -5416,3 +5416,606 @@ SyntaxError: Unexpected strict mode reserved word
     at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
     at require (internal/modules/cjs/helpers.js:74:18)
     at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+getEditorInfo failed TypeError: Cannot read property 'post_title' of undefined
+    at Editor.getEditorInfo (F:\ycsoft_koa_new\utils\pages\editor.js:507:47)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async getEditorInfo (F:\ycsoft_koa_new\controler\home.js:792:28)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+F:\ycsoft_koa_new\utils\pages\community.js:218
+            articleView: articleView
+                       ^
+
+SyntaxError: Unexpected token ':'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:218
+            articleView: articleView
+                       ^
+
+SyntaxError: Unexpected token ':'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:218
+            articleView: articleView
+                       ^
+
+SyntaxError: Unexpected token ':'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:218
+            articleView: articleView
+                       ^
+
+SyntaxError: Unexpected token ':'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+TypeError: Cannot read property 'article_views' of undefined
+    at Object.getArticleViews (F:\ycsoft_koa_new\utils\pages\community.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.getArticleInfo (F:\ycsoft_koa_new\utils\pages\community.js:200:27)
+    at async Editor.modifyArticle (F:\ycsoft_koa_new\utils\pages\editor.js:668:19)
+    at async modifyArticle (F:\ycsoft_koa_new\controler\home.js:902:27)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+TypeError: Cannot read property 'article_views' of undefined
+    at Object.getArticleViews (F:\ycsoft_koa_new\utils\pages\community.js:252:68)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.getArticleInfo (F:\ycsoft_koa_new\utils\pages\community.js:200:27)
+    at async Editor.modifyArticle (F:\ycsoft_koa_new\utils\pages\editor.js:668:19)
+    at async modifyArticle (F:\ycsoft_koa_new\controler\home.js:902:27)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+TypeError: Cannot read property 'article_views' of undefined
+    at Object.getArticleViews (F:\ycsoft_koa_new\utils\pages\community.js:254:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.getArticleInfo (F:\ycsoft_koa_new\utils\pages\community.js:200:27)
+    at async Editor.modifyArticle (F:\ycsoft_koa_new\utils\pages\editor.js:668:19)
+    at async modifyArticle (F:\ycsoft_koa_new\controler\home.js:902:27)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+TypeError: Cannot read property 'title' of undefined
+    at Editor.modifyArticle (F:\ycsoft_koa_new\utils\pages\editor.js:678:36)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async modifyArticle (F:\ycsoft_koa_new\controler\home.js:902:27)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+TypeError: Cannot read property 'title' of undefined
+    at Editor.modifyArticle (F:\ycsoft_koa_new\utils\pages\editor.js:680:36)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async modifyArticle (F:\ycsoft_koa_new\controler\home.js:902:27)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+TypeError: Cannot read property 'title' of undefined
+    at Editor.modifyArticle (F:\ycsoft_koa_new\utils\pages\editor.js:674:36)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async modifyArticle (F:\ycsoft_koa_new\controler\home.js:902:27)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+TypeError: Cannot read property 'title' of undefined
+    at Editor.modifyArticle (F:\ycsoft_koa_new\utils\pages\editor.js:674:36)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async modifyArticle (F:\ycsoft_koa_new\controler\home.js:902:27)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+TypeError: Cannot read property 'title' of undefined
+    at Editor.modifyArticle (F:\ycsoft_koa_new\utils\pages\editor.js:675:36)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async modifyArticle (F:\ycsoft_koa_new\controler\home.js:902:27)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+ReferenceError: content is not defined
+    at Editor.modifyArticle (F:\ycsoft_koa_new\utils\pages\editor.js:677:28)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async modifyArticle (F:\ycsoft_koa_new\controler\home.js:902:27)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+ReferenceError: content is not defined
+    at Editor.modifyArticle (F:\ycsoft_koa_new\utils\pages\editor.js:677:28)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async modifyArticle (F:\ycsoft_koa_new\controler\home.js:902:27)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+ReferenceError: content is not defined
+    at Editor.modifyArticle (F:\ycsoft_koa_new\utils\pages\editor.js:678:28)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async modifyArticle (F:\ycsoft_koa_new\controler\home.js:902:27)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+TypeError: topicName.toLowerCase is not a function
+    at Editor.getTopicId (F:\ycsoft_koa_new\utils\pages\editor.js:395:36)
+    at Editor.newDrafts (F:\ycsoft_koa_new\utils\pages\editor.js:209:42)
+    at Editor.modifyArticle (F:\ycsoft_koa_new\utils\pages\editor.js:680:41)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async modifyArticle (F:\ycsoft_koa_new\controler\home.js:902:27)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+TypeError: topicName.toLowerCase is not a function
+    at Editor.getTopicId (F:\ycsoft_koa_new\utils\pages\editor.js:396:36)
+    at Editor.newDrafts (F:\ycsoft_koa_new\utils\pages\editor.js:209:42)
+    at Editor.modifyArticle (F:\ycsoft_koa_new\utils\pages\editor.js:681:41)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async modifyArticle (F:\ycsoft_koa_new\controler\home.js:902:27)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+getEditorInfo failed TypeError: Cannot read property 'post_title' of undefined
+    at Editor.getEditorInfo (F:\ycsoft_koa_new\utils\pages\editor.js:487:43)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async getEditorInfo (F:\ycsoft_koa_new\controler\home.js:792:28)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+TypeError: Cannot read property '0' of undefined
+    at Uploader.saveAs (F:\ycsoft_koa_new\utils\lib\uploader.js:17:37)
+    at Editor.editorUploadimg (F:\ycsoft_koa_new\utils\pages\editor.js:785:33)
+    at editorUploadimg (F:\ycsoft_koa_new\controler\home.js:923:45)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at F:\ycsoft_koa_new\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at F:\ycsoft_koa_new\app.js:46:9
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:13)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+    at filter (F:\ycsoft_koa_new\node_modules\koa-json\index.js:25:12)
+    at dispatch (F:\ycsoft_koa_new\node_modules\koa-compose\index.js:42:32)
+server error [Error: ENOENT: no such file or directory, open 'F:\ycsoft_koa_new\vue-pages\error.html'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'F:\\ycsoft_koa_new\\vue-pages\\error.html'
+} {
+  request: {
+    method: 'GET',
+    url: '/community/post/1acb7b10-a214-11ea-a804-a7a6ff068d80',
+    header: {
+      host: 'localhost:3000',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:68.0) Gecko/20100101 Firefox/68.0',
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'accept-language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+      'accept-encoding': 'gzip, deflate',
+      referer: 'http://localhost:3000/community',
+      connection: 'keep-alive',
+      cookie: 'marscript=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjMiLCJuaWNrbmFtZSI6IjIiLCJ1c2VySWQiOiIzYjRiNDk1MC1hNDlhLTExZWEtOGE3OC1jMzJlNGIwM2JhMTciLCJpYXQiOjE1OTEwODAxNzIsImV4cCI6MTU5MTI1Mjk3MiwiaXNzIjoiWU9VSlVOIn0.59UGoB3GuK1ttwejKS74IN0BWOzrsRFmErC3svx7UR4',
+      'upgrade-insecure-requests': '1'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {
+      'access-control-allow-origin': 'http://localhost:8080',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, accesstoken',
+      'access-control-allow-credentials': 'true'
+    }
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/community/post/1acb7b10-a214-11ea-a804-a7a6ff068d80',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)
+F:\ycsoft_koa_new\utils\pages\community.js:626
+            data : "操作失败!";
+                          ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\controler\home.js:11:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at Module.Hook._require.Module.require (C:\Users\Administrator\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:70:39)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (F:\ycsoft_koa_new\middlewares\router.js:2:24)

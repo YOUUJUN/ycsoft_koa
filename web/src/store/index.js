@@ -50,13 +50,11 @@ export default new Vuex.Store({
 
     upDateNavigationIndex (state,payload){
       let naviArr = state.navigationList;
-
-      if(payload == "/personal" || payload == "/topics" || payload == "/setting" || payload == "/topicList" || payload == "/editor"){
+      if(payload == "/personal" || payload == "/topics" || payload == "/users" || payload == "/topicList" || payload == "/editor"){
         payload = "/community";
       }
 
       for(let item of naviArr){
-        console.log("payload",payload,item.href);
         if(payload == item.href){
           item.active = "nav-current";
         }

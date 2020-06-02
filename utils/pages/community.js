@@ -46,11 +46,11 @@ const community = {
 
         let start = (userConfig.searchIndex - 1) * 7;
 
-        let getListSql = "SELECT article.*,topic.topic_name,users.nickname,users.user_id,COUNT(user_like.id) AS nums FROM article LEFT JOIN topic ON article.topic_id = topic.topic_id LEFT JOIN users ON article.post_author = users.user_name LEFT JOIN user_like ON article.post_id = user_like.post_id GROUP BY article.post_date ORDER BY article.post_date DESC LIMIT ? OFFSET ?";
+        let getListSql = "SELECT article.*,topic.topic_name,users.nickname,users.user_id,COUNT(user_like.id) AS nums FROM article LEFT JOIN topic ON article.topic_id = topic.topic_id LEFT JOIN users ON article.post_author = users.user_id LEFT JOIN user_like ON article.post_id = user_like.post_id GROUP BY article.post_date ORDER BY article.post_date DESC LIMIT ? OFFSET ?";
         let getListParam = [7, start];
 
         if(userConfig.searchTopic){
-            getListSql = "SELECT article.*,topic.topic_name,users.nickname,users.user_id,COUNT(user_like.id) AS nums FROM article LEFT JOIN topic ON article.topic_id = topic.topic_id LEFT JOIN users ON article.post_author = users.user_name LEFT JOIN user_like ON article.post_id = user_like.post_id WHERE topic.topic_name = ? GROUP BY article.post_date ORDER BY article.post_date DESC LIMIT ? OFFSET ?";
+            getListSql = "SELECT article.*,topic.topic_name,users.nickname,users.user_id,COUNT(user_like.id) AS nums FROM article LEFT JOIN topic ON article.topic_id = topic.topic_id LEFT JOIN users ON article.post_author = users.user_id LEFT JOIN user_like ON article.post_id = user_like.post_id WHERE topic.topic_name = ? GROUP BY article.post_date ORDER BY article.post_date DESC LIMIT ? OFFSET ?";
             getListParam = [userConfig.searchTopic,7, start];
         }
 
@@ -190,7 +190,7 @@ const community = {
 
     async getArticleInfo(postId) {
 
-        let getArticleSql = "SELECT article.*,users.nickname,users.user_id,user_info.portrait,user_info.introduction FROM article RIGHT JOIN users ON article.post_author = users.user_name LEFT JOIN user_info ON users.user_id = user_info.user_id WHERE article.post_id = ?";
+        let getArticleSql = "SELECT article.*,users.nickname,users.user_name,users.user_id,user_info.portrait,user_info.introduction FROM article RIGHT JOIN users ON article.post_author = users.user_id LEFT JOIN user_info ON users.user_id = user_info.user_id WHERE article.post_id = ?";
         let getArticleParam = [postId];
 
         let msg = {}
@@ -205,7 +205,9 @@ const community = {
 
         msg = {
             url: fixHead.concat(results[0].user_id),
-            authorName: results[0].post_author,
+            postId : postId,
+            authorId : results[0].post_author,
+            authorName: results[0].user_name,
             author: results[0].nickname,
             authorPortrait: results[0].portrait,
             authorIntroduction: results[0].introduction,
@@ -215,7 +217,14 @@ const community = {
             articleView: articleView
         };
 
+        let getTopicNameSql = "SELECT topic_name FROM topic WHERE topic_id = ?";
+        let getTopicNameParams = [results[0].topic_id];
+        results = await query(getTopicNameSql,getTopicNameParams);
+
+        msg.topicName = results[0].topic_name;
+
         /*---读取该文章作者浏览量总数---*/
+        console.log("authorName ===============>",msg.authorName);
         let getUserViewsSql = "SELECT SUM(article_views) AS nums FROM article_watchs WHERE post_author = ?";
         let getUserViewsParam = [msg.authorName];
 
@@ -223,15 +232,15 @@ const community = {
         msg.userView = results[0].nums;
 
         /*---读取该文章作者被点赞总数---*/
-        let getUserLikeSql = "SELECT COUNT(*) AS nums,article.post_author FROM user_like LEFT JOIN article ON user_like.post_id = article.post_id WHERE article.post_author = ?";
-        let getUserLikeParam = [msg.authorName];
+        let getUserLikeSql = "SELECT COUNT(*) AS nums FROM user_like LEFT JOIN article ON user_like.post_id = article.post_id WHERE article.post_author = ?";
+        let getUserLikeParam = [msg.authorId];
 
         results = await query(getUserLikeSql, getUserLikeParam);
         msg.userLike = results[0].nums;
 
         /*---读取该文章作者被关注的总数---*/
         let getBeWatchedNumSql = "SELECT COUNT(*) AS nums,users.user_name FROM user_follow LEFT JOIN users ON user_follow.author_id = users.user_id WHERE users.user_name = ?";
-        let getBeWatchedNumParam = [msg.authorName];
+        let getBeWatchedNumParam = [msg.authorId];
 
         results = await query(getBeWatchedNumSql, getBeWatchedNumParam);
 
@@ -241,13 +250,33 @@ const community = {
 
     },
 
+
+    /*---更新文章被浏览数---*/
+    async upDateArticleViews(postId){
+        let upDateViewsSql = "UPDATE article_watchs SET article_views = article_views + 1 WHERE post_id = ?";
+        let upDateViewsParam = [postId];
+
+        let results = await query(upDateViewsSql, upDateViewsParam);
+
+        console.log("hello??????=======>",results);
+
+        if (results.affectedRows == '1') {
+            console.log("+1");
+        }
+    },
+
+
+    /*---获取文章被浏览数---*/
     async getArticleViews(postId) {
         let getArticleViewsSql = "SELECT article_views FROM article_watchs WHERE post_id = ?";
         let getArticleViewsParam = [postId];
 
         let results = await query(getArticleViewsSql, getArticleViewsParam);
-
-        return results[0].article_views;
+        if(results[0]){
+            return results[0].article_views;
+        }else{
+            return 0;
+        }
     },
 
 
@@ -327,7 +356,7 @@ const community = {
 
         let commentId = uuid.v1();
 
-        let getObjectIdSql = "SELECT users.user_id FROM article LEFT JOIN users ON users.user_name = article.post_author WHERE article.post_id = ? ";
+        let getObjectIdSql = "SELECT users.user_id FROM article LEFT JOIN users ON users.user_id = article.post_author WHERE article.post_id = ? ";
         let getObjectIdParam = [postId];
 
         let results = await query(getObjectIdSql, getObjectIdParam);
@@ -398,14 +427,14 @@ const community = {
         let userId = body.userId;
         let logged = ctx.state.logged;
 
-        let getArticleSql = "SELECT article.*,topic.topic_name,users.nickname,users.user_id,COUNT(user_like.id) AS nums FROM article LEFT JOIN topic ON article.topic_id = topic.topic_id LEFT JOIN users ON article.post_author = users.user_name LEFT JOIN user_like ON article.post_id = user_like.post_id WHERE users.user_id = ? GROUP BY article.post_date ORDER BY article.post_date DESC";
+        let getArticleSql = "SELECT article.*,topic.topic_name,users.nickname,users.user_id,COUNT(user_like.id) AS nums FROM article LEFT JOIN topic ON article.topic_id = topic.topic_id LEFT JOIN users ON article.post_author = users.user_id LEFT JOIN user_like ON article.post_id = user_like.post_id WHERE users.user_id = ? GROUP BY article.post_date ORDER BY article.post_date DESC";
         let getArticleParam = [userId];
         let results = await query(getArticleSql, getArticleParam);
 
-        let getCommentSql = "SELECT COUNT(article_comment.id) AS nums FROM article LEFT JOIN article_comment ON article.post_id = article_comment.post_id LEFT JOIN users ON article.post_author = users.user_name WHERE users.user_id = ? GROUP BY article.post_date ORDER BY article.post_date DESC";
+        let getCommentSql = "SELECT COUNT(article_comment.id) AS nums FROM article LEFT JOIN article_comment ON article.post_id = article_comment.post_id LEFT JOIN users ON article.post_author = users.user_id WHERE users.user_id = ? GROUP BY article.post_date ORDER BY article.post_date DESC";
         let results2 = await query(getCommentSql, getArticleParam);
 
-        let getReCommentSql = "SELECT COUNT(article_recomment.id) AS nums FROM article LEFT JOIN article_recomment ON article.post_id = article_recomment.post_id LEFT JOIN users ON article.post_author = users.user_name WHERE users.user_id = ? GROUP BY article.post_date ORDER BY article.post_date DESC";
+        let getReCommentSql = "SELECT COUNT(article_recomment.id) AS nums FROM article LEFT JOIN article_recomment ON article.post_id = article_recomment.post_id LEFT JOIN users ON article.post_author = users.user_id WHERE users.user_id = ? GROUP BY article.post_date ORDER BY article.post_date DESC";
         let results3 = await query(getReCommentSql, getArticleParam);
 
 
@@ -511,13 +540,14 @@ const community = {
         let results = await query(checkIfConcernSql, checkIfConcernParam);
 
         if (results[0].nums == 0) {
-            return false;
+            return 0;
         } else {
-            return true;
+            return 1;
         }
 
     },
 
+    /*--添加关注者模块--*/
     async addFollow(ctx) {
         let msg = {
             data: "操作失败!",
@@ -588,6 +618,61 @@ const community = {
         return msg;
 
     },
+
+    /*--添加文章喜爱模块--*/
+    async addLike(ctx){
+        let msg = {
+            status : 0,
+            success : 0,
+            data : "操作失败!"
+        }
+        let logged = ctx.state.logged;
+        if(!logged){
+            return msg;
+        }
+        let body = ctx.request.body;
+        let username = logged.username;
+        let postId = body.postId;
+
+
+        let checkLikeSql = "SELECT COUNT(*) AS nums FROM user_like WHERE user_name = ? AND post_id = ?";
+        let checkLikeParam = [username,postId];
+
+        let results = await query(checkLikeSql, checkLikeParam);
+
+        if(results[0].nums === 0){
+            let upDateLikeSql = "INSERT user_like(id,user_name,post_id) VALUE(0,?,?)";
+            let upDateLikeParam = [username,postId];
+
+            results = await query(upDateLikeSql, upDateLikeParam);
+            if (results.affectedRows == '1') {
+                msg = {
+                    status: 1,
+                    success : 1,
+                    data: "点赞文章成功"
+                }
+            }
+
+
+        }else if(results[0].nums === 1){
+
+            let delLikeSql = "DELETE FROM user_like WHERE user_name = ? AND post_id = ?";
+            let delLikeParam = [username,postId];
+
+            results = await query(delLikeSql, delLikeParam);
+            if (results.affectedRows == '1') {
+                msg = {
+                    status: 0,
+                    success : 1,
+                    data: "取消点赞文章成功"
+                }
+            }
+        }
+
+        return msg;
+
+    },
+
 
     async getFocusTopic(ctx) {
         let body = ctx.request.body;

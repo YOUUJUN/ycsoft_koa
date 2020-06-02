@@ -43,6 +43,7 @@ module.exports = (app) => {
     router.post('/community/addComment',homeController.addComment);
     router.post('/community/addReComment',homeController.addReComment);
     router.post('/community/addFocus',homeController.addFocus);
+    router.post('/community/addLike',homeController.addLike);
     router.post('/community/getTopicInfo',homeController.getTopicInfo);
 
     /*--page- personal--*/
@@ -75,6 +76,8 @@ module.exports = (app) => {
     router.post('/editor/getDraftsList',homeController.getDraftsList);
     router.post('/editor/delArticle',homeController.delArticle);
     router.post('/editor/delDoc',homeController.delDoc);
+    router.post('/editor/modifyArticle',homeController.modifyArticle);
+    router.post('/editor/uploadimg',uploader,homeController.editorUploadimg);
 
 
     router.post('/verifyToken',homeController.verifyToken);

@@ -10,7 +10,7 @@
                 <div class="user-info">
 
                     <ul class="user-info-list">
-                        <li><a v-bind:href="userData.url" class="user-name">柯涵</a></li>
+                        <li><a v-bind:href="userData.url" class="user-name">{{userData.nickname}}</a></li>
                         <li><span class="user-introduction">{{userData.introduction}}</span></li>
                     </ul>
 
@@ -27,7 +27,7 @@
                 </li>
                 <li>
                     <a v-bind:href="userData.url.concat('#concern')" href="/personal/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410#concern">
-                        <div class="article">关注</div>
+                        <div class="article">被关注</div>
                         <div class="count">{{userData.beWatchedNum}}</div>
                     </a>
                 </li>

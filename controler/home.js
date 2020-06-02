@@ -125,13 +125,13 @@ module.exports = {
         let postId = Path.basename(ctx.url);
 
         let results = await page_community.getArticleInfo(postId);
-        console.log("results",results);
         if(JSON.stringify(results) == "{}"){
 
             ctx.body = await common.readPages('error.html');
 
             await next();
         }else {
+            await page_community.upDateArticleViews(postId);
             ctx.body = await common.readPages('article.html');
             await next();
         }
@@ -557,6 +557,7 @@ module.exports = {
 
     },
 
+    /*--添加关注者模块--*/
     async addFollow(ctx,next){
         let msg = {
             status: 0,
@@ -574,6 +575,26 @@ module.exports = {
         }
 
         ctx.body = msg;
+    },
+
+    /*--添加文章喜爱模块--*/
+    async addLike(ctx, next){
+        let msg = {
+            success : 0,
+            status: 0,
+            data: "操作失败"
+        }
+
+        try {
+            let results = await page_community.addLike(ctx);
+            msg = results;
+
+        } catch (e) {
+            console.error("addLike failed", e)
+        }
+
+        ctx.body = msg;
+
     },
 
     async getFocusTopic(ctx,next){
@@ -598,18 +619,11 @@ module.exports = {
     },
 
     async checkUserAuthorBind(ctx, next){
-
-        let msg = {
-            status: 0,
-            data: ""
-        }
+        msg = 0;
 
         try {
             let results = await page_community.checkUserAuthorBind(ctx);
-
-            msg.status = 1;
-            msg.data = results;
-
+            msg = results;
         } catch (e) {
             console.error("checkUserAuthorBind failed", e)
         }
@@ -889,6 +903,47 @@ module.exports = {
         }
 
         ctx.body = msg;
+    },
+
+    /*---修改文章---*/
+    async modifyArticle(ctx, next){
+        let msg = {
+            status : 0,
+            message : "修改失败!"
+        };
+
+        try {
+            let results = await page_editor.modifyArticle(ctx);
+            msg.status = results.status;
+            msg.message = results.message;
+            msg.data = results.data;
+
+        } catch (e) {
+            console.error(e);
+        }
+
+        ctx.body = msg;
+    },
+
+    /*---编辑器上传照片---*/
+    async editorUploadimg(ctx, next){
+        let msg = {
+            message : '上传图片失败!',
+            success : 0,
+            url : ""
+        };
+
+        try {
+            let results = await page_editor.editorUploadimg(ctx);
+
+            msg = results;
+
+        } catch (e) {
+            console.error(e);
+        }
+
+        ctx.body = msg;
+
     }
 };
 

@@ -60,14 +60,18 @@
                         userId : this.$common.getHash()
                     }
                 }).then(res => {
-                    this.userFollowed = res.data.data;
+                    if(res.data === 1){
+                        this.userFollowed = true;
+                    }else if(res.data === 0){
+                        this.userFollowed = false;
+                    }
                 }).catch(err => {
                     console.error(err);
                 })
             },
 
             addFollow(item){
-                item.id = item.postId;
+                item.id = item.userId;
                 this.$emit("addFollow",item);
                 this.checkUserBind();
             }

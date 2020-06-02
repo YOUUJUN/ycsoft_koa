@@ -93,7 +93,10 @@
                         userId : item.id
                     }
                 }).then(res => {
-                    alert(res.data.data);
+                    this.$notify({
+                        message: res.data.data,
+                        type: 'success'
+                    });
                     if(res.data.status == '1'){
                         item.ifFollowed = true;
                     }else if(res.data.status == '2'){
