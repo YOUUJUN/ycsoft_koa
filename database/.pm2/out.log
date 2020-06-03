@@ -62817,3 +62817,250 @@ result-------------- {
 ---------------------连接池连接数:------------------- 0
 ---------------------连接池连接数:------------------- 0
 ---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 17ms 27b
+ok
+  <-- POST /community/getHotList
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 4ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 4ms 0b
+  --> POST /community/getHotList 200 240ms 125b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 2ms 27b
+ok
+  <-- POST /community/getHotList
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+  --> POST /community/getHotList 200 13ms 125b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+ok
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 4ms 125b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 0ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 9ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591166839,
+  exp: 1591339639,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 28ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 4ms 0b
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+  <-- POST /community/getHotList
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 209ms 125b
+  --> POST /community/getTopicList 200 211ms 226b
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 1,570ms 678b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591166839,
+  exp: 1591339639,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 28ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591166839,
+  exp: 1591339639,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 16ms 26b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591166839,
+  exp: 1591339639,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 20ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591166839,
+  exp: 1591339639,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 29ms 26b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 1ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591166839,
+  exp: 1591339639,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 5ms 26b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591166839,
+  exp: 1591339639,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 6ms 26b
+  <-- OPTIONS /logout
+OPTIONS /logout - 0ms
+  --> OPTIONS /logout 200 2ms 0b
+  <-- POST /logout
+  --> POST /logout 200 5ms 15b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 2ms 27b
+  <-- OPTIONS /login
+OPTIONS /login - 0ms
+  --> OPTIONS /login 200 3ms 0b
+  <-- POST /login
+result1 [
+  RowDataPacket {
+    id: 13,
+    user_id: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    portrait: '/user-images/0.1436446423680504.jpg',
+    job: 'WEB前端开发工程师',
+    introduction: 'CSGO',
+    blog_url: ''
+  }
+]
+  --> POST /login 200 163ms 639b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 4ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591168435,
+  exp: 1591341235,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 1ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 9ms 2b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591168435,
+  exp: 1591341235,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 2ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 8ms 44b

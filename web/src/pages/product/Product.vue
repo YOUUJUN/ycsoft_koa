@@ -147,10 +147,22 @@
                     }
                 }
                 return finalData;
+            },
+
+            getUserLogStatus (){
+                this.$axios({
+                    method : "post",
+                    url : "verifyToken"
+                }).then(value =>{
+                    console.log("value ====-====",value);
+                    this.$store.commit("changeLogStatus",value.data.logged);
+                }).catch(err => {
+                    console.log(err);
+                })
             }
         },
         created () {
-            console.log("$",$);
+            this.getUserLogStatus();
         }
     };
 </script>

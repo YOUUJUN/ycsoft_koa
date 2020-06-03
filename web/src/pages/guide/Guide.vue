@@ -44,10 +44,22 @@
                 }).catch(err => {
                     console.log(err);
                 })
+            },
+
+            getUserLogStatus (){
+                this.$axios({
+                    method : "post",
+                    url : "verifyToken"
+                }).then(value =>{
+                    this.$store.commit("changeLogStatus",value.data.logged);
+                }).catch(err => {
+                    console.log(err);
+                })
             }
         },
         created() {
             this.getDocNavigation();
+            this.getUserLogStatus();
         },
         mounted() {
             this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
