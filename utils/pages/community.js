@@ -457,7 +457,7 @@ const community = {
             let subscribeResults = await community.getUserIfSubscribed(logged);
 
             msg.forEach(function (item, index) {
-                if (subscribeResults.includes(item.post_id)) {
+                if (subscribeResults.includes(item.id)) {
                     msg[index].ifSubscribed = true;
                 } else {
                     msg[index].ifSubscribed = false;

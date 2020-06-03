@@ -18,8 +18,8 @@
 
                         <div class="operation-box" v-else>
                             <ul class="action-list">
-                                <li><object><a class="btn diy-btn" href="javascript:void(0)" @click="addLike(item)"><i class="fa fa-heart"></i><span>{{item.likeNum}}</span></a></object></li>
-                                <li><object><a class="btn diy-btn" href="javascript:void(0);"><i class="fa fa-comment"></i>{{item.commentNum}}</a></object></li>
+                                <li><object><a class="btn diy-btn" v-bind:class="{active: item.ifSubscribed}" href="javascript:void(0)" @click="addLike(item)"><i class="fa fa-heart"></i><span>{{item.likeNum}}</span></a></object></li>
+                                <li><object><a class="btn diy-btn" v-bind:href="'/community/post/'+ item.id +'#Comment'"><i class="fa fa-comment"></i>{{item.commentNum}}</a></object></li>
                             </ul>
                         </div>
 
@@ -215,6 +215,7 @@
 
             addLike(item){
                 let postId = item.id;
+                console.log("item====>",item);
 
                 this.$axios({
                     method : "post",

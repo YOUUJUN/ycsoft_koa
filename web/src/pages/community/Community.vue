@@ -3,7 +3,7 @@
 
         <header>
 
-            <navigation v-bind:list="navigationList"></navigation>
+            <navigation v-bind:list="navigationList" ref="navigation"></navigation>
 
         </header>
 
@@ -22,7 +22,7 @@
 
                 <div class="area cols-3">
 
-                    <user-panel></user-panel>
+                    <user-panel @openLoginPanel="openLoginPanel"></user-panel>
 
                     <topics></topics>
 
@@ -73,6 +73,10 @@
             getUserConfig(){
 
 
+            },
+
+            openLoginPanel(){
+                this.$refs["navigation"].login();
             },
 
             getUserLogStatus (){

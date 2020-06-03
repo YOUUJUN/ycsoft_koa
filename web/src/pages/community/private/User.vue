@@ -52,32 +52,32 @@
                                 <span class="input-icon-left">
                                     <i class="fa fa-user-circle"></i>
                                 </span>
-                    <input name="nickname" placeholder="给自己取一个昵称" type="text">
+                    <input name="nickname" placeholder="给自己取一个昵称" type="text" v-model="registerData.nickname">
                 </div>
                 <div class="field-text">
                                 <span class="input-icon-left">
                                     <i class="fa fa-envelope"></i>
                                 </span>
-                    <input name="email" placeholder="输入你的邮箱" type="text">
+                    <input name="email" placeholder="输入你的邮箱" type="text" v-model="registerData.email">
                 </div>
 
                 <div class="field-text">
                                 <span class="input-icon-left">
                                     <i class="fa fa-lock"></i>
                                 </span>
-                    <input name="password" placeholder="设置你的密码" type="text">
+                    <input name="password" placeholder="设置你的密码" type="password" v-model="registerData.password">
                 </div>
 
                 <div class="field-text">
                                 <span class="input-icon-left">
                                     <i class="fa fa-lock"></i>
                                 </span>
-                    <input name="re-password" placeholder="确认你的密码" type="text">
+                    <input name="re-password" placeholder="确认你的密码" type="password" v-model="registerData.repassword">
                 </div>
 
                 <div class="register-box-foot">
                     <div class="show-msg"></div>
-                    <button class="btn" onclick="rightbar.register();">注册</button>
+                    <button class="btn" @click="register">注册</button>
                 </div>
 
             </div>
@@ -94,7 +94,8 @@
         name: "User",
         data (){
             return {
-                userData : {}
+                userData : {},
+                registerData : {}
             }
         },
 
@@ -103,6 +104,57 @@
                 let userData = window.localStorage.getItem("userData");
                 this.userData = JSON.parse(userData);
                 console.log("userData",this.userData);
+            },
+
+            register (){
+                if(this.registerChecker()){
+                    this.$axios({
+                        url : "/register",
+                        method : "POST",
+                        data : this.registerData
+                    }).then(value => {
+                        console.log(value);
+                        this.warn = value.data.message;
+                        if(value.data.status == 0){
+                            this.$notify({
+                                title: '注册失败!',
+                                type: 'success'
+                            });
+                        }else if(value.data.status == 1){
+                            this.$notify({
+                                title: '注册成功!',
+                                type: 'success'
+                            });
+                            this.$emit("openLoginPanel");
+                        }
+                    }).catch(err => {
+                        console.log(err);
+                    })
+                }
+
+            },
+            registerChecker(){
+                if(!this.registerData.nickname){
+                    this.warn = "请填写您的昵称!";
+                    return false;
+                }
+                if(!this.registerData.email){
+                    this.warn = "请输入您的邮箱!";
+                    return false;
+                }
+
+                if(!this.registerData.password){
+                    this.warn = "请输入密码!";
+                    return false;
+                }
+
+                if(this.registerData.password !== this.registerData.repassword){
+                    this.warn = "俩次密码输入不相同";
+                    return false;
+                }
+
+                this.warn = "";
+                return true;
             }
         },
 
