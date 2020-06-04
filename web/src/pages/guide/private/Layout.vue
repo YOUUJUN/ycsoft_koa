@@ -3,13 +3,13 @@
     <div class="container-fluid select-container">
         <div class="area cols-md-3 cols-sm-12 cols-xs-12 left-bar">
             <div class="menu-content"></div>
-            <div class="menu_part" v-for="item in barlist">
+            <div class="menu_part" v-for="(item,index) in barlist">
                 <div class="menu-title">
-                    <span data-name="category">{{item.category}}</span><i class="fa fa-angle-double-down"></i>
+                    <span data-name="category">{{index}}</span><i class="fa fa-angle-double-down"></i>
                 </div>
-                <ul class="menu-list" style="display: block;">
-                    <li class="list-item">
-                        <a v-bind:href="'#'.concat(item.title)" v-on:click="openDoc(item.id)" v-bind:title="item.title">{{item.title}}</a>
+                <ul class="menu-list" style="display: block;" ref="doc-navi">
+                    <li class="list-item" v-for="son of item">
+                        <a v-bind:href="'#'.concat(son.title)" v-on:click="openDoc(son.id)" v-bind:title="son.title">{{son.title}}</a>
                     </li>
                 </ul>
             </div>
@@ -65,8 +65,19 @@
                 })
             }
         },
+
+        computed :{
+
+        },
+
         mounted() {
-            this.openDoc("35221d30-334c-11e9-9e17-cb221046b10c");
+            this.$nextTick(()=>{
+                for(let item in this.barlist){
+                    let hash = this.barlist[item][0].id;
+                    this.openDoc(hash);
+                    return;
+                }
+            });
         }
     }
 </script>

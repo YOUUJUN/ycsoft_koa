@@ -63064,3 +63064,4778 @@ OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
   <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
 hello
   --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 8ms 44b
+  <-- OPTIONS /logout
+OPTIONS /logout - 0ms
+  --> OPTIONS /logout 200 2ms 0b
+  <-- POST /logout
+  --> POST /logout 200 1ms 15b
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 6ms 2b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 7ms 44b
+  <-- OPTIONS /login
+OPTIONS /login - 0ms
+  --> OPTIONS /login 200 1ms 0b
+  <-- POST /login
+result1 [
+  RowDataPacket {
+    id: 12,
+    user_id: 'f9961040-a4a2-11ea-b7ad-435b01e06adf',
+    portrait: '/user-images/0.1436446423680504.jpg',
+    job: 'CSGO职业哥',
+    introduction: 'freaking cat ',
+    blog_url: ''
+  }
+]
+  --> POST /login 200 25ms 657b
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 2ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 9ms 2b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '824000803@qq.com',
+  nickname: '柯涵',
+  userId: 'f9961040-a4a2-11ea-b7ad-435b01e06adf',
+  iat: 1591168518,
+  exp: 1591341318,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 5ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 7ms 44b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '824000803@qq.com',
+  nickname: '柯涵',
+  userId: 'f9961040-a4a2-11ea-b7ad-435b01e06adf',
+  iat: 1591168518,
+  exp: 1591341318,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 7ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 1ms 0b
+ok
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 4ms 2b
+别问，问就验证没通过
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 1ms
+  --> OPTIONS /editor/draftsStorage 200 3ms 0b
+ok
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '', title: '', topic: '' }
+  --> POST /editor/draftsStorage 200 19ms 85b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '824000803@qq.com',
+  nickname: '柯涵',
+  userId: 'f9961040-a4a2-11ea-b7ad-435b01e06adf',
+  iat: 1591168518,
+  exp: 1591341318,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 5ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+ok
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 4ms 125b
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > []
+  --> POST /community/getArticleList 200 26ms 680b
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 8ms 227b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /login
+OPTIONS /login - 0ms
+  --> OPTIONS /login 200 17ms 0b
+  <-- OPTIONS /login
+OPTIONS /login - 0ms
+  --> OPTIONS /login 200 6ms 0b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 251ms 68b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '824000803@qq.com',
+  nickname: '柯涵',
+  userId: 'f9961040-a4a2-11ea-b7ad-435b01e06adf',
+  iat: 1591168518,
+  exp: 1591341318,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 5ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 0ms 0b
+ok
+  <-- POST /community/getHotList
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+  --> POST /community/getHotList 200 5ms 125b
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 25ms 227b
+arr === > []
+  --> POST /community/getArticleList 200 32ms 680b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '824000803@qq.com',
+  nickname: '柯涵',
+  userId: 'f9961040-a4a2-11ea-b7ad-435b01e06adf',
+  iat: 1591168518,
+  exp: 1591341318,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+ok
+  <-- POST /community/getTopicList
+ok
+  <-- POST /community/getHotList
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getTopicList 200 11ms 227b
+  --> POST /community/getHotList 200 32ms 125b
+arr === > []
+  --> POST /community/getArticleList 200 31ms 680b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '824000803@qq.com',
+  nickname: '柯涵',
+  userId: 'f9961040-a4a2-11ea-b7ad-435b01e06adf',
+  iat: 1591168518,
+  exp: 1591341318,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 125b
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 6ms 227b
+arr === > []
+  --> POST /community/getArticleList 200 28ms 680b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '824000803@qq.com',
+  nickname: '柯涵',
+  userId: 'f9961040-a4a2-11ea-b7ad-435b01e06adf',
+  iat: 1591168518,
+  exp: 1591341318,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+ok
+  <-- POST /community/getHotList
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 7ms 125b
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getTopicList 200 17ms 227b
+arr === > []
+  --> POST /community/getArticleList 200 20ms 680b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '824000803@qq.com',
+  nickname: '柯涵',
+  userId: 'f9961040-a4a2-11ea-b7ad-435b01e06adf',
+  iat: 1591168518,
+  exp: 1591341318,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 1ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+  <-- POST /community/getHotList
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getHotList 200 6ms 125b
+arr === > []
+  --> POST /community/getArticleList 200 19ms 680b
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 227b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 18ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '824000803@qq.com',
+  nickname: '柯涵',
+  userId: 'f9961040-a4a2-11ea-b7ad-435b01e06adf',
+  iat: 1591168518,
+  exp: 1591341318,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 21ms 26b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '824000803@qq.com',
+  nickname: '柯涵',
+  userId: 'f9961040-a4a2-11ea-b7ad-435b01e06adf',
+  iat: 1591168518,
+  exp: 1591341318,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 22ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '824000803@qq.com',
+  nickname: '柯涵',
+  userId: 'f9961040-a4a2-11ea-b7ad-435b01e06adf',
+  iat: 1591168518,
+  exp: 1591341318,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 14ms 26b
+  <-- OPTIONS /logout
+OPTIONS /logout - 0ms
+  --> OPTIONS /logout 200 2ms 0b
+  <-- POST /logout
+  --> POST /logout 200 7ms 15b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 6ms 27b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 2ms 27b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 151ms 2b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 7ms 44b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 65ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 74ms 44b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 10ms 44b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 5ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 71ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 63ms 44b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 5ms 27b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 17ms 2b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 8ms 44b
+  <-- OPTIONS /login
+OPTIONS /login - 0ms
+  --> OPTIONS /login 200 4ms 0b
+  <-- POST /login
+result1 [
+  RowDataPacket {
+    id: 13,
+    user_id: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    portrait: '/user-images/0.1436446423680504.jpg',
+    job: 'WEB前端开发工程师',
+    introduction: 'CSGO',
+    blog_url: ''
+  }
+]
+  --> POST /login 200 68ms 639b
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 4ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 3ms 2b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 5ms 26b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 1ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 2ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 3ms 44b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+ok
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 5ms 2b
+别问，问就验证没通过
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 0ms 0b
+ok
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '', title: '这是我的第一篇平台文档', topic: '' }
+  --> POST /editor/draftsStorage 200 29ms 85b
+别问，问就验证没通过
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 1ms 0b
+ok
+  <-- POST /editor/draftsStorage
+content--------------------= { content: 'hello', title: '这是我的第一篇平台文档', topic: '' }
+options=============== {
+  type: 'doc',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  postId: '6e243890-a630-11ea-a32d-4f9af64f52bb',
+  postTitle: '这是我的第一篇平台文档',
+  postDate: '2020-6-4 14:55:55',
+  postContent: 'hello',
+  postCategory: ''
+}
+categoryId============ 
+  --> POST /editor/draftsStorage 200 16ms 85b
+别问，问就验证没通过
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+ok
+  <-- POST /editor/draftsStorage
+content--------------------= { content: 'hello', title: '这是我的第一篇平台文档', topic: '平台文档' }
+options=============== {
+  type: 'doc',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  postId: '6e243890-a630-11ea-a32d-4f9af64f52bb',
+  postTitle: '这是我的第一篇平台文档',
+  postDate: '2020-6-4 14:56:02',
+  postContent: 'hello',
+  postCategory: '平台文档'
+}
+这是一个新文档分类！
+categoryId============ 1
+  --> POST /editor/draftsStorage 200 20ms 85b
+别问，问就验证没通过
+  <-- OPTIONS /editor/draftsStorage
+OPTIONS /editor/draftsStorage - 0ms
+  --> OPTIONS /editor/draftsStorage 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /editor/postDoc
+OPTIONS /editor/postDoc - 0ms
+  --> OPTIONS /editor/postDoc 200 1ms 0b
+ok
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  content: 'hellossssssssssssssssssssssssssssssssssssssssssssssssss',
+  title: '这是我的第一篇平台文档',
+  topic: '平台文档'
+}
+ok
+  <-- POST /editor/postDoc
+options=============== {
+  type: 'doc',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  postId: '6e243890-a630-11ea-a32d-4f9af64f52bb',
+  postTitle: '这是我的第一篇平台文档',
+  postDate: '2020-6-4 14:56:07',
+  postContent: 'hellossssssssssssssssssssssssssssssssssssssssssssssssss',
+  postCategory: '平台文档'
+}
+已有文档分类！
+categoryId============ 1
+  --> POST /editor/draftsStorage 200 24ms 85b
+已有文档分类！
+  --> POST /editor/postDoc 200 39ms 99b
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 3ms 0b
+  <-- POST /getDocNavigation
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 1ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 20ms 117b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 3ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 6ms 44b
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 1ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 6ms 117b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 2ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 4ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 17ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 1ms
+  --> OPTIONS /verifyToken 200 6ms 0b
+  <-- POST /getDocNavigation
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 3ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 24ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 120ms 117b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 7ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 22ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 84ms 117b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 18ms 26b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 1ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 21ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 18ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 22ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 126ms 117b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 1ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 9ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 20ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 118ms 117b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 14ms 26b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 1ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 7ms 44b
+  <-- OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb - 0ms
+  --> OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 2ms 0b
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 11ms 80b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 2ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 12ms 117b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 3ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 8ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 26ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /getDocNavigation
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 11ms 26b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 62ms 44b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 250ms 117b
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 2ms 0b
+  <-- POST /getDocNavigation
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 19ms 117b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 6ms 26b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 1ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 9ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 21ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 8ms 0b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 13ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 16ms 26b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 521ms 117b
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 195ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 14ms 0b
+  <-- POST /getDocNavigation
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 2ms 0b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 113ms 117b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 15ms 26b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 12ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 19ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 4ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 16ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 175ms 117b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 2ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 6ms 44b
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 2ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 7ms 117b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 1ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 9ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 24ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 19ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 93ms 117b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 1ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 9ms 44b
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 2ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 9ms 117b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 1ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 8ms 44b
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 1ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 6ms 117b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 3ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 6ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 21ms 0b
+  <-- POST /getDocNavigation
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 109ms 117b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 15ms 26b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 8ms 44b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 21ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 39ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 112ms 117b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 2ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 20ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 24ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /getDocNavigation
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 16ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 110ms 117b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 19ms 44b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 9ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 10ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 79ms 117b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 1ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 15ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 27ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 13ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 157ms 117b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 2ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 10ms 44b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 26ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 21ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 108ms 117b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 1ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 11ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 25ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 5ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 23ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 94ms 117b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 4ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 8ms 44b
+  <-- OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb - 0ms
+  --> OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 1ms 0b
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 8ms 80b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 23ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 12ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 76ms 117b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 1ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 4ms 44b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 17ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 6ms 0b
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 70ms 117b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 15ms 26b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 2ms 0b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 15ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 25ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 45ms 26b
+  <-- OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c
+OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c - 0ms
+  --> OPTIONS /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 4ms 0b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 325ms 117b
+  <-- GET /guide/35221d30-334c-11e9-9e17-cb221046b10c
+hello
+  --> GET /guide/35221d30-334c-11e9-9e17-cb221046b10c 200 11ms 44b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 20ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 136ms 117b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 8ms 26b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 32ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 6ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 24ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 132ms 117b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 17ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 1ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 19ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 128ms 117b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 15ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 11ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 168ms 117b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 21ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 19ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 136ms 117b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 20ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 15ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 102ms 117b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 16ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 5ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 11ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 99ms 117b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 13ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 14ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 104ms 117b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 17ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 21ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 118ms 117b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 23ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 13ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 75ms 117b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 28ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 75ms 117b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 13ms 26b
+  <-- OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb - 0ms
+  --> OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 1ms 0b
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 26ms 80b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 21ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 5ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 24ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 133ms 117b
+  <-- OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb - 0ms
+  --> OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 3ms 0b
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 14ms 80b
+  <-- OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb - 0ms
+  --> OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 2ms 0b
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 11ms 80b
+  <-- OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb - 0ms
+  --> OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 3ms 0b
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 7ms 80b
+  <-- OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb - 0ms
+  --> OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 3ms 0b
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 7ms 80b
+  <-- OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb - 0ms
+  --> OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 1ms 0b
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 7ms 80b
+  <-- OPTIONS /guide/undefined
+OPTIONS /guide/undefined - 0ms
+  --> OPTIONS /guide/undefined 200 3ms 0b
+  <-- GET /guide/undefined
+hello
+  --> GET /guide/undefined 200 6ms 44b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 23ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 14ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 86ms 117b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 25ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 4ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 24ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 115ms 117b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 26ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 12ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 74ms 117b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 24ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 10ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 120ms 117b
+  <-- OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb - 0ms
+  --> OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 2ms 0b
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 9ms 80b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 1ms
+  --> OPTIONS /getDocNavigation 200 25ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 21ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 91ms 117b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 36ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 9ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 122ms 117b
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 4ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 10ms 117b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 14ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 14ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 156ms 117b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 25ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 12ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 77ms 117b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 27ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 17ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 93ms 117b
+  <-- OPTIONS /guide/undefined
+OPTIONS /guide/undefined - 0ms
+  --> OPTIONS /guide/undefined 200 2ms 0b
+  <-- GET /guide/undefined
+hello
+  --> GET /guide/undefined 200 7ms 44b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 18ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 1ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 18ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 94ms 117b
+  <-- OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb - 0ms
+  --> OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 1ms 0b
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 10ms 80b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb - 0ms
+  --> OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 16ms 0b
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 57ms 80b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 4ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 8ms 26b
+ok
+  <-- POST /personal/getAuthorinfo
+别问，问就验证没通过
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 4ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /personal/checkUserAuthorBind
+OPTIONS /personal/checkUserAuthorBind - 0ms
+  --> OPTIONS /personal/checkUserAuthorBind 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 3ms 0b
+result1 [
+  RowDataPacket {
+    id: 13,
+    user_id: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    portrait: '/user-images/0.1436446423680504.jpg',
+    job: 'WEB前端开发工程师',
+    introduction: 'CSGO',
+    blog_url: ''
+  }
+]
+  --> POST /personal/getAuthorinfo 200 55ms 336b
+ok
+  <-- POST /personal/getArticleList
+ok
+  <-- POST /personal/checkUserAuthorBind
+ok
+  <-- POST /community/getTopicList
+  --> POST /personal/checkUserAuthorBind 200 14ms -
+  --> POST /community/getTopicList 200 22ms 226b
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /personal/getArticleList 200 73ms 257b
+别问，问就验证没通过
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 3ms 0b
+ok
+  <-- POST /personal/verifyOwner
+userId,bodyId 9271af90-a4a3-11ea-9ee1-d525ae67413d 9271af90-a4a3-11ea-9ee1-d525ae67413d
+  --> POST /personal/verifyOwner 200 3ms 36b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 2ms 0b
+ok
+  <-- POST /editor/getEditorDropDown
+别问，问就验证没通过
+  <-- OPTIONS /editor/getEditorInfo
+OPTIONS /editor/getEditorInfo - 0ms
+  --> OPTIONS /editor/getEditorInfo 200 3ms 0b
+  --> POST /editor/getEditorDropDown 200 9ms 16b
+ok
+  <-- POST /editor/getEditorInfo
+docResults ===============> []
+  --> POST /editor/getEditorInfo 200 9ms 52b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /editor/getEditorDropDown
+OPTIONS /editor/getEditorDropDown - 0ms
+  --> OPTIONS /editor/getEditorDropDown 200 1ms 0b
+ok
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 2ms 16b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- GET /
+GET / - 0ms
+  --> GET / 200 81ms 1.37kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/index.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/index.js
+  --> GET /static/css/chunk-vendors.css 200 28ms 40.77kb
+  --> GET /static/css/index.css 200 27ms 9.41kb
+  --> GET /static/js/index.js 200 20ms 8.96kb
+  --> GET /static/js/chunk-vendors.js 200 49ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 12ms 31.59kb
+  --> GET /static/css/chunk-ffa4c512.css 200 19ms 3.58kb
+  <-- GET /static/css/chunk-4e487f1e.css
+  --> GET /static/css/chunk-4e487f1e.css 200 14ms 1.42kb
+  <-- GET /static/css/chunk-445613ca.css
+  <-- GET /static/css/chunk-bf898d58.css
+  <-- GET /static/js/chunk-4e487f1e.js
+  <-- GET /static/js/chunk-445613ca.js
+  <-- GET /static/js/chunk-bf898d58.js
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-445613ca.css 200 17ms 488b
+  --> GET /static/js/chunk-4e487f1e.js 200 17ms 1.03kb
+  --> GET /static/css/chunk-5777a83f.css 200 16ms 2.9kb
+  --> GET /static/js/chunk-bf898d58.js 200 21ms 748b
+  --> GET /static/js/chunk-445613ca.js 200 24ms 2.01kb
+  --> GET /static/css/chunk-bf898d58.css 200 27ms 163b
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /images/logo.png
+  <-- GET /static/fonts/fontawesome-webfont.woff2
+  --> GET /static/js/chunk-5777a83f.js 200 20ms 7.42kb
+  --> GET /static/fonts/fontawesome-webfont.woff2 200 22ms 75.35kb
+  --> GET /images/logo.png 200 25ms 6.26kb
+  <-- GET /favicon.ico
+  <-- GET /images/showimg1.png
+  --> GET /images/showimg1.png 200 13ms 92.01kb
+  <-- GET /static/css/chunk-445613ca.css
+  <-- GET /static/css/chunk-4e487f1e.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-bf898d58.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-445613ca.js
+  --> GET /static/css/chunk-445613ca.css 200 17ms 488b
+  --> GET /static/css/chunk-4e487f1e.css 200 17ms 1.42kb
+  --> GET /static/css/chunk-5777a83f.css 200 16ms 2.9kb
+  --> GET /static/css/chunk-bf898d58.css 200 15ms 163b
+  --> GET /static/css/chunk-ffa4c512.css 200 18ms 3.58kb
+  <-- GET /static/js/chunk-4e487f1e.js
+  --> GET /static/js/chunk-445613ca.js 200 25ms 2.01kb
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-bf898d58.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-4e487f1e.js 200 9ms 1.03kb
+  --> GET /static/js/chunk-bf898d58.js 200 11ms 748b
+  --> GET /static/js/chunk-ffa4c512.js 200 14ms 31.59kb
+  --> GET /static/js/chunk-5777a83f.js 200 19ms 7.42kb
+ok
+  <-- GET /community
+GET /community - 0ms
+  --> GET /community 200 15ms 1.49kb
+  <-- GET /static/css/chunk-vendors.css
+  --> GET /static/css/chunk-vendors.css 200 5ms 40.77kb
+  <-- GET /static/js/chunk-vendors.js
+  --> GET /static/js/chunk-vendors.js 200 38ms 541.1kb
+  <-- GET /static/css/community.css
+  --> GET /static/css/community.css 200 19ms 9.89kb
+  <-- GET /static/js/community.js
+  --> GET /static/js/community.js 200 22ms 9.54kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 10ms 31.59kb
+  --> GET /static/css/chunk-ffa4c512.css 200 13ms 3.58kb
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/css/chunk-d0868994.css
+  --> GET /static/js/chunk-d27458f6.js 200 12ms 1008b
+  --> GET /static/css/chunk-d0868994.css 200 14ms 1.45kb
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/css/chunk-4eb9ad46.css
+  --> GET /static/css/chunk-d27458f6.css 200 37ms 1.16kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-d0868994.js 200 33ms 5.02kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 29ms 1.62kb
+  --> GET /static/js/chunk-515c6232.js 200 33ms 4.99kb
+  --> GET /static/css/chunk-515c6232.css 200 36ms 2.61kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 32ms 1.42kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/css/chunk-5777a83f.css 200 12ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 10ms 7.42kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 4ms 6.26kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/css/chunk-d27458f6.css
+  --> GET /static/css/chunk-515c6232.css 200 14ms 2.61kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 17ms 1.62kb
+  --> GET /static/css/chunk-5777a83f.css 200 16ms 2.9kb
+  --> GET /static/css/chunk-ffa4c512.css 200 12ms 3.58kb
+  --> GET /static/css/chunk-d27458f6.css 200 9ms 1.16kb
+  --> GET /static/css/chunk-d0868994.css 200 28ms 1.45kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-515c6232.js
+  --> GET /static/js/chunk-515c6232.js 200 7ms 4.99kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 11ms 1.42kb
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/js/chunk-d0868994.js 200 5ms 5.02kb
+  --> GET /static/js/chunk-5777a83f.js 200 12ms 7.42kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 14ms 31.59kb
+  <-- GET /static/js/chunk-d27458f6.js
+  --> GET /static/js/chunk-d27458f6.js 200 21ms 1008b
+---------------------连接池连接数:------------------- 0
+ok
+  <-- GET /community
+GET /community - 0ms
+  --> GET /community 200 528ms 1.49kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/community.css
+  <-- GET /static/js/chunk-vendors.js
+  --> GET /static/css/community.css 200 58ms 9.89kb
+  --> GET /static/css/chunk-vendors.css 200 68ms 40.77kb
+  --> GET /static/js/chunk-vendors.js 200 32ms 541.1kb
+  <-- GET /static/js/community.js
+  --> GET /static/js/community.js 200 82ms 9.54kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/css/chunk-ffa4c512.css 200 42ms 3.58kb
+  <-- GET /static/css/chunk-515c6232.css
+  --> GET /static/js/chunk-ffa4c512.js 200 52ms 31.59kb
+  --> GET /static/css/chunk-d27458f6.css 200 54ms 1.16kb
+  --> GET /static/js/chunk-d27458f6.js 200 52ms 1008b
+  --> GET /static/css/chunk-d0868994.css 200 48ms 1.45kb
+  --> GET /static/js/chunk-d0868994.js 200 48ms 5.02kb
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/css/chunk-515c6232.css 200 41ms 2.61kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 26ms 1.62kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 25ms 1.42kb
+  --> GET /static/js/chunk-515c6232.js 200 36ms 4.99kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-5777a83f.js 200 10ms 7.42kb
+  <-- GET /images/logo.png
+  --> GET /static/css/chunk-5777a83f.css 200 19ms 2.9kb
+  --> GET /images/logo.png 200 7ms 6.26kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-d0868994.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 31ms 1.62kb
+  --> GET /static/css/chunk-515c6232.css 200 30ms 2.61kb
+  --> GET /static/css/chunk-5777a83f.css 200 28ms 2.9kb
+  --> GET /static/css/chunk-d0868994.css 200 25ms 1.45kb
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-d27458f6.css 200 11ms 1.16kb
+  --> GET /static/css/chunk-ffa4c512.css 200 11ms 3.58kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 51ms 1.42kb
+  --> GET /static/js/chunk-515c6232.js 200 47ms 4.99kb
+  --> GET /static/js/chunk-5777a83f.js 200 47ms 7.42kb
+  --> GET /static/js/chunk-d0868994.js 200 47ms 5.02kb
+  --> GET /static/js/chunk-d27458f6.js 200 47ms 1008b
+  --> GET /static/js/chunk-ffa4c512.js 200 47ms 31.59kb
+ok
+  <-- GET /community
+GET /community - 0ms
+  --> GET /community 200 20ms 1.49kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/community.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/community.js
+  --> GET /static/js/community.js 200 15ms 9.54kb
+  --> GET /static/css/chunk-vendors.css 200 19ms 40.77kb
+  --> GET /static/js/chunk-vendors.js 200 30ms 541.1kb
+  --> GET /static/css/community.css 200 33ms 9.89kb
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 2ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 8ms 26b
+ok
+  <-- POST /personal/getAuthorinfo
+别问，问就验证没通过
+  <-- OPTIONS /personal/checkUserAuthorBind
+OPTIONS /personal/checkUserAuthorBind - 0ms
+  --> OPTIONS /personal/checkUserAuthorBind 200 6ms 0b
+ok
+  <-- POST /personal/checkUserAuthorBind
+result1 [
+  RowDataPacket {
+    id: 13,
+    user_id: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    portrait: '/user-images/0.1436446423680504.jpg',
+    job: 'WEB前端开发工程师',
+    introduction: 'CSGO',
+    blog_url: ''
+  }
+]
+  --> POST /personal/checkUserAuthorBind 200 51ms -
+  --> POST /personal/getAuthorinfo 200 204ms 336b
+别问，问就验证没通过
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 2ms 0b
+ok
+  <-- POST /personal/getArticleList
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /personal/getArticleList 200 23ms 257b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 3ms 0b
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 11ms 226b
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/js/chunk-d27458f6.js
+  --> GET /static/css/chunk-ffa4c512.css 200 17ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 15ms 31.59kb
+  --> GET /static/css/chunk-d27458f6.css 200 13ms 1.16kb
+  --> GET /static/js/chunk-d27458f6.js 200 10ms 1008b
+  <-- GET /static/css/chunk-d0868994.css
+  --> GET /static/css/chunk-d0868994.css 200 8ms 1.45kb
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/js/chunk-d0868994.js 200 14ms 5.02kb
+  <-- GET /static/css/chunk-515c6232.css
+  --> GET /static/css/chunk-515c6232.css 200 7ms 2.61kb
+  <-- GET /static/js/chunk-515c6232.js
+  --> GET /static/js/chunk-515c6232.js 200 7ms 4.99kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/css/chunk-4eb9ad46.css 200 9ms 1.62kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 12ms 1.42kb
+别问，问就验证没通过
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 3ms 0b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/css/chunk-5777a83f.css 200 13ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 11ms 7.42kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 9ms 6.26kb
+ok
+  <-- POST /personal/verifyOwner
+userId,bodyId 9271af90-a4a3-11ea-9ee1-d525ae67413d 9271af90-a4a3-11ea-9ee1-d525ae67413d
+  --> POST /personal/verifyOwner 200 5ms 36b
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-515c6232.css 200 25ms 2.61kb
+  --> GET /static/css/chunk-5777a83f.css 200 23ms 2.9kb
+  --> GET /static/css/chunk-d0868994.css 200 24ms 1.45kb
+  --> GET /static/css/chunk-d27458f6.css 200 22ms 1.16kb
+  --> GET /static/css/chunk-ffa4c512.css 200 23ms 3.58kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/css/chunk-4eb9ad46.css 200 92ms 1.62kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 13ms 1.42kb
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-515c6232.js 200 13ms 4.99kb
+  --> GET /static/js/chunk-5777a83f.js 200 10ms 7.42kb
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 7ms 31.59kb
+  --> GET /static/js/chunk-d27458f6.js 200 9ms 1008b
+  --> GET /static/js/chunk-d0868994.js 200 19ms 5.02kb
+  <-- OPTIONS /getDocNavigation
+OPTIONS /getDocNavigation - 0ms
+  --> OPTIONS /getDocNavigation 200 2ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591253730,
+  exp: 1591426530,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 10ms 117b
+  <-- OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb - 0ms
+  --> OPTIONS /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 1ms 0b
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 6ms 80b
+  <-- GET /static/js/chunk-515c6232.js.map
+  <-- GET /static/js/chunk-d0868994.js.map
+  --> GET /static/js/chunk-515c6232.js.map 200 19ms 21kb
+  <-- GET /static/js/chunk-d27458f6.js.map
+  --> GET /static/js/chunk-d27458f6.js.map 200 13ms 6.44kb
+  --> GET /static/js/chunk-d0868994.js.map 200 21ms 24.55kb
+  <-- GET /static/js/community.js.map
+  <-- GET /static/js/chunk-ffa4c512.js.map
+  <-- GET /static/js/chunk-vendors.js.map
+  <-- GET /static/js/chunk-4eb9ad46.js.map
+  --> GET /static/js/chunk-4eb9ad46.js.map 200 14ms 8.22kb
+  --> GET /static/js/community.js.map 200 18ms 39.59kb
+  --> GET /static/js/chunk-ffa4c512.js.map 200 33ms 463.81kb
+  --> GET /static/js/chunk-vendors.js.map 200 884ms 7.86mb
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+ok
+  <-- GET /community
+GET /community - 0ms
+  --> GET /community 200 27ms 1.49kb
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/community.js
+  <-- GET /static/css/chunk-vendors.css
+  --> GET /static/js/community.js 200 29ms 9.54kb
+  <-- GET /static/css/community.css
+  --> GET /static/css/chunk-vendors.css 200 30ms 40.77kb
+  --> GET /static/css/community.css 200 22ms 9.89kb
+  --> GET /static/js/chunk-vendors.js 200 68ms 541.1kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 9ms 31.59kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/js/chunk-d27458f6.js
+  --> GET /static/css/chunk-ffa4c512.css 200 18ms 3.58kb
+  --> GET /static/css/chunk-d27458f6.css 200 18ms 1.16kb
+  --> GET /static/js/chunk-d27458f6.js 200 19ms 1008b
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/js/chunk-d0868994.js 200 6ms 5.02kb
+  <-- GET /static/css/chunk-d0868994.css
+  --> GET /static/css/chunk-d0868994.css 200 7ms 1.45kb
+  <-- GET /static/js/chunk-515c6232.js
+  --> GET /static/js/chunk-515c6232.js 200 18ms 4.99kb
+  <-- GET /static/css/chunk-515c6232.css
+  --> GET /static/css/chunk-515c6232.css 200 3ms 2.61kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 6ms 1.42kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 6ms 1.62kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 13ms 26b
+  <-- GET /static/js/chunk-5777a83f.js
+ok
+  <-- POST /community/getHotList
+  --> GET /static/js/chunk-5777a83f.js 200 52ms 7.42kb
+  --> POST /community/getHotList 200 91ms 125b
+  <-- GET /static/css/chunk-5777a83f.css
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> GET /static/css/chunk-5777a83f.css 200 64ms 2.9kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 9ms 6.26kb
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 38ms 678b
+  <-- GET /static/js/community.js.map
+  <-- GET /static/js/chunk-ffa4c512.js.map
+  <-- GET /static/js/chunk-515c6232.js.map
+  --> GET /static/js/community.js.map 200 31ms 39.62kb
+  --> GET /static/js/chunk-515c6232.js.map 200 31ms 21kb
+  --> GET /static/js/chunk-ffa4c512.js.map 200 46ms 463.81kb
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 10ms 226b
+  <-- GET /user-images/0.1436446423680504.jpg
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 6ms -
+  <-- GET /static/fonts/element-icons.woff
+  --> GET /static/fonts/element-icons.woff 200 15ms 27.54kb
+  <-- GET /static/js/chunk-d0868994.js.map
+  --> GET /static/js/chunk-d0868994.js.map 200 18ms 24.55kb
+  <-- GET /images/topic-mid-img.png
+  --> GET /images/topic-mid-img.png 200 37ms 1.21kb
+  <-- GET /static/js/chunk-4eb9ad46.js.map
+  --> GET /static/js/chunk-4eb9ad46.js.map 200 16ms 8.22kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 87ms 1.62kb
+  --> GET /static/css/chunk-515c6232.css 200 86ms 2.61kb
+  --> GET /static/css/chunk-5777a83f.css 200 88ms 2.9kb
+  --> GET /static/css/chunk-d0868994.css 200 82ms 1.45kb
+  --> GET /static/css/chunk-ffa4c512.css 200 77ms 3.58kb
+  --> GET /static/css/chunk-d27458f6.css 200 146ms 1.16kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/js/chunk-d27458f6.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 29ms 1.42kb
+  --> GET /static/js/chunk-5777a83f.js 200 28ms 7.42kb
+  --> GET /static/js/chunk-515c6232.js 200 37ms 4.99kb
+  --> GET /static/js/chunk-d0868994.js 200 35ms 5.02kb
+  --> GET /static/js/chunk-d27458f6.js 200 34ms 1008b
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 9ms 31.59kb
+ok
+  <-- GET /personal/9271af90-a4a3-11ea-9ee1-d525ae67413d
+GET /personal/9271af90-a4a3-11ea-9ee1-d525ae67413d - 0ms
+  --> GET /personal/9271af90-a4a3-11ea-9ee1-d525ae67413d 200 11ms 1.49kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/css/personal.css
+  <-- GET /static/js/personal.js
+  --> GET /static/css/chunk-vendors.css 200 32ms 40.77kb
+  --> GET /static/css/personal.css 200 25ms 9.38kb
+  --> GET /static/js/personal.js 200 25ms 4.62kb
+  --> GET /static/js/chunk-vendors.js 200 59ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-028c6c83.css
+  <-- GET /static/js/chunk-028c6c83.js
+  --> GET /static/js/chunk-ffa4c512.js 200 22ms 31.59kb
+  --> GET /static/css/chunk-ffa4c512.css 200 32ms 3.58kb
+  --> GET /static/css/chunk-028c6c83.css 200 29ms 3.03kb
+  --> GET /static/js/chunk-028c6c83.js 200 29ms 2.33kb
+  <-- GET /static/css/chunk-c132ca5a.css
+  <-- GET /static/js/chunk-c132ca5a.js
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-c132ca5a.js 200 20ms 8.04kb
+  --> GET /static/css/chunk-c132ca5a.css 200 28ms 3.16kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 31ms 1.62kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 37ms 1.42kb
+  <-- GET /static/css/chunk-390cac74.css
+  <-- GET /static/js/chunk-390cac74.js
+  --> GET /static/css/chunk-390cac74.css 200 15ms 3.64kb
+  --> GET /static/js/chunk-390cac74.js 200 16ms 1.88kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 5ms 26b
+ok
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 13,
+    user_id: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    portrait: '/user-images/0.1436446423680504.jpg',
+    job: 'WEB前端开发工程师',
+    introduction: 'CSGO',
+    blog_url: ''
+  }
+]
+  --> POST /personal/getAuthorinfo 200 26ms 336b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-5777a83f.js 200 25ms 7.42kb
+  --> GET /static/css/chunk-5777a83f.css 200 29ms 2.9kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 16ms 6.26kb
+ok
+  <-- POST /personal/checkUserAuthorBind
+  --> POST /personal/checkUserAuthorBind 200 6ms -
+ok
+  <-- POST /community/getTopicList
+ok
+  <-- POST /personal/getArticleList
+  --> POST /community/getTopicList 200 18ms 226b
+  <-- GET /static/css/chunk-028c6c83.css
+  <-- GET /static/css/chunk-390cac74.css
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-c132ca5a.css
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /personal/getArticleList 200 65ms 257b
+ok
+  <-- POST /personal/verifyOwner
+userId,bodyId 9271af90-a4a3-11ea-9ee1-d525ae67413d 9271af90-a4a3-11ea-9ee1-d525ae67413d
+  --> POST /personal/verifyOwner 200 2ms 36b
+  <-- GET /user-images/0.1436446423680504.jpg
+  --> GET /static/css/chunk-028c6c83.css 200 53ms 3.03kb
+  --> GET /static/css/chunk-5777a83f.css 200 53ms 2.9kb
+  --> GET /static/css/chunk-c132ca5a.css 200 52ms 3.16kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 55ms 1.62kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-390cac74.css 200 60ms 3.64kb
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 16ms -
+  --> GET /static/css/chunk-ffa4c512.css 200 13ms 3.58kb
+  <-- GET /images/topic-mid-img.png
+  --> GET /images/topic-mid-img.png 200 5ms 1.21kb
+  <-- GET /static/js/chunk-028c6c83.js
+  <-- GET /static/js/chunk-390cac74.js
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-c132ca5a.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-028c6c83.js 200 19ms 2.33kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 20ms 1.42kb
+  --> GET /static/js/chunk-c132ca5a.js 200 19ms 8.04kb
+  --> GET /static/js/chunk-5777a83f.js 200 20ms 7.42kb
+  --> GET /static/js/chunk-ffa4c512.js 200 23ms 31.59kb
+  --> GET /static/js/chunk-390cac74.js 200 34ms 1.88kb
+ok
+  <-- GET /editor/doc/drafts
+GET /editor/doc/drafts - 0ms
+  --> GET /editor/doc/drafts 200 5ms 1.06kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/css/drafts.css
+  <-- GET /static/js/drafts.js
+  --> GET /static/css/chunk-vendors.css 200 19ms 40.77kb
+  --> GET /static/css/drafts.css 200 13ms 9.84kb
+  --> GET /static/js/drafts.js 200 16ms 4.61kb
+  --> GET /static/js/chunk-vendors.js 200 25ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/css/chunk-ffa4c512.css 200 11ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 11ms 31.59kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+ok
+  <-- POST /editor/getDraftsList
+getDraftsList {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /editor/getDraftsList 200 7ms 131b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-5777a83f.js 200 6ms 7.42kb
+  --> GET /static/css/chunk-5777a83f.css 200 13ms 2.9kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 11ms 6.26kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/css/chunk-5777a83f.css 200 18ms 2.9kb
+  --> GET /static/css/chunk-ffa4c512.css 200 13ms 3.58kb
+  --> GET /static/js/chunk-5777a83f.js 200 13ms 7.42kb
+  <-- GET /user-images/0.1436446423680504.jpg
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 10ms -
+  --> GET /static/js/chunk-ffa4c512.js 200 37ms 31.59kb
+ok
+  <-- GET /editor/doc/drafts/6e243890-a630-11ea-a32d-4f9af64f52bb
+GET /editor/doc/drafts/6e243890-a630-11ea-a32d-4f9af64f52bb - 0ms
+  --> GET /editor/doc/drafts/6e243890-a630-11ea-a32d-4f9af64f52bb 200 24ms 1.16kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/css/editor.css
+  <-- GET /static/js/editor.js
+  --> GET /static/css/chunk-vendors.css 200 25ms 40.77kb
+  --> GET /static/css/editor.css 200 27ms 2.33kb
+  --> GET /static/js/editor.js 200 35ms 5.34kb
+  --> GET /static/js/chunk-vendors.js 200 52ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/css/chunk-ffa4c512.css 200 10ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 14ms 31.59kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/js/chunk-71c1d60c.js
+  --> GET /static/js/chunk-71c1d60c.js 200 12ms 5.08kb
+  --> GET /static/css/chunk-71c1d60c.css 200 19ms 74b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+ok
+  <-- POST /editor/getEditorDropDown
+ok
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorDropDown 200 5ms 16b
+docResults ===============> [
+  RowDataPacket {
+    latest_modify_date: 2020-06-04T06:56:07.000Z,
+    post_author: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    post_title: '这是我的第一篇平台文档',
+    post_content: 'hellossssssssssssssssssssssssssssssssssssssssssssssssss',
+    post_category_name: '平台文档'
+  }
+]
+  --> POST /editor/getEditorInfo 200 5ms 280b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /images/logo.png
+  --> GET /static/css/chunk-5777a83f.css 200 17ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 20ms 7.42kb
+  <-- GET /lib/editor.md/css/editormd.css
+  --> GET /images/logo.png 200 14ms 6.26kb
+  --> GET /lib/editor.md/css/editormd.css 200 11ms 15.91kb
+  <-- GET /lib/editor.md/jquery.min.js
+  --> GET /lib/editor.md/jquery.min.js 200 48ms 29.92kb
+  <-- GET /user-images/0.1436446423680504.jpg
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 31ms -
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/css/chunk-5777a83f.css 200 34ms 2.9kb
+  --> GET /static/css/chunk-71c1d60c.css 200 34ms 74b
+  --> GET /static/css/chunk-ffa4c512.css 200 33ms 3.58kb
+  --> GET /static/js/chunk-5777a83f.js 200 18ms 7.42kb
+  <-- GET /static/js/chunk-71c1d60c.js
+  --> GET /static/js/chunk-71c1d60c.js 200 9ms 5.08kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 8ms 31.59kb
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 8ms 5.46kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 11ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 8ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 5ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 4ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 5ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 7ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 8ms 15.95kb
+  <-- GET /lib/editor.md/lib/codemirror/codemirror.min.css
+  <-- GET /lib/editor.md/lib/codemirror/addon/dialog/dialog.css
+  <-- GET /lib/editor.md/lib/codemirror/addon/search/matchesonscrollbar.css
+  --> GET /lib/editor.md/lib/codemirror/codemirror.min.css 200 10ms 5.19kb
+  --> GET /lib/editor.md/lib/codemirror/addon/dialog/dialog.css 200 11ms 502b
+  --> GET /lib/editor.md/lib/codemirror/addon/search/matchesonscrollbar.css 200 17ms 188b
+  <-- GET /lib/editor.md/lib/codemirror/codemirror.min.js
+  <-- GET /lib/editor.md/images/loading.gif
+  <-- GET /lib/editor.md/lib/codemirror/codemirror.min.js
+  --> GET /lib/editor.md/lib/codemirror/codemirror.min.js 200 28ms 60.08kb
+  --> GET /lib/editor.md/images/loading.gif 200 39ms 7.54kb
+  --> GET /lib/editor.md/lib/codemirror/codemirror.min.js 200 20ms 60.08kb
+  <-- GET /lib/editor.md/lib/codemirror/modes.min.js
+  --> GET /lib/editor.md/lib/codemirror/modes.min.js 200 8ms 60.35kb
+  <-- GET /lib/editor.md/lib/codemirror/modes.min.js
+  --> GET /lib/editor.md/lib/codemirror/modes.min.js 200 9ms 60.35kb
+  <-- GET /lib/editor.md/lib/codemirror/addons.min.js
+  --> GET /lib/editor.md/lib/codemirror/addons.min.js 200 5ms 11.68kb
+  <-- GET /lib/editor.md/lib/codemirror/addons.min.js
+  --> GET /lib/editor.md/lib/codemirror/addons.min.js 200 9ms 11.68kb
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 12ms 5.46kb
+  <-- GET /lib/editor.md/fonts/fontawesome-webfont.woff2?v=4.3.0
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 6ms 5.46kb
+  --> GET /lib/editor.md/fonts/fontawesome-webfont.woff2?v=4.3.0 200 23ms 55.45kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 27ms 7.5kb
+  --> GET /lib/editor.md/lib/prettify.min.js 200 25ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 8ms 31.29kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 33ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 8ms 5.65kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 15ms 5.65kb
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 13ms 5.33kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 20ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 31ms 1.36kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 22ms 1.36kb
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 11ms 30.97kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 22ms 30.97kb
+ok
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '6e243890-a630-11ea-a32d-4f9af64f52bb',
+  title: '这是我的第一篇平台文档',
+  content: 'hellossssssssssssssssssssssssssssssssssssssssssssssssss',
+  topic: '平台文档',
+  time: '2020-06-04T06:56:07.000Z',
+  author: 'YOUJUN'
+}
+options=============== {
+  type: 'doc',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  postId: '6e243890-a630-11ea-a32d-4f9af64f52bb',
+  postTitle: '这是我的第一篇平台文档',
+  postDate: '2020-6-4 15:59:32',
+  postContent: 'hellossssssssssssssssssssssssssssssssssssssssssssssssss',
+  postCategory: '平台文档'
+}
+已有文档分类！
+categoryId============ 1
+  --> POST /editor/draftsStorage 200 40ms 85b
+ok
+  <-- GET /community
+GET /community - 0ms
+  --> GET /community 200 11ms 1.49kb
+  <-- GET /static/css/community.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/community.js
+  <-- GET /static/css/chunk-vendors.css
+  --> GET /static/css/community.css 200 14ms 9.89kb
+  --> GET /static/js/community.js 200 16ms 9.54kb
+  --> GET /static/css/chunk-vendors.css 200 18ms 40.77kb
+  --> GET /static/js/chunk-vendors.js 200 50ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/css/chunk-ffa4c512.css 200 16ms 3.58kb
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/css/chunk-d27458f6.css 200 17ms 1.16kb
+  --> GET /static/js/chunk-d27458f6.js 200 25ms 1008b
+  --> GET /static/css/chunk-d0868994.css 200 28ms 1.45kb
+  --> GET /static/js/chunk-ffa4c512.js 200 29ms 31.59kb
+  --> GET /static/css/chunk-515c6232.css 200 28ms 2.61kb
+  --> GET /static/js/chunk-d0868994.js 200 28ms 5.02kb
+  <-- GET /static/js/chunk-515c6232.js
+  --> GET /static/js/chunk-515c6232.js 200 16ms 4.99kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/css/chunk-4eb9ad46.css 200 12ms 1.62kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 6ms 1.42kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+ok
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 6ms 125b
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 27ms 678b
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-5777a83f.css 200 20ms 2.9kb
+ok
+  <-- POST /community/getTopicList
+  <-- GET /static/js/chunk-5777a83f.js
+  --> POST /community/getTopicList 200 15ms 226b
+  --> GET /static/js/chunk-5777a83f.js 200 13ms 7.42kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 16ms 6.26kb
+  <-- GET /user-images/0.1436446423680504.jpg
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 14ms -
+  <-- GET /images/topic-mid-img.png
+  --> GET /images/topic-mid-img.png 200 8ms 1.21kb
+  <-- GET /guide
+GET /guide - 0ms
+  --> GET /guide 200 14ms 1.53kb
+  <-- GET /static/css/guide.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/guide.js
+  --> GET /static/css/guide.css 200 12ms 9.47kb
+  --> GET /static/js/guide.js 200 8ms 9.67kb
+  --> GET /static/js/chunk-vendors.js 200 18ms 541.1kb
+  <-- GET /static/css/chunk-vendors.css
+  --> GET /static/css/chunk-vendors.css 200 23ms 40.77kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/css/chunk-aa4d851e.css
+  <-- GET /static/js/chunk-aa4d851e.js
+  --> GET /static/css/chunk-ffa4c512.css 200 15ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 17ms 31.59kb
+  --> GET /static/js/chunk-aa4d851e.js 200 18ms 847b
+  --> GET /static/css/chunk-aa4d851e.css 200 30ms 1.09kb
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 11ms 117b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/css/chunk-5777a83f.css 200 12ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 12ms 7.42kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 21ms 6.26kb
+  <-- GET /static/css/chunk-2924e506.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/css/chunk-aa4d851e.css
+  <-- GET /static/css/chunk-bf898d58.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-aa4d851e.css 200 24ms 1.09kb
+  --> GET /static/css/chunk-5777a83f.css 200 33ms 2.9kb
+  --> GET /static/css/chunk-71c1d60c.css 200 29ms 74b
+  --> GET /static/css/chunk-bf898d58.css 200 30ms 163b
+  --> GET /static/css/chunk-2924e506.css 200 49ms 1.39kb
+  <-- GET /static/css/chunk-2924e506.css
+  --> GET /static/css/chunk-ffa4c512.css 200 37ms 3.58kb
+  --> GET /static/css/chunk-2924e506.css 200 18ms 1.39kb
+  <-- GET /static/js/chunk-2924e506.js
+  --> GET /static/js/chunk-2924e506.js 200 9ms 1.89kb
+  <-- GET /user-images/0.1436446423680504.jpg
+  <-- GET /static/js/chunk-2924e506.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-aa4d851e.js
+  <-- GET /static/js/chunk-22763b90.js
+  <-- GET /static/js/chunk-71c1d60c.js
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 20ms -
+  <-- GET /static/css/chunk-71c1d60c.css
+  --> GET /static/js/chunk-2924e506.js 200 27ms 1.89kb
+  <-- GET /static/js/chunk-71c1d60c.js
+  --> GET /static/js/chunk-5777a83f.js 200 25ms 7.42kb
+  --> GET /static/js/chunk-aa4d851e.js 200 28ms 847b
+  --> GET /static/js/chunk-71c1d60c.js 200 22ms 5.08kb
+  --> GET /static/js/chunk-22763b90.js 200 32ms 489b
+  --> GET /static/css/chunk-71c1d60c.css 200 17ms 74b
+  <-- GET /static/js/chunk-bf898d58.js
+  --> GET /static/js/chunk-71c1d60c.js 200 13ms 5.08kb
+  --> GET /static/js/chunk-bf898d58.js 200 13ms 748b
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 18ms 80b
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /lib/editor.md/css/editormd.css
+  <-- GET /lib/editor.md/jquery.min.js
+  --> GET /lib/editor.md/css/editormd.css 200 11ms 15.91kb
+  --> GET /lib/editor.md/jquery.min.js 200 12ms 29.92kb
+  --> GET /static/js/chunk-ffa4c512.js 200 34ms 31.59kb
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 8ms 5.46kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 8ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 7ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 3ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 6ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 2ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 6ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 8ms 15.95kb
+ok
+  <-- GET /personal/9271af90-a4a3-11ea-9ee1-d525ae67413d
+GET /personal/9271af90-a4a3-11ea-9ee1-d525ae67413d - 0ms
+  --> GET /personal/9271af90-a4a3-11ea-9ee1-d525ae67413d 200 7ms 1.49kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/css/personal.css
+  --> GET /static/css/chunk-vendors.css 200 18ms 40.77kb
+  --> GET /static/css/personal.css 200 16ms 9.38kb
+  --> GET /static/js/chunk-vendors.js 200 31ms 541.1kb
+  <-- GET /static/js/personal.js
+  --> GET /static/js/personal.js 200 8ms 4.62kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-ffa4c512.css 200 10ms 3.58kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 13ms 31.59kb
+  <-- GET /static/css/chunk-028c6c83.css
+  <-- GET /static/js/chunk-028c6c83.js
+  --> GET /static/js/chunk-028c6c83.js 200 7ms 2.33kb
+  --> GET /static/css/chunk-028c6c83.css 200 12ms 3.03kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 11ms 1.42kb
+  <-- GET /static/css/chunk-c132ca5a.css
+  <-- GET /static/js/chunk-c132ca5a.js
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+  <-- GET /static/css/chunk-390cac74.css
+ok
+  <-- POST /personal/getAuthorinfo
+  --> GET /static/js/chunk-c132ca5a.js 200 30ms 8.04kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-390cac74.js
+result1 [
+  RowDataPacket {
+    id: 13,
+    user_id: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    portrait: '/user-images/0.1436446423680504.jpg',
+    job: 'WEB前端开发工程师',
+    introduction: 'CSGO',
+    blog_url: ''
+  }
+]
+  --> GET /static/css/chunk-c132ca5a.css 200 74ms 3.16kb
+  --> GET /static/css/chunk-390cac74.css 200 70ms 3.64kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 57ms 1.62kb
+  --> GET /static/js/chunk-390cac74.js 200 56ms 1.88kb
+  --> POST /personal/getAuthorinfo 200 85ms 336b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/css/chunk-5777a83f.css 200 24ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 25ms 7.42kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 13ms 6.26kb
+ok
+  <-- POST /personal/checkUserAuthorBind
+  --> POST /personal/checkUserAuthorBind 200 5ms -
+ok
+  <-- POST /personal/getArticleList
+ok
+  <-- POST /community/getTopicList
+ok
+  <-- POST /personal/verifyOwner
+userId,bodyId 9271af90-a4a3-11ea-9ee1-d525ae67413d 9271af90-a4a3-11ea-9ee1-d525ae67413d
+  --> POST /personal/verifyOwner 200 0ms 36b
+  --> POST /community/getTopicList 200 69ms 226b
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /personal/getArticleList 200 78ms 257b
+  <-- GET /user-images/0.1436446423680504.jpg
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 22ms -
+  <-- GET /static/css/chunk-028c6c83.css
+  --> GET /static/css/chunk-028c6c83.css 200 6ms 3.03kb
+  <-- GET /static/css/chunk-390cac74.css
+  --> GET /static/css/chunk-390cac74.css 200 8ms 3.64kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-c132ca5a.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 37ms 1.62kb
+  --> GET /static/css/chunk-5777a83f.css 200 36ms 2.9kb
+  --> GET /static/css/chunk-c132ca5a.css 200 26ms 3.16kb
+  --> GET /static/css/chunk-ffa4c512.css 200 26ms 3.58kb
+  <-- GET /images/topic-mid-img.png
+  <-- GET /static/js/chunk-028c6c83.js
+  <-- GET /static/js/chunk-390cac74.js
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-028c6c83.js 200 29ms 2.33kb
+  --> GET /static/js/chunk-390cac74.js 200 29ms 1.88kb
+  --> GET /static/js/chunk-5777a83f.js 200 28ms 7.42kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 33ms 1.42kb
+  --> GET /images/topic-mid-img.png 200 38ms 1.21kb
+  <-- GET /static/js/chunk-c132ca5a.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-c132ca5a.js 200 17ms 8.04kb
+  --> GET /static/js/chunk-ffa4c512.js 200 16ms 31.59kb
+ok
+  <-- GET /editor/doc/drafts
+GET /editor/doc/drafts - 0ms
+  --> GET /editor/doc/drafts 200 9ms 1.06kb
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/drafts.css
+  <-- GET /static/js/drafts.js
+  --> GET /static/js/drafts.js 200 16ms 4.61kb
+  --> GET /static/css/chunk-vendors.css 200 22ms 40.77kb
+  --> GET /static/css/drafts.css 200 22ms 9.84kb
+  --> GET /static/js/chunk-vendors.js 200 70ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/css/chunk-ffa4c512.css 200 14ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 11ms 31.59kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+ok
+  <-- POST /editor/getDraftsList
+getDraftsList {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> POST /editor/getDraftsList 200 12ms 131b
+  --> GET /static/css/chunk-5777a83f.css 200 27ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 26ms 7.42kb
+  <-- GET /user-images/0.1436446423680504.jpg
+  <-- GET /images/logo.png
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 24ms -
+  --> GET /images/logo.png 200 25ms 6.26kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/css/chunk-5777a83f.css 200 11ms 2.9kb
+  --> GET /static/css/chunk-ffa4c512.css 200 12ms 3.58kb
+  --> GET /static/js/chunk-5777a83f.js 200 14ms 7.42kb
+  --> GET /static/js/chunk-ffa4c512.js 200 14ms 31.59kb
+ok
+  <-- GET /editor/doc/drafts/6e243890-a630-11ea-a32d-4f9af64f52bb
+GET /editor/doc/drafts/6e243890-a630-11ea-a32d-4f9af64f52bb - 0ms
+  --> GET /editor/doc/drafts/6e243890-a630-11ea-a32d-4f9af64f52bb 200 11ms 1.16kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/editor.js
+  <-- GET /static/css/editor.css
+  --> GET /static/css/chunk-vendors.css 200 28ms 40.77kb
+  --> GET /static/js/editor.js 200 19ms 5.34kb
+  --> GET /static/css/editor.css 200 28ms 2.33kb
+  --> GET /static/js/chunk-vendors.js 200 59ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/css/chunk-ffa4c512.css 200 11ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 19ms 31.59kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/js/chunk-71c1d60c.js
+  --> GET /static/js/chunk-71c1d60c.js 200 8ms 5.08kb
+  --> GET /static/css/chunk-71c1d60c.css 200 19ms 74b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 6ms 26b
+ok
+  <-- POST /editor/getEditorDropDown
+ok
+  <-- POST /editor/getEditorInfo
+docResults ===============> [
+  RowDataPacket {
+    latest_modify_date: 2020-06-04T07:59:32.000Z,
+    post_author: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    post_title: '这是我的第一篇平台文档',
+    post_content: 'hellossssssssssssssssssssssssssssssssssssssssssssssssss',
+    post_category_name: '平台文档'
+  }
+]
+  --> POST /editor/getEditorInfo 200 9ms 280b
+  --> POST /editor/getEditorDropDown 200 16ms 16b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /lib/editor.md/jquery.min.js
+  <-- GET /lib/editor.md/css/editormd.css
+  --> GET /static/css/chunk-5777a83f.css 200 29ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 28ms 7.42kb
+  --> GET /lib/editor.md/jquery.min.js 200 26ms 29.92kb
+  --> GET /lib/editor.md/css/editormd.css 200 26ms 15.91kb
+  <-- GET /user-images/0.1436446423680504.jpg
+  <-- GET /images/logo.png
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 15ms -
+  --> GET /images/logo.png 200 24ms 6.26kb
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-5777a83f.css 200 9ms 2.9kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-71c1d60c.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /static/css/chunk-ffa4c512.css 200 33ms 3.58kb
+  --> GET /static/css/chunk-71c1d60c.css 200 40ms 74b
+  --> GET /static/js/chunk-5777a83f.js 200 40ms 7.42kb
+  --> GET /static/js/chunk-71c1d60c.js 200 39ms 5.08kb
+  --> GET /static/js/chunk-ffa4c512.js 200 36ms 31.59kb
+  --> GET /lib/editor.md/lib/marked.min.js 200 27ms 5.46kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 10ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 11ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 2ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 7ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 5ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 4ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 2ms 15.95kb
+  <-- GET /lib/editor.md/lib/codemirror/codemirror.min.css
+  <-- GET /lib/editor.md/lib/codemirror/addon/dialog/dialog.css
+  <-- GET /lib/editor.md/lib/codemirror/addon/search/matchesonscrollbar.css
+  --> GET /lib/editor.md/lib/codemirror/codemirror.min.css 200 13ms 5.19kb
+  --> GET /lib/editor.md/lib/codemirror/addon/dialog/dialog.css 200 10ms 502b
+  --> GET /lib/editor.md/lib/codemirror/addon/search/matchesonscrollbar.css 200 19ms 188b
+  <-- GET /lib/editor.md/lib/codemirror/codemirror.min.js
+  <-- GET /lib/editor.md/images/loading.gif
+  --> GET /lib/editor.md/images/loading.gif 200 21ms 7.54kb
+  --> GET /lib/editor.md/lib/codemirror/codemirror.min.js 200 32ms 60.08kb
+  <-- GET /lib/editor.md/lib/codemirror/codemirror.min.js
+  --> GET /lib/editor.md/lib/codemirror/codemirror.min.js 200 18ms 60.08kb
+  <-- GET /lib/editor.md/lib/codemirror/modes.min.js
+  --> GET /lib/editor.md/lib/codemirror/modes.min.js 200 10ms 60.35kb
+  <-- GET /lib/editor.md/lib/codemirror/modes.min.js
+  --> GET /lib/editor.md/lib/codemirror/modes.min.js 200 10ms 60.35kb
+  <-- GET /lib/editor.md/lib/codemirror/addons.min.js
+  --> GET /lib/editor.md/lib/codemirror/addons.min.js 200 7ms 11.68kb
+  <-- GET /lib/editor.md/lib/codemirror/addons.min.js
+  --> GET /lib/editor.md/lib/codemirror/addons.min.js 200 16ms 11.68kb
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 4ms 5.46kb
+  <-- GET /lib/editor.md/lib/marked.min.js
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 10ms 5.46kb
+  --> GET /lib/editor.md/lib/prettify.min.js 200 9ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 9ms 31.29kb
+  --> GET /lib/editor.md/lib/prettify.min.js 200 15ms 7.5kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 9ms 5.65kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 7ms 31.29kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 7ms 5.33kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 5ms 5.65kb
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 13ms 1.36kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 4ms 30.97kb
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 6ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 14ms 1.36kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 2ms 30.97kb
+ok
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '6e243890-a630-11ea-a32d-4f9af64f52bb',
+  title: '这是我的第一篇平台文档',
+  content: 'hellossssssssssssssssssssssssssssssssssssssssssssssssss7878',
+  topic: '平台文档',
+  time: '2020-06-04T07:59:32.000Z',
+  author: 'YOUJUN'
+}
+options=============== {
+  type: 'doc',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  postId: '6e243890-a630-11ea-a32d-4f9af64f52bb',
+  postTitle: '这是我的第一篇平台文档',
+  postDate: '2020-6-4 16:00:01',
+  postContent: 'hellossssssssssssssssssssssssssssssssssssssssssssssssss7878',
+  postCategory: '平台文档'
+}
+已有文档分类！
+categoryId============ 1
+  --> POST /editor/draftsStorage 200 22ms 85b
+ok
+  <-- POST /editor/postDoc
+  --> POST /editor/postDoc 200 4ms 78b
+ok
+  <-- GET /personal/9271af90-a4a3-11ea-9ee1-d525ae67413d
+GET /personal/9271af90-a4a3-11ea-9ee1-d525ae67413d - 0ms
+  --> GET /personal/9271af90-a4a3-11ea-9ee1-d525ae67413d 200 11ms 1.49kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/personal.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/personal.js
+  --> GET /static/css/personal.css 200 16ms 9.38kb
+  --> GET /static/css/chunk-vendors.css 200 22ms 40.77kb
+  --> GET /static/js/personal.js 200 15ms 4.62kb
+  --> GET /static/js/chunk-vendors.js 200 54ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-ffa4c512.css 200 7ms 3.58kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-028c6c83.css
+  <-- GET /static/js/chunk-028c6c83.js
+  <-- GET /static/css/chunk-c132ca5a.css
+  <-- GET /static/js/chunk-c132ca5a.js
+  <-- GET /static/css/chunk-390cac74.css
+  --> GET /static/css/chunk-028c6c83.css 200 19ms 3.03kb
+  --> GET /static/js/chunk-028c6c83.js 200 19ms 2.33kb
+  --> GET /static/css/chunk-c132ca5a.css 200 18ms 3.16kb
+  <-- GET /static/js/chunk-390cac74.js
+  --> GET /static/js/chunk-ffa4c512.js 200 26ms 31.59kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+  --> GET /static/css/chunk-390cac74.css 200 21ms 3.64kb
+ok
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 13,
+    user_id: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    portrait: '/user-images/0.1436446423680504.jpg',
+    job: 'WEB前端开发工程师',
+    introduction: 'CSGO',
+    blog_url: ''
+  }
+]
+  --> GET /static/js/chunk-c132ca5a.js 200 32ms 8.04kb
+  --> GET /static/js/chunk-390cac74.js 200 64ms 1.88kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 64ms 1.62kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 65ms 1.42kb
+  --> POST /personal/getAuthorinfo 200 66ms 336b
+ok
+  <-- POST /personal/checkUserAuthorBind
+  --> POST /personal/checkUserAuthorBind 200 5ms -
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/css/chunk-5777a83f.css 200 11ms 2.9kb
+  <-- GET /images/logo.png
+  --> GET /static/js/chunk-5777a83f.js 200 13ms 7.42kb
+  --> GET /images/logo.png 200 18ms 6.26kb
+ok
+  <-- POST /personal/getArticleList
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 23ms 226b
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /personal/getArticleList 200 37ms 257b
+  <-- GET /user-images/0.1436446423680504.jpg
+ok
+  <-- POST /personal/verifyOwner
+userId,bodyId 9271af90-a4a3-11ea-9ee1-d525ae67413d 9271af90-a4a3-11ea-9ee1-d525ae67413d
+  --> POST /personal/verifyOwner 200 2ms 36b
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 18ms -
+  <-- GET /images/topic-mid-img.png
+  --> GET /images/topic-mid-img.png 200 7ms 1.21kb
+  <-- GET /static/css/chunk-028c6c83.css
+  <-- GET /static/css/chunk-390cac74.css
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-c132ca5a.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-028c6c83.css 200 21ms 3.03kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 20ms 1.62kb
+  --> GET /static/css/chunk-5777a83f.css 200 18ms 2.9kb
+  --> GET /static/css/chunk-390cac74.css 200 22ms 3.64kb
+  --> GET /static/css/chunk-c132ca5a.css 200 18ms 3.16kb
+  --> GET /static/css/chunk-ffa4c512.css 200 18ms 3.58kb
+  <-- GET /static/js/chunk-028c6c83.js
+  <-- GET /static/js/chunk-390cac74.js
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-c132ca5a.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-028c6c83.js 200 36ms 2.33kb
+  --> GET /static/js/chunk-390cac74.js 200 35ms 1.88kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 30ms 1.42kb
+  --> GET /static/js/chunk-5777a83f.js 200 34ms 7.42kb
+  --> GET /static/js/chunk-ffa4c512.js 200 26ms 31.59kb
+  --> GET /static/js/chunk-c132ca5a.js 200 28ms 8.04kb
+ok
+  <-- GET /editor/doc/drafts/new
+GET /editor/doc/drafts/new - 0ms
+  --> GET /editor/doc/drafts/new 200 12ms 1.16kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/editor.css
+  <-- GET /static/js/editor.js
+  <-- GET /static/js/chunk-vendors.js
+  --> GET /static/css/chunk-vendors.css 200 24ms 40.77kb
+  --> GET /static/css/editor.css 200 11ms 2.33kb
+  --> GET /static/js/editor.js 200 32ms 5.34kb
+  --> GET /static/js/chunk-vendors.js 200 39ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/js/chunk-71c1d60c.js
+  --> GET /static/js/chunk-ffa4c512.js 200 27ms 31.59kb
+  --> GET /static/css/chunk-ffa4c512.css 200 37ms 3.58kb
+  --> GET /static/css/chunk-71c1d60c.css 200 23ms 74b
+  --> GET /static/js/chunk-71c1d60c.js 200 16ms 5.08kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+ok
+  <-- POST /editor/getEditorDropDown
+  --> POST /editor/getEditorDropDown 200 4ms 16b
+  <-- GET /lib/editor.md/css/editormd.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /lib/editor.md/css/editormd.css 200 15ms 15.91kb
+  <-- GET /lib/editor.md/jquery.min.js
+  <-- GET /images/logo.png
+  <-- GET /user-images/0.1436446423680504.jpg
+  --> GET /static/js/chunk-5777a83f.js 200 15ms 7.42kb
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /static/css/chunk-5777a83f.css 200 28ms 2.9kb
+  --> GET /user-images/0.1436446423680504.jpg 404 9ms -
+  --> GET /images/logo.png 200 19ms 6.26kb
+  --> GET /lib/editor.md/jquery.min.js 200 20ms 29.92kb
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-5777a83f.css 200 14ms 2.9kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  --> GET /static/css/chunk-71c1d60c.css 200 17ms 74b
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-ffa4c512.css 200 10ms 3.58kb
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-71c1d60c.js
+  --> GET /static/js/chunk-5777a83f.js 200 14ms 7.42kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-71c1d60c.js 200 11ms 5.08kb
+  --> GET /static/js/chunk-ffa4c512.js 200 11ms 31.59kb
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 11ms 5.46kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 17ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 3ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 3ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 7ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 4ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 10ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 15ms 15.95kb
+  <-- GET /lib/editor.md/lib/codemirror/codemirror.min.css
+  <-- GET /lib/editor.md/lib/codemirror/addon/dialog/dialog.css
+  --> GET /lib/editor.md/lib/codemirror/codemirror.min.css 200 11ms 5.19kb
+  --> GET /lib/editor.md/lib/codemirror/addon/dialog/dialog.css 200 10ms 502b
+  <-- GET /lib/editor.md/lib/codemirror/addon/search/matchesonscrollbar.css
+  --> GET /lib/editor.md/lib/codemirror/addon/search/matchesonscrollbar.css 200 7ms 188b
+  <-- GET /lib/editor.md/lib/codemirror/codemirror.min.js
+  <-- GET /lib/editor.md/images/loading.gif
+  --> GET /lib/editor.md/lib/codemirror/codemirror.min.js 200 17ms 60.08kb
+  --> GET /lib/editor.md/images/loading.gif 200 18ms 7.54kb
+  <-- GET /lib/editor.md/lib/codemirror/modes.min.js
+  --> GET /lib/editor.md/lib/codemirror/modes.min.js 200 14ms 60.35kb
+  <-- GET /lib/editor.md/lib/codemirror/addons.min.js
+  --> GET /lib/editor.md/lib/codemirror/addons.min.js 200 21ms 11.68kb
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 4ms 5.46kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 15ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 9ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 14ms 5.65kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 10ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 10ms 1.36kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 4ms 30.97kb
+ok
+  <-- POST /editor/draftsStorage
+content--------------------= { content: 'di', title: '', topic: '' }
+  --> POST /editor/draftsStorage 200 9ms 85b
+ok
+  <-- POST /editor/draftsStorage
+content--------------------= { content: 'di', title: '这是我的第二篇文档', topic: '' }
+options=============== {
+  type: 'doc',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  postId: '78f8a810-a639-11ea-9eef-97b8c714a0d9',
+  postTitle: '这是我的第二篇文档',
+  postDate: '2020-6-4 16:00:44',
+  postContent: 'di',
+  postCategory: ''
+}
+categoryId============ 
+  --> POST /editor/draftsStorage 200 20ms 85b
+ok
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '', title: '这是我的第二篇文档', topic: '' }
+options=============== {
+  type: 'doc',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  postId: '78f8a810-a639-11ea-9eef-97b8c714a0d9',
+  postTitle: '这是我的第二篇文档',
+  postDate: '2020-6-4 16:00:47',
+  postContent: '',
+  postCategory: ''
+}
+categoryId============ 
+  --> POST /editor/draftsStorage 200 17ms 85b
+ok
+  <-- POST /editor/draftsStorage
+content--------------------= { content: '', title: '这是我的第二篇文档', topic: '平台文档' }
+options=============== {
+  type: 'doc',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  postId: '78f8a810-a639-11ea-9eef-97b8c714a0d9',
+  postTitle: '这是我的第二篇文档',
+  postDate: '2020-6-4 16:00:49',
+  postContent: '',
+  postCategory: '平台文档'
+}
+已有文档分类！
+categoryId============ 1
+  --> POST /editor/draftsStorage 200 19ms 85b
+ok
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  content: 'wqwwewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww',
+  title: '这是我的第二篇文档',
+  topic: '平台文档'
+}
+options=============== {
+  type: 'doc',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  postId: '78f8a810-a639-11ea-9eef-97b8c714a0d9',
+  postTitle: '这是我的第二篇文档',
+  postDate: '2020-6-4 16:00:56',
+  postContent: 'wqwwewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww',
+  postCategory: '平台文档'
+}
+已有文档分类！
+categoryId============ 1
+  --> POST /editor/draftsStorage 200 19ms 85b
+ok
+  <-- POST /editor/postDoc
+已有文档分类！
+  --> POST /editor/postDoc 200 15ms 99b
+  <-- GET /guide
+GET /guide - 0ms
+  --> GET /guide 200 9ms 1.53kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/css/guide.css
+  <-- GET /static/js/guide.js
+  --> GET /static/css/chunk-vendors.css 200 20ms 40.77kb
+  --> GET /static/css/guide.css 200 42ms 9.47kb
+  --> GET /static/js/guide.js 200 44ms 9.67kb
+  --> GET /static/js/chunk-vendors.js 200 53ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-aa4d851e.css
+  <-- GET /static/js/chunk-aa4d851e.js
+  --> GET /static/css/chunk-ffa4c512.css 200 23ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 21ms 31.59kb
+  --> GET /static/css/chunk-aa4d851e.css 200 16ms 1.09kb
+  --> GET /static/js/chunk-aa4d851e.js 200 18ms 847b
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 11ms 227b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/css/chunk-2924e506.css
+  <-- GET /static/js/chunk-2924e506.js
+  --> GET /static/css/chunk-5777a83f.css 200 23ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 27ms 7.42kb
+  --> GET /static/css/chunk-2924e506.css 200 17ms 1.39kb
+  <-- GET /images/logo.png
+  --> GET /static/js/chunk-2924e506.js 200 15ms 1.89kb
+  --> GET /images/logo.png 200 17ms 6.26kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/js/chunk-71c1d60c.js
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /static/css/chunk-71c1d60c.css 200 19ms 74b
+  --> GET /static/js/chunk-71c1d60c.js 200 21ms 5.08kb
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 22ms 80b
+  <-- GET /lib/editor.md/css/editormd.css
+  <-- GET /lib/editor.md/jquery.min.js
+  --> GET /lib/editor.md/jquery.min.js 200 12ms 29.92kb
+  <-- GET /user-images/0.1436446423680504.jpg
+  --> GET /lib/editor.md/css/editormd.css 200 18ms 15.91kb
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 3ms -
+  <-- GET /static/css/chunk-2924e506.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/css/chunk-aa4d851e.css
+  --> GET /static/css/chunk-2924e506.css 200 22ms 1.39kb
+  --> GET /static/css/chunk-71c1d60c.css 200 19ms 74b
+  --> GET /static/css/chunk-5777a83f.css 200 22ms 2.9kb
+  --> GET /static/css/chunk-aa4d851e.css 200 19ms 1.09kb
+  <-- GET /static/css/chunk-bf898d58.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /lib/editor.md/lib/marked.min.js
+  <-- GET /static/js/chunk-2924e506.js
+  --> GET /static/css/chunk-bf898d58.css 200 17ms 163b
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/css/chunk-ffa4c512.css 200 15ms 3.58kb
+  --> GET /lib/editor.md/lib/marked.min.js 200 19ms 5.46kb
+  --> GET /static/js/chunk-2924e506.js 200 14ms 1.89kb
+  --> GET /static/js/chunk-5777a83f.js 200 13ms 7.42kb
+  <-- GET /static/js/chunk-22763b90.js
+  <-- GET /static/js/chunk-71c1d60c.js
+  <-- GET /static/js/chunk-aa4d851e.js
+  <-- GET /static/js/chunk-bf898d58.js
+  --> GET /static/js/chunk-22763b90.js 200 37ms 489b
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-bf898d58.js 200 9ms 748b
+  --> GET /static/js/chunk-aa4d851e.js 200 13ms 847b
+  --> GET /static/js/chunk-71c1d60c.js 200 19ms 5.08kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /static/js/chunk-ffa4c512.js 200 15ms 31.59kb
+  --> GET /lib/editor.md/lib/prettify.min.js 200 19ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 11ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 3ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 9ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 8ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 2ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 11ms 15.95kb
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 2ms 80b
+  <-- GET /guide/78f8a810-a639-11ea-9eef-97b8c714a0d9
+hello
+  --> GET /guide/78f8a810-a639-11ea-9eef-97b8c714a0d9 200 2ms 88b
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 3ms 80b
+  <-- GET /guide/78f8a810-a639-11ea-9eef-97b8c714a0d9
+hello
+  --> GET /guide/78f8a810-a639-11ea-9eef-97b8c714a0d9 200 5ms 88b
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 10ms 80b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+ok
+  <-- GET /personal/9271af90-a4a3-11ea-9ee1-d525ae67413d
+GET /personal/9271af90-a4a3-11ea-9ee1-d525ae67413d - 0ms
+  --> GET /personal/9271af90-a4a3-11ea-9ee1-d525ae67413d 200 48ms 1.49kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/personal.js
+  <-- GET /static/css/personal.css
+  --> GET /static/js/personal.js 200 25ms 4.62kb
+  --> GET /static/css/personal.css 200 25ms 9.38kb
+  --> GET /static/css/chunk-vendors.css 200 36ms 40.77kb
+  --> GET /static/js/chunk-vendors.js 200 86ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-028c6c83.css
+  <-- GET /static/js/chunk-028c6c83.js
+  --> GET /static/css/chunk-ffa4c512.css 200 20ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 22ms 31.59kb
+  --> GET /static/js/chunk-028c6c83.js 200 24ms 2.33kb
+  --> GET /static/css/chunk-028c6c83.css 200 37ms 3.03kb
+  <-- GET /static/css/chunk-c132ca5a.css
+  <-- GET /static/js/chunk-c132ca5a.js
+  --> GET /static/css/chunk-c132ca5a.css 200 10ms 3.16kb
+  --> GET /static/js/chunk-c132ca5a.js 200 11ms 8.04kb
+  <-- GET /static/css/chunk-390cac74.css
+  <-- GET /static/js/chunk-390cac74.js
+  --> GET /static/js/chunk-390cac74.js 200 15ms 1.88kb
+  --> GET /static/css/chunk-390cac74.css 200 27ms 3.64kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 12ms 1.62kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 18ms 1.42kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 9ms 26b
+ok
+  <-- POST /personal/getAuthorinfo
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/css/chunk-5777a83f.css 200 14ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 10ms 7.42kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 8ms 6.26kb
+ok
+  <-- POST /personal/checkUserAuthorBind
+ok
+  <-- POST /personal/getArticleList
+ok
+  <-- POST /community/getTopicList
+result1 [
+  RowDataPacket {
+    id: 13,
+    user_id: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    portrait: '/user-images/0.1436446423680504.jpg',
+    job: 'WEB前端开发工程师',
+    introduction: 'CSGO',
+    blog_url: ''
+  }
+]
+  --> POST /personal/checkUserAuthorBind 200 203ms -
+  --> POST /community/getTopicList 200 219ms 226b
+  --> POST /personal/getAuthorinfo 200 357ms 336b
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /personal/getArticleList 200 276ms 257b
+  <-- GET /static/css/chunk-028c6c83.css
+  <-- GET /static/css/chunk-390cac74.css
+  --> GET /static/css/chunk-028c6c83.css 200 6ms 3.03kb
+  --> GET /static/css/chunk-390cac74.css 200 6ms 3.64kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 12ms 1.62kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-c132ca5a.css
+  --> GET /static/css/chunk-5777a83f.css 200 10ms 2.9kb
+  --> GET /static/css/chunk-c132ca5a.css 200 9ms 3.16kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-ffa4c512.css 200 14ms 3.58kb
+  <-- GET /user-images/0.1436446423680504.jpg
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 7ms -
+ok
+  <-- POST /personal/verifyOwner
+userId,bodyId 9271af90-a4a3-11ea-9ee1-d525ae67413d 9271af90-a4a3-11ea-9ee1-d525ae67413d
+  --> POST /personal/verifyOwner 200 2ms 36b
+  <-- GET /images/topic-mid-img.png
+  <-- GET /static/js/chunk-028c6c83.js
+  <-- GET /static/js/chunk-390cac74.js
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-c132ca5a.js
+  --> GET /images/topic-mid-img.png 200 28ms 1.21kb
+  --> GET /static/js/chunk-028c6c83.js 200 20ms 2.33kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 19ms 1.42kb
+  --> GET /static/js/chunk-390cac74.js 200 22ms 1.88kb
+  --> GET /static/js/chunk-5777a83f.js 200 16ms 7.42kb
+  --> GET /static/js/chunk-c132ca5a.js 200 15ms 8.04kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 7ms 31.59kb
+ok
+  <-- GET /editor/doc/drafts
+GET /editor/doc/drafts - 0ms
+  --> GET /editor/doc/drafts 200 30ms 1.06kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/drafts.css
+  <-- GET /static/js/chunk-vendors.js
+  --> GET /static/css/chunk-vendors.css 200 28ms 40.77kb
+  --> GET /static/css/drafts.css 200 30ms 9.84kb
+  --> GET /static/js/chunk-vendors.js 200 39ms 541.1kb
+  <-- GET /static/js/drafts.js
+  --> GET /static/js/drafts.js 200 41ms 4.61kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/css/chunk-ffa4c512.css 200 11ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 8ms 31.59kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+ok
+  <-- POST /editor/getDraftsList
+getDraftsList {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /editor/getDraftsList 200 9ms 255b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-5777a83f.js 200 11ms 7.42kb
+  <-- GET /images/logo.png
+  --> GET /static/css/chunk-5777a83f.css 200 20ms 2.9kb
+  --> GET /images/logo.png 200 12ms 6.26kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/css/chunk-ffa4c512.css 200 18ms 3.58kb
+  --> GET /static/js/chunk-5777a83f.js 200 17ms 7.42kb
+  --> GET /static/css/chunk-5777a83f.css 200 27ms 2.9kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 5ms 31.59kb
+  <-- GET /user-images/0.1436446423680504.jpg
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 8ms -
+ok
+  <-- GET /editor/doc/drafts/6e243890-a630-11ea-a32d-4f9af64f52bb
+GET /editor/doc/drafts/6e243890-a630-11ea-a32d-4f9af64f52bb - 0ms
+  --> GET /editor/doc/drafts/6e243890-a630-11ea-a32d-4f9af64f52bb 200 15ms 1.16kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/editor.css
+  --> GET /static/css/chunk-vendors.css 200 17ms 40.77kb
+  <-- GET /static/js/editor.js
+  <-- GET /static/js/chunk-vendors.js
+  --> GET /static/css/editor.css 200 9ms 2.33kb
+  --> GET /static/js/editor.js 200 8ms 5.34kb
+  --> GET /static/js/chunk-vendors.js 200 33ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/css/chunk-ffa4c512.css 200 13ms 3.58kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  --> GET /static/js/chunk-ffa4c512.js 200 16ms 31.59kb
+  --> GET /static/css/chunk-71c1d60c.css 200 8ms 74b
+  <-- GET /static/js/chunk-71c1d60c.js
+  --> GET /static/js/chunk-71c1d60c.js 200 18ms 5.08kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 5ms 26b
+ok
+  <-- POST /editor/getEditorDropDown
+ok
+  <-- POST /editor/getEditorInfo
+  --> POST /editor/getEditorDropDown 200 12ms 16b
+docResults ===============> [
+  RowDataPacket {
+    latest_modify_date: 2020-06-04T08:00:01.000Z,
+    post_author: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    post_title: '这是我的第一篇平台文档',
+    post_content: 'hellossssssssssssssssssssssssssssssssssssssssssssssssss7878',
+    post_category_name: '平台文档'
+  }
+]
+  --> POST /editor/getEditorInfo 200 10ms 284b
+  <-- GET /lib/editor.md/css/editormd.css
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-5777a83f.css 200 7ms 2.9kb
+  --> GET /lib/editor.md/css/editormd.css 200 9ms 15.91kb
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /images/logo.png
+  <-- GET /lib/editor.md/jquery.min.js
+  <-- GET /user-images/0.1436446423680504.jpg
+  --> GET /static/js/chunk-5777a83f.js 200 24ms 7.42kb
+  --> GET /images/logo.png 200 30ms 6.26kb
+  --> GET /lib/editor.md/jquery.min.js 200 30ms 29.92kb
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 23ms -
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-71c1d60c.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/js/chunk-5777a83f.js 200 21ms 7.42kb
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /static/js/chunk-71c1d60c.js 200 25ms 5.08kb
+  --> GET /static/js/chunk-ffa4c512.js 200 27ms 31.59kb
+  --> GET /static/css/chunk-5777a83f.css 200 27ms 2.9kb
+  --> GET /static/css/chunk-71c1d60c.css 200 28ms 74b
+  --> GET /static/css/chunk-ffa4c512.css 200 27ms 3.58kb
+  --> GET /lib/editor.md/lib/marked.min.js 200 18ms 5.46kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 3ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 18ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 7ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 4ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 6ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 9ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 6ms 15.95kb
+  <-- GET /lib/editor.md/lib/codemirror/codemirror.min.css
+  <-- GET /lib/editor.md/lib/codemirror/addon/dialog/dialog.css
+  <-- GET /lib/editor.md/lib/codemirror/addon/search/matchesonscrollbar.css
+  <-- GET /lib/editor.md/lib/codemirror/codemirror.min.js
+  --> GET /lib/editor.md/lib/codemirror/codemirror.min.css 200 17ms 5.19kb
+  --> GET /lib/editor.md/lib/codemirror/addon/dialog/dialog.css 200 16ms 502b
+  --> GET /lib/editor.md/lib/codemirror/addon/search/matchesonscrollbar.css 200 21ms 188b
+  --> GET /lib/editor.md/lib/codemirror/codemirror.min.js 200 21ms 60.08kb
+  <-- GET /lib/editor.md/lib/codemirror/codemirror.min.js
+  --> GET /lib/editor.md/lib/codemirror/codemirror.min.js 200 21ms 60.08kb
+  <-- GET /lib/editor.md/images/loading.gif
+  <-- GET /lib/editor.md/lib/codemirror/modes.min.js
+  --> GET /lib/editor.md/images/loading.gif 200 9ms 7.54kb
+  --> GET /lib/editor.md/lib/codemirror/modes.min.js 200 6ms 60.35kb
+  <-- GET /lib/editor.md/lib/codemirror/modes.min.js
+  --> GET /lib/editor.md/lib/codemirror/modes.min.js 200 10ms 60.35kb
+  <-- GET /lib/editor.md/lib/codemirror/addons.min.js
+  --> GET /lib/editor.md/lib/codemirror/addons.min.js 200 14ms 11.68kb
+  <-- GET /lib/editor.md/lib/codemirror/addons.min.js
+  --> GET /lib/editor.md/lib/codemirror/addons.min.js 200 10ms 11.68kb
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 7ms 5.46kb
+  <-- GET /lib/editor.md/fonts/fontawesome-webfont.woff2?v=4.3.0
+  --> GET /lib/editor.md/fonts/fontawesome-webfont.woff2?v=4.3.0 200 6ms 55.45kb
+  <-- GET /lib/editor.md/lib/marked.min.js
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 12ms 5.46kb
+  --> GET /lib/editor.md/lib/prettify.min.js 200 15ms 7.5kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 14ms 7.5kb
+  --> GET /lib/editor.md/lib/raphael.min.js 200 15ms 31.29kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 11ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 6ms 5.65kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 6ms 5.65kb
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 5ms 5.33kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 7ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 4ms 1.36kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 8ms 1.36kb
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 10ms 30.97kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 13ms 30.97kb
+ok
+  <-- POST /editor/draftsStorage
+content--------------------= {
+  id: '6e243890-a630-11ea-a32d-4f9af64f52bb',
+  title: '这是我的第一篇平台文档',
+  content: '### 主要特性\n' +
+    '\n' +
+    '- 支持“标准”Markdown / CommonMark和Github风格的语法，也可变身为代码编辑器；\n' +
+    '- 支持实时预览、图片（跨域）上传、预格式文本/代码/表格插入、代码折叠、搜索替换、只读模式、自定义样式主题和多语言语法高亮等功能；\n' +
+    '- 支持ToC（Table of Contents）、Emoji表情、Task lists、@链接等Markdown扩展语法；\n' +
+    '- 支持TeX科学公式（基于KaTeX）、流程图 Flowchart 和 时序图 Sequence Diagram;\n' +
+    '- 支持识别和解析HTML标签，并且支持自定义过滤标签解析，具有可靠的安全性和几乎无限的扩展性；\n' +
+    '- 支持 AMD / CMD 模块化加载（支持 Require.js & Sea.js），并且支持自定义扩展插件；\n' +
+    '- 兼容主流的浏览器（IE8+）和Zepto.js，且支持iPad等平板设备；\n' +
+    '- 支持自定义主题样式；\n' +
+    '\n' +
+    '# Editor.md\n' +
+    '\n' +
+    '![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)\n' +
+    '\n' +
+    '![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)\n' +
+    '\n' +
+    '**目录 (Table of Contents)**\n' +
+    '\n' +
+    '[TOCM]\n' +
+    '\n' +
+    '[TOC]\n' +
+    '\n' +
+    '# Heading 1\n' +
+    '## Heading 2\n' +
+    '### Heading 3\n' +
+    '#### Heading 4\n' +
+    '##### Heading 5\n' +
+    '###### Heading 6\n' +
+    '# Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+    '## Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+    '### Heading 3 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+    '#### Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+    '##### Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+    '###### Heading 6 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+    '\n' +
+    '#### 标题（用底线的形式）Heading (underline)\n' +
+    '\n' +
+    'This is an H1\n' +
+    '=============\n' +
+    '\n' +
+    'This is an H2\n' +
+    '-------------\n' +
+    '\n' +
+    '### 字符效果和横线等\n' +
+    '                \n' +
+    '----\n' +
+    '\n' +
+    '~~删除线~~ <s>删除线（开启识别HTML标签时）</s>\n' +
+    '*斜体字*      _斜体字_\n' +
+    '**粗体**  __粗体__\n' +
+    '***粗斜体*** ___粗斜体___\n' +
+    '\n' +
+    '上标：X<sub>2</sub>，下标：O<sup>2</sup>\n' +
+    '\n' +
+    '**缩写(同HTML的abbr标签)**\n' +
+    '\n' +
+    '> 即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启\n' +
+    '\n' +
+    'The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.\n' +
+    '\n' +
+    '### 引用 Blockquotes\n' +
+    '\n' +
+    '> 引用文本 Blockquotes\n' +
+    '\n' +
+    '引用的行内混合 Blockquotes\n' +
+    '                    \n' +
+    '> 引用：如果想要插入空白换行`即<br />标签`，在插入处先键入两个以上的空格然后回车即可，[普通链接](http://localhost/)。\n' +
+    '\n' +
+    '### 锚点与链接 Links\n' +
+    '\n' +
+    '[普通链接](http://localhost/)\n' +
+    '\n' +
+    '[普通链接带标题](http://localhost/ "普通链接带标题")\n' +
+    '\n' +
+    '直接链接：<https://github.com>\n' +
+    '\n' +
+    '[锚点链接][anchor-id] \n' +
+    '\n' +
+    '[anchor-id]: http://www.this-anchor-link.com/\n' +
+    '\n' +
+    'GFM a-tail link @pandao\n' +
+    '\n' +
+    '> @pandao\n' +
+    '\n' +
+    '### 多语言代码高亮 Codes\n' +
+    '\n' +
+    '#### 行内代码 Inline code\n' +
+    '\n' +
+    '执行命令：`npm install marked`\n' +
+    '\n' +
+    '#### 缩进风格\n' +
+    '\n' +
+    '即缩进四个空格，也做为实现类似`<pre>`预格式化文本(Preformatted Text)的功能。\n' +
+    '\n' +
+    '    <?php\n' +
+    '        echo "Hello world!";\n' +
+    '    ?>\n' +
+    '    \n' +
+    '预格式化文本：\n' +
+    '\n' +
+    '    | First Header  | Second Header |\n' +
+    '    | ------------- | ------------- |\n' +
+    '    | Content Cell  | Content Cell  |\n' +
+    '    | Content Cell  | Content Cell  |\n' +
+    '\n' +
+    '#### JS代码　\n' +
+    '\n' +
+    '```javascript\n' +
+    'function test(){\n' +
+    '\tconsole.log("Hello world!");\n' +
+    '}\n' +
+    ' \n' +
+    '(function(){\n' +
+    '    var box = function(){\n' +
+    '        return box.fn.init();\n' +
+    '    };\n' +
+    '\n' +
+    '    box.prototype = box.fn = {\n' +
+    '        init : function(){\n' +
+    "            console.log('box.init()');\n" +
+    '\n' +
+    '\t\t\treturn this;\n' +
+    '        },\n' +
+    '\n' +
+    '\t\tadd : function(str){\n' +
+    '\t\t\talert("add", str);\n' +
+    '\n' +
+    '\t\t\treturn this;\n' +
+    '\t\t},\n' +
+    '\n' +
+    '\t\tremove : function(str){\n' +
+    '\t\t\talert("remove", str);\n' +
+    '\n' +
+    '\t\t\treturn this;\n' +
+    '\t\t}\n' +
+    '    };\n' +
+    '    \n' +
+    '    box.fn.init.prototype = box.fn;\n' +
+    '    \n' +
+    '    window.box =box;\n' +
+    '})();\n' +
+    '\n' +
+    'var testBox = box();\n' +
+    'testBox.add("jQuery").remove("jQuery");\n' +
+    '```\n' +
+    '\n' +
+    '#### HTML代码 HTML codes\n' +
+    '\n' +
+    '```html\n' +
+    '<!DOCTYPE html>\n' +
+    '<html>\n' +
+    '    <head>\n' +
+    '        <mate charest="utf-8" />\n' +
+    '        <title>Hello world!</title>\n' +
+    '    </head>\n' +
+    '    <body>\n' +
+    '        <h1>Hello world!</h1>\n' +
+    '    </body>\n' +
+    '</html>\n' +
+    '```\n' +
+    '\n' +
+    '### 图片 Images\n' +
+    '\n' +
+    'Image:\n' +
+    '\n' +
+    '![](https://pandao.github.io/editor.md/examples/images/4.jpg)\n' +
+    '\n' +
+    '> Follow your heart.\n' +
+    '\n' +
+    '![](https://pandao.github.io/editor.md/examples/images/8.jpg)\n' +
+    '\n' +
+    '> 图为：厦门白城沙滩\n' +
+    '\n' +
+    '图片加链接 (Image + Link)：\n' +
+    '\n' +
+    '[![](https://pandao.github.io/editor.md/examples/images/7.jpg)](https://pandao.github.io/editor.md/examples/images/7.jpg "李健首张专辑《似水流年》封面")\n' +
+    '\n' +
+    '> 图为：李健首张专辑《似水流年》封面\n' +
+    '                \n' +
+    '----\n' +
+    '\n' +
+    '### 列表 Lists\n' +
+    '\n' +
+    '#### 无序列表（减号）Unordered Lists (-)\n' +
+    '                \n' +
+    '- 列表一\n' +
+    '- 列表二\n' +
+    '- 列表三\n' +
+    '     \n' +
+    '#### 无序列表（星号）Unordered Lists (*)\n' +
+    '\n' +
+    '* 列表一\n' +
+    '* 列表二\n' +
+    '* 列表三\n' +
+    '\n' +
+    '#### 无序列表（加号和嵌套）Unordered Lists (+)\n' +
+    '                \n' +
+    '+ 列表一\n' +
+    '+ 列表二\n' +
+    '    + 列表二-1\n' +
+    '    + 列表二-2\n' +
+    '    + 列表二-3\n' +
+    '+ 列表三\n' +
+    '    * 列表一\n' +
+    '    * 列表二\n' +
+    '    * 列表三\n' +
+    '\n' +
+    '#### 有序列表 Ordered Lists (-)\n' +
+    '                \n' +
+    '1. 第一行\n' +
+    '2. 第二行\n' +
+    '3. 第三行\n' +
+    '\n' +
+    '#### GFM task list\n' +
+    '\n' +
+    '- [x] GFM task list 1\n' +
+    '- [x] GFM task list 2\n' +
+    '- [ ] GFM task list 3\n' +
+    '    - [ ] GFM task list 3-1\n' +
+    '    - [ ] GFM task list 3-2\n' +
+    '    - [ ] GFM task list 3-3\n' +
+    '- [ ] GFM task list 4\n' +
+    '    - [ ] GFM task list 4-1\n' +
+    '    - [ ] GFM task list 4-2\n' +
+    '                \n' +
+    '----\n' +
+    '                    \n' +
+    '### 绘制表格 Tables\n' +
+    '\n' +
+    '| 项目        | 价格   |  数量  |\n' +
+    '| --------   | -----:  | :----:  |\n' +
+    '| 计算机      | $1600   |   5     |\n' +
+    '| 手机        |   $12   |   12   |\n' +
+    '| 管线        |    $1    |  234  |\n' +
+    '                    \n' +
+    'First Header  | Second Header\n' +
+    '------------- | -------------\n' +
+    'Content Cell  | Content Cell\n' +
+    'Content Cell  | Content Cell \n' +
+    '\n' +
+    '| First Header  | Second Header |\n' +
+    '| ------------- | ------------- |\n' +
+    '| Content Cell  | Content Cell  |\n' +
+    '| Content Cell  | Content Cell  |\n' +
+    '\n' +
+    '| Function name | Description                    |\n' +
+    '| ------------- | ------------------------------ |\n' +
+    '| `help()`      | Display the help window.       |\n' +
+    '| `destroy()`   | **Destroy your computer!**     |\n' +
+    '\n' +
+    '| Left-Aligned  | Center Aligned  | Right Aligned |\n' +
+    '| :------------ |:---------------:| -----:|\n' +
+    '| col 3 is      | some wordy text | $1600 |\n' +
+    '| col 2 is      | centered        |   $12 |\n' +
+    '| zebra stripes | are neat        |    $1 |\n' +
+    '\n' +
+    '| Item      | Value |\n' +
+    '| --------- | -----:|\n' +
+    '| Computer  | $1600 |\n' +
+    '| Phone     |   $12 |\n' +
+    '| Pipe      |    $1 |\n' +
+    '                \n' +
+    '----\n' +
+    '\n' +
+    '#### 特殊符号 HTML Entities Codes\n' +
+    '\n' +
+    '&copy; &  &uml; &trade; &iexcl; &pound;\n' +
+    '&amp; &lt; &gt; &yen; &euro; &reg; &plusmn; &para; &sect; &brvbar; &macr; &laquo; &middot; \n' +
+    '\n' +
+    'X&sup2; Y&sup3; &frac34; &frac14;  &times;  &divide;   &raquo;\n' +
+    '\n' +
+    '18&ordm;C  &quot;  &apos;\n' +
+    '\n' +
+    '### Emoji表情 :smiley:\n' +
+    '\n' +
+    '> Blockquotes :star:\n' +
+    '\n' +
+    '#### GFM task lists & Emoji & fontAwesome icon emoji & editormd logo emoji :editormd-logo-5x:\n' +
+    '\n' +
+    '- [x] :smiley: @mentions, :smiley: #refs, [links](), **formatting**, and <del>tags</del> supported :editormd-logo:;\n' +
+    '- [x] list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;\n' +
+    '- [x] [ ] :smiley: this is a complete item :smiley:;\n' +
+    '- [ ] []this is an incomplete item [test link](#) :fa-star: @pandao; \n' +
+    '- [ ] [ ]this is an incomplete item :fa-star: :fa-gear:;\n' +
+    '    - [ ] :smiley: this is an incomplete item [test link](#) :fa-star: :fa-gear:;\n' +
+    '    - [ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item [test link](#);\n' +
+    ' \n' +
+    '#### 反斜杠 Escape\n' +
+    '\n' +
+    '\\*literal asterisks\\*\n' +
+    '            \n' +
+    '### 科学公式 TeX(KaTeX)\n' +
+    '                    \n' +
+    '$$E=mc^2$$\n' +
+    '\n' +
+    '行内的公式$$E=mc^2$$行内的公式，行内的$$E=mc^2$$公式。\n' +
+    '\n' +
+    '$$\\(\\sqrt{3x-1}+(1+x)^2\\)$$\n' +
+    '                    \n' +
+    '$$\\sin(\\alpha)^{\\theta}=\\sum_{i=0}^{n}(x^i + \\cos(f))$$\n' +
+    '\n' +
+    '多行公式：\n' +
+    '\n' +
+    '```math\n' +
+    '\\displaystyle\n' +
+    '\\left( \\sum\\_{k=1}^n a\\_k b\\_k \\right)^2\n' +
+    '\\leq\n' +
+    '\\left( \\sum\\_{k=1}^n a\\_k^2 \\right)\n' +
+    '\\left( \\sum\\_{k=1}^n b\\_k^2 \\right)\n' +
+    '```\n' +
+    '\n' +
+    '```katex\n' +
+    '\\displaystyle \n' +
+    '    \\frac{1}{\n' +
+    '        \\Bigl(\\sqrt{\\phi \\sqrt{5}}-\\phi\\Bigr) e^{\n' +
+    '        \\frac25 \\pi}} = 1+\\frac{e^{-2\\pi}} {1+\\frac{e^{-4\\pi}} {\n' +
+    '        1+\\frac{e^{-6\\pi}}\n' +
+    '        {1+\\frac{e^{-8\\pi}}\n' +
+    '         {1+\\cdots} }\n' +
+    '        } \n' +
+    '    }\n' +
+    '```\n' +
+    '\n' +
+    '```latex\n' +
+    'f(x) = \\int_{-\\infty}^\\infty\n' +
+    '    \\hat f(\\xi)\\,e^{2 \\pi i \\xi x}\n' +
+    '    \\,d\\xi\n' +
+    '```\n' +
+    '                \n' +
+    '### 绘制流程图 Flowchart\n' +
+    '\n' +
+    '```flow\n' +
+    'st=>start: 用户登陆\n' +
+    'op=>operation: 登陆操作\n' +
+    'cond=>condition: 登陆成功 Yes or No?\n' +
+    'e=>end: 进入后台\n' +
+    '\n' +
+    'st->op->cond\n' +
+    'cond(yes)->e\n' +
+    'cond(no)->op\n' +
+    '```\n' +
+    '                    \n' +
+    '### 绘制序列图 Sequence Diagram\n' +
+    '                    \n' +
+    '```seq\n' +
+    'Andrew->China: Says Hello \n' +
+    'Note right of China: China thinks\\nabout it \n' +
+    'China-->Andrew: How are you? \n' +
+    'Andrew->>China: I am good thanks!\n' +
+    '```\n' +
+    '\n' +
+    '### End',
+  topic: '平台文档',
+  time: '2020-06-04T08:00:01.000Z',
+  author: 'YOUJUN'
+}
+options=============== {
+  type: 'doc',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  postId: '6e243890-a630-11ea-a32d-4f9af64f52bb',
+  postTitle: '这是我的第一篇平台文档',
+  postDate: '2020-6-4 16:13:01',
+  postContent: '### 主要特性\n' +
+    '\n' +
+    '- 支持“标准”Markdown / CommonMark和Github风格的语法，也可变身为代码编辑器；\n' +
+    '- 支持实时预览、图片（跨域）上传、预格式文本/代码/表格插入、代码折叠、搜索替换、只读模式、自定义样式主题和多语言语法高亮等功能；\n' +
+    '- 支持ToC（Table of Contents）、Emoji表情、Task lists、@链接等Markdown扩展语法；\n' +
+    '- 支持TeX科学公式（基于KaTeX）、流程图 Flowchart 和 时序图 Sequence Diagram;\n' +
+    '- 支持识别和解析HTML标签，并且支持自定义过滤标签解析，具有可靠的安全性和几乎无限的扩展性；\n' +
+    '- 支持 AMD / CMD 模块化加载（支持 Require.js & Sea.js），并且支持自定义扩展插件；\n' +
+    '- 兼容主流的浏览器（IE8+）和Zepto.js，且支持iPad等平板设备；\n' +
+    '- 支持自定义主题样式；\n' +
+    '\n' +
+    '# Editor.md\n' +
+    '\n' +
+    '![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)\n' +
+    '\n' +
+    '![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)\n' +
+    '\n' +
+    '**目录 (Table of Contents)**\n' +
+    '\n' +
+    '[TOCM]\n' +
+    '\n' +
+    '[TOC]\n' +
+    '\n' +
+    '# Heading 1\n' +
+    '## Heading 2\n' +
+    '### Heading 3\n' +
+    '#### Heading 4\n' +
+    '##### Heading 5\n' +
+    '###### Heading 6\n' +
+    '# Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+    '## Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+    '### Heading 3 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+    '#### Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+    '##### Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+    '###### Heading 6 link [Heading link](https://github.com/pandao/editor.md "Heading link")\n' +
+    '\n' +
+    '#### 标题（用底线的形式）Heading (underline)\n' +
+    '\n' +
+    'This is an H1\n' +
+    '=============\n' +
+    '\n' +
+    'This is an H2\n' +
+    '-------------\n' +
+    '\n' +
+    '### 字符效果和横线等\n' +
+    '                \n' +
+    '----\n' +
+    '\n' +
+    '~~删除线~~ <s>删除线（开启识别HTML标签时）</s>\n' +
+    '*斜体字*      _斜体字_\n' +
+    '**粗体**  __粗体__\n' +
+    '***粗斜体*** ___粗斜体___\n' +
+    '\n' +
+    '上标：X<sub>2</sub>，下标：O<sup>2</sup>\n' +
+    '\n' +
+    '**缩写(同HTML的abbr标签)**\n' +
+    '\n' +
+    '> 即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启\n' +
+    '\n' +
+    'The <abbr title="Hyper Text Markup Language">HTML</abbr> specification is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.\n' +
+    '\n' +
+    '### 引用 Blockquotes\n' +
+    '\n' +
+    '> 引用文本 Blockquotes\n' +
+    '\n' +
+    '引用的行内混合 Blockquotes\n' +
+    '                    \n' +
+    '> 引用：如果想要插入空白换行`即<br />标签`，在插入处先键入两个以上的空格然后回车即可，[普通链接](http://localhost/)。\n' +
+    '\n' +
+    '### 锚点与链接 Links\n' +
+    '\n' +
+    '[普通链接](http://localhost/)\n' +
+    '\n' +
+    '[普通链接带标题](http://localhost/ "普通链接带标题")\n' +
+    '\n' +
+    '直接链接：<https://github.com>\n' +
+    '\n' +
+    '[锚点链接][anchor-id] \n' +
+    '\n' +
+    '[anchor-id]: http://www.this-anchor-link.com/\n' +
+    '\n' +
+    'GFM a-tail link @pandao\n' +
+    '\n' +
+    '> @pandao\n' +
+    '\n' +
+    '### 多语言代码高亮 Codes\n' +
+    '\n' +
+    '#### 行内代码 Inline code\n' +
+    '\n' +
+    '执行命令：`npm install marked`\n' +
+    '\n' +
+    '#### 缩进风格\n' +
+    '\n' +
+    '即缩进四个空格，也做为实现类似`<pre>`预格式化文本(Preformatted Text)的功能。\n' +
+    '\n' +
+    '    <?php\n' +
+    '        echo "Hello world!";\n' +
+    '    ?>\n' +
+    '    \n' +
+    '预格式化文本：\n' +
+    '\n' +
+    '    | First Header  | Second Header |\n' +
+    '    | ------------- | ------------- |\n' +
+    '    | Content Cell  | Content Cell  |\n' +
+    '    | Content Cell  | Content Cell  |\n' +
+    '\n' +
+    '#### JS代码　\n' +
+    '\n' +
+    '```javascript\n' +
+    'function test(){\n' +
+    '\tconsole.log("Hello world!");\n' +
+    '}\n' +
+    ' \n' +
+    '(function(){\n' +
+    '    var box = function(){\n' +
+    '        return box.fn.init();\n' +
+    '    };\n' +
+    '\n' +
+    '    box.prototype = box.fn = {\n' +
+    '        init : function(){\n' +
+    "            console.log('box.init()');\n" +
+    '\n' +
+    '\t\t\treturn this;\n' +
+    '        },\n' +
+    '\n' +
+    '\t\tadd : function(str){\n' +
+    '\t\t\talert("add", str);\n' +
+    '\n' +
+    '\t\t\treturn this;\n' +
+    '\t\t},\n' +
+    '\n' +
+    '\t\tremove : function(str){\n' +
+    '\t\t\talert("remove", str);\n' +
+    '\n' +
+    '\t\t\treturn this;\n' +
+    '\t\t}\n' +
+    '    };\n' +
+    '    \n' +
+    '    box.fn.init.prototype = box.fn;\n' +
+    '    \n' +
+    '    window.box =box;\n' +
+    '})();\n' +
+    '\n' +
+    'var testBox = box();\n' +
+    'testBox.add("jQuery").remove("jQuery");\n' +
+    '```\n' +
+    '\n' +
+    '#### HTML代码 HTML codes\n' +
+    '\n' +
+    '```html\n' +
+    '<!DOCTYPE html>\n' +
+    '<html>\n' +
+    '    <head>\n' +
+    '        <mate charest="utf-8" />\n' +
+    '        <title>Hello world!</title>\n' +
+    '    </head>\n' +
+    '    <body>\n' +
+    '        <h1>Hello world!</h1>\n' +
+    '    </body>\n' +
+    '</html>\n' +
+    '```\n' +
+    '\n' +
+    '### 图片 Images\n' +
+    '\n' +
+    'Image:\n' +
+    '\n' +
+    '![](https://pandao.github.io/editor.md/examples/images/4.jpg)\n' +
+    '\n' +
+    '> Follow your heart.\n' +
+    '\n' +
+    '![](https://pandao.github.io/editor.md/examples/images/8.jpg)\n' +
+    '\n' +
+    '> 图为：厦门白城沙滩\n' +
+    '\n' +
+    '图片加链接 (Image + Link)：\n' +
+    '\n' +
+    '[![](https://pandao.github.io/editor.md/examples/images/7.jpg)](https://pandao.github.io/editor.md/examples/images/7.jpg "李健首张专辑《似水流年》封面")\n' +
+    '\n' +
+    '> 图为：李健首张专辑《似水流年》封面\n' +
+    '                \n' +
+    '----\n' +
+    '\n' +
+    '### 列表 Lists\n' +
+    '\n' +
+    '#### 无序列表（减号）Unordered Lists (-)\n' +
+    '                \n' +
+    '- 列表一\n' +
+    '- 列表二\n' +
+    '- 列表三\n' +
+    '     \n' +
+    '#### 无序列表（星号）Unordered Lists (*)\n' +
+    '\n' +
+    '* 列表一\n' +
+    '* 列表二\n' +
+    '* 列表三\n' +
+    '\n' +
+    '#### 无序列表（加号和嵌套）Unordered Lists (+)\n' +
+    '                \n' +
+    '+ 列表一\n' +
+    '+ 列表二\n' +
+    '    + 列表二-1\n' +
+    '    + 列表二-2\n' +
+    '    + 列表二-3\n' +
+    '+ 列表三\n' +
+    '    * 列表一\n' +
+    '    * 列表二\n' +
+    '    * 列表三\n' +
+    '\n' +
+    '#### 有序列表 Ordered Lists (-)\n' +
+    '                \n' +
+    '1. 第一行\n' +
+    '2. 第二行\n' +
+    '3. 第三行\n' +
+    '\n' +
+    '#### GFM task list\n' +
+    '\n' +
+    '- [x] GFM task list 1\n' +
+    '- [x] GFM task list 2\n' +
+    '- [ ] GFM task list 3\n' +
+    '    - [ ] GFM task list 3-1\n' +
+    '    - [ ] GFM task list 3-2\n' +
+    '    - [ ] GFM task list 3-3\n' +
+    '- [ ] GFM task list 4\n' +
+    '    - [ ] GFM task list 4-1\n' +
+    '    - [ ] GFM task list 4-2\n' +
+    '                \n' +
+    '----\n' +
+    '                    \n' +
+    '### 绘制表格 Tables\n' +
+    '\n' +
+    '| 项目        | 价格   |  数量  |\n' +
+    '| --------   | -----:  | :----:  |\n' +
+    '| 计算机      | $1600   |   5     |\n' +
+    '| 手机        |   $12   |   12   |\n' +
+    '| 管线        |    $1    |  234  |\n' +
+    '                    \n' +
+    'First Header  | Second Header\n' +
+    '------------- | -------------\n' +
+    'Content Cell  | Content Cell\n' +
+    'Content Cell  | Content Cell \n' +
+    '\n' +
+    '| First Header  | Second Header |\n' +
+    '| ------------- | ------------- |\n' +
+    '| Content Cell  | Content Cell  |\n' +
+    '| Content Cell  | Content Cell  |\n' +
+    '\n' +
+    '| Function name | Description                    |\n' +
+    '| ------------- | ------------------------------ |\n' +
+    '| `help()`      | Display the help window.       |\n' +
+    '| `destroy()`   | **Destroy your computer!**     |\n' +
+    '\n' +
+    '| Left-Aligned  | Center Aligned  | Right Aligned |\n' +
+    '| :------------ |:---------------:| -----:|\n' +
+    '| col 3 is      | some wordy text | $1600 |\n' +
+    '| col 2 is      | centered        |   $12 |\n' +
+    '| zebra stripes | are neat        |    $1 |\n' +
+    '\n' +
+    '| Item      | Value |\n' +
+    '| --------- | -----:|\n' +
+    '| Computer  | $1600 |\n' +
+    '| Phone     |   $12 |\n' +
+    '| Pipe      |    $1 |\n' +
+    '                \n' +
+    '----\n' +
+    '\n' +
+    '#### 特殊符号 HTML Entities Codes\n' +
+    '\n' +
+    '&copy; &  &uml; &trade; &iexcl; &pound;\n' +
+    '&amp; &lt; &gt; &yen; &euro; &reg; &plusmn; &para; &sect; &brvbar; &macr; &laquo; &middot; \n' +
+    '\n' +
+    'X&sup2; Y&sup3; &frac34; &frac14;  &times;  &divide;   &raquo;\n' +
+    '\n' +
+    '18&ordm;C  &quot;  &apos;\n' +
+    '\n' +
+    '### Emoji表情 :smiley:\n' +
+    '\n' +
+    '> Blockquotes :star:\n' +
+    '\n' +
+    '#### GFM task lists & Emoji & fontAwesome icon emoji & editormd logo emoji :editormd-logo-5x:\n' +
+    '\n' +
+    '- [x] :smiley: @mentions, :smiley: #refs, [links](), **formatting**, and <del>tags</del> supported :editormd-logo:;\n' +
+    '- [x] list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;\n' +
+    '- [x] [ ] :smiley: this is a complete item :smiley:;\n' +
+    '- [ ] []this is an incomplete item [test link](#) :fa-star: @pandao; \n' +
+    '- [ ] [ ]this is an incomplete item :fa-star: :fa-gear:;\n' +
+    '    - [ ] :smiley: this is an incomplete item [test link](#) :fa-star: :fa-gear:;\n' +
+    '    - [ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item [test link](#);\n' +
+    ' \n' +
+    '#### 反斜杠 Escape\n' +
+    '\n' +
+    '\\*literal asterisks\\*\n' +
+    '            \n' +
+    '### 科学公式 TeX(KaTeX)\n' +
+    '                    \n' +
+    '$$E=mc^2$$\n' +
+    '\n' +
+    '行内的公式$$E=mc^2$$行内的公式，行内的$$E=mc^2$$公式。\n' +
+    '\n' +
+    '$$\\(\\sqrt{3x-1}+(1+x)^2\\)$$\n' +
+    '                    \n' +
+    '$$\\sin(\\alpha)^{\\theta}=\\sum_{i=0}^{n}(x^i + \\cos(f))$$\n' +
+    '\n' +
+    '多行公式：\n' +
+    '\n' +
+    '```math\n' +
+    '\\displaystyle\n' +
+    '\\left( \\sum\\_{k=1}^n a\\_k b\\_k \\right)^2\n' +
+    '\\leq\n' +
+    '\\left( \\sum\\_{k=1}^n a\\_k^2 \\right)\n' +
+    '\\left( \\sum\\_{k=1}^n b\\_k^2 \\right)\n' +
+    '```\n' +
+    '\n' +
+    '```katex\n' +
+    '\\displaystyle \n' +
+    '    \\frac{1}{\n' +
+    '        \\Bigl(\\sqrt{\\phi \\sqrt{5}}-\\phi\\Bigr) e^{\n' +
+    '        \\frac25 \\pi}} = 1+\\frac{e^{-2\\pi}} {1+\\frac{e^{-4\\pi}} {\n' +
+    '        1+\\frac{e^{-6\\pi}}\n' +
+    '        {1+\\frac{e^{-8\\pi}}\n' +
+    '         {1+\\cdots} }\n' +
+    '        } \n' +
+    '    }\n' +
+    '```\n' +
+    '\n' +
+    '```latex\n' +
+    'f(x) = \\int_{-\\infty}^\\infty\n' +
+    '    \\hat f(\\xi)\\,e^{2 \\pi i \\xi x}\n' +
+    '    \\,d\\xi\n' +
+    '```\n' +
+    '                \n' +
+    '### 绘制流程图 Flowchart\n' +
+    '\n' +
+    '```flow\n' +
+    'st=>start: 用户登陆\n' +
+    'op=>operation: 登陆操作\n' +
+    'cond=>condition: 登陆成功 Yes or No?\n' +
+    'e=>end: 进入后台\n' +
+    '\n' +
+    'st->op->cond\n' +
+    'cond(yes)->e\n' +
+    'cond(no)->op\n' +
+    '```\n' +
+    '                    \n' +
+    '### 绘制序列图 Sequence Diagram\n' +
+    '                    \n' +
+    '```seq\n' +
+    'Andrew->China: Says Hello \n' +
+    'Note right of China: China thinks\\nabout it \n' +
+    'China-->Andrew: How are you? \n' +
+    'Andrew->>China: I am good thanks!\n' +
+    '```\n' +
+    '\n' +
+    '### End',
+  postCategory: '平台文档'
+}
+已有文档分类！
+categoryId============ 1
+  --> POST /editor/draftsStorage 200 33ms 85b
+  <-- GET /lib/editor.md/fonts/editormd-logo.woff?-5y8q6h
+  --> GET /lib/editor.md/fonts/editormd-logo.woff?-5y8q6h 200 10ms 1.2kb
+ok
+  <-- POST /editor/postDoc
+已有文档分类！
+  --> POST /editor/postDoc 200 25ms 51b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+ok
+  <-- POST /editor/postDoc
+已有文档分类！
+  --> POST /editor/postDoc 200 92ms 78b
+  <-- GET /guide
+GET /guide - 0ms
+  --> GET /guide 200 19ms 1.53kb
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/guide.css
+  <-- GET /static/js/guide.js
+  --> GET /static/css/chunk-vendors.css 200 23ms 40.77kb
+  --> GET /static/js/chunk-vendors.js 200 40ms 541.1kb
+  --> GET /static/css/guide.css 200 25ms 9.47kb
+  --> GET /static/js/guide.js 200 33ms 9.67kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-aa4d851e.css
+  --> GET /static/css/chunk-ffa4c512.css 200 17ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 14ms 31.59kb
+  --> GET /static/css/chunk-aa4d851e.css 200 11ms 1.09kb
+  <-- GET /static/js/chunk-aa4d851e.js
+  <-- POST /getDocNavigation
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 10ms 227b
+  --> GET /static/js/chunk-aa4d851e.js 200 27ms 847b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591087263,
+  exp: 1591260063,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 11ms 26b
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-5777a83f.css 200 14ms 2.9kb
+  <-- GET /images/logo.png
+  --> GET /static/js/chunk-5777a83f.js 200 20ms 7.42kb
+  <-- GET /static/css/chunk-2924e506.css
+  <-- GET /static/js/chunk-2924e506.js
+  --> GET /images/logo.png 200 10ms 6.26kb
+  --> GET /static/js/chunk-2924e506.js 200 9ms 1.89kb
+  --> GET /static/css/chunk-2924e506.css 200 11ms 1.39kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/js/chunk-71c1d60c.js
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 6ms 9.31kb
+  --> GET /static/css/chunk-71c1d60c.css 200 14ms 74b
+  --> GET /static/js/chunk-71c1d60c.js 200 13ms 5.08kb
+  <-- GET /lib/editor.md/jquery.min.js
+  <-- GET /lib/editor.md/css/editormd.css
+  --> GET /lib/editor.md/css/editormd.css 200 10ms 15.91kb
+  <-- GET /user-images/0.1436446423680504.jpg
+  --> GET /lib/editor.md/jquery.min.js 200 16ms 29.92kb
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 8ms -
+  <-- GET /static/css/chunk-2924e506.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/css/chunk-aa4d851e.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-5777a83f.css 200 15ms 2.9kb
+  --> GET /static/css/chunk-71c1d60c.css 200 15ms 74b
+  --> GET /static/css/chunk-aa4d851e.css 200 13ms 1.09kb
+  --> GET /static/css/chunk-ffa4c512.css 200 9ms 3.58kb
+  --> GET /static/css/chunk-2924e506.css 200 28ms 1.39kb
+  <-- GET /static/css/chunk-bf898d58.css
+  --> GET /static/css/chunk-bf898d58.css 200 9ms 163b
+  <-- GET /lib/editor.md/lib/marked.min.js
+  <-- GET /static/js/chunk-2924e506.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-22763b90.js
+  <-- GET /static/js/chunk-71c1d60c.js
+  <-- GET /static/js/chunk-aa4d851e.js
+  <-- GET /static/js/chunk-bf898d58.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 12ms 5.46kb
+  --> GET /static/js/chunk-5777a83f.js 200 21ms 7.42kb
+  --> GET /static/js/chunk-2924e506.js 200 24ms 1.89kb
+  --> GET /static/js/chunk-22763b90.js 200 23ms 489b
+  --> GET /static/js/chunk-aa4d851e.js 200 23ms 847b
+  --> GET /static/js/chunk-bf898d58.js 200 23ms 748b
+  --> GET /static/js/chunk-71c1d60c.js 200 32ms 5.08kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 9ms 7.5kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 11ms 31.59kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 10ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 6ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 5ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 6ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 7ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 4ms 15.95kb

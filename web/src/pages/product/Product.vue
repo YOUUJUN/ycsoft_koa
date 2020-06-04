@@ -35,30 +35,7 @@
         components : {navigation,banner,crumbs,panels,foot},
         data() {
             return {
-                navigationList : [
-                    {
-                        name : "首页",
-                        href : "/"
-                    },
-                    {
-                        name : "产品与服务",
-                        href : "/products",
-                        active : "nav-current"
-                    },
-                    {
-                        name : "开发文档",
-                        href : "/guide"
-                    },
-                    {
-                        name : "联系我们",
-                        href : "/contact"
-                    },
-                    {
-                        name : "开发平台",
-                        href : "http://erp.bfcgj.com/login.html",
-                        target : "_blank"
-                    }
-                ],
+                navigationList : this.$store.state.navigationList,
                 productsList : [
                     {
                         type : "基础模板",
@@ -163,6 +140,9 @@
         },
         created () {
             this.getUserLogStatus();
+        },
+        mounted() {
+            this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
         }
     };
 </script>

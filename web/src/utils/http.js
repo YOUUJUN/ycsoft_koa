@@ -13,7 +13,8 @@ let myDIYAxios = function(options){
     const DevBaseUrl = 'http://localhost:3000';
     const ProdBashUrl = 'http://106.13.63.236';
 
-    var baseURL = process.env.NODE_ENV !== 'production' ? DevBaseUrl : ProdBashUrl;
+    // var baseURL = process.env.NODE_ENV !== 'production' ? DevBaseUrl : ProdBashUrl;
+    var baseURL = DevBaseUrl;
     let $axios = axios.create({
         baseURL : baseURL,
         withCredentials :true

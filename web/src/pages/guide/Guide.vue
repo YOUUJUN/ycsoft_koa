@@ -10,7 +10,7 @@
         <main>
             <search-title></search-title>
 
-            <guid-body v-bind:barlist="barList"></guid-body>
+            <guid-body v-bind:barlist="barList" v-if="done"></guid-body>
         </main>
 
         <footer>
@@ -31,7 +31,8 @@
         data() {
             return {
                 navigationList : this.$store.state.navigationList,
-                barList : []
+                barList : [],
+                done : false
             };
         },
         methods : {
@@ -40,7 +41,38 @@
                     url : "/getDocNavigation",
                     method: 'POST'
                 }).then(msg => {
-                    this.barList = msg.data;
+                    let originData = msg.data;
+
+                    let cacheObj = {};
+                    for(let item of originData){
+                        if(cacheObj.hasOwnProperty(item.category) === false){
+                            let property = item.category;
+                            cacheObj[property] = [
+                                {
+                                    id : item.id,
+                                    title : item.title
+                                }
+                            ]
+                            // Object.defineProperty(cacheObj, item.category,{
+                            //     value : [
+                            //         {
+                            //             id : item.id,
+                            //             title : item.title,
+                            //         }
+                            //     ]
+                            // });
+                        }else{
+                            let property = item.category;
+                            let cache = {
+                                id : item.id,
+                                title : item.title,
+                            };
+                            cacheObj[property].push(cache);
+                        }
+                    }
+
+                    this.barList = cacheObj;
+                    this.done = true;
                 }).catch(err => {
                     console.log(err);
                 })

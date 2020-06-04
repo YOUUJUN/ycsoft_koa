@@ -568,10 +568,14 @@ class Editor{
 
         if(results.affectedRows == "1"){
 
-            var newArticleWatchsSql = "INSERT INTO article_watchs(id,post_id,post_author,article_views) VALUE(0,?,?,0)";
-            var newArticleWatchsParam = [postId,username];
-
+            let newArticleWatchsSql = "INSERT INTO article_watchs(id,post_id,post_author,article_views) VALUE(0,?,?,0)";
+            let newArticleWatchsParam = [postId,username];
             await query(newArticleWatchsSql, newArticleWatchsParam);
+
+            let delDraftSql = "DELETE FROM article_drafts WHERE post_author = ? AND post_id = ?";
+            let delDraftParams = [userId, postId];
+
+            results = await query(delDraftSql, delDraftParams);
 
             return {
                 message : "发表成功!发表文章到"+options.postCategory+"..发表时间为"+options.PostDate,
@@ -615,15 +619,21 @@ class Editor{
 
         let results = await query(checkSql, checkParams);
 
+        let categoryId = await this.getCategoryId(options.postCategory);
+
         if(results[0].nums !== 0){
+
+            let upDataSql = "UPDATE framework_document SET post_title = ?,post_content = ?,post_category = ? WHERE post_author = ? AND post_id = ?";
+            let upDataParams = [options.postTitle, options.postContent, categoryId, options.userId, options.postId];
+
+            results = await query(upDataSql, upDataParams);
+
             return {
-                message : "发表文档失败!该文档已经处于发表状态!",
-                status : 0
+                message : "文档修改成功!该文档已经处于发表状态!",
+                status : 1
             }
         }
 
-
-        let categoryId = await this.getCategoryId(options.postCategory);
 
         let addsql = "INSERT INTO framework_document(id,post_id,post_author,post_date,post_title,post_content,post_category) VALUE(0,?,?,?,?,?,?)";
         let addparams = [options.postId,options.userId,options.PostDate,options.postTitle,options.postContent,categoryId];
