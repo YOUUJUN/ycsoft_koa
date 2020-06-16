@@ -67839,3 +67839,2237 @@ GET /user-images/0.1436446423680504.jpg - 0ms
   --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 7ms 1.36kb
   <-- GET /lib/editor.md/editormd.min.js
   --> GET /lib/editor.md/editormd.min.js 200 4ms 15.95kb
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- GET /
+GET / - 0ms
+  --> GET / 200 104ms 1.37kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/index.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/index.js
+  --> GET /static/css/chunk-vendors.css 200 36ms 40.77kb
+  --> GET /static/css/index.css 200 41ms 9.41kb
+  --> GET /static/js/index.js 200 30ms 8.96kb
+  --> GET /static/js/chunk-vendors.js 200 64ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-4e487f1e.css
+  <-- GET /static/js/chunk-4e487f1e.js
+  <-- GET /static/css/chunk-445613ca.css
+  <-- GET /static/js/chunk-445613ca.js
+  <-- GET /static/css/chunk-bf898d58.css
+  <-- GET /static/js/chunk-bf898d58.js
+  --> GET /static/css/chunk-ffa4c512.css 200 51ms 3.58kb
+  --> GET /static/css/chunk-445613ca.css 200 37ms 488b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> GET /static/js/chunk-445613ca.js 200 43ms 2.01kb
+  --> POST /verifyToken 200 6ms 27b
+  --> GET /static/js/chunk-ffa4c512.js 200 60ms 31.59kb
+  --> GET /static/css/chunk-bf898d58.css 200 26ms 163b
+  --> GET /static/js/chunk-4e487f1e.js 200 59ms 1.03kb
+  --> GET /static/js/chunk-bf898d58.js 200 31ms 748b
+  --> GET /static/css/chunk-4e487f1e.css 200 75ms 1.42kb
+  <-- GET /favicon.ico
+  <-- GET /images/showimg1.png
+  -x- GET /favicon.ico 200 28ms 59.28kb
+  --> GET /images/showimg1.png 200 63ms 92.01kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-5777a83f.js 200 42ms 7.42kb
+  <-- GET /static/fonts/fontawesome-webfont.woff2
+  <-- GET /images/logo.png
+  --> GET /static/css/chunk-5777a83f.css 200 54ms 2.9kb
+  --> GET /static/fonts/fontawesome-webfont.woff2 200 25ms 75.35kb
+  --> GET /images/logo.png 200 28ms 6.26kb
+  <-- GET /static/css/chunk-445613ca.css
+  <-- GET /static/css/chunk-4e487f1e.css
+  --> GET /static/css/chunk-445613ca.css 200 6ms 488b
+  --> GET /static/css/chunk-4e487f1e.css 200 4ms 1.42kb
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-5777a83f.css 200 4ms 2.9kb
+  <-- GET /static/css/chunk-bf898d58.css
+  --> GET /static/css/chunk-bf898d58.css 200 8ms 163b
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-ffa4c512.css 200 4ms 3.58kb
+  <-- GET /static/js/chunk-445613ca.js
+  --> GET /static/js/chunk-445613ca.js 200 3ms 2.01kb
+  <-- GET /static/js/chunk-4e487f1e.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-bf898d58.js
+  --> GET /static/js/chunk-4e487f1e.js 200 10ms 1.03kb
+  --> GET /static/js/chunk-5777a83f.js 200 9ms 7.42kb
+  --> GET /static/js/chunk-bf898d58.js 200 8ms 748b
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 3ms 31.59kb
+别问，问就验证没通过
+  <-- GET /community
+GET /community - 0ms
+  --> GET /community 200 34ms 1.49kb
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/community.css
+  <-- GET /static/js/community.js
+  --> GET /static/js/chunk-vendors.js 200 26ms 541.1kb
+  --> GET /static/css/chunk-vendors.css 200 18ms 40.77kb
+  --> GET /static/css/community.css 200 25ms 9.89kb
+  --> GET /static/js/community.js 200 30ms 9.54kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/css/chunk-ffa4c512.css 200 5ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 7ms 31.59kb
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/css/chunk-515c6232.css
+  --> GET /static/css/chunk-d27458f6.css 200 19ms 1.16kb
+  --> GET /static/css/chunk-d0868994.css 200 9ms 1.45kb
+  --> GET /static/css/chunk-515c6232.css 200 20ms 2.61kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-d27458f6.js 200 10ms 1008b
+  --> GET /static/css/chunk-4eb9ad46.css 200 27ms 1.62kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 29ms 1.42kb
+  --> GET /static/js/chunk-d0868994.js 200 39ms 5.02kb
+  --> GET /static/js/chunk-515c6232.js 200 44ms 4.99kb
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/css/chunk-5777a83f.css 200 7ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 6ms 7.42kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 3ms 6.26kb
+别问，问就验证没通过
+  <-- POST /community/getHotList
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-515c6232.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 16ms 1.62kb
+  <-- GET /static/css/chunk-d0868994.css
+  --> GET /static/css/chunk-5777a83f.css 200 21ms 2.9kb
+  --> GET /static/css/chunk-515c6232.css 200 21ms 2.61kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/css/chunk-ffa4c512.css 200 18ms 3.58kb
+  --> GET /static/css/chunk-d27458f6.css 200 16ms 1.16kb
+  --> GET /static/css/chunk-d0868994.css 200 24ms 1.45kb
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 22ms 1.42kb
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/js/chunk-515c6232.js 200 17ms 4.99kb
+  <-- GET /static/js/chunk-d27458f6.js
+  --> GET /static/js/chunk-5777a83f.js 200 20ms 7.42kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-d0868994.js 200 13ms 5.02kb
+  --> GET /static/js/chunk-d27458f6.js 200 11ms 1008b
+  --> GET /static/js/chunk-ffa4c512.js 200 11ms 31.59kb
+  --> POST /community/getHotList 200 235ms 125b
+  --> POST /community/getTopicList 200 120ms 227b
+  <-- GET /images/topic-mid-img.png
+  --> GET /images/topic-mid-img.png 200 22ms 1.21kb
+  --> POST /community/getArticleList 200 150ms 638b
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 200 6ms 59.28kb
+别问，问就验证没通过
+  <-- GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd
+authorName ===============> 1
+hello??????=======> OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 34,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1
+}
++1
+GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd - 0ms
+  --> GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd 200 145ms 1.74kb
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/article.css
+  <-- GET /static/js/article.js
+  --> GET /static/css/chunk-vendors.css 200 21ms 40.77kb
+  --> GET /static/js/chunk-vendors.js 200 27ms 541.1kb
+  --> GET /static/css/article.css 200 28ms 9.55kb
+  --> GET /static/js/article.js 200 35ms 4.34kb
+  <-- GET /lib/editor.md/css/editormd.css
+  --> GET /lib/editor.md/css/editormd.css 200 21ms 15.91kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-be8d56e2.css
+  <-- GET /static/js/chunk-be8d56e2.js
+  <-- GET /static/css/chunk-1064204a.css
+  <-- GET /static/js/chunk-db5af852.js
+  --> GET /static/js/chunk-ffa4c512.js 200 16ms 31.59kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  --> GET /static/css/chunk-be8d56e2.css 200 17ms 565b
+  <-- GET /static/css/chunk-db5af852.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/css/chunk-ffa4c512.css 200 23ms 3.58kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 16ms 1.62kb
+  --> GET /static/js/chunk-be8d56e2.js 200 31ms 1.77kb
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> GET /static/js/chunk-4eb9ad46.js 200 19ms 1.42kb
+  --> POST /verifyToken 200 3ms 27b
+  --> GET /static/css/chunk-db5af852.css 200 41ms 2.81kb
+  --> GET /static/css/chunk-1064204a.css 200 56ms 3.28kb
+  --> GET /static/js/chunk-db5af852.js 200 51ms 1.56kb
+  <-- GET /static/js/chunk-1064204a.js
+  --> GET /static/js/chunk-1064204a.js 200 23ms 3.69kb
+别问，问就验证没通过
+  <-- POST /community/getArticleInfo
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+authorName ===============> 1
+  --> GET /static/css/chunk-5777a83f.css 200 12ms 2.9kb
+  <-- GET /images/logo.png
+  --> GET /static/js/chunk-5777a83f.js 200 15ms 7.42kb
+  --> POST /community/getArticleInfo 200 20ms 517b
+  --> GET /images/logo.png 200 9ms 6.26kb
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/js/chunk-71c1d60c.js
+  --> POST /community/getTopicList 200 7ms 227b
+  --> GET /static/css/chunk-71c1d60c.css 200 13ms 74b
+  <-- GET /lib/editor.md/fonts/fontawesome-webfont.woff2?v=4.3.0
+  --> GET /static/js/chunk-71c1d60c.js 200 23ms 5.08kb
+别问，问就验证没通过
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 6ms 22b
+  --> GET /lib/editor.md/fonts/fontawesome-webfont.woff2?v=4.3.0 200 25ms 55.45kb
+  <-- GET /static/css/chunk-1064204a.css
+  --> GET /static/css/chunk-1064204a.css 200 5ms 3.28kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-05a7a936.css
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-5777a83f.css 200 6ms 2.9kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 9ms 1.62kb
+  --> GET /static/css/chunk-05a7a936.css 200 8ms 3.63kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  --> GET /static/css/chunk-71c1d60c.css 200 9ms 74b
+  <-- GET /static/css/chunk-be8d56e2.css
+  --> GET /static/css/chunk-be8d56e2.css 200 13ms 565b
+  <-- GET /images/topic-mid-img.png
+  <-- GET /static/css/chunk-db5af852.css
+  <-- GET /lib/editor.md/jquery.min.js
+  <-- GET /user-images/0.1436446423680504.jpg
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-1064204a.js
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 11ms -
+  <-- GET /static/js/chunk-05a7a936.js
+  --> GET /images/topic-mid-img.png 200 22ms 1.21kb
+  <-- GET /static/js/chunk-22763b90.js
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/css/chunk-db5af852.css 200 23ms 2.81kb
+  --> GET /static/css/chunk-ffa4c512.css 200 20ms 3.58kb
+  --> GET /static/js/chunk-1064204a.js 200 18ms 3.69kb
+  --> GET /static/js/chunk-22763b90.js 200 17ms 489b
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-71c1d60c.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 21ms 1.42kb
+  --> GET /lib/editor.md/jquery.min.js 200 41ms 29.92kb
+  --> GET /static/js/chunk-5777a83f.js 200 10ms 7.42kb
+  --> GET /static/js/chunk-71c1d60c.js 200 12ms 5.08kb
+  --> GET /static/js/chunk-05a7a936.js 200 37ms 4.41kb
+  <-- GET /static/js/chunk-be8d56e2.js
+  <-- GET /static/js/chunk-db5af852.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-be8d56e2.js 200 7ms 1.77kb
+  --> GET /static/js/chunk-db5af852.js 200 6ms 1.56kb
+  --> GET /static/js/chunk-ffa4c512.js 200 7ms 31.59kb
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 12ms 5.46kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 7ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 29ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 2ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 32ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 7ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 16ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 4ms 15.95kb
+别问，问就验证没通过
+  <-- GET /community/topics/Cat
+GET /community/topics/Cat - 0ms
+  --> GET /community/topics/Cat 200 22ms 1.37kb
+  <-- GET /static/css/chunk-vendors.css
+  --> GET /static/css/chunk-vendors.css 200 7ms 40.77kb
+  <-- GET /static/js/chunk-vendors.js
+  --> GET /static/js/chunk-vendors.js 200 16ms 541.1kb
+  <-- GET /static/css/topics.css
+  <-- GET /static/js/topics.js
+  --> GET /static/css/topics.css 200 34ms 2.29kb
+  --> GET /static/js/topics.js 200 19ms 4.55kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-ffa4c512.css 200 3ms 3.58kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 7ms 31.59kb
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/css/chunk-515c6232.css
+  --> GET /static/css/chunk-d0868994.css 200 13ms 1.45kb
+  --> GET /static/js/chunk-d0868994.js 200 11ms 5.02kb
+  <-- GET /static/js/chunk-515c6232.js
+  --> GET /static/css/chunk-515c6232.css 200 8ms 2.61kb
+  --> GET /static/js/chunk-515c6232.js 200 5ms 4.99kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /images/topic-mid-img.png
+  --> GET /static/css/chunk-4eb9ad46.css 200 31ms 1.62kb
+  --> GET /images/topic-mid-img.png 200 4ms 1.21kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 8ms 1.42kb
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+别问，问就验证没通过
+  <-- POST /community/getTopicInfo
+  --> POST /community/getTopicInfo 200 4ms 60b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: 'Cat' }
+searchTopic ==> Cat
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 227b
+  --> GET /static/css/chunk-5777a83f.css 200 14ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 13ms 7.42kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 5ms 6.26kb
+  --> POST /community/getArticleList 200 30ms 326b
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-515c6232.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 10ms 1.62kb
+  --> GET /static/css/chunk-515c6232.css 200 6ms 2.61kb
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-5777a83f.css 200 13ms 2.9kb
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/css/chunk-d0868994.css 200 11ms 1.45kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 8ms 1.42kb
+  --> GET /static/css/chunk-ffa4c512.css 200 9ms 3.58kb
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-515c6232.js 200 11ms 4.99kb
+  --> GET /static/js/chunk-5777a83f.js 200 9ms 7.42kb
+  --> GET /static/js/chunk-d0868994.js 200 9ms 5.02kb
+  --> GET /static/js/chunk-ffa4c512.js 200 7ms 31.59kb
+别问，问就验证没通过
+  <-- GET /community
+GET /community - 0ms
+  --> GET /community 200 6ms 1.49kb
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/community.js
+  --> GET /static/js/community.js 200 6ms 9.54kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/community.css
+  --> GET /static/js/chunk-vendors.js 200 16ms 541.1kb
+  --> GET /static/css/chunk-vendors.css 200 10ms 40.77kb
+  --> GET /static/css/community.css 200 8ms 9.89kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-d27458f6.css
+  --> GET /static/css/chunk-ffa4c512.css 200 11ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 9ms 31.59kb
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/css/chunk-d0868994.css
+  --> GET /static/js/chunk-d27458f6.js 200 7ms 1008b
+  --> GET /static/css/chunk-d27458f6.css 200 9ms 1.16kb
+  --> GET /static/css/chunk-d0868994.css 200 7ms 1.45kb
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/js/chunk-d0868994.js 200 9ms 5.02kb
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/css/chunk-4eb9ad46.css
+  --> GET /static/css/chunk-515c6232.css 200 6ms 2.61kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 8ms 1.62kb
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-515c6232.js 200 9ms 4.99kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 9ms 1.42kb
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 2ms 27b
+别问，问就验证没通过
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 125b
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 18ms 638b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+  --> GET /static/css/chunk-5777a83f.css 200 11ms 2.9kb
+  <-- GET /images/logo.png
+  --> POST /community/getTopicList 200 5ms 227b
+  --> GET /static/js/chunk-5777a83f.js 200 13ms 7.42kb
+  --> GET /images/logo.png 200 7ms 6.26kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-515c6232.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 5ms 1.62kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-d0868994.css
+  --> GET /static/css/chunk-515c6232.css 200 6ms 2.61kb
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-5777a83f.css 200 11ms 2.9kb
+  --> GET /static/css/chunk-d0868994.css 200 10ms 1.45kb
+  --> GET /static/css/chunk-d27458f6.css 200 9ms 1.16kb
+  --> GET /static/css/chunk-ffa4c512.css 200 9ms 3.58kb
+  <-- GET /images/topic-mid-img.png
+  --> GET /images/topic-mid-img.png 200 13ms 1.21kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 6ms 1.42kb
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/js/chunk-515c6232.js 200 12ms 4.99kb
+  --> GET /static/js/chunk-5777a83f.js 200 12ms 7.42kb
+  --> GET /static/js/chunk-d0868994.js 200 10ms 5.02kb
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-d27458f6.js 200 6ms 1008b
+  --> GET /static/js/chunk-ffa4c512.js 200 7ms 31.59kb
+  <-- POST /login
+result1 [
+  RowDataPacket {
+    id: 13,
+    user_id: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    portrait: '/user-images/0.1436446423680504.jpg',
+    job: 'WEB前端开发工程师',
+    introduction: 'CSGO',
+    blog_url: ''
+  }
+]
+  --> POST /login 200 17ms 639b
+ok
+  <-- GET /community
+  <-- GET /user-images/0.1436446423680504.jpg
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 4ms -
+GET /community - 0ms
+  --> GET /community 200 9ms 1.49kb
+  <-- GET /static/fonts/element-icons.woff
+  <-- GET /static/css/chunk-vendors.css
+  --> GET /static/fonts/element-icons.woff 200 64ms 27.54kb
+  <-- GET /static/css/community.css
+  --> GET /static/css/chunk-vendors.css 200 8ms 40.77kb
+  --> GET /static/css/community.css 200 5ms 9.89kb
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/community.js
+  --> GET /static/js/chunk-vendors.js 200 10ms 541.1kb
+  --> GET /static/js/community.js 200 4ms 9.54kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/js/chunk-d27458f6.js
+  --> GET /static/css/chunk-ffa4c512.css 200 10ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 10ms 31.59kb
+  --> GET /static/js/chunk-d27458f6.js 200 8ms 1008b
+  --> GET /static/css/chunk-d27458f6.css 200 14ms 1.16kb
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/js/chunk-515c6232.js
+  --> GET /static/css/chunk-d0868994.css 200 14ms 1.45kb
+  --> GET /static/js/chunk-d0868994.js 200 14ms 5.02kb
+  --> GET /static/css/chunk-515c6232.css 200 14ms 2.61kb
+  --> GET /static/js/chunk-515c6232.js 200 11ms 4.99kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 6ms 1.42kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 12ms 1.62kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591840877,
+  exp: 1592013677,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+  <-- GET /images/logo.png
+ok
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 2ms 125b
+  --> GET /images/logo.png 200 8ms 6.26kb
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+  <-- POST /community/getTopicList
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> POST /community/getTopicList 200 10ms 226b
+  --> GET /static/css/chunk-5777a83f.css 200 13ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 14ms 7.42kb
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 27ms 678b
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-5777a83f.css 200 4ms 2.9kb
+  --> GET /static/css/chunk-515c6232.css 200 6ms 2.61kb
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 21ms 1.62kb
+  --> GET /static/css/chunk-d0868994.css 200 14ms 1.45kb
+  --> GET /static/css/chunk-d27458f6.css 200 13ms 1.16kb
+  --> GET /static/css/chunk-ffa4c512.css 200 12ms 3.58kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /user-images/0.1436446423680504.jpg
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/js/chunk-d27458f6.js
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 8ms -
+  <-- GET /images/topic-mid-img.png
+  --> GET /static/js/chunk-515c6232.js 200 12ms 4.99kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-5777a83f.js 200 15ms 7.42kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 18ms 1.42kb
+  --> GET /static/js/chunk-d27458f6.js 200 14ms 1008b
+  --> GET /static/js/chunk-d0868994.js 200 21ms 5.02kb
+  --> GET /images/topic-mid-img.png 200 16ms 1.21kb
+  --> GET /static/js/chunk-ffa4c512.js 200 14ms 31.59kb
+ok
+  <-- GET /personal/9271af90-a4a3-11ea-9ee1-d525ae67413d
+GET /personal/9271af90-a4a3-11ea-9ee1-d525ae67413d - 0ms
+  --> GET /personal/9271af90-a4a3-11ea-9ee1-d525ae67413d 200 31ms 1.49kb
+  <-- GET /static/js/chunk-vendors.js
+  --> GET /static/js/chunk-vendors.js 200 14ms 541.1kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/personal.css
+  --> GET /static/css/chunk-vendors.css 200 19ms 40.77kb
+  --> GET /static/css/personal.css 200 26ms 9.38kb
+  <-- GET /static/js/personal.js
+  --> GET /static/js/personal.js 200 19ms 4.62kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-ffa4c512.css 200 7ms 3.58kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 5ms 31.59kb
+  <-- GET /static/css/chunk-028c6c83.css
+  <-- GET /static/js/chunk-028c6c83.js
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-c132ca5a.js
+  --> GET /static/css/chunk-4eb9ad46.css 200 14ms 1.62kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 6ms 1.42kb
+  --> GET /static/css/chunk-028c6c83.css 200 32ms 3.03kb
+  --> GET /static/js/chunk-c132ca5a.js 200 29ms 8.04kb
+  --> GET /static/js/chunk-028c6c83.js 200 52ms 2.33kb
+  <-- GET /static/css/chunk-c132ca5a.css
+  <-- GET /static/css/chunk-390cac74.css
+  <-- GET /static/js/chunk-390cac74.js
+  --> GET /static/css/chunk-c132ca5a.css 200 16ms 3.16kb
+  --> GET /static/css/chunk-390cac74.css 200 26ms 3.64kb
+  --> GET /static/js/chunk-390cac74.js 200 26ms 1.88kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591840877,
+  exp: 1592013677,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 1ms 26b
+ok
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 13,
+    user_id: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    portrait: '/user-images/0.1436446423680504.jpg',
+    job: 'WEB前端开发工程师',
+    introduction: 'CSGO',
+    blog_url: ''
+  }
+]
+  --> POST /personal/getAuthorinfo 200 14ms 336b
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-5777a83f.css 200 4ms 2.9kb
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-5777a83f.js 200 3ms 7.42kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 4ms 6.26kb
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 8ms 226b
+ok
+  <-- POST /personal/checkUserAuthorBind
+  --> POST /personal/checkUserAuthorBind 200 5ms -
+ok
+  <-- POST /personal/getArticleList
+  <-- GET /user-images/0.1436446423680504.jpg
+ok
+  <-- POST /personal/verifyOwner
+userId,bodyId 9271af90-a4a3-11ea-9ee1-d525ae67413d 9271af90-a4a3-11ea-9ee1-d525ae67413d
+  --> POST /personal/verifyOwner 200 1ms 36b
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 9ms -
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /personal/getArticleList 200 30ms 257b
+  <-- GET /static/css/chunk-028c6c83.css
+  <-- GET /static/css/chunk-390cac74.css
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-c132ca5a.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 7ms 1.62kb
+  --> GET /static/css/chunk-390cac74.css 200 9ms 3.64kb
+  --> GET /static/css/chunk-5777a83f.css 200 6ms 2.9kb
+  --> GET /static/css/chunk-c132ca5a.css 200 6ms 3.16kb
+  --> GET /static/css/chunk-028c6c83.css 200 17ms 3.03kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /images/topic-mid-img.png
+  --> GET /static/css/chunk-ffa4c512.css 200 9ms 3.58kb
+  --> GET /images/topic-mid-img.png 200 4ms 1.21kb
+  <-- GET /static/js/chunk-028c6c83.js
+  <-- GET /static/js/chunk-390cac74.js
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-c132ca5a.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-5777a83f.js 200 12ms 7.42kb
+  --> GET /static/js/chunk-c132ca5a.js 200 12ms 8.04kb
+  --> GET /static/js/chunk-ffa4c512.js 200 11ms 31.59kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 14ms 1.42kb
+  --> GET /static/js/chunk-390cac74.js 200 16ms 1.88kb
+  --> GET /static/js/chunk-028c6c83.js 200 19ms 2.33kb
+ok
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 7ms 240b
+  <-- GET /user-images/0.1436446423680504.jpg
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 7ms -
+ok
+  <-- POST /personal/getFocusTopic
+msg [ { name: 'Cat', userFocused: true } ]
+  --> POST /personal/getFocusTopic 200 6ms 55b
+ok
+  <-- POST /personal/getFollowUser
+  --> POST /personal/getFollowUser 200 7ms 240b
+ok
+  <-- POST /personal/getArticleList
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /personal/getArticleList 200 16ms 257b
+ok
+  <-- GET /community
+GET /community - 0ms
+  --> GET /community 200 8ms 1.49kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/js/chunk-vendors.js
+  --> GET /static/css/chunk-vendors.css 200 10ms 40.77kb
+  <-- GET /static/js/community.js
+  --> GET /static/js/chunk-vendors.js 200 12ms 541.1kb
+  --> GET /static/js/community.js 200 7ms 9.54kb
+  <-- GET /static/css/community.css
+  --> GET /static/css/community.css 200 34ms 9.89kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/css/chunk-ffa4c512.css 200 7ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 6ms 31.59kb
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/css/chunk-d27458f6.css 200 17ms 1.16kb
+  --> GET /static/js/chunk-d27458f6.js 200 18ms 1008b
+  --> GET /static/css/chunk-d0868994.css 200 17ms 1.45kb
+  --> GET /static/js/chunk-d0868994.js 200 7ms 5.02kb
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/js/chunk-515c6232.js
+  --> GET /static/css/chunk-515c6232.css 200 6ms 2.61kb
+  --> GET /static/js/chunk-515c6232.js 200 6ms 4.99kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 10ms 1.42kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 13ms 1.62kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591840877,
+  exp: 1592013677,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-5777a83f.js 200 6ms 7.42kb
+  --> GET /static/css/chunk-5777a83f.css 200 7ms 2.9kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 6ms 6.26kb
+ok
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 5ms 125b
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+  <-- POST /community/getTopicList
+  <-- GET /user-images/0.1436446423680504.jpg
+  --> POST /community/getTopicList 200 6ms 226b
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 18ms -
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 32ms 678b
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 17ms 1.62kb
+  --> GET /static/css/chunk-515c6232.css 200 20ms 2.61kb
+  --> GET /static/css/chunk-5777a83f.css 200 24ms 2.9kb
+  --> GET /static/css/chunk-d0868994.css 200 25ms 1.45kb
+  --> GET /static/css/chunk-d27458f6.css 200 17ms 1.16kb
+  --> GET /static/css/chunk-ffa4c512.css 200 17ms 3.58kb
+  <-- GET /images/topic-mid-img.png
+  --> GET /images/topic-mid-img.png 200 21ms 1.21kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 15ms 1.42kb
+  --> GET /static/js/chunk-5777a83f.js 200 15ms 7.42kb
+  --> GET /static/js/chunk-d0868994.js 200 17ms 5.02kb
+  --> GET /static/js/chunk-515c6232.js 200 20ms 4.99kb
+  --> GET /static/js/chunk-d27458f6.js 200 18ms 1008b
+  --> GET /static/js/chunk-ffa4c512.js 200 19ms 31.59kb
+ok
+  <-- GET /community/post/46f81770-a4a3-11ea-9ee1-d525ae67413d
+authorName ===============> 824000803@qq.com
+hello??????=======> OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 34,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1
+}
++1
+GET /community/post/46f81770-a4a3-11ea-9ee1-d525ae67413d - 0ms
+  --> GET /community/post/46f81770-a4a3-11ea-9ee1-d525ae67413d 200 16ms 1.74kb
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/article.js
+  --> GET /static/js/article.js 200 8ms 4.34kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/article.css
+  --> GET /static/js/chunk-vendors.js 200 19ms 541.1kb
+  --> GET /static/css/chunk-vendors.css 200 9ms 40.77kb
+  --> GET /static/css/article.css 200 7ms 9.55kb
+  <-- GET /lib/editor.md/css/editormd.css
+  --> GET /lib/editor.md/css/editormd.css 200 10ms 15.91kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-be8d56e2.css
+  <-- GET /static/js/chunk-be8d56e2.js
+  <-- GET /static/css/chunk-1064204a.css
+  <-- GET /static/css/chunk-db5af852.css
+  --> GET /static/js/chunk-ffa4c512.js 200 12ms 31.59kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-1064204a.js
+  <-- GET /static/js/chunk-db5af852.js
+  --> GET /static/css/chunk-ffa4c512.css 200 17ms 3.58kb
+  --> GET /static/css/chunk-be8d56e2.css 200 14ms 565b
+  --> GET /static/js/chunk-be8d56e2.js 200 13ms 1.77kb
+  --> GET /static/css/chunk-1064204a.css 200 13ms 3.28kb
+  --> GET /static/css/chunk-db5af852.css 200 15ms 2.81kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 14ms 1.62kb
+  --> GET /static/js/chunk-1064204a.js 200 14ms 3.69kb
+  --> GET /static/js/chunk-db5af852.js 200 13ms 1.56kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591840877,
+  exp: 1592013677,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 3ms 1.42kb
+ok
+  <-- POST /community/getArticleInfo
+ok
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 4ms 346b
+authorName ===============> 824000803@qq.com
+  --> POST /community/getArticleInfo 200 14ms 602b
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/js/chunk-71c1d60c.js
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+ok
+  <-- POST /community/getTopicList
+  --> GET /static/css/chunk-71c1d60c.css 200 14ms 74b
+  --> GET /static/js/chunk-71c1d60c.js 200 13ms 5.08kb
+  --> GET /static/js/chunk-5777a83f.js 200 13ms 7.42kb
+  --> GET /static/css/chunk-5777a83f.css 200 15ms 2.9kb
+  <-- GET /user-images/0.1436446423680504.jpg
+ok
+  <-- GET /users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg
+  <-- GET /images/logo.png
+  --> POST /community/getTopicList 200 14ms 226b
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 11ms -
+GET /users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg - 0ms
+  --> GET /users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg 404 12ms -
+  --> GET /images/logo.png 200 28ms 6.26kb
+  <-- GET /static/css/chunk-05a7a936.css
+  <-- GET /static/css/chunk-1064204a.css
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-71c1d60c.css
+  --> GET /static/css/chunk-05a7a936.css 200 8ms 3.63kb
+  <-- GET /static/css/chunk-be8d56e2.css
+  --> GET /static/css/chunk-1064204a.css 200 11ms 3.28kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 14ms 1.62kb
+  --> GET /static/css/chunk-71c1d60c.css 200 13ms 74b
+  --> GET /static/css/chunk-5777a83f.css 200 15ms 2.9kb
+  --> GET /static/css/chunk-be8d56e2.css 200 11ms 565b
+  <-- GET /static/css/chunk-05a7a936.css
+  <-- GET /lib/editor.md/jquery.min.js
+  --> GET /static/css/chunk-05a7a936.css 200 10ms 3.63kb
+  --> GET /lib/editor.md/jquery.min.js 200 9ms 29.92kb
+  <-- GET /user-images/0.1436446423680504.jpg
+  <-- GET /static/css/chunk-db5af852.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-1064204a.js
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-05a7a936.js
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 6ms -
+  <-- GET /images/topic-mid-img.png
+  <-- GET /static/js/chunk-05a7a936.js
+  <-- GET /static/js/chunk-22763b90.js
+  --> GET /static/css/chunk-ffa4c512.css 200 19ms 3.58kb
+  --> GET /static/css/chunk-db5af852.css 200 21ms 2.81kb
+  --> GET /static/js/chunk-1064204a.js 200 19ms 3.69kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 19ms 1.42kb
+  --> GET /static/js/chunk-05a7a936.js 200 19ms 4.41kb
+  --> GET /static/js/chunk-05a7a936.js 200 13ms 4.41kb
+  --> GET /static/js/chunk-22763b90.js 200 14ms 489b
+  --> GET /images/topic-mid-img.png 200 27ms 1.21kb
+  <-- GET /static/js/chunk-be8d56e2.js
+  <-- GET /static/js/chunk-db5af852.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-71c1d60c.js
+  --> GET /static/js/chunk-db5af852.js 200 13ms 1.56kb
+  --> GET /static/js/chunk-5777a83f.js 200 12ms 7.42kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-71c1d60c.js 200 16ms 5.08kb
+  --> GET /static/js/chunk-ffa4c512.js 200 7ms 31.59kb
+  --> GET /static/js/chunk-be8d56e2.js 200 30ms 1.77kb
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 6ms 5.46kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 4ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 3ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 3ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 6ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 3ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 3ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 4ms 15.95kb
+ok
+  <-- GET /users/f9961040-a4a2-11ea-b7ad-435b01e06adf/images/articles/0.3217907901890731.jpeg
+  --> GET /users/f9961040-a4a2-11ea-b7ad-435b01e06adf/images/articles/0.3217907901890731.jpeg 200 132ms 1.3mb
+ok
+  <-- GET /community
+GET /community - 0ms
+  --> GET /community 200 12ms 1.49kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/community.js
+  --> GET /static/css/chunk-vendors.css 200 8ms 40.77kb
+  --> GET /static/js/community.js 200 8ms 9.54kb
+  --> GET /static/js/chunk-vendors.js 200 12ms 541.1kb
+  <-- GET /static/css/community.css
+  --> GET /static/css/community.css 200 3ms 9.89kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-ffa4c512.css 200 4ms 3.58kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 6ms 31.59kb
+  <-- GET /static/css/chunk-d27458f6.css
+  --> GET /static/css/chunk-d27458f6.css 200 4ms 1.16kb
+  <-- GET /static/js/chunk-d27458f6.js
+  --> GET /static/js/chunk-d27458f6.js 200 3ms 1008b
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 7ms 1.42kb
+  --> GET /static/css/chunk-d0868994.css 200 9ms 1.45kb
+  --> GET /static/js/chunk-d0868994.js 200 8ms 5.02kb
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-515c6232.js
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591840877,
+  exp: 1592013677,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 3ms 26b
+  --> GET /static/css/chunk-515c6232.css 200 14ms 2.61kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 13ms 1.62kb
+  --> GET /static/js/chunk-515c6232.js 200 13ms 4.99kb
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-5777a83f.js 200 7ms 7.42kb
+  <-- GET /static/css/chunk-5777a83f.css
+ok
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 6ms 125b
+  --> GET /static/css/chunk-5777a83f.css 200 15ms 2.9kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 5ms 6.26kb
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 17ms 678b
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 226b
+  <-- GET /user-images/0.1436446423680504.jpg
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 4ms -
+  <-- GET /images/topic-mid-img.png
+  --> GET /images/topic-mid-img.png 200 11ms 1.21kb
+  <-- GET /favicon.ico
+  -x- GET /favicon.ico 200 10ms 59.28kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-515c6232.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 5ms 1.62kb
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-515c6232.css 200 8ms 2.61kb
+  --> GET /static/css/chunk-5777a83f.css 200 5ms 2.9kb
+  <-- GET /static/css/chunk-d0868994.css
+  --> GET /static/css/chunk-d0868994.css 200 7ms 1.45kb
+  <-- GET /static/css/chunk-d27458f6.css
+  --> GET /static/css/chunk-d27458f6.css 200 8ms 1.16kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-ffa4c512.css 200 9ms 3.58kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/js/chunk-d27458f6.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 10ms 1.42kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-515c6232.js 200 18ms 4.99kb
+  --> GET /static/js/chunk-5777a83f.js 200 17ms 7.42kb
+  --> GET /static/js/chunk-d0868994.js 200 17ms 5.02kb
+  --> GET /static/js/chunk-d27458f6.js 200 18ms 1008b
+  --> GET /static/js/chunk-ffa4c512.js 200 16ms 31.59kb
+ok
+  <-- GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd
+authorName ===============> 1
+hello??????=======> OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 34,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1
+}
++1
+GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd - 0ms
+  --> GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd 200 16ms 1.74kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/article.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/article.js
+  --> GET /static/css/article.css 200 12ms 9.55kb
+  --> GET /static/css/chunk-vendors.css 200 16ms 40.77kb
+  --> GET /static/js/article.js 200 13ms 4.34kb
+  --> GET /static/js/chunk-vendors.js 200 23ms 541.1kb
+  <-- GET /lib/editor.md/css/editormd.css
+  --> GET /lib/editor.md/css/editormd.css 200 12ms 15.91kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-ffa4c512.css 200 6ms 3.58kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 6ms 31.59kb
+  <-- GET /static/js/chunk-be8d56e2.js
+  --> GET /static/js/chunk-be8d56e2.js 200 4ms 1.77kb
+  <-- GET /static/css/chunk-be8d56e2.css
+  --> GET /static/css/chunk-be8d56e2.css 200 12ms 565b
+  <-- GET /static/js/chunk-1064204a.js
+  <-- GET /static/css/chunk-db5af852.css
+  <-- GET /static/js/chunk-db5af852.js
+  <-- GET /static/css/chunk-4eb9ad46.css
+  --> GET /static/css/chunk-db5af852.css 200 8ms 2.81kb
+  --> GET /static/js/chunk-db5af852.js 200 8ms 1.56kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 7ms 1.62kb
+  --> GET /static/js/chunk-1064204a.js 200 15ms 3.69kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 4ms 1.42kb
+  <-- GET /static/css/chunk-1064204a.css
+  --> GET /static/css/chunk-1064204a.css 200 7ms 3.28kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591840877,
+  exp: 1592013677,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 1ms 26b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-5777a83f.js 200 6ms 7.42kb
+  <-- GET /images/logo.png
+  --> GET /static/css/chunk-5777a83f.css 200 9ms 2.9kb
+  --> GET /images/logo.png 200 5ms 6.26kb
+ok
+  <-- POST /community/getArticleInfo
+authorName ===============> 1
+  --> POST /community/getArticleInfo 200 15ms 517b
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/js/chunk-71c1d60c.js
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 226b
+  --> GET /static/css/chunk-71c1d60c.css 200 14ms 74b
+  --> GET /static/js/chunk-71c1d60c.js 200 17ms 5.08kb
+ok
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 4ms 22b
+  <-- GET /favicon.ico
+  <-- GET /static/css/chunk-1064204a.css
+  <-- GET /static/css/chunk-05a7a936.css
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-05a7a936.css 200 7ms 3.63kb
+  --> GET /static/css/chunk-1064204a.css 200 7ms 3.28kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 6ms 1.62kb
+  --> GET /static/css/chunk-5777a83f.css 200 7ms 2.9kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/css/chunk-be8d56e2.css
+  --> GET /static/css/chunk-71c1d60c.css 200 4ms 74b
+  --> GET /static/css/chunk-be8d56e2.css 200 4ms 565b
+  <-- GET /lib/editor.md/jquery.min.js
+  <-- GET /static/css/chunk-db5af852.css
+  <-- GET /user-images/0.1436446423680504.jpg
+ok
+  <-- GET /users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg
+  <-- GET /images/topic-mid-img.png
+  <-- GET /static/js/chunk-1064204a.js
+GET /users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg - 0ms
+  --> GET /users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg 404 9ms -
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 11ms -
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-05a7a936.js
+  --> GET /static/css/chunk-db5af852.css 200 18ms 2.81kb
+  --> GET /lib/editor.md/jquery.min.js 200 18ms 29.92kb
+  --> GET /images/topic-mid-img.png 200 14ms 1.21kb
+  --> GET /static/js/chunk-1064204a.js 200 15ms 3.69kb
+  --> GET /static/css/chunk-ffa4c512.css 200 9ms 3.58kb
+  --> GET /static/js/chunk-05a7a936.js 200 9ms 4.41kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 25ms 1.42kb
+  <-- GET /static/js/chunk-22763b90.js
+  --> GET /static/js/chunk-22763b90.js 200 4ms 489b
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-71c1d60c.js
+  <-- GET /static/js/chunk-be8d56e2.js
+  --> GET /static/js/chunk-5777a83f.js 200 9ms 7.42kb
+  <-- GET /static/js/chunk-db5af852.js
+  --> GET /static/js/chunk-be8d56e2.js 200 7ms 1.77kb
+  --> GET /static/js/chunk-71c1d60c.js 200 11ms 5.08kb
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /static/js/chunk-db5af852.js 200 9ms 1.56kb
+  --> GET /lib/editor.md/lib/marked.min.js 200 5ms 5.46kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  -x- GET /static/js/chunk-ffa4c512.js 200 12ms 31.59kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 7ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 3ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 4ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 4ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 4ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 4ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 9ms 15.95kb
+ok
+  <-- GET /community
+GET /community - 0ms
+  --> GET /community 200 2ms 1.49kb
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/community.js
+  --> GET /static/js/community.js 200 10ms 9.54kb
+  --> GET /static/js/chunk-vendors.js 200 16ms 541.1kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/community.css
+  --> GET /static/css/chunk-vendors.css 200 9ms 40.77kb
+  --> GET /static/css/community.css 200 8ms 9.89kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/css/chunk-d0868994.css
+  --> GET /static/css/chunk-ffa4c512.css 200 29ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 31ms 31.59kb
+  --> GET /static/css/chunk-d27458f6.css 200 25ms 1.16kb
+  --> GET /static/js/chunk-d27458f6.js 200 26ms 1008b
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/js/chunk-515c6232.js
+  --> GET /static/css/chunk-d0868994.css 200 23ms 1.45kb
+  --> GET /static/css/chunk-515c6232.css 200 5ms 2.61kb
+  --> GET /static/js/chunk-d0868994.js 200 8ms 5.02kb
+  --> GET /static/js/chunk-515c6232.js 200 5ms 4.99kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/css/chunk-4eb9ad46.css 200 6ms 1.62kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 5ms 1.42kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591840877,
+  exp: 1592013677,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+ok
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 4ms 125b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/css/chunk-5777a83f.css 200 4ms 2.9kb
+  <-- GET /images/logo.png
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+  <-- POST /community/getTopicList
+  --> GET /static/js/chunk-5777a83f.js 200 8ms 7.42kb
+  --> GET /images/logo.png 200 16ms 6.26kb
+  --> POST /community/getTopicList 200 13ms 226b
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 24ms 678b
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-515c6232.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 7ms 1.62kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-d0868994.css
+  --> GET /static/css/chunk-5777a83f.css 200 6ms 2.9kb
+  --> GET /static/css/chunk-515c6232.css 200 10ms 2.61kb
+  --> GET /static/css/chunk-d0868994.css 200 4ms 1.45kb
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-d27458f6.css 200 11ms 1.16kb
+  --> GET /static/css/chunk-ffa4c512.css 200 9ms 3.58kb
+  <-- GET /user-images/0.1436446423680504.jpg
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 5ms -
+  <-- GET /images/topic-mid-img.png
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-515c6232.js
+  --> GET /images/topic-mid-img.png 200 14ms 1.21kb
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 11ms 1.42kb
+  --> GET /static/js/chunk-515c6232.js 200 10ms 4.99kb
+  --> GET /static/js/chunk-5777a83f.js 200 8ms 7.42kb
+  <-- GET /static/js/chunk-d27458f6.js
+  --> GET /static/js/chunk-d0868994.js 200 8ms 5.02kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-d27458f6.js 200 5ms 1008b
+  --> GET /static/js/chunk-ffa4c512.js 200 9ms 31.59kb
+ok
+  <-- GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd
+authorName ===============> 1
+hello??????=======> OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 34,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1
+}
++1
+GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd - 0ms
+  --> GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd 200 20ms 1.74kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/article.js
+  <-- GET /static/css/article.css
+  --> GET /static/css/chunk-vendors.css 200 24ms 40.77kb
+  --> GET /static/js/article.js 200 20ms 4.34kb
+  --> GET /static/css/article.css 200 15ms 9.55kb
+  --> GET /static/js/chunk-vendors.js 200 35ms 541.1kb
+  <-- GET /lib/editor.md/css/editormd.css
+  --> GET /lib/editor.md/css/editormd.css 200 14ms 15.91kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-ffa4c512.css 200 4ms 3.58kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 6ms 31.59kb
+  <-- GET /static/css/chunk-be8d56e2.css
+  <-- GET /static/js/chunk-be8d56e2.js
+  --> GET /static/css/chunk-be8d56e2.css 200 9ms 565b
+  --> GET /static/js/chunk-be8d56e2.js 200 9ms 1.77kb
+  <-- GET /static/css/chunk-1064204a.css
+  <-- GET /static/js/chunk-1064204a.js
+  --> GET /static/css/chunk-1064204a.css 200 11ms 3.28kb
+  <-- GET /static/css/chunk-db5af852.css
+  <-- GET /static/js/chunk-db5af852.js
+  --> GET /static/js/chunk-1064204a.js 200 8ms 3.69kb
+  --> GET /static/css/chunk-db5af852.css 200 6ms 2.81kb
+  --> GET /static/js/chunk-db5af852.js 200 6ms 1.56kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/css/chunk-4eb9ad46.css 200 7ms 1.62kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 7ms 1.42kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591840877,
+  exp: 1592013677,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/js/chunk-71c1d60c.js
+ok
+  <-- POST /community/getArticleInfo
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/js/chunk-71c1d60c.js 200 8ms 5.08kb
+  <-- GET /static/js/chunk-5777a83f.js
+authorName ===============> 1
+  --> GET /static/css/chunk-71c1d60c.css 200 17ms 74b
+ok
+  <-- POST /community/getComment
+  --> GET /static/css/chunk-5777a83f.css 200 13ms 2.9kb
+  <-- GET /images/logo.png
+  --> GET /static/js/chunk-5777a83f.js 200 10ms 7.42kb
+  --> POST /community/getComment 200 6ms 22b
+  --> POST /community/getArticleInfo 200 24ms 517b
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 6ms 226b
+  --> GET /images/logo.png 200 20ms 6.26kb
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-5777a83f.css 200 3ms 2.9kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  --> GET /static/css/chunk-71c1d60c.css 200 12ms 74b
+  <-- GET /lib/editor.md/jquery.min.js
+  --> GET /lib/editor.md/jquery.min.js 200 5ms 29.92kb
+  <-- GET /static/css/chunk-05a7a936.css
+  <-- GET /static/css/chunk-1064204a.css
+  <-- GET /static/css/chunk-4eb9ad46.css
+  --> GET /static/css/chunk-05a7a936.css 200 11ms 3.63kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 8ms 1.62kb
+  --> GET /static/css/chunk-1064204a.css 200 10ms 3.28kb
+  <-- GET /static/css/chunk-be8d56e2.css
+  <-- GET /user-images/0.1436446423680504.jpg
+ok
+  <-- GET /users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg
+  --> GET /static/css/chunk-be8d56e2.css 200 13ms 565b
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 6ms -
+GET /users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg - 0ms
+  --> GET /users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg 404 7ms -
+  <-- GET /images/topic-mid-img.png
+  --> GET /images/topic-mid-img.png 200 5ms 1.21kb
+  <-- GET /static/css/chunk-db5af852.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-1064204a.js
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /static/css/chunk-ffa4c512.css 200 12ms 3.58kb
+  --> GET /static/js/chunk-1064204a.js 200 12ms 3.69kb
+  --> GET /static/css/chunk-db5af852.css 200 14ms 2.81kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-05a7a936.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 18ms 5.46kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 10ms 1.42kb
+  --> GET /static/js/chunk-05a7a936.js 200 10ms 4.41kb
+  <-- GET /static/js/chunk-22763b90.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-71c1d60c.js
+  <-- GET /static/js/chunk-be8d56e2.js
+  <-- GET /static/js/chunk-db5af852.js
+  --> GET /static/js/chunk-22763b90.js 200 14ms 489b
+  --> GET /static/js/chunk-71c1d60c.js 200 7ms 5.08kb
+  --> GET /static/js/chunk-be8d56e2.js 200 7ms 1.77kb
+  --> GET /static/js/chunk-db5af852.js 200 5ms 1.56kb
+  --> GET /static/js/chunk-5777a83f.js 200 11ms 7.42kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /static/js/chunk-ffa4c512.js 200 9ms 31.59kb
+  --> GET /lib/editor.md/lib/prettify.min.js 200 7ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 2ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 2ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 3ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 2ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 3ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 3ms 15.95kb
+ok
+  <-- GET /community
+GET /community - 0ms
+  --> GET /community 200 5ms 1.49kb
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/community.js
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/community.css
+  --> GET /static/js/community.js 200 16ms 9.54kb
+  --> GET /static/css/community.css 200 11ms 9.89kb
+  --> GET /static/css/chunk-vendors.css 200 13ms 40.77kb
+  --> GET /static/js/chunk-vendors.js 200 24ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-ffa4c512.css 200 5ms 3.58kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 8ms 31.59kb
+  <-- GET /static/css/chunk-d27458f6.css
+  --> GET /static/css/chunk-d27458f6.css 200 10ms 1.16kb
+  <-- GET /static/js/chunk-d27458f6.js
+  --> GET /static/js/chunk-d27458f6.js 200 3ms 1008b
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/css/chunk-d0868994.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 8ms 1.62kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 5ms 1.42kb
+  --> GET /static/css/chunk-d0868994.css 200 4ms 1.45kb
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/js/chunk-515c6232.js
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591840877,
+  exp: 1592013677,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+  --> GET /static/js/chunk-d0868994.js 200 17ms 5.02kb
+  --> GET /static/css/chunk-515c6232.css 200 18ms 2.61kb
+  --> GET /static/js/chunk-515c6232.js 200 17ms 4.99kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+ok
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 5ms 125b
+  --> GET /static/css/chunk-5777a83f.css 200 11ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 12ms 7.42kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 3ms 6.26kb
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 226b
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  <-- GET /user-images/0.1436446423680504.jpg
+  <-- GET /images/topic-mid-img.png
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 7ms -
+  --> GET /images/topic-mid-img.png 200 17ms 1.21kb
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 27ms 678b
+  <-- GET /favicon.ico
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-d0868994.css
+  --> GET /static/css/chunk-515c6232.css 200 15ms 2.61kb
+  --> GET /static/css/chunk-5777a83f.css 200 15ms 2.9kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 18ms 1.62kb
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-d0868994.css 200 15ms 1.45kb
+  --> GET /static/css/chunk-d27458f6.css 200 10ms 1.16kb
+  --> GET /static/css/chunk-ffa4c512.css 200 9ms 3.58kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 16ms 1.42kb
+  --> GET /static/js/chunk-5777a83f.js 200 13ms 7.42kb
+  --> GET /static/js/chunk-515c6232.js 200 15ms 4.99kb
+  --> GET /static/js/chunk-d27458f6.js 200 15ms 1008b
+  --> GET /static/js/chunk-ffa4c512.js 200 13ms 31.59kb
+  --> GET /static/js/chunk-d0868994.js 200 11ms 5.02kb
+ok
+  <-- GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd
+authorName ===============> 1
+hello??????=======> OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 34,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1
+}
++1
+GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd - 0ms
+  --> GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd 200 14ms 1.74kb
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/article.js
+  --> GET /static/js/chunk-vendors.js 200 14ms 541.1kb
+  --> GET /static/js/article.js 200 7ms 4.34kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/article.css
+  --> GET /static/css/article.css 200 9ms 9.55kb
+  --> GET /static/css/chunk-vendors.css 200 11ms 40.77kb
+  <-- GET /lib/editor.md/css/editormd.css
+  --> GET /lib/editor.md/css/editormd.css 200 5ms 15.91kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/css/chunk-ffa4c512.css 200 8ms 3.58kb
+  --> GET /static/js/chunk-ffa4c512.js 200 12ms 31.59kb
+  <-- GET /static/css/chunk-be8d56e2.css
+  --> GET /static/css/chunk-be8d56e2.css 200 4ms 565b
+  <-- GET /static/js/chunk-be8d56e2.js
+  <-- GET /static/css/chunk-1064204a.css
+  <-- GET /static/js/chunk-1064204a.js
+  <-- GET /static/js/chunk-db5af852.js
+  <-- GET /static/css/chunk-db5af852.css
+  <-- GET /static/css/chunk-4eb9ad46.css
+  --> GET /static/js/chunk-be8d56e2.js 200 19ms 1.77kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-1064204a.js 200 18ms 3.69kb
+  --> GET /static/js/chunk-db5af852.js 200 18ms 1.56kb
+  --> GET /static/css/chunk-1064204a.css 200 20ms 3.28kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 16ms 1.62kb
+  --> GET /static/css/chunk-db5af852.css 200 22ms 2.81kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591840877,
+  exp: 1592013677,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+  --> GET /static/js/chunk-4eb9ad46.js 200 24ms 1.42kb
+ok
+  <-- POST /community/getArticleInfo
+authorName ===============> 1
+  --> POST /community/getArticleInfo 200 12ms 517b
+ok
+  <-- POST /community/getComment
+  --> POST /community/getComment 200 4ms 22b
+ok
+  <-- POST /community/getTopicList
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> POST /community/getTopicList 200 7ms 226b
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/js/chunk-71c1d60c.js
+  --> GET /static/css/chunk-5777a83f.css 200 12ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 11ms 7.42kb
+  --> GET /static/css/chunk-71c1d60c.css 200 10ms 74b
+  --> GET /static/js/chunk-71c1d60c.js 200 8ms 5.08kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 4ms 6.26kb
+  <-- GET /user-images/0.1436446423680504.jpg
+ok
+  <-- GET /users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 9ms -
+GET /users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg - 0ms
+  --> GET /users/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410/portraits/0.09973871801953105.jpg 404 7ms -
+  <-- GET /static/css/chunk-1064204a.css
+  <-- GET /static/css/chunk-05a7a936.css
+  <-- GET /static/css/chunk-4eb9ad46.css
+  --> GET /static/css/chunk-05a7a936.css 200 4ms 3.63kb
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-1064204a.css 200 7ms 3.28kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 5ms 1.62kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/css/chunk-be8d56e2.css
+  --> GET /static/css/chunk-5777a83f.css 200 6ms 2.9kb
+  --> GET /static/css/chunk-71c1d60c.css 200 6ms 74b
+  --> GET /static/css/chunk-be8d56e2.css 200 6ms 565b
+  <-- GET /user-images/0.1436446423680504.jpg
+  <-- GET /lib/editor.md/jquery.min.js
+  <-- GET /static/css/chunk-db5af852.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-1064204a.js
+  <-- GET /static/js/chunk-4eb9ad46.js
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 12ms -
+  <-- GET /images/topic-mid-img.png
+  <-- GET /static/js/chunk-05a7a936.js
+  --> GET /lib/editor.md/jquery.min.js 200 14ms 29.92kb
+  --> GET /static/css/chunk-db5af852.css 200 14ms 2.81kb
+  --> GET /static/css/chunk-ffa4c512.css 200 12ms 3.58kb
+  --> GET /static/js/chunk-1064204a.js 200 11ms 3.69kb
+  <-- GET /static/js/chunk-22763b90.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 10ms 1.42kb
+  --> GET /images/topic-mid-img.png 200 10ms 1.21kb
+  --> GET /static/js/chunk-05a7a936.js 200 10ms 4.41kb
+  --> GET /static/js/chunk-22763b90.js 200 9ms 489b
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-71c1d60c.js
+  <-- GET /static/js/chunk-be8d56e2.js
+  <-- GET /lib/editor.md/lib/marked.min.js
+  <-- GET /static/js/chunk-db5af852.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-5777a83f.js 200 10ms 7.42kb
+  --> GET /static/js/chunk-71c1d60c.js 200 9ms 5.08kb
+  --> GET /static/js/chunk-be8d56e2.js 200 9ms 1.77kb
+  --> GET /static/js/chunk-db5af852.js 200 9ms 1.56kb
+  --> GET /static/js/chunk-ffa4c512.js 200 8ms 31.59kb
+  --> GET /lib/editor.md/lib/marked.min.js 200 12ms 5.46kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 4ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 3ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 3ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 3ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 2ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 3ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 3ms 15.95kb
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+ok
+  <-- GET /community
+GET /community - 0ms
+  --> GET /community 200 80ms 1.49kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/community.css
+  <-- GET /static/js/community.js
+  <-- GET /static/js/chunk-vendors.js
+  --> GET /static/css/chunk-vendors.css 200 26ms 40.77kb
+  --> GET /static/js/community.js 200 28ms 9.54kb
+  --> GET /static/css/community.css 200 42ms 9.89kb
+  --> GET /static/js/chunk-vendors.js 200 53ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/css/chunk-4eb9ad46.css
+  --> GET /static/css/chunk-ffa4c512.css 200 45ms 3.58kb
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/js/chunk-d27458f6.js 200 40ms 1008b
+  --> GET /static/js/chunk-ffa4c512.js 200 49ms 31.59kb
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/css/chunk-d27458f6.css 200 57ms 1.16kb
+  --> GET /static/css/chunk-d0868994.css 200 47ms 1.45kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591840877,
+  exp: 1592013677,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 7ms 26b
+  --> GET /static/css/chunk-4eb9ad46.css 200 37ms 1.62kb
+  --> GET /static/css/chunk-515c6232.css 200 61ms 2.61kb
+  --> GET /static/js/chunk-515c6232.js 200 47ms 4.99kb
+  --> GET /static/js/chunk-d0868994.js 200 54ms 5.02kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 59ms 1.42kb
+  <-- GET /favicon.ico
+  -x- GET /favicon.ico 200 8ms 59.28kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/css/chunk-5777a83f.css 200 23ms 2.9kb
+  <-- GET /images/logo.png
+  --> GET /static/js/chunk-5777a83f.js 200 33ms 7.42kb
+  --> GET /images/logo.png 200 16ms 6.26kb
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+  <-- POST /community/getHotList
+ok
+  <-- POST /community/getTopicList
+  <-- GET /user-images/0.1436446423680504.jpg
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 4ms -
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-515c6232.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 7ms 1.62kb
+  --> GET /static/css/chunk-515c6232.css 200 8ms 2.61kb
+  --> POST /community/getHotList 200 92ms 125b
+  --> POST /community/getTopicList 200 97ms 226b
+  <-- GET /static/css/chunk-5777a83f.css
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 155ms 678b
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/css/chunk-d27458f6.css
+  --> GET /static/css/chunk-5777a83f.css 200 9ms 2.9kb
+  --> GET /static/css/chunk-d0868994.css 200 7ms 1.45kb
+  --> GET /static/css/chunk-d27458f6.css 200 6ms 1.16kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-ffa4c512.css 200 8ms 3.58kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-515c6232.js
+  --> GET /static/js/chunk-515c6232.js 200 10ms 4.99kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 11ms 1.42kb
+  <-- GET /images/topic-mid-img.png
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/js/chunk-d27458f6.js
+  --> GET /static/js/chunk-5777a83f.js 200 6ms 7.42kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-d0868994.js 200 9ms 5.02kb
+  --> GET /static/js/chunk-d27458f6.js 200 9ms 1008b
+  --> GET /static/js/chunk-ffa4c512.js 200 8ms 31.59kb
+  --> GET /images/topic-mid-img.png 200 53ms 1.21kb
+ok
+  <-- GET /community
+GET /community - 0ms
+  --> GET /community 200 66ms 1.49kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/community.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/community.js
+  --> GET /static/css/chunk-vendors.css 200 30ms 40.77kb
+  --> GET /static/js/community.js 200 32ms 9.54kb
+  --> GET /static/css/community.css 200 46ms 9.89kb
+  --> GET /static/js/chunk-vendors.js 200 62ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/css/chunk-515c6232.css
+  --> GET /static/css/chunk-ffa4c512.css 200 40ms 3.58kb
+  <-- GET /static/js/chunk-515c6232.js
+  --> GET /static/js/chunk-d27458f6.js 200 34ms 1008b
+  <-- GET /static/css/chunk-4eb9ad46.css
+  --> GET /static/js/chunk-ffa4c512.js 200 51ms 31.59kb
+  --> GET /static/css/chunk-d27458f6.css 200 44ms 1.16kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/css/chunk-d0868994.css 200 40ms 1.45kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591840877,
+  exp: 1592013677,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+  --> GET /static/js/chunk-d0868994.js 200 54ms 5.02kb
+  --> GET /static/js/chunk-515c6232.js 200 37ms 4.99kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 33ms 1.42kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 51ms 1.62kb
+  --> GET /static/css/chunk-515c6232.css 200 69ms 2.61kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+ok
+  <-- POST /community/getHotList
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 7ms 125b
+  --> POST /community/getTopicList 200 8ms 226b
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 25ms 678b
+  --> GET /static/js/chunk-5777a83f.js 200 60ms 7.42kb
+  --> GET /static/css/chunk-5777a83f.css 200 73ms 2.9kb
+  <-- GET /user-images/0.1436446423680504.jpg
+  <-- GET /images/logo.png
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 4ms -
+  --> GET /images/logo.png 200 28ms 6.26kb
+  <-- GET /favicon.ico
+  -x- GET /favicon.ico 200 6ms 59.28kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-d0868994.css
+  --> GET /static/css/chunk-515c6232.css 200 9ms 2.61kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 12ms 1.62kb
+  --> GET /static/css/chunk-5777a83f.css 200 9ms 2.9kb
+  --> GET /static/css/chunk-d0868994.css 200 16ms 1.45kb
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-d27458f6.css 200 6ms 1.16kb
+  --> GET /static/css/chunk-ffa4c512.css 200 6ms 3.58kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /images/topic-mid-img.png
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/js/chunk-d27458f6.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 15ms 1.42kb
+  --> GET /static/js/chunk-515c6232.js 200 14ms 4.99kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-d0868994.js 200 13ms 5.02kb
+  --> GET /static/js/chunk-5777a83f.js 200 23ms 7.42kb
+  --> GET /static/js/chunk-d27458f6.js 200 19ms 1008b
+  --> GET /static/js/chunk-ffa4c512.js 200 15ms 31.59kb
+  --> GET /images/topic-mid-img.png 200 35ms 1.21kb
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- GET /guide
+GET /guide - 0ms
+  --> GET /guide 200 84ms 1.53kb
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/guide.css
+  <-- GET /static/js/guide.js
+  --> GET /static/css/guide.css 200 19ms 9.47kb
+  --> GET /static/js/guide.js 200 29ms 9.67kb
+  --> GET /static/css/chunk-vendors.css 200 48ms 40.77kb
+  --> GET /static/js/chunk-vendors.js 200 66ms 541.1kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/css/chunk-aa4d851e.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/js/chunk-aa4d851e.js
+  <-- POST /getDocNavigation
+  --> GET /static/css/chunk-ffa4c512.css 200 59ms 3.58kb
+  --> GET /static/css/chunk-aa4d851e.css 200 55ms 1.09kb
+  --> GET /static/js/chunk-ffa4c512.js 200 64ms 31.59kb
+  --> GET /static/js/chunk-aa4d851e.js 200 66ms 847b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 88ms 227b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591840877,
+  exp: 1592013677,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 23ms 26b
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 200 15ms 59.28kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-5777a83f.js 200 15ms 7.42kb
+  --> GET /static/css/chunk-5777a83f.css 200 28ms 2.9kb
+  <-- GET /images/logo.png
+  <-- GET /static/css/chunk-2924e506.css
+  <-- GET /static/js/chunk-2924e506.js
+  --> GET /images/logo.png 200 28ms 6.26kb
+  <-- GET /user-images/0.1436446423680504.jpg
+  --> GET /static/css/chunk-2924e506.css 200 34ms 1.39kb
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 5ms -
+  --> GET /static/js/chunk-2924e506.js 200 37ms 1.89kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  --> GET /static/css/chunk-71c1d60c.css 200 6ms 74b
+  <-- GET /static/js/chunk-71c1d60c.js
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 6ms 9.31kb
+  --> GET /static/js/chunk-71c1d60c.js 200 24ms 5.08kb
+  <-- GET /lib/editor.md/css/editormd.css
+  --> GET /lib/editor.md/css/editormd.css 200 2ms 15.91kb
+  <-- GET /lib/editor.md/fonts/fontawesome-webfont.woff2?v=4.3.0
+  <-- GET /lib/editor.md/jquery.min.js
+  --> GET /lib/editor.md/fonts/fontawesome-webfont.woff2?v=4.3.0 200 17ms 55.45kb
+  --> GET /lib/editor.md/jquery.min.js 200 25ms 29.92kb
+  <-- GET /static/css/chunk-2924e506.css
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-2924e506.css 200 6ms 1.39kb
+  --> GET /static/css/chunk-5777a83f.css 200 6ms 2.9kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  --> GET /static/css/chunk-71c1d60c.css 200 3ms 74b
+  <-- GET /static/css/chunk-aa4d851e.css
+  --> GET /static/css/chunk-aa4d851e.css 200 6ms 1.09kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /lib/editor.md/lib/marked.min.js
+  <-- GET /static/js/chunk-2924e506.js
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/css/chunk-ffa4c512.css 200 10ms 3.58kb
+  <-- GET /static/js/chunk-22763b90.js
+  <-- GET /static/js/chunk-71c1d60c.js
+  <-- GET /static/js/chunk-aa4d851e.js
+  --> GET /static/js/chunk-2924e506.js 200 12ms 1.89kb
+  --> GET /static/js/chunk-5777a83f.js 200 13ms 7.42kb
+  --> GET /static/js/chunk-71c1d60c.js 200 11ms 5.08kb
+  --> GET /static/js/chunk-22763b90.js 200 15ms 489b
+  --> GET /lib/editor.md/lib/marked.min.js 200 20ms 5.46kb
+  <-- GET /static/css/chunk-bf898d58.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-aa4d851e.js 200 14ms 847b
+  <-- GET /static/js/chunk-bf898d58.js
+  --> GET /static/js/chunk-ffa4c512.js 200 13ms 31.59kb
+  --> GET /static/css/chunk-bf898d58.css 200 15ms 163b
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /static/js/chunk-bf898d58.js 200 25ms 748b
+  --> GET /lib/editor.md/lib/prettify.min.js 200 28ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 12ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 2ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 4ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 2ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 8ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 4ms 15.95kb
+  <-- GET /lib/editor.md/fonts/editormd-logo.woff?-5y8q6h
+  --> GET /lib/editor.md/fonts/editormd-logo.woff?-5y8q6h 200 5ms 1.2kb
+ok
+  <-- GET /community
+GET /community - 0ms
+  --> GET /community 200 39ms 1.49kb
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/community.css
+  <-- GET /static/js/community.js
+  --> GET /static/css/chunk-vendors.css 200 12ms 40.77kb
+  --> GET /static/css/community.css 200 19ms 9.89kb
+  --> GET /static/js/chunk-vendors.js 200 27ms 541.1kb
+  --> GET /static/js/community.js 200 35ms 9.54kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/css/chunk-ffa4c512.css 200 27ms 3.58kb
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/css/chunk-4eb9ad46.css
+  --> GET /static/js/chunk-ffa4c512.js 200 28ms 31.59kb
+  --> GET /static/css/chunk-d27458f6.css 200 48ms 1.16kb
+  <-- GET /static/js/chunk-515c6232.js
+  --> GET /static/css/chunk-d0868994.css 200 45ms 1.45kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-d27458f6.js 200 55ms 1008b
+  --> GET /static/js/chunk-d0868994.js 200 61ms 5.02kb
+  --> GET /static/js/chunk-515c6232.js 200 26ms 4.99kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 32ms 1.42kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 70ms 1.62kb
+  --> GET /static/css/chunk-515c6232.css 200 78ms 2.61kb
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591840877,
+  exp: 1592013677,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 5ms 26b
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 7ms 6.26kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+ok
+  <-- POST /community/getHotList
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 114ms 125b
+  --> GET /static/css/chunk-5777a83f.css 200 125ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 125ms 7.42kb
+  <-- GET /user-images/0.1436446423680504.jpg
+  --> POST /community/getTopicList 200 34ms 226b
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 23ms -
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 47ms 678b
+  <-- GET /images/topic-mid-img.png
+  --> GET /images/topic-mid-img.png 200 19ms 1.21kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 11ms 1.62kb
+  --> GET /static/css/chunk-515c6232.css 200 10ms 2.61kb
+  --> GET /static/css/chunk-5777a83f.css 200 11ms 2.9kb
+  --> GET /static/css/chunk-d0868994.css 200 12ms 1.45kb
+  --> GET /static/css/chunk-d27458f6.css 200 13ms 1.16kb
+  --> GET /static/css/chunk-ffa4c512.css 200 10ms 3.58kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-d0868994.js
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-515c6232.js 200 12ms 4.99kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 15ms 1.42kb
+  --> GET /static/js/chunk-d27458f6.js 200 11ms 1008b
+  --> GET /static/js/chunk-d0868994.js 200 14ms 5.02kb
+  --> GET /static/js/chunk-ffa4c512.js 200 11ms 31.59kb
+  --> GET /static/js/chunk-5777a83f.js 200 17ms 7.42kb
+  <-- GET /guide
+GET /guide - 0ms
+  --> GET /guide 200 10ms 1.53kb
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/guide.js
+  --> GET /static/js/guide.js 200 5ms 9.67kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/guide.css
+  --> GET /static/js/chunk-vendors.js 200 23ms 541.1kb
+  --> GET /static/css/chunk-vendors.css 200 15ms 40.77kb
+  --> GET /static/css/guide.css 200 13ms 9.47kb
+  <-- GET /static/css/chunk-ffa4c512.css
+  --> GET /static/css/chunk-ffa4c512.css 200 6ms 3.58kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  --> GET /static/js/chunk-ffa4c512.js 200 8ms 31.59kb
+  <-- GET /static/css/chunk-aa4d851e.css
+  --> GET /static/css/chunk-aa4d851e.css 200 12ms 1.09kb
+  <-- GET /static/js/chunk-aa4d851e.js
+  <-- POST /getDocNavigation
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1591840877,
+  exp: 1592013677,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 8ms 227b
+  --> GET /static/js/chunk-aa4d851e.js 200 16ms 847b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/css/chunk-5777a83f.css 200 12ms 2.9kb
+  <-- GET /user-images/0.1436446423680504.jpg
+  <-- GET /images/logo.png
+  --> GET /static/js/chunk-5777a83f.js 200 10ms 7.42kb
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 4ms -
+  --> GET /images/logo.png 200 8ms 6.26kb
+  <-- GET /static/css/chunk-2924e506.css
+  <-- GET /static/js/chunk-2924e506.js
+  --> GET /static/js/chunk-2924e506.js 200 25ms 1.89kb
+  --> GET /static/css/chunk-2924e506.css 200 29ms 1.39kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/js/chunk-71c1d60c.js
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /static/css/chunk-71c1d60c.css 200 8ms 74b
+  --> GET /static/js/chunk-71c1d60c.js 200 8ms 5.08kb
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 8ms 9.31kb
+  <-- GET /lib/editor.md/jquery.min.js
+  <-- GET /lib/editor.md/css/editormd.css
+  --> GET /lib/editor.md/jquery.min.js 200 4ms 29.92kb
+  --> GET /lib/editor.md/css/editormd.css 200 4ms 15.91kb
+  <-- GET /static/css/chunk-2924e506.css
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-2924e506.css 200 10ms 1.39kb
+  --> GET /static/css/chunk-5777a83f.css 200 11ms 2.9kb
+  <-- GET /static/css/chunk-aa4d851e.css
+  <-- GET /static/css/chunk-71c1d60c.css
+  --> GET /static/css/chunk-71c1d60c.css 200 10ms 74b
+  --> GET /static/css/chunk-aa4d851e.css 200 13ms 1.09kb
+  <-- GET /static/css/chunk-bf898d58.css
+  <-- GET /static/css/chunk-ffa4c512.css
+  <-- GET /lib/editor.md/lib/marked.min.js
+  <-- GET /static/js/chunk-2924e506.js
+  --> GET /static/css/chunk-bf898d58.css 200 15ms 163b
+  --> GET /static/css/chunk-ffa4c512.css 200 14ms 3.58kb
+  --> GET /static/js/chunk-2924e506.js 200 12ms 1.89kb
+  --> GET /lib/editor.md/lib/marked.min.js 200 14ms 5.46kb
+  <-- GET /static/js/chunk-22763b90.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-71c1d60c.js
+  --> GET /static/js/chunk-22763b90.js 200 14ms 489b
+  <-- GET /static/js/chunk-aa4d851e.js
+  --> GET /static/js/chunk-5777a83f.js 200 20ms 7.42kb
+  <-- GET /static/js/chunk-ffa4c512.js
+  <-- GET /static/js/chunk-bf898d58.js
+  --> GET /static/js/chunk-71c1d60c.js 200 25ms 5.08kb
+  --> GET /static/js/chunk-ffa4c512.js 200 17ms 31.59kb
+  --> GET /static/js/chunk-bf898d58.js 200 17ms 748b
+  --> GET /static/js/chunk-aa4d851e.js 200 26ms 847b
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 6ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 3ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 3ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 3ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 2ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 4ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 3ms 15.95kb
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 17ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1592291525,
+  exp: 1592464325,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 6ms 26b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1592291525,
+  exp: 1592464325,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 8ms 26b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 5ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1592291525,
+  exp: 1592464325,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 6ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+  <-- POST /community/getHotList
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 54ms 125b
+  --> POST /community/getTopicList 200 53ms 226b
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 376ms 678b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 13ms 68b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 17ms 68b

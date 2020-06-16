@@ -103,7 +103,22 @@ module.exports = function(){
                     threshold: 10240,
                     minRatio: 0.8
                 })
-            ]
+            ],
+
+            externals :{
+                'vue': 'Vue',
+                'vue-router': 'VueRouter',
+                'vuex': 'Vuex',
+                'axios': 'axios',
+                'element-ui': 'ELEMENT',
+                'jquery' : 'window.jQuery',
+                'echarts' : 'echarts'
+            }
+        },
+        chainWebpack: config => {
+            config
+                .plugin('webpack-bundle-analyzer')
+                .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
         }
     }
 };
