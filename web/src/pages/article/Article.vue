@@ -140,7 +140,7 @@
         },
 
         mounted() {
-            this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
+
         }
     };
 </script>

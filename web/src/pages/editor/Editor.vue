@@ -128,17 +128,6 @@
                 console.log("hi");
             },
 
-            getUserLogStatus (){
-                this.$axios({
-                    method : "post",
-                    url : "/verifyToken"
-                }).then(value =>{
-                    this.$store.commit("changeLogStatus",value.data.logged);
-                }).catch(err => {
-                    console.error(err);
-                })
-            },
-
             getPageProperty (){
                 let path = window.location.pathname.split("/");
                 if(path[2] == "article"){
@@ -252,7 +241,7 @@
                 if(markDown.length < 10){
                     this.$notify({
                         title: '发表失败!',
-                        message: '文章字数为超过最低发表字数限制!',
+                        message: '文章字数未超过最低发表字数限制!',
                         type: 'error'
                     });
 
@@ -351,14 +340,14 @@
 
         created () {
             var vm = this;
-            this.getUserLogStatus();
+            this.$store.dispatch("getUserLogStatus");
             vm.getPageProperty();
             vm.initDropdown();
             vm.initArticleInfo();
         },
 
         mounted() {
-            this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
+
         }
     };
 </script>

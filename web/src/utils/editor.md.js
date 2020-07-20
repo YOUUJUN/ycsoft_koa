@@ -1,4 +1,6 @@
+import config from "./config";
 
+console.log("config",config.baseUrl());
 
 const defaultConfig = {
     // width: "100%",
@@ -51,7 +53,7 @@ const defaultConfig = {
     saveHTMLToTextarea : true,
     imageUpload : true,
     imageFormats : ["jpg","jpeg","gif","png","bmp","webp"],
-    imageUploadURL : "http://106.13.63.236/editor/uploadimg",
+    imageUploadURL : config.baseUrl().concat("/editor/uploadimg"),
     emoji: true,
     taskList: true,
     tocm: true,         // Using [TOCM]

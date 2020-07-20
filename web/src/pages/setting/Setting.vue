@@ -104,18 +104,6 @@
         },
         methods : {
 
-            getUserLogStatus (){
-                this.$axios({
-                    method : "post",
-                    url : "verifyToken"
-                }).then(value =>{
-                    console.log("value ====-====",value);
-                    this.$store.commit("changeLogStatus",value.data.logged);
-                }).catch(err => {
-                    console.log(err);
-                })
-            },
-
             getImg (){
                 this.$refs["portrait"].click();
             },
@@ -136,7 +124,7 @@
 
                     var xmlhttp = new XMLHttpRequest();
 
-                    xmlhttp.open("POST",vm.baseURL.concat("/users/uploadimg"));
+                    xmlhttp.open("POST",vm.$config.baseUrl().concat("/users/uploadimg"));
                     let marscript = window.localStorage.getItem("marscript");
                     if (marscript) {
                         xmlhttp.setRequestHeader("accessToken",marscript);
@@ -228,13 +216,12 @@
         },
 
         created () {
-            this.getUserLogStatus();
+            this.$store.dispatch("getUserLogStatus");
             this.userData = this.$common.getUserInfo();
         },
 
         mounted() {
-            this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
-            console.log("baseUrl",this.$axios.baseURL);
+
         }
     };
 </script>

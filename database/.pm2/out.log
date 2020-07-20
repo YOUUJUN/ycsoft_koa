@@ -70073,3 +70073,1261 @@ arr === > [
   'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
 ]
   --> POST /community/getArticleList 200 17ms 68b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 17ms 0b
+  <-- OPTIONS /login
+OPTIONS /login - 0ms
+  --> OPTIONS /login 200 2ms 0b
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1592291525,
+  exp: 1592464325,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 12ms 26b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- GET /
+GET / - 0ms
+  --> GET / 200 58ms 1.96kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/index.css
+  --> GET /static/css/chunk-vendors.css 200 19ms 40.77kb
+  --> GET /static/css/index.css 200 16ms 9.41kb
+  <-- GET /static/js/chunk-vendors.js
+  --> GET /static/js/chunk-vendors.js 200 5ms 37.8kb
+  <-- GET /static/js/index.js
+  --> GET /static/js/index.js 200 3ms 9.2kb
+  <-- GET /static/css/chunk-92718afc.css
+  <-- GET /static/js/chunk-92718afc.js
+  <-- GET /static/css/chunk-4e487f1e.css
+  <-- GET /static/js/chunk-4e487f1e.js
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 12ms 27b
+  <-- GET /static/css/chunk-445613ca.css
+  --> GET /static/css/chunk-92718afc.css 200 29ms 3.58kb
+  --> GET /static/js/chunk-92718afc.js 200 28ms 3.8kb
+  --> GET /static/css/chunk-4e487f1e.css 200 24ms 1.42kb
+  --> GET /static/js/chunk-4e487f1e.js 200 24ms 1.03kb
+  <-- GET /static/css/chunk-bf898d58.css
+  <-- GET /static/js/chunk-445613ca.js
+  <-- GET /static/js/chunk-bf898d58.js
+  --> GET /static/css/chunk-445613ca.css 200 13ms 488b
+  --> GET /static/css/chunk-bf898d58.css 200 9ms 163b
+  --> GET /static/js/chunk-445613ca.js 200 9ms 2.01kb
+  --> GET /static/js/chunk-bf898d58.js 200 9ms 748b
+  <-- GET /static/fonts/fontawesome-webfont.woff2
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/fonts/fontawesome-webfont.woff2 200 10ms 75.35kb
+  --> GET /static/css/chunk-5777a83f.css 200 11ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 10ms 7.42kb
+  <-- GET /images/logo.png
+  <-- GET /images/showimg1.png
+  --> GET /images/logo.png 200 6ms 6.26kb
+  --> GET /images/showimg1.png 200 11ms 92.01kb
+  <-- GET /static/js/chunk-92718afc.js.map
+  <-- GET /static/js/index.js.map
+  --> GET /static/js/chunk-92718afc.js.map 200 11ms 20.66kb
+  --> GET /static/js/index.js.map 200 10ms 38.42kb
+  <-- GET /static/css/chunk-445613ca.css
+  <-- GET /static/css/chunk-4e487f1e.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-92718afc.css
+  <-- GET /static/css/chunk-bf898d58.css
+  <-- GET /static/js/chunk-445613ca.js
+  --> GET /static/css/chunk-445613ca.css 200 15ms 488b
+  --> GET /static/css/chunk-4e487f1e.css 200 14ms 1.42kb
+  --> GET /static/css/chunk-92718afc.css 200 13ms 3.58kb
+  --> GET /static/css/chunk-bf898d58.css 200 12ms 163b
+  --> GET /static/js/chunk-445613ca.js 200 12ms 2.01kb
+  --> GET /static/css/chunk-5777a83f.css 200 17ms 2.9kb
+  <-- GET /static/js/chunk-4e487f1e.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-92718afc.js
+  <-- GET /static/js/chunk-bf898d58.js
+  --> GET /static/js/chunk-4e487f1e.js 200 13ms 1.03kb
+  --> GET /static/js/chunk-5777a83f.js 200 13ms 7.42kb
+  --> GET /static/js/chunk-92718afc.js 200 13ms 3.8kb
+  --> GET /static/js/chunk-bf898d58.js 200 13ms 748b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- GET /guide
+GET /guide - 0ms
+  --> GET /guide 200 71ms 2.12kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/guide.css
+  --> GET /static/css/chunk-vendors.css 200 23ms 40.77kb
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/guide.js
+  --> GET /static/css/guide.css 200 18ms 9.47kb
+  --> GET /static/js/chunk-vendors.js 200 8ms 37.8kb
+  --> GET /static/js/guide.js 200 13ms 9.88kb
+  <-- GET /static/css/chunk-92718afc.css
+  <-- GET /static/js/chunk-92718afc.js
+  <-- GET /static/css/chunk-aa4d851e.css
+  <-- GET /static/js/chunk-aa4d851e.js
+  <-- POST /getDocNavigation
+  --> GET /static/css/chunk-92718afc.css 200 69ms 3.58kb
+  --> GET /static/css/chunk-aa4d851e.css 200 56ms 1.09kb
+  --> GET /static/js/chunk-92718afc.js 200 64ms 3.8kb
+  --> GET /static/js/chunk-aa4d851e.js 200 61ms 847b
+POST /getDocNavigation - 0ms
+  --> POST /getDocNavigation 200 70ms 227b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 10ms 27b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/css/chunk-2924e506.css
+  <-- GET /static/js/chunk-2924e506.js
+  --> GET /static/js/chunk-5777a83f.js 200 46ms 7.42kb
+  --> GET /static/js/chunk-2924e506.js 200 44ms 1.89kb
+  --> GET /static/css/chunk-2924e506.css 200 52ms 1.39kb
+  --> GET /static/css/chunk-5777a83f.css 200 68ms 2.9kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 16ms 6.26kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/js/chunk-71c1d60c.js
+  <-- GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb
+hello
+  --> GET /guide/6e243890-a630-11ea-a32d-4f9af64f52bb 200 5ms 9.31kb
+  --> GET /static/css/chunk-71c1d60c.css 200 12ms 74b
+  --> GET /static/js/chunk-71c1d60c.js 200 19ms 5.08kb
+  <-- GET /static/js/guide.js.map
+  --> GET /static/js/guide.js.map 200 15ms 40.84kb
+  <-- GET /static/js/chunk-92718afc.js.map
+  --> GET /static/js/chunk-92718afc.js.map 200 12ms 20.66kb
+  <-- GET /lib/editor.md/css/editormd.css
+  <-- GET /lib/editor.md/jquery.min.js
+  --> GET /lib/editor.md/css/editormd.css 200 9ms 15.91kb
+  --> GET /lib/editor.md/jquery.min.js 200 11ms 29.92kb
+  <-- GET /static/js/chunk-2924e506.js.map
+  --> GET /static/js/chunk-2924e506.js.map 200 12ms 10.16kb
+  <-- GET /lib/editor.md/fonts/fontawesome-webfont.woff2?v=4.3.0
+  <-- GET /lib/editor.md/lib/marked.min.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 8ms 5.46kb
+  --> GET /lib/editor.md/fonts/fontawesome-webfont.woff2?v=4.3.0 200 61ms 55.45kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 3ms 7.5kb
+  <-- GET /static/css/chunk-2924e506.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/css/chunk-92718afc.css
+  --> GET /static/css/chunk-5777a83f.css 200 15ms 2.9kb
+  --> GET /static/css/chunk-71c1d60c.css 200 14ms 74b
+  --> GET /static/css/chunk-92718afc.css 200 9ms 3.58kb
+  --> GET /static/css/chunk-2924e506.css 200 18ms 1.39kb
+  <-- GET /static/css/chunk-aa4d851e.css
+  --> GET /static/css/chunk-aa4d851e.css 200 10ms 1.09kb
+  <-- GET /static/css/chunk-bf898d58.css
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /static/css/chunk-bf898d58.css 200 11ms 163b
+  --> GET /lib/editor.md/lib/raphael.min.js 200 13ms 31.29kb
+  <-- GET /static/js/chunk-2924e506.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-71c1d60c.js
+  --> GET /static/js/chunk-5777a83f.js 200 6ms 7.42kb
+  --> GET /static/js/chunk-2924e506.js 200 9ms 1.89kb
+  --> GET /static/js/chunk-71c1d60c.js 200 8ms 5.08kb
+  <-- GET /static/js/chunk-92718afc.js
+  --> GET /static/js/chunk-92718afc.js 200 8ms 3.8kb
+  <-- GET /static/js/chunk-22763b90.js
+  --> GET /static/js/chunk-22763b90.js 200 3ms 489b
+  <-- GET /static/js/chunk-aa4d851e.js
+  --> GET /static/js/chunk-aa4d851e.js 200 10ms 847b
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 5ms 5.65kb
+  <-- GET /static/js/chunk-bf898d58.js
+  --> GET /static/js/chunk-bf898d58.js 200 31ms 748b
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 5ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 4ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 60ms 1.36kb
+ok
+  <-- GET /community
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 6ms 15.95kb
+GET /community - 0ms
+  --> GET /community 200 16ms 2.08kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/js/chunk-vendors.js
+  --> GET /static/css/chunk-vendors.css 200 12ms 40.77kb
+  --> GET /static/js/chunk-vendors.js 200 16ms 37.8kb
+  <-- GET /static/css/community.css
+  <-- GET /static/js/community.js
+  --> GET /static/css/community.css 200 45ms 9.89kb
+  --> GET /static/js/community.js 200 53ms 9.76kb
+  <-- GET /static/css/chunk-92718afc.css
+  <-- GET /static/js/chunk-92718afc.js
+  --> GET /static/js/chunk-92718afc.js 200 8ms 3.8kb
+  --> GET /static/css/chunk-92718afc.css 200 9ms 3.58kb
+  <-- GET /static/css/chunk-d27458f6.css
+  <-- GET /static/js/chunk-d27458f6.js
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/css/chunk-d27458f6.css 200 37ms 1.16kb
+  --> GET /static/css/chunk-d0868994.css 200 35ms 1.45kb
+  --> GET /static/js/chunk-d27458f6.js 200 37ms 1008b
+  --> GET /static/js/chunk-d0868994.js 200 20ms 5.02kb
+  <-- GET /static/js/community.js.map
+  --> GET /static/js/community.js.map 200 14ms 40.25kb
+  <-- GET /static/css/chunk-515c6232.css
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 2ms 27b
+  --> GET /static/css/chunk-515c6232.css 200 21ms 2.61kb
+  <-- GET /static/js/chunk-515c6232.js
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 10ms 1.42kb
+  --> GET /static/js/chunk-515c6232.js 200 22ms 4.99kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 34ms 1.62kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-92718afc.js.map
+别问，问就验证没通过
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 6ms 125b
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> GET /static/css/chunk-5777a83f.css 200 94ms 2.9kb
+  <-- GET /images/logo.png
+  --> GET /static/js/chunk-5777a83f.js 200 99ms 7.42kb
+  --> GET /static/js/chunk-92718afc.js.map 200 100ms 20.66kb
+  --> POST /community/getArticleList 200 26ms 638b
+  --> GET /images/logo.png 200 15ms 6.26kb
+  <-- GET /static/js/chunk-515c6232.js.map
+  --> GET /static/js/chunk-515c6232.js.map 200 9ms 21kb
+  <-- GET /favicon.ico
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 227b
+  <-- GET /images/topic-mid-img.png
+  --> GET /images/topic-mid-img.png 200 42ms 1.21kb
+  <-- GET /static/js/chunk-d0868994.js.map
+  --> GET /static/js/chunk-d0868994.js.map 200 22ms 24.55kb
+  <-- GET /static/js/chunk-4eb9ad46.js.map
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-515c6232.css
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-92718afc.css
+  <-- GET /static/css/chunk-d0868994.css
+  <-- GET /static/css/chunk-d27458f6.css
+  --> GET /static/css/chunk-515c6232.css 200 11ms 2.61kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 14ms 1.62kb
+  --> GET /static/css/chunk-5777a83f.css 200 12ms 2.9kb
+  --> GET /static/css/chunk-92718afc.css 200 14ms 3.58kb
+  --> GET /static/css/chunk-d0868994.css 200 13ms 1.45kb
+  --> GET /static/css/chunk-d27458f6.css 200 12ms 1.16kb
+  --> GET /static/js/chunk-4eb9ad46.js.map 200 63ms 8.22kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 3ms 1.42kb
+  <-- GET /static/js/chunk-515c6232.js
+  --> GET /static/js/chunk-515c6232.js 200 7ms 4.99kb
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-92718afc.js
+  <-- GET /static/js/chunk-d0868994.js
+  --> GET /static/js/chunk-5777a83f.js 200 10ms 7.42kb
+  --> GET /static/js/chunk-92718afc.js 200 8ms 3.8kb
+  --> GET /static/js/chunk-d0868994.js 200 7ms 5.02kb
+  <-- GET /static/js/chunk-d27458f6.js
+  --> GET /static/js/chunk-d27458f6.js 200 4ms 1008b
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 16ms 68b
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 3, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 18ms 68b
+ok
+  <-- GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd
+authorName ===============> 1
+hello??????=======> OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 34,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1
+}
++1
+GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd - 0ms
+  --> GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd 200 76ms 2.33kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/article.js
+  <-- GET /static/css/article.css
+  --> GET /static/css/chunk-vendors.css 200 16ms 40.77kb
+  --> GET /static/js/chunk-vendors.js 200 15ms 37.8kb
+  --> GET /static/js/article.js 200 17ms 4.44kb
+  --> GET /static/css/article.css 200 23ms 9.55kb
+  <-- GET /lib/editor.md/css/editormd.css
+  --> GET /lib/editor.md/css/editormd.css 200 4ms 15.91kb
+  <-- GET /static/css/chunk-92718afc.css
+  <-- GET /static/js/chunk-92718afc.js
+  <-- GET /static/css/chunk-be8d56e2.css
+  <-- GET /static/js/chunk-be8d56e2.js
+  --> GET /static/css/chunk-92718afc.css 200 11ms 3.58kb
+  --> GET /static/js/chunk-92718afc.js 200 8ms 3.8kb
+  --> GET /static/css/chunk-be8d56e2.css 200 11ms 565b
+  <-- GET /static/css/chunk-1064204a.css
+  <-- GET /static/js/chunk-1064204a.js
+  <-- GET /static/css/chunk-db5af852.css
+  <-- GET /static/js/chunk-db5af852.js
+  <-- GET /static/css/chunk-4eb9ad46.css
+  --> GET /static/js/chunk-be8d56e2.js 200 43ms 1.77kb
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/css/chunk-db5af852.css 200 30ms 2.81kb
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+  --> GET /static/css/chunk-4eb9ad46.css 200 28ms 1.62kb
+  --> GET /static/css/chunk-1064204a.css 200 49ms 3.28kb
+  --> GET /static/js/chunk-4eb9ad46.js 200 16ms 1.42kb
+  --> GET /static/js/chunk-1064204a.js 200 49ms 3.69kb
+  --> GET /static/js/chunk-db5af852.js 200 45ms 1.56kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/css/chunk-5777a83f.css 200 5ms 2.9kb
+  --> GET /static/js/chunk-5777a83f.js 200 4ms 7.42kb
+  <-- GET /images/logo.png
+  --> GET /images/logo.png 200 3ms 6.26kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/js/chunk-71c1d60c.js
+别问，问就验证没通过
+  <-- POST /community/getArticleInfo
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+别问，问就验证没通过
+  <-- POST /community/getComment
+authorName ===============> 1
+  --> GET /static/css/chunk-71c1d60c.css 200 22ms 74b
+  --> GET /static/js/chunk-71c1d60c.js 200 21ms 5.08kb
+  --> POST /community/getArticleInfo 200 32ms 517b
+  --> POST /community/getTopicList 200 43ms 227b
+  --> POST /community/getComment 200 52ms 22b
+  <-- GET /static/css/chunk-05a7a936.css
+  <-- GET /static/css/chunk-1064204a.css
+  --> GET /static/css/chunk-1064204a.css 200 7ms 3.28kb
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-4eb9ad46.css 200 6ms 1.62kb
+  --> GET /static/css/chunk-5777a83f.css 200 5ms 2.9kb
+  --> GET /static/css/chunk-05a7a936.css 200 44ms 3.63kb
+  <-- GET /static/css/chunk-71c1d60c.css
+  --> GET /static/css/chunk-71c1d60c.css 200 4ms 74b
+  <-- GET /static/css/chunk-92718afc.css
+  --> GET /static/css/chunk-92718afc.css 200 4ms 3.58kb
+  <-- GET /lib/editor.md/jquery.min.js
+  --> GET /lib/editor.md/jquery.min.js 200 5ms 29.92kb
+  <-- GET /images/topic-mid-img.png
+  <-- GET /user-images/0.1436446423680504.jpg
+GET /user-images/0.1436446423680504.jpg - 0ms
+  --> GET /user-images/0.1436446423680504.jpg 404 6ms -
+  --> GET /images/topic-mid-img.png 200 9ms 1.21kb
+  <-- GET /static/css/chunk-be8d56e2.css
+  <-- GET /static/css/chunk-db5af852.css
+  --> GET /static/css/chunk-be8d56e2.css 200 11ms 565b
+  --> GET /static/css/chunk-db5af852.css 200 6ms 2.81kb
+  <-- GET /static/js/chunk-05a7a936.js
+  <-- GET /static/js/chunk-1064204a.js
+  --> GET /static/js/chunk-1064204a.js 200 8ms 3.69kb
+  --> GET /static/js/chunk-05a7a936.js 200 20ms 4.41kb
+  <-- GET /static/js/chunk-22763b90.js
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 6ms 1.42kb
+  --> GET /static/js/chunk-22763b90.js 200 14ms 489b
+  <-- GET /lib/editor.md/lib/marked.min.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-71c1d60c.js
+  <-- GET /static/js/chunk-92718afc.js
+  --> GET /lib/editor.md/lib/marked.min.js 200 9ms 5.46kb
+  --> GET /static/js/chunk-5777a83f.js 200 9ms 7.42kb
+  --> GET /static/js/chunk-71c1d60c.js 200 9ms 5.08kb
+  --> GET /static/js/chunk-92718afc.js 200 7ms 3.8kb
+  <-- GET /static/js/chunk-be8d56e2.js
+  <-- GET /static/js/chunk-db5af852.js
+  --> GET /static/js/chunk-be8d56e2.js 200 7ms 1.77kb
+  --> GET /static/js/chunk-db5af852.js 200 6ms 1.56kb
+  <-- GET /lib/editor.md/lib/prettify.min.js
+  --> GET /lib/editor.md/lib/prettify.min.js 200 5ms 7.5kb
+  <-- GET /lib/editor.md/lib/raphael.min.js
+  --> GET /lib/editor.md/lib/raphael.min.js 200 3ms 31.29kb
+  <-- GET /lib/editor.md/lib/underscore.min.js
+  --> GET /lib/editor.md/lib/underscore.min.js 200 3ms 5.65kb
+  <-- GET /lib/editor.md/lib/sequence-diagram.min.js
+  --> GET /lib/editor.md/lib/sequence-diagram.min.js 200 3ms 30.97kb
+  <-- GET /lib/editor.md/lib/flowchart.min.js
+  --> GET /lib/editor.md/lib/flowchart.min.js 200 3ms 5.33kb
+  <-- GET /lib/editor.md/lib/jquery.flowchart.min.js
+  --> GET /lib/editor.md/lib/jquery.flowchart.min.js 200 3ms 1.36kb
+  <-- GET /lib/editor.md/editormd.min.js
+  --> GET /lib/editor.md/editormd.min.js 200 4ms 15.95kb
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+ok
+  <-- GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd
+authorName ===============> 1
+hello??????=======> OkPacket {
+  fieldCount: 0,
+  affectedRows: 1,
+  insertId: 0,
+  serverStatus: 34,
+  warningCount: 0,
+  message: '(Rows matched: 1  Changed: 1  Warnings: 0',
+  protocol41: true,
+  changedRows: 1
+}
++1
+GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd - 0ms
+  --> GET /community/post/fe537040-a4ad-11ea-b527-0d69c8fc9fcd 200 110ms 2.33kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/article.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/article.js
+  --> GET /static/css/chunk-vendors.css 200 39ms 40.77kb
+  --> GET /static/js/article.js 200 36ms 4.44kb
+  --> GET /static/js/chunk-vendors.js 200 44ms 37.8kb
+  --> GET /static/css/article.css 200 56ms 9.55kb
+  <-- GET /lib/editor.md/css/editormd.css
+  --> GET /lib/editor.md/css/editormd.css 200 5ms 15.91kb
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 3ms 27b
+  <-- GET /static/css/chunk-92718afc.css
+  <-- GET /static/js/chunk-92718afc.js
+  <-- GET /static/css/chunk-be8d56e2.css
+  <-- GET /static/js/chunk-be8d56e2.js
+  <-- GET /static/css/chunk-1064204a.css
+  <-- GET /static/js/chunk-1064204a.js
+  <-- GET /static/js/chunk-4eb9ad46.js
+  <-- GET /static/css/chunk-1064204a.css
+  <-- GET /static/css/chunk-4eb9ad46.css
+  <-- GET /static/css/chunk-92718afc.css
+  <-- GET /static/css/chunk-05a7a936.css
+  <-- GET /static/css/chunk-71c1d60c.css
+  <-- GET /static/css/chunk-5777a83f.css
+  --> GET /static/css/chunk-1064204a.css 200 51ms 3.28kb
+  --> GET /static/css/chunk-71c1d60c.css 200 39ms 74b
+  --> GET /static/css/chunk-05a7a936.css 200 41ms 3.63kb
+  --> GET /static/css/chunk-4eb9ad46.css 200 59ms 1.62kb
+  --> GET /static/css/chunk-5777a83f.css 200 50ms 2.9kb
+  --> GET /static/css/chunk-92718afc.css 200 68ms 3.58kb
+  <-- GET /static/css/chunk-be8d56e2.css
+  --> GET /static/css/chunk-be8d56e2.css 200 4ms 565b
+  <-- GET /static/css/chunk-db5af852.css
+  <-- GET /static/js/chunk-05a7a936.js
+  --> GET /static/css/chunk-db5af852.css 200 21ms 2.81kb
+  <-- GET /static/js/chunk-1064204a.js
+  <-- GET /static/js/chunk-22763b90.js
+  <-- GET /static/js/chunk-4eb9ad46.js
+  --> GET /static/js/chunk-1064204a.js 200 27ms 3.69kb
+  --> GET /static/js/chunk-22763b90.js 200 15ms 489b
+  --> GET /static/js/chunk-05a7a936.js 200 39ms 4.41kb
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-4eb9ad46.js 200 21ms 1.42kb
+  <-- GET /static/js/chunk-71c1d60c.js
+  --> GET /static/js/chunk-5777a83f.js 200 19ms 7.42kb
+  --> GET /static/js/chunk-71c1d60c.js 200 13ms 5.08kb
+  <-- GET /static/js/chunk-92718afc.js
+  <-- GET /static/js/chunk-be8d56e2.js
+  --> GET /static/js/chunk-92718afc.js 200 16ms 3.8kb
+  <-- GET /static/js/chunk-db5af852.js
+  --> GET /static/js/chunk-be8d56e2.js 200 15ms 1.77kb
+  --> GET /static/js/chunk-db5af852.js 200 5ms 1.56kb
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- GET /
+GET / - 1ms
+  --> GET / 200 94ms 1.96kb
+  <-- GET /static/css/chunk-vendors.css
+  <-- GET /static/css/index.css
+  <-- GET /static/js/chunk-vendors.js
+  <-- GET /static/js/index.js
+  --> GET /static/css/index.css 200 90ms 9.41kb
+  --> GET /static/js/index.js 200 89ms 9.2kb
+  --> GET /static/js/chunk-vendors.js 200 101ms 37.8kb
+  --> GET /static/css/chunk-vendors.css 200 118ms 40.77kb
+  <-- GET /static/css/chunk-92718afc.css
+  <-- GET /static/js/chunk-92718afc.js
+  <-- GET /static/css/chunk-4e487f1e.css
+  <-- GET /static/js/chunk-4e487f1e.js
+  --> GET /static/css/chunk-92718afc.css 200 55ms 3.58kb
+  --> GET /static/css/chunk-4e487f1e.css 200 65ms 1.42kb
+  --> GET /static/js/chunk-92718afc.js 200 87ms 3.8kb
+  --> GET /static/js/chunk-4e487f1e.js 200 82ms 1.03kb
+  <-- GET /static/css/chunk-445613ca.css
+  <-- GET /static/js/chunk-445613ca.js
+  --> GET /static/css/chunk-445613ca.css 200 6ms 488b
+  --> GET /static/js/chunk-445613ca.js 200 24ms 2.01kb
+  <-- GET /static/css/chunk-bf898d58.css
+  <-- GET /static/js/chunk-bf898d58.js
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 7ms 27b
+  --> GET /static/css/chunk-bf898d58.css 200 18ms 163b
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/js/chunk-5777a83f.js
+  --> GET /static/js/chunk-bf898d58.js 200 32ms 748b
+  --> GET /static/css/chunk-5777a83f.css 200 18ms 2.9kb
+  <-- GET /images/logo.png
+  --> GET /static/js/chunk-5777a83f.js 200 33ms 7.42kb
+  --> GET /images/logo.png 200 66ms 6.26kb
+  <-- GET /static/fonts/fontawesome-webfont.woff2
+  <-- GET /images/showimg1.png
+  --> GET /static/fonts/fontawesome-webfont.woff2 200 28ms 75.35kb
+  --> GET /images/showimg1.png 200 24ms 92.01kb
+  <-- GET /favicon.ico
+  --> GET /favicon.ico 200 19ms 59.28kb
+  <-- GET /static/css/chunk-445613ca.css
+  --> GET /static/css/chunk-445613ca.css 200 14ms 488b
+  <-- GET /static/css/chunk-4e487f1e.css
+  --> GET /static/css/chunk-4e487f1e.css 200 7ms 1.42kb
+  <-- GET /static/css/chunk-5777a83f.css
+  <-- GET /static/css/chunk-92718afc.css
+  <-- GET /static/css/chunk-bf898d58.css
+  <-- GET /static/js/chunk-445613ca.js
+  --> GET /static/js/chunk-445613ca.js 200 7ms 2.01kb
+  --> GET /static/css/chunk-bf898d58.css 200 8ms 163b
+  --> GET /static/css/chunk-5777a83f.css 200 10ms 2.9kb
+  --> GET /static/css/chunk-92718afc.css 200 12ms 3.58kb
+  <-- GET /static/js/chunk-4e487f1e.js
+  <-- GET /static/js/chunk-5777a83f.js
+  <-- GET /static/js/chunk-92718afc.js
+  <-- GET /static/js/chunk-bf898d58.js
+  --> GET /static/js/chunk-5777a83f.js 200 15ms 7.42kb
+  --> GET /static/js/chunk-92718afc.js 200 12ms 3.8kb
+  --> GET /static/js/chunk-bf898d58.js 200 15ms 748b
+  --> GET /static/js/chunk-4e487f1e.js 200 23ms 1.03kb
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 11ms 27b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 4ms 27b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+  <-- POST /community/getHotList
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 235ms 125b
+  --> POST /community/getTopicList 200 26ms 227b
+  --> POST /community/getArticleList 200 117ms 638b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 21ms 68b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 19ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 11ms 27b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+  <-- POST /community/getHotList
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 178ms 125b
+  --> POST /community/getArticleList 200 48ms 638b
+  --> POST /community/getTopicList 200 37ms 227b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 11ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 4ms 27b
+别问，问就验证没通过
+  <-- POST /community/getHotList
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 21ms 125b
+  --> POST /community/getTopicList 200 21ms 227b
+  --> POST /community/getArticleList 200 86ms 638b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 14ms 27b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+别问，问就验证没通过
+  <-- POST /community/getHotList
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 4ms 0b
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getHotList 200 238ms 125b
+  --> POST /community/getArticleList 200 36ms 638b
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 7ms 227b
+  <-- OPTIONS /login
+OPTIONS /login - 0ms
+  --> OPTIONS /login 200 1ms 0b
+  <-- POST /login
+result1 [
+  RowDataPacket {
+    id: 13,
+    user_id: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    portrait: '/user-images/0.1436446423680504.jpg',
+    job: 'WEB前端开发工程师',
+    introduction: 'CSGO',
+    blog_url: ''
+  }
+]
+  --> POST /login 200 28ms 639b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1594972614,
+  exp: 1595145414,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 4ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+ok
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 125b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 19ms 678b
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 5ms 226b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 13ms 68b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1594972614,
+  exp: 1595145414,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 6ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 0ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 125b
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 13ms 678b
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 6ms 226b
+  <-- OPTIONS /logout
+OPTIONS /logout - 0ms
+  --> OPTIONS /logout 200 1ms 0b
+  <-- POST /logout
+  --> POST /logout 200 2ms 15b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+别问，问就验证没通过
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 125b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+  --> POST /community/getArticleList 200 17ms 638b
+  --> POST /community/getTopicList 200 5ms 227b
+  <-- OPTIONS /login
+OPTIONS /login - 0ms
+  --> OPTIONS /login 200 3ms 0b
+  <-- POST /login
+result1 [
+  RowDataPacket {
+    id: 13,
+    user_id: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    portrait: '/user-images/0.1436446423680504.jpg',
+    job: 'WEB前端开发工程师',
+    introduction: 'CSGO',
+    blog_url: ''
+  }
+]
+  --> POST /login 200 11ms 639b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1594972635,
+  exp: 1595145435,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 4ms 226b
+ok
+  <-- POST /community/getHotList
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getHotList 200 4ms 125b
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 16ms 678b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 15ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1594972635,
+  exp: 1595145435,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 12ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+ok
+  <-- POST /community/getHotList
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+ok
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 195ms 125b
+  --> POST /community/getTopicList 200 37ms 226b
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 44ms 678b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+ok
+  <-- POST /community/getArticleList
+body { postIndex: 2, topic: '' }
+searchTopic ==> 
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /community/getArticleList 200 19ms 68b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+ok
+result-------------- {
+  username: '1',
+  nickname: 'YOUJUN',
+  userId: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+  iat: 1594972635,
+  exp: 1595145435,
+  iss: 'YOUJUN'
+}
+  --> POST /verifyToken 200 2ms 26b
+别问，问就验证没通过
+  <-- OPTIONS /personal/getAuthorinfo
+OPTIONS /personal/getAuthorinfo - 0ms
+  --> OPTIONS /personal/getAuthorinfo 200 2ms 0b
+ok
+  <-- POST /personal/getAuthorinfo
+result1 [
+  RowDataPacket {
+    id: 13,
+    user_id: '9271af90-a4a3-11ea-9ee1-d525ae67413d',
+    portrait: '/user-images/0.1436446423680504.jpg',
+    job: 'WEB前端开发工程师',
+    introduction: 'CSGO',
+    blog_url: ''
+  }
+]
+  --> POST /personal/getAuthorinfo 200 13ms 336b
+别问，问就验证没通过
+  <-- OPTIONS /personal/checkUserAuthorBind
+OPTIONS /personal/checkUserAuthorBind - 0ms
+  --> OPTIONS /personal/checkUserAuthorBind 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /personal/getArticleList
+OPTIONS /personal/getArticleList - 0ms
+  --> OPTIONS /personal/getArticleList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /personal/verifyOwner
+OPTIONS /personal/verifyOwner - 0ms
+  --> OPTIONS /personal/verifyOwner 200 1ms 0b
+ok
+  <-- POST /personal/checkUserAuthorBind
+  --> POST /personal/checkUserAuthorBind 200 5ms -
+ok
+  <-- POST /community/getTopicList
+ok
+  <-- POST /personal/getArticleList
+ok
+  <-- POST /personal/verifyOwner
+userId,bodyId 9271af90-a4a3-11ea-9ee1-d525ae67413d 9271af90-a4a3-11ea-9ee1-d525ae67413d
+  --> POST /personal/verifyOwner 200 5ms 36b
+  --> POST /community/getTopicList 200 22ms 226b
+arr === > [
+  '46f81770-a4a3-11ea-9ee1-d525ae67413d',
+  'fe537040-a4ad-11ea-b527-0d69c8fc9fcd'
+]
+  --> POST /personal/getArticleList 200 25ms 257b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 14ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 9ms 27b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+别问，问就验证没通过
+  <-- POST /community/getHotList
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+  --> POST /community/getHotList 200 339ms 125b
+  --> POST /community/getTopicList 200 111ms 227b
+  --> POST /community/getArticleList 200 137ms 638b
+---------------------连接池连接数:------------------- 0
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 11ms 0b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 3ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 4ms 27b
+别问，问就验证没通过
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 17ms 125b
+  --> POST /community/getArticleList 200 69ms 638b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 12ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 7ms 27b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+  <-- POST /community/getHotList
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getHotList 200 103ms 125b
+  --> POST /community/getTopicList 200 24ms 227b
+  --> POST /community/getArticleList 200 34ms 638b
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+---------------------连接池连接数:------------------- 0
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 13ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 7ms 27b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+别问，问就验证没通过
+  <-- POST /community/getHotList
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getHotList 200 41ms 125b
+  --> POST /community/getTopicList 200 98ms 227b
+  --> POST /community/getArticleList 200 43ms 638b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 6ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 3ms 27b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 0ms 0b
+别问，问就验证没通过
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 7ms 125b
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 16ms 638b
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 2ms 227b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 1ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 1ms 27b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 1ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 0ms 0b
+别问，问就验证没通过
+  <-- POST /community/getHotList
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getHotList 200 6ms 125b
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 11ms 227b
+  --> POST /community/getArticleList 200 23ms 638b
+  <-- OPTIONS /verifyToken
+OPTIONS /verifyToken - 0ms
+  --> OPTIONS /verifyToken 200 2ms 0b
+  <-- POST /verifyToken
+别问，问就验证没通过
+result-------------- false
+  --> POST /verifyToken 200 2ms 27b
+别问，问就验证没通过
+  <-- OPTIONS /community/getHotList
+OPTIONS /community/getHotList - 0ms
+  --> OPTIONS /community/getHotList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getArticleList
+OPTIONS /community/getArticleList - 0ms
+  --> OPTIONS /community/getArticleList 200 2ms 0b
+别问，问就验证没通过
+  <-- OPTIONS /community/getTopicList
+OPTIONS /community/getTopicList - 0ms
+  --> OPTIONS /community/getTopicList 200 1ms 0b
+别问，问就验证没通过
+  <-- POST /community/getHotList
+  --> POST /community/getHotList 200 3ms 125b
+别问，问就验证没通过
+  <-- POST /community/getArticleList
+body { postIndex: 1, topic: '' }
+searchTopic ==> 
+  --> POST /community/getArticleList 200 18ms 638b
+别问，问就验证没通过
+  <-- POST /community/getTopicList
+  --> POST /community/getTopicList 200 3ms 227b

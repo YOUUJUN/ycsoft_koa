@@ -43,6 +43,12 @@ export default new Vuex.Store({
 
 
   },
+
+  getters : {
+
+
+  },
+
   mutations: {
     changeLogStatus(state, status){
       vm.$set(state,"logged",status);
@@ -64,6 +70,9 @@ export default new Vuex.Store({
 
     },
 
+  },
+  actions: {
+
     getUserLogStatus (){
       vm.$axios({
         method : "post",
@@ -75,11 +84,6 @@ export default new Vuex.Store({
         console.log(err);
       })
     }
-
-
-  },
-  actions: {
-
 
   },
   modules: {

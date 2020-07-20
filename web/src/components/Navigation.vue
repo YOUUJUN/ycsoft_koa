@@ -149,17 +149,14 @@
 
             goToPersonal(){
                 let vm = this;
-                console.log(vm.userData.url);
                 window.open(vm.userData.url, "_blank");
             },
 
             syncUserInfo (){
                 this.userData = this.$common.getUserInfo();
-                console.log("this.userData",this.userData);
             },
 
             launch(command){
-                console.log(command);
                 let url = "/editor/"+command+"/drafts/new";
                 location.href = url;
             }
@@ -173,11 +170,10 @@
         },
 
         created(){
-            console.log("creating navigation----------!");
             this.syncUserInfo();
         },
         mounted() {
-
+            this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
         }
     }
 </script>

@@ -68,18 +68,6 @@
             },
 
 
-            getUserLogStatus (){
-                this.$axios({
-                    method : "post",
-                    url : "verifyToken"
-                }).then(value =>{
-                    this.$store.commit("changeLogStatus",value.data.logged);
-                }).catch(err => {
-                    console.log(err);
-                })
-            },
-
-
             getDraftsList(){
                 this.$axios({
                     method : "post",
@@ -178,13 +166,13 @@
         },
 
         created () {
-            this.getUserLogStatus();
+            this.$store.dispatch("getUserLogStatus");
             this.getPageProperty();
             this.getDraftsList();
         },
 
         mounted() {
-            this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
+
         }
     };
 </script>

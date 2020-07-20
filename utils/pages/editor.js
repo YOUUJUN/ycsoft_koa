@@ -389,7 +389,8 @@ class Editor{
     * */
     async getTopicId(topicName){
         if(!topicName){
-            return "";
+            console.log("means no                 topicName");
+            return 0;
         }
         console.log("topicName-=====>",topicName);
 
@@ -399,7 +400,7 @@ class Editor{
 
         let results = await query(checktopicsql,checktopicparam);
 
-        if(results[0].nums == "1"){
+        if(results[0].nums === 1){
             console.log("已有话题！");
 
         }else{
@@ -426,7 +427,7 @@ class Editor{
     * */
     async getCategoryId(categoryName){
         if(!categoryName){
-            return "";
+            return 0;
         }
 
         let lowChecker = categoryName.toLowerCase();
@@ -536,7 +537,6 @@ class Editor{
         let username = logged.username;
         let postDate = new Date().toLocaleString();
 
-
         let options = {
             userId : userId,
             postId : postId,
@@ -545,6 +545,14 @@ class Editor{
             postContent : content.content,
             postCategory : content.topic
         }
+
+        if(!options.postCategory){
+            return {
+                message : "发表文章失败!未选择发表文章话题!",
+                status : 0
+            }
+        }
+
 
         let checkSql = "SELECT COUNT(*) AS nums FROM article WHERE post_author = ? AND post_id = ?";
         let checkParams = [userId,postId];
@@ -612,6 +620,13 @@ class Editor{
             PostDate : postDate,
             postContent : content.content,
             postCategory : content.topic
+        }
+
+        if(!options.postCategory){
+            return {
+                message : "发表文档失败!未选择发表文档分类!",
+                status : 0
+            }
         }
 
         let checkSql = "SELECT COUNT(*) AS nums FROM framework_document WHERE post_author = ? AND post_id = ?";

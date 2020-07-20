@@ -14,15 +14,12 @@ let bus = new Vue;
 Vue.prototype.$bus = bus;
 
 Vue.prototype.$common = lib.common;
+Vue.prototype.$config = lib.config;
 
 Vue.config.productionTip = false;
 
 Vue.prototype.$axios = lib.axios;
 
-const DevBaseUrl = 'http://localhost:3000';
-const ProdBashUrl = 'http://106.13.63.236';
-console.log("NODE_ENV--setting",process.env.NODE_ENV);
-Vue.prototype.baseURL = process.env.NODE_ENV !== 'production' ? DevBaseUrl : ProdBashUrl;
 
 new Vue({
   store,

@@ -110,12 +110,12 @@
         },
 
         created () {
-            this.$store.commit("getUserLogStatus");
+            this.$store.dispatch("getUserLogStatus");
+            this.getTopicInfo();
         },
 
         mounted() {
-            this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
-            this.getTopicInfo();
+
         }
     };
 </script>

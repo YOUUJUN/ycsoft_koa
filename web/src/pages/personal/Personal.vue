@@ -58,17 +58,6 @@
         },
 
         methods : {
-            getUserLogStatus (){
-                this.$axios({
-                    method : "post",
-                    url : "verifyToken"
-                }).then(value =>{
-                    console.log("value.data.logged",value.data.logged);
-                    this.$store.commit("changeLogStatus",value.data.logged);
-                }).catch(err => {
-                    console.error(err);
-                })
-            },
 
             getAuthorInfo (){
                 this.$axios({
@@ -142,9 +131,8 @@
             console.log("父组件--beforeCreate");
         },
         created(){
-            this.getUserLogStatus();
+            this.$store.dispatch("getUserLogStatus");
             this.getAuthorInfo();
-            this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
             console.log("父组件--created");
         },
         beforeMount() {

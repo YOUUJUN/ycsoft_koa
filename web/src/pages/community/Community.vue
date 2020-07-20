@@ -79,25 +79,14 @@
                 this.$refs["navigation"].login();
             },
 
-            getUserLogStatus (){
-                this.$axios({
-                    method : "post",
-                    url : "verifyToken"
-                }).then(value =>{
-                    console.log("value ====-====",value);
-                    this.$store.commit("changeLogStatus",value.data.logged);
-                }).catch(err => {
-                    console.log(err);
-                })
-            }
 
         },
 
         created() {
-            this.getUserLogStatus();
+            this.$store.dispatch("getUserLogStatus");
         },
         mounted() {
-            this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
+            // this.$store.commit("upDateNavigationIndex",this.$common.getHrefHead());
         }
     };
 </script>
