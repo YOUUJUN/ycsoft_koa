@@ -87,8 +87,10 @@ module.exports = function(){
         pages : buildPageSync(),
         devServer : {
             port : 8080,
-            hot : true
+            hot : true,
+            open: false //是否自动打开浏览器
         },
+        productionSourceMap : true, //开启后出错的时候，除错工具将直接显示原始代码，而不是转换后的代码。关闭可以减少打包体积
         configureWebpack : {
             plugins : [
                 new webpack.ProvidePlugin({
