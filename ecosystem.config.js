@@ -8,11 +8,11 @@ module.exports = {
             out_file : "./database/.pm2/out.log",
             ignore_watch : ['node_modules','database','web'],
             env : {
-                "NODE_ENV" : "production",
+                "NODE_ENV" : "development",
             },
-            // env_production : {
-            //     "NODE_ENV" : "production"
-            // }
+            env_production : {
+                "NODE_ENV" : "production"
+            }
         }
     ]
 };

@@ -25,11 +25,11 @@
       |  |-db #数据库
       |  |-lib #工具类
       |  |-pages #多页面应用，基于页面的业务处理
-      |-views #后台渲染页面（404页面）
+      |-views #后台渲染页面（404页面）可有可无
       |-vue-pages #Vue打包后的html文件
       |-vue-public #Vue打包后的静态目录
       |-web #Vue前端开发目录
-      |  |-public
+      |  |-public #不参与打包
       |  |-src
       |  |  |-assets
       |  |  |-components #基于应用的组件封装
