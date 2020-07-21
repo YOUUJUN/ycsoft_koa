@@ -201,6 +201,10 @@
             cacheArticle (){
                 this.articleInfo.content = this.$refs["md"].getMarkdown();
 
+                if(this.articleInfo.content.length === 0 || this.$refs["md"].markdownChecker === false){
+                    return;
+                }
+
                 this.$axios({
                     method : "post",
                     url : "/editor/draftsStorage",

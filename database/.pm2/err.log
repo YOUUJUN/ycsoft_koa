@@ -109,3 +109,59 @@ get artical list failed Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'r
   sqlState: '28000',
   fatal: true
 }
+getEditorInfo failed TypeError: Cannot read property 'post_title' of undefined
+    at Editor.getEditorInfo (F:\ycsoft_koa_new\utils\pages\editor.js:506:47)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async getEditorInfo (F:\ycsoft_koa_new\controler\home.js:806:28)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+getEditorInfo failed TypeError: Cannot read property 'post_title' of undefined
+    at Editor.getEditorInfo (F:\ycsoft_koa_new\utils\pages\editor.js:506:47)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async getEditorInfo (F:\ycsoft_koa_new\controler\home.js:806:28)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+getEditorInfo failed TypeError: Cannot read property 'post_title' of undefined
+    at Editor.getEditorInfo (F:\ycsoft_koa_new\utils\pages\editor.js:506:47)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async getEditorInfo (F:\ycsoft_koa_new\controler\home.js:806:28)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+getEditorInfo failed TypeError: Cannot read property 'post_title' of undefined
+    at Editor.getEditorInfo (F:\ycsoft_koa_new\utils\pages\editor.js:506:47)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async getEditorInfo (F:\ycsoft_koa_new\controler\home.js:806:28)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+getEditorInfo failed TypeError: Cannot read property 'post_title' of undefined
+    at Editor.getEditorInfo (F:\ycsoft_koa_new\utils\pages\editor.js:506:47)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async getEditorInfo (F:\ycsoft_koa_new\controler\home.js:806:28)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+getEditorInfo failed TypeError: Cannot read property 'post_title' of undefined
+    at Editor.getEditorInfo (F:\ycsoft_koa_new\utils\pages\editor.js:488:43)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async getEditorInfo (F:\ycsoft_koa_new\controler\home.js:806:28)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3
+getEditorInfo failed TypeError: Cannot read property 'post_title' of undefined
+    at Editor.getEditorInfo (F:\ycsoft_koa_new\utils\pages\editor.js:506:47)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async getEditorInfo (F:\ycsoft_koa_new\controler\home.js:808:28)
+    at async F:\ycsoft_koa_new\app.js:46:3
+    at async logger (F:\ycsoft_koa_new\node_modules\koa-logger\index.js:67:7)
+    at async bodyParser (F:\ycsoft_koa_new\node_modules\koa-bodyparser\index.js:86:5)
+    at async F:\ycsoft_koa_new\app.js:26:3

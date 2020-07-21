@@ -28,7 +28,8 @@
                 editor: null,
                 timer: null,
                 doc: {},
-                jsLoadOver: false
+                jsLoadOver: false,
+                markdownChecker : false //检查markdown内容是否已经渲染
             }
         },
         methods: {
@@ -156,6 +157,7 @@
                         };
 
                         vm.editor = editormd("editorId", config);
+                        vm.markdownChecker = true;
                         this.$refs["editorId"].classList.remove("hide");
 
 

@@ -4,7 +4,11 @@ export default {
     prodBashUrl : 'http://106.13.63.236',
 
     baseUrl (){
-        return process.env.NODE_ENV !== 'production' ? this.devBaseUrl : this.prodBashUrl;
+        if(process.env.NODE_ENV === "development" || process.env.NODE_ENV === "devBuild"){
+            return this.devBaseUrl;
+        }else{
+            return this.prodBashUrl
+        }
     }
 
 

@@ -62,7 +62,7 @@ const buildPageSync = () => {
             page.entry = entry;
             page.template = path.posix.join("src/pages", file,file.concat('.html'));
             console.log("env--------------------------------------",process.env.NODE_ENV);
-            if(process.env.NODE_ENV !== 'production'){
+            if(process.env.NODE_ENV === "development"){
                 page.filename = file.concat('.html');
             }else{
                 page.filename = "../vue-pages/".concat(file,'.html');
@@ -118,9 +118,11 @@ module.exports = function(){
             }
         },
         chainWebpack: config => {
-            config
-                .plugin('webpack-bundle-analyzer')
-                .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
+            if(process.env.NODE_ENV === 'production'){
+                config
+                    .plugin('webpack-bundle-analyzer')
+                    .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
+            }
         }
     }
 };
