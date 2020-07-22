@@ -257,7 +257,7 @@
                     }
                 }).then(value => {
                     if(value.data.status === 1){
-                        this.draftsList.splice(index, 1);
+                        this.articleList.splice(index, 1);
 
                         this.$notify({
                             title: '删除成功!',
