@@ -4,7 +4,7 @@ node_modules
 /vue-public
 /database/.pm2
 /database/cache
-/database/expose
+/database/expose/users/*
 
 # local env files
 
