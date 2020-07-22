@@ -115,7 +115,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content:start;
     }
 
     .topics-container .topic-tags-box{

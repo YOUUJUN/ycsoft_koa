@@ -201,7 +201,7 @@
     }
 
     .navigation-container{
-        z-index: 999;
+        z-index: 997;
         background: #2188b6;
     }
 
