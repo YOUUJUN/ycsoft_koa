@@ -1,7 +1,6 @@
-# Vue-Koa-Multiple-development 
-#Example  ---- A community site
-##项目目录：
-
+# Vue-Koa-Multiple-development
+# Example  ---- A community site
+## 项目目录：
     .
     |-ycsoft_koa_new
       |-bin
@@ -42,9 +41,13 @@
       |  |  |-router
       |  |  |-store
       |  |  |-utils
+	  |  |  |  |-config.js #前台配置文件（ajax地址）
+	  |  |  |  |-http.js #axios
+	  |  |  |  |-lib.js # 前台js库
       |  |-babel.config.js
       |  |-package-lock.json
       |  |-package.json
+	  |  |-.env.devbuild #前台环境变量配置文件
       |  |-vue.config.js #Vue 打包配置文件
       |-.gitattributes #修改项目内容展示
       |-.gitignore
@@ -54,9 +57,37 @@
       |-package-lock.json
       |-package.json
       |-README.md
-      
-      
-      
-##项目内容：
 
-##项目地址[>>项目链接戳我<<](http://106.13.63.236/community ">>项目链接戳我<<")
+
+## 项目指令：
+项目初始化：
+`cd ./`
+
+`npm install`
+
+`cd web`
+
+`npm install`
+
+开启本地webpack dev server,运行端口8080
+`npm run serve`
+
+本地模拟生产环境打包：
+`npm run dev-build`
+
+生产环境打包：
+`npm run build`
+
+`cd ..`
+
+开启本地测试接口koa服务,运行端口3000
+`npm run dev`
+
+开启服务器生产服务器
+`npm run prd`
+
+## 项目内容：
+
+## 项目地址[>>项目链接戳我<<](http://106.13.63.236/community ">>项目链接戳我<<")
+
+
