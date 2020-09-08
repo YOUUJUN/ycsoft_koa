@@ -19,8 +19,17 @@ export default new Vuex.Store({
         href : "/",
       },
       {
-        name : "产品与服务",
+        name : "产品与解决方案",
         href : "/products",
+      },
+      {
+        name : "案例",
+        href : "/customers",
+      },
+      {
+        name : "云开发平台",
+        href : "http://erp.bfcgj.com/login.html",
+        target : "_blank"
       },
       {
         name : "开发文档",
@@ -29,11 +38,6 @@ export default new Vuex.Store({
       {
         name : "联系我们",
         href : "/contact",
-      },
-      {
-        name : "开发平台",
-        href : "http://erp.bfcgj.com/login.html",
-        target : "_blank"
       },
       {
         name : "社区",

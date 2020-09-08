@@ -1,15 +1,22 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import index from './../pages/index/index.vue';
+import productIndex from '../pages/product/private/Index.vue';
+import productDetails from '../pages/product/private/Details.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
-  // {
-  //   path: '/',
-  //   name: 'index',
-  //   component: index
-  // }
+  {
+    path: '/products',
+    name: 'productIndex',
+    component: productIndex
+  },
+
+  {
+    path: '/products/details',
+    name: 'productDetails',
+    component: productDetails
+  }
 
 ];
 

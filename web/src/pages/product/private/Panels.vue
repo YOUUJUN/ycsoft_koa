@@ -27,8 +27,8 @@
 
                     <div class="scaffold-item-action">
 
-                        <a class="scaffold-item-button"><i class="fa fa-eye"></i>效果预览</a>
-                        <a class="scaffold-item-button"><i class="fa fa-edit"></i>编辑使用</a>
+                        <a class="scaffold-item-button"><i class="fa fa-eye"></i>详情介绍</a>
+                        <a class="scaffold-item-button"><i class="fa fa-edit"></i>项目地址</a>
 
                     </div>
 
@@ -58,8 +58,8 @@
 
                     <div class="scaffold-item-action">
 
-                        <a class="scaffold-item-button"><i class="fa fa-eye"></i>效果预览</a>
-                        <a class="scaffold-item-button"><i class="fa fa-edit"></i>编辑使用</a>
+                        <a class="scaffold-item-button"><i class="fa fa-eye"></i>详情介绍</a>
+                        <a class="scaffold-item-button"><i class="fa fa-edit"></i>项目地址</a>
 
                     </div>
 
@@ -89,8 +89,8 @@
 
                     <div class="scaffold-item-action">
 
-                        <a class="scaffold-item-button"><i class="fa fa-eye"></i>效果预览</a>
-                        <a class="scaffold-item-button"><i class="fa fa-edit"></i>编辑使用</a>
+                        <a class="scaffold-item-button"><i class="fa fa-eye"></i>详情介绍</a>
+                        <a class="scaffold-item-button"><i class="fa fa-edit"></i>项目地址</a>
 
                     </div>
 
@@ -120,8 +120,8 @@
 
                     <div class="scaffold-item-action">
 
-                        <a class="scaffold-item-button"><i class="fa fa-eye"></i>效果预览</a>
-                        <a class="scaffold-item-button"><i class="fa fa-edit"></i>编辑使用</a>
+                        <a class="scaffold-item-button"><i class="fa fa-eye"></i>详情介绍</a>
+                        <a class="scaffold-item-button"><i class="fa fa-edit"></i>项目地址</a>
 
                     </div>
 
@@ -151,8 +151,8 @@
 
                     <div class="scaffold-item-action">
 
-                        <a class="scaffold-item-button"><i class="fa fa-eye"></i>效果预览</a>
-                        <a class="scaffold-item-button"><i class="fa fa-edit"></i>编辑使用</a>
+                        <a class="scaffold-item-button"><i class="fa fa-eye"></i>详情介绍</a>
+                        <a class="scaffold-item-button"><i class="fa fa-edit"></i>项目地址</a>
 
                     </div>
 

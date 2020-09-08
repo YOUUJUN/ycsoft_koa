@@ -77,6 +77,10 @@ h6,
     font-size: 12px;
 }
 
+figure{
+    margin:0;
+}
+
 /*--------------框架结构---------------*/
 
 .container{

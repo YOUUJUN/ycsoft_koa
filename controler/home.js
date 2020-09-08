@@ -15,11 +15,85 @@ const page_editor = require("../utils/pages/editor");
 const common = require("../utils/lib/common");
 
 module.exports = {
+
+    videos : async(ctx, next) =>{
+        // ctx.status = 500;
+        ctx.body = await common.readPages('video.html');
+
+        await next();
+    },
+
+    pullVideoStream : async(ctx, next) => {
+        let filename =  Path.join(__dirname,"../database/expose/frag_bunny.mp4");
+
+        console.log("header ====>2",ctx.request.header);
+
+        let stats = fs.statSync(filename);
+        console.log("stats ==============> ",stats);
+        let total = stats.size;
+
+        let start = 0;
+        var end = 0;
+        var range = ctx.request.header.range;
+        console.log("ctx.request.header",ctx.request.header,range)
+        if(range && range != 0){
+            var positions = range.replace(/bytes=/, "").split("-");
+            console.log("positions===>",positions);
+            end = positions[1] ? parseInt(positions[1], 10) : total - 1;
+        };
+        console.log('end',end);
+
+        // var range = ctx.request.header.range;
+        // // var range = "bytes=500-";
+        // console.log("range ===>",range);
+        // if (!range) {
+        //     // 416 Wrong range
+        //     return ctx.status = 416;
+        // }
+        // var positions = range.replace(/bytes=/, "").split("-");
+        // var start = parseInt(positions[0], 10);
+        // var total = stats.size;
+        // var end = positions[1] ? parseInt(positions[1], 10) : total - 1;
+        // var chunksize = (end - start) + 1;
+
+        ctx.status = 206;
+        ctx.set({
+            // "Content-Range": "bytes " + start + "-" + end + "/" + total,
+            "Content-Range": "bytes " + start + "-" + end + "/" + total,
+            "Accept-Ranges": "bytes",
+            // "Content-Length": chunksize,
+            // "Content-Type": "video/mp4"
+            'Content-Type': 'video/mp4'
+        });
+
+        // console.log("total",total);
+        //
+        // console.log("start===>",start,"end====>",end);
+
+        var rs = fs.createReadStream(filename, { start: start, end: end });
+        // var rs = fs.createReadStream(filename);
+
+        ctx.body = rs
+
+        // ctx.body = stream;
+
+        // stream.on("open", function() {
+        //         stream.pipe(ctx.body);
+        //     }).on("error", function(err) {
+        //         console.log("err ===>",err);
+        //     });
+
+        next();
+    },
+
+
     index : async (ctx,next) =>{
 
         let requestBody = ctx.request.ip;
         let responseBody = ctx.response;
         let nodeRequestBody = ctx.req;
+
+        // ctx.status = 500;
 
         ctx.body = await common.readPages('index.html');
 
@@ -43,6 +117,7 @@ module.exports = {
     },
 
     community : async (ctx,next) =>{
+        // ctx.status = 200;
         ctx.body = await common.readPages('community.html');
         await next();
     },

@@ -12,7 +12,6 @@ const session = require('koa-session');
 const jwt = require("jsonwebtoken");
 const TOKENSECRET = require("./utils/config/tokensecret");
 
-
 /*---登录状态检测中间件---*/
 app.use( async (ctx, next) =>{
   if(ctx.url.match(/^\/community/) || ctx.url.match(/^\/personal/) || ctx.url.match(/^\/users/) || ctx.url.match(/^\/editor/) || ctx.url.match(/^\/offline/)){
@@ -40,8 +39,8 @@ app.use(logger());
 app.use( async (ctx, next) =>{
   ctx.set("Access-Control-Allow-Origin","http://localhost:8080");
 
-  ctx.set("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, accesstoken");
-
+  ctx.set("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, accesstoken, range");
+  ctx.set("Access-Control-Expose-Headers" , "Content-Range");
   ctx.set("Access-Control-Allow-Credentials", true);
   await next();
 });

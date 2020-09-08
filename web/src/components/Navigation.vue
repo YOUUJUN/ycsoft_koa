@@ -363,9 +363,9 @@
     /*-----------导航栏用户按钮---------*/
 
     .user-logger{
-        position:absolute;
-        right: 0;
-        top: 16px;
+        position: absolute;
+        right: -45px;
+        top: 12px;
     }
 
     .user-logger .user-box{

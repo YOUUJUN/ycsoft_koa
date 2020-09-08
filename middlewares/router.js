@@ -15,7 +15,10 @@ const uploader = busboy({
 module.exports = (app) => {
 
     router.get('/',homeController.index);
+    /*--产品与服务--*/
     router.get('/products',homeController.products);
+    router.get('/products/details/:name',homeController.products);
+
     router.get('/guide',homeController.guide);
     router.get('/contact',homeController.contact);
     router.get('/community',homeController.community);
@@ -78,6 +81,9 @@ module.exports = (app) => {
     router.post('/editor/delDoc',homeController.delDoc);
     router.post('/editor/modifyArticle',homeController.modifyArticle);
     router.post('/editor/uploadimg',uploader,homeController.editorUploadimg);
+
+    router.get('/videos',homeController.videos);
+    router.get('/pullVideoStream',homeController.pullVideoStream);
 
 
     router.post('/verifyToken',homeController.verifyToken);

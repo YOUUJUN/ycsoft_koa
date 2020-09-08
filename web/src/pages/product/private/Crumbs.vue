@@ -5,8 +5,9 @@
         <div class="container">
             <div class="area cols-md-12 cols-sm-12">
                 <ul class="navigation inline-center">
-
-                    <li><button v-on:click="selector('total')" data-domain="entire" class="active">全部<span class="scaffold-count">{{getTotal()}}</span></button></li>
+                    <li>
+                        <button v-on:click="selector('total')" data-domain="entire" class="active">全部<span class="scaffold-count">{{getTotal()}}</span></button>
+                    </li>
                     <li v-for="item in list"><button v-on:click="selector(item.type)">{{item.type}}<span class="scaffold-count">{{item.num}}</span></button></li>
 
                 </ul>
@@ -14,10 +15,11 @@
         </div>
 
     </div>
-    
+
 </template>
 
 <script>
+
     export default {
         name: "Crumbs",
         props : ["list"],
