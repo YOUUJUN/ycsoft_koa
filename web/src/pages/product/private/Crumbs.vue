@@ -23,6 +23,11 @@
     export default {
         name: "Crumbs",
         props : ["list"],
+        data (){
+             return {
+                 selfList : this.list
+             }
+        },
         methods : {
             getTotal (){
                 let total = 0;
@@ -31,16 +36,20 @@
                 }
                 return total;
             },
-            selector (target){
-                if(target === "total"){
-
-                }
+            selector (type){
+                let vm = this;
                 let shell = event.target.parentNode.parentNode;
                 for(let item of shell.children){
                     item.querySelector("button").classList.remove("active");
                 }
-                event.target.classList.add("active")
+                event.target.classList.add("active");
+
+                vm.$bus.$emit("changeType",type);
             }
+        },
+
+        computed : {
+
         }
     }
 </script>

@@ -23,8 +23,8 @@ export default new Vuex.Store({
         href : "/products",
       },
       {
-        name : "案例",
-        href : "/customers",
+        name : "合作案例",
+        href : "/cases",
       },
       {
         name : "云开发平台",
@@ -43,6 +43,106 @@ export default new Vuex.Store({
         name : "社区",
         href : "/community"
       }
+    ],
+
+
+    productsList : [
+      {
+        type : "企业ERP管理系统",
+        name : "农机报废管理系统",
+        document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
+        Introduction : "",
+        images : ["/images/template/njbf/login.png","/images/template/njbf/content.png"],
+        media : "",
+        addressUrl : "/"
+      },
+      {
+        type : "企业ERP管理系统",
+        name : "报废车管家ERP管理系统",
+        document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
+        images : ["/images/template/bfcgj/index.png","/images/template/bfcgj/content.png","/images/template/bfcgj/login.png"],
+        addressUrl : "/"
+      },
+      {
+        type : "企业ERP管理系统",
+        name : "报废车管家-回收流程介绍",
+        document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
+        images : ["/images/template/platform-demo1.png","/images/template/platform-demo1.png","/images/template/platform-demo1.png"],
+        detailUrl : "/products/details",
+        addressUrl : "/"
+      },
+      {
+        type : "企业ERP管理系统",
+        name : "报废车管家-财务系统介绍",
+        document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
+        images : ["/images/template/platform-demo1.png","/images/template/platform-demo1.png","/images/template/platform-demo1.png"],
+        detailUrl : "/products/details",
+        addressUrl : "/"
+      },
+      {
+        type : "组件可视化云开发平台",
+        name : "商家管理系统",
+        document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
+        images : ["/images/template/platform-demo1.png","/images/template/platform-demo1.png","/images/template/platform-demo1.png"],
+        detailUrl : "",
+        addressUrl : "/"
+      },
+      {
+        type : "玉成软件ORM系统",
+        name : "商家管理系统",
+        document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
+        images : ["/images/template/platform-demo2.png","/images/template/platform-demo2.png"],
+        detailUrl : "",
+        addressUrl : "/"
+      },
+      {
+        type : "玉成软件ORM系统",
+        name : "商家管理系统",
+        document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
+        images : ["/images/template/platform-demo2.png"],
+        detailUrl : "",
+        addressUrl : "/"
+      },
+      {
+        type : "数据可视化",
+        name : "商家管理系统",
+        document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
+        images : ["/images/template/platform-demo1.png"],
+        detailUrl : "",
+        addressUrl : "/"
+      },
+      {
+        type : "数据可视化",
+        name : "商家管理系统",
+        document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
+        images : ["/images/template/platform-demo1.png","/images/template/platform-demo1.png"],
+        detailUrl : "",
+        addressUrl : "/"
+      },
+      {
+        type : "企业ERP解决方案",
+        name : "商家管理系统",
+        document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
+        images : ["/images/template/platform-demo1.png","/images/template/platform-demo1.png"],
+        detailUrl : "",
+        addressUrl : "/"
+      },
+      {
+        type : "企业ERP解决方案",
+        name : "商家管理系统",
+        document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
+        images : ["/images/template/platform-demo1.png","/images/template/platform-demo1.png"],
+        detailUrl : "",
+        addressUrl : "/"
+      },
+      {
+        type : "企业ERP解决方案",
+        name : "商家管理系统",
+        document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
+        images : ["/images/template/platform-demo1.png","/images/template/platform-demo1.png"],
+        detailUrl : "",
+        addressUrl : "/"
+      }
     ]
 
 
@@ -50,7 +150,14 @@ export default new Vuex.Store({
 
   getters : {
 
+    getProductByName : (state) => (name) =>{
+      let obj = state.productsList.filter((currentValue, index, arr)=>{
+        return  currentValue["name"] === name
+      })
 
+      return obj;
+
+    }
   },
 
   mutations: {
@@ -73,6 +180,8 @@ export default new Vuex.Store({
       state.navigationList = naviArr;
 
     },
+
+
 
   },
   actions: {

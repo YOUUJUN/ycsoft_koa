@@ -2,21 +2,35 @@
 
     <section class="details clearfix">
 
+
+
+        <div class="container crumbs-container">
+            <div  class="area cols-12">
+
+                <el-breadcrumb separator-class="el-icon-arrow-right">
+                    <el-breadcrumb-item :to="{ path: '/products' }"><i class="fa fa-reply" style="margin-right:4px;"></i>产品&&方案</el-breadcrumb-item>
+                    <el-breadcrumb-item>{{randerData.name}}</el-breadcrumb-item>
+                </el-breadcrumb>
+
+            </div>
+        </div>
+
         <article class="container head-container">
 
             <h1></h1>
 
             <figure class="area cols-6">
 
-                <img class="showImg" src="/images/product/bfcgj.png">
+<!--                <img class="showImg" src="/images/product/bfcgj.png">-->
+                    <stream-video></stream-video>
 
             </figure>
 
             <aside class="area cols-6 introduce">
 
-                <h2>报废车管家</h2>
+                <h2>{{randerData.name}}</h2>
 
-                <p>这是一些介绍这是一些介绍这是一些介绍这是一些介绍这是一些介绍这是一些介绍这是一些介绍</p>
+                <p>{{randerData.document}}</p>
             </aside>
 
         </article>
@@ -43,8 +57,28 @@
 </template>
 
 <script>
+    const streamVideo = () => import("../../../components/StreamVideo.vue");
+
     export default {
-        name: "Details"
+        name: "Details",
+        components : {streamVideo},
+        data (){
+            return {
+                productsList : this.$store.state.productsList,
+                randerData : {}
+            }
+        },
+
+        methods : {
+
+        },
+
+        created() {
+            var name = this.$route.params.name;
+            let item = this.$store.getters.getProductByName(name);
+            this.randerData = item[0];
+            console.log("randerData ====>",this.randerData);
+        }
     }
 </script>
 
@@ -75,9 +109,15 @@
         padding-left: 40px;
     }
 
+    .crumbs-container{
+        margin: 20px auto;
+        margin-top: 30px;
+    }
+
     .head-container{
         z-index: 2;
         margin:70px auto;
+        margin-top:50px;
     }
 
     .details-container{

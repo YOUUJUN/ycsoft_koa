@@ -2,162 +2,42 @@
 
 
     <div class="panel">
-
         <div class="container">
-            <div class="area cols-md-6">
+
+
+            <div class="area cols-md-6" v-for="item of dynamicList">
                 <div data-category="backstage" class="scaffold-item-link">
 
                     <div class="scaffold-item">
 
-                        <img class="scaffold-thumbnail float-middle" src="/images/template/platform-demo2.png">
+                        <template v-for="(img, index) of item.images">
+                            <img class="scaffold-thumbnail" v-bind:src="img" v-bind:class="generateImgClass(index, item.images.length)">
+                        </template>
 
                     </div>
 
                     <div class="scaffold-info">
 
                         <div class="scaffold-info-title">
-                            商家管理系统
+                            {{item.name}}
                         </div>
 
                         <div class="scaffold-info-desc">
-                            该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作
+                            报废车管家ERP系统是用于报废汽车公司来管理报废流程的后台管理系统，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作
                         </div>
 
                     </div>
 
                     <div class="scaffold-item-action">
 
-                        <a class="scaffold-item-button"><i class="fa fa-eye"></i>详情介绍</a>
-                        <a class="scaffold-item-button"><i class="fa fa-edit"></i>项目地址</a>
+                        <router-link :to="generateUrl(item)" v-bind:class="linkButton"><i class="fa fa fa-eye"></i>详情介绍</router-link>
+                        <router-link :to="generateUrl(item)" v-bind:class="linkButton"><i class="fa fa fa-eye"></i>项目地址</router-link>
 
                     </div>
 
                 </div>
             </div>
 
-            <div class="area cols-md-6">
-                <div data-category="backstage" class="scaffold-item-link">
-
-                    <div class="scaffold-item">
-
-                        <img class="scaffold-thumbnail float-middle" src="/images/template/platform-demo2.png">
-
-                    </div>
-
-                    <div class="scaffold-info">
-
-                        <div class="scaffold-info-title">
-                            商家管理系统
-                        </div>
-
-                        <div class="scaffold-info-desc">
-                            该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作
-                        </div>
-
-                    </div>
-
-                    <div class="scaffold-item-action">
-
-                        <a class="scaffold-item-button"><i class="fa fa-eye"></i>详情介绍</a>
-                        <a class="scaffold-item-button"><i class="fa fa-edit"></i>项目地址</a>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="area cols-md-6">
-                <div data-category="backstage" class="scaffold-item-link">
-
-                    <div class="scaffold-item">
-
-                        <img class="scaffold-thumbnail float-middle" src="/images/template/platform-demo2.png">
-
-                    </div>
-
-                    <div class="scaffold-info">
-
-                        <div class="scaffold-info-title">
-                            商家管理系统
-                        </div>
-
-                        <div class="scaffold-info-desc">
-                            该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作
-                        </div>
-
-                    </div>
-
-                    <div class="scaffold-item-action">
-
-                        <a class="scaffold-item-button"><i class="fa fa-eye"></i>详情介绍</a>
-                        <a class="scaffold-item-button"><i class="fa fa-edit"></i>项目地址</a>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="area cols-md-6">
-                <div data-category="backstage" class="scaffold-item-link">
-
-                    <div class="scaffold-item">
-
-                        <img class="scaffold-thumbnail float-middle" src="/images/template/platform-demo2.png">
-
-                    </div>
-
-                    <div class="scaffold-info">
-
-                        <div class="scaffold-info-title">
-                            商家管理系统
-                        </div>
-
-                        <div class="scaffold-info-desc">
-                            该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作
-                        </div>
-
-                    </div>
-
-                    <div class="scaffold-item-action">
-
-                        <a class="scaffold-item-button"><i class="fa fa-eye"></i>详情介绍</a>
-                        <a class="scaffold-item-button"><i class="fa fa-edit"></i>项目地址</a>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="area cols-md-6">
-                <div data-category="backstage" class="scaffold-item-link">
-
-                    <div class="scaffold-item">
-
-                        <img class="scaffold-thumbnail float-middle" src="/images/template/platform-demo2.png">
-
-                    </div>
-
-                    <div class="scaffold-info">
-
-                        <div class="scaffold-info-title">
-                            商家管理系统
-                        </div>
-
-                        <div class="scaffold-info-desc">
-                            该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作
-                        </div>
-
-                    </div>
-
-                    <div class="scaffold-item-action">
-
-                        <a class="scaffold-item-button"><i class="fa fa-eye"></i>详情介绍</a>
-                        <a class="scaffold-item-button"><i class="fa fa-edit"></i>项目地址</a>
-
-                    </div>
-
-                </div>
-            </div>
 
         </div>
 
@@ -167,7 +47,68 @@
 
 <script>
     export default {
-        name: "Panels"
+        name: "Panels",
+        props : ["productsList"],
+        data (){
+            return {
+                staticList : this.productsList,
+                dynamicList : this.productsList,
+                linkButton : "scaffold-item-button"
+
+            }
+        },
+        methods : {
+            generateImgClass :function (index, length) {
+                let value = "float-middle";
+                switch (length) {
+                    case 1:
+                        value = "float-middle";
+                        break;
+
+                    case 2:
+                        if(index == 0){
+                            value = "float-up";
+                        }else if(index == 1){
+                            value = "float-bottom";
+                        }
+                        break;
+
+                    case 3:
+                        if(index == 0){
+                            value = "float-left";
+                        }else if(index == 1){
+                            value = "float-middle";
+                        }else if(index == 2){
+                            value = "float-right";
+                        }
+                        break;
+                }
+
+                return value;
+            },
+
+            generateUrl (item){
+                return "/products/details/".concat(item.name);
+            },
+
+            changePanel(type){
+                if(type === "total"){
+                    this.dynamicList = this.staticList;
+                    return;
+                }
+                var newArr = this.staticList.filter(function (currentValue, index, arr) {
+                    return currentValue.type === type;
+                })
+                this.dynamicList = newArr;
+            }
+        },
+
+        mounted() {
+            let vm = this;
+            vm.$bus.$on("changeType",(type) => {
+                vm.changePanel(type);
+            })
+        }
     }
 </script>
 
@@ -207,7 +148,8 @@
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
-        align-items: center;
+        /*align-items: center;*/
+        align-items: end;
         justify-content: center;
         height:280px;
     }
@@ -268,8 +210,8 @@
     }
 
     .scaffold-info-title{
-        margin-top: 14px;
-        font-size: 14px;
+        margin-top: 4px;
+        font-size: 16px;
         font-weight: 700;
         color: #333;
     }
