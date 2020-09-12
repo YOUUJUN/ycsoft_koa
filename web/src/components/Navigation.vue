@@ -13,7 +13,16 @@
                 <div id="main-menu" ref="navigation" class="hidden-xs">
                     <ul class="menu">
 
-                        <li v-for="item in list" v-on:mouseenter="startAnimation()" v-on:mouseleave="endAnimation()"><a v-bind:class="item.active" v-bind:target="item.target" v-bind:href="item.href">{{item.name}}</a><span class="ribbon"></span></li>
+
+
+                        <template v-for="item in list">
+
+                            <li v-on:mouseenter="startAnimation()" v-on:mouseleave="endAnimation()">
+
+                                <a v-bind:class="item.active" v-bind:target="item.target" v-bind:href="item.href">{{item.name}}</a><span class="ribbon"></span>
+                            </li>
+                        </template>
+
 
                     </ul>
                 </div>

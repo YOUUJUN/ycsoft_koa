@@ -53,7 +53,11 @@ export default new Vuex.Store({
         document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
         Introduction : "",
         images : ["/images/template/njbf/login.png","/images/template/njbf/content.png"],
-        media : "",
+        media : {
+          type : "video",
+          poster : "/images/template/njbf/login.png",
+          url : "/videos/njbfys.webm"
+        },
         addressUrl : "/"
       },
       {
@@ -61,6 +65,10 @@ export default new Vuex.Store({
         name : "报废车管家ERP管理系统",
         document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
         images : ["/images/template/bfcgj/index.png","/images/template/bfcgj/content.png","/images/template/bfcgj/login.png"],
+        media : {
+          type : "image",
+          url : "/images/template/bfcgj/index.png"
+        },
         addressUrl : "/"
       },
       {
@@ -143,8 +151,50 @@ export default new Vuex.Store({
         detailUrl : "",
         addressUrl : "/"
       }
-    ]
+    ],
 
+    casesList : [
+      {
+        name : "北京汽车解体厂",
+        url : "http://www.jtc.cn/",
+        image : "/images/case/bg.jpg"
+      },
+      {
+        name : "北京汽车解体厂",
+        url : "http://www.jtc.cn/",
+        image : "/images/case/bg.jpg"
+      },
+      {
+        name : "北京汽车解体厂",
+        url : "http://www.jtc.cn/",
+        image : "/images/case/bg.jpg"
+      },
+      {
+        name : "北京汽车解体厂",
+        url : "http://www.jtc.cn/",
+        image : "/images/case/bg.jpg"
+      },
+      {
+        name : "北京汽车解体厂",
+        url : "http://www.jtc.cn/",
+        image : "/images/case/bg.jpg"
+      },
+      {
+        name : "北京汽车解体厂",
+        url : "http://www.jtc.cn/",
+        image : "/images/case/bg.jpg"
+      },
+      {
+        name : "北京汽车解体厂",
+        url : "http://www.jtc.cn/",
+        image : "/images/case/bg.jpg"
+      },
+      {
+        name : "北京汽车解体厂",
+        url : "http://www.jtc.cn/",
+        image : "/images/case/bg.jpg"
+      }
+    ]
 
   },
 

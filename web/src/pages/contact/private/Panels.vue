@@ -5,7 +5,7 @@
         <div class="container panel-content">
             <div class="area cols-md-12 cols-sm-12">
 
-                <div id="map-point"></div>
+                <div id="map-point" class="wow zoomIn"></div>
 
                 <div class="ribbon">
                     <img class="ribbon-logo" src="images/contact.png">
@@ -18,7 +18,7 @@
         </div>
 
     </div>
-    
+
 </template>
 
 <script>
@@ -27,6 +27,11 @@
         name: "Panels",
         mounted() {
             this.drawLine();
+
+            if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+                console.log("new WOW()",new WOW());
+                new WOW().init();
+            }
         },
         methods : {
             drawLine (){

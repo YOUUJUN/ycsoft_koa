@@ -114,7 +114,8 @@ module.exports = function(){
                 'axios': 'axios',
                 'element-ui': 'ELEMENT',
                 'jquery' : 'window.jQuery',
-                'echarts' : 'echarts'
+                'echarts' : 'echarts',
+                "wow" : 'WOW'
             }
         },
         chainWebpack: config => {

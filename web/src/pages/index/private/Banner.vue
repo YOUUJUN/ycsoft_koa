@@ -8,9 +8,9 @@
                 <h1 class="banner-title">提供企业在线管理软件（SAAS）服务，快速、简单、可靠的可视化网站构建工具。</h1>
                 <h1 class="banner-title"></h1>
                 <div>
-                    <a class="banner-btn">开始使用</a>
-                    <a class="banner-btn">查看文档</a>
-                    <a class="banner-btn">加入我们</a>
+                    <a class="banner-btn" href="http://dev.bfcgj.com/login.html" target="_blank">开始使用</a>
+                    <a class="banner-btn" href="/guide">查看文档</a>
+                    <a class="banner-btn" href="/contact">加入我们</a>
                 </div>
 
             </div>

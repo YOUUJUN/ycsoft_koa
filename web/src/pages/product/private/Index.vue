@@ -1,6 +1,6 @@
 <template>
 
-    <section>
+    <section class="index">
 
         <banner></banner>
 

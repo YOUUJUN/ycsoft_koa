@@ -24,7 +24,7 @@ module.exports = {
     },
 
     pullVideoStream : async(ctx, next) => {
-        let filename =  Path.join(__dirname,"../database/expose/frag_bunny.mp4");
+        let filename =  Path.join(__dirname,"../database/expose/coder.webm");
 
         console.log("header ====>2",ctx.request.header);
 
@@ -102,6 +102,11 @@ module.exports = {
 
     products : async (ctx,next) =>{
         ctx.body = await common.readPages('product.html');
+        await next();
+    },
+
+    cases : async (ctx,next) =>{
+        ctx.body = await common.readPages('case.html');
         await next();
     },
 

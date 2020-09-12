@@ -1,13 +1,14 @@
 <template>
     <div id="stream-video">
 
-        <video id="my-video" controls width="100%" poster="/images/template/njbf/login.png" ref="video"></video>
+        <video id="my-video" controls width="100%" v-bind:poster="poster" ref="video"></video>
 
     </div>
 </template>
 <script>
     export default {
         name : "StreamVideo",
+        props : ["poster","src"],
         data() {
 
             return {
@@ -23,7 +24,8 @@
                 // var assetURL = 'frag_bunny.mp4';
                 var video = this.$refs["video"];
                 var assetURL = 'http://localhost:3000/pullVideoStream';
-                var mimeCodec = 'audio/mp4; codecs="mp4a.40.5"';
+                // var mimeCodec = 'audio/mp4; codecs="mp4a.40.5"';
+                var mimeCodec = 'video/webm; codecs="vp8.0, vorbis"';
 
                 if ('MediaSource' in window && MediaSource.isTypeSupported(mimeCodec)) {
                     var mediaSource = new MediaSource();

@@ -19,6 +19,8 @@ module.exports = (app) => {
     router.get('/products',homeController.products);
     router.get('/products/details/:name',homeController.products);
 
+    router.get('/cases',homeController.cases);
+
     router.get('/guide',homeController.guide);
     router.get('/contact',homeController.contact);
     router.get('/community',homeController.community);

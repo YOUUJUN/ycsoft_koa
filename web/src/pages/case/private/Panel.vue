@@ -6,70 +6,21 @@
 
             <div class="area cols-md-12 cols-sm-12">
 
-
-                <div class="card-container">
-
-                    <div class="card btn-3">
-                        <div class="card-shell">
-                            <img src="/images/case/bg.jpg" class="card-img">
-                            <div class="overlay">
-                                <h3 class="card-title">北京汽车解体厂</h3>
-    <!--                            <button class="custom-btn btn-3"><span>查看</span></button>-->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="/images/case/bg.jpg" class="card-img">
-                        <div class="overlay">
-                            <h3 class="card-title">北京汽车解体厂</h3>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="/images/case/bg.jpg" class="card-img">
-                        <div class="overlay">
-                            <h3 class="card-title">北京汽车解体厂</h3>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="/images/case/bg.jpg" class="card-img">
-                        <div class="overlay">
-                            <h3 class="card-title">北京汽车解体厂</h3>
-                        </div>
-                    </div>
-
+                <div class="body-title-split">
+                    <div class="body-title-split1 body-title-name">经典案例</div>
+                    <div class="body-title-split2 body-title-small">CLASSIC CASE</div>
                 </div>
 
                 <div class="card-container">
 
-                    <div class="card">
-                        <img src="/images/case/bg.jpg" class="card-img">
-                        <div class="overlay">
-                            <h3 class="card-title">北京汽车解体厂</h3>
-                        </div>
-                    </div>
+                    <div class="card wow pulse" v-for="item of casesList">
 
-                    <div class="card">
-                        <img src="/images/case/bg.jpg" class="card-img">
-                        <div class="overlay">
-                            <h3 class="card-title">北京汽车解体厂</h3>
-                        </div>
-                    </div>
+                            <img v-bind:src="item.image" class="card-img">
+                            <div class="overlay">
+                                <h3 class="card-title">{{item.name}}</h3>
+                                <button class="custom-btn btn-3" @click="jumpTo(item.url)"><span>查看</span></button>
+                            </div>
 
-                    <div class="card">
-                        <img src="/images/case/bg.jpg" class="card-img">
-                        <div class="overlay">
-                            <h3 class="card-title">北京汽车解体厂</h3>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="/images/case/bg.jpg" class="card-img">
-                        <div class="overlay">
-                            <h3 class="card-title">北京汽车解体厂</h3>
-                        </div>
                     </div>
 
                 </div>
@@ -88,42 +39,58 @@
 
     export default {
         name: "Panel",
-        components : {}
+        components : {},
+        data (){
+            return {
+                casesList : this.$store.state.casesList
+            }
+        },
+        methods : {
+            jumpTo (address){
+                window.open(address, "__blank");
+            }
+        },
+        mounted() {
+            if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+                console.log("new WOW()",new WOW());
+                new WOW().init();
+            }
+        }
     }
 </script>
 
 <style scoped>
-    /*.custom-btn {*/
-    /*    width: 130px;*/
-    /*    height: 40px;*/
-    /*    color: #fff;*/
-    /*    border-radius: 5px;*/
-    /*    padding: 10px 25px;*/
-    /*    font-family: 'Lato', sans-serif;*/
-    /*    font-weight: 500;*/
-    /*    background: transparent;*/
-    /*    cursor: pointer;*/
-    /*    transition: all 0.3s ease;*/
-    /*    position: relative;*/
-    /*    display: inline-block;*/
-    /*    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),*/
-    /*    7px 7px 20px 0px rgba(0,0,0,.1),*/
-    /*    4px 4px 5px 0px rgba(0,0,0,.1);*/
-    /*    outline: none;*/
-    /*}*/
+    .custom-btn {
+        width: 130px;
+        height: 40px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+        outline: none;
+    }
 
-    /*!* 3 *!*/
-    /*.btn-3 {*/
-    /*    background: rgb(0,172,238);*/
-    /*    background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);*/
-    /*    width: 130px;*/
-    /*    height: 40px;*/
-    /*    line-height: 42px;*/
-    /*    padding: 0;*/
-    /*    border: none;*/
+    /* 3 */
+    .btn-3 {
+        background: rgb(0,172,238);
+        background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+        width: 60px;
+        height: 40px;
+        line-height: 42px;
+        padding: 0;
+        border: none;
 
-    /*}*/
-    .btn-3 .card-shell {
+    }
+    .btn-3 span {
         position: relative;
         display: block;
         width: 100%;
@@ -147,7 +114,7 @@
         height: 2px;
     }
     .btn-3:hover{
-        background: transparent;
+        background: #fff;
         box-shadow: none;
     }
     .btn-3:hover:before {
@@ -156,11 +123,11 @@
     .btn-3:hover:after {
         width: 100%;
     }
-    .btn-3 .card-shell:hover{
+    .btn-3 span:hover{
         color: rgba(2,126,251,1);
     }
-    .btn-3 .card-shell:before,
-    .btn-3 .card-shell:after {
+    .btn-3 span:before,
+    .btn-3 span:after {
         position: absolute;
         content: "";
         left: 0;
@@ -168,21 +135,71 @@
         background: rgba(2,126,251,1);
         transition: all 0.3s ease;
     }
-    .btn-3 .card-shell:before {
+    .btn-3 span:before {
         width: 2px;
         height: 0%;
     }
-    .btn-3 .card-shell:after {
+    .btn-3 span:after {
         width: 0%;
         height: 2px;
     }
-    .btn-3 .card-shell:hover:before {
+    .btn-3 span:hover:before {
         height: 100%;
     }
-    .btn-3 .card-shell:hover:after {
+    .btn-3 span:hover:after {
         width: 100%;
     }
 
+    .cases-title{
+        display: inline-block;
+        font-weight: bold;
+        font-size: 22px;
+        color: #00aee4;
+        position: relative;
+        text-align: center;
+        height: 22px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .cases-title::after {
+        content: '';
+        display: block;
+        width: 93px;
+        height: 1px;
+        background: #00aee4;
+        position: absolute;
+        left: 22px;
+        bottom: -10px;
+        margin-left: -25px;
+    }
+
+
+    .body-title-split {
+        display: flex;
+        align-items: flex-end;
+        margin-left: 50px;
+    }
+
+    .body-title-split > div.body-title-split1 {
+        border-bottom: 4px solid #2867bc;
+        padding-bottom: 10px;
+    }
+
+    .body-title-split .body-title-name {
+        color: #222;
+        font-size: 24px;
+        padding-right:10px;
+    }
+
+    .body-title-split > div.body-title-split2 {
+        border-bottom: 4px solid #01A1ED;
+        padding-bottom: 10px;
+    }
+
+    .body-title-split .body-title-small {
+        color: #666;
+    }
 
 
 
@@ -198,8 +215,10 @@
     .card-container{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        margin: 40px 0;
+        justify-content: space-between;
+        margin: 20px 0;
+        flex-wrap: wrap;
+        padding: 0 20px;
     }
 
     .card-img{
@@ -228,6 +247,7 @@
         border:1px solid #eee;
         color:#fff;
         overflow: hidden;
+        margin:10px;
         /*background-image: url("/images/case/bg.jpg");*/
         /*background-repeat: no-repeat;*/
         /*background-origin: content-box;*/

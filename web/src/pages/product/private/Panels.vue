@@ -2,10 +2,10 @@
 
 
     <div class="panel">
-        <div class="container">
+        <div class="container scaffold-container">
 
 
-            <div class="area cols-md-6" v-for="item of dynamicList">
+            <div class="area cols-md-6 wow slideInUp" v-for="item of dynamicList">
                 <div data-category="backstage" class="scaffold-item-link">
 
                     <div class="scaffold-item">
@@ -108,11 +108,20 @@
             vm.$bus.$on("changeType",(type) => {
                 vm.changePanel(type);
             })
+
+            if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+                console.log("new WOW()",new WOW());
+                new WOW().init();
+            };
         }
     }
 </script>
 
 <style scoped>
+
+    .scaffold-container{
+        overflow: hidden;
+    }
 
     .panel{
         background-color: #fff;
