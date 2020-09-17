@@ -63,7 +63,7 @@ module.exports = {
             "Accept-Ranges": "bytes",
             // "Content-Length": chunksize,
             // "Content-Type": "video/mp4"
-            'Content-Type': 'video/mp4'
+            'Content-Type': 'video/webm'
         });
 
         // console.log("total",total);

@@ -15,6 +15,7 @@ Vue.prototype.$bus = bus;
 Vue.config.productionTip = false;
 
 Vue.prototype.$common = lib.common;
+Vue.prototype.$config = lib.config;
 
 
 

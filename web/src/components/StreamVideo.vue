@@ -23,9 +23,10 @@
 
                 // var assetURL = 'frag_bunny.mp4';
                 var video = this.$refs["video"];
-                var assetURL = 'http://localhost:3000/pullVideoStream';
-                // var mimeCodec = 'audio/mp4; codecs="mp4a.40.5"';
-                var mimeCodec = 'video/webm; codecs="vp8.0, vorbis"';
+                var assetURL = vm.$config.baseUrl().concat('/pullVideoStream');
+                // var mimeCodec = 'audio/mp4; codecs="mp4a.40.5"';  //for mp4 but never work...
+                var mimeCodec = 'video/webm; codecs="vp8.0, vorbis"'; //for webm always works good...
+                // var mimeCodec = 'video/mp4; codecs="avc1.640028, mp4a.40.2"' //test
 
                 if ('MediaSource' in window && MediaSource.isTypeSupported(mimeCodec)) {
                     var mediaSource = new MediaSource();
@@ -46,11 +47,9 @@
                             // mediaSource.endOfStream();
                             // video.play();
                             if(vm.rangeStart < vm.rangeTotal){
-                                setTimeout(() =>{
-                                    fetchAB(assetURL,function (buff) {
-                                        sourceBuffer.appendBuffer(buff);
-                                    })
-                                },500);
+                                fetchAB(assetURL,function (buff) {
+                                    sourceBuffer.appendBuffer(buff);
+                                })
                             }
                         });
                         sourceBuffer.appendBuffer(buf);
