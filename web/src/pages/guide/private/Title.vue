@@ -8,7 +8,7 @@
             <input type="text" placeholder="搜索内容">
         </div>
     </div>
-    
+
 </template>
 
 <script>
@@ -25,7 +25,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        top: 172px;
+        top: 123px;
         background-color: rgba(255,255,255,0.6);
         box-shadow: 0 0 1px rgba(0,0,0,0.25);
         border-bottom: 1px solid #ddd;

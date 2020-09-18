@@ -24,39 +24,27 @@
                         </template>
 
 
-                    </ul>
-                </div>
-
-                <div class="hamburger visible-xs" v-on:click="trans()" ref="hamburger">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
-
-
-                <div class="user-logger">
-                    <ul class="user-box">
                         <li v-if="logged">
-<!--                            <div class="btn-group">-->
-<!--                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">发起-->
-<!--                                    <span class="caret"></span>-->
-<!--                                </button>-->
-<!--                                <ul class="dropdown-menu" role="menu">-->
-<!--                                    <li><a href="/editor">分享经验</a></li>-->
-<!--                                    <li><a href="#">发起问题</a></li>-->
-<!--                                    <li><a href="#">Bug反馈</a></li>-->
-<!--                                    <li><a href="/editor/document">编写文档</a></li>-->
-<!--                                </ul>-->
-<!--                            </div>-->
+                            <!--                            <div class="btn-group">-->
+                            <!--                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">发起-->
+                            <!--                                    <span class="caret"></span>-->
+                            <!--                                </button>-->
+                            <!--                                <ul class="dropdown-menu" role="menu">-->
+                            <!--                                    <li><a href="/editor">分享经验</a></li>-->
+                            <!--                                    <li><a href="#">发起问题</a></li>-->
+                            <!--                                    <li><a href="#">Bug反馈</a></li>-->
+                            <!--                                    <li><a href="/editor/document">编写文档</a></li>-->
+                            <!--                                </ul>-->
+                            <!--                            </div>-->
 
-<!--                            <img class="header-portrait" src="<%- msg.userData.portrait %>">-->
+                            <!--                            <img class="header-portrait" src="<%- msg.userData.portrait %>">-->
 
-<!--                            <dl class="select-board board-closed hide">-->
-<!--                                <dd><a href="/personal/<%- msg.userData.userid %>">个人中心</a></dd>-->
-<!--                                <dd><a onclick="users.logout();">退出登录</a></dd>-->
-<!--                            </dl>-->
+                            <!--                            <dl class="select-board board-closed hide">-->
+                            <!--                                <dd><a href="/personal/<%- msg.userData.userid %>">个人中心</a></dd>-->
+                            <!--                                <dd><a onclick="users.logout();">退出登录</a></dd>-->
+                            <!--                            </dl>-->
 
-                            <el-dropdown trigger="click" @command="launch">
+                            <el-dropdown trigger="click" @command="launch" v-bind:style="`margin-left:20px;`">
                                 <el-button type="primary" size="mini">
                                     发起<i class="el-icon-arrow-down el-icon--right"></i>
                                 </el-button>
@@ -83,8 +71,68 @@
                                 <span class="log-btn">登录/注册</span>
                             </a>
                         </li>
+
                     </ul>
                 </div>
+
+                <div class="hamburger visible-xs" v-on:click="trans()" ref="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+
+
+<!--                <div class="user-logger">-->
+<!--                    <ul class="user-box">-->
+<!--                        <li v-if="logged">-->
+<!--&lt;!&ndash;                            <div class="btn-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">发起&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <span class="caret"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </button>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <ul class="dropdown-menu" role="menu">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <li><a href="/editor">分享经验</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <li><a href="#">发起问题</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <li><a href="#">Bug反馈</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <li><a href="/editor/document">编写文档</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <img class="header-portrait" src="<%- msg.userData.portrait %>">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                            <dl class="select-board board-closed hide">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <dd><a href="/personal/<%- msg.userData.userid %>">个人中心</a></dd>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <dd><a onclick="users.logout();">退出登录</a></dd>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </dl>&ndash;&gt;-->
+
+<!--                            <el-dropdown trigger="click" @command="launch">-->
+<!--                                <el-button type="primary" size="mini">-->
+<!--                                    发起<i class="el-icon-arrow-down el-icon&#45;&#45;right"></i>-->
+<!--                                </el-button>-->
+<!--                                <el-dropdown-menu slot="dropdown">-->
+<!--                                    <el-dropdown-item v-bind:command="'article'">文章</el-dropdown-item>-->
+<!--                                    <el-dropdown-item v-bind:command="'doc'">文档</el-dropdown-item>-->
+<!--                                </el-dropdown-menu>-->
+<!--                            </el-dropdown>-->
+
+
+<!--                            <el-dropdown>-->
+<!--                                <img class="header-portrait" v-bind:src="userData.portrait">-->
+<!--                                <el-dropdown-menu slot="dropdown">-->
+<!--                                    <el-dropdown-item v-on:click.native="goToPersonal">个人资料</el-dropdown-item>-->
+<!--                                    <el-dropdown-item v-on:click.native="logout">退出登录</el-dropdown-item>-->
+<!--                                </el-dropdown-menu>-->
+<!--                            </el-dropdown>-->
+
+<!--                        </li>-->
+
+<!--                        <li v-else >-->
+<!--                            <a id="selectMenu" href="javascript:void(0);" v-on:click="login">-->
+<!--                                <i class="fa fa-user-circle resize"></i>-->
+<!--                                <span class="log-btn">登录/注册</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
 
                 <logPanel ref="logPanel"></logPanel>
 
@@ -219,7 +267,7 @@
         border-top:1px solid #2188b6;
         border-bottom:2px solid #2188b6;
         background-color: #2188b6;
-        padding: 70px 0 35px 0;
+        padding: 35px 0 20px 0;
     }
 
     @media (max-width: 767px) {
@@ -267,7 +315,7 @@
         font-weight:400;
         line-height:60px;
         display:block;
-        padding:0 21px;
+        padding: 0 15px;
         text-decoration:none;
     }
 
@@ -371,47 +419,58 @@
 
     /*-----------导航栏用户按钮---------*/
 
-    .user-logger{
-        position: absolute;
-        right: -45px;
-        top: 12px;
-    }
-
-    .user-logger .user-box{
-        list-style: none;
-        margin:0;
-        padding:0;
+    #selectMenu .fa-user-circle{
+        font-size: 30px;
         vertical-align: middle;
-    }
-
-    .user-box a{
-        display: block;
-        text-decoration: none !important;
-        white-space: nowrap;
-    }
-
-    .user-box > li{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        list-style: none;
-        margin-right:8px;
-    }
-
-    .user-logger .resize{
-        font-size: 35px;
-        color: #fff;
         margin-right: 8px;
     }
 
-    .user-logger .log-btn{
-        font-size: 17px;
-        color:#fff;
-        vertical-align: super;
-    }
 
-    .user-logger .log-btn:hover{
-        text-decoration: none !important;
+    /*.user-logger{*/
+    /*    position: absolute;*/
+    /*    right: -45px;*/
+    /*    top: 12px;*/
+    /*}*/
+
+    /*.user-logger .user-box{*/
+    /*    list-style: none;*/
+    /*    margin:0;*/
+    /*    padding:0;*/
+    /*    vertical-align: middle;*/
+    /*}*/
+
+    /*.user-box a{*/
+    /*    display: block;*/
+    /*    text-decoration: none !important;*/
+    /*    white-space: nowrap;*/
+    /*}*/
+
+    /*.user-box > li{*/
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+    /*    align-items: center;*/
+    /*    list-style: none;*/
+    /*    margin-right:8px;*/
+    /*}*/
+
+    /*.user-logger .resize{*/
+    /*    font-size: 35px;*/
+    /*    color: #fff;*/
+    /*    margin-right: 8px;*/
+    /*}*/
+
+    /*.user-logger .log-btn{*/
+    /*    font-size: 17px;*/
+    /*    color:#fff;*/
+    /*    vertical-align: super;*/
+    /*}*/
+
+    /*.user-logger .log-btn:hover{*/
+    /*    text-decoration: none !important;*/
+    /*}*/
+
+    #selectMenu{
+        color:#fff;
     }
 
     .title-username{
@@ -431,6 +490,10 @@
 
     .header-portrait + .log-btn{
         vertical-align: baseline;
+    }
+
+    .el-dropdown{
+        vertical-align: middle;
     }
 
 
