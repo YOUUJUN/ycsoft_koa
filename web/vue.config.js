@@ -97,7 +97,9 @@ module.exports = function(){
                     $ : "jquery",
                     jquery : "jquery"
                 }),
+
                 new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+
                 // 配置compression-webpack-plugin压缩
                 new CompressionWebpackPlugin({
                     algorithm: 'gzip',
@@ -119,7 +121,7 @@ module.exports = function(){
             }
         },
         chainWebpack: config => {
-            if(process.env.NODE_ENV === 'production'){
+            if(process.env.NODE_ENV === 'development'){
                 config
                     .plugin('webpack-bundle-analyzer')
                     .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
