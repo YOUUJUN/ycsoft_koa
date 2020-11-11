@@ -13,7 +13,22 @@
 
                         <div class="operation-box" v-if="owner">
                             <object><a href="javascript:void(0);" class="btn" style="margin-right:10px;" @click="modifyArticle(item.id)">修改</a></object>
-                            <object><a href="javascript:void(0);" class="btn" @click="delArticle(index,item.id)">删除</a></object>
+<!--                            <object><a href="javascript:void(0);" class="btn" @click="delArticle(index,item.id)">删除</a></object>-->
+                            <object>
+                                <a href="javascript:void(0);">
+
+                                    <el-popover placement="bottom" width="160" v-model="popVisible">
+                                        <p>确定删除吗？</p>
+                                        <div style="text-align: right; margin: 0">
+                                            <el-button size="mini" type="text" @click="popVisible = false">取消</el-button>
+                                            <el-button type="primary" size="mini" @click="" @click="delArticle(index,item.id);popVisible = false">确定</el-button>
+                                        </div>
+                                        <a slot="reference" href="javascript:void(0);" class="btn">删除</a>
+                                    </el-popover>
+
+                                </a>
+                            </object>
+
                         </div>
 
                         <div class="operation-box" v-else>
@@ -127,7 +142,8 @@
                 text: "<span style='color:red;'>hello</span>",
                 articleList : [],
                 followerList : [],
-                focusTopics : []
+                focusTopics : [],
+                popVisible : false
             }
         },
         methods: {

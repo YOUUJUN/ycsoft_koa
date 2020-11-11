@@ -37,6 +37,8 @@
 
             <!--            <foot></foot>-->
 
+            <back-top></back-top>
+
         </footer>
 
     </div>
@@ -48,9 +50,10 @@
     const panel = () => import("./private/Panel.vue");
     const topics = () => import("./private/Topic.vue");
     const userPanel = () => import("./private/User.vue");
+    const backTop = () => import('../../components/BackTop.vue');
 
     export default {
-        components:{navigation,hotTopic,panel,topics,userPanel},
+        components:{navigation,hotTopic,panel,topics,userPanel,backTop},
         data (){
             return {
                 navigationList : this.$store.state.navigationList,

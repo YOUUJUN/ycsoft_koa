@@ -67,6 +67,8 @@
 
         </article>
 
+        <back-top></back-top>
+
     </section>
 
 </template>

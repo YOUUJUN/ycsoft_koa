@@ -105,9 +105,7 @@
                         this.postSwitch = false;
                         return;
                     }
-                    console.log("data ==== >",msg.data.data);
                     this.articleList = this.articleList.concat(msg.data.data);
-                    console.log("articleList",this.articleList);
                 }).catch(err => {
                     console.log(err);
                 })
@@ -152,13 +150,9 @@
                 window.addEventListener('scroll',function(){
                     var loader = vm.$refs["loader"];
                     var scrollTop = document.documentElement.scrollTop;
-                    console.log("scrollTop ------------------",scrollTop);
                     var canSee = document.documentElement.clientHeight;
-                    console.log("canSee ------------------",canSee);
                     var docHeight = document.body.scrollHeight;
-                    console.log("docHeight ------------------",docHeight);
                     var num = loader.offsetHeight;
-                    console.log("num --------------------",num);
 
                     var positionValue = docHeight - (scrollTop + canSee);
 
@@ -198,7 +192,7 @@
                     console.error(err);
                 })
 
-            }
+            },
 
         },
 
@@ -216,7 +210,7 @@
         },
 
         mounted() {
-            this.setScrollLoader();
+            // this.setScrollLoader();
         }
     }
 </script>

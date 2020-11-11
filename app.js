@@ -37,7 +37,7 @@ app.use(json());
 app.use(logger());
 
 app.use( async (ctx, next) =>{
-  ctx.set("Access-Control-Allow-Origin","http://localhost:8080");
+  ctx.set("Access-Control-Allow-Origin","http://localhost:8081");
 
   ctx.set("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, accesstoken, range");
   ctx.set("Access-Control-Expose-Headers" , "Content-Range");

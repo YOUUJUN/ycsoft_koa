@@ -17,6 +17,8 @@
 
             <foot></foot>
 
+            <back-top></back-top>
+
         </footer>
 
     </div>
@@ -30,8 +32,10 @@
     const foot = () => import("../../components/Footer.vue");
 
     const checker = () => import("../../components/checkBox.vue");
+    const backTop = () => import('../../components/BackTop.vue');
+
     export default {
-        components : {navigation,index,foot},
+        components : {navigation,index,foot,backTop},
         data() {
             return {
                 navigationList: this.$store.state.navigationList,

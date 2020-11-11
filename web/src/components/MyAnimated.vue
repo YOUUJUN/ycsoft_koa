@@ -53,7 +53,6 @@
                                 vm.show = true;
                             }else{
                                 let handler = window.addEventListener('scroll',function(){
-
                                     scrollTop = document.documentElement.scrollTop;
                                     canSee = document.documentElement.clientHeight;
                                     docHeight = document.body.scrollHeight;

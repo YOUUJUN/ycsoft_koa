@@ -18,8 +18,9 @@
 
             <foot></foot>
 
-        </footer>
+            <back-top></back-top>
 
+        </footer>
 
     </div>
 
@@ -30,8 +31,11 @@
     const banner = () => import("./private/Banner.vue");
     const introduce = () => import("./private/Introduce.vue");
     const foot = () => import("../../components/Footer.vue");
+
+    const backTop = () => import('../../components/BackTop.vue');
+
     export default {
-        components : {navigation,banner,foot,introduce},
+        components : {navigation,banner,foot,introduce,backTop},
         data () {
             return {
                 navigationList : this.$store.state.navigationList,
@@ -50,6 +54,9 @@
 
 
 </script>
+
+<style>
+</style>
 
 <style scoped>
 
