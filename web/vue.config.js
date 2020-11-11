@@ -61,7 +61,6 @@ const buildPageSync = () => {
             let entry = path.posix.join("src/pages", file,file.concat('.js'));
             page.entry = entry;
             page.template = path.posix.join("src/pages", file,file.concat('.html'));
-            console.log("env--------------------------------------",process.env.NODE_ENV);
             if(process.env.NODE_ENV === "development"){
                 page.filename = file.concat('.html');
             }else{
@@ -86,7 +85,7 @@ module.exports = function(){
         filenameHashing : false,
         pages : buildPageSync(),
         devServer : {
-            port : 8080,
+            port : 8081,
             hot : true,
             open: false //是否自动打开浏览器
         },
@@ -120,6 +119,7 @@ module.exports = function(){
                 "wow" : 'WOW'
             }
         },
+
         chainWebpack: config => {
             if(process.env.NODE_ENV === 'development'){
                 config
