@@ -17,11 +17,11 @@
                             <object>
                                 <a href="javascript:void(0);">
 
-                                    <el-popover placement="bottom" width="160" v-model="popVisible">
+                                    <el-popover placement="bottom" width="160" v-model="item.visible">
                                         <p>确定删除吗？</p>
                                         <div style="text-align: right; margin: 0">
-                                            <el-button size="mini" type="text" @click="popVisible = false">取消</el-button>
-                                            <el-button type="primary" size="mini" @click="" @click="delArticle(index,item.id);popVisible = false">确定</el-button>
+                                            <el-button size="mini" type="text" @click="item.visible = false">取消</el-button>
+                                            <el-button type="primary" size="mini" @click="delArticle(index,item.id);item.visible = false">确定</el-button>
                                         </div>
                                         <a slot="reference" href="javascript:void(0);" class="btn">删除</a>
                                     </el-popover>
@@ -143,7 +143,6 @@
                 articleList : [],
                 followerList : [],
                 focusTopics : [],
-                popVisible : false
             }
         },
         methods: {

@@ -121,11 +121,15 @@ module.exports = function(){
         },
 
         chainWebpack: config => {
-            if(process.env.NODE_ENV === 'development'){
-                config
-                    .plugin('webpack-bundle-analyzer')
-                    .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
-            }
+            config
+                .plugin('webpack-bundle-analyzer')
+                .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
+
+            // if(process.env.NODE_ENV === 'development'){
+            //     config
+            //         .plugin('webpack-bundle-analyzer')
+            //         .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
+            // }
         }
     }
 };
