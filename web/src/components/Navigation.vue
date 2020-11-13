@@ -258,6 +258,7 @@
     }
 
     .navigation-container{
+        width: 1230px;
         z-index: 997;
         background: #2188b6;
     }
@@ -267,7 +268,7 @@
         border-top:1px solid #2188b6;
         border-bottom:2px solid #2188b6;
         background-color: #2188b6;
-        padding: 35px 0 20px 0;
+        padding: 20px 0 20px 0;
     }
 
     @media (max-width: 767px) {

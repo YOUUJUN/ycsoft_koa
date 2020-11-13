@@ -1,6 +1,6 @@
 <template>
 
-    <div class="banner">
+    <section class="banner">
 
         <div class="container ">
             <div class="area cols-md-9 cols-md-offset-1">
@@ -18,7 +18,7 @@
 
         <div class="right-wind"></div>
 
-    </div>
+    </section>
 
 </template>
 

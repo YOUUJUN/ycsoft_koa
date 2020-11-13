@@ -9,10 +9,15 @@
 
         <main>
 
+            <banner></banner>
+
+            <tabs></tabs>
 
         </main>
 
         <footer>
+
+            <foot></foot>
 
 
         </footer>
@@ -21,8 +26,13 @@
 </template>
 <script>
     const navigation = () => import("../../components/Navigation.vue");
+    const foot = () => import("../../components/Footer.vue");
+
+    const banner = () => import('./private/Banner');
+    const tabs = () => import('./private/Tabs');
+
     export default {
-        components : {navigation},
+        components : {navigation, foot, banner, tabs},
         data() {
 
             return {

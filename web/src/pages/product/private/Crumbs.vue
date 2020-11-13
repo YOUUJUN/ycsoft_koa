@@ -6,9 +6,9 @@
             <div class="area cols-md-12 cols-sm-12">
                 <ul class="navigation inline-center" ref="list">
                     <li>
-                        <button v-on:click="selector('total', $event)" data-domain="entire" class="active">全部<span class="scaffold-count">{{getTotal()}}</span></button>
+                        <button v-on:click.self="selector('total', $event)" data-domain="entire" class="active">全部<span class="scaffold-count">{{getTotal()}}</span></button>
                     </li>
-                    <li v-for="item in list"><button v-on:click="selector(item.type, $event)">{{item.type}}<span class="scaffold-count">{{item.num}}</span></button></li>
+                    <li v-for="item in list"><button v-on:click.self="selector(item.type, $event)">{{item.type}}<span class="scaffold-count">{{item.num}}</span></button></li>
 
                 </ul>
             </div>
@@ -42,6 +42,7 @@
                 for(let item of shell.children){
                     item.querySelector("button").classList.remove("active");
                 }
+                
                 $event.target.classList.add("active");
 
                 vm.$bus.$emit("changeType",type);

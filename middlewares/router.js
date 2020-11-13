@@ -16,6 +16,7 @@ module.exports = (app) => {
 
     router.get('/',homeController.index);
     /*--产品与服务--*/
+    router.get('/solutions',homeController.solutions);
     router.get('/products',homeController.products);
     router.get('/products/details/:name',homeController.products);
 

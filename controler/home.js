@@ -105,6 +105,12 @@ module.exports = {
         await next();
     },
 
+    solutions : async (ctx,next) =>{
+        ctx.body = await common.readPages('solution.html');
+        await next();
+    },
+
+
     cases : async (ctx,next) =>{
         ctx.body = await common.readPages('case.html');
         await next();
