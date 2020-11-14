@@ -1,9 +1,17 @@
 // const fsPromises = require("fs").promises;
+const glob = require('glob');
+
 const fs = require("fs");
 const path = require("path");
 const webpack = require("webpack");
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
+
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const productionGzipExtensions = ['js', 'css'];
+
+
+
 // const util = require('util');
 // const events = require('events');
 
@@ -75,6 +83,52 @@ const buildPageSync = () => {
     return pages;
 };
 
+let cdnBaseHttp = 'https://cdn.bootcss.com';
+
+let externalConfig = [
+    {name : 'vue', scope: 'Vue', js: 'vue.min.js'},
+    {name : 'vue-router', scope: 'VueRouter', js: 'vue-router.min.js'},
+    {name : 'vuex', scope: 'Vuex', js: 'vuex.min.js'},
+    {name: 'axios', scope: 'axios', js: 'axios.min.js'},
+    {name: 'element-ui', scope: 'ELEMENT', js: 'index.js', css: 'theme-chalk/index.css'},
+    {name: 'jquery', scope: 'window.jQuery', js: 'jquery.js'},
+    {name: 'echarts', scope: 'echarts', js: 'echarts.min.js'},
+];
+
+let getModulesVersion = () => {
+    let mvs = {};
+    let regexp = /^npm_package_.{0,3}dependencies_/gi;
+    for(let m in process.env){
+        if(regexp.test(m)){
+            mvs[m.replace(regexp, '').replace(/_/g, '-')] = process.env[m].replace(/(~|\^)/g, '');
+        }
+    }
+
+    return mvs;
+}
+
+let getExternalModules = (config) =>{
+    let externals = {};
+    let dependencieModules = getModulesVersion();
+    config.forEach((item) => {
+        if(item.name in dependencieModules){
+            let version = dependencieModules[item.name];
+            item.css = item.css && [cdnBaseHttp, item.name, version, item.css].join('/');
+            item.js = item.js && [cdnBaseHttp, item.name, version, item.js].join('/');
+
+            externals[item.name] = item.scope;
+        }else{
+            throw new Error('相关依赖未安装，请先执行npm install ' + item.name);
+        }
+    })
+
+    return externals;
+}
+
+let mvs = getExternalModules(externalConfig);
+
+console.log("externalConfig ===>",externalConfig);
+
 delete require.cache[module.id];
 
 module.exports = function(){
@@ -92,6 +146,7 @@ module.exports = function(){
         productionSourceMap : true, //开启后出错的时候，除错工具将直接显示原始代码，而不是转换后的代码。关闭可以减少打包体积
         configureWebpack : {
             plugins : [
+
                 new webpack.ProvidePlugin({
                     $ : "jquery",
                     jquery : "jquery"
@@ -123,7 +178,17 @@ module.exports = function(){
         chainWebpack: config => {
             config
                 .plugin('webpack-bundle-analyzer')
-                .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
+                .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin);
+
+            const entry = Object.keys(buildPageSync())
+            for (const iterator of entry) {
+                config
+                    .plugin(`html-${iterator}`)
+                    .tap(args => {
+                        args[0].cdnConfig = externalConfig;
+                        return args
+                    })
+            }
 
             // if(process.env.NODE_ENV === 'development'){
             //     config
