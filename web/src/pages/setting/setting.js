@@ -3,8 +3,6 @@ import Home from './Setting.vue'
 import store from '../../store/index'
 import lib from '../../utils/lib'
 import ElementUI from 'element-ui'
-// import {Dropdown,DropdownMenu,DropdownItem,Button} from "element-ui"
-import "element-ui/lib/theme-chalk/index.css"
 
 /*---element-ui---*/
 Vue.use(ElementUI);

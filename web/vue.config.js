@@ -1,13 +1,8 @@
 // const fsPromises = require("fs").promises;
-const glob = require('glob');
-
 const fs = require("fs");
 const path = require("path");
 const webpack = require("webpack");
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
-
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 const productionGzipExtensions = ['js', 'css'];
 
 
@@ -125,9 +120,11 @@ let getExternalModules = (config) =>{
     return externals;
 }
 
-let mvs = getExternalModules(externalConfig);
+let externalModules = getExternalModules(externalConfig);
 
 console.log("externalConfig ===>",externalConfig);
+
+console.log("externalModules ====>",externalModules);
 
 delete require.cache[module.id];
 
@@ -163,16 +160,19 @@ module.exports = function(){
                 })
             ],
 
-            externals :{
-                'vue': 'Vue',
-                'vue-router': 'VueRouter',
-                'vuex': 'Vuex',
-                'axios': 'axios',
-                'element-ui': 'ELEMENT',
-                'jquery' : 'window.jQuery',
-                'echarts' : 'echarts',
-                "wow" : 'WOW'
-            }
+            // externals :{
+            //     'vue': 'Vue',
+            //     'vue-router': 'VueRouter',
+            //     'vuex': 'Vuex',
+            //     'axios': 'axios',
+            //     'element-ui': 'ELEMENT',
+            //     'jquery' : 'window.jQuery',
+            //     'echarts' : 'echarts',
+            //     "wow" : 'WOW',
+            // },
+
+            externals : externalModules
+
         },
 
         chainWebpack: config => {
@@ -185,6 +185,7 @@ module.exports = function(){
                 config
                     .plugin(`html-${iterator}`)
                     .tap(args => {
+                        console.log("args",args);
                         args[0].cdnConfig = externalConfig;
                         return args
                     })

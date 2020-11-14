@@ -89,7 +89,7 @@
                     <div class="product-panel wow fadeInRight animated">
 
 
-                        <div class="product-doc wow bounceInUp animated">
+                        <div class="product-doc wow bounceInUp animated"  ref="doc">
 
                             <h4 class="doc-title">{{showContent.title}}</h4>
 
@@ -219,7 +219,15 @@
                     title : item.title,
                     tips : item.tips,
                     href : item.href
-                }
+                };
+
+                vm.$refs['doc'].style.visibility = 'hidden';
+                vm.$refs['doc'].classList.remove('animated', 'bounceInUp');
+                setTimeout(() =>{
+                    vm.$refs['doc'].style.visibility = 'visible';
+                    vm.$refs['doc'].classList.add('animated', 'bounceInUp');
+                },40);
+
 
             },
 
@@ -486,6 +494,7 @@
 
     .product-doc{
         color:#ffff;
+        transition: all .2s;
     }
 
     .doc-title{
