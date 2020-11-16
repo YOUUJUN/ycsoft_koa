@@ -73,6 +73,7 @@
 </template>
 
 <script>
+
     export default {
         name: "Panel",
         props : {
@@ -167,6 +168,11 @@
             },
 
             addLike(item){
+                if(!this.$store.getters.getLogStatus()){
+                    this.$parent.$refs['navigation'].login();
+                    return;
+                }
+
                 let postId = item.id;
 
                 this.$axios({

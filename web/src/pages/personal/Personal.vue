@@ -2,7 +2,7 @@
     <div id="app">
         <header>
 
-            <navigation v-bind:list="navigationList"></navigation>
+            <navigation v-bind:list="navigationList" ref="navigation"></navigation>
 
         </header>
 
@@ -75,6 +75,11 @@
             },
 
             addFollow(item){
+                if(!this.$store.getters.getLogStatus()){
+                    this.$refs['navigation'].login();
+                    return;
+                }
+
                 this.$axios({
                     method : "post",
                     url : "/personal/addFollow",

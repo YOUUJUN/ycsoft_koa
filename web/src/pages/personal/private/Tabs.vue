@@ -92,7 +92,7 @@
 
         </el-tab-pane>
 
-        <el-tab-pane :label="'项目管理  ' + 2">
+        <el-tab-pane :label="'项目管理  ' + 2" v-if="logStatus && owner">
 
             <ul class="article-list">
                 <li class="user-article">
@@ -210,6 +210,11 @@
             },
 
             addFocus(item){
+                if(!this.$store.getters.getLogStatus()){
+                    this.$parent.$refs['navigation'].login();
+                    return;
+                }
+
                 this.$axios({
                     method : "post",
                     url : "/community/addFocus",
@@ -229,8 +234,12 @@
             },
 
             addLike(item){
+                if(!this.$store.getters.getLogStatus()){
+                    this.$parent.$refs['navigation'].login();
+                    return;
+                }
+
                 let postId = item.id;
-                console.log("item====>",item);
 
                 this.$axios({
                     method : "post",
@@ -325,7 +334,10 @@
         },
 
         computed : {
-
+            logStatus (){
+                let log = this.$store.getters.getLogStatus();
+                return log;
+            }
         },
 
         created() {

@@ -254,6 +254,10 @@ export default new Vuex.Store({
 
       return obj;
 
+    },
+
+    getLogStatus : (state) => () =>{
+      return state.logged;
     }
   },
 

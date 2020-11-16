@@ -3,7 +3,7 @@
 
         <header>
 
-            <navigation v-bind:list="navigationList"></navigation>
+            <navigation v-bind:list="navigationList" ref="navigation"></navigation>
 
         </header>
 
@@ -70,6 +70,11 @@
         methods : {
 
             addFocus(item){
+                if(!this.$store.getters.getLogStatus()){
+                    this.$refs['navigation'].login();
+                    return;
+                }
+
                 console.log("item =>",item);
                 this.$axios({
                     method : "post",
