@@ -216,7 +216,7 @@
         },
 
         mounted() {
-            // this.setScrollLoader();
+            this.setScrollLoader();
         }
     }
 </script>
