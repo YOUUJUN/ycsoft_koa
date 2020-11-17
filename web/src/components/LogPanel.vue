@@ -8,28 +8,33 @@
                 <i v-on:click="closeLogPanel" class="fa fa-close dialog-close"></i>
             </div>
 
-            <div class="dialog-body clearfix"><div class="log-content">
-                <div class="field-text">
-                <span class="input-icon-left">
-                    <i class="fa fa-user-circle"></i>
-                </span>
-                    <input type="text" name="user_name" placeholder="输入你的邮箱账号" v-model="logData.username">
-                </div>
+            <div class="dialog-body clearfix">
+                <div class="log-content">
+                    <div class="field-text">
+                    <span class="input-icon-left">
+                        <i class="fa fa-user-circle"></i>
+                    </span>
+                        <input type="text" name="user_name" placeholder="输入你的邮箱账号" v-model="logData.username">
+                    </div>
 
-                <div class="field-text">
-                <span class="input-icon-left">
-                    <i class="fa fa-lock"></i>
-                </span>
-                    <input type="password" name="password" placeholder="输入你的密码" v-model="logData.password">
+                    <div class="field-text">
+                    <span class="input-icon-left">
+                        <i class="fa fa-lock"></i>
+                    </span>
+                        <input type="password" name="password" placeholder="输入你的密码" v-model="logData.password">
+                    </div>
                 </div>
-            </div><div class="turn-to"><a href="javascript:void(0);" v-on:click="togglePanel">没有账号? 点此注册</a></div></div>
+                <div class="turn-to">
+                    <a href="javascript:void(0);" v-on:click="togglePanel">没有账号? 点此注册</a>
+                </div>
+            </div>
 
             <div class="dialog-resize-helper dialog-resize-s"></div>
             <div class="dialog-resize-helper dialog-resize-x"></div>
             <div class="dialog-resize-helper dialog-resize-z"></div>
             <div class="dialog-resize-helper dialog-resize-y"></div>
 
-            <div class="dialog-footer clearfix"><div class="show-msg">{{warn}}</div><div class="dialog-button-content">
+            <div class="dialog-footer clearfix"><div class="show-msg"></div><div class="dialog-button-content">
                 <button v-on:click="login">登录</button>
                 <button v-on:click="closeLogPanel">取消</button>
             </div></div>
@@ -44,42 +49,47 @@
                 <i v-on:click="closeRegisterPanel" class="fa fa-close dialog-close"></i>
             </div>
 
-            <div class="dialog-body clearfix"><div class="log-content">
-                <div class="field-text">
-                <span class="input-icon-left">
-                    <i class="fa fa-user-circle"></i>
-                </span>
-                    <input type="text" name="nickname" placeholder="给自己取一个昵称" v-model="registerData.nickname">
-                </div>
-                <div class="field-text">
-                <span class="input-icon-left">
-                    <i class="fa fa-envelope"></i>
-                </span>
-                    <input type="text" name="email" placeholder="输入你的邮箱" v-model="registerData.email">
-                </div>
+            <div class="dialog-body clearfix">
+                <div class="log-content" ref="register">
+                    <div class="field-text">
+                    <span class="input-icon-left">
+                        <i class="fa fa-user-circle"></i>
+                    </span>
+                        <input type="text" name="nickname" placeholder="给自己取一个昵称" v-model="registerData.nickname" @blur="delErrorBorder($event)">
+                    </div>
 
-                <div class="field-text">
-                <span class="input-icon-left">
-                    <i class="fa fa-lock"></i>
-                </span>
-                    <input type="password" name="password" placeholder="设置你的密码" v-model="registerData.password">
-                </div>
+                    <div class="field-text">
+                    <span class="input-icon-left">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                        <input type="text" name="email" placeholder="输入你的邮箱" v-model="registerData.email" @blur="delErrorBorder($event)">
+                    </div>
 
-                <div class="field-text">
-                <span class="input-icon-left">
-                    <i class="fa fa-lock"></i>
-                </span>
-                    <input type="password" name="re-password" placeholder="确认你的密码" v-model="registerData.repassword" v-on:blur="registerChecker">
+                    <div class="field-text">
+                    <span class="input-icon-left">
+                        <i class="fa fa-lock"></i>
+                    </span>
+                        <input type="password" name="password" placeholder="设置你的密码" v-model="registerData.password" @blur="delErrorBorder($event)">
+                    </div>
+
+                    <div class="field-text">
+                    <span class="input-icon-left">
+                        <i class="fa fa-lock"></i>
+                    </span>
+                        <input type="password" name="re-password" placeholder="确认你的密码" v-model="registerData.repassword" v-on:blur="registerChecker();delErrorBorder($event)">
+                    </div>
+                </div>
+                <div class="turn-to">
+                    <a href="javascript:void(0);" v-on:click="togglePanel" ref="toggle">已有账号? 点此登录</a>
                 </div>
             </div>
-                <div class="turn-to"><a href="javascript:void(0);" v-on:click="togglePanel" ref="toggle">已有账号? 点此登录</a></div></div>
 
             <div class="dialog-resize-helper dialog-resize-s"></div>
             <div class="dialog-resize-helper dialog-resize-x"></div>
             <div class="dialog-resize-helper dialog-resize-z"></div>
             <div class="dialog-resize-helper dialog-resize-y"></div>
 
-            <div class="dialog-footer clearfix"><div class="show-msg">{{warn}}</div><div class="dialog-button-content">
+            <div class="dialog-footer clearfix"><div class="show-msg"></div><div class="dialog-button-content">
                 <button v-on:click="register">注册</button>
                 <button v-on:click="closeRegisterPanel">取消</button>
             </div></div>
@@ -99,7 +109,6 @@
             return {
                 logShow : false,
                 registerShow : false,
-                warn : '',
                 registerData : {
                     nickname : '',
                     email : '',
@@ -137,8 +146,6 @@
                         method : "POST",
                         data : this.logData
                     }).then(value => {
-                        console.log("value ====-====>",value);
-                        this.warn = value.data.info;
                         if(value.data.ret_code == 0){
                             this.$notify.error({
                                 title: '登录失败!',
@@ -168,8 +175,9 @@
                         method : "POST",
                         data : this.registerData
                     }).then(value => {
-                        console.log(value);
-                        this.warn = value.data.message;
+                        if(value.data.message){
+                            this.warn(value.data.message);
+                        }
                         if(value.data.status == 0){
                             this.$notify({
                                 title: '注册失败!',
@@ -188,37 +196,60 @@
                 }
 
             },
+
+            addErrorBorder(target){
+                console.log("target",target);
+                target.classList.add("error-border");
+            },
+
+            delErrorBorder(event){
+                var target = event.target;
+                target.classList.remove("error-border");
+            },
+
+            warn (message) {
+                this.$message({
+                    message : message,
+                    type : "error"
+                });
+            },
+
             registerChecker(){
+                var register = this.$refs['register'];
                 if(!this.registerData.nickname){
-                    this.warn = "请填写您的昵称!";
+                    this.warn("请填写您的昵称!");
+                    this.addErrorBorder(register.querySelector("[name = 'nickname']"));
                     return false;
                 }
                 if(!this.registerData.email){
-                    this.warn = "请输入您的邮箱!";
+                    this.warn("请输入您的邮箱!");
+                    this.addErrorBorder(register.querySelector("[name = 'email']"));
                     return false;
                 }
 
                 if(!this.registerData.password){
-                    this.warn = "请输入密码!";
+                    this.warn("请输入密码!");
+                    this.addErrorBorder(register.querySelector("[name = 'password']"));
                     return false;
                 }
 
                 if(this.registerData.password !== this.registerData.repassword){
-                    this.warn = "俩次密码输入不相同";
+                    this.warn("俩次密码输入不相同");
+                    this.addErrorBorder(register.querySelector("[name = 'password']"));
+                    this.addErrorBorder(register.querySelector("[name = 're-password']"));
                     return false;
                 }
-
-                this.warn = "";
                 return true;
             },
+
             loginChecker(){
                 if(!this.logData.username){
-                    this.warn = "请输入您的邮箱或用户名!";
+                    this.warn("请输入您的邮箱或用户名!");
                     return false;
                 }
 
                 if(!this.logData.password){
-                    this.warn = "请输入密码!";
+                    this.warn("请输入密码!");
                     return false;
                 }
 

@@ -4,7 +4,7 @@
         <div class="area cols-md-3 cols-sm-12 cols-xs-12 left-bar">
             <div class="menu-content"></div>
             <div class="menu_part" v-for="(item,index) in barlist">
-                <div class="menu-title">
+                <div class="menu-title" v-on:click="hideList">
                     <span data-name="category">{{index}}</span><i class="fa fa-angle-double-down"></i>
                 </div>
                 <ul class="menu-list" style="display: block;" ref="doc-navi">
@@ -63,6 +63,10 @@
                 }).catch(err => {
                     console.log(err);
                 })
+            },
+
+            hideList (){
+                
             }
         },
 
@@ -87,7 +91,7 @@
     /*----左侧导航栏-----*/
     .left-bar {
         position: fixed;
-        top: 232px;
+        top: 168px;
         bottom: 0;
         overflow-y: auto;
     }
@@ -174,6 +178,13 @@
 
     .select-container li:hover a {
         color: #409eff;
+    }
+
+
+    /*--right--*/
+
+    .rightSide-body{
+        margin-top:60px;
     }
 
 </style>

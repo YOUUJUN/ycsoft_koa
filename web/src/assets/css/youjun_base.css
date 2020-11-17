@@ -966,6 +966,10 @@ figure{
     margin:0;
 }
 
+.error-border{
+    border-color: red !important;
+}
+
 
 .lg{
     height: 40px;

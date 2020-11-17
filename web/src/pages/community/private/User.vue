@@ -46,33 +46,33 @@
                 <span>没有账号，现在注册一个!</span>
             </div>
 
-            <div class="register-box">
+            <div class="register-box" ref="register">
 
                 <div class="field-text">
                                 <span class="input-icon-left">
                                     <i class="fa fa-user-circle"></i>
                                 </span>
-                    <input name="nickname" placeholder="给自己取一个昵称" type="text" v-model="registerData.nickname">
+                    <input name="nickname" placeholder="给自己取一个昵称" type="text" v-model="registerData.nickname" @blur="delErrorBorder($event)">
                 </div>
                 <div class="field-text">
                                 <span class="input-icon-left">
                                     <i class="fa fa-envelope"></i>
                                 </span>
-                    <input name="email" placeholder="输入你的邮箱" type="text" v-model="registerData.email">
+                    <input name="email" placeholder="输入你的邮箱" type="text" v-model="registerData.email" @blur="delErrorBorder($event)">
                 </div>
 
                 <div class="field-text">
                                 <span class="input-icon-left">
                                     <i class="fa fa-lock"></i>
                                 </span>
-                    <input name="password" placeholder="设置你的密码" type="password" v-model="registerData.password">
+                    <input name="password" placeholder="设置你的密码" type="password" v-model="registerData.password" @blur="delErrorBorder($event)">
                 </div>
 
                 <div class="field-text">
                                 <span class="input-icon-left">
                                     <i class="fa fa-lock"></i>
                                 </span>
-                    <input name="re-password" placeholder="确认你的密码" type="password" v-model="registerData.repassword">
+                    <input name="re-password" placeholder="确认你的密码" type="password" v-model="registerData.repassword" @blur="delErrorBorder($event)">
                 </div>
 
                 <div class="register-box-foot">
@@ -96,7 +96,7 @@
             return {
                 userData : {},
                 registerData : {},
-                logged : this.$store.state.logged
+                logged : this.$store.state.logged,
             }
         },
 
@@ -107,6 +107,23 @@
                 console.log("userData",this.userData);
             },
 
+            addErrorBorder(target){
+                console.log("target",target);
+                target.classList.add("error-border");
+            },
+
+            delErrorBorder(event){
+                var target = event.target;
+                target.classList.remove("error-border");
+            },
+
+            warn (message) {
+                this.$message({
+                    message : message,
+                    type : "error"
+                });
+            },
+
             register (){
                 if(this.registerChecker()){
                     this.$axios({
@@ -115,7 +132,9 @@
                         data : this.registerData
                     }).then(value => {
                         console.log(value);
-                        this.warn = value.data.message;
+                        if(value.data.message){
+                            this.warn(value.data.message);
+                        }
                         if(value.data.status == 0){
                             this.$notify({
                                 title: '注册失败!',
@@ -135,26 +154,31 @@
 
             },
             registerChecker(){
+                var register = this.$refs['register'];
+                console.log("register",register);
                 if(!this.registerData.nickname){
-                    this.warn = "请填写您的昵称!";
+                    this.warn("请填写您的昵称!");
+                    this.addErrorBorder(register.querySelector("[name = 'nickname']"));
                     return false;
                 }
                 if(!this.registerData.email){
-                    this.warn = "请输入您的邮箱!";
+                    this.warn("请输入您的邮箱!");
+                    this.addErrorBorder(register.querySelector("[name = 'email']"));
                     return false;
                 }
 
                 if(!this.registerData.password){
-                    this.warn = "请输入密码!";
+                    this.warn("请输入密码!");
+                    this.addErrorBorder(register.querySelector("[name = 'password']"));
                     return false;
                 }
 
                 if(this.registerData.password !== this.registerData.repassword){
-                    this.warn = "俩次密码输入不相同";
+                    this.warn("俩次密码输入不相同");
+                    this.addErrorBorder(register.querySelector("[name = 'password']"));
+                    this.addErrorBorder(register.querySelector("[name = 're-password']"));
                     return false;
                 }
-
-                this.warn = "";
                 return true;
             }
         },
@@ -163,6 +187,10 @@
             logged (){
                 return this.$store.state.logged;
             }
+        },
+
+        watch : {
+
         },
 
         beforeCreate (){

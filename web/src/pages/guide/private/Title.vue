@@ -20,12 +20,14 @@
 <style scoped>
 
     .guide-header{
-        position: -webkit-sticky;
-        position: sticky;
+        /*position: -webkit-sticky;*/
+        /*position: sticky;*/
+        position: fixed;
+        left:0;
+        right:0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        top: 123px;
         background-color: rgba(255,255,255,0.6);
         box-shadow: 0 0 1px rgba(0,0,0,0.25);
         border-bottom: 1px solid #ddd;
