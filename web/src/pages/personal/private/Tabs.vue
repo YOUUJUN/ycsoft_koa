@@ -12,8 +12,37 @@
                         </div>
 
                         <div class="operation-box" v-if="owner">
-                            <object><a href="javascript:void(0);" class="btn" style="margin-right:10px;" @click="modifyArticle(item.id)">修改</a></object>
-<!--                            <object><a href="javascript:void(0);" class="btn" @click="delArticle(index,item.id)">删除</a></object>-->
+
+                            <object>
+                                <a href="javascript:void(0);">
+
+<!--                                    <el-popconfirm-->
+<!--                                            confirmButtonText='是的'-->
+<!--                                            cancelButtonText='不用了'-->
+<!--                                            icon="el-icon-info"-->
+<!--                                            iconColor="red"-->
+<!--                                            title="修改这篇文章将会退回文章-->
+<!--                                            的发表状态，确定继续操作吗？"-->
+<!--                                            @confirm="modifyArticle(item.id)"-->
+<!--                                    >-->
+<!--                                        <a href="javascript:void(0);">修改</a>-->
+<!--                                        -->
+<!--                                    </el-popconfirm>-->
+
+                                    <el-popover placement="bottom" width="200" v-model="item.visible2">
+                                        <p>修改这篇文章将会退回文章的发表状态，确定继续操作吗？</p>
+                                        <div style="text-align: right; margin: 0">
+                                            <el-button size="mini" type="text" @click="item.visible2 = false">不用了</el-button>
+                                            <el-button type="primary" size="mini" @click="modifyArticle(item.id);item.visible2 = false">是的</el-button>
+                                        </div>
+                                        <a href="javascript:void(0);" class="btn" style="margin-right:10px;" slot="reference">修改</a>
+                                    </el-popover>
+
+                                </a>
+                            </object>
+
+<!--                            <object><a href="javascript:void(0);" class="btn" style="margin-right:10px;" @click="modifyArticle(item.id)">修改</a></object>-->
+
                             <object>
                                 <a href="javascript:void(0);">
 

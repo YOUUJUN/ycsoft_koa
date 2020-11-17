@@ -34,6 +34,10 @@
                                 <p>文字/图片/语音/手写/OCR/Markdown等多种形式，随时随地记录你的精彩。全面兼容office、PDF等办公常用文档，无需下载即可查看编辑。</p>
 
                                 <el-button round @click="goTo('http://dev.bfcgj.com/login.html')">立即体验</el-button>
+<!--                                <el-button round @click="goTo('http://dev.bfcgj.com/login.html')">立即体验</el-button>-->
+
+
+
                             </div>
 
                         </div>
@@ -232,7 +236,6 @@
             },
 
             goTo (href, target='__blank'){
-
                 if(target === "location"){
                     location.href=href;
                 }else{

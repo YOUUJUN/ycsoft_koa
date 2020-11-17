@@ -34,7 +34,7 @@
 
     <div id="challenge">
 
-        <button></button>
+        <button>Click this Button</button>
 
     </div>
 

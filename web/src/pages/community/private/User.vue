@@ -26,7 +26,7 @@
                     </a>
                 </li>
                 <li>
-                    <a v-bind:href="userData.url.concat('#concern')" href="/personal/0192e830-1bbb-11e9-b9c9-cdaf3c9a2410#concern">
+                    <a v-bind:href="userData.url.concat('#concern')">
                         <div class="article">被关注</div>
                         <div class="count">{{userData.beWatchedNum}}</div>
                     </a>
@@ -95,7 +95,8 @@
         data (){
             return {
                 userData : {},
-                registerData : {}
+                registerData : {},
+                logged : this.$store.state.logged
             }
         },
 
@@ -162,6 +163,10 @@
             logged (){
                 return this.$store.state.logged;
             }
+        },
+
+        beforeCreate (){
+            console.log("I am coming hot!");
         },
 
         created() {

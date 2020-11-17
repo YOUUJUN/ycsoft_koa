@@ -118,6 +118,7 @@
                 fileReader.onload = function (ev) {
                     var baseCode = ev.target.result;
                     var imgBlob = vm.convertToBlob(baseCode, fileType);
+                    console.log("imgBlob",imgBlob);
 
                     var formData = new window.FormData();
                     formData.append('file',imgBlob);
@@ -245,7 +246,7 @@
     }
 
     .setting-title{
-        font-size: 24px; 
+        font-size: 24px;
         padding:0;
         margin:0 0 25px 0;
     }

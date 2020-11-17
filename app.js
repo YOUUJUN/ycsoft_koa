@@ -5,7 +5,7 @@ const json = require('koa-json');
 const onerror = require('koa-onerror');
 const bodyparser = require('koa-bodyparser');
 const logger = require('koa-logger');
-const cors = require('koa-cors');
+// const cors = require('koa-cors');
 const router = require('./middlewares/router');
 const history = require('koa2-history-api-fallback');
 const session = require('koa-session');
@@ -25,34 +25,24 @@ app.use( async (ctx, next) =>{
   await next();
 });
 
-// error handler
-// onerror(app);
 
 // middlewares
-// app.use(bodyparser());
 app.use(bodyparser({
   enableTypes:['json', 'form', 'text']
 }));
 app.use(json());
 app.use(logger());
 
+
+let allowOriginURL = (process.env.NODE_ENV !== 'production') ? "http://localhost:8081" : "http://106.13.63.236:8081";
 app.use( async (ctx, next) =>{
-  ctx.set("Access-Control-Allow-Origin","http://localhost:8081");
+  ctx.set("Access-Control-Allow-Credentials", true);
+  ctx.set("Access-Control-Allow-Origin",allowOriginURL);
 
   ctx.set("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, accesstoken, range");
   ctx.set("Access-Control-Expose-Headers" , "Content-Range");
-  ctx.set("Access-Control-Allow-Credentials", true);
   await next();
 });
-
-// app.use(cors({
-//   origin : function (ctx) {
-//     return "http://localhost:8080";
-//   },
-//   credentials : true
-// }));
-
-
 
 router(app);
 

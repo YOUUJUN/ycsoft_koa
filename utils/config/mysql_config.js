@@ -1,4 +1,5 @@
-let password = process.env.NODE_ENV !== 'production' ? "" : "KHIS302.";
+let password = (process.env.NODE_ENV !== 'production') ? "" : "KHIS302.";
+console.log("password",password);
 
 const config = {
     connectionLimit : 10,

@@ -22,7 +22,20 @@
 
                             <li class="list-item" v-for="(item, index) of draftsList">
                                 <a href="javascript:void(0);" class="title">{{item.title}}</a>
-                                <div class="info-box">上次修改时间:{{item.date}}<a href="javascript:void(0);" @click="editDrafts(item.id,item.type)">编辑</a><a href="javascript:void(0);" @click="delDrafts(index,item.id,item.type)">删除</a></div>
+                                <div class="info-box">上次修改时间:{{item.date}}
+                                    <a href="javascript:void(0);" @click="editDrafts(item.id,item.type)">编辑</a>
+
+                                    <el-popconfirm
+                                            confirmButtonText='是的'
+                                            cancelButtonText='不用了'
+                                            icon="el-icon-info"
+                                            iconColor="red"
+                                            title="确定删除这篇草稿吗？"
+                                            @confirm="delDrafts(index,item.id,item.type)"
+                                    >
+                                        <a href="javascript:void(0);" slot="reference">删除</a>
+                                    </el-popconfirm>
+                                </div>
                             </li>
 
                         </ul>
@@ -65,6 +78,10 @@
                     this.pageProperty = "Doc";
                 }
 
+            },
+
+            sayHi(){
+              console.log("hi");
             },
 
 
@@ -111,14 +128,14 @@
                             if(value.data.status === 1){
                                 this.draftsList.splice(index, 1);
 
-                                this.$notify({
-                                    title: '删除成功!',
+                                this.$message({
+                                    message: '删除成功!',
                                     type: 'success'
                                 });
 
                             }else{
-                                this.$notify({
-                                    title: '删除失败!',
+                                this.$message({
+                                    message: '删除失败!',
                                     type: 'error'
                                 });
                             }
@@ -142,14 +159,14 @@
                             if(value.data.status === 1){
                                 this.draftsList.splice(index, 1);
 
-                                this.$notify({
-                                    title: '删除成功!',
+                                this.$message({
+                                    message: '删除成功!',
                                     type: 'success'
                                 });
 
                             }else{
-                                this.$notify({
-                                    title: '删除失败!',
+                                this.$message({
+                                    message: '删除失败!',
                                     type: 'error'
                                 });
                             }

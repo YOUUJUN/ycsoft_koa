@@ -74,7 +74,10 @@
                         topicName : item.topicName
                     }
                 }).then(res => {
-                    alert(res.data.data);
+                    this.$message({
+                        message: res.data.data,
+                        type: 'success'
+                    });
                     if(res.data.status == '1'){
                         item.ifFocused = true;
                     }else if(res.data.status == '2'){

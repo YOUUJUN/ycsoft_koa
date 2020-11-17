@@ -16,6 +16,7 @@ const query = (sql, val) => {
                         reject(err)
                     }else {
                         resolve(fields);
+                        console.log('-----------连接池连接数--->for now:---------',pool._allConnections.length);
                         connection.release();
                     }
                 })
