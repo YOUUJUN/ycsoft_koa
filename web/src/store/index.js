@@ -302,43 +302,43 @@ export default new Vuex.Store({
     contactImgList : [
       // {
       //   name : '',
-      //   path : '/images/contact/item1.png'
+      //   path : '/images/contact/item1.jpg'
       // },
       // {
       //   name : '',
-      //   path : '/images/contact/item2.png'
+      //   path : '/images/contact/item2.jpg'
       // },
       {
         name : '',
-        path : '/images/contact/item3.png'
+        path : '/images/contact/item3.jpg'
       },
       {
         name : '',
-        path : '/images/contact/item4.png'
+        path : '/images/contact/item4.jpg'
       },
       {
         name : '',
-        path : '/images/contact/item5.png'
+        path : '/images/contact/item5.jpg'
       },
       {
         name : '',
-        path : '/images/contact/item6.png'
+        path : '/images/contact/item6.jpg'
       },
       {
         name : '',
-        path : '/images/contact/item7.png'
+        path : '/images/contact/item7.jpg'
       },
       {
         name : '',
-        path : '/images/contact/item8.png'
+        path : '/images/contact/item8.jpg'
       },
       {
         name : '',
-        path : '/images/contact/item9.png'
+        path : '/images/contact/item9.jpg'
       },
       {
         name : '',
-        path : '/images/contact/item10.png'
+        path : '/images/contact/item10.jpg'
       }
     ]
 

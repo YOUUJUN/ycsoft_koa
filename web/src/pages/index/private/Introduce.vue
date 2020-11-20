@@ -13,7 +13,7 @@
                     <h2>可视化网站编辑工具预览</h2>
 
                     <div class="document wow zoomIn">
-                        <span>玉成软件科技有限责任公司成立于2007年,位于安徽铜陵<br>长期专注于软件技术平台（PaaS）、企业管理软件、ERP管理软件和再生行业，软件开发、实施</span>
+                        <span>快速构建自适应页面，便捷绑定交互数据</span>
                     </div>
 
                     <div class="container panel-body">
@@ -64,7 +64,8 @@
             <h2 data-v-3aad87a2="">高效方案 赋能企业</h2>
 
             <div class="document wow zoomIn">
-                <span>Yckjsoft致力于<b class="txt-target">平台性软件PaaS</b></span>
+<!--                <span>Yckjsoft致力于<b class="txt-target">平台性软件PaaS</b></span>-->
+                <span>专注于软件技术平台（PaaS）、企业管理软件、ERP管理软件和再生行业，软件开发、实施</span>
             </div>
 
             <div class="container">
