@@ -80,7 +80,10 @@ export default new Vuex.Store({
         name : "报废车管家-回收流程介绍",
         document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
         images : ["/images/template/platform-demo1.png","/images/template/platform-demo1.png","/images/template/platform-demo1.png"],
-        detailUrl : "/products/details",
+        media : {
+          type : "image",
+          url : "/images/template/bfcgj/index.png"
+        },
         addressUrl : "/"
       },
       {
@@ -88,7 +91,10 @@ export default new Vuex.Store({
         name : "报废车管家-财务系统介绍",
         document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
         images : ["/images/template/platform-demo1.png","/images/template/platform-demo1.png","/images/template/platform-demo1.png"],
-        detailUrl : "/products/details",
+        media : {
+          type : "image",
+          url : "/images/template/bfcgj/index.png"
+        },
         addressUrl : "/"
       },
       {
@@ -96,7 +102,10 @@ export default new Vuex.Store({
         name : "商家管理系统",
         document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
         images : ["/images/template/platform-demo1.png","/images/template/platform-demo1.png","/images/template/platform-demo1.png"],
-        detailUrl : "",
+        media : {
+          type : "image",
+          url : "/images/template/bfcgj/index.png"
+        },
         addressUrl : "/"
       },
       {
@@ -104,7 +113,10 @@ export default new Vuex.Store({
         name : "商家管理系统",
         document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
         images : ["/images/template/platform-demo2.png","/images/template/platform-demo2.png"],
-        detailUrl : "",
+        media : {
+          type : "image",
+          url : "/images/template/bfcgj/index.png"
+        },
         addressUrl : "/"
       },
       {
@@ -112,7 +124,10 @@ export default new Vuex.Store({
         name : "商家管理系统",
         document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
         images : ["/images/template/platform-demo2.png"],
-        detailUrl : "",
+        media : {
+          type : "image",
+          url : "/images/template/bfcgj/index.png"
+        },
         addressUrl : "/"
       },
       {
@@ -120,7 +135,10 @@ export default new Vuex.Store({
         name : "商家管理系统",
         document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
         images : ["/images/template/platform-demo1.png"],
-        detailUrl : "",
+        media : {
+          type : "image",
+          url : "/images/template/bfcgj/index.png"
+        },
         addressUrl : "/"
       },
       {
@@ -128,7 +146,10 @@ export default new Vuex.Store({
         name : "商家管理系统",
         document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
         images : ["/images/template/platform-demo1.png","/images/template/platform-demo1.png"],
-        detailUrl : "",
+        media : {
+          type : "image",
+          url : "/images/template/bfcgj/index.png"
+        },
         addressUrl : "/"
       },
       {
@@ -136,7 +157,10 @@ export default new Vuex.Store({
         name : "商家管理系统",
         document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
         images : ["/images/template/platform-demo1.png","/images/template/platform-demo1.png"],
-        detailUrl : "",
+        media : {
+          type : "image",
+          url : "/images/template/bfcgj/index.png"
+        },
         addressUrl : "/"
       },
       {
@@ -144,7 +168,10 @@ export default new Vuex.Store({
         name : "商家管理系统",
         document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
         images : ["/images/template/platform-demo1.png","/images/template/platform-demo1.png"],
-        detailUrl : "",
+        media : {
+          type : "image",
+          url : "/images/template/bfcgj/index.png"
+        },
         addressUrl : "/"
       },
       {
@@ -152,7 +179,10 @@ export default new Vuex.Store({
         name : "商家管理系统",
         document : "该模板适用于商家类管理后台，布局方式采用左侧固定，右侧自适应方式，适合大量数据展示和界面操作 ",
         images : ["/images/template/platform-demo1.png","/images/template/platform-demo1.png"],
-        detailUrl : "",
+        media : {
+          type : "image",
+          url : "/images/template/bfcgj/index.png"
+        },
         addressUrl : "/"
       }
     ],
