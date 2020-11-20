@@ -77,7 +77,6 @@
                 let vm = this;
 
                 if(vm.preview){
-                    console.log('12');
                     vm.initPreView(vm.initData);
                 }else{
                     vm.initEditor();
@@ -89,7 +88,6 @@
                 if (markdown) {
                     config.markdown = markdown
                 }
-                console.log("markdown",markdown);
                 (async () => {
                     await vm.fetchScript('/lib/editor.md/jquery.min.js');
                     await vm.fetchScript('/lib/editor.md/lib/marked.min.js');
@@ -107,7 +105,6 @@
 
 
                         // vm.editor = window.editormd("editorId", config);
-                        console.log("id===>",this.id,'++>',config.markdown);
                         vm.editor = editormd.markdownToHTML(vm.id, config);
                         this.$refs["editorId"].classList.remove("hide");
 
@@ -197,7 +194,6 @@
             },
 
             syncContent(newValue, oldValue){
-                console.log("newValue =====>",newValue);
                 // this.config.markdown = newValue;
             }
         },

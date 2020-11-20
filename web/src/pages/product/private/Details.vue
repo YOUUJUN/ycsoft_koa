@@ -9,7 +9,7 @@
 
                 <el-breadcrumb separator-class="el-icon-arrow-right">
                     <el-breadcrumb-item :to="{ path: '/products' }"><i class="fa fa-reply" style="margin-right:4px;"></i>产品&&方案</el-breadcrumb-item>
-                    <el-breadcrumb-item>{{randerData.name}}</el-breadcrumb-item>
+                    <el-breadcrumb-item>{{renderData.name}}</el-breadcrumb-item>
                 </el-breadcrumb>
 
             </div>
@@ -22,10 +22,10 @@
             <figure class="area cols-6">
 
 
-                <img v-if="randerData.media.type === `image`" class="showImg" v-bind:src="randerData.media.url">
+                <img v-if="renderData.media.type === `image`" class="showImg" v-bind:src="renderData.media.url">
 
                 <template v-else>
-                    <stream-video v-bind:src="randerData.media.url" v-bind:poster="randerData.media.poster"></stream-video>
+                    <stream-video v-bind:src="renderData.media.url" v-bind:poster="renderData.media.poster"></stream-video>
                 </template>
 
 
@@ -33,11 +33,11 @@
 
             <aside class="area cols-6 introduce">
 
-                <h2>{{randerData.name}}</h2>
+                <h2>{{renderData.name}}</h2>
 
                 <el-divider></el-divider>
 
-                <p>{{randerData.document}}</p>
+                <p>{{renderData.introduction}}</p>
             </aside>
 
         </article>
@@ -48,7 +48,9 @@
 
             <figure class="area cols-7 details-content">
                 <h3 class="details-title">详细信息</h3>
-                <img src="/images/product/detailContent.gif" style="width:100%;height:auto">
+
+                <editor-md v-bind:config="config" v-bind:preview="true" v-bind:initData="renderData.document"></editor-md>
+
             </figure>
 
             <aside class="area cols-4 details-aside">
@@ -75,14 +77,15 @@
 
 <script>
     const streamVideo = () => import("../../../components/StreamVideo.vue");
+    const editorMd = () => import("../../../components/Mymd.vue");
 
     export default {
         name: "Details",
-        components : {streamVideo},
+        components : {streamVideo, editorMd},
         data (){
             return {
                 productsList : this.$store.state.productsList,
-                randerData : {}
+                renderData : {}
             }
         },
 
@@ -93,8 +96,8 @@
         created() {
             var name = this.$route.params.name;
             let item = this.$store.getters.getProductByName(name);
-            this.randerData = item[0];
-            console.log("randerData ====>",this.randerData);
+            this.renderData = item[0];
+            console.log("renderData ====>",this.renderData);
         }
     }
 </script>
@@ -138,13 +141,13 @@
     }
 
     .details-container{
+        margin-bottom: 60px;
         justify-content: space-between;
     }
 
     .details-content{
         position: relative;
         z-index: 2;
-        margin-bottom: 60px;
     }
 
     .head-container::before, .details-content::before, .details-aside::before {
@@ -187,7 +190,6 @@
     .details-aside{
         position: relative;
         z-index: 2;
-        margin-bottom: 60px;
     }
 
 
