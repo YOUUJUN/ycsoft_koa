@@ -6,26 +6,19 @@
 
             <div class="area cols-12">
 
-                <el-row> <el-col :span="24">
+                <el-tabs :tab-position="tabPosition">
 
-                    <el-tabs :tab-position="tabPosition">
+                    <el-tab-pane v-for="(item, index) in solutionList" v-bind:label="item.name">
 
-                        <el-tab-pane v-for="item of solutionList" v-bind:label="item.name">
+<!--                        <span>{{index}}</span>-->
 
-                            <h2 class="solution-title">{{item.title}}</h2>
+<!--                        v-bind:initData="item.content"-->
+                        <editor-md v-bind:config="config" v-bind:preview="true" v-bind:initData="item.content"></editor-md>
 
-                            <el-divider></el-divider>
+                    </el-tab-pane>
+                </el-tabs>
 
-                            <p class="solution-content">{{item.content}}</p>
-
-
-
-                        </el-tab-pane>
-
-                    </el-tabs>
-
-                </el-col> </el-row>
-
+<!--                <editor-md v-bind:config="config" v-bind:preview="true" v-bind:initData="solutionList[0].content"></editor-md>-->
 
 
             </div>
@@ -37,20 +30,42 @@
 </template>
 
 <script>
+    const editorMd = () => import("../../../components/Mymd.vue");
+
     export default {
         name: "Tabs",
-
+        components : {editorMd},
         data() {
             return {
                 solutionList : this.$store.state.solutionList,
+                tabPosition: 'left',
 
-                tabPosition: 'left'
+                config : {
+                    htmlDecode: "style,script,iframe",
+                    emoji: true,
+                    taskList: true,
+                    tex: true, // 默认不解析
+                    flowChart: true, // 默认不解析
+                    sequenceDiagram: true, // 默认不解析
+                    codeFold: true
+                }
             };
         },
+
+
         methods: {
             handleClick(tab, event) {
                 console.log(tab, event);
+            },
+
+            inItView(ref, content){
+                console.log("ref",ref);
+                // this.$refs["mymd"].initPreView(content);
             }
+        },
+
+        mounted() {
+            console.log(this.$refs)
         }
     }
 
@@ -78,13 +93,16 @@
     }
 
     .el-tabs{
-        height:600px;
+        height:800px;
         border-radius: 4px;
     }
 
 
     .el-tabs__content{
         padding:40px;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: auto;
     }
 
 

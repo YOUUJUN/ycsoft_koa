@@ -13,7 +13,7 @@
                     <h2>可视化网站编辑工具预览</h2>
 
                     <div class="document wow zoomIn">
-                        <span>快速构建自适应页面，便捷绑定交互数据</span>
+                        <span>玉成软件科技有限责任公司成立于2007年,位于安徽铜陵<br>长期专注于软件技术平台（PaaS）、企业管理软件、ERP管理软件和再生行业，软件开发、实施</span>
                     </div>
 
                     <div class="container panel-body">
@@ -29,11 +29,11 @@
 
                             <div class="detail-doc wow fadeInRight">
                                 <h2>
-                                    <span style="color:#248aff;">页面构建</span>，高效快速
+                                    <span style="color:#248aff;">企业软件</span>，稳定高效
                                 </h2>
-                                <p>文字/图片/语音/手写/OCR/Markdown等多种形式，随时随地记录你的精彩。全面兼容office、PDF等办公常用文档，无需下载即可查看编辑。</p>
+                                <p>专注于企业管理软件、ERP管理软件软件开发、实施；参与和主导国家商务部、发改委、农业部、中国汽车技术研究中心的多个大型的软件项目设计和开发，拥有一支实力雄厚的软件设计、开发和实施经验的技术团队</p>
 
-                                <el-button round @click="goTo('http://dev.bfcgj.com/login.html')">立即体验</el-button>
+                                <el-button round @click="goTo('http://dev.bfcgj.com/login.html')">更多详情</el-button>
 <!--                                <el-button round @click="goTo('http://dev.bfcgj.com/login.html')">立即体验</el-button>-->
 
 
@@ -449,7 +449,7 @@
     }
 
     .list-item{
-        padding: 30px 0;
+        padding: 40px 0;
         border-top-left-radius: 4px;
         border-bottom-left-radius: 4px;
         transition: background .4s;
@@ -464,18 +464,20 @@
     }
 
     .list-item .item-icon{
-        width : 60px;
+        float:left;
+        width : 50px;
+        margin-left:10px;
         vertical-align: middle;
     }
 
     .item-title{
         display: inline-block;
-        margin-left: 30px;
+        margin-left: 5px;
         vertical-align: middle;
     }
 
     .item-title p{
-        font-size: 20px;
+        font-size: 16px;
         color: #2a333c;
     }
 

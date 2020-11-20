@@ -1,7 +1,7 @@
 <template>
     <div class="markdown-editor-box">
         <link rel="stylesheet" href="/lib/editor.md/css/editormd.css">
-        <div id="editorId" ref="editorId" class="hide"></div>
+        <div v-bind:id="id" ref="editorId" class="editorId hide"></div>
     </div>
 </template>
 <script>
@@ -25,6 +25,7 @@
         },
         data: function () {
             return {
+                id : "null",
                 editor: null,
                 timer: null,
                 doc: {},
@@ -67,10 +68,16 @@
             setMarkdown: function (markdown) {
                 return this.editor.setMarkdown(markdown)
             },
+
+            idGenerator(hashLength){
+                return Array.from(Array(Number(hashLength) || 24), () => Math.floor(Math.random() * 36).toString(36)).join('');
+            },
+
             init () {
                 let vm = this;
 
                 if(vm.preview){
+                    console.log('12');
                     vm.initPreView(vm.initData);
                 }else{
                     vm.initEditor();
@@ -82,6 +89,7 @@
                 if (markdown) {
                     config.markdown = markdown
                 }
+                console.log("markdown",markdown);
                 (async () => {
                     await vm.fetchScript('/lib/editor.md/jquery.min.js');
                     await vm.fetchScript('/lib/editor.md/lib/marked.min.js');
@@ -99,14 +107,15 @@
 
 
                         // vm.editor = window.editormd("editorId", config);
-                        vm.editor = editormd.markdownToHTML("editorId", config);
+                        console.log("id===>",this.id,'++>',config.markdown);
+                        vm.editor = editormd.markdownToHTML(vm.id, config);
                         this.$refs["editorId"].classList.remove("hide");
 
                         // vm.editor.on('load', () => {
                         //     vm.editor.setMarkdown("hello");
                         // });
                         vm.editor.on('change', () => {
-                            vm.editor = editormd.markdownToHTML("editorId", config);
+                            vm.editor = editormd.markdownToHTML(vm.id, config);
 
                             // let html = vm.editor.getPreviewedHTML()
                             // vm.onchange({
@@ -156,7 +165,7 @@
                             observer.observe(codeMirror,config);
                         };
 
-                        vm.editor = editormd("editorId", config);
+                        vm.editor = editormd(vm.id, config);
                         vm.markdownChecker = true;
                         this.$refs["editorId"].classList.remove("hide");
 
@@ -184,7 +193,7 @@
                 docArea.innerHTML = '';
                 docArea.appendChild(textArea);
                 textArea.value = newV;
-                editormd.markdownToHTML("editorId", this.config);
+                editormd.markdownToHTML(this.id, this.config);
             },
 
             syncContent(newValue, oldValue){
@@ -192,6 +201,11 @@
                 // this.config.markdown = newValue;
             }
         },
+
+        created(){
+            this.id = this.idGenerator();
+        },
+
         mounted: function () {
             let vm = this;
             vm.init();
@@ -218,7 +232,7 @@
     }
 </script>
 <style>
-    #editorId{
+    .editorId{
         box-sizing: border-box;
         z-index: 998;
     }

@@ -7,9 +7,9 @@
 
                 <div class="banner-inner">
 
-                    <h2 class="banner-title">联系我们</h2>
+                    <h2 class="banner-title">关于我们</h2>
 
-                    <p class="banner-description">企业管理软件私人定制，提供多种企业管理应用支持，基于 GUI 工具快速创建项目，支持风格切换，满足个性化需求</p>
+                    <p class="banner-description">专注于软件技术平台（PaaS）、企业管理软件、ERP管理软件和再生行业（主要是报废车、总成再制造、动力电池回收）软件开发、实施</p>
 
                 </div>
 
