@@ -6,8 +6,8 @@
             <div class="area cols-md-9 cols-md-offset-1">
 
 <!--                <h1 class="banner-title">提供企业在线管理软件（SAAS）服务，快速、简单、可靠的可视化网站构建工具。</h1>-->
-                <h1 class="banner-title">创新是引领发展的第一动力<br>面向企业财务核算、财务业务一体化、PaaS云开发平台的人工智能已经到来</h1>
-                <h1 class="banner-title"></h1>
+                <h1 class="banner-title level-1">创新是引领发展的第一动力</h1>
+                <h1 class="banner-title level-2">面向企业财务核算、财务业务一体化、PaaS云开发平台的人工智能已经到来</h1>
                 <div>
                     <a class="banner-btn" href="http://dev.bfcgj.com/login.html" target="_blank">开始使用</a>
                     <a class="banner-btn" href="/guide">查看文档</a>
@@ -50,6 +50,14 @@
         font-weight: 700;
         text-transform: uppercase;
         text-shadow: 5px 5px #1476A2;
+    }
+
+    .level-1{
+        margin-bottom: 20px;
+    }
+
+    .level-2{
+        font-size: 46px;
     }
 
     .banner-btn {

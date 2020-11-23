@@ -17,7 +17,7 @@
 
                         <template v-for="item in list">
 
-                            <li v-on:mouseenter="startAnimation()" v-on:mouseleave="endAnimation()">
+                            <li v-on:mouseenter="startAnimation($event)" v-on:mouseleave="endAnimation($event)">
 
                                 <a v-bind:class="item.active" v-bind:target="item.target" v-bind:href="item.href">{{item.name}}</a><span class="ribbon"></span>
                             </li>
@@ -155,7 +155,7 @@
             }
         },
         methods : {
-            startAnimation () {
+            startAnimation (event) {
                 let ribbon = event.target.querySelector(".ribbon");
                 $(ribbon).stop().css('height','2px');
                 $(ribbon).animate({
@@ -164,7 +164,7 @@
                     right:'0'
                 },200);
             },
-            endAnimation (){
+            endAnimation (event){
                 let ribbon = event.target.querySelector(".ribbon");
                 $(ribbon).stop().animate({
                     left:'50%',

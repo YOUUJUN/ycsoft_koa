@@ -5,39 +5,60 @@
 <!--            Toggle-->
 <!--        </button>-->
 
-        <section class="body-container">
+        <section class="product-container">
 
             <div class="container">
                 <div class="area cols-12">
 
-                    <h2>可视化网站编辑工具预览</h2>
+                    <h2>产品&&服务</h2>
 
-                    <div class="document wow zoomIn">
-                        <span>快速构建自适应页面，便捷绑定交互数据</span>
+                    <div class="document wow zoomIn" style="margin-bottom: 0;">
+                        <span>聚集全网最新鲜的创意，直击用户需求</span>
+                        <span>海量优质素材，快速锁定优质商品、图片、视频</span>
                     </div>
 
-                    <div class="container panel-body">
 
-                        <div class="area cols-6 ic-panel" style="text-align: center">
+                    <div class="panel-body" style="margin-top: 0;">
 
-                            <img  class="ic-1-cone wow fadeInLeft" src="/images/template/ic-cone.svg" alt="cone" style="left:0;">
-                            <img class="ic-0 wow lightSpeedIn" src="/images/showimg1.png">
+                        <div class="product-nav">
+
+                            <ul class="menu" ref="productMenu">
+                                <li v-for="(item, index) in products"  v-on:mouseenter="startAnimation(item, index, $event)" v-on:mouseleave="endAnimation($event)">
+                                    <a v-bind:href="item.href">{{item.name}}</a><span class="ribbon"></span>
+                                </li>
+
+                                <li>
+                                    <el-button type="primary">更多产品<i class="el-icon-upload el-icon--right"></i></el-button>
+                                </li>
+                            </ul>
 
                         </div>
 
-                        <div class="area cols-6" style="overflow: hidden;">
+                        <div class="container product-content">
 
-                            <div class="detail-doc wow fadeInRight">
-                                <h2>
-                                    <span style="color:#248aff;">企业软件</span>，稳定高效
-                                </h2>
-                                <p>专注于企业管理软件、ERP管理软件软件开发、实施；参与和主导国家商务部、发改委、农业部、中国汽车技术研究中心的多个大型的软件项目设计和开发，拥有一支实力雄厚的软件设计、开发和实施经验的技术团队</p>
+                            <div class="area cols-3" style="padding:0;">
 
-<!--                                <el-button round @click="goTo('http://dev.bfcgj.com/login.html')">更多详情</el-button>-->
-                                <el-button round @click="test()">更多详情</el-button>
-<!--                                <el-button round @click="goTo('http://dev.bfcgj.com/login.html')">立即体验</el-button>-->
+                                <aside class="product-aside">
+
+                                    <div class="wow lightSpeedIn">
+                                        <h3>{{productRender.name}}</h3>
+
+                                        <p>{{productRender.introduction}}</p>
+
+                                        <el-button round @click="goTo('/products/details/'.concat(productRender.name), '__self')">更多详情</el-button>
+                                    </div>
 
 
+                                </aside>
+
+                            </div>
+
+                            <div class="area cols-9" style="padding:0;">
+
+                                <article class="product-article">
+
+
+                                </article>
 
                             </div>
 
@@ -45,14 +66,33 @@
 
                     </div>
 
-<!--                    <div class="img-box">-->
-
-<!--                        <img class="wow lightSpeedIn" src="images/showimg1.png">-->
-
-<!--                    </div>-->
 
 
-                    <!--                <el-divider><i class="el-icon-cpu"></i></el-divider>-->
+
+                    <!--<div class="container panel-body">
+
+                        <div class="area cols-6 ic-panel" style="text-align: center">
+                            <img  class="ic-1-cone wow fadeInLeft" src="/images/template/ic-cone.svg" alt="cone" style="left:0;">
+                            <img class="ic-0 wow lightSpeedIn" src="/images/showimg1.png">
+                        </div>
+
+                        <div class="area cols-6" style="overflow: hidden;">
+                            <div class="detail-doc wow fadeInRight">
+                                <h2>
+                                    <span style="color:#248aff;">企业软件</span>，稳定高效
+                                </h2>
+                                <p>专注于企业管理软件、ERP管理软件软件开发、实施；参与和主导国家商务部、发改委、农业部、中国汽车技术研究中心的多个大型的软件项目设计和开发，拥有一支实力雄厚的软件设计、开发和实施经验的技术团队</p>
+
+                                <el-button round @click="goTo('http://dev.bfcgj.com/login.html')">更多详情</el-button>
+
+
+
+                            </div>
+                        </div>
+
+                    </div>-->
+
+
 
                 </div>
             </div>
@@ -60,7 +100,7 @@
         </section>
 
 
-        <section class="product-container">
+        <section class="solution-container">
 
             <h2 data-v-3aad87a2="">高效方案 赋能企业</h2>
 
@@ -75,7 +115,7 @@
 
                     <ul class="product-list wow fadeInLeft animated" ref="list">
 
-                        <li class="list-item" v-for="(item,index) of solutionList" v-on:mouseenter="actProduct(item,index, $event)">
+                        <li class="list-item" v-for="(item,index) of solutionList" v-on:mouseenter="actSolution(item,index, $event)">
 
                             <img class="item-icon" v-bind:src="item.icon">
 
@@ -92,10 +132,10 @@
 
                 <div class="area cols-9">
 
-                    <div class="product-panel wow fadeInRight animated">
+                    <div class="solution-panel wow fadeInRight animated">
 
 
-                        <div class="product-doc wow bounceInUp animated"  ref="doc">
+                        <div class="solution-doc wow bounceInUp animated"  ref="doc">
 
                             <h4 class="doc-title">{{showContent.name}}</h4>
 
@@ -120,11 +160,10 @@
 
         <section>
 
-            <h2>产品&&服务</h2>
+            <h2>可视化网站编辑工具预览</h2>
 
             <div class="document wow flipInY">
-                <span>聚集全网最新鲜的创意，直击用户需求</span>
-                <span>海量优质素材，快速锁定优质商品、图片、视频</span>
+                <span>快速构建自适应页面，便捷绑定交互数据</span>
             </div>
 
             <div class="container panel-body">
@@ -203,6 +242,11 @@
         data(){
             return {
                 show : false,
+                productRender : {
+                    name : null,
+                    introduction : null,
+                    media : null
+                },
                 showContent : {
                     title : null,
                     tips : null,
@@ -212,7 +256,46 @@
         },
 
         methods : {
-            actProduct (item, index){
+
+            startAnimation (item, index, event) {
+                let ribbon = event.target.querySelector(".ribbon");
+                $(ribbon).stop().css('height','2px');
+                $(ribbon).animate({
+                    left:'0',
+                    width:'100%',
+                    right:'0'
+                },200,() => {
+                    event.target.classList.add("nav-current");
+                });
+
+                let menu = this.$refs['productMenu'];
+                let childs = menu.querySelectorAll("li");
+                childs = Array.prototype.slice.call(childs);
+                for(let item of childs){
+                    item.classList.remove("nav-current");
+                }
+
+                this.actProduct(item, index);
+            },
+            endAnimation (event){
+                let ribbon = event.target.querySelector(".ribbon");
+                $(ribbon).stop().animate({
+                    left:'50%',
+                    width:'0'
+                },400);
+            },
+
+            actProduct(item, index){
+                let vm = this;
+
+                vm.productRender = {
+                    name : item.name,
+                    introduction : item.introduction,
+                    media : item.media
+                }
+            },
+
+            actSolution (item, index){
 
                 let vm = this;
                 let shell = vm.$refs['list'];
@@ -245,23 +328,19 @@
                 }
             },
 
-
-            test (){
-                this.$axios({
-                    method : "GET",
-                    url : '/ok',
-                    data : {
-                        getBody : "well ok then"
-                    }
-                })
-            }
         },
 
 
         computed : {
             solutionList (){
                 let data = this.$store.state.solutionList;
-                let renderData = data.splice(0, 4);
+                let renderData = data.slice(0, 4);
+                return renderData;
+            },
+
+            products () {
+                let data = this.$store.state.productsList;
+                let renderData = data.slice(0, 2);
                 return renderData;
             }
         },
@@ -272,7 +351,9 @@
                 console.log("new WOW()",new WOW());
                 new WOW().init();
             }
-            this.actProduct(this.solutionList[0], 0);
+
+            this.actProduct(this.products[0],0);
+            this.actSolution(this.solutionList[0], 0);
         },
 
         created() {
@@ -339,7 +420,7 @@
         margin: 20px 0 20px 0;
     }
 
-    .body-container{
+    .product-container{
         overflow: hidden;
     }
 
@@ -374,6 +455,106 @@
             padding: 10px;
         }
     }
+
+
+    /*--product container--*/
+
+    .product-content{
+        width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .product-nav{
+        text-align: right;
+        margin:8px 0;
+    }
+
+
+    .product-aside{
+        padding: 80px 10px 0;
+        height: 360px;
+        background-image: url('https://kingdeecms-1252177366.cos.ap-guangzhou.myqcloud.com/u/cms/www/202009/16101959kt4q.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .product-aside h3{
+        text-align: center;
+        color: rgba(0,0,0,0.7);
+        font-size: 27px;
+    }
+
+    .product-aside p {
+        color: rgba(0,0,0,0.6);
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .product-article{
+        background: #f5f7fa;
+        height: 100%;
+        padding:50px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    .menu{
+        display: inline-block;
+        height: 46px;
+        padding:0;
+        padding-bottom: 2px;
+        margin:0;
+    }
+
+    .menu li{
+        list-style:none;
+        display:inline-block;
+        position:relative;
+        margin-right: 5px;
+    }
+
+    .menu li:after{
+        border-bottom:2px solid #e67e22;
+        margin-bottom:-2px;
+    }
+
+
+
+    .menu li a{
+        font-family: Libre Baskerville;
+        color: rgba(0,0,0,0.5);
+        font-size:15px;
+        font-weight:400;
+        line-height:40px;
+        display:block;
+        padding: 0 15px;
+        text-decoration:none;
+        cursor:pointer;
+    }
+
+    .menu li a:hover{
+        color: #409eff;
+        outline: none;
+    }
+
+    #main-menu{
+        overflow:hidden;
+    }
+
+    .nav-current {
+        border-bottom: 2px solid #409eff;
+    }
+
+    .ribbon{
+        display:block;
+        position:absolute;
+        background:#409eff;
+        top:40px;
+        left:50%;
+    }
+
 
 
     /*------*/
@@ -441,22 +622,22 @@
 
     /*---product container---*/
 
-    .product-container{
+    .solution-container{
         background: #f5f8f6;
         padding: 30px 0;
     }
 
-    .product-container .cols-3{
+    .solution-container .cols-3{
         padding-right: 0;
         border-right: none;
     }
 
-    .product-container .cols-9{
+    .solution-container .cols-9{
         padding-left: 0;
         border-left: none;
     }
 
-    .product-container h2{
+    .solution-container h2{
         color:#21cd97;
         margin-top:0;
     }
@@ -496,7 +677,7 @@
 
     /*--right--*/
 
-    .product-panel{
+    .solution-panel{
         background-image: url("/images/index/product_bg.jpg");
         width: 100%;
         height: 100%;
@@ -510,7 +691,7 @@
         border-bottom-right-radius: 4px;
     }
 
-    .product-doc{
+    .solution-doc{
         color:#ffff;
         transition: all .2s;
     }
