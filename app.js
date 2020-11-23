@@ -12,6 +12,11 @@ const session = require('koa-session');
 const jwt = require("jsonwebtoken");
 const TOKENSECRET = require("./utils/config/tokensecret");
 
+const watchDags = require("./middlewares/watchdog");
+
+app.use(watchDags());
+
+
 /*---登录状态检测中间件---*/
 app.use( async (ctx, next) =>{
   if(ctx.url.match(/^\/community/) || ctx.url.match(/^\/personal/) || ctx.url.match(/^\/users/) || ctx.url.match(/^\/editor/) || ctx.url.match(/^\/offline/)){
@@ -56,18 +61,21 @@ app.use(require('koa-static')(__dirname + '/vue-public'));
 // }));
 
 
-
 // logger
 app.use(async (ctx, next) => {
   const start = new Date();
   await next();
   const ms = new Date() - start;
-  console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
+  let now = new Date().toLocaleString();
+  let memoryStatus = process.memoryUsage();
+  console.log("memoryStatus===>",memoryStatus);
+  console.log(`${now} ${ctx.method} ${ctx.url} - ${ms}ms`);
 });
 
 // error-handling
 app.on('error', (err, ctx) => {
-  console.error('server error', err, ctx);
+  let now = new Date().toLocaleString();
+  console.error('server error',now, err, ctx);
 });
 
 module.exports = app;

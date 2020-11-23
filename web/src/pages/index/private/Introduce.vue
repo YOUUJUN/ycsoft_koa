@@ -33,7 +33,8 @@
                                 </h2>
                                 <p>专注于企业管理软件、ERP管理软件软件开发、实施；参与和主导国家商务部、发改委、农业部、中国汽车技术研究中心的多个大型的软件项目设计和开发，拥有一支实力雄厚的软件设计、开发和实施经验的技术团队</p>
 
-                                <el-button round @click="goTo('http://dev.bfcgj.com/login.html')">更多详情</el-button>
+<!--                                <el-button round @click="goTo('http://dev.bfcgj.com/login.html')">更多详情</el-button>-->
+                                <el-button round @click="test()">更多详情</el-button>
 <!--                                <el-button round @click="goTo('http://dev.bfcgj.com/login.html')">立即体验</el-button>-->
 
 
@@ -79,7 +80,7 @@
                             <img class="item-icon" v-bind:src="item.icon">
 
                             <div class="item-title">
-                                <p class="ch">{{item.name}}</p>
+                                <p class="ch">{{item.title}}</p>
                                 <span>{{item.name_en}}</span>
                             </div>
 
@@ -96,7 +97,7 @@
 
                         <div class="product-doc wow bounceInUp animated"  ref="doc">
 
-                            <h4 class="doc-title">{{showContent.title}}</h4>
+                            <h4 class="doc-title">{{showContent.name}}</h4>
 
                             <p class="doc-content">
                                 {{showContent.tips}}
@@ -221,7 +222,7 @@
                 shell.children[index].classList.add("active");
 
                 vm.showContent = {
-                    title : item.title,
+                    name : item.name,
                     tips : item.tips,
                     href : item.href
                 };
@@ -242,6 +243,17 @@
                 }else{
                     window.open(href, target);
                 }
+            },
+
+
+            test (){
+                this.$axios({
+                    method : "GET",
+                    url : '/ok',
+                    data : {
+                        getBody : "well ok then"
+                    }
+                })
             }
         },
 
@@ -492,7 +504,7 @@
         background-repeat: no-repeat;
         background-position: top;
         text-align: left;
-        padding:70px 35px;
+        padding:55px 35px;
         box-sizing: border-box;
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px;
