@@ -28,7 +28,7 @@
                                 </li>
 
                                 <li>
-                                    <el-button  size="medium">更多产品<i class="el-icon-d-arrow-right el-icon--right"></i></el-button>
+                                    <el-button  size="medium" @click="goTo('/products', 'location')">更多产品<i class="el-icon-d-arrow-right el-icon--right"></i></el-button>
                                 </li>
                             </ul>
 
@@ -45,7 +45,7 @@
 
                                         <p>{{productRender.introduction}}</p>
 
-                                        <el-button round @click="goTo('/products/details/'.concat(productRender.name), '__self')">更多详情</el-button>
+                                        <el-button round @click="goTo('/products/details/'.concat(productRender.name), 'location')">更多详情</el-button>
                                     </div>
 
 
@@ -172,7 +172,7 @@
 
                     <div class="detail-doc wow fadeInLeft">
                         <h2>
-                            车辆信息，<span style="color:#248aff;">高效记录</span>
+                            页面开发，<span style="color:#248aff;">快速便捷</span>
                         </h2>
                         <p>报废车管家ERP软件。全面兼容office、PDF等办公常用文档，无需下载即可查看编辑。</p>
 
@@ -216,7 +216,7 @@
 
                     <div class="detail-doc wow fadeInRight">
                         <h2>
-                            <span style="color:#248aff;">文档管理</span>，高效记录
+                            <span style="color:#248aff;">项目管理</span>，简单高效
                         </h2>
                         <p>文字/图片/语音/手写/OCR/Markdown等多种形式，随时随地记录你的精彩。全面兼容office、PDF等办公常用文档，无需下载即可查看编辑。</p>
                     </div>
