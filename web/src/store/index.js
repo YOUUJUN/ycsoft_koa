@@ -43,7 +43,7 @@ export default new Vuex.Store({
         href : "/community"
       },
       {
-        name : "Paas平台",
+        name : "PaaS平台",
         href : "http://erp.bfcgj.com/login.html",
         target : "_blank"
       }

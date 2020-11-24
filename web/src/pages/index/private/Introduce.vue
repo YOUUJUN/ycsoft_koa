@@ -13,8 +13,8 @@
                     <h2>核心产品与咨询服务</h2>
 
                     <div class="document wow zoomIn" style="margin-bottom: 0;">
-                        <span>聚集全网最新鲜的创意，直击用户需求</span>
-                        <span>海量优质素材，快速锁定优质商品、图片、视频</span>
+                        <span>核心产品，必是精品。融合Al识别，基于业务规则抽象+人工智能化分析</span>
+                        <span>复杂的事情且简单，传统方式不可行的事情变得可行，一切就是那么简单...</span>
                     </div>
 
 
@@ -102,7 +102,7 @@
 
         <section class="solution-container">
 
-            <h2 data-v-3aad87a2="">创新方案 集成智能</h2>
+            <h2 data-v-3aad87a2="">创新方案 集成 智能</h2>
 
             <div class="document wow zoomIn">
 <!--                <span>Yckjsoft致力于<b class="txt-target">平台性软件PaaS</b></span>-->
@@ -164,8 +164,8 @@
             <h2>PaaS平台 所见即所得</h2>
 
             <div class="document wow flipInY">
-                <span>站在前人的肩膀上，看得更高创新思维，挑战传统.</span>
-                <span>面向业务逻辑、面向切面和面向接口，构件化、松耦合、开放性、拖拽式.</span>
+                <span>站在前人的肩膀上，看得更高   创新思维，挑战传统.</span>
+                <span>面向业务逻辑、面向切面和面向接口，构件化、松耦合、开放性、拖拽式...</span>
             </div>
 
             <div class="container panel-body">
