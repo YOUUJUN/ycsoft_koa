@@ -28,7 +28,7 @@
                                 </li>
 
                                 <li>
-                                    <el-button type="primary">更多产品<i class="el-icon-upload el-icon--right"></i></el-button>
+                                    <el-button  size="medium">更多产品<i class="el-icon-d-arrow-right el-icon--right"></i></el-button>
                                 </li>
                             </ul>
 
@@ -285,6 +285,13 @@
                 },400);
             },
 
+            initProductNav(){
+                let menu = this.$refs['productMenu'];
+                let childs = menu.querySelectorAll("li");
+                childs = Array.prototype.slice.call(childs);
+                childs[0].classList.add('nav-current');
+            },
+
             actProduct(item, index){
                 let vm = this;
 
@@ -292,7 +299,7 @@
                     name : item.name,
                     introduction : item.introduction,
                     media : item.media
-                }
+                };
             },
 
             actSolution (item, index){
@@ -352,6 +359,7 @@
                 new WOW().init();
             }
 
+            this.initProductNav();
             this.actProduct(this.products[0],0);
             this.actSolution(this.solutionList[0], 0);
         },

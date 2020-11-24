@@ -76,6 +76,8 @@
     /*----!---*/
 
     .el-tabs__header {
+        height: 100%;
+        min-height: 800px;
         background: #f7f7f7;
         box-sizing: border-box;
     }
@@ -93,7 +95,7 @@
     }
 
     .el-tabs{
-        height:800px;
+        height:100%;
         border-radius: 4px;
     }
 
