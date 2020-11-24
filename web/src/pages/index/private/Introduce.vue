@@ -161,10 +161,11 @@
 
         <section>
 
-            <h2>可视化网站编辑工具预览</h2>
+            <h2>PaaS平台 所见即所得</h2>
 
             <div class="document wow flipInY">
-                <span>快速构建自适应页面，便捷绑定交互数据</span>
+                <span>站在前人的肩膀上，看得更高创新思维，挑战传统.</span>
+                <span>面向业务逻辑、面向切面和面向接口，构件化、松耦合、开放性、拖拽式.</span>
             </div>
 
             <div class="container panel-body">

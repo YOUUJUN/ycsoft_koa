@@ -176,9 +176,9 @@ module.exports = function(){
         },
 
         chainWebpack: config => {
-            config
-                .plugin('webpack-bundle-analyzer')
-                .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin);
+            // config
+            //     .plugin('webpack-bundle-analyzer')
+            //     .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin);
 
             const entry = Object.keys(buildPageSync())
             for (const iterator of entry) {
