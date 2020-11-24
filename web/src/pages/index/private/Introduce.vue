@@ -258,6 +258,7 @@
         methods : {
 
             startAnimation (item, index, event) {
+
                 let ribbon = event.target.querySelector(".ribbon");
                 $(ribbon).stop().css('height','2px');
                 $(ribbon).animate({
@@ -278,11 +279,13 @@
                 this.actProduct(item, index);
             },
             endAnimation (event){
+
                 let ribbon = event.target.querySelector(".ribbon");
                 $(ribbon).stop().animate({
                     left:'50%',
                     width:'0'
                 },400);
+
             },
 
             initProductNav(){
@@ -482,7 +485,7 @@
     .product-aside{
         padding: 80px 10px 0;
         height: 360px;
-        background-image: url('https://kingdeecms-1252177366.cos.ap-guangzhou.myqcloud.com/u/cms/www/202009/16101959kt4q.jpg');
+        background-image: url("/images/index/product_bg3.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
