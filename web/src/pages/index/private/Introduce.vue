@@ -10,7 +10,7 @@
             <div class="container">
                 <div class="area cols-12">
 
-                    <h2>产品&&服务</h2>
+                    <h2>核心产品与咨询服务</h2>
 
                     <div class="document wow zoomIn" style="margin-bottom: 0;">
                         <span>聚集全网最新鲜的创意，直击用户需求</span>
@@ -350,7 +350,10 @@
 
             products () {
                 let data = this.$store.state.productsList;
-                let renderData = data.slice(0, 2);
+                let specific = ['报废车管家','财务管理系统'];
+                let renderData = data.filter((item, index, arr)=>{
+                    return specific.includes(item.name);
+                });
                 return renderData;
             }
         },
@@ -715,6 +718,7 @@
         font-size: 14px;
         line-height: 2;
         margin:20px 0 35px;
+        white-space: break-spaces;
     }
 
 
