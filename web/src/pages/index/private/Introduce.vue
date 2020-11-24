@@ -102,11 +102,12 @@
 
         <section class="solution-container">
 
-            <h2 data-v-3aad87a2="">高效方案 赋能企业</h2>
+            <h2 data-v-3aad87a2="">创新方案 集成智能</h2>
 
             <div class="document wow zoomIn">
 <!--                <span>Yckjsoft致力于<b class="txt-target">平台性软件PaaS</b></span>-->
-                <span>专注于软件技术平台（PaaS）、企业管理软件、ERP管理软件和再生行业，软件开发、实施</span>
+                <span>专注财务与业务信息化集成解决方案20多年，本着智能、简捷、高效、实用的原则，深入本质</span>
+                <span>创新方案：松耦合、紧集成，真正可分可、合、可正可逆，高度智能化特点...</span>
             </div>
 
             <div class="container">
