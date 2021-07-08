@@ -136,7 +136,7 @@ module.exports = function(){
         filenameHashing : false,
         pages : buildPageSync(),
         devServer : {
-            port : 8081,
+            port : 8090,
             hot : true,
             open: false //是否自动打开浏览器
         },

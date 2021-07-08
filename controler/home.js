@@ -88,7 +88,7 @@ module.exports = {
 
 
     index : async (ctx,next) =>{
-
+        console.log("next===>",next);
         let requestBody = ctx.request.ip;
         let responseBody = ctx.response;
         let nodeRequestBody = ctx.req;
@@ -97,7 +97,7 @@ module.exports = {
 
         ctx.body = await common.readPages('index.html');
 
-        await next();
+        // await next();
     },
 
     products : async (ctx,next) =>{

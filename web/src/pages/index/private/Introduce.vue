@@ -107,7 +107,7 @@
             <div class="document wow zoomIn">
 <!--                <span>Yckjsoft致力于<b class="txt-target">平台性软件PaaS</b></span>-->
                 <span>专注财务与业务信息化集成解决方案20多年，本着智能、简捷、高效、实用的原则，深入本质</span>
-                <span>创新方案：松耦合、紧集成，真正可分可、合、可正可逆，高度智能化特点...</span>
+                <span>创新方案：松耦合、紧集成，真正可分可合、可正可逆，高度智能化特点...</span>
             </div>
 
             <div class="container">

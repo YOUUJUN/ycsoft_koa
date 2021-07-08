@@ -146,6 +146,7 @@
                         type : this.pageProperty
                     }
                 }).then(value =>{
+
                     this.topicDropDown = value.data;
                 }).catch(err =>{
                     console.error(err);

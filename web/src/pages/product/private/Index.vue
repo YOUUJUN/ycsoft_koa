@@ -50,7 +50,9 @@
 
         },
 
+        created (){
 
+        }
     }
 
 </script>

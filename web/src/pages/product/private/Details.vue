@@ -91,13 +91,38 @@
 
         methods : {
 
+            getRenderData(name){
+                let params = this.$route.params.name;
+
+                if(name){
+                    params = name.params.name;
+                }
+
+                let item = this.$store.getters.getProductByName(params);
+                this.renderData = item[0];
+            }
+
+        },
+
+        beforeRouteEnter(to, from, next){
+            console.log("beforeRouterEnter",to,'-->',from,'-->');
+        },
+
+        beforeRouteUpdate(to,from,next) {
+            this.getRenderData(to);
+        },
+
+        beforeRouteLeave(to, from){
+            // const answer = window.confirm('Do you really want to leave? you have unsaved changes!')
+            // if (answer) {
+            //     next()
+            // } else {
+            //     next(false)
+            // }
         },
 
         created() {
-            var name = this.$route.params.name;
-            let item = this.$store.getters.getProductByName(name);
-            this.renderData = item[0];
-            console.log("renderData ====>",this.renderData);
+            this.getRenderData();
         }
     }
 </script>

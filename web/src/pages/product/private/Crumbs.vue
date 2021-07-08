@@ -1,6 +1,7 @@
 <template>
 
     <div class="crumbs">
+<!--        <popcorn-btn><button>点我</button></popcorn-btn>-->
 
         <div class="container">
             <div class="area cols-md-12 cols-sm-12">
@@ -20,9 +21,12 @@
 
 <script>
 
+    const PopcornBtn = () => import('../../../components/PopcornBtn.vue');
+
     export default {
         name: "Crumbs",
         props : ["list"],
+        components : {PopcornBtn},
         data (){
              return {
                  selfList : this.list
@@ -42,7 +46,7 @@
                 for(let item of shell.children){
                     item.querySelector("button").classList.remove("active");
                 }
-                
+
                 $event.target.classList.add("active");
 
                 vm.$bus.$emit("changeType",type);

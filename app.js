@@ -39,7 +39,7 @@ app.use(json());
 app.use(logger());
 
 
-let allowOriginURL = (process.env.NODE_ENV !== 'production') ? "http://localhost:8081" : "http://106.13.63.236:8081";
+let allowOriginURL = (process.env.NODE_ENV !== 'production') ? "http://localhost:8090" : "http://106.13.63.236:8090";
 app.use( async (ctx, next) =>{
   ctx.set("Access-Control-Allow-Credentials", true);
   ctx.set("Access-Control-Allow-Origin",allowOriginURL);
@@ -49,11 +49,11 @@ app.use( async (ctx, next) =>{
   await next();
 });
 
-router(app);
-
 app.use(require('koa-static')(__dirname + '/database/expose'));
 app.use(require('koa-static')(__dirname + '/views'));
 app.use(require('koa-static')(__dirname + '/vue-public'));
+
+router(app);  //koa-router 应在koa-static下面注册，否则koa-router会根据静态路径多次match,影响性能
 
 //添加ejs模板并修改模板后缀为html
 // app.use(views(__dirname + '/vue-dist', {
