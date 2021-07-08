@@ -2,14 +2,11 @@ node_modules
 /vue-dist
 /vue-pages
 /vue-public
-/database/.pm2
-/database/cache
-/database/expose/users/*
 
 # local env files
 
 # Log files
-
+/database/.pm2
 
 # Editor directories and files
 .idea
