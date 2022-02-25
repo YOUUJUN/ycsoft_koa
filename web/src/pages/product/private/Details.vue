@@ -106,6 +106,7 @@
 
         beforeRouteEnter(to, from, next){
             console.log("beforeRouterEnter",to,'-->',from,'-->');
+            next();
         },
 
         beforeRouteUpdate(to,from,next) {

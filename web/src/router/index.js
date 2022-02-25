@@ -27,9 +27,9 @@ const router = new VueRouter({
 });
 
 
-router.beforeEach((to, from, next) => {
-  console.log("from global",to,'-',from,'-',next);
-  next();
-})
+// router.beforeEach((to, from, next) => {
+//   console.log("from global",to,'-',from,'-',next);
+//   next();
+// })
 
 export default router
