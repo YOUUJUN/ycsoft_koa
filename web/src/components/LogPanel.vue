@@ -2,7 +2,7 @@
 
     <div>
 
-        <div class="dialog" v-show="logShow">
+        <!-- <div class="dialog" v-show="logShow">
 
             <div class="dialog-title-content clearfix"><span class="dialog-title">登录</span>
                 <i v-on:click="closeLogPanel" class="fa fa-close dialog-close"></i>
@@ -94,7 +94,93 @@
                 <button v-on:click="closeRegisterPanel">取消</button>
             </div></div>
 
-        </div>
+        </div> -->
+
+
+        <el-dialog
+        title="登录"
+        :visible.sync="logShow"
+        :append-to-body = "true"
+        :lock-scroll="true"
+        width="25%"
+        >
+            
+            <div class="clearfix">
+                <div class="log-content">
+                    <div class="field-text">
+                    <span class="input-icon-left">
+                        <i class="fa fa-user-circle"></i>
+                    </span>
+                        <input type="text" name="user_name" placeholder="输入你的邮箱账号" v-model="logData.username">
+                    </div>
+
+                    <div class="field-text">
+                    <span class="input-icon-left">
+                        <i class="fa fa-lock"></i>
+                    </span>
+                        <input type="password" name="password" placeholder="输入你的密码" v-model="logData.password">
+                    </div>
+                </div>
+                <div class="turn-to">
+                    <a href="javascript:void(0);" v-on:click="togglePanel">没有账号? 点此注册</a>
+                </div>
+            </div>
+
+            <div slot="footer" class="dialog-footer">
+                <el-button type="primary" @click="login">登 录</el-button>
+                <el-button @click="closeLogPanel">取 消</el-button>
+            </div>
+        </el-dialog>
+
+
+        <el-dialog
+        title="注册"
+        :visible.sync="registerShow"
+        :append-to-body = "true"
+        :lock-scroll="true"
+        width="25%"
+        >
+            
+            <div class="clearfix">
+                <div class="log-content" ref="register">
+                    <div class="field-text">
+                    <span class="input-icon-left">
+                        <i class="fa fa-user-circle"></i>
+                    </span>
+                        <input type="text" name="nickname" placeholder="给自己取一个昵称" v-model="registerData.nickname" @blur="delErrorBorder($event)">
+                    </div>
+
+                    <div class="field-text">
+                    <span class="input-icon-left">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                        <input type="text" name="email" placeholder="输入你的邮箱" v-model="registerData.email" @blur="delErrorBorder($event)">
+                    </div>
+
+                    <div class="field-text">
+                    <span class="input-icon-left">
+                        <i class="fa fa-lock"></i>
+                    </span>
+                        <input type="password" name="password" placeholder="设置你的密码" v-model="registerData.password" @blur="delErrorBorder($event)">
+                    </div>
+
+                    <div class="field-text">
+                    <span class="input-icon-left">
+                        <i class="fa fa-lock"></i>
+                    </span>
+                        <input type="password" name="re-password" placeholder="确认你的密码" v-model="registerData.repassword" v-on:blur="registerChecker();delErrorBorder($event)">
+                    </div>
+                </div>
+                <div class="turn-to">
+                    <a href="javascript:void(0);" v-on:click="togglePanel" ref="toggle">已有账号? 点此登录</a>
+                </div>
+            </div>
+
+            <div slot="footer" class="dialog-footer">
+                <el-button type="primary" @click="register">注 册</el-button>
+                <el-button @click="closeRegisterPanel">取 消</el-button>
+            </div>
+        </el-dialog>
 
 
 
@@ -135,8 +221,8 @@
                 this.registerShow = false;
             },
             togglePanel (){
-                this.logShow = !this.logShow;
                 this.registerShow = !this.registerShow;
+                this.logShow = !this.logShow;
             },
             login () {
                 let vm = this;
@@ -262,60 +348,7 @@
 
 <style scoped>
 
-    /*-----------------------------dialog(弹出框)------------------------------*/
-
-
-
-    .dialog{
-        position:fixed;
-        top: 50%;
-        left: 50%;
-        transform:translate(-50%,-50%);
-        border-radius: 5px;
-        box-shadow:rgba(0, 0, 0, 0.3) 1px 1px 50px 0px;
-        display:block;
-        height:auto;
-        width:400px;
-        background-color: #fff;
-        z-index: 999;
-    }
-
-    .dialog-title-content{
-        display:block;
-        padding:6px 10px 6px 16px;
-        border-bottom: 1px solid rgb(238, 238, 238);
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        background-color: rgb(248, 248, 248);
-        line-height:35px;
-        color: #333333;
-        font-weight: bold;
-        cursor:move;
-    }
-
-    .dialog-title{
-        display:block;
-        float:left;
-        margin: 1px 0;
-        white-space: nowrap;
-        font-size:20px;
-        font-weight: bold;
-        color:black;
-        overflow: hidden;
-    }
-
-    .dialog-close{
-        display:block;
-        float:right;
-        margin: 1px 0;
-        height:100%;
-        font-size:20px;
-    }
-
-    .dialog-close:hover{
-        color:red;
-        cursor:pointer;
-    }
+    
 
     .clearfix::after, .clearfix::before {
         content: " ";
@@ -333,67 +366,14 @@
         overflow:auto;
     }
 
-    .dialog-resize-helper{
-        position:absolute;
-        display:block;
-    }
-
-    .dialog-resize-s{
-        top:-3px;
-        height:3px;
-        width:100%;
-        cursor:n-resize;
-    }
-
-    .dialog-resize-x{
-        bottom:-3px;
-        height:3px;
-        width:100%;
-        cursor:n-resize;
-    }
-
-    .dialog-resize-z{
-        top:0;
-        left:-3px;
-        width:3px;
-        height:100%;
-        cursor:e-resize;
-    }
-
-    .dialog-resize-y{
-        top:0;
-        right:-3px;
-        width:3px;
-        height:100%;
-        cursor:e-resize;
-    }
+    
 
 
-    .dialog-footer{
-        position:absolute;
-        bottom:0;
-        right:0;
-        display:block;
-        width:100%;
-        height:40px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+    /deep/.el-dialog__footer{
         background-color:rgb(248, 248, 248);
-        color: #333333;
+        padding:10px;
     }
 
-    .dialog-button-content{
-        float:right;
-        height:100%;
-        padding-right:10px;
-    }
-
-    .dialog-button-content:after{
-        display: inline-block;
-        content : '';
-        height: 100%;
-        vertical-align:middle;
-    }
 
 
     .dialog-button-content button{
@@ -428,21 +408,6 @@
         margin:0;
     }
 
-
-    /*-------------------遮罩层--------------------*/
-
-    .view-mask{
-        display: none;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(240,250,255,0.5);
-        z-index: 1000;
-    }
 
 
     /*---------------登录界面---------------*/

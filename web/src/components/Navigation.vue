@@ -134,11 +134,12 @@
 <!--                    </ul>-->
 <!--                </div>-->
 
-                <logPanel ref="logPanel"></logPanel>
-
-
+            
             </div>
         </div>
+
+        <logPanel ref="logPanel"></logPanel>
+
     </div>
 
 </template>

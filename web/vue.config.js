@@ -374,12 +374,12 @@ module.exports = function(){
                     })
             }
 
-            config.when(
-                process.env.NODE_ENV === 'development',
-                config => config
-                    .plugin('webpack-bundle-analyzer')
-                    .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
-            );
+            // config.when(
+            //     process.env.NODE_ENV === 'development',
+            //     config => config
+            //         .plugin('webpack-bundle-analyzer')
+            //         .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
+            // );
 
             //优化moment 去掉国际化内容；
             //我都不知道哪来的moment
