@@ -2,7 +2,7 @@ export default {
 
     devBaseUrl : 'http://localhost:3000',
     // prodBashUrl : 'http://106.13.63.236',
-    prodBashUrl : 'http://localhost:3000',
+    prodBashUrl : 'http://112.30.151.101:13000',
 
     baseUrl (){
         if(process.env.NODE_ENV === "development" || process.env.NODE_ENV === "devBuild"){

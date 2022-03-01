@@ -40,11 +40,11 @@ app.use(logger());
 
 
 // let allowOriginURL = (process.env.NODE_ENV !== 'production') ? "http://localhost:8090" : "http://106.13.63.236:8090";
-let allowOriginURL = (process.env.NODE_ENV !== 'production') ? "http://localhost:8090" : "http://192.168.1.40:8090";
+let allowOriginURL = (process.env.NODE_ENV !== 'production') ? "http://localhost:8090" : "";
 app.use( async (ctx, next) =>{
 
   ctx.set("Access-Control-Allow-Credentials", true);
-  ctx.set("Access-Control-Allow-Origin", "*");
+  ctx.set("Access-Control-Allow-Origin", allowOriginURL);
 
   ctx.set("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, accesstoken, range");
   ctx.set("Access-Control-Expose-Headers" , "Content-Range");
