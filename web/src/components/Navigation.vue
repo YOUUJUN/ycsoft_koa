@@ -17,7 +17,7 @@
 
                         <template v-for="item in list">
 
-                            <li v-on:mouseenter="startAnimation($event)" v-on:mouseleave="endAnimation($event)">
+                            <li class="ribbon-wrap" v-on:mouseenter="startAnimation($event)" v-on:mouseleave="endAnimation($event)">
 
                                 <a v-bind:class="item.active" v-bind:target="item.target" v-bind:href="item.href">{{item.name}}</a><span class="ribbon"></span>
                             </li>
@@ -156,21 +156,35 @@
             }
         },
         methods : {
+
             startAnimation (event) {
                 let ribbon = event.target.querySelector(".ribbon");
-                $(ribbon).stop().css('height','2px');
-                $(ribbon).animate({
-                    left:'0',
-                    width:'100%',
-                    right:'0'
-                },200);
+
+                ribbon.classList.remove('ribbon-close');
+                ribbon.classList.add('ribbon-open');
+
+                let handler = () => {
+                    ribbon.style = "left:0;right:0;height:2px;"
+                    ribbon.removeEventListener('animationend', handler);
+                }
+
+                ribbon.addEventListener('animationend', handler);
+
             },
+
             endAnimation (event){
                 let ribbon = event.target.querySelector(".ribbon");
-                $(ribbon).stop().animate({
-                    left:'50%',
-                    width:'0'
-                },400);
+
+                ribbon.classList.remove('ribbon-open');
+                ribbon.classList.add('ribbon-close');
+
+                let handler = () => {
+                    ribbon.style = "left:50%;right:50%;height:2px;";
+                    ribbon.removeEventListener('animationend', handler);
+                }
+
+                ribbon.addEventListener('animationend', handler);
+
             },
 
             trans (){
@@ -340,6 +354,7 @@
         background:#e67e22;
         top:60px;
         left:50%;
+        height:2px;
     }
 
 
@@ -498,6 +513,77 @@
         vertical-align: middle;
     }
 
+
+
+
+    .ribbon-open{
+        animation: animate-open .2s;
+    }
+
+    .ribbon-opened{
+        left: 0;
+        right: 0;
+    }
+
+    .ribbon-close{
+        animation : animate-close .2s;
+    }
+
+    @keyframes animate-open{
+        0% {
+            left : 50%;
+            right: 50%;
+        }
+
+        25% {
+            left: 37.5%;
+            right: 37.5%;
+        }
+
+        50% {
+            left : 25%;
+            right: 25%;
+        }
+
+        75% {
+            left : 12.5%;
+            right: 12.5%;
+        }
+
+        100% {
+            left : 0;
+            right : 0;
+        }
+    }
+
+    @keyframes animate-close{
+
+        0% {
+            left : 0;
+            right : 0;
+        }
+
+        25% {
+            left : 12.5%;
+            right: 12.5%;
+        }
+
+        50% {
+            left : 25%;
+            right: 25%;
+        }
+
+        75% {
+            left: 37.5%;
+            right: 37.5%;
+        }
+
+        100% {
+            left : 50%;
+            right: 50%;
+        }
+
+    }
 
 
 </style>
