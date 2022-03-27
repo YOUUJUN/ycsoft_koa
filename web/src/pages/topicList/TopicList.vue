@@ -118,7 +118,7 @@
 <style>
 
     @import "../../assets/css/youjun_base.css";
-    @import "~font-awesome\css\font-awesome.min.css";
+    @import "~font-awesome/css/font-awesome.min.css";
 
     .topics-container{
         display: flex;

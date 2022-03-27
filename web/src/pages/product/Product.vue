@@ -54,6 +54,6 @@
 
     @import "../../assets/css/youjun_base.css";
     @import "../../assets/css/global.css";
-    @import "~font-awesome\css\font-awesome.min.css";
+    @import "~font-awesome/css/font-awesome.min.css";
 
 </style>
