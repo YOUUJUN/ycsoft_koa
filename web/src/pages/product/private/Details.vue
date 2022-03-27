@@ -8,7 +8,7 @@
             <div  class="area cols-12">
 
                 <el-breadcrumb separator-class="el-icon-arrow-right">
-                    <el-breadcrumb-item :to="{ path: '/products' }"><i class="fa fa-reply" style="margin-right:4px;"></i>产品&&方案</el-breadcrumb-item>
+                    <el-breadcrumb-item  to="/products"><i class="fa fa-reply" style="margin-right:4px;"></i>产品&&方案</el-breadcrumb-item>
                     <el-breadcrumb-item>{{renderData.name}}</el-breadcrumb-item>
                 </el-breadcrumb>
 
@@ -100,26 +100,9 @@
 
                 let item = this.$store.getters.getProductByName(params);
                 this.renderData = item[0];
-            }
+            },
 
-        },
 
-        beforeRouteEnter(to, from, next){
-            console.log("beforeRouterEnter",to,'-->',from,'-->');
-            next();
-        },
-
-        beforeRouteUpdate(to,from,next) {
-            this.getRenderData(to);
-        },
-
-        beforeRouteLeave(to, from){
-            // const answer = window.confirm('Do you really want to leave? you have unsaved changes!')
-            // if (answer) {
-            //     next()
-            // } else {
-            //     next(false)
-            // }
         },
 
         created() {
