@@ -278,9 +278,24 @@ let getModulesVersion = () => {
     return mvs;
 }
 
+let getDependenciesVersion = () => {
+    let mvs = {};
+    
+    let json = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+    let dependencies = json.dependencies;
+    for(let key in dependencies){
+        mvs[key] = dependencies[key].replace(/(~|\^)/g, '');
+    }
+    
+    return mvs;
+}
+
+
+
+
 let getExternalModules = (config) =>{
     let externals = {};
-    let dependencieModules = getModulesVersion();
+    let dependencieModules = getDependenciesVersion();
     config.forEach((item) => {
         if(item.name in dependencieModules){
             let version = dependencieModules[item.name];
@@ -321,6 +336,11 @@ module.exports = function(){
         },
         productionSourceMap : true, //开启后出错的时候，除错工具将直接显示原始代码，而不是转换后的代码。关闭可以减少打包体积
         configureWebpack : {
+
+            resolveLoader: {
+                modules: [path.join(__dirname, './loaders'), 'node_modules']
+            },
+
             plugins : [
 
                 // new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
@@ -355,14 +375,14 @@ module.exports = function(){
             for (const iterator of entry) {
 
                 let cdnConfig = externalConfig.reduce((total, currentValue, index, arr) => {
-                    console.log('total', total);
+                    // console.log('total', total);
                     if(!currentValue.includes || currentValue.length === 0 || currentValue.includes.includes(iterator)){
                         total.push(currentValue);
                     }
                     return total;
                 }, []);
 
-                console.log('cdnConfig', cdnConfig);
+                // console.log('cdnConfig', cdnConfig);
 
                 config
                     .plugin(`html-${iterator}`)  //自定义插件名称用于移除

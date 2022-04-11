@@ -3,6 +3,7 @@ import index from './Index.vue'
 import store from '../../store/index'
 import lib from '../../utils/lib'
 import ElementUI from 'element-ui'
+
 /*---element-ui---*/
 Vue.use(ElementUI);
 

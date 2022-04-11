@@ -43,6 +43,7 @@
         },
         methods : {
 
+
         },
         created () {
             this.$store.dispatch("getUserLogStatus");
